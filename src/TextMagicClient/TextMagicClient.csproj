@@ -12,7 +12,7 @@ OpenAPI spec version: 2
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B36C73CF-8BDE-45B5-BBD7-AEDD30DFE1E2}</ProjectGuid>
+    <ProjectGuid>{68D4CE74-7373-4EED-BB30-59FCA710D943}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TextMagicClient</RootNamespace>
