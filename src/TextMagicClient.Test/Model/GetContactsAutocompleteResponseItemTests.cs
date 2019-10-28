@@ -107,6 +107,14 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'SharedBy'
         }
         /// <summary>
+        /// Test the property 'IsShared'
+        /// </summary>
+        [Test]
+        public void IsSharedTest()
+        {
+            // TODO unit test for the property 'IsShared'
+        }
+        /// <summary>
         /// Test the property 'Avatar'
         /// </summary>
         [Test]

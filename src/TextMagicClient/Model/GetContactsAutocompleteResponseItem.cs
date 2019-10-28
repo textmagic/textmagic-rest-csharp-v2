@@ -76,13 +76,14 @@ namespace TextMagicClient.Model
         /// <param name="value">Id of contact/list if entityType is contact/list OR phone number if entityType is reply. (required).</param>
         /// <param name="label">Name of the contact/list if entityType is contact/list OR phone number if entityType is reply. (required).</param>
         /// <param name="sharedBy">If contact or list was shared by another sub-account then name if this user will be shown. (required).</param>
+        /// <param name="isShared">If contact or list was shared by another sub-account then &#x60;true&#x60; will be set. (required).</param>
         /// <param name="avatar">Contact avatar URI. (required).</param>
         /// <param name="favorited">If contact has been marked as favorite. (required).</param>
         /// <param name="userId">Owner id of the contact/list (if it was shared). (required).</param>
         /// <param name="countryName">countryName (required).</param>
         /// <param name="qposition">qposition (required).</param>
         /// <param name="rposition">rposition (required).</param>
-        public GetContactsAutocompleteResponseItem(int? entityId = default(int?), EntityTypeEnum entityType = default(EntityTypeEnum), string value = default(string), string label = default(string), string sharedBy = default(string), string avatar = default(string), bool? favorited = default(bool?), int? userId = default(int?), string countryName = default(string), int? qposition = default(int?), int? rposition = default(int?))
+        public GetContactsAutocompleteResponseItem(int? entityId = default(int?), EntityTypeEnum entityType = default(EntityTypeEnum), string value = default(string), string label = default(string), string sharedBy = default(string), bool? isShared = default(bool?), string avatar = default(string), bool? favorited = default(bool?), int? userId = default(int?), string countryName = default(string), int? qposition = default(int?), int? rposition = default(int?))
         {
             // to ensure "entityId" is required (not null)
             if (entityId == null)
@@ -128,6 +129,15 @@ namespace TextMagicClient.Model
             else
             {
                 this.SharedBy = sharedBy;
+            }
+            // to ensure "isShared" is required (not null)
+            if (isShared == null)
+            {
+                throw new InvalidDataException("isShared is a required property for GetContactsAutocompleteResponseItem and cannot be null");
+            }
+            else
+            {
+                this.IsShared = isShared;
             }
             // to ensure "avatar" is required (not null)
             if (avatar == null)
@@ -215,6 +225,13 @@ namespace TextMagicClient.Model
         public string SharedBy { get; set; }
 
         /// <summary>
+        /// If contact or list was shared by another sub-account then &#x60;true&#x60; will be set.
+        /// </summary>
+        /// <value>If contact or list was shared by another sub-account then &#x60;true&#x60; will be set.</value>
+        [DataMember(Name="isShared", EmitDefaultValue=false)]
+        public bool? IsShared { get; set; }
+
+        /// <summary>
         /// Contact avatar URI.
         /// </summary>
         /// <value>Contact avatar URI.</value>
@@ -266,6 +283,7 @@ namespace TextMagicClient.Model
             sb.Append("  Value: ").Append(Value).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("  SharedBy: ").Append(SharedBy).Append("\n");
+            sb.Append("  IsShared: ").Append(IsShared).Append("\n");
             sb.Append("  Avatar: ").Append(Avatar).Append("\n");
             sb.Append("  Favorited: ").Append(Favorited).Append("\n");
             sb.Append("  UserId: ").Append(UserId).Append("\n");
@@ -332,6 +350,11 @@ namespace TextMagicClient.Model
                     this.SharedBy.Equals(input.SharedBy))
                 ) && 
                 (
+                    this.IsShared == input.IsShared ||
+                    (this.IsShared != null &&
+                    this.IsShared.Equals(input.IsShared))
+                ) && 
+                (
                     this.Avatar == input.Avatar ||
                     (this.Avatar != null &&
                     this.Avatar.Equals(input.Avatar))
@@ -382,6 +405,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.Label.GetHashCode();
                 if (this.SharedBy != null)
                     hashCode = hashCode * 59 + this.SharedBy.GetHashCode();
+                if (this.IsShared != null)
+                    hashCode = hashCode * 59 + this.IsShared.GetHashCode();
                 if (this.Avatar != null)
                     hashCode = hashCode * 59 + this.Avatar.GetHashCode();
                 if (this.Favorited != null)

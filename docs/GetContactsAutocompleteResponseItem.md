@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **Value** | **string** | Id of contact/list if entityType is contact/list OR phone number if entityType is reply. | 
 **Label** | **string** | Name of the contact/list if entityType is contact/list OR phone number if entityType is reply. | 
 **SharedBy** | **string** | If contact or list was shared by another sub-account then name if this user will be shown. | 
+**IsShared** | **bool?** | If contact or list was shared by another sub-account then &#x60;true&#x60; will be set. | 
 **Avatar** | **string** | Contact avatar URI. | 
 **Favorited** | **bool?** | If contact has been marked as favorite. | 
 **UserId** | **int?** | Owner id of the contact/list (if it was shared). | 
