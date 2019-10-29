@@ -34,7 +34,7 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="UnsubscribeContactInputObject" /> class.
         /// </summary>
         /// <param name="phone">Contact phone number..</param>
-        /// <param name="blockIncoming">If set to 1 incoming messages from this number will be blocked..</param>
+        /// <param name="blockIncoming">If set to 1, incoming messages from this number will be blocked..</param>
         public UnsubscribeContactInputObject(string phone = default(string), int? blockIncoming = default(int?))
         {
             this.Phone = phone;
@@ -49,9 +49,9 @@ namespace TextMagicClient.Model
         public string Phone { get; set; }
 
         /// <summary>
-        /// If set to 1 incoming messages from this number will be blocked.
+        /// If set to 1, incoming messages from this number will be blocked.
         /// </summary>
-        /// <value>If set to 1 incoming messages from this number will be blocked.</value>
+        /// <value>If set to 1, incoming messages from this number will be blocked.</value>
         [DataMember(Name="blockIncoming", EmitDefaultValue=false)]
         public int? BlockIncoming { get; set; }
 

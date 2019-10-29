@@ -39,7 +39,7 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="Contact" /> class.
         /// </summary>
         /// <param name="id">Contact ID. (required).</param>
-        /// <param name="favorited">Is the Contact favorite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavorites). (required).</param>
+        /// <param name="favorited">Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites). (required).</param>
         /// <param name="blocked">Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts). (required).</param>
         /// <param name="firstName">Contact first name. (required).</param>
         /// <param name="lastName">Contact last name. (required).</param>
@@ -200,9 +200,9 @@ namespace TextMagicClient.Model
         public int? Id { get; set; }
 
         /// <summary>
-        /// Is the Contact favorite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavorites).
+        /// Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites).
         /// </summary>
-        /// <value>Is the Contact favorite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavorites).</value>
+        /// <value>Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites).</value>
         [DataMember(Name="favorited", EmitDefaultValue=false)]
         public bool? Favorited { get; set; }
 

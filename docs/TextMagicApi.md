@@ -5,7 +5,7 @@ All URIs are relative to *http://rest.textmagic.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AssignContactsToList**](TextMagicApi.md#assigncontactstolist) | **PUT** /api/v2/lists/{id}/contacts | Assign contacts to a list
-[**BlockContact**](TextMagicApi.md#blockcontact) | **POST** /api/v2/contacts/block | Block contact by phone number
+[**BlockContact**](TextMagicApi.md#blockcontact) | **POST** /api/v2/contacts/block | Block a contact by phone number
 [**BuyDedicatedNumber**](TextMagicApi.md#buydedicatednumber) | **POST** /api/v2/numbers | Buy a dedicated number
 [**CancelVerification**](TextMagicApi.md#cancelverification) | **DELETE** /api/v2/verify/{verifyId} | Cancel verification process
 [**CheckPhoneVerificationCodeTFA**](TextMagicApi.md#checkphoneverificationcodetfa) | **PUT** /api/v2/verify | Step 2: Check the verification code 
@@ -67,7 +67,7 @@ Method | HTTP request | Description
 [**GetChatMessages**](TextMagicApi.md#getchatmessages) | **GET** /api/v2/chats/{id}/message | Get chat messages
 [**GetContact**](TextMagicApi.md#getcontact) | **GET** /api/v2/contacts/{id} | Get the details of a specific contact
 [**GetContactByPhone**](TextMagicApi.md#getcontactbyphone) | **GET** /api/v2/contacts/phone/{phone} | Get the details of a specific contact by phone number
-[**GetContactIfBlocked**](TextMagicApi.md#getcontactifblocked) | **GET** /api/v2/contacts/block/phone | Check is that phone number blocked
+[**GetContactIfBlocked**](TextMagicApi.md#getcontactifblocked) | **GET** /api/v2/contacts/block/phone | Check if a phone number is blocked
 [**GetContactImportSessionProgress**](TextMagicApi.md#getcontactimportsessionprogress) | **GET** /api/v2/contacts/import/progress/{id} | Check import progress
 [**GetContactNote**](TextMagicApi.md#getcontactnote) | **GET** /api/v2/notes/{id} | Get a contact note
 [**GetContactNotes**](TextMagicApi.md#getcontactnotes) | **GET** /api/v2/contacts/{id}/notes | Fetch notes assigned to a given contact
@@ -132,7 +132,7 @@ Method | HTTP request | Description
 [**SendMessage**](TextMagicApi.md#sendmessage) | **POST** /api/v2/messages | Send message
 [**SendPhoneVerificationCodeTFA**](TextMagicApi.md#sendphoneverificationcodetfa) | **POST** /api/v2/verify | Step 1: Send a verification code 
 [**SetChatStatus**](TextMagicApi.md#setchatstatus) | **POST** /api/v2/chats/status | Change chat status
-[**UnblockContact**](TextMagicApi.md#unblockcontact) | **POST** /api/v2/contacts/unblock | Unblock contact by phone number.
+[**UnblockContact**](TextMagicApi.md#unblockcontact) | **POST** /api/v2/contacts/unblock | Unblock a contact by phone number
 [**UnblockContactsBulk**](TextMagicApi.md#unblockcontactsbulk) | **POST** /api/v2/contacts/unblock/bulk | Unblock contacts (bulk)
 [**UnmuteChatsBulk**](TextMagicApi.md#unmutechatsbulk) | **POST** /api/v2/chats/unmute/bulk | Unmute chats (bulk)
 [**UnsubscribeContact**](TextMagicApi.md#unsubscribecontact) | **POST** /api/v2/unsubscribers | Manually unsubscribe a contact
@@ -225,9 +225,9 @@ Name | Type | Description  | Notes
 # **BlockContact**
 > ResourceLinkResponse BlockContact (BlockContactInputObject blockContactInputObject)
 
-Block contact by phone number
+Block a contact by phone number
 
-Block contact from inbound and outbound communication by phone number.
+Block a contact from inbound and outbound communication by phone number.
 
 ### Example
 ```csharp
@@ -252,7 +252,7 @@ namespace Example
 
             try
             {
-                // Block contact by phone number
+                // Block a contact by phone number
                 ResourceLinkResponse result = apiInstance.BlockContact(blockContactInputObject);
                 Debug.WriteLine(result);
             }
@@ -1360,7 +1360,7 @@ void (empty response body)
 
 Delete a contact
 
-> This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, instead use the Contact assignment command in the Lists section rather than deleting the contact. 
+> This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
 
 ### Example
 ```csharp
@@ -4098,7 +4098,7 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var id = 1;  // int? | The contact id
+            var id = 1;  // int? | Contact ID.
 
             try
             {
@@ -4119,7 +4119,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int?**| The contact id | 
+ **id** | **int?**| Contact ID. | 
 
 ### Return type
 
@@ -4203,7 +4203,7 @@ Name | Type | Description  | Notes
 # **GetContactIfBlocked**
 > Contact GetContactIfBlocked (string phone)
 
-Check is that phone number blocked
+Check if a phone number is blocked
 
 ### Example
 ```csharp
@@ -4224,11 +4224,11 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var phone = "447860021130";  // string | Phone number to check
+            var phone = "447860021130";  // string | Phone number to check.
 
             try
             {
-                // Check is that phone number blocked
+                // Check if a phone number is blocked
                 Contact result = apiInstance.GetContactIfBlocked(phone);
                 Debug.WriteLine(result);
             }
@@ -4245,7 +4245,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **phone** | **string**| Phone number to check | 
+ **phone** | **string**| Phone number to check. | 
 
 ### Return type
 
@@ -6948,7 +6948,7 @@ Name | Type | Description  | Notes
 
 Get all unsubscribed contacts
 
-When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use: 
+When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
 
 ### Example
 ```csharp
@@ -7103,9 +7103,9 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var file = new System.IO.Stream(); // System.IO.Stream | File containing contacts in csv or xls(x) formats
+            var file = new System.IO.Stream(); // System.IO.Stream | File containing contacts in csv or xls(x) formats.
             var column = "0:firstName;1:lastName;3:phone;4:email";  // string | Import file column mapping. The string must contain sub-strings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where the value before `:` is a number of the column in the file, and the value after `:` is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required. 
-            var listId = 443;  // int? | List ID contacts will be imported to. Ignored if `listName` is specified.  (optional) 
+            var listId = 443;  // int? | List that ID contacts will be imported to. Ignored if `listName` is specified.  (optional) 
             var listName = "A new list";  // string | List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified.  (optional) 
 
             try
@@ -7127,9 +7127,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **System.IO.Stream**| File containing contacts in csv or xls(x) formats | 
+ **file** | **System.IO.Stream**| File containing contacts in csv or xls(x) formats. | 
  **column** | **string**| Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  | 
- **listId** | **int?**| List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  | [optional] 
+ **listId** | **int?**| List that ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  | [optional] 
  **listName** | **string**| List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  | [optional] 
 
 ### Return type
@@ -8587,7 +8587,9 @@ Name | Type | Description  | Notes
 # **UnblockContact**
 > void UnblockContact (UnblockContactInputObject unblockContactInputObject)
 
-Unblock contact by phone number.
+Unblock a contact by phone number
+
+Unblock a contact by phone number
 
 ### Example
 ```csharp
@@ -8612,7 +8614,7 @@ namespace Example
 
             try
             {
-                // Unblock contact by phone number.
+                // Unblock a contact by phone number
                 apiInstance.UnblockContact(unblockContactInputObject);
             }
             catch (Exception e)
@@ -8651,7 +8653,7 @@ void (empty response body)
 
 Unblock contacts (bulk)
 
-Unblock several contacts by blocked contact ids or unblock all contacts
+Unblock several contacts by blocked contact IDs or unblock all contacts.
 
 ### Example
 ```csharp

@@ -40,7 +40,7 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <param name="id">Unsubscribed contact ID. (required).</param>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164). (required).</param>
-        /// <param name="unsubscribeTime">Time when contact has been opted-out. (required).</param>
+        /// <param name="unsubscribeTime">Time when contact was opted-out. (required).</param>
         /// <param name="firstName">Unsubscribed contact first name. (required).</param>
         /// <param name="lastName">Unsubscribed contact last name. (required).</param>
         public UnsubscribedContact(int? id = default(int?), string phone = default(string), DateTime? unsubscribeTime = default(DateTime?), string firstName = default(string), string lastName = default(string))
@@ -107,9 +107,9 @@ namespace TextMagicClient.Model
         public string Phone { get; set; }
 
         /// <summary>
-        /// Time when contact has been opted-out.
+        /// Time when contact was opted-out.
         /// </summary>
-        /// <value>Time when contact has been opted-out.</value>
+        /// <value>Time when contact was opted-out.</value>
         [DataMember(Name="unsubscribeTime", EmitDefaultValue=false)]
         public DateTime? UnsubscribeTime { get; set; }
 
