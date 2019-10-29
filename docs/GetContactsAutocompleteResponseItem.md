@@ -3,15 +3,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**EntityId** | **int?** | Id of entity. 0 if object is a Reply | 
-**EntityType** | **string** | Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message  | 
-**Value** | **string** | Id of contact/list if entityType is contact/list OR phone number if entityType is reply. | 
+**EntityId** | **int?** | Id of entity. 0 if object is a reply. | 
+**EntityType** | **string** | Entry type: * **contact** if it is related to a contact; * **list** if it is related to a contact list; * **reply** if it is related to an incoming message.  | 
+**Value** | **string** | ID of the contact/list if entityType is contact/list OR phone number if entityType is reply. | 
 **Label** | **string** | Name of the contact/list if entityType is contact/list OR phone number if entityType is reply. | 
-**SharedBy** | **string** | If contact or list was shared by another sub-account then name if this user will be shown. | 
+**SharedBy** | **string** | If contact or list was shared by another sub-account, the name of this user will be shown. | 
 **IsShared** | **bool?** | If contact or list was shared by another sub-account then &#x60;true&#x60; will be set. | 
 **Avatar** | **string** | Contact avatar URI. | 
 **Favorited** | **bool?** | If contact has been marked as favorite. | 
-**UserId** | **int?** | Owner id of the contact/list (if it was shared). | 
+**UserId** | **int?** | Owner ID of the contact/list (if it was shared). | 
 **CountryName** | **string** |  | 
 **Qposition** | **int?** |  | 
 **Rposition** | **int?** |  | 

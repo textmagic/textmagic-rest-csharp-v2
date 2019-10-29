@@ -40,7 +40,7 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <param name="id">Contact ID. (required).</param>
         /// <param name="favorited">Is the Contact favorite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavorites). (required).</param>
-        /// <param name="blocked">Is the Contact blocked? [Custom fields list](http://docs.textmagictesting.com/#operation/getBlockedContacts). (required).</param>
+        /// <param name="blocked">Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts). (required).</param>
         /// <param name="firstName">Contact first name. (required).</param>
         /// <param name="lastName">Contact last name. (required).</param>
         /// <param name="companyName">Company name. (required).</param>
@@ -207,9 +207,9 @@ namespace TextMagicClient.Model
         public bool? Favorited { get; set; }
 
         /// <summary>
-        /// Is the Contact blocked? [Custom fields list](http://docs.textmagictesting.com/#operation/getBlockedContacts).
+        /// Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts).
         /// </summary>
-        /// <value>Is the Contact blocked? [Custom fields list](http://docs.textmagictesting.com/#operation/getBlockedContacts).</value>
+        /// <value>Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts).</value>
         [DataMember(Name="blocked", EmitDefaultValue=false)]
         public bool? Blocked { get; set; }
 

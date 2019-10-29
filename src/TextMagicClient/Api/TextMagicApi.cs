@@ -1510,7 +1510,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetContactsPaginatedResponse</returns>
@@ -1525,7 +1525,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetContactsPaginatedResponse</returns>
@@ -1534,12 +1534,12 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions
         /// </summary>
         /// <remarks>
-        /// Get contacts autocomplete suggestions by given search term
+        /// Get contacts autocomplete suggestions by given search terms.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
+        /// <param name="lists">Should lists be returned or not? (optional, default to 0)</param>
         /// <returns>GetContactsAutocompleteResponse</returns>
         GetContactsAutocompleteResponse GetContactsAutocomplete (string query, int? limit = null, int? lists = null);
 
@@ -1547,12 +1547,12 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions
         /// </summary>
         /// <remarks>
-        /// Get contacts autocomplete suggestions by given search term
+        /// Get contacts autocomplete suggestions by given search terms.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
+        /// <param name="lists">Should lists be returned or not? (optional, default to 0)</param>
         /// <returns>ApiResponse of GetContactsAutocompleteResponse</returns>
         ApiResponse<GetContactsAutocompleteResponse> GetContactsAutocompleteWithHttpInfo (string query, int? limit = null, int? lists = null);
         /// <summary>
@@ -2760,13 +2760,13 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="ids">Find contact by ID(s) (optional)</param>
-        /// <param name="listId">Find contact by List ID (optional)</param>
-        /// <param name="includeBlocked">Should blocked contacts to be included (optional)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
+        /// <param name="ids">Find contacts by IDs. (optional)</param>
+        /// <param name="listId">Find contacts by List ID. (optional)</param>
+        /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
-        /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
-        /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
+        /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>SearchContactsPaginatedResponse</returns>
@@ -2781,13 +2781,13 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="ids">Find contact by ID(s) (optional)</param>
-        /// <param name="listId">Find contact by List ID (optional)</param>
-        /// <param name="includeBlocked">Should blocked contacts to be included (optional)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
+        /// <param name="ids">Find contacts by IDs. (optional)</param>
+        /// <param name="listId">Find contacts by List ID. (optional)</param>
+        /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
-        /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
-        /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
+        /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of SearchContactsPaginatedResponse</returns>
@@ -4944,7 +4944,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetContactsPaginatedResponse</returns>
@@ -4959,7 +4959,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetContactsPaginatedResponse)</returns>
@@ -4968,12 +4968,12 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions
         /// </summary>
         /// <remarks>
-        /// Get contacts autocomplete suggestions by given search term
+        /// Get contacts autocomplete suggestions by given search terms.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
+        /// <param name="lists">Should lists be returned or not? (optional, default to 0)</param>
         /// <returns>Task of GetContactsAutocompleteResponse</returns>
         System.Threading.Tasks.Task<GetContactsAutocompleteResponse> GetContactsAutocompleteAsync (string query, int? limit = null, int? lists = null);
 
@@ -4981,12 +4981,12 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions
         /// </summary>
         /// <remarks>
-        /// Get contacts autocomplete suggestions by given search term
+        /// Get contacts autocomplete suggestions by given search terms.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
+        /// <param name="lists">Should lists be returned or not? (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetContactsAutocompleteResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetContactsAutocompleteResponse>> GetContactsAutocompleteAsyncWithHttpInfo (string query, int? limit = null, int? lists = null);
         /// <summary>
@@ -6194,13 +6194,13 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="ids">Find contact by ID(s) (optional)</param>
-        /// <param name="listId">Find contact by List ID (optional)</param>
-        /// <param name="includeBlocked">Should blocked contacts to be included (optional)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
+        /// <param name="ids">Find contacts by IDs. (optional)</param>
+        /// <param name="listId">Find contacts by List ID. (optional)</param>
+        /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
-        /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
-        /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
+        /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of SearchContactsPaginatedResponse</returns>
@@ -6215,13 +6215,13 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="ids">Find contact by ID(s) (optional)</param>
-        /// <param name="listId">Find contact by List ID (optional)</param>
-        /// <param name="includeBlocked">Should blocked contacts to be included (optional)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
+        /// <param name="ids">Find contacts by IDs. (optional)</param>
+        /// <param name="listId">Find contacts by List ID. (optional)</param>
+        /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
-        /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
-        /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
+        /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SearchContactsPaginatedResponse)</returns>
@@ -17197,7 +17197,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetContactsPaginatedResponse</returns>
@@ -17213,7 +17213,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetContactsPaginatedResponse</returns>
@@ -17279,7 +17279,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetContactsPaginatedResponse</returns>
@@ -17296,7 +17296,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetContactsPaginatedResponse)</returns>
@@ -17357,12 +17357,12 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search term
+        /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search terms.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
+        /// <param name="lists">Should lists be returned or not? (optional, default to 0)</param>
         /// <returns>GetContactsAutocompleteResponse</returns>
         public GetContactsAutocompleteResponse GetContactsAutocomplete (string query, int? limit = null, int? lists = null)
         {
@@ -17371,12 +17371,12 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search term
+        /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search terms.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
+        /// <param name="lists">Should lists be returned or not? (optional, default to 0)</param>
         /// <returns>ApiResponse of GetContactsAutocompleteResponse</returns>
         public ApiResponse< GetContactsAutocompleteResponse > GetContactsAutocompleteWithHttpInfo (string query, int? limit = null, int? lists = null)
         {
@@ -17436,12 +17436,12 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search term
+        /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search terms.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
+        /// <param name="lists">Should lists be returned or not? (optional, default to 0)</param>
         /// <returns>Task of GetContactsAutocompleteResponse</returns>
         public async System.Threading.Tasks.Task<GetContactsAutocompleteResponse> GetContactsAutocompleteAsync (string query, int? limit = null, int? lists = null)
         {
@@ -17451,12 +17451,12 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search term
+        /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search terms.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
+        /// <param name="lists">Should lists be returned or not? (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetContactsAutocompleteResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetContactsAutocompleteResponse>> GetContactsAutocompleteAsyncWithHttpInfo (string query, int? limit = null, int? lists = null)
         {
@@ -25277,13 +25277,13 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="ids">Find contact by ID(s) (optional)</param>
-        /// <param name="listId">Find contact by List ID (optional)</param>
-        /// <param name="includeBlocked">Should blocked contacts to be included (optional)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
+        /// <param name="ids">Find contacts by IDs. (optional)</param>
+        /// <param name="listId">Find contacts by List ID. (optional)</param>
+        /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
-        /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
-        /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
+        /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>SearchContactsPaginatedResponse</returns>
@@ -25299,13 +25299,13 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="ids">Find contact by ID(s) (optional)</param>
-        /// <param name="listId">Find contact by List ID (optional)</param>
-        /// <param name="includeBlocked">Should blocked contacts to be included (optional)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
+        /// <param name="ids">Find contacts by IDs. (optional)</param>
+        /// <param name="listId">Find contacts by List ID. (optional)</param>
+        /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
-        /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
-        /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
+        /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of SearchContactsPaginatedResponse</returns>
@@ -25377,13 +25377,13 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="ids">Find contact by ID(s) (optional)</param>
-        /// <param name="listId">Find contact by List ID (optional)</param>
-        /// <param name="includeBlocked">Should blocked contacts to be included (optional)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
+        /// <param name="ids">Find contacts by IDs. (optional)</param>
+        /// <param name="listId">Find contacts by List ID. (optional)</param>
+        /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
-        /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
-        /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
+        /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of SearchContactsPaginatedResponse</returns>
@@ -25400,13 +25400,13 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="ids">Find contact by ID(s) (optional)</param>
-        /// <param name="listId">Find contact by List ID (optional)</param>
-        /// <param name="includeBlocked">Should blocked contacts to be included (optional)</param>
+        /// <param name="shared">Should shared contacts be included? (optional, default to 0)</param>
+        /// <param name="ids">Find contacts by IDs. (optional)</param>
+        /// <param name="listId">Find contacts by List ID. (optional)</param>
+        /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
-        /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
-        /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
+        /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SearchContactsPaginatedResponse)</returns>

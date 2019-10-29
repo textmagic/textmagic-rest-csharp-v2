@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class GetContactsAutocompleteResponseItem :  IEquatable<GetContactsAutocompleteResponseItem>, IValidatableObject
     {
         /// <summary>
-        /// Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message 
+        /// Entry type: * **contact** if it is related to a contact; * **list** if it is related to a contact list; * **reply** if it is related to an incoming message. 
         /// </summary>
-        /// <value>Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message </value>
+        /// <value>Entry type: * **contact** if it is related to a contact; * **list** if it is related to a contact list; * **reply** if it is related to an incoming message. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum EntityTypeEnum
         {
@@ -58,9 +58,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message 
+        /// Entry type: * **contact** if it is related to a contact; * **list** if it is related to a contact list; * **reply** if it is related to an incoming message. 
         /// </summary>
-        /// <value>Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message </value>
+        /// <value>Entry type: * **contact** if it is related to a contact; * **list** if it is related to a contact list; * **reply** if it is related to an incoming message. </value>
         [DataMember(Name="entityType", EmitDefaultValue=false)]
         public EntityTypeEnum EntityType { get; set; }
         /// <summary>
@@ -71,15 +71,15 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="GetContactsAutocompleteResponseItem" /> class.
         /// </summary>
-        /// <param name="entityId">Id of entity. 0 if object is a Reply (required).</param>
-        /// <param name="entityType">Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message  (required).</param>
-        /// <param name="value">Id of contact/list if entityType is contact/list OR phone number if entityType is reply. (required).</param>
+        /// <param name="entityId">Id of entity. 0 if object is a reply. (required).</param>
+        /// <param name="entityType">Entry type: * **contact** if it is related to a contact; * **list** if it is related to a contact list; * **reply** if it is related to an incoming message.  (required).</param>
+        /// <param name="value">ID of the contact/list if entityType is contact/list OR phone number if entityType is reply. (required).</param>
         /// <param name="label">Name of the contact/list if entityType is contact/list OR phone number if entityType is reply. (required).</param>
-        /// <param name="sharedBy">If contact or list was shared by another sub-account then name if this user will be shown. (required).</param>
+        /// <param name="sharedBy">If contact or list was shared by another sub-account, the name of this user will be shown. (required).</param>
         /// <param name="isShared">If contact or list was shared by another sub-account then &#x60;true&#x60; will be set. (required).</param>
         /// <param name="avatar">Contact avatar URI. (required).</param>
         /// <param name="favorited">If contact has been marked as favorite. (required).</param>
-        /// <param name="userId">Owner id of the contact/list (if it was shared). (required).</param>
+        /// <param name="userId">Owner ID of the contact/list (if it was shared). (required).</param>
         /// <param name="countryName">countryName (required).</param>
         /// <param name="qposition">qposition (required).</param>
         /// <param name="rposition">rposition (required).</param>
@@ -196,17 +196,17 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Id of entity. 0 if object is a Reply
+        /// Id of entity. 0 if object is a reply.
         /// </summary>
-        /// <value>Id of entity. 0 if object is a Reply</value>
+        /// <value>Id of entity. 0 if object is a reply.</value>
         [DataMember(Name="entityId", EmitDefaultValue=false)]
         public int? EntityId { get; set; }
 
 
         /// <summary>
-        /// Id of contact/list if entityType is contact/list OR phone number if entityType is reply.
+        /// ID of the contact/list if entityType is contact/list OR phone number if entityType is reply.
         /// </summary>
-        /// <value>Id of contact/list if entityType is contact/list OR phone number if entityType is reply.</value>
+        /// <value>ID of the contact/list if entityType is contact/list OR phone number if entityType is reply.</value>
         [DataMember(Name="value", EmitDefaultValue=false)]
         public string Value { get; set; }
 
@@ -218,9 +218,9 @@ namespace TextMagicClient.Model
         public string Label { get; set; }
 
         /// <summary>
-        /// If contact or list was shared by another sub-account then name if this user will be shown.
+        /// If contact or list was shared by another sub-account, the name of this user will be shown.
         /// </summary>
-        /// <value>If contact or list was shared by another sub-account then name if this user will be shown.</value>
+        /// <value>If contact or list was shared by another sub-account, the name of this user will be shown.</value>
         [DataMember(Name="sharedBy", EmitDefaultValue=false)]
         public string SharedBy { get; set; }
 
@@ -246,9 +246,9 @@ namespace TextMagicClient.Model
         public bool? Favorited { get; set; }
 
         /// <summary>
-        /// Owner id of the contact/list (if it was shared).
+        /// Owner ID of the contact/list (if it was shared).
         /// </summary>
-        /// <value>Owner id of the contact/list (if it was shared).</value>
+        /// <value>Owner ID of the contact/list (if it was shared).</value>
         [DataMember(Name="userId", EmitDefaultValue=false)]
         public int? UserId { get; set; }
 
