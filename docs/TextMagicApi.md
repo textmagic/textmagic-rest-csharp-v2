@@ -34,8 +34,8 @@ Method | HTTP request | Description
 [**DeleteInboundMessage**](TextMagicApi.md#deleteinboundmessage) | **DELETE** /api/v2/replies/{id} | Delete a single inbound message
 [**DeleteInboundMessagesBulk**](TextMagicApi.md#deleteinboundmessagesbulk) | **POST** /api/v2/replies/delete | Delete inbound messages (bulk)
 [**DeleteList**](TextMagicApi.md#deletelist) | **DELETE** /api/v2/lists/{id} | Delete a list
-[**DeleteListAvatar**](TextMagicApi.md#deletelistavatar) | **DELETE** /api/v2/lists/{id}/avatar | Delete an avatar for the list
-[**DeleteListContactsBulk**](TextMagicApi.md#deletelistcontactsbulk) | **POST** /api/v2/lists/{id}/contacts/delete | Delete contacts from list (bulk)
+[**DeleteListAvatar**](TextMagicApi.md#deletelistavatar) | **DELETE** /api/v2/lists/{id}/avatar | Delete an avatar for a list
+[**DeleteListContactsBulk**](TextMagicApi.md#deletelistcontactsbulk) | **POST** /api/v2/lists/{id}/contacts/delete | Delete contacts from a list (bulk)
 [**DeleteListsBulk**](TextMagicApi.md#deletelistsbulk) | **POST** /api/v2/lists/delete | Delete lists (bulk)
 [**DeleteMessageSession**](TextMagicApi.md#deletemessagesession) | **DELETE** /api/v2/sessions/{id} | Delete a session
 [**DeleteMessageSessionsBulk**](TextMagicApi.md#deletemessagesessionsbulk) | **POST** /api/v2/sessions/delete | Delete sessions (bulk)
@@ -84,7 +84,7 @@ Method | HTTP request | Description
 [**GetInboundMessagesNotificationSettings**](TextMagicApi.md#getinboundmessagesnotificationsettings) | **GET** /api/v2/user/notification/inbound | Get inbound messages notification settings
 [**GetInvoices**](TextMagicApi.md#getinvoices) | **GET** /api/v2/invoices | Get all invoices
 [**GetList**](TextMagicApi.md#getlist) | **GET** /api/v2/lists/{id} | Get the details of a specific list
-[**GetListContactsIds**](TextMagicApi.md#getlistcontactsids) | **GET** /api/v2/lists/{id}/contacts/ids | Get all contacts IDs in a list
+[**GetListContactsIds**](TextMagicApi.md#getlistcontactsids) | **GET** /api/v2/lists/{id}/contacts/ids | Get all contact IDs in a list
 [**GetLists**](TextMagicApi.md#getlists) | **GET** /api/v2/lists | Get all lists
 [**GetListsOfContact**](TextMagicApi.md#getlistsofcontact) | **GET** /api/v2/contacts/{id}/lists | Get a contact&#39;s lists
 [**GetMessagePreview**](TextMagicApi.md#getmessagepreview) | **GET** /api/v2/messages/preview | Preview message
@@ -150,7 +150,7 @@ Method | HTTP request | Description
 [**UpdateTemplate**](TextMagicApi.md#updatetemplate) | **PUT** /api/v2/templates/{id} | Update a template
 [**UploadAvatar**](TextMagicApi.md#uploadavatar) | **POST** /api/v2/user/avatar | Upload an avatar
 [**UploadContactAvatar**](TextMagicApi.md#uploadcontactavatar) | **POST** /api/v2/contacts/{id}/avatar | Upload an avatar
-[**UploadListAvatar**](TextMagicApi.md#uploadlistavatar) | **POST** /api/v2/lists/{id}/avatar | Add an avatar for the list
+[**UploadListAvatar**](TextMagicApi.md#uploadlistavatar) | **POST** /api/v2/lists/{id}/avatar | Add an avatar for a list
 [**UploadMessageAttachment**](TextMagicApi.md#uploadmessageattachment) | **POST** /api/v2/messages/attachment | Upload message attachment
 
 
@@ -1994,7 +1994,7 @@ void (empty response body)
 
 Delete a list
 
-This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
 
 ### Example
 ```csharp
@@ -2056,7 +2056,9 @@ void (empty response body)
 # **DeleteListAvatar**
 > void DeleteListAvatar (int? id)
 
-Delete an avatar for the list
+Delete an avatar for a list
+
+Delete an avatar for a list
 
 ### Example
 ```csharp
@@ -2081,7 +2083,7 @@ namespace Example
 
             try
             {
-                // Delete an avatar for the list
+                // Delete an avatar for a list
                 apiInstance.DeleteListAvatar(id);
             }
             catch (Exception e)
@@ -2118,7 +2120,9 @@ void (empty response body)
 # **DeleteListContactsBulk**
 > void DeleteListContactsBulk (DeleteListContactsBulkInputObject deleteListContactsBulkInputObject, int? id)
 
-Delete contacts from list (bulk)
+Delete contacts from a list (bulk)
+
+Delete contacts from a list (bulk)
 
 ### Example
 ```csharp
@@ -2144,7 +2148,7 @@ namespace Example
 
             try
             {
-                // Delete contacts from list (bulk)
+                // Delete contacts from a list (bulk)
                 apiInstance.DeleteListContactsBulk(deleteListContactsBulkInputObject, id);
             }
             catch (Exception e)
@@ -4599,7 +4603,7 @@ Name | Type | Description  | Notes
 
 Get all contacts in a list
 
-A useful synonym for \"contacts/search\" command with provided \"listId\" parameter.
+A useful synonym for the \"contacts/search\" command with the provided \"listId\" parameter.
 
 ### Example
 ```csharp
@@ -4620,10 +4624,10 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var id = 1;  // int? | Given group Id.
+            var id = 1;  // int? | Given group ID.
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var orderBy = orderBy_example;  // string | Order results by some field. Default is id (optional)  (default to id)
+            var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
 
             try
@@ -4645,10 +4649,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int?**| Given group Id. | 
+ **id** | **int?**| Given group ID. | 
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **orderBy** | **string**| Order results by some field. Default is id | [optional] [default to id]
+ **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
 
 ### Return type
@@ -5298,7 +5302,7 @@ Name | Type | Description  | Notes
 # **GetListContactsIds**
 > GetListContactsIdsResponse GetListContactsIds (int? id)
 
-Get all contacts IDs in a list
+Get all contact IDs in a list
 
 ### Example
 ```csharp
@@ -5323,7 +5327,7 @@ namespace Example
 
             try
             {
-                // Get all contacts IDs in a list
+                // Get all contact IDs in a list
                 GetListContactsIdsResponse result = apiInstance.GetListContactsIds(id);
                 Debug.WriteLine(result);
             }
@@ -9728,7 +9732,9 @@ Name | Type | Description  | Notes
 # **UploadListAvatar**
 > ResourceLinkResponse UploadListAvatar (System.IO.Stream image, int? id)
 
-Add an avatar for the list
+Add an avatar for a list
+
+Add an avatar for a list
 
 ### Example
 ```csharp
@@ -9749,12 +9755,12 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var image = new System.IO.Stream(); // System.IO.Stream | List avatar. Should be PNG or JPG file not more than 10 MB
+            var image = new System.IO.Stream(); // System.IO.Stream | List avatar. Should be a PNG or JPG file not more than 10 MB.
             var id = 1;  // int? | 
 
             try
             {
-                // Add an avatar for the list
+                // Add an avatar for a list
                 ResourceLinkResponse result = apiInstance.UploadListAvatar(image, id);
                 Debug.WriteLine(result);
             }
@@ -9771,7 +9777,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **image** | **System.IO.Stream**| List avatar. Should be PNG or JPG file not more than 10 MB | 
+ **image** | **System.IO.Stream**| List avatar. Should be a PNG or JPG file not more than 10 MB. | 
  **id** | **int?**|  | 
 
 ### Return type

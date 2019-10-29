@@ -641,7 +641,7 @@ namespace TextMagicClient.Api
         /// Delete a list
         /// </summary>
         /// <remarks>
-        /// This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+        /// This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -652,17 +652,17 @@ namespace TextMagicClient.Api
         /// Delete a list
         /// </summary>
         /// <remarks>
-        /// This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+        /// This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteListWithHttpInfo (int? id);
         /// <summary>
-        /// Delete an avatar for the list
+        /// Delete an avatar for a list
         /// </summary>
         /// <remarks>
-        /// 
+        /// Delete an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -670,20 +670,20 @@ namespace TextMagicClient.Api
         void DeleteListAvatar (int? id);
 
         /// <summary>
-        /// Delete an avatar for the list
+        /// Delete an avatar for a list
         /// </summary>
         /// <remarks>
-        /// 
+        /// Delete an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteListAvatarWithHttpInfo (int? id);
         /// <summary>
-        /// Delete contacts from list (bulk)
+        /// Delete contacts from a list (bulk)
         /// </summary>
         /// <remarks>
-        /// 
+        /// Delete contacts from a list (bulk)
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -692,10 +692,10 @@ namespace TextMagicClient.Api
         void DeleteListContactsBulk (DeleteListContactsBulkInputObject deleteListContactsBulkInputObject, int? id);
 
         /// <summary>
-        /// Delete contacts from list (bulk)
+        /// Delete contacts from a list (bulk)
         /// </summary>
         /// <remarks>
-        /// 
+        /// Delete contacts from a list (bulk)
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -1559,13 +1559,13 @@ namespace TextMagicClient.Api
         /// Get all contacts in a list
         /// </summary>
         /// <remarks>
-        /// A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
+        /// A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">Given group Id.</param>
+        /// <param name="id">Given group ID.</param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetContactsByListIdPaginatedResponse</returns>
         GetContactsByListIdPaginatedResponse GetContactsByListId (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null);
@@ -1574,13 +1574,13 @@ namespace TextMagicClient.Api
         /// Get all contacts in a list
         /// </summary>
         /// <remarks>
-        /// A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
+        /// A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">Given group Id.</param>
+        /// <param name="id">Given group ID.</param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetContactsByListIdPaginatedResponse</returns>
         ApiResponse<GetContactsByListIdPaginatedResponse> GetContactsByListIdWithHttpInfo (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null);
@@ -1797,7 +1797,7 @@ namespace TextMagicClient.Api
         /// <returns>ApiResponse of List</returns>
         ApiResponse<List> GetListWithHttpInfo (int? id);
         /// <summary>
-        /// Get all contacts IDs in a list
+        /// Get all contact IDs in a list
         /// </summary>
         /// <remarks>
         /// 
@@ -1808,7 +1808,7 @@ namespace TextMagicClient.Api
         GetListContactsIdsResponse GetListContactsIds (int? id);
 
         /// <summary>
-        /// Get all contacts IDs in a list
+        /// Get all contact IDs in a list
         /// </summary>
         /// <remarks>
         /// 
@@ -3413,25 +3413,25 @@ namespace TextMagicClient.Api
         /// <returns>ApiResponse of ResourceLinkResponse</returns>
         ApiResponse<ResourceLinkResponse> UploadContactAvatarWithHttpInfo (System.IO.Stream image, int? id);
         /// <summary>
-        /// Add an avatar for the list
+        /// Add an avatar for a list
         /// </summary>
         /// <remarks>
-        /// 
+        /// Add an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">List avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>ResourceLinkResponse</returns>
         ResourceLinkResponse UploadListAvatar (System.IO.Stream image, int? id);
 
         /// <summary>
-        /// Add an avatar for the list
+        /// Add an avatar for a list
         /// </summary>
         /// <remarks>
-        /// 
+        /// Add an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">List avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>ApiResponse of ResourceLinkResponse</returns>
         ApiResponse<ResourceLinkResponse> UploadListAvatarWithHttpInfo (System.IO.Stream image, int? id);
@@ -4075,7 +4075,7 @@ namespace TextMagicClient.Api
         /// Delete a list
         /// </summary>
         /// <remarks>
-        /// This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+        /// This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4086,17 +4086,17 @@ namespace TextMagicClient.Api
         /// Delete a list
         /// </summary>
         /// <remarks>
-        /// This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+        /// This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteListAsyncWithHttpInfo (int? id);
         /// <summary>
-        /// Delete an avatar for the list
+        /// Delete an avatar for a list
         /// </summary>
         /// <remarks>
-        /// 
+        /// Delete an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4104,20 +4104,20 @@ namespace TextMagicClient.Api
         System.Threading.Tasks.Task DeleteListAvatarAsync (int? id);
 
         /// <summary>
-        /// Delete an avatar for the list
+        /// Delete an avatar for a list
         /// </summary>
         /// <remarks>
-        /// 
+        /// Delete an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteListAvatarAsyncWithHttpInfo (int? id);
         /// <summary>
-        /// Delete contacts from list (bulk)
+        /// Delete contacts from a list (bulk)
         /// </summary>
         /// <remarks>
-        /// 
+        /// Delete contacts from a list (bulk)
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -4126,10 +4126,10 @@ namespace TextMagicClient.Api
         System.Threading.Tasks.Task DeleteListContactsBulkAsync (DeleteListContactsBulkInputObject deleteListContactsBulkInputObject, int? id);
 
         /// <summary>
-        /// Delete contacts from list (bulk)
+        /// Delete contacts from a list (bulk)
         /// </summary>
         /// <remarks>
-        /// 
+        /// Delete contacts from a list (bulk)
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -4993,13 +4993,13 @@ namespace TextMagicClient.Api
         /// Get all contacts in a list
         /// </summary>
         /// <remarks>
-        /// A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
+        /// A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">Given group Id.</param>
+        /// <param name="id">Given group ID.</param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetContactsByListIdPaginatedResponse</returns>
         System.Threading.Tasks.Task<GetContactsByListIdPaginatedResponse> GetContactsByListIdAsync (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null);
@@ -5008,13 +5008,13 @@ namespace TextMagicClient.Api
         /// Get all contacts in a list
         /// </summary>
         /// <remarks>
-        /// A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
+        /// A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">Given group Id.</param>
+        /// <param name="id">Given group ID.</param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetContactsByListIdPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetContactsByListIdPaginatedResponse>> GetContactsByListIdAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null);
@@ -5231,7 +5231,7 @@ namespace TextMagicClient.Api
         /// <returns>Task of ApiResponse (List)</returns>
         System.Threading.Tasks.Task<ApiResponse<List>> GetListAsyncWithHttpInfo (int? id);
         /// <summary>
-        /// Get all contacts IDs in a list
+        /// Get all contact IDs in a list
         /// </summary>
         /// <remarks>
         /// 
@@ -5242,7 +5242,7 @@ namespace TextMagicClient.Api
         System.Threading.Tasks.Task<GetListContactsIdsResponse> GetListContactsIdsAsync (int? id);
 
         /// <summary>
-        /// Get all contacts IDs in a list
+        /// Get all contact IDs in a list
         /// </summary>
         /// <remarks>
         /// 
@@ -6847,25 +6847,25 @@ namespace TextMagicClient.Api
         /// <returns>Task of ApiResponse (ResourceLinkResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<ResourceLinkResponse>> UploadContactAvatarAsyncWithHttpInfo (System.IO.Stream image, int? id);
         /// <summary>
-        /// Add an avatar for the list
+        /// Add an avatar for a list
         /// </summary>
         /// <remarks>
-        /// 
+        /// Add an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">List avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>Task of ResourceLinkResponse</returns>
         System.Threading.Tasks.Task<ResourceLinkResponse> UploadListAvatarAsync (System.IO.Stream image, int? id);
 
         /// <summary>
-        /// Add an avatar for the list
+        /// Add an avatar for a list
         /// </summary>
         /// <remarks>
-        /// 
+        /// Add an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">List avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>Task of ApiResponse (ResourceLinkResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<ResourceLinkResponse>> UploadListAvatarAsyncWithHttpInfo (System.IO.Stream image, int? id);
@@ -11440,7 +11440,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a list This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+        /// Delete a list This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11451,7 +11451,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a list This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+        /// Delete a list This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11511,7 +11511,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a list This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+        /// Delete a list This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11523,7 +11523,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a list This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+        /// Delete a list This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11583,7 +11583,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar for the list 
+        /// Delete an avatar for a list Delete an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11594,7 +11594,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar for the list 
+        /// Delete an avatar for a list Delete an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11655,7 +11655,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar for the list 
+        /// Delete an avatar for a list Delete an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11667,7 +11667,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar for the list 
+        /// Delete an avatar for a list Delete an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11728,7 +11728,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts from list (bulk) 
+        /// Delete contacts from a list (bulk) Delete contacts from a list (bulk)
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -11740,7 +11740,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts from list (bulk) 
+        /// Delete contacts from a list (bulk) Delete contacts from a list (bulk)
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -11812,7 +11812,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts from list (bulk) 
+        /// Delete contacts from a list (bulk) Delete contacts from a list (bulk)
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -11825,7 +11825,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts from list (bulk) 
+        /// Delete contacts from a list (bulk) Delete contacts from a list (bulk)
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -17516,13 +17516,13 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts in a list A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
+        /// Get all contacts in a list A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">Given group Id.</param>
+        /// <param name="id">Given group ID.</param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetContactsByListIdPaginatedResponse</returns>
         public GetContactsByListIdPaginatedResponse GetContactsByListId (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null)
@@ -17532,13 +17532,13 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts in a list A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
+        /// Get all contacts in a list A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">Given group Id.</param>
+        /// <param name="id">Given group ID.</param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetContactsByListIdPaginatedResponse</returns>
         public ApiResponse< GetContactsByListIdPaginatedResponse > GetContactsByListIdWithHttpInfo (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null)
@@ -17601,13 +17601,13 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts in a list A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
+        /// Get all contacts in a list A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">Given group Id.</param>
+        /// <param name="id">Given group ID.</param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetContactsByListIdPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<GetContactsByListIdPaginatedResponse> GetContactsByListIdAsync (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null)
@@ -17618,13 +17618,13 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts in a list A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
+        /// Get all contacts in a list A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">Given group Id.</param>
+        /// <param name="id">Given group ID.</param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetContactsByListIdPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetContactsByListIdPaginatedResponse>> GetContactsByListIdAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null)
@@ -19127,7 +19127,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts IDs in a list 
+        /// Get all contact IDs in a list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19139,7 +19139,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts IDs in a list 
+        /// Get all contact IDs in a list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19200,7 +19200,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts IDs in a list 
+        /// Get all contact IDs in a list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19213,7 +19213,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts IDs in a list 
+        /// Get all contact IDs in a list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -29759,10 +29759,10 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add an avatar for the list 
+        /// Add an avatar for a list Add an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">List avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>ResourceLinkResponse</returns>
         public ResourceLinkResponse UploadListAvatar (System.IO.Stream image, int? id)
@@ -29772,10 +29772,10 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add an avatar for the list 
+        /// Add an avatar for a list Add an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">List avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>ApiResponse of ResourceLinkResponse</returns>
         public ApiResponse< ResourceLinkResponse > UploadListAvatarWithHttpInfo (System.IO.Stream image, int? id)
@@ -29838,10 +29838,10 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add an avatar for the list 
+        /// Add an avatar for a list Add an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">List avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>Task of ResourceLinkResponse</returns>
         public async System.Threading.Tasks.Task<ResourceLinkResponse> UploadListAvatarAsync (System.IO.Stream image, int? id)
@@ -29852,10 +29852,10 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add an avatar for the list 
+        /// Add an avatar for a list Add an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">List avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>Task of ApiResponse (ResourceLinkResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<ResourceLinkResponse>> UploadListAvatarAsyncWithHttpInfo (System.IO.Stream image, int? id)
