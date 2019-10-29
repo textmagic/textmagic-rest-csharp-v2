@@ -65,7 +65,7 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="InviteSubaccountInputObject" /> class.
         /// </summary>
-        /// <param name="email">Invitation email will be sent to this email address. (required).</param>
+        /// <param name="email">The invitation email will be sent to this email address. (required).</param>
         /// <param name="role">Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User.  (required).</param>
         public InviteSubaccountInputObject(string email = default(string), RoleEnum role = default(RoleEnum))
         {
@@ -90,9 +90,9 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Invitation email will be sent to this email address.
+        /// The invitation email will be sent to this email address.
         /// </summary>
-        /// <value>Invitation email will be sent to this email address.</value>
+        /// <value>The invitation email will be sent to this email address.</value>
         [DataMember(Name="email", EmitDefaultValue=false)]
         public string Email { get; set; }
 

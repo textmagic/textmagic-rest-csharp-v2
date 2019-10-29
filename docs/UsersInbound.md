@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int?** | Dedicated number ID. | 
-**DisplayTimeFormat** | **string** | Format for representation of time | [optional] 
+**DisplayTimeFormat** | **string** | Format for representation of time. | [optional] 
 **Phone** | **string** | Dedicated phone number. | [optional] 
 **User** | [**User**](User.md) |  | 
 **PurchasedAt** | **DateTime?** | Time when the dedicated number was purchased. | 

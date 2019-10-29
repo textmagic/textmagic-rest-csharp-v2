@@ -39,7 +39,7 @@ namespace TextMagicClient.Model
         /// <param name="email">email.</param>
         /// <param name="phone">phone.</param>
         /// <param name="company">Account company name..</param>
-        /// <param name="timezone">The timezome internal id. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones)..</param>
+        /// <param name="timezone">The timezome internal ID. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones)..</param>
         public UpdateCurrentUserInputObject(string username = default(string), string firstName = default(string), string lastName = default(string), string email = default(string), string phone = default(string), string company = default(string), int? timezone = default(int?))
         {
             this.Username = username;
@@ -91,9 +91,9 @@ namespace TextMagicClient.Model
         public string Company { get; set; }
 
         /// <summary>
-        /// The timezome internal id. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones).
+        /// The timezome internal ID. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones).
         /// </summary>
-        /// <value>The timezome internal id. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones).</value>
+        /// <value>The timezome internal ID. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones).</value>
         [DataMember(Name="timezone", EmitDefaultValue=false)]
         public int? Timezone { get; set; }
 

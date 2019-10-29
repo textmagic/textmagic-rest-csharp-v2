@@ -39,7 +39,7 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="PingResponse" /> class.
         /// </summary>
         /// <param name="ping">Pong. (required).</param>
-        /// <param name="utcDateTime">Current date time (required).</param>
+        /// <param name="utcDateTime">Current date and time. (required).</param>
         public PingResponse(string ping = default(string), string utcDateTime = default(string))
         {
             // to ensure "ping" is required (not null)
@@ -70,9 +70,9 @@ namespace TextMagicClient.Model
         public string Ping { get; set; }
 
         /// <summary>
-        /// Current date time
+        /// Current date and time.
         /// </summary>
-        /// <value>Current date time</value>
+        /// <value>Current date and time.</value>
         [DataMember(Name="utcDateTime", EmitDefaultValue=false)]
         public string UtcDateTime { get; set; }
 

@@ -102,8 +102,8 @@ Method | HTTP request | Description
 [**GetSenderSettings**](TextMagicApi.md#getsendersettings) | **GET** /api/v2/sender/settings/normalized | Get current sender settings
 [**GetSpendingStat**](TextMagicApi.md#getspendingstat) | **GET** /api/v2/stats/spending | Get spending statistics
 [**GetSubaccount**](TextMagicApi.md#getsubaccount) | **GET** /api/v2/subaccounts/{id} | Get sub-account information
-[**GetSubaccounts**](TextMagicApi.md#getsubaccounts) | **GET** /api/v2/subaccounts | Get sub-accounts list
-[**GetSubaccountsWithTokens**](TextMagicApi.md#getsubaccountswithtokens) | **POST** /api/v2/subaccounts/tokens/list | Get all sub-accounts with their REST API tokens associated with app name
+[**GetSubaccounts**](TextMagicApi.md#getsubaccounts) | **GET** /api/v2/subaccounts | Get a sub-accounts list
+[**GetSubaccountsWithTokens**](TextMagicApi.md#getsubaccountswithtokens) | **POST** /api/v2/subaccounts/tokens/list | Get all sub-accounts with their REST API tokens associated with a specified app name
 [**GetTemplate**](TextMagicApi.md#gettemplate) | **GET** /api/v2/templates/{id} | Get a template&#x60;s details
 [**GetTimezones**](TextMagicApi.md#gettimezones) | **GET** /api/v2/timezones | Get timezones
 [**GetUnreadMessagesTotal**](TextMagicApi.md#getunreadmessagestotal) | **GET** /api/v2/chats/unread/count | Get unread messages number
@@ -5006,7 +5006,7 @@ namespace Example
             var apiInstance = new TextMagicApi();
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var query = "A";  // string | Find contacts or lists by specified search query (optional) 
+            var query = "A";  // string | Find contacts or lists by specified search query. (optional) 
 
             try
             {
@@ -5029,7 +5029,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **query** | **string**| Find contacts or lists by specified search query | [optional] 
+ **query** | **string**| Find contacts or lists by specified search query. | [optional] 
 
 ### Return type
 
@@ -5988,7 +5988,7 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var by = "off";  // string | *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional)  (default to off)
+            var by = "off";  // string | *   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional)  (default to off)
             var start = 1430438400;  // int? | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional) 
             var end = 1431648000;  // int? | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional) 
 
@@ -6011,7 +6011,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **by** | **string**| *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  | [optional] [default to off]
+ **by** | **string**| *   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  | [optional] [default to off]
  **start** | **int?**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  | [optional] 
  **end** | **int?**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  | [optional] 
 
@@ -6558,7 +6558,7 @@ Name | Type | Description  | Notes
 # **GetSubaccounts**
 > User GetSubaccounts (int? page = null, int? limit = null)
 
-Get sub-accounts list
+Get a sub-accounts list
 
 ### Example
 ```csharp
@@ -6584,7 +6584,7 @@ namespace Example
 
             try
             {
-                // Get sub-accounts list
+                // Get a sub-accounts list
                 User result = apiInstance.GetSubaccounts(page, limit);
                 Debug.WriteLine(result);
             }
@@ -6623,7 +6623,7 @@ Name | Type | Description  | Notes
 # **GetSubaccountsWithTokens**
 > GetSubaccountsWithTokensResponse GetSubaccountsWithTokens (GetSubaccountsWithTokensInputObject getSubaccountsWithTokensInputObject, decimal? page = null, int? limit = null)
 
-Get all sub-accounts with their REST API tokens associated with app name
+Get all sub-accounts with their REST API tokens associated with a specified app name
 
 Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
 
@@ -6652,7 +6652,7 @@ namespace Example
 
             try
             {
-                // Get all sub-accounts with their REST API tokens associated with app name
+                // Get all sub-accounts with their REST API tokens associated with a specified app name
                 GetSubaccountsWithTokensResponse result = apiInstance.GetSubaccountsWithTokens(getSubaccountsWithTokensInputObject, page, limit);
                 Debug.WriteLine(result);
             }
@@ -6780,7 +6780,7 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var full = 56;  // int? | Return full info about timezones in array (0 or 1). Default is 0 (optional)  (default to 0)
+            var full = 56;  // int? | Return full info about timezones in array (0 or 1). Default is 0. (optional)  (default to 0)
 
             try
             {
@@ -6801,7 +6801,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **full** | **int?**| Return full info about timezones in array (0 or 1). Default is 0 | [optional] [default to 0]
+ **full** | **int?**| Return full info about timezones in array (0 or 1). Default is 0. | [optional] [default to 0]
 
 ### Return type
 
@@ -7470,7 +7470,7 @@ void (empty response body)
 
 Ping
 
-Make a simple ping request
+Make a simple ping request.
 
 ### Example
 ```csharp
@@ -9626,7 +9626,7 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var image = new System.IO.Stream(); // System.IO.Stream | User avatar. Should be PNG or JPG file not more than 10 MB
+            var image = new System.IO.Stream(); // System.IO.Stream | User avatar. Should be a PNG or JPG file not more than 10 MB.
 
             try
             {
@@ -9646,7 +9646,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **image** | **System.IO.Stream**| User avatar. Should be PNG or JPG file not more than 10 MB | 
+ **image** | **System.IO.Stream**| User avatar. Should be a PNG or JPG file not more than 10 MB. | 
 
 ### Return type
 

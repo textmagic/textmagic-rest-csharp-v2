@@ -39,8 +39,8 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="Invoice" /> class.
         /// </summary>
         /// <param name="id">The invoice ID. (required).</param>
-        /// <param name="bundle">Top up amount. (required).</param>
-        /// <param name="currency">Top up currency. (required).</param>
+        /// <param name="bundle">Top-up amount. (required).</param>
+        /// <param name="currency">Top-up currency. (required).</param>
         /// <param name="vat">VAT charged (if any). (required).</param>
         /// <param name="paymentMethod">Payment method description. (required).</param>
         public Invoice(int? id = default(int?), int? bundle = default(int?), string currency = default(string), float? vat = default(float?), string paymentMethod = default(string))
@@ -100,16 +100,16 @@ namespace TextMagicClient.Model
         public int? Id { get; set; }
 
         /// <summary>
-        /// Top up amount.
+        /// Top-up amount.
         /// </summary>
-        /// <value>Top up amount.</value>
+        /// <value>Top-up amount.</value>
         [DataMember(Name="bundle", EmitDefaultValue=false)]
         public int? Bundle { get; set; }
 
         /// <summary>
-        /// Top up currency.
+        /// Top-up currency.
         /// </summary>
-        /// <value>Top up currency.</value>
+        /// <value>Top-up currency.</value>
         [DataMember(Name="currency", EmitDefaultValue=false)]
         public string Currency { get; set; }
 

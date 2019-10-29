@@ -38,8 +38,8 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="GetSubaccountsWithTokensInputObject" /> class.
         /// </summary>
-        /// <param name="appName">Application name (required).</param>
-        /// <param name="password">Your account password (required).</param>
+        /// <param name="appName">Application name. (required).</param>
+        /// <param name="password">Your account password. (required).</param>
         public GetSubaccountsWithTokensInputObject(string appName = default(string), string password = default(string))
         {
             // to ensure "appName" is required (not null)
@@ -63,16 +63,16 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Application name
+        /// Application name.
         /// </summary>
-        /// <value>Application name</value>
+        /// <value>Application name.</value>
         [DataMember(Name="appName", EmitDefaultValue=false)]
         public string AppName { get; set; }
 
         /// <summary>
-        /// Your account password
+        /// Your account password.
         /// </summary>
-        /// <value>Your account password</value>
+        /// <value>Your account password.</value>
         [DataMember(Name="password", EmitDefaultValue=false)]
         public string Password { get; set; }
 

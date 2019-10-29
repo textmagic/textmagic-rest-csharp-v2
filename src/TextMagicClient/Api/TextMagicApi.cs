@@ -1696,7 +1696,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find contacts or lists by specified search query (optional)</param>
+        /// <param name="query">Find contacts or lists by specified search query. (optional)</param>
         /// <returns>GetFavoritesPaginatedResponse</returns>
         GetFavoritesPaginatedResponse GetFavorites (int? page = null, int? limit = null, string query = null);
 
@@ -1709,7 +1709,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find contacts or lists by specified search query (optional)</param>
+        /// <param name="query">Find contacts or lists by specified search query. (optional)</param>
         /// <returns>ApiResponse of GetFavoritesPaginatedResponse</returns>
         ApiResponse<GetFavoritesPaginatedResponse> GetFavoritesWithHttpInfo (int? page = null, int? limit = null, string query = null);
         /// <summary>
@@ -2080,7 +2080,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="by">*   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional, default to off)</param>
+        /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
         /// <param name="start">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)</param>
         /// <param name="end">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)</param>
         /// <returns>GetMessagingStatResponse</returns>
@@ -2093,7 +2093,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="by">*   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional, default to off)</param>
+        /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
         /// <param name="start">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)</param>
         /// <param name="end">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)</param>
         /// <returns>ApiResponse of GetMessagingStatResponse</returns>
@@ -2283,7 +2283,7 @@ namespace TextMagicClient.Api
         /// <returns>ApiResponse of User</returns>
         ApiResponse<User> GetSubaccountWithHttpInfo (int? id);
         /// <summary>
-        /// Get sub-accounts list
+        /// Get a sub-accounts list
         /// </summary>
         /// <remarks>
         /// 
@@ -2295,7 +2295,7 @@ namespace TextMagicClient.Api
         User GetSubaccounts (int? page = null, int? limit = null);
 
         /// <summary>
-        /// Get sub-accounts list
+        /// Get a sub-accounts list
         /// </summary>
         /// <remarks>
         /// 
@@ -2306,7 +2306,7 @@ namespace TextMagicClient.Api
         /// <returns>ApiResponse of User</returns>
         ApiResponse<User> GetSubaccountsWithHttpInfo (int? page = null, int? limit = null);
         /// <summary>
-        /// Get all sub-accounts with their REST API tokens associated with app name
+        /// Get all sub-accounts with their REST API tokens associated with a specified app name
         /// </summary>
         /// <remarks>
         /// Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
@@ -2319,7 +2319,7 @@ namespace TextMagicClient.Api
         GetSubaccountsWithTokensResponse GetSubaccountsWithTokens (GetSubaccountsWithTokensInputObject getSubaccountsWithTokensInputObject, decimal? page = null, int? limit = null);
 
         /// <summary>
-        /// Get all sub-accounts with their REST API tokens associated with app name
+        /// Get all sub-accounts with their REST API tokens associated with a specified app name
         /// </summary>
         /// <remarks>
         /// Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
@@ -2358,7 +2358,7 @@ namespace TextMagicClient.Api
         /// Return all available timezone IDs
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0 (optional, default to 0)</param>
+        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
         /// <returns>GetTimezonesResponse</returns>
         GetTimezonesResponse GetTimezones (int? full = null);
 
@@ -2369,7 +2369,7 @@ namespace TextMagicClient.Api
         /// Return all available timezone IDs
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0 (optional, default to 0)</param>
+        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
         /// <returns>ApiResponse of GetTimezonesResponse</returns>
         ApiResponse<GetTimezonesResponse> GetTimezonesWithHttpInfo (int? full = null);
         /// <summary>
@@ -2596,7 +2596,7 @@ namespace TextMagicClient.Api
         /// Ping
         /// </summary>
         /// <remarks>
-        /// Make a simple ping request
+        /// Make a simple ping request.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>PingResponse</returns>
@@ -2606,7 +2606,7 @@ namespace TextMagicClient.Api
         /// Ping
         /// </summary>
         /// <remarks>
-        /// Make a simple ping request
+        /// Make a simple ping request.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of PingResponse</returns>
@@ -3375,7 +3375,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">User avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <returns></returns>
         void UploadAvatar (System.IO.Stream image);
 
@@ -3386,7 +3386,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">User avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> UploadAvatarWithHttpInfo (System.IO.Stream image);
         /// <summary>
@@ -5130,7 +5130,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find contacts or lists by specified search query (optional)</param>
+        /// <param name="query">Find contacts or lists by specified search query. (optional)</param>
         /// <returns>Task of GetFavoritesPaginatedResponse</returns>
         System.Threading.Tasks.Task<GetFavoritesPaginatedResponse> GetFavoritesAsync (int? page = null, int? limit = null, string query = null);
 
@@ -5143,7 +5143,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find contacts or lists by specified search query (optional)</param>
+        /// <param name="query">Find contacts or lists by specified search query. (optional)</param>
         /// <returns>Task of ApiResponse (GetFavoritesPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetFavoritesPaginatedResponse>> GetFavoritesAsyncWithHttpInfo (int? page = null, int? limit = null, string query = null);
         /// <summary>
@@ -5514,7 +5514,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="by">*   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional, default to off)</param>
+        /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
         /// <param name="start">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)</param>
         /// <param name="end">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)</param>
         /// <returns>Task of GetMessagingStatResponse</returns>
@@ -5527,7 +5527,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="by">*   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional, default to off)</param>
+        /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
         /// <param name="start">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)</param>
         /// <param name="end">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)</param>
         /// <returns>Task of ApiResponse (GetMessagingStatResponse)</returns>
@@ -5717,7 +5717,7 @@ namespace TextMagicClient.Api
         /// <returns>Task of ApiResponse (User)</returns>
         System.Threading.Tasks.Task<ApiResponse<User>> GetSubaccountAsyncWithHttpInfo (int? id);
         /// <summary>
-        /// Get sub-accounts list
+        /// Get a sub-accounts list
         /// </summary>
         /// <remarks>
         /// 
@@ -5729,7 +5729,7 @@ namespace TextMagicClient.Api
         System.Threading.Tasks.Task<User> GetSubaccountsAsync (int? page = null, int? limit = null);
 
         /// <summary>
-        /// Get sub-accounts list
+        /// Get a sub-accounts list
         /// </summary>
         /// <remarks>
         /// 
@@ -5740,7 +5740,7 @@ namespace TextMagicClient.Api
         /// <returns>Task of ApiResponse (User)</returns>
         System.Threading.Tasks.Task<ApiResponse<User>> GetSubaccountsAsyncWithHttpInfo (int? page = null, int? limit = null);
         /// <summary>
-        /// Get all sub-accounts with their REST API tokens associated with app name
+        /// Get all sub-accounts with their REST API tokens associated with a specified app name
         /// </summary>
         /// <remarks>
         /// Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
@@ -5753,7 +5753,7 @@ namespace TextMagicClient.Api
         System.Threading.Tasks.Task<GetSubaccountsWithTokensResponse> GetSubaccountsWithTokensAsync (GetSubaccountsWithTokensInputObject getSubaccountsWithTokensInputObject, decimal? page = null, int? limit = null);
 
         /// <summary>
-        /// Get all sub-accounts with their REST API tokens associated with app name
+        /// Get all sub-accounts with their REST API tokens associated with a specified app name
         /// </summary>
         /// <remarks>
         /// Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
@@ -5792,7 +5792,7 @@ namespace TextMagicClient.Api
         /// Return all available timezone IDs
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0 (optional, default to 0)</param>
+        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
         /// <returns>Task of GetTimezonesResponse</returns>
         System.Threading.Tasks.Task<GetTimezonesResponse> GetTimezonesAsync (int? full = null);
 
@@ -5803,7 +5803,7 @@ namespace TextMagicClient.Api
         /// Return all available timezone IDs
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0 (optional, default to 0)</param>
+        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetTimezonesResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetTimezonesResponse>> GetTimezonesAsyncWithHttpInfo (int? full = null);
         /// <summary>
@@ -6030,7 +6030,7 @@ namespace TextMagicClient.Api
         /// Ping
         /// </summary>
         /// <remarks>
-        /// Make a simple ping request
+        /// Make a simple ping request.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of PingResponse</returns>
@@ -6040,7 +6040,7 @@ namespace TextMagicClient.Api
         /// Ping
         /// </summary>
         /// <remarks>
-        /// Make a simple ping request
+        /// Make a simple ping request.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (PingResponse)</returns>
@@ -6809,7 +6809,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">User avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task UploadAvatarAsync (System.IO.Stream image);
 
@@ -6820,7 +6820,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">User avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> UploadAvatarAsyncWithHttpInfo (System.IO.Stream image);
         /// <summary>
@@ -18403,7 +18403,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find contacts or lists by specified search query (optional)</param>
+        /// <param name="query">Find contacts or lists by specified search query. (optional)</param>
         /// <returns>GetFavoritesPaginatedResponse</returns>
         public GetFavoritesPaginatedResponse GetFavorites (int? page = null, int? limit = null, string query = null)
         {
@@ -18417,7 +18417,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find contacts or lists by specified search query (optional)</param>
+        /// <param name="query">Find contacts or lists by specified search query. (optional)</param>
         /// <returns>ApiResponse of GetFavoritesPaginatedResponse</returns>
         public ApiResponse< GetFavoritesPaginatedResponse > GetFavoritesWithHttpInfo (int? page = null, int? limit = null, string query = null)
         {
@@ -18479,7 +18479,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find contacts or lists by specified search query (optional)</param>
+        /// <param name="query">Find contacts or lists by specified search query. (optional)</param>
         /// <returns>Task of GetFavoritesPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<GetFavoritesPaginatedResponse> GetFavoritesAsync (int? page = null, int? limit = null, string query = null)
         {
@@ -18494,7 +18494,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find contacts or lists by specified search query (optional)</param>
+        /// <param name="query">Find contacts or lists by specified search query. (optional)</param>
         /// <returns>Task of ApiResponse (GetFavoritesPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetFavoritesPaginatedResponse>> GetFavoritesAsyncWithHttpInfo (int? page = null, int? limit = null, string query = null)
         {
@@ -20693,7 +20693,7 @@ namespace TextMagicClient.Api
         /// Get messaging statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="by">*   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional, default to off)</param>
+        /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
         /// <param name="start">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)</param>
         /// <param name="end">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)</param>
         /// <returns>GetMessagingStatResponse</returns>
@@ -20707,7 +20707,7 @@ namespace TextMagicClient.Api
         /// Get messaging statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="by">*   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional, default to off)</param>
+        /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
         /// <param name="start">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)</param>
         /// <param name="end">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)</param>
         /// <returns>ApiResponse of GetMessagingStatResponse</returns>
@@ -20769,7 +20769,7 @@ namespace TextMagicClient.Api
         /// Get messaging statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="by">*   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional, default to off)</param>
+        /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
         /// <param name="start">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)</param>
         /// <param name="end">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)</param>
         /// <returns>Task of GetMessagingStatResponse</returns>
@@ -20784,7 +20784,7 @@ namespace TextMagicClient.Api
         /// Get messaging statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="by">*   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional, default to off)</param>
+        /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
         /// <param name="start">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)</param>
         /// <param name="end">Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)</param>
         /// <returns>Task of ApiResponse (GetMessagingStatResponse)</returns>
@@ -22043,7 +22043,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get sub-accounts list 
+        /// Get a sub-accounts list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -22056,7 +22056,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get sub-accounts list 
+        /// Get a sub-accounts list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -22116,7 +22116,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get sub-accounts list 
+        /// Get a sub-accounts list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -22130,7 +22130,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get sub-accounts list 
+        /// Get a sub-accounts list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -22190,7 +22190,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all sub-accounts with their REST API tokens associated with app name Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+        /// Get all sub-accounts with their REST API tokens associated with a specified app name Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="getSubaccountsWithTokensInputObject"></param>
@@ -22204,7 +22204,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all sub-accounts with their REST API tokens associated with app name Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+        /// Get all sub-accounts with their REST API tokens associated with a specified app name Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="getSubaccountsWithTokensInputObject"></param>
@@ -22276,7 +22276,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all sub-accounts with their REST API tokens associated with app name Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+        /// Get all sub-accounts with their REST API tokens associated with a specified app name Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="getSubaccountsWithTokensInputObject"></param>
@@ -22291,7 +22291,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all sub-accounts with their REST API tokens associated with app name Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+        /// Get all sub-accounts with their REST API tokens associated with a specified app name Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="getSubaccountsWithTokensInputObject"></param>
@@ -22513,7 +22513,7 @@ namespace TextMagicClient.Api
         /// Get timezones Return all available timezone IDs
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0 (optional, default to 0)</param>
+        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
         /// <returns>GetTimezonesResponse</returns>
         public GetTimezonesResponse GetTimezones (int? full = null)
         {
@@ -22525,7 +22525,7 @@ namespace TextMagicClient.Api
         /// Get timezones Return all available timezone IDs
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0 (optional, default to 0)</param>
+        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
         /// <returns>ApiResponse of GetTimezonesResponse</returns>
         public ApiResponse< GetTimezonesResponse > GetTimezonesWithHttpInfo (int? full = null)
         {
@@ -22583,7 +22583,7 @@ namespace TextMagicClient.Api
         /// Get timezones Return all available timezone IDs
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0 (optional, default to 0)</param>
+        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
         /// <returns>Task of GetTimezonesResponse</returns>
         public async System.Threading.Tasks.Task<GetTimezonesResponse> GetTimezonesAsync (int? full = null)
         {
@@ -22596,7 +22596,7 @@ namespace TextMagicClient.Api
         /// Get timezones Return all available timezone IDs
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0 (optional, default to 0)</param>
+        /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetTimezonesResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetTimezonesResponse>> GetTimezonesAsyncWithHttpInfo (int? full = null)
         {
@@ -24193,7 +24193,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Ping Make a simple ping request
+        /// Ping Make a simple ping request.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>PingResponse</returns>
@@ -24204,7 +24204,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Ping Make a simple ping request
+        /// Ping Make a simple ping request.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of PingResponse</returns>
@@ -24260,7 +24260,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Ping Make a simple ping request
+        /// Ping Make a simple ping request.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of PingResponse</returns>
@@ -24272,7 +24272,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Ping Make a simple ping request
+        /// Ping Make a simple ping request.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (PingResponse)</returns>
@@ -29458,7 +29458,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">User avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <returns></returns>
         public void UploadAvatar (System.IO.Stream image)
         {
@@ -29469,7 +29469,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">User avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> UploadAvatarWithHttpInfo (System.IO.Stream image)
         {
@@ -29530,7 +29530,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">User avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task UploadAvatarAsync (System.IO.Stream image)
         {
@@ -29542,7 +29542,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">User avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> UploadAvatarAsyncWithHttpInfo (System.IO.Stream image)
         {

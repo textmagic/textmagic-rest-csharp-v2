@@ -43,8 +43,8 @@ namespace TextMagicClient.Model
         /// <param name="date">User statement date. (required).</param>
         /// <param name="balance">balance (required).</param>
         /// <param name="delta">Balance change amount. (required).</param>
-        /// <param name="type">Type of statement (what you have been charged for): *   **sms** for sending SMS *   **number** for renewing a dedicated number *   **schedule** for scheduling text messages *   **topup** for adding credits to your account  (required).</param>
-        /// <param name="value">Value differs by **type**: *   for **sms**, it is the sent messages amount *   for **number**, it is a dedicated phone number *   for **schedule**, it is a scheduled messages amount *   for **top-up**, it is an invoice ID  (required).</param>
+        /// <param name="type">Type of statement (what you have been charged for): *   **sms** - for sending SMS *   **number** - for renewing a dedicated number; *   **schedule** - for scheduling text messages; *   **topup** - for adding credits to your account.  (required).</param>
+        /// <param name="value">Value differs by **type**: *   for **sms**, it is the sent messages amount; *   for **number**, it is a dedicated phone number; *   for **schedule**, it is a scheduled messages amount; *   for **top-up**, it is an invoice ID.  (required).</param>
         /// <param name="comment">Optional comment. (required).</param>
         public UserStatement(int? id = default(int?), int? userId = default(int?), DateTime? date = default(DateTime?), double? balance = default(double?), float? delta = default(float?), string type = default(string), string value = default(string), string comment = default(string))
         {
@@ -157,16 +157,16 @@ namespace TextMagicClient.Model
         public float? Delta { get; set; }
 
         /// <summary>
-        /// Type of statement (what you have been charged for): *   **sms** for sending SMS *   **number** for renewing a dedicated number *   **schedule** for scheduling text messages *   **topup** for adding credits to your account 
+        /// Type of statement (what you have been charged for): *   **sms** - for sending SMS *   **number** - for renewing a dedicated number; *   **schedule** - for scheduling text messages; *   **topup** - for adding credits to your account. 
         /// </summary>
-        /// <value>Type of statement (what you have been charged for): *   **sms** for sending SMS *   **number** for renewing a dedicated number *   **schedule** for scheduling text messages *   **topup** for adding credits to your account </value>
+        /// <value>Type of statement (what you have been charged for): *   **sms** - for sending SMS *   **number** - for renewing a dedicated number; *   **schedule** - for scheduling text messages; *   **topup** - for adding credits to your account. </value>
         [DataMember(Name="type", EmitDefaultValue=false)]
         public string Type { get; set; }
 
         /// <summary>
-        /// Value differs by **type**: *   for **sms**, it is the sent messages amount *   for **number**, it is a dedicated phone number *   for **schedule**, it is a scheduled messages amount *   for **top-up**, it is an invoice ID 
+        /// Value differs by **type**: *   for **sms**, it is the sent messages amount; *   for **number**, it is a dedicated phone number; *   for **schedule**, it is a scheduled messages amount; *   for **top-up**, it is an invoice ID. 
         /// </summary>
-        /// <value>Value differs by **type**: *   for **sms**, it is the sent messages amount *   for **number**, it is a dedicated phone number *   for **schedule**, it is a scheduled messages amount *   for **top-up**, it is an invoice ID </value>
+        /// <value>Value differs by **type**: *   for **sms**, it is the sent messages amount; *   for **number**, it is a dedicated phone number; *   for **schedule**, it is a scheduled messages amount; *   for **top-up**, it is an invoice ID. </value>
         [DataMember(Name="value", EmitDefaultValue=false)]
         public string Value { get; set; }
 

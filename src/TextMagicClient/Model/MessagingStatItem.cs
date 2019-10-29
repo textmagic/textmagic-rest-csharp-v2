@@ -39,14 +39,14 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="MessagingStatItem" /> class.
         /// </summary>
         /// <param name="replyRate">The number of incoming messages divided by the number of total messages. (required).</param>
-        /// <param name="date">Time interval start, empty if the **by** parameter was set to **off**.  (required).</param>
+        /// <param name="date">Time interval start: empty if the **by** parameter was set to **off**.  (required).</param>
         /// <param name="deliveryRate">Message delivery rate:the number of delivered messages divided by the number of total messages. (required).</param>
         /// <param name="costs">Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/#tag/User) currency.  (required).</param>
         /// <param name="messagesReceived">Total received messages count. (required).</param>
         /// <param name="messagesSentDelivered">Delivered messages count. As messages are retried for up to 48 hours, this value could change. (required).</param>
-        /// <param name="messagesSentAccepted">Messages accepted for delivery (in queue), but not yet delivered. (required).</param>
+        /// <param name="messagesSentAccepted">Messages accepted for delivery (in queue) but not yet delivered. (required).</param>
         /// <param name="messagesSentBuffered">Messages buffered by endpoint cell phone operators. (required).</param>
-        /// <param name="messagesSentFailed">Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient phone account is out of service. (required).</param>
+        /// <param name="messagesSentFailed">Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient&#39;s phone account is out of service. (required).</param>
         /// <param name="messagesSentRejected">Messages that were rejected: invalid Sender ID used (e.g. you cannot use the Sender ID or your own mobile number when sending to the United States and Canada.)  (required).</param>
         /// <param name="messagesSentParts">Total sent messages **parts** count. Note that this is not equal to the sent messages count, because one message could consist of 1 to 6 parts and users are charged per part, not per message. (required).</param>
         public MessagingStatItem(float? replyRate = default(float?), DateTime? date = default(DateTime?), float? deliveryRate = default(float?), float? costs = default(float?), int? messagesReceived = default(int?), int? messagesSentDelivered = default(int?), int? messagesSentAccepted = default(int?), int? messagesSentBuffered = default(int?), int? messagesSentFailed = default(int?), int? messagesSentRejected = default(int?), int? messagesSentParts = default(int?))
@@ -160,9 +160,9 @@ namespace TextMagicClient.Model
         public float? ReplyRate { get; set; }
 
         /// <summary>
-        /// Time interval start, empty if the **by** parameter was set to **off**. 
+        /// Time interval start: empty if the **by** parameter was set to **off**. 
         /// </summary>
-        /// <value>Time interval start, empty if the **by** parameter was set to **off**. </value>
+        /// <value>Time interval start: empty if the **by** parameter was set to **off**. </value>
         [DataMember(Name="date", EmitDefaultValue=false)]
         public DateTime? Date { get; set; }
 
@@ -195,9 +195,9 @@ namespace TextMagicClient.Model
         public int? MessagesSentDelivered { get; set; }
 
         /// <summary>
-        /// Messages accepted for delivery (in queue), but not yet delivered.
+        /// Messages accepted for delivery (in queue) but not yet delivered.
         /// </summary>
-        /// <value>Messages accepted for delivery (in queue), but not yet delivered.</value>
+        /// <value>Messages accepted for delivery (in queue) but not yet delivered.</value>
         [DataMember(Name="messagesSentAccepted", EmitDefaultValue=false)]
         public int? MessagesSentAccepted { get; set; }
 
@@ -209,9 +209,9 @@ namespace TextMagicClient.Model
         public int? MessagesSentBuffered { get; set; }
 
         /// <summary>
-        /// Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient phone account is out of service.
+        /// Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient&#39;s phone account is out of service.
         /// </summary>
-        /// <value>Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient phone account is out of service.</value>
+        /// <value>Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient&#39;s phone account is out of service.</value>
         [DataMember(Name="messagesSentFailed", EmitDefaultValue=false)]
         public int? MessagesSentFailed { get; set; }
 

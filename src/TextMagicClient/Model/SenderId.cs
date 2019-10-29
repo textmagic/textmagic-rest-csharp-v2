@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class SenderId :  IEquatable<SenderId>, IValidatableObject
     {
         /// <summary>
-        /// *   **P** for Pending. This Sender ID is being reviewed by our support team. *   **R** for Rejected. Our support team rejected your application for this Sender ID. *   **A** for Active. 
+        /// *   **P** for Pending - this Sender ID is being reviewed by our support team; *   **R** for Rejected - our support team rejected your application for this Sender ID; *   **A** for Active. 
         /// </summary>
-        /// <value>*   **P** for Pending. This Sender ID is being reviewed by our support team. *   **R** for Rejected. Our support team rejected your application for this Sender ID. *   **A** for Active. </value>
+        /// <value>*   **P** for Pending - this Sender ID is being reviewed by our support team; *   **R** for Rejected - our support team rejected your application for this Sender ID; *   **A** for Active. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StatusEnum
         {
@@ -58,9 +58,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// *   **P** for Pending. This Sender ID is being reviewed by our support team. *   **R** for Rejected. Our support team rejected your application for this Sender ID. *   **A** for Active. 
+        /// *   **P** for Pending - this Sender ID is being reviewed by our support team; *   **R** for Rejected - our support team rejected your application for this Sender ID; *   **A** for Active. 
         /// </summary>
-        /// <value>*   **P** for Pending. This Sender ID is being reviewed by our support team. *   **R** for Rejected. Our support team rejected your application for this Sender ID. *   **A** for Active. </value>
+        /// <value>*   **P** for Pending - this Sender ID is being reviewed by our support team; *   **R** for Rejected - our support team rejected your application for this Sender ID; *   **A** for Active. </value>
         [DataMember(Name="status", EmitDefaultValue=false)]
         public StatusEnum Status { get; set; }
         /// <summary>
@@ -72,10 +72,10 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="SenderId" /> class.
         /// </summary>
         /// <param name="id">Numeric sender ID. (required).</param>
-        /// <param name="displayTimeFormat">Format for representation of time.</param>
+        /// <param name="displayTimeFormat">Format for representation of time..</param>
         /// <param name="senderId">Alphanumeric ID. (required).</param>
         /// <param name="user">user (required).</param>
-        /// <param name="status">*   **P** for Pending. This Sender ID is being reviewed by our support team. *   **R** for Rejected. Our support team rejected your application for this Sender ID. *   **A** for Active.  (required).</param>
+        /// <param name="status">*   **P** for Pending - this Sender ID is being reviewed by our support team; *   **R** for Rejected - our support team rejected your application for this Sender ID; *   **A** for Active.  (required).</param>
         public SenderId(int? id = default(int?), string displayTimeFormat = default(string), string senderId = default(string), User user = default(User), StatusEnum status = default(StatusEnum))
         {
             // to ensure "id" is required (not null)
@@ -125,9 +125,9 @@ namespace TextMagicClient.Model
         public int? Id { get; set; }
 
         /// <summary>
-        /// Format for representation of time
+        /// Format for representation of time.
         /// </summary>
-        /// <value>Format for representation of time</value>
+        /// <value>Format for representation of time.</value>
         [DataMember(Name="displayTimeFormat", EmitDefaultValue=false)]
         public string DisplayTimeFormat { get; set; }
 

@@ -39,7 +39,7 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="SenderSettingsItem" /> class.
         /// </summary>
         /// <param name="country">The 2-letter ISO country code of the recipient&#39;s phone number.  (required).</param>
-        /// <param name="phone">Phone enabled for sending to specified country (required).</param>
+        /// <param name="phone">Phone enabled for sending to a specified country (required).</param>
         public SenderSettingsItem(string country = default(string), string phone = default(string))
         {
             // to ensure "country" is required (not null)
@@ -70,9 +70,9 @@ namespace TextMagicClient.Model
         public string Country { get; set; }
 
         /// <summary>
-        /// Phone enabled for sending to specified country
+        /// Phone enabled for sending to a specified country
         /// </summary>
-        /// <value>Phone enabled for sending to specified country</value>
+        /// <value>Phone enabled for sending to a specified country</value>
         [DataMember(Name="phone", EmitDefaultValue=false)]
         public string Phone { get; set; }
 

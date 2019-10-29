@@ -38,9 +38,9 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="RequestNewSubaccountTokenInputObject" /> class.
         /// </summary>
-        /// <param name="userId">Subaccount ID (required).</param>
-        /// <param name="password">Your account password (required).</param>
-        /// <param name="appName">Application name.</param>
+        /// <param name="userId">Sub-account ID. (required).</param>
+        /// <param name="password">Your account password. (required).</param>
+        /// <param name="appName">Application name..</param>
         public RequestNewSubaccountTokenInputObject(int? userId = default(int?), string password = default(string), string appName = default(string))
         {
             // to ensure "userId" is required (not null)
@@ -65,23 +65,23 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Subaccount ID
+        /// Sub-account ID.
         /// </summary>
-        /// <value>Subaccount ID</value>
+        /// <value>Sub-account ID.</value>
         [DataMember(Name="userId", EmitDefaultValue=false)]
         public int? UserId { get; set; }
 
         /// <summary>
-        /// Your account password
+        /// Your account password.
         /// </summary>
-        /// <value>Your account password</value>
+        /// <value>Your account password.</value>
         [DataMember(Name="password", EmitDefaultValue=false)]
         public string Password { get; set; }
 
         /// <summary>
-        /// Application name
+        /// Application name.
         /// </summary>
-        /// <value>Application name</value>
+        /// <value>Application name.</value>
         [DataMember(Name="appName", EmitDefaultValue=false)]
         public string AppName { get; set; }
 

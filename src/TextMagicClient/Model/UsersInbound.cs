@@ -66,7 +66,7 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="UsersInbound" /> class.
         /// </summary>
         /// <param name="id">Dedicated number ID. (required).</param>
-        /// <param name="displayTimeFormat">Format for representation of time.</param>
+        /// <param name="displayTimeFormat">Format for representation of time..</param>
         /// <param name="phone">Dedicated phone number..</param>
         /// <param name="user">user (required).</param>
         /// <param name="purchasedAt">Time when the dedicated number was purchased. (required).</param>
@@ -141,9 +141,9 @@ namespace TextMagicClient.Model
         public int? Id { get; set; }
 
         /// <summary>
-        /// Format for representation of time
+        /// Format for representation of time.
         /// </summary>
-        /// <value>Format for representation of time</value>
+        /// <value>Format for representation of time.</value>
         [DataMember(Name="displayTimeFormat", EmitDefaultValue=false)]
         public string DisplayTimeFormat { get; set; }
 
