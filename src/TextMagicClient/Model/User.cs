@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class User :  IEquatable<User>, IValidatableObject
     {
         /// <summary>
-        /// User&#39;s preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format. 
+        /// User&#39;s preferred format of time display: * *12h* - AM/PM format; * *24h* - 24-hour clock format. 
         /// </summary>
-        /// <value>User&#39;s preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format. </value>
+        /// <value>User&#39;s preferred format of time display: * *12h* - AM/PM format; * *24h* - 24-hour clock format. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum DisplayTimeFormatEnum
         {
@@ -52,9 +52,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// User&#39;s preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format. 
+        /// User&#39;s preferred format of time display: * *12h* - AM/PM format; * *24h* - 24-hour clock format. 
         /// </summary>
-        /// <value>User&#39;s preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format. </value>
+        /// <value>User&#39;s preferred format of time display: * *12h* - AM/PM format; * *24h* - 24-hour clock format. </value>
         [DataMember(Name="displayTimeFormat", EmitDefaultValue=false)]
         public DisplayTimeFormatEnum? DisplayTimeFormat { get; set; }
         /// <summary>
@@ -85,9 +85,9 @@ namespace TextMagicClient.Model
         [DataMember(Name="status", EmitDefaultValue=false)]
         public StatusEnum Status { get; set; }
         /// <summary>
-        /// Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User 
+        /// Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User. 
         /// </summary>
-        /// <value>Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User </value>
+        /// <value>Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum SubaccountTypeEnum
         {
@@ -112,9 +112,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User 
+        /// Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User. 
         /// </summary>
-        /// <value>Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User </value>
+        /// <value>Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User. </value>
         [DataMember(Name="subaccountType", EmitDefaultValue=false)]
         public SubaccountTypeEnum SubaccountType { get; set; }
         /// <summary>
@@ -126,19 +126,19 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="User" /> class.
         /// </summary>
         /// <param name="id">User ID. (required).</param>
-        /// <param name="displayTimeFormat">User&#39;s preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format. .</param>
+        /// <param name="displayTimeFormat">User&#39;s preferred format of time display: * *12h* - AM/PM format; * *24h* - 24-hour clock format. .</param>
         /// <param name="username">Username. (required).</param>
         /// <param name="firstName">Account first name. (required).</param>
         /// <param name="lastName">Account last name. (required).</param>
         /// <param name="email">User email address. (required).</param>
         /// <param name="status">Current account status: * **A** for Active; * **T** for Trial.  (required).</param>
         /// <param name="balance">Account balance (in account currency). (required).</param>
-        /// <param name="phone">User&#x60;s phone number. (required).</param>
+        /// <param name="phone">User&#39;s phone number. (required).</param>
         /// <param name="company">Account company name. (required).</param>
         /// <param name="currency">currency (required).</param>
         /// <param name="country">country (required).</param>
         /// <param name="timezone">timezone (required).</param>
-        /// <param name="subaccountType">Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User  (required).</param>
+        /// <param name="subaccountType">Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User.  (required).</param>
         /// <param name="emailAccepted">Does the account have a confirmed email? (required).</param>
         /// <param name="phoneAccepted">Does the account have a confirmed phone number? (required).</param>
         /// <param name="avatar">avatar (required).</param>
@@ -336,9 +336,9 @@ namespace TextMagicClient.Model
         public decimal? Balance { get; set; }
 
         /// <summary>
-        /// User&#x60;s phone number.
+        /// User&#39;s phone number.
         /// </summary>
-        /// <value>User&#x60;s phone number.</value>
+        /// <value>User&#39;s phone number.</value>
         [DataMember(Name="phone", EmitDefaultValue=false)]
         public string Phone { get; set; }
 

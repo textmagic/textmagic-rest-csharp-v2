@@ -80,9 +80,9 @@ namespace TextMagicClient.Model
         /// <param name="id">id (required).</param>
         /// <param name="direction">Message type: inbound or outbound.  (required).</param>
         /// <param name="sender">Sender phone number. (required).</param>
-        /// <param name="messageTime">Time when message arrived at TextMagic. (required).</param>
+        /// <param name="messageTime">Time when  the message arrived at TextMagic. (required).</param>
         /// <param name="text">Message text. (required).</param>
-        /// <param name="receiver">Receiver phone number. (required).</param>
+        /// <param name="receiver">Receiver&#39;s phone number. (required).</param>
         /// <param name="status">Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details. (required).</param>
         /// <param name="firstName">Contact first name. (required).</param>
         /// <param name="lastName">Contact last name. (required).</param>
@@ -196,9 +196,9 @@ namespace TextMagicClient.Model
         public string Sender { get; set; }
 
         /// <summary>
-        /// Time when message arrived at TextMagic.
+        /// Time when  the message arrived at TextMagic.
         /// </summary>
-        /// <value>Time when message arrived at TextMagic.</value>
+        /// <value>Time when  the message arrived at TextMagic.</value>
         [DataMember(Name="messageTime", EmitDefaultValue=false)]
         public DateTime? MessageTime { get; set; }
 
@@ -210,9 +210,9 @@ namespace TextMagicClient.Model
         public string Text { get; set; }
 
         /// <summary>
-        /// Receiver phone number.
+        /// Receiver&#39;s phone number.
         /// </summary>
-        /// <value>Receiver phone number.</value>
+        /// <value>Receiver&#39;s phone number.</value>
         [DataMember(Name="receiver", EmitDefaultValue=false)]
         public string Receiver { get; set; }
 

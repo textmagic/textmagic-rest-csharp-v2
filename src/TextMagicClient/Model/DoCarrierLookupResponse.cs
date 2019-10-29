@@ -71,7 +71,7 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="DoCarrierLookupResponse" /> class.
         /// </summary>
-        /// <param name="cost">Cost to check one number is constant – 0.04 in your account currency. (required).</param>
+        /// <param name="cost">Cost to check that one number is constant – 0.04 in your account currency. (required).</param>
         /// <param name="country">Phone number country..</param>
         /// <param name="local">Phone number in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). (required).</param>
         /// <param name="type">Phone number type. (required).</param>
@@ -138,9 +138,9 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Cost to check one number is constant – 0.04 in your account currency.
+        /// Cost to check that one number is constant – 0.04 in your account currency.
         /// </summary>
-        /// <value>Cost to check one number is constant – 0.04 in your account currency.</value>
+        /// <value>Cost to check that one number is constant – 0.04 in your account currency.</value>
         [DataMember(Name="cost", EmitDefaultValue=false)]
         public decimal? Cost { get; set; }
 

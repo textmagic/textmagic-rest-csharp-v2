@@ -105,8 +105,8 @@ namespace TextMagicClient.Model
         /// <param name="country">country (required).</param>
         /// <param name="timezone">timezone (required).</param>
         /// <param name="subaccountType">Type of account: *   **A** for Administrator sub-account *   **U** for Regular User  (required).</param>
-        /// <param name="emailAccepted">Is account has confirmed Email. (required).</param>
-        /// <param name="phoneAccepted">Is account has confirmed Phone number. (required).</param>
+        /// <param name="emailAccepted">Does the account have a confirmed Email?. (required).</param>
+        /// <param name="phoneAccepted">Does the account have a confirmed Phone Number?. (required).</param>
         /// <param name="avatar">avatar (required).</param>
         /// <param name="token">Access token of account. (required).</param>
         public SubaccountWithToken(int? id = default(int?), string username = default(string), string firstName = default(string), string lastName = default(string), string email = default(string), StatusEnum status = default(StatusEnum), double? balance = default(double?), string phone = default(string), string company = default(string), Currency currency = default(Currency), Country country = default(Country), Timezone timezone = default(Timezone), SubaccountTypeEnum subaccountType = default(SubaccountTypeEnum), bool? emailAccepted = default(bool?), bool? phoneAccepted = default(bool?), UserImage avatar = default(UserImage), string token = default(string))
@@ -343,16 +343,16 @@ namespace TextMagicClient.Model
 
 
         /// <summary>
-        /// Is account has confirmed Email.
+        /// Does the account have a confirmed Email?.
         /// </summary>
-        /// <value>Is account has confirmed Email.</value>
+        /// <value>Does the account have a confirmed Email?.</value>
         [DataMember(Name="emailAccepted", EmitDefaultValue=false)]
         public bool? EmailAccepted { get; set; }
 
         /// <summary>
-        /// Is account has confirmed Phone number.
+        /// Does the account have a confirmed Phone Number?.
         /// </summary>
-        /// <value>Is account has confirmed Phone number.</value>
+        /// <value>Does the account have a confirmed Phone Number?.</value>
         [DataMember(Name="phoneAccepted", EmitDefaultValue=false)]
         public bool? PhoneAccepted { get; set; }
 

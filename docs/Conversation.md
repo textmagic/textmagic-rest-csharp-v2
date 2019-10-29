@@ -6,9 +6,9 @@ Name | Type | Description | Notes
 **Id** | **int?** |  | 
 **Direction** | **string** | Message type: inbound or outbound.  | 
 **Sender** | **string** | Sender phone number. | 
-**MessageTime** | **DateTime?** | Time when message arrived at TextMagic. | 
+**MessageTime** | **DateTime?** | Time when  the message arrived at TextMagic. | 
 **Text** | **string** | Message text. | 
-**Receiver** | **string** | Receiver phone number. | 
+**Receiver** | **string** | Receiver&#39;s phone number. | 
 **Status** | **string** | Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details. | 
 **FirstName** | **string** | Contact first name. | 
 **LastName** | **string** | Contact last name. | 

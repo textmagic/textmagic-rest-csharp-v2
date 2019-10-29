@@ -1009,17 +1009,17 @@ namespace TextMagicClient.Test
         }
         
         /// <summary>
-        /// Test GetFavourites
+        /// Test GetFavorites
         /// </summary>
         [Test]
-        public void GetFavouritesTest()
+        public void GetFavoritesTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             //int? page = null;
             //int? limit = null;
             //string query = null;
-            //var response = instance.GetFavourites(page, limit, query);
-            //Assert.IsInstanceOf<GetFavouritesPaginatedResponse> (response, "response is GetFavouritesPaginatedResponse");
+            //var response = instance.GetFavorites(page, limit, query);
+            //Assert.IsInstanceOf<GetFavoritesPaginatedResponse> (response, "response is GetFavoritesPaginatedResponse");
         }
         
         /// <summary>

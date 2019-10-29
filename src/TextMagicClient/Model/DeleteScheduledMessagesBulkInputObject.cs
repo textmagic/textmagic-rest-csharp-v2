@@ -34,8 +34,8 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="DeleteScheduledMessagesBulkInputObject" /> class.
         /// </summary>
         /// <param name="ids">Entity ID(s), separated by comma.</param>
-        /// <param name="all">Default is 0 (false). If set to 1 all the entities will be removed..</param>
-        /// <param name="status">Default is empty string (false). If set then all entities with specified status will be affected. (default to &quot;&quot;).</param>
+        /// <param name="all">Default is 0 (false). If set to 1, all the entities will be removed..</param>
+        /// <param name="status">Default is an empty string (false). If set, all entities with specified status will be affected. (default to &quot;&quot;).</param>
         public DeleteScheduledMessagesBulkInputObject(string ids = default(string), int? all = default(int?), string status = "")
         {
             this.Ids = ids;
@@ -59,16 +59,16 @@ namespace TextMagicClient.Model
         public string Ids { get; set; }
 
         /// <summary>
-        /// Default is 0 (false). If set to 1 all the entities will be removed.
+        /// Default is 0 (false). If set to 1, all the entities will be removed.
         /// </summary>
-        /// <value>Default is 0 (false). If set to 1 all the entities will be removed.</value>
+        /// <value>Default is 0 (false). If set to 1, all the entities will be removed.</value>
         [DataMember(Name="all", EmitDefaultValue=false)]
         public int? All { get; set; }
 
         /// <summary>
-        /// Default is empty string (false). If set then all entities with specified status will be affected.
+        /// Default is an empty string (false). If set, all entities with specified status will be affected.
         /// </summary>
-        /// <value>Default is empty string (false). If set then all entities with specified status will be affected.</value>
+        /// <value>Default is an empty string (false). If set, all entities with specified status will be affected.</value>
         [DataMember(Name="status", EmitDefaultValue=false)]
         public string Status { get; set; }
 

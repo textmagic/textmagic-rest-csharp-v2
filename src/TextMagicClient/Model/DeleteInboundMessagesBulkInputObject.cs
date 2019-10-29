@@ -34,7 +34,7 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="DeleteInboundMessagesBulkInputObject" /> class.
         /// </summary>
         /// <param name="ids">Entity ID(s), separated by comma.</param>
-        /// <param name="all">Default is 0 (false). If set to 1 all the entities will be removed..</param>
+        /// <param name="all">Default is 0 (false). If set to 1, all the entities will be removed..</param>
         public DeleteInboundMessagesBulkInputObject(string ids = default(string), int? all = default(int?))
         {
             this.Ids = ids;
@@ -49,9 +49,9 @@ namespace TextMagicClient.Model
         public string Ids { get; set; }
 
         /// <summary>
-        /// Default is 0 (false). If set to 1 all the entities will be removed.
+        /// Default is 0 (false). If set to 1, all the entities will be removed.
         /// </summary>
-        /// <value>Default is 0 (false). If set to 1 all the entities will be removed.</value>
+        /// <value>Default is 0 (false). If set to 1, all the entities will be removed.</value>
         [DataMember(Name="all", EmitDefaultValue=false)]
         public int? All { get; set; }
 

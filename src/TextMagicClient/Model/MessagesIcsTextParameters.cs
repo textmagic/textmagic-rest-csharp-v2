@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class MessagesIcsTextParameters :  IEquatable<MessagesIcsTextParameters>, IValidatableObject
     {
         /// <summary>
-        /// Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS 
+        /// Message charset. Could be: * **ISO-8859-1** – for plaintext SMS; * **UTF-16BE** – for Unicode SMS. 
         /// </summary>
-        /// <value>Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS </value>
+        /// <value>Message charset. Could be: * **ISO-8859-1** – for plaintext SMS; * **UTF-16BE** – for Unicode SMS. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum EncodingEnum
         {
@@ -52,9 +52,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS 
+        /// Message charset. Could be: * **ISO-8859-1** – for plaintext SMS; * **UTF-16BE** – for Unicode SMS. 
         /// </summary>
-        /// <value>Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS </value>
+        /// <value>Message charset. Could be: * **ISO-8859-1** – for plaintext SMS; * **UTF-16BE** – for Unicode SMS. </value>
         [DataMember(Name="encoding", EmitDefaultValue=false)]
         public EncodingEnum Encoding { get; set; }
         /// <summary>
@@ -65,12 +65,12 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="MessagesIcsTextParameters" /> class.
         /// </summary>
-        /// <param name="cost">Cost to check one number is constant – 0.04 in your account currency. (required).</param>
+        /// <param name="cost">Cost to check that one number is constant – 0.04 in your account currency. (required).</param>
         /// <param name="parts">Message parts (multiples of 160 characters) count. (required).</param>
         /// <param name="chars">Characters count. (required).</param>
-        /// <param name="encoding">Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS  (required).</param>
+        /// <param name="encoding">Message charset. Could be: * **ISO-8859-1** – for plaintext SMS; * **UTF-16BE** – for Unicode SMS.  (required).</param>
         /// <param name="countries">countries (required).</param>
-        /// <param name="charsetLabel">Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages  (required).</param>
+        /// <param name="charsetLabel">Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages.  (required).</param>
         public MessagesIcsTextParameters(decimal? cost = default(decimal?), int? parts = default(int?), int? chars = default(int?), EncodingEnum encoding = default(EncodingEnum), List<string> countries = default(List<string>), string charsetLabel = default(string))
         {
             // to ensure "cost" is required (not null)
@@ -130,9 +130,9 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Cost to check one number is constant – 0.04 in your account currency.
+        /// Cost to check that one number is constant – 0.04 in your account currency.
         /// </summary>
-        /// <value>Cost to check one number is constant – 0.04 in your account currency.</value>
+        /// <value>Cost to check that one number is constant – 0.04 in your account currency.</value>
         [DataMember(Name="cost", EmitDefaultValue=false)]
         public decimal? Cost { get; set; }
 
@@ -158,9 +158,9 @@ namespace TextMagicClient.Model
         public List<string> Countries { get; set; }
 
         /// <summary>
-        /// Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages 
+        /// Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages. 
         /// </summary>
-        /// <value>Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages </value>
+        /// <value>Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages. </value>
         [DataMember(Name="charsetLabel", EmitDefaultValue=false)]
         public string CharsetLabel { get; set; }
 

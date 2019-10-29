@@ -79,7 +79,7 @@ Method | HTTP request | Description
 [**GetCustomField**](TextMagicApi.md#getcustomfield) | **GET** /api/v2/customfields/{id} | Get the details of a specific custom field
 [**GetCustomFields**](TextMagicApi.md#getcustomfields) | **GET** /api/v2/customfields | Get all custom fields
 [**GetDedicatedNumber**](TextMagicApi.md#getdedicatednumber) | **GET** /api/v2/numbers/{id} | Get the details of a specific dedicated number
-[**GetFavourites**](TextMagicApi.md#getfavourites) | **GET** /api/v2/contacts/favorite | Get favorite contacts and lists
+[**GetFavorites**](TextMagicApi.md#getfavorites) | **GET** /api/v2/contacts/favorite | Get favorite contacts and lists
 [**GetInboundMessage**](TextMagicApi.md#getinboundmessage) | **GET** /api/v2/replies/{id} | Get a single inbound message
 [**GetInboundMessagesNotificationSettings**](TextMagicApi.md#getinboundmessagesnotificationsettings) | **GET** /api/v2/user/notification/inbound | Get inbound messages notification settings
 [**GetInvoices**](TextMagicApi.md#getinvoices) | **GET** /api/v2/invoices | Get all invoices
@@ -377,7 +377,7 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var verifyId = "123e4567-e89b-12d3-a456-426655440000";  // string | the verifyId that you received in Step 1.
+            var verifyId = "123e4567-e89b-12d3-a456-426655440000";  // string | The verifyId that you received in Step 1.
 
             try
             {
@@ -397,7 +397,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **verifyId** | **string**| the verifyId that you received in Step 1. | 
+ **verifyId** | **string**| The verifyId that you received in Step 1. | 
 
 ### Return type
 
@@ -1866,7 +1866,7 @@ void (empty response body)
 
 Delete a single inbound message
 
-> Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+> Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
 
 ### Example
 ```csharp
@@ -1930,7 +1930,7 @@ void (empty response body)
 
 Delete inbound messages (bulk)
 
-> Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+> Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
 
 ### Example
 ```csharp
@@ -3033,9 +3033,9 @@ namespace Example
             var status = "a";  // string | Fetch only (a)ctive, (c)losed or (d)eleted chats (optional) 
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var orderBy = orderBy_example;  // string | Order results by some field. Default is id (optional)  (default to id)
-            var voice = 56;  // int? | Fetch results with voice calls (optional)  (default to 0)
-            var flat = 1;  // int? | Should additional contact info be included (optional)  (default to 0)
+            var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
+            var voice = 56;  // int? | Fetch results with voice calls. (optional)  (default to 0)
+            var flat = 1;  // int? | Should additional contact info be included? (optional)  (default to 0)
 
             try
             {
@@ -3059,9 +3059,9 @@ Name | Type | Description  | Notes
  **status** | **string**| Fetch only (a)ctive, (c)losed or (d)eleted chats | [optional] 
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **orderBy** | **string**| Order results by some field. Default is id | [optional] [default to id]
- **voice** | **int?**| Fetch results with voice calls | [optional] [default to 0]
- **flat** | **int?**| Should additional contact info be included | [optional] [default to 0]
+ **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
+ **voice** | **int?**| Fetch results with voice calls. | [optional] [default to 0]
+ **flat** | **int?**| Should additional contact info be included? | [optional] [default to 0]
 
 ### Return type
 
@@ -3105,7 +3105,7 @@ namespace Example
             var apiInstance = new TextMagicApi();
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var orderBy = orderBy_example;  // string | Order results by some field. Default is id (optional)  (default to id)
+            var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
 
             try
@@ -3129,7 +3129,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **orderBy** | **string**| Order results by some field. Default is id | [optional] [default to id]
+ **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
 
 ### Return type
@@ -3310,7 +3310,7 @@ namespace Example
             var apiInstance = new TextMagicApi();
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var status = status_example;  // string | Fetch schedules with the specific status: a - actual, c - completed, x - all (optional)  (default to x)
+            var status = status_example;  // string | Fetch schedules with a specific status: a - actual, c - completed, x - all. (optional)  (default to x)
             var orderBy = orderBy_example;  // string | Order results by some field. Default is id (optional)  (default to id)
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
 
@@ -3335,7 +3335,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **status** | **string**| Fetch schedules with the specific status: a - actual, c - completed, x - all | [optional] [default to x]
+ **status** | **string**| Fetch schedules with a specific status: a - actual, c - completed, x - all. | [optional] [default to x]
  **orderBy** | **string**| Order results by some field. Default is id | [optional] [default to id]
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
 
@@ -4021,10 +4021,10 @@ namespace Example
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
             var query = query_example;  // string | Find messages by specified search query (optional) 
-            var start = 56;  // int? | Return messages since specified timestamp only (optional) 
-            var end = 56;  // int? | Return messages up to specified timestamp only (optional) 
+            var start = 56;  // int? | Return messages since specified timestamp only. (optional) 
+            var end = 56;  // int? | Return messages up to specified timestamp only. (optional) 
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
-            var voice = 56;  // int? | Fetch results with voice calls (optional)  (default to 0)
+            var voice = 56;  // int? | Fetch results with voice calls. (optional)  (default to 0)
 
             try
             {
@@ -4049,10 +4049,10 @@ Name | Type | Description  | Notes
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
  **query** | **string**| Find messages by specified search query | [optional] 
- **start** | **int?**| Return messages since specified timestamp only | [optional] 
- **end** | **int?**| Return messages up to specified timestamp only | [optional] 
+ **start** | **int?**| Return messages since specified timestamp only. | [optional] 
+ **end** | **int?**| Return messages up to specified timestamp only. | [optional] 
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
- **voice** | **int?**| Fetch results with voice calls | [optional] [default to 0]
+ **voice** | **int?**| Fetch results with voice calls. | [optional] [default to 0]
 
 ### Return type
 
@@ -4975,9 +4975,9 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getfavourites"></a>
-# **GetFavourites**
-> GetFavouritesPaginatedResponse GetFavourites (int? page = null, int? limit = null, string query = null)
+<a name="getfavorites"></a>
+# **GetFavorites**
+> GetFavoritesPaginatedResponse GetFavorites (int? page = null, int? limit = null, string query = null)
 
 Get favorite contacts and lists
 
@@ -4991,7 +4991,7 @@ using TextMagicClient.Model;
 
 namespace Example
 {
-    public class GetFavouritesExample
+    public class GetFavoritesExample
     {
         public void main()
         {
@@ -5007,12 +5007,12 @@ namespace Example
             try
             {
                 // Get favorite contacts and lists
-                GetFavouritesPaginatedResponse result = apiInstance.GetFavourites(page, limit, query);
+                GetFavoritesPaginatedResponse result = apiInstance.GetFavorites(page, limit, query);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling TextMagicApi.GetFavourites: " + e.Message );
+                Debug.Print("Exception when calling TextMagicApi.GetFavorites: " + e.Message );
             }
         }
     }
@@ -5029,7 +5029,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetFavouritesPaginatedResponse**](GetFavouritesPaginatedResponse.md)
+[**GetFavoritesPaginatedResponse**](GetFavoritesPaginatedResponse.md)
 
 ### Authorization
 
@@ -7879,7 +7879,7 @@ namespace Example
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
             var query = query_example;  // string | Find chats by specified search query (optional) 
-            var orderBy = orderBy_example;  // string | Order results by some field. Default is id (optional)  (default to id)
+            var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
 
             try
             {
@@ -7903,7 +7903,7 @@ Name | Type | Description  | Notes
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
  **query** | **string**| Find chats by specified search query | [optional] 
- **orderBy** | **string**| Order results by some field. Default is id | [optional] [default to id]
+ **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
 
 ### Return type
 
@@ -7951,7 +7951,7 @@ namespace Example
             var ids = ids_example;  // string | Find contact by ID(s) (optional) 
             var listId = 56;  // int? | Find contact by List ID (optional) 
             var includeBlocked = 56;  // int? | Should blocked contacts to be included (optional) 
-            var query = query_example;  // string | Find contacts by specified search query (optional) 
+            var query = query_example;  // string | Find contacts by specified search query. (optional) 
             var local = 56;  // int? | Treat phone number passed in 'query' field as local. Default is 0 (optional)  (default to 0)
             var country = country_example;  // string | 2-letter ISO country code for local phone numbers, used when 'local' is set to true. Default is account country (optional) 
             var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
@@ -7982,7 +7982,7 @@ Name | Type | Description  | Notes
  **ids** | **string**| Find contact by ID(s) | [optional] 
  **listId** | **int?**| Find contact by List ID | [optional] 
  **includeBlocked** | **int?**| Should blocked contacts to be included | [optional] 
- **query** | **string**| Find contacts by specified search query | [optional] 
+ **query** | **string**| Find contacts by specified search query. | [optional] 
  **local** | **int?**| Treat phone number passed in &#39;query&#39; field as local. Default is 0 | [optional] [default to 0]
  **country** | **string**| 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country | [optional] 
  **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
@@ -8034,7 +8034,7 @@ namespace Example
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
             var ids = ids_example;  // string | Find message by ID(s). (optional) 
             var query = query_example;  // string | Find recipients by specified search query. (optional) 
-            var orderBy = orderBy_example;  // string | Order results by some field. Default is id (optional)  (default to id)
+            var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
             var expand = 56;  // int? | Expand by adding firstName, lastName and contactId. (optional)  (default to 0)
 
@@ -8061,7 +8061,7 @@ Name | Type | Description  | Notes
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
  **ids** | **string**| Find message by ID(s). | [optional] 
  **query** | **string**| Find recipients by specified search query. | [optional] 
- **orderBy** | **string**| Order results by some field. Default is id | [optional] [default to id]
+ **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
  **expand** | **int?**| Expand by adding firstName, lastName and contactId. | [optional] [default to 0]
 
@@ -8265,8 +8265,8 @@ namespace Example
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
             var query = query_example;  // string | Find messages by specified search query (optional) 
             var ids = ids_example;  // string | Find schedules by ID(s) (optional) 
-            var status = status_example;  // string | Fetch schedules with the specific status: a - actual, c - completed, x - all (optional)  (default to x)
-            var orderBy = orderBy_example;  // string | Order results by some field. Default is id (optional)  (default to id)
+            var status = status_example;  // string | Fetch schedules with a specific status: a - actual, c - completed, x - all. (optional)  (default to x)
+            var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
 
             try
@@ -8292,8 +8292,8 @@ Name | Type | Description  | Notes
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
  **query** | **string**| Find messages by specified search query | [optional] 
  **ids** | **string**| Find schedules by ID(s) | [optional] 
- **status** | **string**| Fetch schedules with the specific status: a - actual, c - completed, x - all | [optional] [default to x]
- **orderBy** | **string**| Order results by some field. Default is id | [optional] [default to id]
+ **status** | **string**| Fetch schedules with a specific status: a - actual, c - completed, x - all. | [optional] [default to x]
+ **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
 
 ### Return type
@@ -8455,7 +8455,7 @@ Name | Type | Description  | Notes
 
 Step 1: Send a verification code 
 
-Sends verification code to specified phone number.
+Sends a verification code to a specified phone number.
 
 ### Example
 ```csharp

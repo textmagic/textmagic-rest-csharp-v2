@@ -38,7 +38,7 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CheckPhoneVerificationCodeInputObject" /> class.
         /// </summary>
-        /// <param name="code">Verification code that was received by the user and entered into the form field. (required).</param>
+        /// <param name="code">Verification code received by the user and entered into the form field. (required).</param>
         /// <param name="verifyId">VerifyId from Step 1 to match both requests together. (required).</param>
         public CheckPhoneVerificationCodeInputObject(int? code = default(int?), string verifyId = default(string))
         {
@@ -63,9 +63,9 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Verification code that was received by the user and entered into the form field.
+        /// Verification code received by the user and entered into the form field.
         /// </summary>
-        /// <value>Verification code that was received by the user and entered into the form field.</value>
+        /// <value>Verification code received by the user and entered into the form field.</value>
         [DataMember(Name="code", EmitDefaultValue=false)]
         public int? Code { get; set; }
 

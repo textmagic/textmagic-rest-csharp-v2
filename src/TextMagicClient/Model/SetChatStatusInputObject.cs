@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class SetChatStatusInputObject :  IEquatable<SetChatStatusInputObject>, IValidatableObject
     {
         /// <summary>
-        /// Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted 
+        /// Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. 
         /// </summary>
-        /// <value>Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted </value>
+        /// <value>Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StatusEnum
         {
@@ -58,9 +58,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted 
+        /// Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. 
         /// </summary>
-        /// <value>Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted </value>
+        /// <value>Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. </value>
         [DataMember(Name="status", EmitDefaultValue=false)]
         public StatusEnum Status { get; set; }
         /// <summary>
@@ -72,7 +72,7 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="SetChatStatusInputObject" /> class.
         /// </summary>
         /// <param name="id">Chat ID. (required).</param>
-        /// <param name="status">Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted  (required).</param>
+        /// <param name="status">Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted.  (required).</param>
         public SetChatStatusInputObject(int? id = default(int?), StatusEnum status = default(StatusEnum))
         {
             // to ensure "id" is required (not null)

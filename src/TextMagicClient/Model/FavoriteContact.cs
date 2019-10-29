@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class FavoriteContact :  IEquatable<FavoriteContact>, IValidatableObject
     {
         /// <summary>
-        /// Entity type which should be marked as **favourite**.
+        /// Entity type which should be marked as **favorite**.
         /// </summary>
-        /// <value>Entity type which should be marked as **favourite**.</value>
+        /// <value>Entity type which should be marked as **favorite**.</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum EntityTypeEnum
         {
@@ -52,9 +52,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Entity type which should be marked as **favourite**.
+        /// Entity type which should be marked as **favorite**.
         /// </summary>
-        /// <value>Entity type which should be marked as **favourite**.</value>
+        /// <value>Entity type which should be marked as **favorite**.</value>
         [DataMember(Name="entityType", EmitDefaultValue=false)]
         public EntityTypeEnum EntityType { get; set; }
         /// <summary>
@@ -66,7 +66,7 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="FavoriteContact" /> class.
         /// </summary>
         /// <param name="entityId">List or Contact ID. (required).</param>
-        /// <param name="entityType">Entity type which should be marked as **favourite**. (required).</param>
+        /// <param name="entityType">Entity type which should be marked as **favorite**. (required).</param>
         /// <param name="primaryLabel">Contact first name/last name if entityType is **contact**, List name if entity type is **list**. (required).</param>
         /// <param name="secondaryLabel">Phone number if entityType is **contact**, List contacts number if entity type is **list**. (required).</param>
         /// <param name="tertiaryLabel">Contact country if entityType is **contact** else null. (required).</param>

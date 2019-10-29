@@ -88,11 +88,11 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="MessagesIcs" /> class.
         /// </summary>
         /// <param name="id">Schedule ID. (required).</param>
-        /// <param name="nextSend">Next send date in [ISO 8601](https://en.wikipedia.org/?title&#x3D;ISO_8601) format.  (required).</param>
+        /// <param name="nextSend">The next send date in [ISO 8601](https://en.wikipedia.org/?title&#x3D;ISO_8601) format.  (required).</param>
         /// <param name="rrule">[iCal RRULE](http://www.kanzaki.com/docs/ical/rrule.html) string.  (required).</param>
         /// <param name="session">session (required).</param>
-        /// <param name="lastSent">Date and time when last message has been sent. (required).</param>
-        /// <param name="contactName">Aggregated contact information. If the message scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount contacts will be returned. (required).</param>
+        /// <param name="lastSent">The date and time when the last message was sent. (required).</param>
+        /// <param name="contactName">Aggregated contact information. If the message was scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount of contacts will be returned. (required).</param>
         /// <param name="parameters">parameters (required).</param>
         /// <param name="type">type (required).</param>
         /// <param name="summary">A human-readable summary of the sending schedule. (required).</param>
@@ -101,7 +101,7 @@ namespace TextMagicClient.Model
         /// <param name="lastOccurrence">Last occurence date (could be &#x60;null&#x60; if the schedule is endless). (required).</param>
         /// <param name="recipientsCount">Amount of actual recipients. (required).</param>
         /// <param name="timezone">User-friendly timezone name (with spaces replaced by underscores). (required).</param>
-        /// <param name="completed">Indicates that schedling has been completed. (required).</param>
+        /// <param name="completed">Indicates that scheduling has been completed. (required).</param>
         /// <param name="avatar">A relative link to the contact avatar. (required).</param>
         /// <param name="createdAt">Scheduling creation time. (required).</param>
         public MessagesIcs(int? id = default(int?), DateTime? nextSend = default(DateTime?), string rrule = default(string), MessageSession session = default(MessageSession), DateTime? lastSent = default(DateTime?), string contactName = default(string), MessagesIcsParameters parameters = default(MessagesIcsParameters), TypeEnum type = default(TypeEnum), string summary = default(string), MessagesIcsTextParameters textParameters = default(MessagesIcsTextParameters), DateTime? firstOccurrence = default(DateTime?), DateTime? lastOccurrence = default(DateTime?), int? recipientsCount = default(int?), string timezone = default(string), bool? completed = default(bool?), string avatar = default(string), DateTime? createdAt = default(DateTime?))
@@ -269,9 +269,9 @@ namespace TextMagicClient.Model
         public int? Id { get; set; }
 
         /// <summary>
-        /// Next send date in [ISO 8601](https://en.wikipedia.org/?title&#x3D;ISO_8601) format. 
+        /// The next send date in [ISO 8601](https://en.wikipedia.org/?title&#x3D;ISO_8601) format. 
         /// </summary>
-        /// <value>Next send date in [ISO 8601](https://en.wikipedia.org/?title&#x3D;ISO_8601) format. </value>
+        /// <value>The next send date in [ISO 8601](https://en.wikipedia.org/?title&#x3D;ISO_8601) format. </value>
         [DataMember(Name="nextSend", EmitDefaultValue=false)]
         public DateTime? NextSend { get; set; }
 
@@ -289,16 +289,16 @@ namespace TextMagicClient.Model
         public MessageSession Session { get; set; }
 
         /// <summary>
-        /// Date and time when last message has been sent.
+        /// The date and time when the last message was sent.
         /// </summary>
-        /// <value>Date and time when last message has been sent.</value>
+        /// <value>The date and time when the last message was sent.</value>
         [DataMember(Name="lastSent", EmitDefaultValue=false)]
         public DateTime? LastSent { get; set; }
 
         /// <summary>
-        /// Aggregated contact information. If the message scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount contacts will be returned.
+        /// Aggregated contact information. If the message was scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount of contacts will be returned.
         /// </summary>
-        /// <value>Aggregated contact information. If the message scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount contacts will be returned.</value>
+        /// <value>Aggregated contact information. If the message was scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount of contacts will be returned.</value>
         [DataMember(Name="contactName", EmitDefaultValue=false)]
         public string ContactName { get; set; }
 
@@ -351,9 +351,9 @@ namespace TextMagicClient.Model
         public string Timezone { get; set; }
 
         /// <summary>
-        /// Indicates that schedling has been completed.
+        /// Indicates that scheduling has been completed.
         /// </summary>
-        /// <value>Indicates that schedling has been completed.</value>
+        /// <value>Indicates that scheduling has been completed.</value>
         [DataMember(Name="completed", EmitDefaultValue=false)]
         public bool? Completed { get; set; }
 

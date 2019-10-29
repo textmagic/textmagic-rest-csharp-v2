@@ -36,7 +36,7 @@ namespace TextMagicClient.Model
         /// <param name="inboundIds">Inbound message IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false)..</param>
         /// <param name="sentIds">Sent message IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false)..</param>
         /// <param name="callsIds">Calls IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false)..</param>
-        /// <param name="all">Default is 0 (false). If set to 1, all entities will be removed..</param>
+        /// <param name="all">Default is 0 (false). If set to 1, all the entities will be removed..</param>
         public DeleteChatMessagesBulkInputObject(string inboundIds = default(string), string sentIds = default(string), string callsIds = default(string), bool? all = default(bool?))
         {
             this.InboundIds = inboundIds;
@@ -67,9 +67,9 @@ namespace TextMagicClient.Model
         public string CallsIds { get; set; }
 
         /// <summary>
-        /// Default is 0 (false). If set to 1, all entities will be removed.
+        /// Default is 0 (false). If set to 1, all the entities will be removed.
         /// </summary>
-        /// <value>Default is 0 (false). If set to 1, all entities will be removed.</value>
+        /// <value>Default is 0 (false). If set to 1, all the entities will be removed.</value>
         [DataMember(Name="all", EmitDefaultValue=false)]
         public bool? All { get; set; }
 

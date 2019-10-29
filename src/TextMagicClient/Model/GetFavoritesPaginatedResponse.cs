@@ -25,29 +25,29 @@ using SwaggerDateConverter = TextMagicClient.Client.SwaggerDateConverter;
 namespace TextMagicClient.Model
 {
     /// <summary>
-    /// GetFavouritesPaginatedResponse
+    /// GetFavoritesPaginatedResponse
     /// </summary>
     [DataContract]
-    public partial class GetFavouritesPaginatedResponse :  IEquatable<GetFavouritesPaginatedResponse>, IValidatableObject
+    public partial class GetFavoritesPaginatedResponse :  IEquatable<GetFavoritesPaginatedResponse>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetFavouritesPaginatedResponse" /> class.
+        /// Initializes a new instance of the <see cref="GetFavoritesPaginatedResponse" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected GetFavouritesPaginatedResponse() { }
+        protected GetFavoritesPaginatedResponse() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetFavouritesPaginatedResponse" /> class.
+        /// Initializes a new instance of the <see cref="GetFavoritesPaginatedResponse" /> class.
         /// </summary>
         /// <param name="page">page (required).</param>
         /// <param name="pageCount">The total number of pages. (required).</param>
         /// <param name="limit">The number of results per page. (required).</param>
         /// <param name="resources">resources (required).</param>
-        public GetFavouritesPaginatedResponse(int? page = default(int?), int? pageCount = default(int?), int? limit = default(int?), List<FavoriteContact> resources = default(List<FavoriteContact>))
+        public GetFavoritesPaginatedResponse(int? page = default(int?), int? pageCount = default(int?), int? limit = default(int?), List<FavoriteContact> resources = default(List<FavoriteContact>))
         {
             // to ensure "page" is required (not null)
             if (page == null)
             {
-                throw new InvalidDataException("page is a required property for GetFavouritesPaginatedResponse and cannot be null");
+                throw new InvalidDataException("page is a required property for GetFavoritesPaginatedResponse and cannot be null");
             }
             else
             {
@@ -56,7 +56,7 @@ namespace TextMagicClient.Model
             // to ensure "pageCount" is required (not null)
             if (pageCount == null)
             {
-                throw new InvalidDataException("pageCount is a required property for GetFavouritesPaginatedResponse and cannot be null");
+                throw new InvalidDataException("pageCount is a required property for GetFavoritesPaginatedResponse and cannot be null");
             }
             else
             {
@@ -65,7 +65,7 @@ namespace TextMagicClient.Model
             // to ensure "limit" is required (not null)
             if (limit == null)
             {
-                throw new InvalidDataException("limit is a required property for GetFavouritesPaginatedResponse and cannot be null");
+                throw new InvalidDataException("limit is a required property for GetFavoritesPaginatedResponse and cannot be null");
             }
             else
             {
@@ -74,7 +74,7 @@ namespace TextMagicClient.Model
             // to ensure "resources" is required (not null)
             if (resources == null)
             {
-                throw new InvalidDataException("resources is a required property for GetFavouritesPaginatedResponse and cannot be null");
+                throw new InvalidDataException("resources is a required property for GetFavoritesPaginatedResponse and cannot be null");
             }
             else
             {
@@ -115,7 +115,7 @@ namespace TextMagicClient.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class GetFavouritesPaginatedResponse {\n");
+            sb.Append("class GetFavoritesPaginatedResponse {\n");
             sb.Append("  Page: ").Append(Page).Append("\n");
             sb.Append("  PageCount: ").Append(PageCount).Append("\n");
             sb.Append("  Limit: ").Append(Limit).Append("\n");
@@ -140,15 +140,15 @@ namespace TextMagicClient.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as GetFavouritesPaginatedResponse);
+            return this.Equals(input as GetFavoritesPaginatedResponse);
         }
 
         /// <summary>
-        /// Returns true if GetFavouritesPaginatedResponse instances are equal
+        /// Returns true if GetFavoritesPaginatedResponse instances are equal
         /// </summary>
-        /// <param name="input">Instance of GetFavouritesPaginatedResponse to be compared</param>
+        /// <param name="input">Instance of GetFavoritesPaginatedResponse to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(GetFavouritesPaginatedResponse input)
+        public bool Equals(GetFavoritesPaginatedResponse input)
         {
             if (input == null)
                 return false;

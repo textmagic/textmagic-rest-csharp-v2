@@ -39,7 +39,7 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="SendPhoneVerificationCodeResponse" /> class.
         /// </summary>
         /// <param name="verifyId">The ID of a verification request. This is required to finish the verification request in the next step. (required).</param>
-        /// <param name="price">Amount of credit which will be deducted from your account balance when this verification is successfully completed. (required).</param>
+        /// <param name="price">An amount of credit which will be deducted from your account balance when this verification is successfully completed. (required).</param>
         public SendPhoneVerificationCodeResponse(Guid? verifyId = default(Guid?), decimal? price = default(decimal?))
         {
             // to ensure "verifyId" is required (not null)
@@ -70,9 +70,9 @@ namespace TextMagicClient.Model
         public Guid? VerifyId { get; set; }
 
         /// <summary>
-        /// Amount of credit which will be deducted from your account balance when this verification is successfully completed.
+        /// An amount of credit which will be deducted from your account balance when this verification is successfully completed.
         /// </summary>
-        /// <value>Amount of credit which will be deducted from your account balance when this verification is successfully completed.</value>
+        /// <value>An amount of credit which will be deducted from your account balance when this verification is successfully completed.</value>
         [DataMember(Name="price", EmitDefaultValue=false)]
         public decimal? Price { get; set; }
 
