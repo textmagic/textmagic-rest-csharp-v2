@@ -33,23 +33,10 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateCustomFieldInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected CreateCustomFieldInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CreateCustomFieldInputObject" /> class.
-        /// </summary>
-        /// <param name="name">Custom field name. (required).</param>
+        /// <param name="name">Custom field name..</param>
         public CreateCustomFieldInputObject(string name = default(string))
         {
-            // to ensure "name" is required (not null)
-            if (name == null)
-            {
-                throw new InvalidDataException("name is a required property for CreateCustomFieldInputObject and cannot be null");
-            }
-            else
-            {
-                this.Name = name;
-            }
+            this.Name = name;
         }
         
         /// <summary>

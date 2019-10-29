@@ -62,47 +62,18 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <value>Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json</value>
         [DataMember(Name="format", EmitDefaultValue=false)]
-        public FormatEnum Format { get; set; }
+        public FormatEnum? Format { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateCallbackSettingsInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected UpdateCallbackSettingsInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateCallbackSettingsInputObject" /> class.
-        /// </summary>
-        /// <param name="outUrl">This URL is used to push message delivery status updates to your application. (required).</param>
-        /// <param name="inUrl">This URL is used to push incoming SMS to your application. (required).</param>
-        /// <param name="format">Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json (required).</param>
-        public UpdateCallbackSettingsInputObject(string outUrl = default(string), string inUrl = default(string), FormatEnum format = default(FormatEnum))
+        /// <param name="outUrl">This URL is used to push message delivery status updates to your application..</param>
+        /// <param name="inUrl">This URL is used to push incoming SMS to your application..</param>
+        /// <param name="format">Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json.</param>
+        public UpdateCallbackSettingsInputObject(string outUrl = default(string), string inUrl = default(string), FormatEnum? format = default(FormatEnum?))
         {
-            // to ensure "outUrl" is required (not null)
-            if (outUrl == null)
-            {
-                throw new InvalidDataException("outUrl is a required property for UpdateCallbackSettingsInputObject and cannot be null");
-            }
-            else
-            {
-                this.OutUrl = outUrl;
-            }
-            // to ensure "inUrl" is required (not null)
-            if (inUrl == null)
-            {
-                throw new InvalidDataException("inUrl is a required property for UpdateCallbackSettingsInputObject and cannot be null");
-            }
-            else
-            {
-                this.InUrl = inUrl;
-            }
-            // to ensure "format" is required (not null)
-            if (format == null)
-            {
-                throw new InvalidDataException("format is a required property for UpdateCallbackSettingsInputObject and cannot be null");
-            }
-            else
-            {
-                this.Format = format;
-            }
+            this.OutUrl = outUrl;
+            this.InUrl = inUrl;
+            this.Format = format;
         }
         
         /// <summary>

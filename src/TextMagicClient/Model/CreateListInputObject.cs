@@ -33,26 +33,13 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateListInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected CreateListInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CreateListInputObject" /> class.
-        /// </summary>
-        /// <param name="name">List name. (required).</param>
+        /// <param name="name">List name..</param>
         /// <param name="shared">Should the new list be **shared** among all the sub-accounts? (default to false).</param>
         /// <param name="favorited">Is the list favorited? Default is false. (default to false).</param>
         /// <param name="isDefault">Is the list default for new contacts (web only)? (default to false).</param>
         public CreateListInputObject(string name = default(string), bool? shared = false, bool? favorited = false, bool? isDefault = false)
         {
-            // to ensure "name" is required (not null)
-            if (name == null)
-            {
-                throw new InvalidDataException("name is a required property for CreateListInputObject and cannot be null");
-            }
-            else
-            {
-                this.Name = name;
-            }
+            this.Name = name;
             // use default value if no "shared" provided
             if (shared == null)
             {

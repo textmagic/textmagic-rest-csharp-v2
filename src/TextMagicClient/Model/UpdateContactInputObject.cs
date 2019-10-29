@@ -33,17 +33,12 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateContactInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected UpdateContactInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateContactInputObject" /> class.
-        /// </summary>
         /// <param name="firstName">Contact first name..</param>
         /// <param name="lastName">Contact last name..</param>
-        /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164). (required).</param>
+        /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164)..</param>
         /// <param name="email">Contact email address..</param>
         /// <param name="companyName">Contact company name..</param>
-        /// <param name="lists">Comma-separated [list](http://docs.textmagictesting.com/#section/Lists) ID. Each contact must be assigned to at least one list. (required).</param>
+        /// <param name="lists">Comma-separated [list](http://docs.textmagictesting.com/#section/Lists) ID. Each contact must be assigned to at least one list..</param>
         /// <param name="favorited">Is the contact marked as favorite?.</param>
         /// <param name="blocked">Is the contact blocked for outgoing and incoming messaging?.</param>
         /// <param name="type">Force type of phone. Possible values: 0 is landline; 1 is mobile; default is -1 (auto-detection)..</param>
@@ -52,28 +47,12 @@ namespace TextMagicClient.Model
         /// <param name="country">The 2-letter ISO country code for local phone numbers, used when **local** is set to true..</param>
         public UpdateContactInputObject(string firstName = default(string), string lastName = default(string), string phone = default(string), string email = default(string), string companyName = default(string), string lists = default(string), bool? favorited = default(bool?), bool? blocked = default(bool?), int? type = default(int?), List<CustomFieldListItem> customFieldValues = default(List<CustomFieldListItem>), int? local = default(int?), string country = default(string))
         {
-            // to ensure "phone" is required (not null)
-            if (phone == null)
-            {
-                throw new InvalidDataException("phone is a required property for UpdateContactInputObject and cannot be null");
-            }
-            else
-            {
-                this.Phone = phone;
-            }
-            // to ensure "lists" is required (not null)
-            if (lists == null)
-            {
-                throw new InvalidDataException("lists is a required property for UpdateContactInputObject and cannot be null");
-            }
-            else
-            {
-                this.Lists = lists;
-            }
             this.FirstName = firstName;
             this.LastName = lastName;
+            this.Phone = phone;
             this.Email = email;
             this.CompanyName = companyName;
+            this.Lists = lists;
             this.Favorited = favorited;
             this.Blocked = blocked;
             this.Type = type;

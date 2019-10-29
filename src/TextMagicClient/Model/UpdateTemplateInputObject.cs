@@ -33,33 +33,12 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateTemplateInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected UpdateTemplateInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateTemplateInputObject" /> class.
-        /// </summary>
-        /// <param name="name">Template name. (required).</param>
-        /// <param name="content">Template text. May contain tags inside braces. See [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)). (required).</param>
+        /// <param name="name">Template name..</param>
+        /// <param name="content">Template text. May contain tags inside braces. See [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags))..</param>
         public UpdateTemplateInputObject(string name = default(string), string content = default(string))
         {
-            // to ensure "name" is required (not null)
-            if (name == null)
-            {
-                throw new InvalidDataException("name is a required property for UpdateTemplateInputObject and cannot be null");
-            }
-            else
-            {
-                this.Name = name;
-            }
-            // to ensure "content" is required (not null)
-            if (content == null)
-            {
-                throw new InvalidDataException("content is a required property for UpdateTemplateInputObject and cannot be null");
-            }
-            else
-            {
-                this.Content = content;
-            }
+            this.Name = name;
+            this.Content = content;
         }
         
         /// <summary>

@@ -33,46 +33,17 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateInboundMessagesNotificationSettingsInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected UpdateInboundMessagesNotificationSettingsInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateInboundMessagesNotificationSettingsInputObject" /> class.
-        /// </summary>
-        /// <param name="inboundMessageNotification">Should user receive notification about new incoming messages. (required).</param>
-        /// <param name="includeSmsHistory">Include SMS history into notification Email. (required).</param>
-        /// <param name="sendInHtmlFormat">Send Email notification in HTML format. (required).</param>
+        /// <param name="inboundMessageNotification">Should user receive notification about new incoming messages..</param>
+        /// <param name="includeSmsHistory">Include SMS history into notification Email..</param>
+        /// <param name="sendInHtmlFormat">Send Email notification in HTML format..</param>
         /// <param name="alertEmail1">New message notification email 2..</param>
         /// <param name="alertEmail2">New message notification email 2..</param>
         /// <param name="alertEmail3">New message notification email 3..</param>
         public UpdateInboundMessagesNotificationSettingsInputObject(bool? inboundMessageNotification = default(bool?), bool? includeSmsHistory = default(bool?), bool? sendInHtmlFormat = default(bool?), string alertEmail1 = default(string), string alertEmail2 = default(string), string alertEmail3 = default(string))
         {
-            // to ensure "inboundMessageNotification" is required (not null)
-            if (inboundMessageNotification == null)
-            {
-                throw new InvalidDataException("inboundMessageNotification is a required property for UpdateInboundMessagesNotificationSettingsInputObject and cannot be null");
-            }
-            else
-            {
-                this.InboundMessageNotification = inboundMessageNotification;
-            }
-            // to ensure "includeSmsHistory" is required (not null)
-            if (includeSmsHistory == null)
-            {
-                throw new InvalidDataException("includeSmsHistory is a required property for UpdateInboundMessagesNotificationSettingsInputObject and cannot be null");
-            }
-            else
-            {
-                this.IncludeSmsHistory = includeSmsHistory;
-            }
-            // to ensure "sendInHtmlFormat" is required (not null)
-            if (sendInHtmlFormat == null)
-            {
-                throw new InvalidDataException("sendInHtmlFormat is a required property for UpdateInboundMessagesNotificationSettingsInputObject and cannot be null");
-            }
-            else
-            {
-                this.SendInHtmlFormat = sendInHtmlFormat;
-            }
+            this.InboundMessageNotification = inboundMessageNotification;
+            this.IncludeSmsHistory = includeSmsHistory;
+            this.SendInHtmlFormat = sendInHtmlFormat;
             this.AlertEmail1 = alertEmail1;
             this.AlertEmail2 = alertEmail2;
             this.AlertEmail3 = alertEmail3;

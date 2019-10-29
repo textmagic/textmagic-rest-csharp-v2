@@ -33,34 +33,13 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="RequestNewSubaccountTokenInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected RequestNewSubaccountTokenInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="RequestNewSubaccountTokenInputObject" /> class.
-        /// </summary>
-        /// <param name="userId">Sub-account ID. (required).</param>
-        /// <param name="password">Your account password. (required).</param>
+        /// <param name="userId">Sub-account ID..</param>
+        /// <param name="password">Your account password..</param>
         /// <param name="appName">Application name..</param>
         public RequestNewSubaccountTokenInputObject(int? userId = default(int?), string password = default(string), string appName = default(string))
         {
-            // to ensure "userId" is required (not null)
-            if (userId == null)
-            {
-                throw new InvalidDataException("userId is a required property for RequestNewSubaccountTokenInputObject and cannot be null");
-            }
-            else
-            {
-                this.UserId = userId;
-            }
-            // to ensure "password" is required (not null)
-            if (password == null)
-            {
-                throw new InvalidDataException("password is a required property for RequestNewSubaccountTokenInputObject and cannot be null");
-            }
-            else
-            {
-                this.Password = password;
-            }
+            this.UserId = userId;
+            this.Password = password;
             this.AppName = appName;
         }
         

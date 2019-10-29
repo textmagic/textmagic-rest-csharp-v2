@@ -33,23 +33,10 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ClearAndAssignContactsToListInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected ClearAndAssignContactsToListInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ClearAndAssignContactsToListInputObject" /> class.
-        /// </summary>
-        /// <param name="contacts">Contact ID(s), separated by a comma or \&quot;all\&quot; to add all contacts belonging to the current user. (required).</param>
+        /// <param name="contacts">Contact ID(s), separated by a comma or \&quot;all\&quot; to add all contacts belonging to the current user..</param>
         public ClearAndAssignContactsToListInputObject(string contacts = default(string))
         {
-            // to ensure "contacts" is required (not null)
-            if (contacts == null)
-            {
-                throw new InvalidDataException("contacts is a required property for ClearAndAssignContactsToListInputObject and cannot be null");
-            }
-            else
-            {
-                this.Contacts = contacts;
-            }
+            this.Contacts = contacts;
         }
         
         /// <summary>

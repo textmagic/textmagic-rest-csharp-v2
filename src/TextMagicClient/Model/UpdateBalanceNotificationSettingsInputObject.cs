@@ -33,29 +33,16 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateBalanceNotificationSettingsInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected UpdateBalanceNotificationSettingsInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateBalanceNotificationSettingsInputObject" /> class.
-        /// </summary>
         /// <param name="lowBalanceNotification">Should user receive low balance notification..</param>
-        /// <param name="alertBalance">If balance is below this value, user receive low balance notification. (required).</param>
+        /// <param name="alertBalance">If balance is below this value, user receive low balance notification..</param>
         /// <param name="alertPhone">Low balance notification phone number..</param>
         /// <param name="alertEmail1">Low balance notification email 1..</param>
         /// <param name="alertEmail2">Low balance notification email 2..</param>
         /// <param name="alertEmail3">Low balance notification email 3..</param>
         public UpdateBalanceNotificationSettingsInputObject(bool? lowBalanceNotification = default(bool?), string alertBalance = default(string), string alertPhone = default(string), string alertEmail1 = default(string), string alertEmail2 = default(string), string alertEmail3 = default(string))
         {
-            // to ensure "alertBalance" is required (not null)
-            if (alertBalance == null)
-            {
-                throw new InvalidDataException("alertBalance is a required property for UpdateBalanceNotificationSettingsInputObject and cannot be null");
-            }
-            else
-            {
-                this.AlertBalance = alertBalance;
-            }
             this.LowBalanceNotification = lowBalanceNotification;
+            this.AlertBalance = alertBalance;
             this.AlertPhone = alertPhone;
             this.AlertEmail1 = alertEmail1;
             this.AlertEmail2 = alertEmail2;

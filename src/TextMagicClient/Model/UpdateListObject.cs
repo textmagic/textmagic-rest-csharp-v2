@@ -33,26 +33,13 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateListObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected UpdateListObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateListObject" /> class.
-        /// </summary>
-        /// <param name="name">List name. (required).</param>
+        /// <param name="name">List name..</param>
         /// <param name="shared">Make this list shared or not? (default to false).</param>
         /// <param name="favorited">Is list favorited. (default to false).</param>
         /// <param name="isDefault">Is list default for new contacts (web only). (default to false).</param>
         public UpdateListObject(string name = default(string), bool? shared = false, bool? favorited = false, bool? isDefault = false)
         {
-            // to ensure "name" is required (not null)
-            if (name == null)
-            {
-                throw new InvalidDataException("name is a required property for UpdateListObject and cannot be null");
-            }
-            else
-            {
-                this.Name = name;
-            }
+            this.Name = name;
             // use default value if no "shared" provided
             if (shared == null)
             {

@@ -33,35 +33,14 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateChatDesktopNotificationSettingsInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected UpdateChatDesktopNotificationSettingsInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateChatDesktopNotificationSettingsInputObject" /> class.
-        /// </summary>
-        /// <param name="playSound">Enable notification sound? (required).</param>
-        /// <param name="showNotifications">Show desktop notifications about new messages. (required).</param>
+        /// <param name="playSound">Enable notification sound?.</param>
+        /// <param name="showNotifications">Show desktop notifications about new messages..</param>
         /// <param name="showText">Incoming message text will be displayed in desktop notifications..</param>
         /// <param name="soundId">Sound Id of a notification..</param>
         public UpdateChatDesktopNotificationSettingsInputObject(bool? playSound = default(bool?), bool? showNotifications = default(bool?), bool? showText = default(bool?), int? soundId = default(int?))
         {
-            // to ensure "playSound" is required (not null)
-            if (playSound == null)
-            {
-                throw new InvalidDataException("playSound is a required property for UpdateChatDesktopNotificationSettingsInputObject and cannot be null");
-            }
-            else
-            {
-                this.PlaySound = playSound;
-            }
-            // to ensure "showNotifications" is required (not null)
-            if (showNotifications == null)
-            {
-                throw new InvalidDataException("showNotifications is a required property for UpdateChatDesktopNotificationSettingsInputObject and cannot be null");
-            }
-            else
-            {
-                this.ShowNotifications = showNotifications;
-            }
+            this.PlaySound = playSound;
+            this.ShowNotifications = showNotifications;
             this.ShowText = showText;
             this.SoundId = soundId;
         }

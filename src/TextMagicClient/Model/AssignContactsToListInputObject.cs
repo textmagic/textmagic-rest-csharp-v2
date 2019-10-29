@@ -33,23 +33,10 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="AssignContactsToListInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected AssignContactsToListInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="AssignContactsToListInputObject" /> class.
-        /// </summary>
-        /// <param name="contacts">Comma-separated array of [Contacts](http://docs.textmagictesting.com/#tag/Contacts) IDs. (required).</param>
+        /// <param name="contacts">Comma-separated array of [Contacts](http://docs.textmagictesting.com/#tag/Contacts) IDs..</param>
         public AssignContactsToListInputObject(string contacts = default(string))
         {
-            // to ensure "contacts" is required (not null)
-            if (contacts == null)
-            {
-                throw new InvalidDataException("contacts is a required property for AssignContactsToListInputObject and cannot be null");
-            }
-            else
-            {
-                this.Contacts = contacts;
-            }
+            this.Contacts = contacts;
         }
         
         /// <summary>

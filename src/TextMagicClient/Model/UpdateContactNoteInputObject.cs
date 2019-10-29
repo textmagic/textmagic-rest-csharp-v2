@@ -33,23 +33,10 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateContactNoteInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected UpdateContactNoteInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateContactNoteInputObject" /> class.
-        /// </summary>
-        /// <param name="note">Contact Note text. (required).</param>
+        /// <param name="note">Contact Note text..</param>
         public UpdateContactNoteInputObject(string note = default(string))
         {
-            // to ensure "note" is required (not null)
-            if (note == null)
-            {
-                throw new InvalidDataException("note is a required property for UpdateContactNoteInputObject and cannot be null");
-            }
-            else
-            {
-                this.Note = note;
-            }
+            this.Note = note;
         }
         
         /// <summary>

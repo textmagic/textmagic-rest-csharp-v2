@@ -33,33 +33,12 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CheckPhoneVerificationCodeInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected CheckPhoneVerificationCodeInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CheckPhoneVerificationCodeInputObject" /> class.
-        /// </summary>
-        /// <param name="code">Verification code received by the user and entered into the form field. (required).</param>
-        /// <param name="verifyId">VerifyId from Step 1 to match both requests together. (required).</param>
+        /// <param name="code">Verification code received by the user and entered into the form field..</param>
+        /// <param name="verifyId">VerifyId from Step 1 to match both requests together..</param>
         public CheckPhoneVerificationCodeInputObject(int? code = default(int?), string verifyId = default(string))
         {
-            // to ensure "code" is required (not null)
-            if (code == null)
-            {
-                throw new InvalidDataException("code is a required property for CheckPhoneVerificationCodeInputObject and cannot be null");
-            }
-            else
-            {
-                this.Code = code;
-            }
-            // to ensure "verifyId" is required (not null)
-            if (verifyId == null)
-            {
-                throw new InvalidDataException("verifyId is a required property for CheckPhoneVerificationCodeInputObject and cannot be null");
-            }
-            else
-            {
-                this.VerifyId = verifyId;
-            }
+            this.Code = code;
+            this.VerifyId = verifyId;
         }
         
         /// <summary>

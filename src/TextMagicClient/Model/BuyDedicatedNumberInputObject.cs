@@ -33,43 +33,14 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BuyDedicatedNumberInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected BuyDedicatedNumberInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="BuyDedicatedNumberInputObject" /> class.
-        /// </summary>
-        /// <param name="phone">Dedicated phone number. (required).</param>
-        /// <param name="country">Country code phone number. (required).</param>
-        /// <param name="userId">Assigned dedicated number. This number will be available for this account only. You cannot transfer numbers between sub-accounts.  (required).</param>
+        /// <param name="phone">Dedicated phone number..</param>
+        /// <param name="country">Country code phone number..</param>
+        /// <param name="userId">Assigned dedicated number. This number will be available for this account only. You cannot transfer numbers between sub-accounts. .</param>
         public BuyDedicatedNumberInputObject(string phone = default(string), string country = default(string), int? userId = default(int?))
         {
-            // to ensure "phone" is required (not null)
-            if (phone == null)
-            {
-                throw new InvalidDataException("phone is a required property for BuyDedicatedNumberInputObject and cannot be null");
-            }
-            else
-            {
-                this.Phone = phone;
-            }
-            // to ensure "country" is required (not null)
-            if (country == null)
-            {
-                throw new InvalidDataException("country is a required property for BuyDedicatedNumberInputObject and cannot be null");
-            }
-            else
-            {
-                this.Country = country;
-            }
-            // to ensure "userId" is required (not null)
-            if (userId == null)
-            {
-                throw new InvalidDataException("userId is a required property for BuyDedicatedNumberInputObject and cannot be null");
-            }
-            else
-            {
-                this.UserId = userId;
-            }
+            this.Phone = phone;
+            this.Country = country;
+            this.UserId = userId;
         }
         
         /// <summary>

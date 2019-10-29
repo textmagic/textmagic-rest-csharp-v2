@@ -3,7 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** | List name. | 
+**Name** | **string** | List name. | [optional] 
 **Shared** | **bool?** | Should the new list be **shared** among all the sub-accounts? | [optional] [default to false]
 **Favorited** | **bool?** | Is the list favorited? Default is false. | [optional] [default to false]
 **IsDefault** | **bool?** | Is the list default for new contacts (web only)? | [optional] [default to false]

@@ -33,34 +33,13 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateSenderSettingInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected UpdateSenderSettingInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateSenderSettingInputObject" /> class.
-        /// </summary>
-        /// <param name="value">Available phone number in international E.164 format or senderid. (required).</param>
-        /// <param name="country">Country for which the setting will be set. (required).</param>
+        /// <param name="value">Available phone number in international E.164 format or senderid..</param>
+        /// <param name="country">Country for which the setting will be set..</param>
         /// <param name="chatId">Set sender setting for specified chat only..</param>
         public UpdateSenderSettingInputObject(string value = default(string), string country = default(string), int? chatId = default(int?))
         {
-            // to ensure "value" is required (not null)
-            if (value == null)
-            {
-                throw new InvalidDataException("value is a required property for UpdateSenderSettingInputObject and cannot be null");
-            }
-            else
-            {
-                this.Value = value;
-            }
-            // to ensure "country" is required (not null)
-            if (country == null)
-            {
-                throw new InvalidDataException("country is a required property for UpdateSenderSettingInputObject and cannot be null");
-            }
-            else
-            {
-                this.Country = country;
-            }
+            this.Value = value;
+            this.Country = country;
             this.ChatId = chatId;
         }
         

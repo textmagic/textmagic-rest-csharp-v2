@@ -33,34 +33,13 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="MuteChatInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected MuteChatInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MuteChatInputObject" /> class.
-        /// </summary>
-        /// <param name="id">Chat ID. (required).</param>
-        /// <param name="mute">Mute notifications sound. (required).</param>
+        /// <param name="id">Chat ID..</param>
+        /// <param name="mute">Mute notifications sound..</param>
         /// <param name="_for">Mute for N hours..</param>
         public MuteChatInputObject(int? id = default(int?), bool? mute = default(bool?), int? _for = default(int?))
         {
-            // to ensure "id" is required (not null)
-            if (id == null)
-            {
-                throw new InvalidDataException("id is a required property for MuteChatInputObject and cannot be null");
-            }
-            else
-            {
-                this.Id = id;
-            }
-            // to ensure "mute" is required (not null)
-            if (mute == null)
-            {
-                throw new InvalidDataException("mute is a required property for MuteChatInputObject and cannot be null");
-            }
-            else
-            {
-                this.Mute = mute;
-            }
+            this.Id = id;
+            this.Mute = mute;
             this.For = _for;
         }
         

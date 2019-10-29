@@ -33,19 +33,14 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="SendMessageInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected SendMessageInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="SendMessageInputObject" /> class.
-        /// </summary>
-        /// <param name="text">Message text. Required if the **template_id** is not set. (required).</param>
+        /// <param name="text">Message text. Required if the **template_id** is not set..</param>
         /// <param name="templateId">Template used instead of message text. Required if the **text** is not set..</param>
         /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now..</param>
         /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to **sendingTimezone**..</param>
         /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone..</param>
         /// <param name="contacts">Comma separated array of contact resources id message will be sent to..</param>
         /// <param name="lists">Comma separated array of list resources id message will be sent to..</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (required).</param>
+        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to..</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (default to false).</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts)..</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure..</param>
@@ -57,30 +52,14 @@ namespace TextMagicClient.Model
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country..</param>
         public SendMessageInputObject(string text = default(string), int? templateId = default(int?), int? sendingTime = default(int?), string sendingDateTime = default(string), string sendingTimezone = default(string), string contacts = default(string), string lists = default(string), string phones = default(string), bool? cutExtra = false, int? partsCount = default(int?), int? referenceId = default(int?), string from = default(string), string rrule = default(string), bool? createChat = false, bool? tts = false, bool? local = false, string localCountry = default(string))
         {
-            // to ensure "text" is required (not null)
-            if (text == null)
-            {
-                throw new InvalidDataException("text is a required property for SendMessageInputObject and cannot be null");
-            }
-            else
-            {
-                this.Text = text;
-            }
-            // to ensure "phones" is required (not null)
-            if (phones == null)
-            {
-                throw new InvalidDataException("phones is a required property for SendMessageInputObject and cannot be null");
-            }
-            else
-            {
-                this.Phones = phones;
-            }
+            this.Text = text;
             this.TemplateId = templateId;
             this.SendingTime = sendingTime;
             this.SendingDateTime = sendingDateTime;
             this.SendingTimezone = sendingTimezone;
             this.Contacts = contacts;
             this.Lists = lists;
+            this.Phones = phones;
             // use default value if no "cutExtra" provided
             if (cutExtra == null)
             {

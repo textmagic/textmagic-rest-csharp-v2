@@ -62,37 +62,16 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <value>Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. </value>
         [DataMember(Name="status", EmitDefaultValue=false)]
-        public StatusEnum Status { get; set; }
+        public StatusEnum? Status { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="SetChatStatusInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected SetChatStatusInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="SetChatStatusInputObject" /> class.
-        /// </summary>
-        /// <param name="id">Chat ID. (required).</param>
-        /// <param name="status">Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted.  (required).</param>
-        public SetChatStatusInputObject(int? id = default(int?), StatusEnum status = default(StatusEnum))
+        /// <param name="id">Chat ID..</param>
+        /// <param name="status">Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. .</param>
+        public SetChatStatusInputObject(int? id = default(int?), StatusEnum? status = default(StatusEnum?))
         {
-            // to ensure "id" is required (not null)
-            if (id == null)
-            {
-                throw new InvalidDataException("id is a required property for SetChatStatusInputObject and cannot be null");
-            }
-            else
-            {
-                this.Id = id;
-            }
-            // to ensure "status" is required (not null)
-            if (status == null)
-            {
-                throw new InvalidDataException("status is a required property for SetChatStatusInputObject and cannot be null");
-            }
-            else
-            {
-                this.Status = status;
-            }
+            this.Id = id;
+            this.Status = status;
         }
         
         /// <summary>

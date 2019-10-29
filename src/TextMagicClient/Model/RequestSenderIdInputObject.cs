@@ -33,33 +33,12 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="RequestSenderIdInputObject" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected RequestSenderIdInputObject() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="RequestSenderIdInputObject" /> class.
-        /// </summary>
-        /// <param name="senderId">The Sender ID that you are applying for. *   11 characters maximum; *   Only Latin based characters and digits are allowed; *   Should contain at least 1 letter.  (required).</param>
-        /// <param name="explanation">Explanation of why you need this Sender ID. (required).</param>
+        /// <param name="senderId">The Sender ID that you are applying for. *   11 characters maximum; *   Only Latin based characters and digits are allowed; *   Should contain at least 1 letter. .</param>
+        /// <param name="explanation">Explanation of why you need this Sender ID..</param>
         public RequestSenderIdInputObject(string senderId = default(string), string explanation = default(string))
         {
-            // to ensure "senderId" is required (not null)
-            if (senderId == null)
-            {
-                throw new InvalidDataException("senderId is a required property for RequestSenderIdInputObject and cannot be null");
-            }
-            else
-            {
-                this.SenderId = senderId;
-            }
-            // to ensure "explanation" is required (not null)
-            if (explanation == null)
-            {
-                throw new InvalidDataException("explanation is a required property for RequestSenderIdInputObject and cannot be null");
-            }
-            else
-            {
-                this.Explanation = explanation;
-            }
+            this.SenderId = senderId;
+            this.Explanation = explanation;
         }
         
         /// <summary>
