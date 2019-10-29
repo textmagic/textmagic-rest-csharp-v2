@@ -3,7 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Ids** | **string** | Entity ID(s), separated by comma | [optional] 
+**Ids** | **string** | Entity ID(s), separated by comma. | [optional] 
 **All** | **bool?** | Entity ID(s), separated by comma | [optional] 
 **For** | **int?** | Mute for N hours. | [optional] 
 

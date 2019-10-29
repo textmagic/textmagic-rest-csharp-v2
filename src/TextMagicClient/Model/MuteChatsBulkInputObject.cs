@@ -33,7 +33,7 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="MuteChatsBulkInputObject" /> class.
         /// </summary>
-        /// <param name="ids">Entity ID(s), separated by comma.</param>
+        /// <param name="ids">Entity ID(s), separated by comma..</param>
         /// <param name="all">Entity ID(s), separated by comma.</param>
         /// <param name="_for">Mute for N hours..</param>
         public MuteChatsBulkInputObject(string ids = default(string), bool? all = default(bool?), int? _for = default(int?))
@@ -44,9 +44,9 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Entity ID(s), separated by comma
+        /// Entity ID(s), separated by comma.
         /// </summary>
-        /// <value>Entity ID(s), separated by comma</value>
+        /// <value>Entity ID(s), separated by comma.</value>
         [DataMember(Name="ids", EmitDefaultValue=false)]
         public string Ids { get; set; }
 

@@ -133,13 +133,13 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <param name="address">The email address passed to the call. (required).</param>
         /// <param name="status">The email is &#x60;valid&#x60; or &#x60;invalid&#x60;. (required).</param>
-        /// <param name="deliverability">The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;  or &#x60;unknown&#x60;. (required).</param>
+        /// <param name="deliverability">The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;. or &#x60;unknown&#x60;. (required).</param>
         /// <param name="reason">The reason why the checked email is invalid/undeliverable. (required).</param>
         /// <param name="risk">The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;. (required).</param>
         /// <param name="addressType">The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;. (required).</param>
         /// <param name="isDisposableAddress">This is &#x60;true&#x60; if the domain is in the list of disposable email addresses; otherwise, it returns as &#x60;false&#x60;. (required).</param>
         /// <param name="suggestion">Null if nothing is suggested; however, if there is a potential typo in the email address, the closest suggestion is provided. (required).</param>
-        /// <param name="emailRole">Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’) (required).</param>
+        /// <param name="emailRole">Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’). (required).</param>
         /// <param name="localPart">The local part of the email address. (required).</param>
         /// <param name="domainPart">The domain part of the email address. (required).</param>
         /// <param name="exchange">Email exchange server domain name (MX record value). (required).</param>
@@ -324,9 +324,9 @@ namespace TextMagicClient.Model
 
 
         /// <summary>
-        /// The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;  or &#x60;unknown&#x60;.
+        /// The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;. or &#x60;unknown&#x60;.
         /// </summary>
-        /// <value>The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;  or &#x60;unknown&#x60;.</value>
+        /// <value>The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;. or &#x60;unknown&#x60;.</value>
         [DataMember(Name="deliverability", EmitDefaultValue=false)]
         public string Deliverability { get; set; }
 
@@ -354,9 +354,9 @@ namespace TextMagicClient.Model
         public string Suggestion { get; set; }
 
         /// <summary>
-        /// Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)
+        /// Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’).
         /// </summary>
-        /// <value>Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)</value>
+        /// <value>Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’).</value>
         [DataMember(Name="emailRole", EmitDefaultValue=false)]
         public string EmailRole { get; set; }
 

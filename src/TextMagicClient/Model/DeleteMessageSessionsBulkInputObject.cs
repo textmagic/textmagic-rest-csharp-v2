@@ -33,7 +33,7 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteMessageSessionsBulkInputObject" /> class.
         /// </summary>
-        /// <param name="ids">Entity ID(s), separated by comma.</param>
+        /// <param name="ids">Entity ID(s), separated by comma..</param>
         /// <param name="all">Default is 0 (false). If set to 1, all the entities will be removed..</param>
         public DeleteMessageSessionsBulkInputObject(string ids = default(string), int? all = default(int?))
         {
@@ -42,9 +42,9 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Entity ID(s), separated by comma
+        /// Entity ID(s), separated by comma.
         /// </summary>
-        /// <value>Entity ID(s), separated by comma</value>
+        /// <value>Entity ID(s), separated by comma.</value>
         [DataMember(Name="ids", EmitDefaultValue=false)]
         public string Ids { get; set; }
 

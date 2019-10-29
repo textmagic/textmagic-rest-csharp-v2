@@ -38,8 +38,8 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateSurveyCountryItem" /> class.
         /// </summary>
-        /// <param name="country">The 2-letter ISO country code (required).</param>
-        /// <param name="userInboundId">User inbound phone ID (required).</param>
+        /// <param name="country">The 2-letter ISO country code. (required).</param>
+        /// <param name="userInboundId">User inbound phone ID. (required).</param>
         public UpdateSurveyCountryItem(string country = default(string), int? userInboundId = default(int?))
         {
             // to ensure "country" is required (not null)
@@ -63,16 +63,16 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// The 2-letter ISO country code
+        /// The 2-letter ISO country code.
         /// </summary>
-        /// <value>The 2-letter ISO country code</value>
+        /// <value>The 2-letter ISO country code.</value>
         [DataMember(Name="country", EmitDefaultValue=false)]
         public string Country { get; set; }
 
         /// <summary>
-        /// User inbound phone ID
+        /// User inbound phone ID.
         /// </summary>
-        /// <value>User inbound phone ID</value>
+        /// <value>User inbound phone ID.</value>
         [DataMember(Name="userInboundId", EmitDefaultValue=false)]
         public int? UserInboundId { get; set; }
 

@@ -3034,7 +3034,7 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var status = "a";  // string | Fetch only (a)ctive, (c)losed or (d)eleted chats (optional) 
+            var status = "a";  // string | Fetch only (a)ctive, (c)losed or (d)eleted chats. (optional) 
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
             var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
@@ -3060,7 +3060,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **string**| Fetch only (a)ctive, (c)losed or (d)eleted chats | [optional] 
+ **status** | **string**| Fetch only (a)ctive, (c)losed or (d)eleted chats. | [optional] 
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
  **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
@@ -3247,7 +3247,7 @@ namespace Example
             var apiInstance = new TextMagicApi();
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var lastId = 56;  // int? | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified (optional) 
+            var lastId = 56;  // int? | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified. (optional) 
 
             try
             {
@@ -3270,7 +3270,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **lastId** | **int?**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified | [optional] 
+ **lastId** | **int?**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified. | [optional] 
 
 ### Return type
 
@@ -3315,7 +3315,7 @@ namespace Example
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
             var status = status_example;  // string | Fetch schedules with a specific status: a - actual, c - completed, x - all. (optional)  (default to x)
-            var orderBy = orderBy_example;  // string | Order results by some field. Default is id (optional)  (default to id)
+            var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
 
             try
@@ -3340,7 +3340,7 @@ Name | Type | Description  | Notes
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
  **status** | **string**| Fetch schedules with a specific status: a - actual, c - completed, x - all. | [optional] [default to x]
- **orderBy** | **string**| Order results by some field. Default is id | [optional] [default to id]
+ **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
 
 ### Return type
@@ -3955,8 +3955,8 @@ namespace Example
 
             var apiInstance = new TextMagicApi();
             var phone = "447860021130";  // string | 
-            var upsert = 56;  // int? | Create a new chat if not found (optional)  (default to 0)
-            var reopen = 56;  // int? | Reopen chat if found or do not change status (optional)  (default to 0)
+            var upsert = 56;  // int? | Create a new chat if not found. (optional)  (default to 0)
+            var reopen = 56;  // int? | Reopen chat if found or do not change status. (optional)  (default to 0)
 
             try
             {
@@ -3978,8 +3978,8 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **phone** | **string**|  | 
- **upsert** | **int?**| Create a new chat if not found | [optional] [default to 0]
- **reopen** | **int?**| Reopen chat if found or do not change status | [optional] [default to 0]
+ **upsert** | **int?**| Create a new chat if not found. | [optional] [default to 0]
+ **reopen** | **int?**| Reopen chat if found or do not change status. | [optional] [default to 0]
 
 ### Return type
 
@@ -4024,7 +4024,7 @@ namespace Example
             var id = 1;  // int? | 
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var query = query_example;  // string | Find messages by specified search query (optional) 
+            var query = query_example;  // string | Find messages by specified search query. (optional) 
             var start = 56;  // int? | Return messages since specified timestamp only. (optional) 
             var end = 56;  // int? | Return messages up to specified timestamp only. (optional) 
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
@@ -4052,7 +4052,7 @@ Name | Type | Description  | Notes
  **id** | **int?**|  | 
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **query** | **string**| Find messages by specified search query | [optional] 
+ **query** | **string**| Find messages by specified search query. | [optional] 
  **start** | **int?**| Return messages since specified timestamp only. | [optional] 
  **end** | **int?**| Return messages up to specified timestamp only. | [optional] 
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
@@ -6124,8 +6124,8 @@ namespace Example
             var apiInstance = new TextMagicApi();
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
             var lastId = 56;  // int? | Filter results by ID, selecting all values lesser than the specified ID. (optional) 
-            var query = query_example;  // string | Find message by specified search query (optional) 
-            var orderBy = orderBy_example;  // string | Order results by some field. Default is id (optional)  (default to id)
+            var query = query_example;  // string | Find message by specified search query. (optional) 
+            var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
 
             try
@@ -6149,8 +6149,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
  **lastId** | **int?**| Filter results by ID, selecting all values lesser than the specified ID. | [optional] 
- **query** | **string**| Find message by specified search query | [optional] 
- **orderBy** | **string**| Order results by some field. Default is id | [optional] [default to id]
+ **query** | **string**| Find message by specified search query. | [optional] 
+ **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
 
 ### Return type
@@ -7882,7 +7882,7 @@ namespace Example
             var apiInstance = new TextMagicApi();
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var query = query_example;  // string | Find chats by specified search query (optional) 
+            var query = query_example;  // string | Find chats by specified search query. (optional) 
             var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
 
             try
@@ -7906,7 +7906,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **query** | **string**| Find chats by specified search query | [optional] 
+ **query** | **string**| Find chats by specified search query. | [optional] 
  **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
 
 ### Return type
@@ -8190,7 +8190,7 @@ namespace Example
             var apiInstance = new TextMagicApi();
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var lastId = 56;  // int? | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified (optional) 
+            var lastId = 56;  // int? | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified. (optional) 
             var ids = ids_example;  // string | Find message by ID(s). (optional) 
             var sessionId = 56;  // int? | Find messages by session ID. (optional) 
             var statuses = "q";  // string | Find messages by status. (optional) 
@@ -8218,7 +8218,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **lastId** | **int?**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified | [optional] 
+ **lastId** | **int?**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified. | [optional] 
  **ids** | **string**| Find message by ID(s). | [optional] 
  **sessionId** | **int?**| Find messages by session ID. | [optional] 
  **statuses** | **string**| Find messages by status. | [optional] 
@@ -8267,8 +8267,8 @@ namespace Example
             var apiInstance = new TextMagicApi();
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var query = query_example;  // string | Find messages by specified search query (optional) 
-            var ids = ids_example;  // string | Find schedules by ID(s) (optional) 
+            var query = query_example;  // string | Find messages by specified search query. (optional) 
+            var ids = ids_example;  // string | Find schedules by ID(s). (optional) 
             var status = status_example;  // string | Fetch schedules with a specific status: a - actual, c - completed, x - all. (optional)  (default to x)
             var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
@@ -8294,8 +8294,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **query** | **string**| Find messages by specified search query | [optional] 
- **ids** | **string**| Find schedules by ID(s) | [optional] 
+ **query** | **string**| Find messages by specified search query. | [optional] 
+ **ids** | **string**| Find schedules by ID(s). | [optional] 
  **status** | **string**| Fetch schedules with a specific status: a - actual, c - completed, x - all. | [optional] [default to x]
  **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
@@ -9824,7 +9824,7 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var file = new System.IO.Stream(); // System.IO.Stream | Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats
+            var file = new System.IO.Stream(); // System.IO.Stream | Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats.
 
             try
             {
@@ -9845,7 +9845,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **System.IO.Stream**| Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats | 
+ **file** | **System.IO.Stream**| Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats. | 
 
 ### Return type
 

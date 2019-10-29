@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class GetCallbackSettingsResponse :  IEquatable<GetCallbackSettingsResponse>, IValidatableObject
     {
         /// <summary>
-        /// Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json
+        /// Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json.
         /// </summary>
-        /// <value>Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json</value>
+        /// <value>Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json.</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum FormatEnum
         {
@@ -58,9 +58,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json
+        /// Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json.
         /// </summary>
-        /// <value>Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json</value>
+        /// <value>Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json.</value>
         [DataMember(Name="format", EmitDefaultValue=false)]
         public FormatEnum Format { get; set; }
         /// <summary>
@@ -73,7 +73,7 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <param name="outUrl">This URL is used to push message delivery status updates to your application. (required).</param>
         /// <param name="inUrl">This URL is used to push incoming SMS to your application. (required).</param>
-        /// <param name="format">Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json (required).</param>
+        /// <param name="format">Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json. (required).</param>
         public GetCallbackSettingsResponse(string outUrl = default(string), string inUrl = default(string), FormatEnum format = default(FormatEnum))
         {
             // to ensure "outUrl" is required (not null)

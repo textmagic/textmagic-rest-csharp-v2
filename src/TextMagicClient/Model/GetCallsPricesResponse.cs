@@ -38,10 +38,10 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="GetCallsPricesResponse" /> class.
         /// </summary>
-        /// <param name="outbound">Price for outbound message (required).</param>
-        /// <param name="inbound">Price for inbound message (required).</param>
-        /// <param name="forward">Price for forward (required).</param>
-        /// <param name="country">2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country (required).</param>
+        /// <param name="outbound">Price for outbound message. (required).</param>
+        /// <param name="inbound">Price for inbound message. (required).</param>
+        /// <param name="forward">Price for forward. (required).</param>
+        /// <param name="country">2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country. (required).</param>
         public GetCallsPricesResponse(decimal? outbound = default(decimal?), decimal? inbound = default(decimal?), decimal? forward = default(decimal?), string country = default(string))
         {
             // to ensure "outbound" is required (not null)
@@ -83,30 +83,30 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Price for outbound message
+        /// Price for outbound message.
         /// </summary>
-        /// <value>Price for outbound message</value>
+        /// <value>Price for outbound message.</value>
         [DataMember(Name="outbound", EmitDefaultValue=false)]
         public decimal? Outbound { get; set; }
 
         /// <summary>
-        /// Price for inbound message
+        /// Price for inbound message.
         /// </summary>
-        /// <value>Price for inbound message</value>
+        /// <value>Price for inbound message.</value>
         [DataMember(Name="inbound", EmitDefaultValue=false)]
         public decimal? Inbound { get; set; }
 
         /// <summary>
-        /// Price for forward
+        /// Price for forward.
         /// </summary>
-        /// <value>Price for forward</value>
+        /// <value>Price for forward.</value>
         [DataMember(Name="forward", EmitDefaultValue=false)]
         public decimal? Forward { get; set; }
 
         /// <summary>
-        /// 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country
+        /// 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country.
         /// </summary>
-        /// <value>2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country</value>
+        /// <value>2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country.</value>
         [DataMember(Name="country", EmitDefaultValue=false)]
         public string Country { get; set; }
 

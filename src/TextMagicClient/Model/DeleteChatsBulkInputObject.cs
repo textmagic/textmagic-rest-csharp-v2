@@ -66,8 +66,8 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteChatsBulkInputObject" /> class.
         /// </summary>
-        /// <param name="ids">Entity ID(s), separated by comma.</param>
-        /// <param name="all">Entity ID(s), separated by comma.</param>
+        /// <param name="ids">Entity ID(s), separated by comma..</param>
+        /// <param name="all">Entity ID(s), separated by comma..</param>
         /// <param name="status">Default is an empty string. If set, all entities with specified status will be affected..</param>
         public DeleteChatsBulkInputObject(string ids = default(string), bool? all = default(bool?), StatusEnum? status = default(StatusEnum?))
         {
@@ -77,16 +77,16 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Entity ID(s), separated by comma
+        /// Entity ID(s), separated by comma.
         /// </summary>
-        /// <value>Entity ID(s), separated by comma</value>
+        /// <value>Entity ID(s), separated by comma.</value>
         [DataMember(Name="ids", EmitDefaultValue=false)]
         public string Ids { get; set; }
 
         /// <summary>
-        /// Entity ID(s), separated by comma
+        /// Entity ID(s), separated by comma.
         /// </summary>
-        /// <value>Entity ID(s), separated by comma</value>
+        /// <value>Entity ID(s), separated by comma.</value>
         [DataMember(Name="all", EmitDefaultValue=false)]
         public bool? All { get; set; }
 
