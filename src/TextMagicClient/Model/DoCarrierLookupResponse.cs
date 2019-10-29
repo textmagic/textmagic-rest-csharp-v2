@@ -71,13 +71,13 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="DoCarrierLookupResponse" /> class.
         /// </summary>
-        /// <param name="cost">Cost to check that one number is constant – 0.04 in your account currency. (required).</param>
+        /// <param name="cost">The cost to check that one number is constant – 0.04 in your account currency. (required).</param>
         /// <param name="country">Phone number country..</param>
         /// <param name="local">Phone number in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). (required).</param>
         /// <param name="type">Phone number type. (required).</param>
         /// <param name="carrier">Carrier name. (required).</param>
         /// <param name="number164">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164). (required).</param>
-        /// <param name="valid">The field shows if entered phone number is valid or not. (required).</param>
+        /// <param name="valid">This field shows whether the entered phone number is valid or not. (required).</param>
         public DoCarrierLookupResponse(decimal? cost = default(decimal?), Country country = default(Country), string local = default(string), TypeEnum type = default(TypeEnum), string carrier = default(string), string number164 = default(string), bool? valid = default(bool?))
         {
             // to ensure "cost" is required (not null)
@@ -138,9 +138,9 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Cost to check that one number is constant – 0.04 in your account currency.
+        /// The cost to check that one number is constant – 0.04 in your account currency.
         /// </summary>
-        /// <value>Cost to check that one number is constant – 0.04 in your account currency.</value>
+        /// <value>The cost to check that one number is constant – 0.04 in your account currency.</value>
         [DataMember(Name="cost", EmitDefaultValue=false)]
         public decimal? Cost { get; set; }
 
@@ -174,9 +174,9 @@ namespace TextMagicClient.Model
         public string Number164 { get; set; }
 
         /// <summary>
-        /// The field shows if entered phone number is valid or not.
+        /// This field shows whether the entered phone number is valid or not.
         /// </summary>
-        /// <value>The field shows if entered phone number is valid or not.</value>
+        /// <value>This field shows whether the entered phone number is valid or not.</value>
         [DataMember(Name="valid", EmitDefaultValue=false)]
         public bool? Valid { get; set; }
 

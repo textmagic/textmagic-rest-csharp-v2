@@ -38,9 +38,9 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="GetAvailableSenderSettingOptionsResponse" /> class.
         /// </summary>
-        /// <param name="dedicated">Array of dedicated numbers strings. (required).</param>
+        /// <param name="dedicated">Array of dedicated number strings. (required).</param>
         /// <param name="user">Array of verified account phone numbers (currently only one). (required).</param>
-        /// <param name="shared">Array of shared numbers strings. (required).</param>
+        /// <param name="shared">Array of shared number strings. (required).</param>
         /// <param name="senderIds">Array of alphanumeric sender IDs. (required).</param>
         public GetAvailableSenderSettingOptionsResponse(List<string> dedicated = default(List<string>), List<string> user = default(List<string>), List<string> shared = default(List<string>), List<string> senderIds = default(List<string>))
         {
@@ -83,9 +83,9 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Array of dedicated numbers strings.
+        /// Array of dedicated number strings.
         /// </summary>
-        /// <value>Array of dedicated numbers strings.</value>
+        /// <value>Array of dedicated number strings.</value>
         [DataMember(Name="dedicated", EmitDefaultValue=false)]
         public List<string> Dedicated { get; set; }
 
@@ -97,9 +97,9 @@ namespace TextMagicClient.Model
         public List<string> User { get; set; }
 
         /// <summary>
-        /// Array of shared numbers strings.
+        /// Array of shared number strings.
         /// </summary>
-        /// <value>Array of shared numbers strings.</value>
+        /// <value>Array of shared number strings.</value>
         [DataMember(Name="shared", EmitDefaultValue=false)]
         public List<string> Shared { get; set; }
 

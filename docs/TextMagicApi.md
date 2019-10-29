@@ -30,7 +30,7 @@ Method | HTTP request | Description
 [**DeleteContactsByIds**](TextMagicApi.md#deletecontactsbyids) | **POST** /api/v2/contacts/delete | Delete contacts by IDs (bulk)
 [**DeleteContactsFromList**](TextMagicApi.md#deletecontactsfromlist) | **DELETE** /api/v2/lists/{id}/contacts | Unassign contacts from a list
 [**DeleteCustomField**](TextMagicApi.md#deletecustomfield) | **DELETE** /api/v2/customfields/{id} | Delete a custom field
-[**DeleteDedicatedNumber**](TextMagicApi.md#deletededicatednumber) | **DELETE** /api/v2/numbers/{id} | Cancel dedicated number subscription
+[**DeleteDedicatedNumber**](TextMagicApi.md#deletededicatednumber) | **DELETE** /api/v2/numbers/{id} | Cancel a dedicated number subscription
 [**DeleteInboundMessage**](TextMagicApi.md#deleteinboundmessage) | **DELETE** /api/v2/replies/{id} | Delete a single inbound message
 [**DeleteInboundMessagesBulk**](TextMagicApi.md#deleteinboundmessagesbulk) | **POST** /api/v2/replies/delete | Delete inbound messages (bulk)
 [**DeleteList**](TextMagicApi.md#deletelist) | **DELETE** /api/v2/lists/{id} | Delete a list
@@ -70,7 +70,7 @@ Method | HTTP request | Description
 [**GetContactIfBlocked**](TextMagicApi.md#getcontactifblocked) | **GET** /api/v2/contacts/block/phone | Check is that phone number blocked
 [**GetContactImportSessionProgress**](TextMagicApi.md#getcontactimportsessionprogress) | **GET** /api/v2/contacts/import/progress/{id} | Check import progress
 [**GetContactNote**](TextMagicApi.md#getcontactnote) | **GET** /api/v2/notes/{id} | Get a contact note
-[**GetContactNotes**](TextMagicApi.md#getcontactnotes) | **GET** /api/v2/contacts/{id}/notes | Fetch notes assigned to the given contact.
+[**GetContactNotes**](TextMagicApi.md#getcontactnotes) | **GET** /api/v2/contacts/{id}/notes | Fetch notes assigned to a given contact
 [**GetContacts**](TextMagicApi.md#getcontacts) | **GET** /api/v2/contacts | Get all contacts
 [**GetContactsAutocomplete**](TextMagicApi.md#getcontactsautocomplete) | **GET** /api/v2/contacts/autocomplete | Get contacts autocomplete suggestions
 [**GetContactsByListId**](TextMagicApi.md#getcontactsbylistid) | **GET** /api/v2/lists/{id}/contacts | Get all contacts in a list
@@ -1802,7 +1802,7 @@ void (empty response body)
 # **DeleteDedicatedNumber**
 > void DeleteDedicatedNumber (int? id)
 
-Cancel dedicated number subscription
+Cancel a dedicated number subscription
 
 ### Example
 ```csharp
@@ -1827,7 +1827,7 @@ namespace Example
 
             try
             {
-                // Cancel dedicated number subscription
+                // Cancel a dedicated number subscription
                 apiInstance.DeleteDedicatedNumber(id);
             }
             catch (Exception e)
@@ -2818,7 +2818,7 @@ void (empty response body)
 
 Carrier Lookup
 
-This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers must be checked one by one. You cannot check multiple numbers in one request.   
 
 ### Example
 ```csharp
@@ -2840,7 +2840,7 @@ namespace Example
 
             var apiInstance = new TextMagicApi();
             var phone = "447860021130";  // string | Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). 
-            var country = "GB";  // string | This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional) 
+            var country = "GB";  // string | This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional) 
 
             try
             {
@@ -2862,7 +2862,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **phone** | **string**| Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  | 
- **country** | **string**| This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  | [optional] 
+ **country** | **string**| This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  | [optional] 
 
 ### Return type
 
@@ -2885,7 +2885,7 @@ Name | Type | Description  | Notes
 
 Email Lookup
 
-To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
 
 ### Example
 ```csharp
@@ -3448,8 +3448,8 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var country = "GB";  // string | Two-letter dedicated number country ISO code.
-            var prefix = 447155;  // int? | Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional) 
+            var country = "GB";  // string | The 2-letter dedicated number country ISO code.
+            var prefix = 447155;  // int? | Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional) 
             var tollfree = 56;  // int? | Should we show only tollfree numbers (tollfree available only for US). (optional)  (default to 0)
 
             try
@@ -3471,8 +3471,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country** | **string**| Two-letter dedicated number country ISO code. | 
- **prefix** | **int?**| Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. | [optional] 
+ **country** | **string**| The 2-letter dedicated number country ISO code. | 
+ **prefix** | **int?**| Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. | [optional] 
  **tollfree** | **int?**| Should we show only tollfree numbers (tollfree available only for US). | [optional] [default to 0]
 
 ### Return type
@@ -3496,7 +3496,7 @@ Name | Type | Description  | Notes
 
 Get available sender settings
 
-Get all available sender setting options which could be used in \"from\" parameter of POST messages method.
+Get all available sender setting options which can be used in the \"from\" parameter of the POST messages method.
 
 ### Example
 ```csharp
@@ -4394,7 +4394,7 @@ Name | Type | Description  | Notes
 # **GetContactNotes**
 > GetContactNotesPaginatedResponse GetContactNotes (int? id, int? page = null, int? limit = null)
 
-Fetch notes assigned to the given contact.
+Fetch notes assigned to a given contact
 
 ### Example
 ```csharp
@@ -4421,7 +4421,7 @@ namespace Example
 
             try
             {
-                // Fetch notes assigned to the given contact.
+                // Fetch notes assigned to a given contact
                 GetContactNotesPaginatedResponse result = apiInstance.GetContactNotes(id, page, limit);
                 Debug.WriteLine(result);
             }
@@ -6384,7 +6384,7 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var country = "US";  // string | Return sender settings enabled for sending to specified country. Two upper case characters (optional) 
+            var country = "US";  // string | Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional) 
 
             try
             {
@@ -6405,7 +6405,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country** | **string**| Return sender settings enabled for sending to specified country. Two upper case characters | [optional] 
+ **country** | **string**| Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. | [optional] 
 
 ### Return type
 
@@ -7036,7 +7036,7 @@ namespace Example
             var apiInstance = new TextMagicApi();
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var surveyId = 56;  // int? | Fetch only that numbers which are ready for the survey (optional) 
+            var surveyId = 56;  // int? | Fetch only those numbers that are ready for the survey. (optional) 
 
             try
             {
@@ -7059,7 +7059,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **surveyId** | **int?**| Fetch only that numbers which are ready for the survey | [optional] 
+ **surveyId** | **int?**| Fetch only those numbers that are ready for the survey. | [optional] 
 
 ### Return type
 
@@ -7104,7 +7104,7 @@ namespace Example
 
             var apiInstance = new TextMagicApi();
             var file = new System.IO.Stream(); // System.IO.Stream | File containing contacts in csv or xls(x) formats
-            var column = "0:firstName;1:lastName;3:phone;4:email";  // string | Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required. 
+            var column = "0:firstName;1:lastName;3:phone;4:email";  // string | Import file column mapping. The string must contain sub-strings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where the value before `:` is a number of the column in the file, and the value after `:` is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required. 
             var listId = 443;  // int? | List ID contacts will be imported to. Ignored if `listName` is specified.  (optional) 
             var listName = "A new list";  // string | List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified.  (optional) 
 
@@ -7128,7 +7128,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **System.IO.Stream**| File containing contacts in csv or xls(x) formats | 
- **column** | **string**| Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  | 
+ **column** | **string**| Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  | 
  **listId** | **int?**| List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  | [optional] 
  **listName** | **string**| List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  | [optional] 
 
@@ -7406,7 +7406,7 @@ Name | Type | Description  | Notes
 
 Mute chats (bulk)
 
-Mute several chats by chat IDs or mute all chats
+Mute several chats by chat ids or mute all chats.
 
 ### Example
 ```csharp
@@ -7660,7 +7660,7 @@ Name | Type | Description  | Notes
 
 Apply for a new Sender ID
 
-> Sender IDs are shared between all of your sub-accounts.
+> Sender IDs are shared among all of your sub-accounts.
 
 ### Example
 ```csharp
@@ -8715,7 +8715,7 @@ void (empty response body)
 
 Unmute chats (bulk)
 
-Unmute several chats by chat IDs or unmute all chats
+Unmute several chats by chat ids or unmute all chats.
 
 ### Example
 ```csharp
@@ -9688,7 +9688,7 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var image = new System.IO.Stream(); // System.IO.Stream | Contact avatar. Should be PNG or JPG file not more than 10 MB
+            var image = new System.IO.Stream(); // System.IO.Stream | Contact avatar. Should be a PNG or JPG file not more than 10 MB.
             var id = 1;  // int? | 
 
             try
@@ -9710,7 +9710,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **image** | **System.IO.Stream**| Contact avatar. Should be PNG or JPG file not more than 10 MB | 
+ **image** | **System.IO.Stream**| Contact avatar. Should be a PNG or JPG file not more than 10 MB. | 
  **id** | **int?**|  | 
 
 ### Return type

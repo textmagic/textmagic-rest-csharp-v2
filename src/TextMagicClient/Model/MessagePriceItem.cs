@@ -40,7 +40,7 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <param name="name">Country name. (required).</param>
         /// <param name="price">Price to send message to desired country. (required).</param>
-        /// <param name="country">The 2-letter ISO country code of the recipient phone number. (required).</param>
+        /// <param name="country">The 2-letter ISO country code of the recipient&#39;s phone number. (required).</param>
         public MessagePriceItem(string name = default(string), string price = default(string), string country = default(string))
         {
             // to ensure "name" is required (not null)
@@ -87,9 +87,9 @@ namespace TextMagicClient.Model
         public string Price { get; set; }
 
         /// <summary>
-        /// The 2-letter ISO country code of the recipient phone number.
+        /// The 2-letter ISO country code of the recipient&#39;s phone number.
         /// </summary>
-        /// <value>The 2-letter ISO country code of the recipient phone number.</value>
+        /// <value>The 2-letter ISO country code of the recipient&#39;s phone number.</value>
         [DataMember(Name="country", EmitDefaultValue=false)]
         public string Country { get; set; }
 

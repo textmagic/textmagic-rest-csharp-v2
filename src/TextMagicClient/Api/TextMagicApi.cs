@@ -575,7 +575,7 @@ namespace TextMagicClient.Api
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteCustomFieldWithHttpInfo (int? id);
         /// <summary>
-        /// Cancel dedicated number subscription
+        /// Cancel a dedicated number subscription
         /// </summary>
         /// <remarks>
         /// 
@@ -586,7 +586,7 @@ namespace TextMagicClient.Api
         void DeleteDedicatedNumber (int? id);
 
         /// <summary>
-        /// Cancel dedicated number subscription
+        /// Cancel a dedicated number subscription
         /// </summary>
         /// <remarks>
         /// 
@@ -916,11 +916,11 @@ namespace TextMagicClient.Api
         /// Carrier Lookup
         /// </summary>
         /// <remarks>
-        /// This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+        /// This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
-        /// <param name="country">This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
+        /// <param name="country">This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
         /// <returns>DoCarrierLookupResponse</returns>
         DoCarrierLookupResponse DoCarrierLookup (string phone, string country = null);
 
@@ -928,18 +928,18 @@ namespace TextMagicClient.Api
         /// Carrier Lookup
         /// </summary>
         /// <remarks>
-        /// This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+        /// This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
-        /// <param name="country">This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
+        /// <param name="country">This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
         /// <returns>ApiResponse of DoCarrierLookupResponse</returns>
         ApiResponse<DoCarrierLookupResponse> DoCarrierLookupWithHttpInfo (string phone, string country = null);
         /// <summary>
         /// Email Lookup
         /// </summary>
         /// <remarks>
-        /// To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -950,7 +950,7 @@ namespace TextMagicClient.Api
         /// Email Lookup
         /// </summary>
         /// <remarks>
-        /// To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -1144,8 +1144,8 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter dedicated number country ISO code.</param>
-        /// <param name="prefix">Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
+        /// <param name="country">The 2-letter dedicated number country ISO code.</param>
+        /// <param name="prefix">Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
         /// <param name="tollfree">Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)</param>
         /// <returns>GetAvailableDedicatedNumbersResponse</returns>
         GetAvailableDedicatedNumbersResponse GetAvailableDedicatedNumbers (string country, int? prefix = null, int? tollfree = null);
@@ -1157,8 +1157,8 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter dedicated number country ISO code.</param>
-        /// <param name="prefix">Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
+        /// <param name="country">The 2-letter dedicated number country ISO code.</param>
+        /// <param name="prefix">Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
         /// <param name="tollfree">Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)</param>
         /// <returns>ApiResponse of GetAvailableDedicatedNumbersResponse</returns>
         ApiResponse<GetAvailableDedicatedNumbersResponse> GetAvailableDedicatedNumbersWithHttpInfo (string country, int? prefix = null, int? tollfree = null);
@@ -1166,7 +1166,7 @@ namespace TextMagicClient.Api
         /// Get available sender settings
         /// </summary>
         /// <remarks>
-        /// Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+        /// Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -1177,7 +1177,7 @@ namespace TextMagicClient.Api
         /// Get available sender settings
         /// </summary>
         /// <remarks>
-        /// Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+        /// Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -1477,7 +1477,7 @@ namespace TextMagicClient.Api
         /// <returns>ApiResponse of ContactNote</returns>
         ApiResponse<ContactNote> GetContactNoteWithHttpInfo (int? id);
         /// <summary>
-        /// Fetch notes assigned to the given contact.
+        /// Fetch notes assigned to a given contact
         /// </summary>
         /// <remarks>
         /// 
@@ -1490,7 +1490,7 @@ namespace TextMagicClient.Api
         GetContactNotesPaginatedResponse GetContactNotes (int? id, int? page = null, int? limit = null);
 
         /// <summary>
-        /// Fetch notes assigned to the given contact.
+        /// Fetch notes assigned to a given contact
         /// </summary>
         /// <remarks>
         /// 
@@ -2220,7 +2220,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Return sender settings enabled for sending to specified country. Two upper case characters (optional)</param>
+        /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
         /// <returns>GetSenderSettingsResponse</returns>
         GetSenderSettingsResponse GetSenderSettings (string country = null);
 
@@ -2231,7 +2231,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Return sender settings enabled for sending to specified country. Two upper case characters (optional)</param>
+        /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
         /// <returns>ApiResponse of GetSenderSettingsResponse</returns>
         ApiResponse<GetSenderSettingsResponse> GetSenderSettingsWithHttpInfo (string country = null);
         /// <summary>
@@ -2444,7 +2444,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="surveyId">Fetch only that numbers which are ready for the survey (optional)</param>
+        /// <param name="surveyId">Fetch only those numbers that are ready for the survey. (optional)</param>
         /// <returns>GetUserDedicatedNumbersPaginatedResponse</returns>
         GetUserDedicatedNumbersPaginatedResponse GetUserDedicatedNumbers (int? page = null, int? limit = null, int? surveyId = null);
 
@@ -2457,7 +2457,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="surveyId">Fetch only that numbers which are ready for the survey (optional)</param>
+        /// <param name="surveyId">Fetch only those numbers that are ready for the survey. (optional)</param>
         /// <returns>ApiResponse of GetUserDedicatedNumbersPaginatedResponse</returns>
         ApiResponse<GetUserDedicatedNumbersPaginatedResponse> GetUserDedicatedNumbersWithHttpInfo (int? page = null, int? limit = null, int? surveyId = null);
         /// <summary>
@@ -2468,7 +2468,7 @@ namespace TextMagicClient.Api
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats</param>
-        /// <param name="column">Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
+        /// <param name="column">Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
         /// <param name="listId">List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)</param>
         /// <param name="listName">List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)</param>
         /// <returns>ResourceLinkResponse</returns>
@@ -2482,7 +2482,7 @@ namespace TextMagicClient.Api
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats</param>
-        /// <param name="column">Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
+        /// <param name="column">Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
         /// <param name="listId">List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)</param>
         /// <param name="listName">List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)</param>
         /// <returns>ApiResponse of ResourceLinkResponse</returns>
@@ -2575,7 +2575,7 @@ namespace TextMagicClient.Api
         /// Mute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Mute several chats by chat IDs or mute all chats
+        /// Mute several chats by chat ids or mute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -2586,7 +2586,7 @@ namespace TextMagicClient.Api
         /// Mute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Mute several chats by chat IDs or mute all chats
+        /// Mute several chats by chat ids or mute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -2657,7 +2657,7 @@ namespace TextMagicClient.Api
         /// Apply for a new Sender ID
         /// </summary>
         /// <remarks>
-        /// &gt; Sender IDs are shared between all of your sub-accounts.
+        /// &gt; Sender IDs are shared among all of your sub-accounts.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -2668,7 +2668,7 @@ namespace TextMagicClient.Api
         /// Apply for a new Sender ID
         /// </summary>
         /// <remarks>
-        /// &gt; Sender IDs are shared between all of your sub-accounts.
+        /// &gt; Sender IDs are shared among all of your sub-accounts.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -3066,7 +3066,7 @@ namespace TextMagicClient.Api
         /// Unmute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Unmute several chats by chat IDs or unmute all chats
+        /// Unmute several chats by chat ids or unmute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -3077,7 +3077,7 @@ namespace TextMagicClient.Api
         /// Unmute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Unmute several chats by chat IDs or unmute all chats
+        /// Unmute several chats by chat ids or unmute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -3396,7 +3396,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">Contact avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>ResourceLinkResponse</returns>
         ResourceLinkResponse UploadContactAvatar (System.IO.Stream image, int? id);
@@ -3408,7 +3408,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">Contact avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>ApiResponse of ResourceLinkResponse</returns>
         ApiResponse<ResourceLinkResponse> UploadContactAvatarWithHttpInfo (System.IO.Stream image, int? id);
@@ -4009,7 +4009,7 @@ namespace TextMagicClient.Api
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCustomFieldAsyncWithHttpInfo (int? id);
         /// <summary>
-        /// Cancel dedicated number subscription
+        /// Cancel a dedicated number subscription
         /// </summary>
         /// <remarks>
         /// 
@@ -4020,7 +4020,7 @@ namespace TextMagicClient.Api
         System.Threading.Tasks.Task DeleteDedicatedNumberAsync (int? id);
 
         /// <summary>
-        /// Cancel dedicated number subscription
+        /// Cancel a dedicated number subscription
         /// </summary>
         /// <remarks>
         /// 
@@ -4350,11 +4350,11 @@ namespace TextMagicClient.Api
         /// Carrier Lookup
         /// </summary>
         /// <remarks>
-        /// This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+        /// This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
-        /// <param name="country">This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
+        /// <param name="country">This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
         /// <returns>Task of DoCarrierLookupResponse</returns>
         System.Threading.Tasks.Task<DoCarrierLookupResponse> DoCarrierLookupAsync (string phone, string country = null);
 
@@ -4362,18 +4362,18 @@ namespace TextMagicClient.Api
         /// Carrier Lookup
         /// </summary>
         /// <remarks>
-        /// This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+        /// This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
-        /// <param name="country">This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
+        /// <param name="country">This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
         /// <returns>Task of ApiResponse (DoCarrierLookupResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<DoCarrierLookupResponse>> DoCarrierLookupAsyncWithHttpInfo (string phone, string country = null);
         /// <summary>
         /// Email Lookup
         /// </summary>
         /// <remarks>
-        /// To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -4384,7 +4384,7 @@ namespace TextMagicClient.Api
         /// Email Lookup
         /// </summary>
         /// <remarks>
-        /// To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -4578,8 +4578,8 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter dedicated number country ISO code.</param>
-        /// <param name="prefix">Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
+        /// <param name="country">The 2-letter dedicated number country ISO code.</param>
+        /// <param name="prefix">Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
         /// <param name="tollfree">Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)</param>
         /// <returns>Task of GetAvailableDedicatedNumbersResponse</returns>
         System.Threading.Tasks.Task<GetAvailableDedicatedNumbersResponse> GetAvailableDedicatedNumbersAsync (string country, int? prefix = null, int? tollfree = null);
@@ -4591,8 +4591,8 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter dedicated number country ISO code.</param>
-        /// <param name="prefix">Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
+        /// <param name="country">The 2-letter dedicated number country ISO code.</param>
+        /// <param name="prefix">Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
         /// <param name="tollfree">Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetAvailableDedicatedNumbersResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetAvailableDedicatedNumbersResponse>> GetAvailableDedicatedNumbersAsyncWithHttpInfo (string country, int? prefix = null, int? tollfree = null);
@@ -4600,7 +4600,7 @@ namespace TextMagicClient.Api
         /// Get available sender settings
         /// </summary>
         /// <remarks>
-        /// Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+        /// Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -4611,7 +4611,7 @@ namespace TextMagicClient.Api
         /// Get available sender settings
         /// </summary>
         /// <remarks>
-        /// Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+        /// Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -4911,7 +4911,7 @@ namespace TextMagicClient.Api
         /// <returns>Task of ApiResponse (ContactNote)</returns>
         System.Threading.Tasks.Task<ApiResponse<ContactNote>> GetContactNoteAsyncWithHttpInfo (int? id);
         /// <summary>
-        /// Fetch notes assigned to the given contact.
+        /// Fetch notes assigned to a given contact
         /// </summary>
         /// <remarks>
         /// 
@@ -4924,7 +4924,7 @@ namespace TextMagicClient.Api
         System.Threading.Tasks.Task<GetContactNotesPaginatedResponse> GetContactNotesAsync (int? id, int? page = null, int? limit = null);
 
         /// <summary>
-        /// Fetch notes assigned to the given contact.
+        /// Fetch notes assigned to a given contact
         /// </summary>
         /// <remarks>
         /// 
@@ -5654,7 +5654,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Return sender settings enabled for sending to specified country. Two upper case characters (optional)</param>
+        /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
         /// <returns>Task of GetSenderSettingsResponse</returns>
         System.Threading.Tasks.Task<GetSenderSettingsResponse> GetSenderSettingsAsync (string country = null);
 
@@ -5665,7 +5665,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Return sender settings enabled for sending to specified country. Two upper case characters (optional)</param>
+        /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
         /// <returns>Task of ApiResponse (GetSenderSettingsResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetSenderSettingsResponse>> GetSenderSettingsAsyncWithHttpInfo (string country = null);
         /// <summary>
@@ -5878,7 +5878,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="surveyId">Fetch only that numbers which are ready for the survey (optional)</param>
+        /// <param name="surveyId">Fetch only those numbers that are ready for the survey. (optional)</param>
         /// <returns>Task of GetUserDedicatedNumbersPaginatedResponse</returns>
         System.Threading.Tasks.Task<GetUserDedicatedNumbersPaginatedResponse> GetUserDedicatedNumbersAsync (int? page = null, int? limit = null, int? surveyId = null);
 
@@ -5891,7 +5891,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="surveyId">Fetch only that numbers which are ready for the survey (optional)</param>
+        /// <param name="surveyId">Fetch only those numbers that are ready for the survey. (optional)</param>
         /// <returns>Task of ApiResponse (GetUserDedicatedNumbersPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetUserDedicatedNumbersPaginatedResponse>> GetUserDedicatedNumbersAsyncWithHttpInfo (int? page = null, int? limit = null, int? surveyId = null);
         /// <summary>
@@ -5902,7 +5902,7 @@ namespace TextMagicClient.Api
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats</param>
-        /// <param name="column">Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
+        /// <param name="column">Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
         /// <param name="listId">List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)</param>
         /// <param name="listName">List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)</param>
         /// <returns>Task of ResourceLinkResponse</returns>
@@ -5916,7 +5916,7 @@ namespace TextMagicClient.Api
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats</param>
-        /// <param name="column">Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
+        /// <param name="column">Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
         /// <param name="listId">List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)</param>
         /// <param name="listName">List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)</param>
         /// <returns>Task of ApiResponse (ResourceLinkResponse)</returns>
@@ -6009,7 +6009,7 @@ namespace TextMagicClient.Api
         /// Mute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Mute several chats by chat IDs or mute all chats
+        /// Mute several chats by chat ids or mute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -6020,7 +6020,7 @@ namespace TextMagicClient.Api
         /// Mute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Mute several chats by chat IDs or mute all chats
+        /// Mute several chats by chat ids or mute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -6091,7 +6091,7 @@ namespace TextMagicClient.Api
         /// Apply for a new Sender ID
         /// </summary>
         /// <remarks>
-        /// &gt; Sender IDs are shared between all of your sub-accounts.
+        /// &gt; Sender IDs are shared among all of your sub-accounts.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -6102,7 +6102,7 @@ namespace TextMagicClient.Api
         /// Apply for a new Sender ID
         /// </summary>
         /// <remarks>
-        /// &gt; Sender IDs are shared between all of your sub-accounts.
+        /// &gt; Sender IDs are shared among all of your sub-accounts.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -6500,7 +6500,7 @@ namespace TextMagicClient.Api
         /// Unmute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Unmute several chats by chat IDs or unmute all chats
+        /// Unmute several chats by chat ids or unmute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -6511,7 +6511,7 @@ namespace TextMagicClient.Api
         /// Unmute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Unmute several chats by chat IDs or unmute all chats
+        /// Unmute several chats by chat ids or unmute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -6830,7 +6830,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">Contact avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>Task of ResourceLinkResponse</returns>
         System.Threading.Tasks.Task<ResourceLinkResponse> UploadContactAvatarAsync (System.IO.Stream image, int? id);
@@ -6842,7 +6842,7 @@ namespace TextMagicClient.Api
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">Contact avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>Task of ApiResponse (ResourceLinkResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<ResourceLinkResponse>> UploadContactAvatarAsyncWithHttpInfo (System.IO.Stream image, int? id);
@@ -10997,7 +10997,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Cancel dedicated number subscription 
+        /// Cancel a dedicated number subscription 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11008,7 +11008,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Cancel dedicated number subscription 
+        /// Cancel a dedicated number subscription 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11068,7 +11068,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Cancel dedicated number subscription 
+        /// Cancel a dedicated number subscription 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11080,7 +11080,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Cancel dedicated number subscription 
+        /// Cancel a dedicated number subscription 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -13397,11 +13397,11 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Carrier Lookup This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+        /// Carrier Lookup This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
-        /// <param name="country">This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
+        /// <param name="country">This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
         /// <returns>DoCarrierLookupResponse</returns>
         public DoCarrierLookupResponse DoCarrierLookup (string phone, string country = null)
         {
@@ -13410,11 +13410,11 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Carrier Lookup This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+        /// Carrier Lookup This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
-        /// <param name="country">This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
+        /// <param name="country">This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
         /// <returns>ApiResponse of DoCarrierLookupResponse</returns>
         public ApiResponse< DoCarrierLookupResponse > DoCarrierLookupWithHttpInfo (string phone, string country = null)
         {
@@ -13473,11 +13473,11 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Carrier Lookup This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+        /// Carrier Lookup This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
-        /// <param name="country">This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
+        /// <param name="country">This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
         /// <returns>Task of DoCarrierLookupResponse</returns>
         public async System.Threading.Tasks.Task<DoCarrierLookupResponse> DoCarrierLookupAsync (string phone, string country = null)
         {
@@ -13487,11 +13487,11 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Carrier Lookup This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+        /// Carrier Lookup This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
-        /// <param name="country">This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
+        /// <param name="country">This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)</param>
         /// <returns>Task of ApiResponse (DoCarrierLookupResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<DoCarrierLookupResponse>> DoCarrierLookupAsyncWithHttpInfo (string phone, string country = null)
         {
@@ -13550,7 +13550,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Email Lookup To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// Email Lookup To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -13562,7 +13562,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Email Lookup To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// Email Lookup To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -13623,7 +13623,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Email Lookup To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// Email Lookup To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -13636,7 +13636,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Email Lookup To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// Email Lookup To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -14789,8 +14789,8 @@ namespace TextMagicClient.Api
         /// Find dedicated numbers available for purchase 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter dedicated number country ISO code.</param>
-        /// <param name="prefix">Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
+        /// <param name="country">The 2-letter dedicated number country ISO code.</param>
+        /// <param name="prefix">Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
         /// <param name="tollfree">Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)</param>
         /// <returns>GetAvailableDedicatedNumbersResponse</returns>
         public GetAvailableDedicatedNumbersResponse GetAvailableDedicatedNumbers (string country, int? prefix = null, int? tollfree = null)
@@ -14803,8 +14803,8 @@ namespace TextMagicClient.Api
         /// Find dedicated numbers available for purchase 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter dedicated number country ISO code.</param>
-        /// <param name="prefix">Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
+        /// <param name="country">The 2-letter dedicated number country ISO code.</param>
+        /// <param name="prefix">Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
         /// <param name="tollfree">Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)</param>
         /// <returns>ApiResponse of GetAvailableDedicatedNumbersResponse</returns>
         public ApiResponse< GetAvailableDedicatedNumbersResponse > GetAvailableDedicatedNumbersWithHttpInfo (string country, int? prefix = null, int? tollfree = null)
@@ -14868,8 +14868,8 @@ namespace TextMagicClient.Api
         /// Find dedicated numbers available for purchase 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter dedicated number country ISO code.</param>
-        /// <param name="prefix">Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
+        /// <param name="country">The 2-letter dedicated number country ISO code.</param>
+        /// <param name="prefix">Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
         /// <param name="tollfree">Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)</param>
         /// <returns>Task of GetAvailableDedicatedNumbersResponse</returns>
         public async System.Threading.Tasks.Task<GetAvailableDedicatedNumbersResponse> GetAvailableDedicatedNumbersAsync (string country, int? prefix = null, int? tollfree = null)
@@ -14883,8 +14883,8 @@ namespace TextMagicClient.Api
         /// Find dedicated numbers available for purchase 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter dedicated number country ISO code.</param>
-        /// <param name="prefix">Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
+        /// <param name="country">The 2-letter dedicated number country ISO code.</param>
+        /// <param name="prefix">Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)</param>
         /// <param name="tollfree">Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetAvailableDedicatedNumbersResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetAvailableDedicatedNumbersResponse>> GetAvailableDedicatedNumbersAsyncWithHttpInfo (string country, int? prefix = null, int? tollfree = null)
@@ -14945,7 +14945,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get available sender settings Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+        /// Get available sender settings Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -14957,7 +14957,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get available sender settings Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+        /// Get available sender settings Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -15015,7 +15015,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get available sender settings Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+        /// Get available sender settings Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -15028,7 +15028,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get available sender settings Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+        /// Get available sender settings Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -17033,7 +17033,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Fetch notes assigned to the given contact. 
+        /// Fetch notes assigned to a given contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -17047,7 +17047,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Fetch notes assigned to the given contact. 
+        /// Fetch notes assigned to a given contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -17112,7 +17112,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Fetch notes assigned to the given contact. 
+        /// Fetch notes assigned to a given contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -17127,7 +17127,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Fetch notes assigned to the given contact. 
+        /// Fetch notes assigned to a given contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -21599,7 +21599,7 @@ namespace TextMagicClient.Api
         /// Get current sender settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Return sender settings enabled for sending to specified country. Two upper case characters (optional)</param>
+        /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
         /// <returns>GetSenderSettingsResponse</returns>
         public GetSenderSettingsResponse GetSenderSettings (string country = null)
         {
@@ -21611,7 +21611,7 @@ namespace TextMagicClient.Api
         /// Get current sender settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Return sender settings enabled for sending to specified country. Two upper case characters (optional)</param>
+        /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
         /// <returns>ApiResponse of GetSenderSettingsResponse</returns>
         public ApiResponse< GetSenderSettingsResponse > GetSenderSettingsWithHttpInfo (string country = null)
         {
@@ -21669,7 +21669,7 @@ namespace TextMagicClient.Api
         /// Get current sender settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Return sender settings enabled for sending to specified country. Two upper case characters (optional)</param>
+        /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
         /// <returns>Task of GetSenderSettingsResponse</returns>
         public async System.Threading.Tasks.Task<GetSenderSettingsResponse> GetSenderSettingsAsync (string country = null)
         {
@@ -21682,7 +21682,7 @@ namespace TextMagicClient.Api
         /// Get current sender settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Return sender settings enabled for sending to specified country. Two upper case characters (optional)</param>
+        /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
         /// <returns>Task of ApiResponse (GetSenderSettingsResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetSenderSettingsResponse>> GetSenderSettingsAsyncWithHttpInfo (string country = null)
         {
@@ -23085,7 +23085,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="surveyId">Fetch only that numbers which are ready for the survey (optional)</param>
+        /// <param name="surveyId">Fetch only those numbers that are ready for the survey. (optional)</param>
         /// <returns>GetUserDedicatedNumbersPaginatedResponse</returns>
         public GetUserDedicatedNumbersPaginatedResponse GetUserDedicatedNumbers (int? page = null, int? limit = null, int? surveyId = null)
         {
@@ -23099,7 +23099,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="surveyId">Fetch only that numbers which are ready for the survey (optional)</param>
+        /// <param name="surveyId">Fetch only those numbers that are ready for the survey. (optional)</param>
         /// <returns>ApiResponse of GetUserDedicatedNumbersPaginatedResponse</returns>
         public ApiResponse< GetUserDedicatedNumbersPaginatedResponse > GetUserDedicatedNumbersWithHttpInfo (int? page = null, int? limit = null, int? surveyId = null)
         {
@@ -23161,7 +23161,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="surveyId">Fetch only that numbers which are ready for the survey (optional)</param>
+        /// <param name="surveyId">Fetch only those numbers that are ready for the survey. (optional)</param>
         /// <returns>Task of GetUserDedicatedNumbersPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<GetUserDedicatedNumbersPaginatedResponse> GetUserDedicatedNumbersAsync (int? page = null, int? limit = null, int? surveyId = null)
         {
@@ -23176,7 +23176,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="surveyId">Fetch only that numbers which are ready for the survey (optional)</param>
+        /// <param name="surveyId">Fetch only those numbers that are ready for the survey. (optional)</param>
         /// <returns>Task of ApiResponse (GetUserDedicatedNumbersPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetUserDedicatedNumbersPaginatedResponse>> GetUserDedicatedNumbersAsyncWithHttpInfo (int? page = null, int? limit = null, int? surveyId = null)
         {
@@ -23237,7 +23237,7 @@ namespace TextMagicClient.Api
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats</param>
-        /// <param name="column">Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
+        /// <param name="column">Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
         /// <param name="listId">List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)</param>
         /// <param name="listName">List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)</param>
         /// <returns>ResourceLinkResponse</returns>
@@ -23252,7 +23252,7 @@ namespace TextMagicClient.Api
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats</param>
-        /// <param name="column">Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
+        /// <param name="column">Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
         /// <param name="listId">List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)</param>
         /// <param name="listName">List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)</param>
         /// <returns>ApiResponse of ResourceLinkResponse</returns>
@@ -23322,7 +23322,7 @@ namespace TextMagicClient.Api
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats</param>
-        /// <param name="column">Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
+        /// <param name="column">Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
         /// <param name="listId">List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)</param>
         /// <param name="listName">List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)</param>
         /// <returns>Task of ResourceLinkResponse</returns>
@@ -23338,7 +23338,7 @@ namespace TextMagicClient.Api
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats</param>
-        /// <param name="column">Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
+        /// <param name="column">Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. </param>
         /// <param name="listId">List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)</param>
         /// <param name="listName">List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)</param>
         /// <returns>Task of ApiResponse (ResourceLinkResponse)</returns>
@@ -24036,7 +24036,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chats (bulk) Mute several chats by chat IDs or mute all chats
+        /// Mute chats (bulk) Mute several chats by chat ids or mute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -24047,7 +24047,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chats (bulk) Mute several chats by chat IDs or mute all chats
+        /// Mute chats (bulk) Mute several chats by chat ids or mute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -24114,7 +24114,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chats (bulk) Mute several chats by chat IDs or mute all chats
+        /// Mute chats (bulk) Mute several chats by chat ids or mute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -24126,7 +24126,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chats (bulk) Mute several chats by chat IDs or mute all chats
+        /// Mute chats (bulk) Mute several chats by chat ids or mute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -24646,7 +24646,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Apply for a new Sender ID &gt; Sender IDs are shared between all of your sub-accounts.
+        /// Apply for a new Sender ID &gt; Sender IDs are shared among all of your sub-accounts.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -24658,7 +24658,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Apply for a new Sender ID &gt; Sender IDs are shared between all of your sub-accounts.
+        /// Apply for a new Sender ID &gt; Sender IDs are shared among all of your sub-accounts.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -24726,7 +24726,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Apply for a new Sender ID &gt; Sender IDs are shared between all of your sub-accounts.
+        /// Apply for a new Sender ID &gt; Sender IDs are shared among all of your sub-accounts.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -24739,7 +24739,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Apply for a new Sender ID &gt; Sender IDs are shared between all of your sub-accounts.
+        /// Apply for a new Sender ID &gt; Sender IDs are shared among all of your sub-accounts.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -27155,7 +27155,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unmute chats (bulk) Unmute several chats by chat IDs or unmute all chats
+        /// Unmute chats (bulk) Unmute several chats by chat ids or unmute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -27166,7 +27166,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unmute chats (bulk) Unmute several chats by chat IDs or unmute all chats
+        /// Unmute chats (bulk) Unmute several chats by chat ids or unmute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -27233,7 +27233,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unmute chats (bulk) Unmute several chats by chat IDs or unmute all chats
+        /// Unmute chats (bulk) Unmute several chats by chat ids or unmute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -27245,7 +27245,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unmute chats (bulk) Unmute several chats by chat IDs or unmute all chats
+        /// Unmute chats (bulk) Unmute several chats by chat ids or unmute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -29603,7 +29603,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">Contact avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>ResourceLinkResponse</returns>
         public ResourceLinkResponse UploadContactAvatar (System.IO.Stream image, int? id)
@@ -29616,7 +29616,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">Contact avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>ApiResponse of ResourceLinkResponse</returns>
         public ApiResponse< ResourceLinkResponse > UploadContactAvatarWithHttpInfo (System.IO.Stream image, int? id)
@@ -29682,7 +29682,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">Contact avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>Task of ResourceLinkResponse</returns>
         public async System.Threading.Tasks.Task<ResourceLinkResponse> UploadContactAvatarAsync (System.IO.Stream image, int? id)
@@ -29696,7 +29696,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="image">Contact avatar. Should be PNG or JPG file not more than 10 MB</param>
+        /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
         /// <param name="id"></param>
         /// <returns>Task of ApiResponse (ResourceLinkResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<ResourceLinkResponse>> UploadContactAvatarAsyncWithHttpInfo (System.IO.Stream image, int? id)

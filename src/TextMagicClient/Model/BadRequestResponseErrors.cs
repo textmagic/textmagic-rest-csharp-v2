@@ -25,7 +25,7 @@ using SwaggerDateConverter = TextMagicClient.Client.SwaggerDateConverter;
 namespace TextMagicClient.Model
 {
     /// <summary>
-    /// If it was a **POST** or **PUT** request (and the **message** returned is &#x60;Validation Failed&#x60;), this field may contain **errors **that describe the errors grouped by the input parameter name. 
+    /// If it was a **POST** or **PUT** request (and the **message** returned is &#x60;Validation Failed&#x60;), this field may contain **errors** that describe the errors grouped by the input parameter name. 
     /// </summary>
     [DataContract]
     public partial class BadRequestResponseErrors :  IEquatable<BadRequestResponseErrors>, IValidatableObject

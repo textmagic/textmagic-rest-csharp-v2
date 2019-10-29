@@ -38,8 +38,8 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="RequestSenderIdInputObject" /> class.
         /// </summary>
-        /// <param name="senderId">Sender ID that you are applying for. *   11 characters maximum *   Only Latin based characters and digits are allowed *   Should contain at least one letter  (required).</param>
-        /// <param name="explanation">Explanation why do you need this Sender ID. (required).</param>
+        /// <param name="senderId">The Sender ID that you are applying for. *   11 characters maximum; *   Only Latin based characters and digits are allowed; *   Should contain at least 1 letter.  (required).</param>
+        /// <param name="explanation">Explanation of why you need this Sender ID. (required).</param>
         public RequestSenderIdInputObject(string senderId = default(string), string explanation = default(string))
         {
             // to ensure "senderId" is required (not null)
@@ -63,16 +63,16 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Sender ID that you are applying for. *   11 characters maximum *   Only Latin based characters and digits are allowed *   Should contain at least one letter 
+        /// The Sender ID that you are applying for. *   11 characters maximum; *   Only Latin based characters and digits are allowed; *   Should contain at least 1 letter. 
         /// </summary>
-        /// <value>Sender ID that you are applying for. *   11 characters maximum *   Only Latin based characters and digits are allowed *   Should contain at least one letter </value>
+        /// <value>The Sender ID that you are applying for. *   11 characters maximum; *   Only Latin based characters and digits are allowed; *   Should contain at least 1 letter. </value>
         [DataMember(Name="senderId", EmitDefaultValue=false)]
         public string SenderId { get; set; }
 
         /// <summary>
-        /// Explanation why do you need this Sender ID.
+        /// Explanation of why you need this Sender ID.
         /// </summary>
-        /// <value>Explanation why do you need this Sender ID.</value>
+        /// <value>Explanation of why you need this Sender ID.</value>
         [DataMember(Name="explanation", EmitDefaultValue=false)]
         public string Explanation { get; set; }
 

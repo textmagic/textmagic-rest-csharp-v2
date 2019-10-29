@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class UsersInbound :  IEquatable<UsersInbound>, IValidatableObject
     {
         /// <summary>
-        /// Number status: *   **U** for Unused. No messages have been sent from (or received to) this number. *   **A** for Active. 
+        /// Number status: *   **U** for Unused. No messages have been sent from (or received to) this number; *   **A** for Active. 
         /// </summary>
-        /// <value>Number status: *   **U** for Unused. No messages have been sent from (or received to) this number. *   **A** for Active. </value>
+        /// <value>Number status: *   **U** for Unused. No messages have been sent from (or received to) this number; *   **A** for Active. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StatusEnum
         {
@@ -52,9 +52,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Number status: *   **U** for Unused. No messages have been sent from (or received to) this number. *   **A** for Active. 
+        /// Number status: *   **U** for Unused. No messages have been sent from (or received to) this number; *   **A** for Active. 
         /// </summary>
-        /// <value>Number status: *   **U** for Unused. No messages have been sent from (or received to) this number. *   **A** for Active. </value>
+        /// <value>Number status: *   **U** for Unused. No messages have been sent from (or received to) this number; *   **A** for Active. </value>
         [DataMember(Name="status", EmitDefaultValue=false)]
         public StatusEnum Status { get; set; }
         /// <summary>
@@ -71,7 +71,7 @@ namespace TextMagicClient.Model
         /// <param name="user">user (required).</param>
         /// <param name="purchasedAt">Time when the dedicated number was purchased. (required).</param>
         /// <param name="expireAt">Dedicated number subscription expiration time. (required).</param>
-        /// <param name="status">Number status: *   **U** for Unused. No messages have been sent from (or received to) this number. *   **A** for Active.  (required).</param>
+        /// <param name="status">Number status: *   **U** for Unused. No messages have been sent from (or received to) this number; *   **A** for Active.  (required).</param>
         /// <param name="country">country (required).</param>
         public UsersInbound(int? id = default(int?), string displayTimeFormat = default(string), string phone = default(string), User user = default(User), DateTime? purchasedAt = default(DateTime?), DateTime? expireAt = default(DateTime?), StatusEnum status = default(StatusEnum), Country country = default(Country))
         {

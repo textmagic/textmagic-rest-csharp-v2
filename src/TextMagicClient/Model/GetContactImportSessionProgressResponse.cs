@@ -38,8 +38,8 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="GetContactImportSessionProgressResponse" /> class.
         /// </summary>
-        /// <param name="status">Session status: * **1** if session has been initialized but not yet started * **3** if session is being processed * **4** if session has errors * **5** if session completed successfully  (required).</param>
-        /// <param name="processed">How many contacts have been imported. (required).</param>
+        /// <param name="status">Session status: * **1** - if session has been initialized but not yet started; * **3** - if session is being processed; * **4** - if session has errors; * **5** - if session completed successfully.  (required).</param>
+        /// <param name="processed">How many contacts have been imported? (required).</param>
         public GetContactImportSessionProgressResponse(int? status = default(int?), int? processed = default(int?))
         {
             // to ensure "status" is required (not null)
@@ -63,16 +63,16 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Session status: * **1** if session has been initialized but not yet started * **3** if session is being processed * **4** if session has errors * **5** if session completed successfully 
+        /// Session status: * **1** - if session has been initialized but not yet started; * **3** - if session is being processed; * **4** - if session has errors; * **5** - if session completed successfully. 
         /// </summary>
-        /// <value>Session status: * **1** if session has been initialized but not yet started * **3** if session is being processed * **4** if session has errors * **5** if session completed successfully </value>
+        /// <value>Session status: * **1** - if session has been initialized but not yet started; * **3** - if session is being processed; * **4** - if session has errors; * **5** - if session completed successfully. </value>
         [DataMember(Name="status", EmitDefaultValue=false)]
         public int? Status { get; set; }
 
         /// <summary>
-        /// How many contacts have been imported.
+        /// How many contacts have been imported?
         /// </summary>
-        /// <value>How many contacts have been imported.</value>
+        /// <value>How many contacts have been imported?</value>
         [DataMember(Name="processed", EmitDefaultValue=false)]
         public int? Processed { get; set; }
 

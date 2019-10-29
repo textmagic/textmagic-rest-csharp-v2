@@ -35,7 +35,7 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <param name="ids">Entity ID(s), separated by comma.</param>
         /// <param name="all">Entity ID(s), separated by comma.</param>
-        /// <param name="_for">Mute for N hours.</param>
+        /// <param name="_for">Mute for N hours..</param>
         public MuteChatsBulkInputObject(string ids = default(string), bool? all = default(bool?), int? _for = default(int?))
         {
             this.Ids = ids;
@@ -58,9 +58,9 @@ namespace TextMagicClient.Model
         public bool? All { get; set; }
 
         /// <summary>
-        /// Mute for N hours
+        /// Mute for N hours.
         /// </summary>
-        /// <value>Mute for N hours</value>
+        /// <value>Mute for N hours.</value>
         [DataMember(Name="for", EmitDefaultValue=false)]
         public int? For { get; set; }
 

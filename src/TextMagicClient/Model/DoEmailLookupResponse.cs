@@ -137,15 +137,15 @@ namespace TextMagicClient.Model
         /// <param name="reason">The reason why the checked email is invalid/undeliverable. (required).</param>
         /// <param name="risk">The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;. (required).</param>
         /// <param name="addressType">The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;. (required).</param>
-        /// <param name="isDisposableAddress">This is be &#x60;true&#x60; if the domain is in the list of disposable email addresses, otherwise returns as &#x60;false&#x60;. (required).</param>
-        /// <param name="suggestion">Null if nothing is suggested, however, if there is a potential typo in the email address, the closest suggestion is provided. (required).</param>
-        /// <param name="emailRole">Checks the mailbox part of the email whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’) (required).</param>
+        /// <param name="isDisposableAddress">This is &#x60;true&#x60; if the domain is in the list of disposable email addresses; otherwise, it returns as &#x60;false&#x60;. (required).</param>
+        /// <param name="suggestion">Null if nothing is suggested; however, if there is a potential typo in the email address, the closest suggestion is provided. (required).</param>
+        /// <param name="emailRole">Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’) (required).</param>
         /// <param name="localPart">The local part of the email address. (required).</param>
         /// <param name="domainPart">The domain part of the email address. (required).</param>
         /// <param name="exchange">Email exchange server domain name (MX record value). (required).</param>
         /// <param name="preference">MX record preference. (required).</param>
-        /// <param name="isInWhiteList">&#x60;true&#x60; if the email address exists in TextMagic whitelist.  (required).</param>
-        /// <param name="isInBlackList">&#x60;true&#x60; if the email address exists in TextMagic blacklist.  (required).</param>
+        /// <param name="isInWhiteList">&#x60;true&#x60; if the email address exists in the TextMagic whitelist.  (required).</param>
+        /// <param name="isInBlackList">&#x60;true&#x60; if the email address exists in the TextMagic blacklist.  (required).</param>
         /// <param name="hasMx">&#x60;true&#x60; if the email address domain has an MX record.  (required).</param>
         /// <param name="hasAa">&#x60;true&#x60; if the email address domain has an A record (IPv4).  (required).</param>
         /// <param name="hasAaaa">&#x60;true&#x60; if the email address domain has an AAAA record (IPv6).  (required).</param>
@@ -340,23 +340,23 @@ namespace TextMagicClient.Model
 
 
         /// <summary>
-        /// This is be &#x60;true&#x60; if the domain is in the list of disposable email addresses, otherwise returns as &#x60;false&#x60;.
+        /// This is &#x60;true&#x60; if the domain is in the list of disposable email addresses; otherwise, it returns as &#x60;false&#x60;.
         /// </summary>
-        /// <value>This is be &#x60;true&#x60; if the domain is in the list of disposable email addresses, otherwise returns as &#x60;false&#x60;.</value>
+        /// <value>This is &#x60;true&#x60; if the domain is in the list of disposable email addresses; otherwise, it returns as &#x60;false&#x60;.</value>
         [DataMember(Name="isDisposableAddress", EmitDefaultValue=false)]
         public bool? IsDisposableAddress { get; set; }
 
         /// <summary>
-        /// Null if nothing is suggested, however, if there is a potential typo in the email address, the closest suggestion is provided.
+        /// Null if nothing is suggested; however, if there is a potential typo in the email address, the closest suggestion is provided.
         /// </summary>
-        /// <value>Null if nothing is suggested, however, if there is a potential typo in the email address, the closest suggestion is provided.</value>
+        /// <value>Null if nothing is suggested; however, if there is a potential typo in the email address, the closest suggestion is provided.</value>
         [DataMember(Name="suggestion", EmitDefaultValue=false)]
         public string Suggestion { get; set; }
 
         /// <summary>
-        /// Checks the mailbox part of the email whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)
+        /// Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)
         /// </summary>
-        /// <value>Checks the mailbox part of the email whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)</value>
+        /// <value>Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)</value>
         [DataMember(Name="emailRole", EmitDefaultValue=false)]
         public string EmailRole { get; set; }
 
@@ -389,16 +389,16 @@ namespace TextMagicClient.Model
         public int? Preference { get; set; }
 
         /// <summary>
-        /// &#x60;true&#x60; if the email address exists in TextMagic whitelist. 
+        /// &#x60;true&#x60; if the email address exists in the TextMagic whitelist. 
         /// </summary>
-        /// <value>&#x60;true&#x60; if the email address exists in TextMagic whitelist. </value>
+        /// <value>&#x60;true&#x60; if the email address exists in the TextMagic whitelist. </value>
         [DataMember(Name="isInWhiteList", EmitDefaultValue=false)]
         public bool? IsInWhiteList { get; set; }
 
         /// <summary>
-        /// &#x60;true&#x60; if the email address exists in TextMagic blacklist. 
+        /// &#x60;true&#x60; if the email address exists in the TextMagic blacklist. 
         /// </summary>
-        /// <value>&#x60;true&#x60; if the email address exists in TextMagic blacklist. </value>
+        /// <value>&#x60;true&#x60; if the email address exists in the TextMagic blacklist. </value>
         [DataMember(Name="isInBlackList", EmitDefaultValue=false)]
         public bool? IsInBlackList { get; set; }
 
