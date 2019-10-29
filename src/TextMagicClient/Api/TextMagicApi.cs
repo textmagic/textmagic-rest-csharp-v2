@@ -1849,10 +1849,10 @@ namespace TextMagicClient.Api
         /// <returns>ApiResponse of GetListsPaginatedResponse</returns>
         ApiResponse<GetListsPaginatedResponse> GetListsWithHttpInfo (int? page = null, int? limit = null, string orderBy = null, string direction = null, int? favoriteOnly = null, int? onlyMine = null);
         /// <summary>
-        /// Get contact&#39;s lists
+        /// Get a contact&#39;s lists
         /// </summary>
         /// <remarks>
-        /// Get all the lists in which the contact is included
+        /// Get all the lists in which a contact is included.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1862,10 +1862,10 @@ namespace TextMagicClient.Api
         GetListsOfContactPaginatedResponse GetListsOfContact (int? id, int? page = null, int? limit = null);
 
         /// <summary>
-        /// Get contact&#39;s lists
+        /// Get a contact&#39;s lists
         /// </summary>
         /// <remarks>
-        /// Get all the lists in which the contact is included
+        /// Get all the lists in which a contact is included.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2834,11 +2834,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find lists by ID(s) (optional)</param>
-        /// <param name="query">Find lists by specified search query (optional)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
-        /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="ids">Find lists by IDs. (optional)</param>
+        /// <param name="query">Find lists by specified search query. (optional)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
+        /// <param name="onlyDefault">Return only default lists. (optional, default to 0)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>SearchListsPaginatedResponse</returns>
         SearchListsPaginatedResponse SearchLists (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null);
@@ -2852,11 +2852,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find lists by ID(s) (optional)</param>
-        /// <param name="query">Find lists by specified search query (optional)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
-        /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="ids">Find lists by IDs. (optional)</param>
+        /// <param name="query">Find lists by specified search query. (optional)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
+        /// <param name="onlyDefault">Return only default lists. (optional, default to 0)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of SearchListsPaginatedResponse</returns>
         ApiResponse<SearchListsPaginatedResponse> SearchListsWithHttpInfo (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null);
@@ -5283,10 +5283,10 @@ namespace TextMagicClient.Api
         /// <returns>Task of ApiResponse (GetListsPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetListsPaginatedResponse>> GetListsAsyncWithHttpInfo (int? page = null, int? limit = null, string orderBy = null, string direction = null, int? favoriteOnly = null, int? onlyMine = null);
         /// <summary>
-        /// Get contact&#39;s lists
+        /// Get a contact&#39;s lists
         /// </summary>
         /// <remarks>
-        /// Get all the lists in which the contact is included
+        /// Get all the lists in which a contact is included.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5296,10 +5296,10 @@ namespace TextMagicClient.Api
         System.Threading.Tasks.Task<GetListsOfContactPaginatedResponse> GetListsOfContactAsync (int? id, int? page = null, int? limit = null);
 
         /// <summary>
-        /// Get contact&#39;s lists
+        /// Get a contact&#39;s lists
         /// </summary>
         /// <remarks>
-        /// Get all the lists in which the contact is included
+        /// Get all the lists in which a contact is included.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6268,11 +6268,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find lists by ID(s) (optional)</param>
-        /// <param name="query">Find lists by specified search query (optional)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
-        /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="ids">Find lists by IDs. (optional)</param>
+        /// <param name="query">Find lists by specified search query. (optional)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
+        /// <param name="onlyDefault">Return only default lists. (optional, default to 0)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of SearchListsPaginatedResponse</returns>
         System.Threading.Tasks.Task<SearchListsPaginatedResponse> SearchListsAsync (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null);
@@ -6286,11 +6286,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find lists by ID(s) (optional)</param>
-        /// <param name="query">Find lists by specified search query (optional)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
-        /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="ids">Find lists by IDs. (optional)</param>
+        /// <param name="query">Find lists by specified search query. (optional)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
+        /// <param name="onlyDefault">Return only default lists. (optional, default to 0)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SearchListsPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<SearchListsPaginatedResponse>> SearchListsAsyncWithHttpInfo (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null);
@@ -19445,7 +19445,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get contact&#39;s lists Get all the lists in which the contact is included
+        /// Get a contact&#39;s lists Get all the lists in which a contact is included.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19459,7 +19459,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get contact&#39;s lists Get all the lists in which the contact is included
+        /// Get a contact&#39;s lists Get all the lists in which a contact is included.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19524,7 +19524,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get contact&#39;s lists Get all the lists in which the contact is included
+        /// Get a contact&#39;s lists Get all the lists in which a contact is included.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19539,7 +19539,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get contact&#39;s lists Get all the lists in which the contact is included
+        /// Get a contact&#39;s lists Get all the lists in which a contact is included.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -25655,11 +25655,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find lists by ID(s) (optional)</param>
-        /// <param name="query">Find lists by specified search query (optional)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
-        /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="ids">Find lists by IDs. (optional)</param>
+        /// <param name="query">Find lists by specified search query. (optional)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
+        /// <param name="onlyDefault">Return only default lists. (optional, default to 0)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>SearchListsPaginatedResponse</returns>
         public SearchListsPaginatedResponse SearchLists (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null)
@@ -25674,11 +25674,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find lists by ID(s) (optional)</param>
-        /// <param name="query">Find lists by specified search query (optional)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
-        /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="ids">Find lists by IDs. (optional)</param>
+        /// <param name="query">Find lists by specified search query. (optional)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
+        /// <param name="onlyDefault">Return only default lists. (optional, default to 0)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of SearchListsPaginatedResponse</returns>
         public ApiResponse< SearchListsPaginatedResponse > SearchListsWithHttpInfo (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null)
@@ -25746,11 +25746,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find lists by ID(s) (optional)</param>
-        /// <param name="query">Find lists by specified search query (optional)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
-        /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="ids">Find lists by IDs. (optional)</param>
+        /// <param name="query">Find lists by specified search query. (optional)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
+        /// <param name="onlyDefault">Return only default lists. (optional, default to 0)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of SearchListsPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<SearchListsPaginatedResponse> SearchListsAsync (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null)
@@ -25766,11 +25766,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find lists by ID(s) (optional)</param>
-        /// <param name="query">Find lists by specified search query (optional)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
-        /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
+        /// <param name="ids">Find lists by IDs. (optional)</param>
+        /// <param name="query">Find lists by specified search query. (optional)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
+        /// <param name="onlyDefault">Return only default lists. (optional, default to 0)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SearchListsPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SearchListsPaginatedResponse>> SearchListsAsyncWithHttpInfo (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null)

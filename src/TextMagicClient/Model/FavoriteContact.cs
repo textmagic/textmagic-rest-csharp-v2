@@ -67,8 +67,8 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <param name="entityId">List or Contact ID. (required).</param>
         /// <param name="entityType">Entity type which should be marked as **favorite**. (required).</param>
-        /// <param name="primaryLabel">Contact first name/last name if entityType is **contact**, List name if entity type is **list**. (required).</param>
-        /// <param name="secondaryLabel">Phone number if entityType is **contact**, List contacts number if entity type is **list**. (required).</param>
+        /// <param name="primaryLabel">Contact first name/last name if entityType is **contact** List name if entity type is **list**. (required).</param>
+        /// <param name="secondaryLabel">Phone number if entityType is **contact** List contacts number if entity type is **list**. (required).</param>
         /// <param name="tertiaryLabel">Contact country if entityType is **contact** else null. (required).</param>
         /// <param name="avatar">avatar (required).</param>
         public FavoriteContact(int? entityId = default(int?), EntityTypeEnum entityType = default(EntityTypeEnum), string primaryLabel = default(string), string secondaryLabel = default(string), string tertiaryLabel = default(string), string avatar = default(string))
@@ -138,16 +138,16 @@ namespace TextMagicClient.Model
 
 
         /// <summary>
-        /// Contact first name/last name if entityType is **contact**, List name if entity type is **list**.
+        /// Contact first name/last name if entityType is **contact** List name if entity type is **list**.
         /// </summary>
-        /// <value>Contact first name/last name if entityType is **contact**, List name if entity type is **list**.</value>
+        /// <value>Contact first name/last name if entityType is **contact** List name if entity type is **list**.</value>
         [DataMember(Name="primaryLabel", EmitDefaultValue=false)]
         public string PrimaryLabel { get; set; }
 
         /// <summary>
-        /// Phone number if entityType is **contact**, List contacts number if entity type is **list**.
+        /// Phone number if entityType is **contact** List contacts number if entity type is **list**.
         /// </summary>
-        /// <value>Phone number if entityType is **contact**, List contacts number if entity type is **list**.</value>
+        /// <value>Phone number if entityType is **contact** List contacts number if entity type is **list**.</value>
         [DataMember(Name="secondaryLabel", EmitDefaultValue=false)]
         public string SecondaryLabel { get; set; }
 

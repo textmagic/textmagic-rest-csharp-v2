@@ -86,7 +86,7 @@ Method | HTTP request | Description
 [**GetList**](TextMagicApi.md#getlist) | **GET** /api/v2/lists/{id} | Get the details of a specific list
 [**GetListContactsIds**](TextMagicApi.md#getlistcontactsids) | **GET** /api/v2/lists/{id}/contacts/ids | Get all contacts IDs in a list
 [**GetLists**](TextMagicApi.md#getlists) | **GET** /api/v2/lists | Get all lists
-[**GetListsOfContact**](TextMagicApi.md#getlistsofcontact) | **GET** /api/v2/contacts/{id}/lists | Get contact&#39;s lists
+[**GetListsOfContact**](TextMagicApi.md#getlistsofcontact) | **GET** /api/v2/contacts/{id}/lists | Get a contact&#39;s lists
 [**GetMessagePreview**](TextMagicApi.md#getmessagepreview) | **GET** /api/v2/messages/preview | Preview message
 [**GetMessagePrice**](TextMagicApi.md#getmessageprice) | **GET** /api/v2/messages/price/normalized | Check message price
 [**GetMessageSession**](TextMagicApi.md#getmessagesession) | **GET** /api/v2/sessions/{id} | Get a session&#x60;s details
@@ -5434,9 +5434,9 @@ Name | Type | Description  | Notes
 # **GetListsOfContact**
 > GetListsOfContactPaginatedResponse GetListsOfContact (int? id, int? page = null, int? limit = null)
 
-Get contact's lists
+Get a contact's lists
 
-Get all the lists in which the contact is included
+Get all the lists in which a contact is included.
 
 ### Example
 ```csharp
@@ -5463,7 +5463,7 @@ namespace Example
 
             try
             {
-                // Get contact's lists
+                // Get a contact's lists
                 GetListsOfContactPaginatedResponse result = apiInstance.GetListsOfContact(id, page, limit);
                 Debug.WriteLine(result);
             }
@@ -8107,11 +8107,11 @@ namespace Example
             var apiInstance = new TextMagicApi();
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var ids = "1,2,3,4";  // string | Find lists by ID(s) (optional) 
-            var query = "A";  // string | Find lists by specified search query (optional) 
-            var onlyMine = 56;  // int? | Return only current user lists (optional)  (default to 0)
-            var onlyDefault = 56;  // int? | Return only default lists (optional)  (default to 0)
-            var orderBy = orderBy_example;  // string | Order results by some field. Default is id (optional)  (default to id)
+            var ids = "1,2,3,4";  // string | Find lists by IDs. (optional) 
+            var query = "A";  // string | Find lists by specified search query. (optional) 
+            var onlyMine = 56;  // int? | Return only current user lists. (optional)  (default to 0)
+            var onlyDefault = 56;  // int? | Return only default lists. (optional)  (default to 0)
+            var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
 
             try
@@ -8135,11 +8135,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **ids** | **string**| Find lists by ID(s) | [optional] 
- **query** | **string**| Find lists by specified search query | [optional] 
- **onlyMine** | **int?**| Return only current user lists | [optional] [default to 0]
- **onlyDefault** | **int?**| Return only default lists | [optional] [default to 0]
- **orderBy** | **string**| Order results by some field. Default is id | [optional] [default to id]
+ **ids** | **string**| Find lists by IDs. | [optional] 
+ **query** | **string**| Find lists by specified search query. | [optional] 
+ **onlyMine** | **int?**| Return only current user lists. | [optional] [default to 0]
+ **onlyDefault** | **int?**| Return only default lists. | [optional] [default to 0]
+ **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
 
 ### Return type
