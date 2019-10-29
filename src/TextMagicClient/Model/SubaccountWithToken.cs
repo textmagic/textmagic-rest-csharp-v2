@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class SubaccountWithToken :  IEquatable<SubaccountWithToken>, IValidatableObject
     {
         /// <summary>
-        /// Current account status: * **A** for Active * **T** for Trial. 
+        /// Current account status: * **A** for Active; * **T** for Trial. 
         /// </summary>
-        /// <value>Current account status: * **A** for Active * **T** for Trial. </value>
+        /// <value>Current account status: * **A** for Active; * **T** for Trial. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StatusEnum
         {
@@ -52,15 +52,15 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Current account status: * **A** for Active * **T** for Trial. 
+        /// Current account status: * **A** for Active; * **T** for Trial. 
         /// </summary>
-        /// <value>Current account status: * **A** for Active * **T** for Trial. </value>
+        /// <value>Current account status: * **A** for Active; * **T** for Trial. </value>
         [DataMember(Name="status", EmitDefaultValue=false)]
         public StatusEnum Status { get; set; }
         /// <summary>
-        /// Type of account: *   **A** for Administrator sub-account *   **U** for Regular User 
+        /// Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. 
         /// </summary>
-        /// <value>Type of account: *   **A** for Administrator sub-account *   **U** for Regular User </value>
+        /// <value>Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum SubaccountTypeEnum
         {
@@ -79,9 +79,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Type of account: *   **A** for Administrator sub-account *   **U** for Regular User 
+        /// Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. 
         /// </summary>
-        /// <value>Type of account: *   **A** for Administrator sub-account *   **U** for Regular User </value>
+        /// <value>Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. </value>
         [DataMember(Name="subaccountType", EmitDefaultValue=false)]
         public SubaccountTypeEnum SubaccountType { get; set; }
         /// <summary>
@@ -97,14 +97,14 @@ namespace TextMagicClient.Model
         /// <param name="firstName">Account first name. (required).</param>
         /// <param name="lastName">Account last name. (required).</param>
         /// <param name="email">Account Email address. (required).</param>
-        /// <param name="status">Current account status: * **A** for Active * **T** for Trial.  (required).</param>
+        /// <param name="status">Current account status: * **A** for Active; * **T** for Trial.  (required).</param>
         /// <param name="balance">Account balance (in account currency). (required).</param>
         /// <param name="phone">Contact phone number. (required).</param>
         /// <param name="company">Account company name. (required).</param>
         /// <param name="currency">currency (required).</param>
         /// <param name="country">country (required).</param>
         /// <param name="timezone">timezone (required).</param>
-        /// <param name="subaccountType">Type of account: *   **A** for Administrator sub-account *   **U** for Regular User  (required).</param>
+        /// <param name="subaccountType">Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User.  (required).</param>
         /// <param name="emailAccepted">Does the account have a confirmed Email?. (required).</param>
         /// <param name="phoneAccepted">Does the account have a confirmed Phone Number?. (required).</param>
         /// <param name="avatar">avatar (required).</param>

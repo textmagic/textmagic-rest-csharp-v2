@@ -2376,7 +2376,7 @@ namespace TextMagicClient.Api
         /// Get unread messages number
         /// </summary>
         /// <remarks>
-        /// Get total amount of unread messages in the current user chats.
+        /// Get the total amount of unread messages in the current user chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetUnreadMessagesTotalResponse</returns>
@@ -2386,7 +2386,7 @@ namespace TextMagicClient.Api
         /// Get unread messages number
         /// </summary>
         /// <remarks>
-        /// Get total amount of unread messages in the current user chats.
+        /// Get the total amount of unread messages in the current user chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetUnreadMessagesTotalResponse</returns>
@@ -2683,7 +2683,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find chats by specified search query (optional)</param>
+        /// <param name="query">Find chats by specified search query. (optional)</param>
         /// <returns>SearchChatsPaginatedResponse</returns>
         SearchChatsPaginatedResponse SearchChats (int? page = null, int? limit = null, string query = null);
 
@@ -2696,7 +2696,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find chats by specified search query (optional)</param>
+        /// <param name="query">Find chats by specified search query. (optional)</param>
         /// <returns>ApiResponse of SearchChatsPaginatedResponse</returns>
         ApiResponse<SearchChatsPaginatedResponse> SearchChatsWithHttpInfo (int? page = null, int? limit = null, string query = null);
         /// <summary>
@@ -2708,7 +2708,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find chats by ID(s) (optional)</param>
+        /// <param name="ids">Find chats by ID(s). (optional)</param>
         /// <returns>SearchChatsByIdsPaginatedResponse</returns>
         SearchChatsByIdsPaginatedResponse SearchChatsByIds (int? page = null, int? limit = null, string ids = null);
 
@@ -2721,7 +2721,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find chats by ID(s) (optional)</param>
+        /// <param name="ids">Find chats by ID(s). (optional)</param>
         /// <returns>ApiResponse of SearchChatsByIdsPaginatedResponse</returns>
         ApiResponse<SearchChatsByIdsPaginatedResponse> SearchChatsByIdsWithHttpInfo (int? page = null, int? limit = null, string ids = null);
         /// <summary>
@@ -3003,7 +3003,7 @@ namespace TextMagicClient.Api
         /// Change chat status
         /// </summary>
         /// <remarks>
-        /// Set status of the chat given by ID.
+        /// Set the status of the chat given by ID.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -3014,7 +3014,7 @@ namespace TextMagicClient.Api
         /// Change chat status
         /// </summary>
         /// <remarks>
-        /// Set status of the chat given by ID.
+        /// Set the status of the chat given by ID.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -5810,7 +5810,7 @@ namespace TextMagicClient.Api
         /// Get unread messages number
         /// </summary>
         /// <remarks>
-        /// Get total amount of unread messages in the current user chats.
+        /// Get the total amount of unread messages in the current user chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetUnreadMessagesTotalResponse</returns>
@@ -5820,7 +5820,7 @@ namespace TextMagicClient.Api
         /// Get unread messages number
         /// </summary>
         /// <remarks>
-        /// Get total amount of unread messages in the current user chats.
+        /// Get the total amount of unread messages in the current user chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetUnreadMessagesTotalResponse)</returns>
@@ -6117,7 +6117,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find chats by specified search query (optional)</param>
+        /// <param name="query">Find chats by specified search query. (optional)</param>
         /// <returns>Task of SearchChatsPaginatedResponse</returns>
         System.Threading.Tasks.Task<SearchChatsPaginatedResponse> SearchChatsAsync (int? page = null, int? limit = null, string query = null);
 
@@ -6130,7 +6130,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find chats by specified search query (optional)</param>
+        /// <param name="query">Find chats by specified search query. (optional)</param>
         /// <returns>Task of ApiResponse (SearchChatsPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<SearchChatsPaginatedResponse>> SearchChatsAsyncWithHttpInfo (int? page = null, int? limit = null, string query = null);
         /// <summary>
@@ -6142,7 +6142,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find chats by ID(s) (optional)</param>
+        /// <param name="ids">Find chats by ID(s). (optional)</param>
         /// <returns>Task of SearchChatsByIdsPaginatedResponse</returns>
         System.Threading.Tasks.Task<SearchChatsByIdsPaginatedResponse> SearchChatsByIdsAsync (int? page = null, int? limit = null, string ids = null);
 
@@ -6155,7 +6155,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find chats by ID(s) (optional)</param>
+        /// <param name="ids">Find chats by ID(s). (optional)</param>
         /// <returns>Task of ApiResponse (SearchChatsByIdsPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<SearchChatsByIdsPaginatedResponse>> SearchChatsByIdsAsyncWithHttpInfo (int? page = null, int? limit = null, string ids = null);
         /// <summary>
@@ -6437,7 +6437,7 @@ namespace TextMagicClient.Api
         /// Change chat status
         /// </summary>
         /// <remarks>
-        /// Set status of the chat given by ID.
+        /// Set the status of the chat given by ID.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -6448,7 +6448,7 @@ namespace TextMagicClient.Api
         /// Change chat status
         /// </summary>
         /// <remarks>
-        /// Set status of the chat given by ID.
+        /// Set the status of the chat given by ID.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -22651,7 +22651,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get unread messages number Get total amount of unread messages in the current user chats.
+        /// Get unread messages number Get the total amount of unread messages in the current user chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetUnreadMessagesTotalResponse</returns>
@@ -22662,7 +22662,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get unread messages number Get total amount of unread messages in the current user chats.
+        /// Get unread messages number Get the total amount of unread messages in the current user chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetUnreadMessagesTotalResponse</returns>
@@ -22718,7 +22718,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get unread messages number Get total amount of unread messages in the current user chats.
+        /// Get unread messages number Get the total amount of unread messages in the current user chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetUnreadMessagesTotalResponse</returns>
@@ -22730,7 +22730,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get unread messages number Get total amount of unread messages in the current user chats.
+        /// Get unread messages number Get the total amount of unread messages in the current user chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetUnreadMessagesTotalResponse)</returns>
@@ -24812,7 +24812,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find chats by specified search query (optional)</param>
+        /// <param name="query">Find chats by specified search query. (optional)</param>
         /// <returns>SearchChatsPaginatedResponse</returns>
         public SearchChatsPaginatedResponse SearchChats (int? page = null, int? limit = null, string query = null)
         {
@@ -24826,7 +24826,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find chats by specified search query (optional)</param>
+        /// <param name="query">Find chats by specified search query. (optional)</param>
         /// <returns>ApiResponse of SearchChatsPaginatedResponse</returns>
         public ApiResponse< SearchChatsPaginatedResponse > SearchChatsWithHttpInfo (int? page = null, int? limit = null, string query = null)
         {
@@ -24888,7 +24888,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find chats by specified search query (optional)</param>
+        /// <param name="query">Find chats by specified search query. (optional)</param>
         /// <returns>Task of SearchChatsPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<SearchChatsPaginatedResponse> SearchChatsAsync (int? page = null, int? limit = null, string query = null)
         {
@@ -24903,7 +24903,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find chats by specified search query (optional)</param>
+        /// <param name="query">Find chats by specified search query. (optional)</param>
         /// <returns>Task of ApiResponse (SearchChatsPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SearchChatsPaginatedResponse>> SearchChatsAsyncWithHttpInfo (int? page = null, int? limit = null, string query = null)
         {
@@ -24965,7 +24965,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find chats by ID(s) (optional)</param>
+        /// <param name="ids">Find chats by ID(s). (optional)</param>
         /// <returns>SearchChatsByIdsPaginatedResponse</returns>
         public SearchChatsByIdsPaginatedResponse SearchChatsByIds (int? page = null, int? limit = null, string ids = null)
         {
@@ -24979,7 +24979,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find chats by ID(s) (optional)</param>
+        /// <param name="ids">Find chats by ID(s). (optional)</param>
         /// <returns>ApiResponse of SearchChatsByIdsPaginatedResponse</returns>
         public ApiResponse< SearchChatsByIdsPaginatedResponse > SearchChatsByIdsWithHttpInfo (int? page = null, int? limit = null, string ids = null)
         {
@@ -25041,7 +25041,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find chats by ID(s) (optional)</param>
+        /// <param name="ids">Find chats by ID(s). (optional)</param>
         /// <returns>Task of SearchChatsByIdsPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<SearchChatsByIdsPaginatedResponse> SearchChatsByIdsAsync (int? page = null, int? limit = null, string ids = null)
         {
@@ -25056,7 +25056,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find chats by ID(s) (optional)</param>
+        /// <param name="ids">Find chats by ID(s). (optional)</param>
         /// <returns>Task of ApiResponse (SearchChatsByIdsPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SearchChatsByIdsPaginatedResponse>> SearchChatsByIdsAsyncWithHttpInfo (int? page = null, int? limit = null, string ids = null)
         {
@@ -26680,7 +26680,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Change chat status Set status of the chat given by ID.
+        /// Change chat status Set the status of the chat given by ID.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -26692,7 +26692,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Change chat status Set status of the chat given by ID.
+        /// Change chat status Set the status of the chat given by ID.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -26760,7 +26760,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Change chat status Set status of the chat given by ID.
+        /// Change chat status Set the status of the chat given by ID.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -26773,7 +26773,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Change chat status Set status of the chat given by ID.
+        /// Change chat status Set the status of the chat given by ID.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>

@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class Chat :  IEquatable<Chat>, IValidatableObject
     {
         /// <summary>
-        /// Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted 
+        /// Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. 
         /// </summary>
-        /// <value>Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted </value>
+        /// <value>Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StatusEnum
         {
@@ -58,9 +58,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted 
+        /// Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. 
         /// </summary>
-        /// <value>Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted </value>
+        /// <value>Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. </value>
         [DataMember(Name="status", EmitDefaultValue=false)]
         public StatusEnum Status { get; set; }
         /// <summary>
@@ -117,7 +117,7 @@ namespace TextMagicClient.Model
         /// <param name="unsubscribedContactId">If this field has a value, it means that the chat phone number has been unsubscribed from you and this value is an ID of an Unsubscribed contact entity. See [Get all unsubscribed contacts](http://docs.textmagictesting.com/#operation/getUnsubscribers). (required).</param>
         /// <param name="unread">Total unread incoming messages. (required).</param>
         /// <param name="updatedAt">Time when the last incoming message arrived at this chat. (required).</param>
-        /// <param name="status">Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted  (required).</param>
+        /// <param name="status">Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted.  (required).</param>
         /// <param name="mute">Indicates when the chat is muted. (required).</param>
         /// <param name="lastMessage">The last message content of a chat. (required).</param>
         /// <param name="direction">Last message type: * **ci** - incoming call; * **co** - outgoing call; * **i** - incoming message; * **o** - outgoing message.  (required).</param>

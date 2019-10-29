@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class InviteSubaccountInputObject :  IEquatable<InviteSubaccountInputObject>, IValidatableObject
     {
         /// <summary>
-        /// Type of account: *   **A** for Administrator sub-account *   **U** for Regular User 
+        /// Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. 
         /// </summary>
-        /// <value>Type of account: *   **A** for Administrator sub-account *   **U** for Regular User </value>
+        /// <value>Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum RoleEnum
         {
@@ -52,9 +52,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Type of account: *   **A** for Administrator sub-account *   **U** for Regular User 
+        /// Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. 
         /// </summary>
-        /// <value>Type of account: *   **A** for Administrator sub-account *   **U** for Regular User </value>
+        /// <value>Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. </value>
         [DataMember(Name="role", EmitDefaultValue=false)]
         public RoleEnum Role { get; set; }
         /// <summary>
@@ -66,7 +66,7 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="InviteSubaccountInputObject" /> class.
         /// </summary>
         /// <param name="email">Invitation email will be sent to this email address. (required).</param>
-        /// <param name="role">Type of account: *   **A** for Administrator sub-account *   **U** for Regular User  (required).</param>
+        /// <param name="role">Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User.  (required).</param>
         public InviteSubaccountInputObject(string email = default(string), RoleEnum role = default(RoleEnum))
         {
             // to ensure "email" is required (not null)

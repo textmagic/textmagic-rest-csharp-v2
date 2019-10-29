@@ -6820,7 +6820,7 @@ Name | Type | Description  | Notes
 
 Get unread messages number
 
-Get total amount of unread messages in the current user chats.
+Get the total amount of unread messages in the current user chats.
 
 ### Example
 ```csharp
@@ -7742,7 +7742,7 @@ namespace Example
             var apiInstance = new TextMagicApi();
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var query = query_example;  // string | Find chats by specified search query (optional) 
+            var query = query_example;  // string | Find chats by specified search query. (optional) 
 
             try
             {
@@ -7765,7 +7765,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **query** | **string**| Find chats by specified search query | [optional] 
+ **query** | **string**| Find chats by specified search query. | [optional] 
 
 ### Return type
 
@@ -7809,7 +7809,7 @@ namespace Example
             var apiInstance = new TextMagicApi();
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var ids = ids_example;  // string | Find chats by ID(s) (optional) 
+            var ids = ids_example;  // string | Find chats by ID(s). (optional) 
 
             try
             {
@@ -7832,7 +7832,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **ids** | **string**| Find chats by ID(s) | [optional] 
+ **ids** | **string**| Find chats by ID(s). | [optional] 
 
 ### Return type
 
@@ -8520,7 +8520,7 @@ Name | Type | Description  | Notes
 
 Change chat status
 
-Set status of the chat given by ID.
+Set the status of the chat given by ID.
 
 ### Example
 ```csharp
