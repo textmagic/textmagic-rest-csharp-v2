@@ -51,10 +51,10 @@ namespace TextMagicClient.Model
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure..</param>
         /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs)..</param>
         /// <param name="rrule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details..</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (default to false).</param>
-        /// <param name="tts">Send Text to Speech message. (default to false).</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (default to false).</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country..</param>
+        /// <param name="createChat">Should sending method try to create new Chat (if not exist) with specified recipients? (default to false).</param>
+        /// <param name="tts">Send a Text to Speech message. (default to false).</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (default to false).</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country..</param>
         public SendMessageInputObject(string text = default(string), int? templateId = default(int?), int? sendingTime = default(int?), string sendingDateTime = default(string), string sendingTimezone = default(string), string contacts = default(string), string lists = default(string), string phones = default(string), bool? cutExtra = false, int? partsCount = default(int?), int? referenceId = default(int?), string from = default(string), string rrule = default(string), bool? createChat = false, bool? tts = false, bool? local = false, string localCountry = default(string))
         {
             // to ensure "text" is required (not null)
@@ -216,30 +216,30 @@ namespace TextMagicClient.Model
         public string Rrule { get; set; }
 
         /// <summary>
-        /// Should sending method try to create new Chat(if not exist) with specified recipients.
+        /// Should sending method try to create new Chat (if not exist) with specified recipients?
         /// </summary>
-        /// <value>Should sending method try to create new Chat(if not exist) with specified recipients.</value>
+        /// <value>Should sending method try to create new Chat (if not exist) with specified recipients?</value>
         [DataMember(Name="createChat", EmitDefaultValue=false)]
         public bool? CreateChat { get; set; }
 
         /// <summary>
-        /// Send Text to Speech message.
+        /// Send a Text to Speech message.
         /// </summary>
-        /// <value>Send Text to Speech message.</value>
+        /// <value>Send a Text to Speech message.</value>
         [DataMember(Name="tts", EmitDefaultValue=false)]
         public bool? Tts { get; set; }
 
         /// <summary>
-        /// Treat phone numbers passed in \\&#39;phones\\&#39; field as local.
+        /// Treat phone numbers passed in the \\&#39;phones\\&#39; field as local.
         /// </summary>
-        /// <value>Treat phone numbers passed in \\&#39;phones\\&#39; field as local.</value>
+        /// <value>Treat phone numbers passed in the \\&#39;phones\\&#39; field as local.</value>
         [DataMember(Name="local", EmitDefaultValue=false)]
         public bool? Local { get; set; }
 
         /// <summary>
-        /// 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country.
+        /// The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country.
         /// </summary>
-        /// <value>2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country.</value>
+        /// <value>The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country.</value>
         [DataMember(Name="localCountry", EmitDefaultValue=false)]
         public string LocalCountry { get; set; }
 

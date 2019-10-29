@@ -41,7 +41,7 @@ namespace TextMagicClient.Model
         /// <param name="id">id (required).</param>
         /// <param name="countryName">countryName (required).</param>
         /// <param name="fromNumber">fromNumber (required).</param>
-        /// <param name="allowDedicated">allowDedicated (required).</param>
+        /// <param name="allowDedicated">Is allowed to use a dedicated number? (required).</param>
         public SurveySenderCountries(int? id = default(int?), string countryName = default(string), string fromNumber = default(string), bool? allowDedicated = default(bool?))
         {
             // to ensure "id" is required (not null)
@@ -101,8 +101,9 @@ namespace TextMagicClient.Model
         public string FromNumber { get; set; }
 
         /// <summary>
-        /// Gets or Sets AllowDedicated
+        /// Is allowed to use a dedicated number?
         /// </summary>
+        /// <value>Is allowed to use a dedicated number?</value>
         [DataMember(Name="allowDedicated", EmitDefaultValue=false)]
         public bool? AllowDedicated { get; set; }
 

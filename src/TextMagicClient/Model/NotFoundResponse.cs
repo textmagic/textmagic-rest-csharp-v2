@@ -34,7 +34,7 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="NotFoundResponse" /> class.
         /// </summary>
         /// <param name="code">Error code. Meanings of error codes are similar to [HTTP response codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)..</param>
-        /// <param name="message">Brief error message. You could display this message to your user or save it in a log..</param>
+        /// <param name="message">A Brief error message. You could display this message to your user or save it in a log..</param>
         public NotFoundResponse(int? code = default(int?), string message = default(string))
         {
             this.Code = code;
@@ -49,9 +49,9 @@ namespace TextMagicClient.Model
         public int? Code { get; set; }
 
         /// <summary>
-        /// Brief error message. You could display this message to your user or save it in a log.
+        /// A Brief error message. You could display this message to your user or save it in a log.
         /// </summary>
-        /// <value>Brief error message. You could display this message to your user or save it in a log.</value>
+        /// <value>A Brief error message. You could display this message to your user or save it in a log.</value>
         [DataMember(Name="message", EmitDefaultValue=false)]
         public string Message { get; set; }
 

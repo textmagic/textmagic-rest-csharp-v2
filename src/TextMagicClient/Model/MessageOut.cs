@@ -140,17 +140,17 @@ namespace TextMagicClient.Model
         /// <param name="sessionId">Message Session ID of a Message. (required).</param>
         /// <param name="messageTime">Sending time. (required).</param>
         /// <param name="avatar">avatar (required).</param>
-        /// <param name="deleted">Indicates that message has been deleted..</param>
-        /// <param name="charset">Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS  (required).</param>
-        /// <param name="charsetLabel">Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages  (required).</param>
-        /// <param name="firstName">Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted phone number instead of contact ID).  (required).</param>
+        /// <param name="deleted">Indicates that the message has been deleted..</param>
+        /// <param name="charset">Message charset. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS.  (required).</param>
+        /// <param name="charsetLabel">Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages.  (required).</param>
+        /// <param name="firstName">Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).  (required).</param>
         /// <param name="lastName">Contact last name. (required).</param>
-        /// <param name="country">Two-letter ISO country code of the recipient phone number.  (required).</param>
+        /// <param name="country">The 2-letter ISO country code of the recipient&#39;s phone number.  (required).</param>
         /// <param name="phone">Receipent phone number..</param>
         /// <param name="price">Message price..</param>
         /// <param name="partsCount">Message parts (multiples of 160 characters) count. (required).</param>
-        /// <param name="fromEmail">User email which this message came from. For Email2SMS and Distribution Lists messages it will be an original email address, in other cases it is an account email address..</param>
-        /// <param name="fromNumber">Phone number which is used to send SMS..</param>
+        /// <param name="fromEmail">The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address..</param>
+        /// <param name="fromNumber">Phone number used to send the SMS..</param>
         public MessageOut(int? id = default(int?), string sender = default(string), string receiver = default(string), string text = default(string), StatusEnum status = default(StatusEnum), int? contactId = default(int?), int? sessionId = default(int?), DateTime? messageTime = default(DateTime?), string avatar = default(string), bool? deleted = default(bool?), string charset = default(string), string charsetLabel = default(string), string firstName = default(string), string lastName = default(string), string country = default(string), string phone = default(string), float? price = default(float?), int? partsCount = default(int?), string fromEmail = default(string), string fromNumber = default(string))
         {
             // to ensure "id" is required (not null)
@@ -335,30 +335,30 @@ namespace TextMagicClient.Model
         public string Avatar { get; set; }
 
         /// <summary>
-        /// Indicates that message has been deleted.
+        /// Indicates that the message has been deleted.
         /// </summary>
-        /// <value>Indicates that message has been deleted.</value>
+        /// <value>Indicates that the message has been deleted.</value>
         [DataMember(Name="deleted", EmitDefaultValue=false)]
         public bool? Deleted { get; set; }
 
         /// <summary>
-        /// Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS 
+        /// Message charset. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS. 
         /// </summary>
-        /// <value>Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS </value>
+        /// <value>Message charset. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS. </value>
         [DataMember(Name="charset", EmitDefaultValue=false)]
         public string Charset { get; set; }
 
         /// <summary>
-        /// Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages 
+        /// Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages. 
         /// </summary>
-        /// <value>Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages </value>
+        /// <value>Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages. </value>
         [DataMember(Name="charsetLabel", EmitDefaultValue=false)]
         public string CharsetLabel { get; set; }
 
         /// <summary>
-        /// Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted phone number instead of contact ID). 
+        /// Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID). 
         /// </summary>
-        /// <value>Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted phone number instead of contact ID). </value>
+        /// <value>Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID). </value>
         [DataMember(Name="firstName", EmitDefaultValue=false)]
         public string FirstName { get; set; }
 
@@ -370,9 +370,9 @@ namespace TextMagicClient.Model
         public string LastName { get; set; }
 
         /// <summary>
-        /// Two-letter ISO country code of the recipient phone number. 
+        /// The 2-letter ISO country code of the recipient&#39;s phone number. 
         /// </summary>
-        /// <value>Two-letter ISO country code of the recipient phone number. </value>
+        /// <value>The 2-letter ISO country code of the recipient&#39;s phone number. </value>
         [DataMember(Name="country", EmitDefaultValue=false)]
         public string Country { get; set; }
 
@@ -398,16 +398,16 @@ namespace TextMagicClient.Model
         public int? PartsCount { get; set; }
 
         /// <summary>
-        /// User email which this message came from. For Email2SMS and Distribution Lists messages it will be an original email address, in other cases it is an account email address.
+        /// The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address.
         /// </summary>
-        /// <value>User email which this message came from. For Email2SMS and Distribution Lists messages it will be an original email address, in other cases it is an account email address.</value>
+        /// <value>The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address.</value>
         [DataMember(Name="fromEmail", EmitDefaultValue=false)]
         public string FromEmail { get; set; }
 
         /// <summary>
-        /// Phone number which is used to send SMS.
+        /// Phone number used to send the SMS.
         /// </summary>
-        /// <value>Phone number which is used to send SMS.</value>
+        /// <value>Phone number used to send the SMS.</value>
         [DataMember(Name="fromNumber", EmitDefaultValue=false)]
         public string FromNumber { get; set; }
 

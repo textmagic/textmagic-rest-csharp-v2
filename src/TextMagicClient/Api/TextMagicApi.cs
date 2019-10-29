@@ -1069,7 +1069,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
         /// <returns>GetAllOutboundMessagesPaginatedResponse</returns>
         GetAllOutboundMessagesPaginatedResponse GetAllOutboundMessages (int? page = null, int? limit = null, int? lastId = null);
 
@@ -1082,7 +1082,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
         /// <returns>ApiResponse of GetAllOutboundMessagesPaginatedResponse</returns>
         ApiResponse<GetAllOutboundMessagesPaginatedResponse> GetAllOutboundMessagesWithHttpInfo (int? page = null, int? limit = null, int? lastId = null);
         /// <summary>
@@ -1169,7 +1169,7 @@ namespace TextMagicClient.Api
         /// Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
+        /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
         /// <returns>GetAvailableSenderSettingOptionsResponse</returns>
         GetAvailableSenderSettingOptionsResponse GetAvailableSenderSettingOptions (string country = null);
 
@@ -1180,7 +1180,7 @@ namespace TextMagicClient.Api
         /// Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
+        /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
         /// <returns>ApiResponse of GetAvailableSenderSettingOptionsResponse</returns>
         ApiResponse<GetAvailableSenderSettingOptionsResponse> GetAvailableSenderSettingOptionsWithHttpInfo (string country = null);
         /// <summary>
@@ -1882,21 +1882,21 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
         /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when the sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
-        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
+        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>GetMessagePreviewResponse</returns>
         GetMessagePreviewResponse GetMessagePreview (string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null);
 
@@ -1909,21 +1909,21 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
         /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when the sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
-        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
+        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>ApiResponse of GetMessagePreviewResponse</returns>
         ApiResponse<GetMessagePreviewResponse> GetMessagePreviewWithHttpInfo (string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null);
         /// <summary>
@@ -1933,24 +1933,24 @@ namespace TextMagicClient.Api
         /// Check pricing for a new outbound message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="includeBlocked">Should we show pricing for the blocked contacts. (optional, default to 0)</param>
-        /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
-        /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
+        /// <param name="text">Message text. Required if the **template_id** is not set. (optional)</param>
+        /// <param name="templateId">Template used instead of message text. Required if the **text** is not set. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using the sendingDateTime and sendingTimezone parameters instead: optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
+        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>GetMessagePriceResponse</returns>
         GetMessagePriceResponse GetMessagePrice (int? includeBlocked = null, string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null);
 
@@ -1961,24 +1961,24 @@ namespace TextMagicClient.Api
         /// Check pricing for a new outbound message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="includeBlocked">Should we show pricing for the blocked contacts. (optional, default to 0)</param>
-        /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
-        /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
+        /// <param name="text">Message text. Required if the **template_id** is not set. (optional)</param>
+        /// <param name="templateId">Template used instead of message text. Required if the **text** is not set. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using the sendingDateTime and sendingTimezone parameters instead: optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
+        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>ApiResponse of GetMessagePriceResponse</returns>
         ApiResponse<GetMessagePriceResponse> GetMessagePriceWithHttpInfo (int? includeBlocked = null, string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null);
         /// <summary>
@@ -2961,7 +2961,7 @@ namespace TextMagicClient.Api
         /// Send message
         /// </summary>
         /// <remarks>
-        /// The main entrypoint to send messages. See examples above for the reference.
+        /// This is the main entrypoint to send messages. See the examples above for the reference.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -2972,7 +2972,7 @@ namespace TextMagicClient.Api
         /// Send message
         /// </summary>
         /// <remarks>
-        /// The main entrypoint to send messages. See examples above for the reference.
+        /// This is the main entrypoint to send messages. See the examples above for the reference.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -4503,7 +4503,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
         /// <returns>Task of GetAllOutboundMessagesPaginatedResponse</returns>
         System.Threading.Tasks.Task<GetAllOutboundMessagesPaginatedResponse> GetAllOutboundMessagesAsync (int? page = null, int? limit = null, int? lastId = null);
 
@@ -4516,7 +4516,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
         /// <returns>Task of ApiResponse (GetAllOutboundMessagesPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetAllOutboundMessagesPaginatedResponse>> GetAllOutboundMessagesAsyncWithHttpInfo (int? page = null, int? limit = null, int? lastId = null);
         /// <summary>
@@ -4603,7 +4603,7 @@ namespace TextMagicClient.Api
         /// Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
+        /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
         /// <returns>Task of GetAvailableSenderSettingOptionsResponse</returns>
         System.Threading.Tasks.Task<GetAvailableSenderSettingOptionsResponse> GetAvailableSenderSettingOptionsAsync (string country = null);
 
@@ -4614,7 +4614,7 @@ namespace TextMagicClient.Api
         /// Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
+        /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
         /// <returns>Task of ApiResponse (GetAvailableSenderSettingOptionsResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetAvailableSenderSettingOptionsResponse>> GetAvailableSenderSettingOptionsAsyncWithHttpInfo (string country = null);
         /// <summary>
@@ -5316,21 +5316,21 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
         /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when the sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
-        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
+        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of GetMessagePreviewResponse</returns>
         System.Threading.Tasks.Task<GetMessagePreviewResponse> GetMessagePreviewAsync (string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null);
 
@@ -5343,21 +5343,21 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
         /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when the sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
-        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
+        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of ApiResponse (GetMessagePreviewResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetMessagePreviewResponse>> GetMessagePreviewAsyncWithHttpInfo (string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null);
         /// <summary>
@@ -5367,24 +5367,24 @@ namespace TextMagicClient.Api
         /// Check pricing for a new outbound message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="includeBlocked">Should we show pricing for the blocked contacts. (optional, default to 0)</param>
-        /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
-        /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
+        /// <param name="text">Message text. Required if the **template_id** is not set. (optional)</param>
+        /// <param name="templateId">Template used instead of message text. Required if the **text** is not set. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using the sendingDateTime and sendingTimezone parameters instead: optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
+        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of GetMessagePriceResponse</returns>
         System.Threading.Tasks.Task<GetMessagePriceResponse> GetMessagePriceAsync (int? includeBlocked = null, string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null);
 
@@ -5395,24 +5395,24 @@ namespace TextMagicClient.Api
         /// Check pricing for a new outbound message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="includeBlocked">Should we show pricing for the blocked contacts. (optional, default to 0)</param>
-        /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
-        /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
+        /// <param name="text">Message text. Required if the **template_id** is not set. (optional)</param>
+        /// <param name="templateId">Template used instead of message text. Required if the **text** is not set. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using the sendingDateTime and sendingTimezone parameters instead: optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
+        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of ApiResponse (GetMessagePriceResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetMessagePriceResponse>> GetMessagePriceAsyncWithHttpInfo (int? includeBlocked = null, string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null);
         /// <summary>
@@ -6395,7 +6395,7 @@ namespace TextMagicClient.Api
         /// Send message
         /// </summary>
         /// <remarks>
-        /// The main entrypoint to send messages. See examples above for the reference.
+        /// This is the main entrypoint to send messages. See the examples above for the reference.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -6406,7 +6406,7 @@ namespace TextMagicClient.Api
         /// Send message
         /// </summary>
         /// <remarks>
-        /// The main entrypoint to send messages. See examples above for the reference.
+        /// This is the main entrypoint to send messages. See the examples above for the reference.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -14326,7 +14326,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
         /// <returns>GetAllOutboundMessagesPaginatedResponse</returns>
         public GetAllOutboundMessagesPaginatedResponse GetAllOutboundMessages (int? page = null, int? limit = null, int? lastId = null)
         {
@@ -14340,7 +14340,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
         /// <returns>ApiResponse of GetAllOutboundMessagesPaginatedResponse</returns>
         public ApiResponse< GetAllOutboundMessagesPaginatedResponse > GetAllOutboundMessagesWithHttpInfo (int? page = null, int? limit = null, int? lastId = null)
         {
@@ -14402,7 +14402,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
         /// <returns>Task of GetAllOutboundMessagesPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<GetAllOutboundMessagesPaginatedResponse> GetAllOutboundMessagesAsync (int? page = null, int? limit = null, int? lastId = null)
         {
@@ -14417,7 +14417,7 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
         /// <returns>Task of ApiResponse (GetAllOutboundMessagesPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetAllOutboundMessagesPaginatedResponse>> GetAllOutboundMessagesAsyncWithHttpInfo (int? page = null, int? limit = null, int? lastId = null)
         {
@@ -14948,7 +14948,7 @@ namespace TextMagicClient.Api
         /// Get available sender settings Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
+        /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
         /// <returns>GetAvailableSenderSettingOptionsResponse</returns>
         public GetAvailableSenderSettingOptionsResponse GetAvailableSenderSettingOptions (string country = null)
         {
@@ -14960,7 +14960,7 @@ namespace TextMagicClient.Api
         /// Get available sender settings Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
+        /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
         /// <returns>ApiResponse of GetAvailableSenderSettingOptionsResponse</returns>
         public ApiResponse< GetAvailableSenderSettingOptionsResponse > GetAvailableSenderSettingOptionsWithHttpInfo (string country = null)
         {
@@ -15018,7 +15018,7 @@ namespace TextMagicClient.Api
         /// Get available sender settings Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
+        /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
         /// <returns>Task of GetAvailableSenderSettingOptionsResponse</returns>
         public async System.Threading.Tasks.Task<GetAvailableSenderSettingOptionsResponse> GetAvailableSenderSettingOptionsAsync (string country = null)
         {
@@ -15031,7 +15031,7 @@ namespace TextMagicClient.Api
         /// Get available sender settings Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="country">Two-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
+        /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
         /// <returns>Task of ApiResponse (GetAvailableSenderSettingOptionsResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetAvailableSenderSettingOptionsResponse>> GetAvailableSenderSettingOptionsAsyncWithHttpInfo (string country = null)
         {
@@ -19609,21 +19609,21 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
         /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when the sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
-        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
+        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>GetMessagePreviewResponse</returns>
         public GetMessagePreviewResponse GetMessagePreview (string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null)
         {
@@ -19637,21 +19637,21 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
         /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when the sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
-        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
+        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>ApiResponse of GetMessagePreviewResponse</returns>
         public ApiResponse< GetMessagePreviewResponse > GetMessagePreviewWithHttpInfo (string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null)
         {
@@ -19727,21 +19727,21 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
         /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when the sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
-        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
+        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of GetMessagePreviewResponse</returns>
         public async System.Threading.Tasks.Task<GetMessagePreviewResponse> GetMessagePreviewAsync (string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null)
         {
@@ -19756,21 +19756,21 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
         /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when the sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
-        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
+        /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of ApiResponse (GetMessagePreviewResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetMessagePreviewResponse>> GetMessagePreviewAsyncWithHttpInfo (string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null)
         {
@@ -19844,24 +19844,24 @@ namespace TextMagicClient.Api
         /// Check message price Check pricing for a new outbound message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="includeBlocked">Should we show pricing for the blocked contacts. (optional, default to 0)</param>
-        /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
-        /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
+        /// <param name="text">Message text. Required if the **template_id** is not set. (optional)</param>
+        /// <param name="templateId">Template used instead of message text. Required if the **text** is not set. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using the sendingDateTime and sendingTimezone parameters instead: optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
+        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>GetMessagePriceResponse</returns>
         public GetMessagePriceResponse GetMessagePrice (int? includeBlocked = null, string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null)
         {
@@ -19873,24 +19873,24 @@ namespace TextMagicClient.Api
         /// Check message price Check pricing for a new outbound message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="includeBlocked">Should we show pricing for the blocked contacts. (optional, default to 0)</param>
-        /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
-        /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
+        /// <param name="text">Message text. Required if the **template_id** is not set. (optional)</param>
+        /// <param name="templateId">Template used instead of message text. Required if the **text** is not set. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using the sendingDateTime and sendingTimezone parameters instead: optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
+        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>ApiResponse of GetMessagePriceResponse</returns>
         public ApiResponse< GetMessagePriceResponse > GetMessagePriceWithHttpInfo (int? includeBlocked = null, string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null)
         {
@@ -19965,24 +19965,24 @@ namespace TextMagicClient.Api
         /// Check message price Check pricing for a new outbound message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="includeBlocked">Should we show pricing for the blocked contacts. (optional, default to 0)</param>
-        /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
-        /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
+        /// <param name="text">Message text. Required if the **template_id** is not set. (optional)</param>
+        /// <param name="templateId">Template used instead of message text. Required if the **text** is not set. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using the sendingDateTime and sendingTimezone parameters instead: optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
+        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of GetMessagePriceResponse</returns>
         public async System.Threading.Tasks.Task<GetMessagePriceResponse> GetMessagePriceAsync (int? includeBlocked = null, string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null)
         {
@@ -19995,24 +19995,24 @@ namespace TextMagicClient.Api
         /// Check message price Check pricing for a new outbound message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="includeBlocked">Should we show pricing for the blocked contacts. (optional, default to 0)</param>
-        /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
-        /// <param name="templateId">Template used instead of message text. Required if **text** is not set. (optional)</param>
-        /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. (optional)</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. (optional)</param>
-        /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. (optional)</param>
-        /// <param name="contacts">Comma separated array of contact resources id message will be sent to. (optional)</param>
-        /// <param name="lists">Comma separated array of list resources id message will be sent to. (optional)</param>
-        /// <param name="phones">Comma separated array of E.164 phone numbers message will be sent to. (optional)</param>
+        /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
+        /// <param name="text">Message text. Required if the **template_id** is not set. (optional)</param>
+        /// <param name="templateId">Template used instead of message text. Required if the **text** is not set. (optional)</param>
+        /// <param name="sendingTime">DEPRECATED, consider using the sendingDateTime and sendingTimezone parameters instead: optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)</param>
+        /// <param name="sendingDateTime">Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. (optional)</param>
+        /// <param name="sendingTimezone">The ID or ISO-name of the timezone used for sending when sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. (optional)</param>
+        /// <param name="contacts">Comma-separated array of contact resources id message will be sent to. (optional)</param>
+        /// <param name="lists">Comma-separated array of list resources id message will be sent to. (optional)</param>
+        /// <param name="phones">Comma-separated array of E.164 phone numbers message will be sent to. (optional)</param>
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
-        /// <param name="rule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
-        /// <param name="createChat">Should sending method try to create new Chat(if not exist) with specified recipients. (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
-        /// <param name="local">Treat phone numbers passed in \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
-        /// <param name="localCountry">2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
+        /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
+        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
+        /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of ApiResponse (GetMessagePriceResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetMessagePriceResponse>> GetMessagePriceAsyncWithHttpInfo (int? includeBlocked = null, string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null)
         {
@@ -26358,7 +26358,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Send message The main entrypoint to send messages. See examples above for the reference.
+        /// Send message This is the main entrypoint to send messages. See the examples above for the reference.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -26370,7 +26370,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Send message The main entrypoint to send messages. See examples above for the reference.
+        /// Send message This is the main entrypoint to send messages. See the examples above for the reference.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -26438,7 +26438,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Send message The main entrypoint to send messages. See examples above for the reference.
+        /// Send message This is the main entrypoint to send messages. See the examples above for the reference.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -26451,7 +26451,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Send message The main entrypoint to send messages. See examples above for the reference.
+        /// Send message This is the main entrypoint to send messages. See the examples above for the reference.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>

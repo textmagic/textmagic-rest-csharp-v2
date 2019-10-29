@@ -38,13 +38,13 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="GetMessagePriceResponseCountriesItem" /> class.
         /// </summary>
-        /// <param name="country">Two-letter ISO country code (required).</param>
-        /// <param name="countryName">Country name (required).</param>
-        /// <param name="allowDedicated">Is allow to use dedicated number (required).</param>
-        /// <param name="count">Parts count to send (required).</param>
-        /// <param name="max">Maximum parts to send (required).</param>
-        /// <param name="sum">Total price to send (required).</param>
-        /// <param name="landline">Is this landline number? (required).</param>
+        /// <param name="country">The 2-letter ISO country code. (required).</param>
+        /// <param name="countryName">Country name. (required).</param>
+        /// <param name="allowDedicated">Is allowed to use a dedicated number? (required).</param>
+        /// <param name="count">Parts count to send. (required).</param>
+        /// <param name="max">Maximum parts to send. (required).</param>
+        /// <param name="sum">Total price to send. (required).</param>
+        /// <param name="landline">Is this a landline number? (required).</param>
         public GetMessagePriceResponseCountriesItem(string country = default(string), string countryName = default(string), bool? allowDedicated = default(bool?), decimal? count = default(decimal?), decimal? max = default(decimal?), string sum = default(string), decimal? landline = default(decimal?))
         {
             // to ensure "country" is required (not null)
@@ -113,51 +113,51 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Two-letter ISO country code
+        /// The 2-letter ISO country code.
         /// </summary>
-        /// <value>Two-letter ISO country code</value>
+        /// <value>The 2-letter ISO country code.</value>
         [DataMember(Name="country", EmitDefaultValue=false)]
         public string Country { get; set; }
 
         /// <summary>
-        /// Country name
+        /// Country name.
         /// </summary>
-        /// <value>Country name</value>
+        /// <value>Country name.</value>
         [DataMember(Name="countryName", EmitDefaultValue=false)]
         public string CountryName { get; set; }
 
         /// <summary>
-        /// Is allow to use dedicated number
+        /// Is allowed to use a dedicated number?
         /// </summary>
-        /// <value>Is allow to use dedicated number</value>
+        /// <value>Is allowed to use a dedicated number?</value>
         [DataMember(Name="allowDedicated", EmitDefaultValue=false)]
         public bool? AllowDedicated { get; set; }
 
         /// <summary>
-        /// Parts count to send
+        /// Parts count to send.
         /// </summary>
-        /// <value>Parts count to send</value>
+        /// <value>Parts count to send.</value>
         [DataMember(Name="count", EmitDefaultValue=false)]
         public decimal? Count { get; set; }
 
         /// <summary>
-        /// Maximum parts to send
+        /// Maximum parts to send.
         /// </summary>
-        /// <value>Maximum parts to send</value>
+        /// <value>Maximum parts to send.</value>
         [DataMember(Name="max", EmitDefaultValue=false)]
         public decimal? Max { get; set; }
 
         /// <summary>
-        /// Total price to send
+        /// Total price to send.
         /// </summary>
-        /// <value>Total price to send</value>
+        /// <value>Total price to send.</value>
         [DataMember(Name="sum", EmitDefaultValue=false)]
         public string Sum { get; set; }
 
         /// <summary>
-        /// Is this landline number?
+        /// Is this a landline number?
         /// </summary>
-        /// <value>Is this landline number?</value>
+        /// <value>Is this a landline number?</value>
         [DataMember(Name="landline", EmitDefaultValue=false)]
         public decimal? Landline { get; set; }
 

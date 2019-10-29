@@ -41,7 +41,7 @@ namespace TextMagicClient.Model
         /// <param name="outbound">Price for outbound message (required).</param>
         /// <param name="inbound">Price for inbound message (required).</param>
         /// <param name="forward">Price for forward (required).</param>
-        /// <param name="country">2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country (required).</param>
+        /// <param name="country">The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country (required).</param>
         public CallPriceResponse(decimal? outbound = default(decimal?), decimal? inbound = default(decimal?), decimal? forward = default(decimal?), string country = default(string))
         {
             // to ensure "outbound" is required (not null)
@@ -104,9 +104,9 @@ namespace TextMagicClient.Model
         public decimal? Forward { get; set; }
 
         /// <summary>
-        /// 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country
+        /// The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country
         /// </summary>
-        /// <value>2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country</value>
+        /// <value>The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country</value>
         [DataMember(Name="country", EmitDefaultValue=false)]
         public string Country { get; set; }
 
