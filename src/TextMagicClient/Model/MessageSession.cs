@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class MessageSession :  IEquatable<MessageSession>, IValidatableObject
     {
         /// <summary>
-        /// Destination type of a Message Session: * **t** - text SMS * **s** - text-to-speech * **v** - voice broadcast 
+        /// Destination type of a Message Session: * **t** – text SMS; * **s** – text-to-speech; * **v** – voice broadcast. 
         /// </summary>
-        /// <value>Destination type of a Message Session: * **t** - text SMS * **s** - text-to-speech * **v** - voice broadcast </value>
+        /// <value>Destination type of a Message Session: * **t** – text SMS; * **s** – text-to-speech; * **v** – voice broadcast. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum DestinationEnum
         {
@@ -58,9 +58,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Destination type of a Message Session: * **t** - text SMS * **s** - text-to-speech * **v** - voice broadcast 
+        /// Destination type of a Message Session: * **t** – text SMS; * **s** – text-to-speech; * **v** – voice broadcast. 
         /// </summary>
-        /// <value>Destination type of a Message Session: * **t** - text SMS * **s** - text-to-speech * **v** - voice broadcast </value>
+        /// <value>Destination type of a Message Session: * **t** – text SMS; * **s** – text-to-speech; * **v** – voice broadcast. </value>
         [DataMember(Name="destination", EmitDefaultValue=false)]
         public DestinationEnum Destination { get; set; }
         /// <summary>
@@ -74,11 +74,11 @@ namespace TextMagicClient.Model
         /// <param name="id">Session ID. (required).</param>
         /// <param name="startTime">Session creation time. (required).</param>
         /// <param name="text">Session text. If a template was used for the session text (see [Messages: Send](http://docs.textmagictesting.com/#tag/Outbound-Messages) for details), it may contain template tags.  (required).</param>
-        /// <param name="source">*   **O** – for TextMagic Online *   **A** – for API *   **M** – for TextMagic Messenger *   **E** – for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) *   **X** – for [Distribution Lists](http://docs.textmagictesting.com/#tag/Distribution-Lists)  (required).</param>
+        /// <param name="source">*   **O** – for TextMagic Online; *   **A** – for API; *   **M** – for TextMagic Messenger; *   **E** – for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS); *   **X** – for [Distribution Lists](http://docs.textmagictesting.com/#tag/Distribution-Lists).  (required).</param>
         /// <param name="referenceId">Custom reference ID (see [Messages: Send](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) for details).  (required).</param>
         /// <param name="price">Session cost (in account currency). (required).</param>
         /// <param name="numbersCount">Session recipient count. (required).</param>
-        /// <param name="destination">Destination type of a Message Session: * **t** - text SMS * **s** - text-to-speech * **v** - voice broadcast  (required).</param>
+        /// <param name="destination">Destination type of a Message Session: * **t** – text SMS; * **s** – text-to-speech; * **v** – voice broadcast.  (required).</param>
         public MessageSession(int? id = default(int?), string startTime = default(string), string text = default(string), string source = default(string), string referenceId = default(string), decimal? price = default(decimal?), int? numbersCount = default(int?), DestinationEnum destination = default(DestinationEnum))
         {
             // to ensure "id" is required (not null)
@@ -177,9 +177,9 @@ namespace TextMagicClient.Model
         public string Text { get; set; }
 
         /// <summary>
-        /// *   **O** – for TextMagic Online *   **A** – for API *   **M** – for TextMagic Messenger *   **E** – for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) *   **X** – for [Distribution Lists](http://docs.textmagictesting.com/#tag/Distribution-Lists) 
+        /// *   **O** – for TextMagic Online; *   **A** – for API; *   **M** – for TextMagic Messenger; *   **E** – for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS); *   **X** – for [Distribution Lists](http://docs.textmagictesting.com/#tag/Distribution-Lists). 
         /// </summary>
-        /// <value>*   **O** – for TextMagic Online *   **A** – for API *   **M** – for TextMagic Messenger *   **E** – for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) *   **X** – for [Distribution Lists](http://docs.textmagictesting.com/#tag/Distribution-Lists) </value>
+        /// <value>*   **O** – for TextMagic Online; *   **A** – for API; *   **M** – for TextMagic Messenger; *   **E** – for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS); *   **X** – for [Distribution Lists](http://docs.textmagictesting.com/#tag/Distribution-Lists). </value>
         [DataMember(Name="source", EmitDefaultValue=false)]
         public string Source { get; set; }
 

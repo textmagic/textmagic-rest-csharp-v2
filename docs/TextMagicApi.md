@@ -89,9 +89,9 @@ Method | HTTP request | Description
 [**GetListsOfContact**](TextMagicApi.md#getlistsofcontact) | **GET** /api/v2/contacts/{id}/lists | Get contact&#39;s lists
 [**GetMessagePreview**](TextMagicApi.md#getmessagepreview) | **GET** /api/v2/messages/preview | Preview message
 [**GetMessagePrice**](TextMagicApi.md#getmessageprice) | **GET** /api/v2/messages/price/normalized | Check message price
-[**GetMessageSession**](TextMagicApi.md#getmessagesession) | **GET** /api/v2/sessions/{id} | Get a session details
-[**GetMessageSessionStat**](TextMagicApi.md#getmessagesessionstat) | **GET** /api/v2/sessions/{id}/stat | Get a session statistics
-[**GetMessagesBySessionId**](TextMagicApi.md#getmessagesbysessionid) | **GET** /api/v2/sessions/{id}/messages | Get a session messages
+[**GetMessageSession**](TextMagicApi.md#getmessagesession) | **GET** /api/v2/sessions/{id} | Get a session&#x60;s details
+[**GetMessageSessionStat**](TextMagicApi.md#getmessagesessionstat) | **GET** /api/v2/sessions/{id}/stat | Get a session&#x60;s statistics
+[**GetMessagesBySessionId**](TextMagicApi.md#getmessagesbysessionid) | **GET** /api/v2/sessions/{id}/messages | Get a session&#x60;s messages
 [**GetMessagingCounters**](TextMagicApi.md#getmessagingcounters) | **GET** /api/v2/stats/messaging/data | Get sent/received messages counters values
 [**GetMessagingStat**](TextMagicApi.md#getmessagingstat) | **GET** /api/v2/stats/messaging | Get messaging statistics
 [**GetOutboundMessage**](TextMagicApi.md#getoutboundmessage) | **GET** /api/v2/messages/{id} | Get a single message
@@ -104,7 +104,7 @@ Method | HTTP request | Description
 [**GetSubaccount**](TextMagicApi.md#getsubaccount) | **GET** /api/v2/subaccounts/{id} | Get sub-account information
 [**GetSubaccounts**](TextMagicApi.md#getsubaccounts) | **GET** /api/v2/subaccounts | Get sub-accounts list
 [**GetSubaccountsWithTokens**](TextMagicApi.md#getsubaccountswithtokens) | **POST** /api/v2/subaccounts/tokens/list | Get all sub-accounts with their REST API tokens associated with app name
-[**GetTemplate**](TextMagicApi.md#gettemplate) | **GET** /api/v2/templates/{id} | Get a template details
+[**GetTemplate**](TextMagicApi.md#gettemplate) | **GET** /api/v2/templates/{id} | Get a template&#x60;s details
 [**GetTimezones**](TextMagicApi.md#gettimezones) | **GET** /api/v2/timezones | Get timezones
 [**GetUnreadMessagesTotal**](TextMagicApi.md#getunreadmessagestotal) | **GET** /api/v2/chats/unread/count | Get unread messages number
 [**GetUnsubscribedContact**](TextMagicApi.md#getunsubscribedcontact) | **GET** /api/v2/unsubscribers/{id} | Get the details of a specific unsubscribed contact
@@ -549,7 +549,7 @@ Name | Type | Description  | Notes
 
 Close chats (bulk)
 
-Close chats by chat ids or close all chats
+Close chats by chat IDs or close all chats
 
 ### Example
 ```csharp
@@ -1230,7 +1230,7 @@ void (empty response body)
 
 Delete chat messages by ID(s)
 
-Delete messages from chat by given messages ID(s).
+Delete messages from chat by given message IDs.
 
 ### Example
 ```csharp
@@ -1296,7 +1296,7 @@ void (empty response body)
 
 Delete chats (bulk)
 
-Delete chats by given ID(s) or delete all chats.
+Delete chats by given IDs or delete all chats.
 
 ### Example
 ```csharp
@@ -2310,7 +2310,7 @@ void (empty response body)
 
 Delete sessions (bulk)
 
-Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
 
 ### Example
 ```csharp
@@ -2750,7 +2750,7 @@ void (empty response body)
 
 Delete templates (bulk)
 
-Delete template by given ID(s) or delete all templates.
+Delete templates by given IDs or delete all templates.
 
 ### Example
 ```csharp
@@ -5386,8 +5386,8 @@ namespace Example
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
             var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
-            var favoriteOnly = 56;  // int? | Return only favorite lists (optional)  (default to 0)
-            var onlyMine = 56;  // int? | Return only current user lists (optional)  (default to 0)
+            var favoriteOnly = 56;  // int? | Return only favorited lists. (optional)  (default to 0)
+            var onlyMine = 56;  // int? | Return only current user lists. (optional)  (default to 0)
 
             try
             {
@@ -5412,8 +5412,8 @@ Name | Type | Description  | Notes
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
  **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
- **favoriteOnly** | **int?**| Return only favorite lists | [optional] [default to 0]
- **onlyMine** | **int?**| Return only current user lists | [optional] [default to 0]
+ **favoriteOnly** | **int?**| Return only favorited lists. | [optional] [default to 0]
+ **onlyMine** | **int?**| Return only current user lists. | [optional] [default to 0]
 
 ### Return type
 
@@ -5699,9 +5699,9 @@ Name | Type | Description  | Notes
 # **GetMessageSession**
 > MessageSession GetMessageSession (int? id)
 
-Get a session details
+Get a session`s details
 
-Get a specific session’s details
+Get a specific session’s details.
 
 ### Example
 ```csharp
@@ -5722,11 +5722,11 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var id = 1;  // int? | a session ID
+            var id = 1;  // int? | Session ID.
 
             try
             {
-                // Get a session details
+                // Get a session`s details
                 MessageSession result = apiInstance.GetMessageSession(id);
                 Debug.WriteLine(result);
             }
@@ -5743,7 +5743,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int?**| a session ID | 
+ **id** | **int?**| Session ID. | 
 
 ### Return type
 
@@ -5764,7 +5764,7 @@ Name | Type | Description  | Notes
 # **GetMessageSessionStat**
 > GetMessageSessionStatResponse GetMessageSessionStat (int? id, int? includeDeleted = null)
 
-Get a session statistics
+Get a session`s statistics
 
 ### Example
 ```csharp
@@ -5786,11 +5786,11 @@ namespace Example
 
             var apiInstance = new TextMagicApi();
             var id = 1;  // int? | 
-            var includeDeleted = 56;  // int? | Search also in deleted messages (optional)  (default to 0)
+            var includeDeleted = 56;  // int? | Search also in deleted messages. (optional)  (default to 0)
 
             try
             {
-                // Get a session statistics
+                // Get a session`s statistics
                 GetMessageSessionStatResponse result = apiInstance.GetMessageSessionStat(id, includeDeleted);
                 Debug.WriteLine(result);
             }
@@ -5808,7 +5808,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int?**|  | 
- **includeDeleted** | **int?**| Search also in deleted messages | [optional] [default to 0]
+ **includeDeleted** | **int?**| Search also in deleted messages. | [optional] [default to 0]
 
 ### Return type
 
@@ -5829,9 +5829,9 @@ Name | Type | Description  | Notes
 # **GetMessagesBySessionId**
 > GetMessagesBySessionIdPaginatedResponse GetMessagesBySessionId (int? id, int? page = null, int? limit = null, string statuses = null, int? includeDeleted = null)
 
-Get a session messages
+Get a session`s messages
 
-A useful synonym for \"messages/search\" command with provided \"sessionId\" parameter.
+A useful synonym for the \"messages/search\" command with the provided \"sessionId\" parameter.
 
 ### Example
 ```csharp
@@ -5855,12 +5855,12 @@ namespace Example
             var id = 1;  // int? | 
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var statuses = statuses_example;  // string | Find messages by status (optional) 
-            var includeDeleted = 56;  // int? | Search also in deleted messages (optional)  (default to 0)
+            var statuses = statuses_example;  // string | Find messages by status. (optional) 
+            var includeDeleted = 56;  // int? | Search also in deleted messages. (optional)  (default to 0)
 
             try
             {
-                // Get a session messages
+                // Get a session`s messages
                 GetMessagesBySessionIdPaginatedResponse result = apiInstance.GetMessagesBySessionId(id, page, limit, statuses, includeDeleted);
                 Debug.WriteLine(result);
             }
@@ -5880,8 +5880,8 @@ Name | Type | Description  | Notes
  **id** | **int?**|  | 
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **statuses** | **string**| Find messages by status | [optional] 
- **includeDeleted** | **int?**| Search also in deleted messages | [optional] [default to 0]
+ **statuses** | **string**| Find messages by status. | [optional] 
+ **includeDeleted** | **int?**| Search also in deleted messages. | [optional] [default to 0]
 
 ### Return type
 
@@ -6688,7 +6688,7 @@ Name | Type | Description  | Notes
 # **GetTemplate**
 > MessageTemplate GetTemplate (int? id)
 
-Get a template details
+Get a template`s details
 
 Get a single template.
 
@@ -6715,7 +6715,7 @@ namespace Example
 
             try
             {
-                // Get a template details
+                // Get a template`s details
                 MessageTemplate result = apiInstance.GetTemplate(id);
                 Debug.WriteLine(result);
             }
@@ -7211,7 +7211,7 @@ void (empty response body)
 
 Mark chats as read (bulk)
 
-Mark several chats as read by chat ids or mark all chats as read
+Mark several chats as read by chat IDs or mark all chats as read
 
 ### Example
 ```csharp
@@ -7275,7 +7275,7 @@ void (empty response body)
 
 Mark chats as unread (bulk)
 
-Mark several chats as UNread by chat ids or mark all chats as UNread
+Mark several chats as UNread by chat IDs or mark all chats as UNread
 
 ### Example
 ```csharp
@@ -7402,7 +7402,7 @@ Name | Type | Description  | Notes
 
 Mute chats (bulk)
 
-Mute several chats by chat ids or mute all chats
+Mute several chats by chat IDs or mute all chats
 
 ### Example
 ```csharp
@@ -7527,7 +7527,7 @@ This endpoint does not need any parameter.
 
 Reopen chats (bulk)
 
-Reopen chats by chat ids or reopen all chats
+Reopen chats by chat IDs or reopen all chats
 
 ### Example
 ```csharp
@@ -8340,9 +8340,9 @@ namespace Example
             var apiInstance = new TextMagicApi();
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
-            var ids = ids_example;  // string | Find template by ID(s) (optional) 
-            var name = name_example;  // string | Find template by name (optional) 
-            var content = content_example;  // string | Find template by content (optional) 
+            var ids = ids_example;  // string | Find template by ID(s). (optional) 
+            var name = name_example;  // string | Find template by name. (optional) 
+            var content = content_example;  // string | Find template by content. (optional) 
 
             try
             {
@@ -8365,9 +8365,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
- **ids** | **string**| Find template by ID(s) | [optional] 
- **name** | **string**| Find template by name | [optional] 
- **content** | **string**| Find template by content | [optional] 
+ **ids** | **string**| Find template by ID(s). | [optional] 
+ **name** | **string**| Find template by name. | [optional] 
+ **content** | **string**| Find template by content. | [optional] 
 
 ### Return type
 
@@ -8711,7 +8711,7 @@ void (empty response body)
 
 Unmute chats (bulk)
 
-Unmute several chats by chat ids or unmute all chats
+Unmute several chats by chat IDs or unmute all chats
 
 ### Example
 ```csharp

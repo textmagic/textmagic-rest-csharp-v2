@@ -40,8 +40,8 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <param name="id">Internal timezone ID. (required).</param>
         /// <param name="area">Timezone area. (required).</param>
-        /// <param name="dst">Is Daylight saving time used in this timezone? (required).</param>
-        /// <param name="offset">Offset from UTC time in seconds. In this example it is 21600/60/60&#x3D;6 hours. (required).</param>
+        /// <param name="dst">Is daylight saving time used in this timezone? (required).</param>
+        /// <param name="offset">Offset from UTC time in seconds. In this example, it is 21600/60/60&#x3D;6 hours. (required).</param>
         /// <param name="timezone">User-friendly timezone name (with spaces replaced by underscores). (required).</param>
         public Timezone(int? id = default(int?), string area = default(string), int? dst = default(int?), int? offset = default(int?), string timezone = default(string))
         {
@@ -107,16 +107,16 @@ namespace TextMagicClient.Model
         public string Area { get; set; }
 
         /// <summary>
-        /// Is Daylight saving time used in this timezone?
+        /// Is daylight saving time used in this timezone?
         /// </summary>
-        /// <value>Is Daylight saving time used in this timezone?</value>
+        /// <value>Is daylight saving time used in this timezone?</value>
         [DataMember(Name="dst", EmitDefaultValue=false)]
         public int? Dst { get; set; }
 
         /// <summary>
-        /// Offset from UTC time in seconds. In this example it is 21600/60/60&#x3D;6 hours.
+        /// Offset from UTC time in seconds. In this example, it is 21600/60/60&#x3D;6 hours.
         /// </summary>
-        /// <value>Offset from UTC time in seconds. In this example it is 21600/60/60&#x3D;6 hours.</value>
+        /// <value>Offset from UTC time in seconds. In this example, it is 21600/60/60&#x3D;6 hours.</value>
         [DataMember(Name="offset", EmitDefaultValue=false)]
         public int? Offset { get; set; }
 

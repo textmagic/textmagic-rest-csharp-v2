@@ -33,10 +33,10 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteChatMessagesBulkInputObject" /> class.
         /// </summary>
-        /// <param name="inboundIds">Inbound messages ID(s) to delete. Require when \&quot;all\&quot; equal to 0 (false)..</param>
-        /// <param name="sentIds">Sent messages ID(s) to delete. Require when \&quot;all\&quot; equal to 0 (false)..</param>
-        /// <param name="callsIds">Calls ID(s) to delete. Require when \&quot;all\&quot; equal to 0 (false)..</param>
-        /// <param name="all">Default is 0 (false). If set to 1 all the entities will be removed..</param>
+        /// <param name="inboundIds">Inbound message IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false)..</param>
+        /// <param name="sentIds">Sent message IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false)..</param>
+        /// <param name="callsIds">Calls IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false)..</param>
+        /// <param name="all">Default is 0 (false). If set to 1, all entities will be removed..</param>
         public DeleteChatMessagesBulkInputObject(string inboundIds = default(string), string sentIds = default(string), string callsIds = default(string), bool? all = default(bool?))
         {
             this.InboundIds = inboundIds;
@@ -46,30 +46,30 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Inbound messages ID(s) to delete. Require when \&quot;all\&quot; equal to 0 (false).
+        /// Inbound message IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false).
         /// </summary>
-        /// <value>Inbound messages ID(s) to delete. Require when \&quot;all\&quot; equal to 0 (false).</value>
+        /// <value>Inbound message IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false).</value>
         [DataMember(Name="inbound_ids", EmitDefaultValue=false)]
         public string InboundIds { get; set; }
 
         /// <summary>
-        /// Sent messages ID(s) to delete. Require when \&quot;all\&quot; equal to 0 (false).
+        /// Sent message IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false).
         /// </summary>
-        /// <value>Sent messages ID(s) to delete. Require when \&quot;all\&quot; equal to 0 (false).</value>
+        /// <value>Sent message IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false).</value>
         [DataMember(Name="sent_ids", EmitDefaultValue=false)]
         public string SentIds { get; set; }
 
         /// <summary>
-        /// Calls ID(s) to delete. Require when \&quot;all\&quot; equal to 0 (false).
+        /// Calls IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false).
         /// </summary>
-        /// <value>Calls ID(s) to delete. Require when \&quot;all\&quot; equal to 0 (false).</value>
+        /// <value>Calls IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false).</value>
         [DataMember(Name="calls_ids", EmitDefaultValue=false)]
         public string CallsIds { get; set; }
 
         /// <summary>
-        /// Default is 0 (false). If set to 1 all the entities will be removed.
+        /// Default is 0 (false). If set to 1, all entities will be removed.
         /// </summary>
-        /// <value>Default is 0 (false). If set to 1 all the entities will be removed.</value>
+        /// <value>Default is 0 (false). If set to 1, all entities will be removed.</value>
         [DataMember(Name="all", EmitDefaultValue=false)]
         public bool? All { get; set; }
 

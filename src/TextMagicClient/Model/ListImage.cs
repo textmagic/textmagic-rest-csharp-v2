@@ -38,7 +38,7 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ListImage" /> class.
         /// </summary>
-        /// <param name="href">URI of a list avatar. (required).</param>
+        /// <param name="href">The URI of a list avatar. (required).</param>
         public ListImage(string href = default(string))
         {
             // to ensure "href" is required (not null)
@@ -53,9 +53,9 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// URI of a list avatar.
+        /// The URI of a list avatar.
         /// </summary>
-        /// <value>URI of a list avatar.</value>
+        /// <value>The URI of a list avatar.</value>
         [DataMember(Name="href", EmitDefaultValue=false)]
         public string Href { get; set; }
 

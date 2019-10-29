@@ -133,11 +133,11 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <param name="id">Message ID. (required).</param>
         /// <param name="sender">Message sender (phone number or alphanumeric Sender ID)..</param>
-        /// <param name="receiver">Recipient phone number..</param>
+        /// <param name="receiver">Recipient&#x60;s phone number..</param>
         /// <param name="text">text (required).</param>
         /// <param name="status">Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.  (required).</param>
         /// <param name="contactId">Recipient contact ID. (required).</param>
-        /// <param name="sessionId">Message Session ID of a Message. (required).</param>
+        /// <param name="sessionId">Message Session ID of a message. (required).</param>
         /// <param name="messageTime">Sending time. (required).</param>
         /// <param name="avatar">avatar (required).</param>
         /// <param name="deleted">Indicates that the message has been deleted..</param>
@@ -146,10 +146,10 @@ namespace TextMagicClient.Model
         /// <param name="firstName">Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).  (required).</param>
         /// <param name="lastName">Contact last name. (required).</param>
         /// <param name="country">The 2-letter ISO country code of the recipient&#39;s phone number.  (required).</param>
-        /// <param name="phone">Receipent phone number..</param>
+        /// <param name="phone">Receipent&#x60;s phone number..</param>
         /// <param name="price">Message price..</param>
         /// <param name="partsCount">Message parts (multiples of 160 characters) count. (required).</param>
-        /// <param name="fromEmail">The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address..</param>
+        /// <param name="fromEmail">The user email which this message came from. For Email2SMS and Distribution Lists the messages, it is an original email address - in other cases, it is an account email address..</param>
         /// <param name="fromNumber">The Phone number used to send the SMS..</param>
         public MessageOut(int? id = default(int?), string sender = default(string), string receiver = default(string), string text = default(string), StatusEnum status = default(StatusEnum), int? contactId = default(int?), int? sessionId = default(int?), DateTime? messageTime = default(DateTime?), string avatar = default(string), bool? deleted = default(bool?), string charset = default(string), string charsetLabel = default(string), string firstName = default(string), string lastName = default(string), string country = default(string), string phone = default(string), float? price = default(float?), int? partsCount = default(int?), string fromEmail = default(string), string fromNumber = default(string))
         {
@@ -294,9 +294,9 @@ namespace TextMagicClient.Model
         public string Sender { get; set; }
 
         /// <summary>
-        /// Recipient phone number.
+        /// Recipient&#x60;s phone number.
         /// </summary>
-        /// <value>Recipient phone number.</value>
+        /// <value>Recipient&#x60;s phone number.</value>
         [DataMember(Name="receiver", EmitDefaultValue=false)]
         public string Receiver { get; set; }
 
@@ -315,9 +315,9 @@ namespace TextMagicClient.Model
         public int? ContactId { get; set; }
 
         /// <summary>
-        /// Message Session ID of a Message.
+        /// Message Session ID of a message.
         /// </summary>
-        /// <value>Message Session ID of a Message.</value>
+        /// <value>Message Session ID of a message.</value>
         [DataMember(Name="sessionId", EmitDefaultValue=false)]
         public int? SessionId { get; set; }
 
@@ -377,9 +377,9 @@ namespace TextMagicClient.Model
         public string Country { get; set; }
 
         /// <summary>
-        /// Receipent phone number.
+        /// Receipent&#x60;s phone number.
         /// </summary>
-        /// <value>Receipent phone number.</value>
+        /// <value>Receipent&#x60;s phone number.</value>
         [DataMember(Name="phone", EmitDefaultValue=false)]
         public string Phone { get; set; }
 
@@ -398,9 +398,9 @@ namespace TextMagicClient.Model
         public int? PartsCount { get; set; }
 
         /// <summary>
-        /// The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address.
+        /// The user email which this message came from. For Email2SMS and Distribution Lists the messages, it is an original email address - in other cases, it is an account email address.
         /// </summary>
-        /// <value>The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address.</value>
+        /// <value>The user email which this message came from. For Email2SMS and Distribution Lists the messages, it is an original email address - in other cases, it is an account email address.</value>
         [DataMember(Name="fromEmail", EmitDefaultValue=false)]
         public string FromEmail { get; set; }
 

@@ -38,7 +38,7 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Currency" /> class.
         /// </summary>
-        /// <param name="id">Three-letter ISO currency ID. (required).</param>
+        /// <param name="id">The 3-letter ISO currency ID. (required).</param>
         /// <param name="unicodeSymbol">Unicode-compatible currency symbol. (required).</param>
         /// <param name="htmlSymbol">HTML-compatible currency symbol. (required).</param>
         public Currency(string id = default(string), string unicodeSymbol = default(string), string htmlSymbol = default(string))
@@ -73,9 +73,9 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Three-letter ISO currency ID.
+        /// The 3-letter ISO currency ID.
         /// </summary>
-        /// <value>Three-letter ISO currency ID.</value>
+        /// <value>The 3-letter ISO currency ID.</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
         public string Id { get; set; }
 

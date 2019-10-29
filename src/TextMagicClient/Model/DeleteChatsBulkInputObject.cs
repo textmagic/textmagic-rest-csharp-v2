@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class DeleteChatsBulkInputObject :  IEquatable<DeleteChatsBulkInputObject>, IValidatableObject
     {
         /// <summary>
-        /// Default is empty string. If set then all entities with specified status will be affected.
+        /// Default is empty string. If set, all entities with specified status will be affected.
         /// </summary>
-        /// <value>Default is empty string. If set then all entities with specified status will be affected.</value>
+        /// <value>Default is empty string. If set, all entities with specified status will be affected.</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StatusEnum
         {
@@ -58,9 +58,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Default is empty string. If set then all entities with specified status will be affected.
+        /// Default is empty string. If set, all entities with specified status will be affected.
         /// </summary>
-        /// <value>Default is empty string. If set then all entities with specified status will be affected.</value>
+        /// <value>Default is empty string. If set, all entities with specified status will be affected.</value>
         [DataMember(Name="status", EmitDefaultValue=false)]
         public StatusEnum? Status { get; set; }
         /// <summary>
@@ -68,7 +68,7 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <param name="ids">Entity ID(s), separated by comma.</param>
         /// <param name="all">Entity ID(s), separated by comma.</param>
-        /// <param name="status">Default is empty string. If set then all entities with specified status will be affected..</param>
+        /// <param name="status">Default is empty string. If set, all entities with specified status will be affected..</param>
         public DeleteChatsBulkInputObject(string ids = default(string), bool? all = default(bool?), StatusEnum? status = default(StatusEnum?))
         {
             this.Ids = ids;

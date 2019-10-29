@@ -158,7 +158,7 @@ namespace TextMagicClient.Api
         /// Close chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Close chats by chat ids or close all chats
+        /// Close chats by chat IDs or close all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -169,7 +169,7 @@ namespace TextMagicClient.Api
         /// Close chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Close chats by chat ids or close all chats
+        /// Close chats by chat IDs or close all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -383,7 +383,7 @@ namespace TextMagicClient.Api
         /// Delete chat messages by ID(s)
         /// </summary>
         /// <remarks>
-        /// Delete messages from chat by given messages ID(s).
+        /// Delete messages from chat by given message IDs.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -395,7 +395,7 @@ namespace TextMagicClient.Api
         /// Delete chat messages by ID(s)
         /// </summary>
         /// <remarks>
-        /// Delete messages from chat by given messages ID(s).
+        /// Delete messages from chat by given message IDs.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -406,7 +406,7 @@ namespace TextMagicClient.Api
         /// Delete chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete chats by given ID(s) or delete all chats.
+        /// Delete chats by given IDs or delete all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -417,7 +417,7 @@ namespace TextMagicClient.Api
         /// Delete chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete chats by given ID(s) or delete all chats.
+        /// Delete chats by given IDs or delete all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -748,7 +748,7 @@ namespace TextMagicClient.Api
         /// Delete sessions (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+        /// Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -759,7 +759,7 @@ namespace TextMagicClient.Api
         /// Delete sessions (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+        /// Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -895,7 +895,7 @@ namespace TextMagicClient.Api
         /// Delete templates (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete template by given ID(s) or delete all templates.
+        /// Delete templates by given IDs or delete all templates.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -906,7 +906,7 @@ namespace TextMagicClient.Api
         /// Delete templates (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete template by given ID(s) or delete all templates.
+        /// Delete templates by given IDs or delete all templates.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -1828,8 +1828,8 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
-        /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
+        /// <param name="favoriteOnly">Return only favorited lists. (optional, default to 0)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
         /// <returns>GetListsPaginatedResponse</returns>
         GetListsPaginatedResponse GetLists (int? page = null, int? limit = null, string orderBy = null, string direction = null, int? favoriteOnly = null, int? onlyMine = null);
 
@@ -1844,8 +1844,8 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
-        /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
+        /// <param name="favoriteOnly">Return only favorited lists. (optional, default to 0)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
         /// <returns>ApiResponse of GetListsPaginatedResponse</returns>
         ApiResponse<GetListsPaginatedResponse> GetListsWithHttpInfo (int? page = null, int? limit = null, string orderBy = null, string direction = null, int? favoriteOnly = null, int? onlyMine = null);
         /// <summary>
@@ -1982,76 +1982,76 @@ namespace TextMagicClient.Api
         /// <returns>ApiResponse of GetMessagePriceResponse</returns>
         ApiResponse<GetMessagePriceResponse> GetMessagePriceWithHttpInfo (int? includeBlocked = null, string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null);
         /// <summary>
-        /// Get a session details
+        /// Get a session&#x60;s details
         /// </summary>
         /// <remarks>
-        /// Get a specific session’s details
+        /// Get a specific session’s details.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">a session ID</param>
+        /// <param name="id">Session ID.</param>
         /// <returns>MessageSession</returns>
         MessageSession GetMessageSession (int? id);
 
         /// <summary>
-        /// Get a session details
+        /// Get a session&#x60;s details
         /// </summary>
         /// <remarks>
-        /// Get a specific session’s details
+        /// Get a specific session’s details.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">a session ID</param>
+        /// <param name="id">Session ID.</param>
         /// <returns>ApiResponse of MessageSession</returns>
         ApiResponse<MessageSession> GetMessageSessionWithHttpInfo (int? id);
         /// <summary>
-        /// Get a session statistics
+        /// Get a session&#x60;s statistics
         /// </summary>
         /// <remarks>
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>GetMessageSessionStatResponse</returns>
         GetMessageSessionStatResponse GetMessageSessionStat (int? id, int? includeDeleted = null);
 
         /// <summary>
-        /// Get a session statistics
+        /// Get a session&#x60;s statistics
         /// </summary>
         /// <remarks>
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>ApiResponse of GetMessageSessionStatResponse</returns>
         ApiResponse<GetMessageSessionStatResponse> GetMessageSessionStatWithHttpInfo (int? id, int? includeDeleted = null);
         /// <summary>
-        /// Get a session messages
+        /// Get a session&#x60;s messages
         /// </summary>
         /// <remarks>
-        /// A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+        /// A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>GetMessagesBySessionIdPaginatedResponse</returns>
         GetMessagesBySessionIdPaginatedResponse GetMessagesBySessionId (int? id, int? page = null, int? limit = null, string statuses = null, int? includeDeleted = null);
 
         /// <summary>
-        /// Get a session messages
+        /// Get a session&#x60;s messages
         /// </summary>
         /// <remarks>
-        /// A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+        /// A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>ApiResponse of GetMessagesBySessionIdPaginatedResponse</returns>
         ApiResponse<GetMessagesBySessionIdPaginatedResponse> GetMessagesBySessionIdWithHttpInfo (int? id, int? page = null, int? limit = null, string statuses = null, int? includeDeleted = null);
         /// <summary>
@@ -2331,7 +2331,7 @@ namespace TextMagicClient.Api
         /// <returns>ApiResponse of GetSubaccountsWithTokensResponse</returns>
         ApiResponse<GetSubaccountsWithTokensResponse> GetSubaccountsWithTokensWithHttpInfo (GetSubaccountsWithTokensInputObject getSubaccountsWithTokensInputObject, decimal? page = null, int? limit = null);
         /// <summary>
-        /// Get a template details
+        /// Get a template&#x60;s details
         /// </summary>
         /// <remarks>
         /// Get a single template.
@@ -2342,7 +2342,7 @@ namespace TextMagicClient.Api
         MessageTemplate GetTemplate (int? id);
 
         /// <summary>
-        /// Get a template details
+        /// Get a template&#x60;s details
         /// </summary>
         /// <remarks>
         /// Get a single template.
@@ -2512,7 +2512,7 @@ namespace TextMagicClient.Api
         /// Mark chats as read (bulk)
         /// </summary>
         /// <remarks>
-        /// Mark several chats as read by chat ids or mark all chats as read
+        /// Mark several chats as read by chat IDs or mark all chats as read
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -2523,7 +2523,7 @@ namespace TextMagicClient.Api
         /// Mark chats as read (bulk)
         /// </summary>
         /// <remarks>
-        /// Mark several chats as read by chat ids or mark all chats as read
+        /// Mark several chats as read by chat IDs or mark all chats as read
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -2533,7 +2533,7 @@ namespace TextMagicClient.Api
         /// Mark chats as unread (bulk)
         /// </summary>
         /// <remarks>
-        /// Mark several chats as UNread by chat ids or mark all chats as UNread
+        /// Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -2544,7 +2544,7 @@ namespace TextMagicClient.Api
         /// Mark chats as unread (bulk)
         /// </summary>
         /// <remarks>
-        /// Mark several chats as UNread by chat ids or mark all chats as UNread
+        /// Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -2575,7 +2575,7 @@ namespace TextMagicClient.Api
         /// Mute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Mute several chats by chat ids or mute all chats
+        /// Mute several chats by chat IDs or mute all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -2586,7 +2586,7 @@ namespace TextMagicClient.Api
         /// Mute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Mute several chats by chat ids or mute all chats
+        /// Mute several chats by chat IDs or mute all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -2615,7 +2615,7 @@ namespace TextMagicClient.Api
         /// Reopen chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Reopen chats by chat ids or reopen all chats
+        /// Reopen chats by chat IDs or reopen all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -2626,7 +2626,7 @@ namespace TextMagicClient.Api
         /// Reopen chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Reopen chats by chat ids or reopen all chats
+        /// Reopen chats by chat IDs or reopen all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -2937,9 +2937,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find template by ID(s) (optional)</param>
-        /// <param name="name">Find template by name (optional)</param>
-        /// <param name="content">Find template by content (optional)</param>
+        /// <param name="ids">Find template by ID(s). (optional)</param>
+        /// <param name="name">Find template by name. (optional)</param>
+        /// <param name="content">Find template by content. (optional)</param>
         /// <returns>SearchTemplatesPaginatedResponse</returns>
         SearchTemplatesPaginatedResponse SearchTemplates (int? page = null, int? limit = null, string ids = null, string name = null, string content = null);
 
@@ -2952,9 +2952,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find template by ID(s) (optional)</param>
-        /// <param name="name">Find template by name (optional)</param>
-        /// <param name="content">Find template by content (optional)</param>
+        /// <param name="ids">Find template by ID(s). (optional)</param>
+        /// <param name="name">Find template by name. (optional)</param>
+        /// <param name="content">Find template by content. (optional)</param>
         /// <returns>ApiResponse of SearchTemplatesPaginatedResponse</returns>
         ApiResponse<SearchTemplatesPaginatedResponse> SearchTemplatesWithHttpInfo (int? page = null, int? limit = null, string ids = null, string name = null, string content = null);
         /// <summary>
@@ -3066,7 +3066,7 @@ namespace TextMagicClient.Api
         /// Unmute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Unmute several chats by chat ids or unmute all chats
+        /// Unmute several chats by chat IDs or unmute all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -3077,7 +3077,7 @@ namespace TextMagicClient.Api
         /// Unmute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Unmute several chats by chat ids or unmute all chats
+        /// Unmute several chats by chat IDs or unmute all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -3592,7 +3592,7 @@ namespace TextMagicClient.Api
         /// Close chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Close chats by chat ids or close all chats
+        /// Close chats by chat IDs or close all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -3603,7 +3603,7 @@ namespace TextMagicClient.Api
         /// Close chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Close chats by chat ids or close all chats
+        /// Close chats by chat IDs or close all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -3817,7 +3817,7 @@ namespace TextMagicClient.Api
         /// Delete chat messages by ID(s)
         /// </summary>
         /// <remarks>
-        /// Delete messages from chat by given messages ID(s).
+        /// Delete messages from chat by given message IDs.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -3829,7 +3829,7 @@ namespace TextMagicClient.Api
         /// Delete chat messages by ID(s)
         /// </summary>
         /// <remarks>
-        /// Delete messages from chat by given messages ID(s).
+        /// Delete messages from chat by given message IDs.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -3840,7 +3840,7 @@ namespace TextMagicClient.Api
         /// Delete chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete chats by given ID(s) or delete all chats.
+        /// Delete chats by given IDs or delete all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -3851,7 +3851,7 @@ namespace TextMagicClient.Api
         /// Delete chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete chats by given ID(s) or delete all chats.
+        /// Delete chats by given IDs or delete all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -4182,7 +4182,7 @@ namespace TextMagicClient.Api
         /// Delete sessions (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+        /// Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -4193,7 +4193,7 @@ namespace TextMagicClient.Api
         /// Delete sessions (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+        /// Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -4329,7 +4329,7 @@ namespace TextMagicClient.Api
         /// Delete templates (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete template by given ID(s) or delete all templates.
+        /// Delete templates by given IDs or delete all templates.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -4340,7 +4340,7 @@ namespace TextMagicClient.Api
         /// Delete templates (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete template by given ID(s) or delete all templates.
+        /// Delete templates by given IDs or delete all templates.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -5262,8 +5262,8 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
-        /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
+        /// <param name="favoriteOnly">Return only favorited lists. (optional, default to 0)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
         /// <returns>Task of GetListsPaginatedResponse</returns>
         System.Threading.Tasks.Task<GetListsPaginatedResponse> GetListsAsync (int? page = null, int? limit = null, string orderBy = null, string direction = null, int? favoriteOnly = null, int? onlyMine = null);
 
@@ -5278,8 +5278,8 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
-        /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
+        /// <param name="favoriteOnly">Return only favorited lists. (optional, default to 0)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetListsPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetListsPaginatedResponse>> GetListsAsyncWithHttpInfo (int? page = null, int? limit = null, string orderBy = null, string direction = null, int? favoriteOnly = null, int? onlyMine = null);
         /// <summary>
@@ -5416,76 +5416,76 @@ namespace TextMagicClient.Api
         /// <returns>Task of ApiResponse (GetMessagePriceResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetMessagePriceResponse>> GetMessagePriceAsyncWithHttpInfo (int? includeBlocked = null, string text = null, int? templateId = null, int? sendingTime = null, string sendingDateTime = null, string sendingTimezone = null, string contacts = null, string lists = null, string phones = null, int? cutExtra = null, int? partsCount = null, int? referenceId = null, string from = null, string rule = null, int? createChat = null, int? tts = null, int? local = null, string localCountry = null);
         /// <summary>
-        /// Get a session details
+        /// Get a session&#x60;s details
         /// </summary>
         /// <remarks>
-        /// Get a specific session’s details
+        /// Get a specific session’s details.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">a session ID</param>
+        /// <param name="id">Session ID.</param>
         /// <returns>Task of MessageSession</returns>
         System.Threading.Tasks.Task<MessageSession> GetMessageSessionAsync (int? id);
 
         /// <summary>
-        /// Get a session details
+        /// Get a session&#x60;s details
         /// </summary>
         /// <remarks>
-        /// Get a specific session’s details
+        /// Get a specific session’s details.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">a session ID</param>
+        /// <param name="id">Session ID.</param>
         /// <returns>Task of ApiResponse (MessageSession)</returns>
         System.Threading.Tasks.Task<ApiResponse<MessageSession>> GetMessageSessionAsyncWithHttpInfo (int? id);
         /// <summary>
-        /// Get a session statistics
+        /// Get a session&#x60;s statistics
         /// </summary>
         /// <remarks>
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>Task of GetMessageSessionStatResponse</returns>
         System.Threading.Tasks.Task<GetMessageSessionStatResponse> GetMessageSessionStatAsync (int? id, int? includeDeleted = null);
 
         /// <summary>
-        /// Get a session statistics
+        /// Get a session&#x60;s statistics
         /// </summary>
         /// <remarks>
         /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetMessageSessionStatResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetMessageSessionStatResponse>> GetMessageSessionStatAsyncWithHttpInfo (int? id, int? includeDeleted = null);
         /// <summary>
-        /// Get a session messages
+        /// Get a session&#x60;s messages
         /// </summary>
         /// <remarks>
-        /// A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+        /// A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>Task of GetMessagesBySessionIdPaginatedResponse</returns>
         System.Threading.Tasks.Task<GetMessagesBySessionIdPaginatedResponse> GetMessagesBySessionIdAsync (int? id, int? page = null, int? limit = null, string statuses = null, int? includeDeleted = null);
 
         /// <summary>
-        /// Get a session messages
+        /// Get a session&#x60;s messages
         /// </summary>
         /// <remarks>
-        /// A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+        /// A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetMessagesBySessionIdPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetMessagesBySessionIdPaginatedResponse>> GetMessagesBySessionIdAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string statuses = null, int? includeDeleted = null);
         /// <summary>
@@ -5765,7 +5765,7 @@ namespace TextMagicClient.Api
         /// <returns>Task of ApiResponse (GetSubaccountsWithTokensResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetSubaccountsWithTokensResponse>> GetSubaccountsWithTokensAsyncWithHttpInfo (GetSubaccountsWithTokensInputObject getSubaccountsWithTokensInputObject, decimal? page = null, int? limit = null);
         /// <summary>
-        /// Get a template details
+        /// Get a template&#x60;s details
         /// </summary>
         /// <remarks>
         /// Get a single template.
@@ -5776,7 +5776,7 @@ namespace TextMagicClient.Api
         System.Threading.Tasks.Task<MessageTemplate> GetTemplateAsync (int? id);
 
         /// <summary>
-        /// Get a template details
+        /// Get a template&#x60;s details
         /// </summary>
         /// <remarks>
         /// Get a single template.
@@ -5946,7 +5946,7 @@ namespace TextMagicClient.Api
         /// Mark chats as read (bulk)
         /// </summary>
         /// <remarks>
-        /// Mark several chats as read by chat ids or mark all chats as read
+        /// Mark several chats as read by chat IDs or mark all chats as read
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -5957,7 +5957,7 @@ namespace TextMagicClient.Api
         /// Mark chats as read (bulk)
         /// </summary>
         /// <remarks>
-        /// Mark several chats as read by chat ids or mark all chats as read
+        /// Mark several chats as read by chat IDs or mark all chats as read
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -5967,7 +5967,7 @@ namespace TextMagicClient.Api
         /// Mark chats as unread (bulk)
         /// </summary>
         /// <remarks>
-        /// Mark several chats as UNread by chat ids or mark all chats as UNread
+        /// Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -5978,7 +5978,7 @@ namespace TextMagicClient.Api
         /// Mark chats as unread (bulk)
         /// </summary>
         /// <remarks>
-        /// Mark several chats as UNread by chat ids or mark all chats as UNread
+        /// Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -6009,7 +6009,7 @@ namespace TextMagicClient.Api
         /// Mute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Mute several chats by chat ids or mute all chats
+        /// Mute several chats by chat IDs or mute all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -6020,7 +6020,7 @@ namespace TextMagicClient.Api
         /// Mute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Mute several chats by chat ids or mute all chats
+        /// Mute several chats by chat IDs or mute all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -6049,7 +6049,7 @@ namespace TextMagicClient.Api
         /// Reopen chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Reopen chats by chat ids or reopen all chats
+        /// Reopen chats by chat IDs or reopen all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -6060,7 +6060,7 @@ namespace TextMagicClient.Api
         /// Reopen chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Reopen chats by chat ids or reopen all chats
+        /// Reopen chats by chat IDs or reopen all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -6371,9 +6371,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find template by ID(s) (optional)</param>
-        /// <param name="name">Find template by name (optional)</param>
-        /// <param name="content">Find template by content (optional)</param>
+        /// <param name="ids">Find template by ID(s). (optional)</param>
+        /// <param name="name">Find template by name. (optional)</param>
+        /// <param name="content">Find template by content. (optional)</param>
         /// <returns>Task of SearchTemplatesPaginatedResponse</returns>
         System.Threading.Tasks.Task<SearchTemplatesPaginatedResponse> SearchTemplatesAsync (int? page = null, int? limit = null, string ids = null, string name = null, string content = null);
 
@@ -6386,9 +6386,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find template by ID(s) (optional)</param>
-        /// <param name="name">Find template by name (optional)</param>
-        /// <param name="content">Find template by content (optional)</param>
+        /// <param name="ids">Find template by ID(s). (optional)</param>
+        /// <param name="name">Find template by name. (optional)</param>
+        /// <param name="content">Find template by content. (optional)</param>
         /// <returns>Task of ApiResponse (SearchTemplatesPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<SearchTemplatesPaginatedResponse>> SearchTemplatesAsyncWithHttpInfo (int? page = null, int? limit = null, string ids = null, string name = null, string content = null);
         /// <summary>
@@ -6500,7 +6500,7 @@ namespace TextMagicClient.Api
         /// Unmute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Unmute several chats by chat ids or unmute all chats
+        /// Unmute several chats by chat IDs or unmute all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -6511,7 +6511,7 @@ namespace TextMagicClient.Api
         /// Unmute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// Unmute several chats by chat ids or unmute all chats
+        /// Unmute several chats by chat IDs or unmute all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -7961,7 +7961,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close chats (bulk) Close chats by chat ids or close all chats
+        /// Close chats (bulk) Close chats by chat IDs or close all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -7972,7 +7972,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close chats (bulk) Close chats by chat ids or close all chats
+        /// Close chats (bulk) Close chats by chat IDs or close all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -8039,7 +8039,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close chats (bulk) Close chats by chat ids or close all chats
+        /// Close chats (bulk) Close chats by chat IDs or close all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -8051,7 +8051,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close chats (bulk) Close chats by chat ids or close all chats
+        /// Close chats (bulk) Close chats by chat IDs or close all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -9602,7 +9602,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chat messages by ID(s) Delete messages from chat by given messages ID(s).
+        /// Delete chat messages by ID(s) Delete messages from chat by given message IDs.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -9614,7 +9614,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chat messages by ID(s) Delete messages from chat by given messages ID(s).
+        /// Delete chat messages by ID(s) Delete messages from chat by given message IDs.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -9686,7 +9686,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chat messages by ID(s) Delete messages from chat by given messages ID(s).
+        /// Delete chat messages by ID(s) Delete messages from chat by given message IDs.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -9699,7 +9699,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chat messages by ID(s) Delete messages from chat by given messages ID(s).
+        /// Delete chat messages by ID(s) Delete messages from chat by given message IDs.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -9771,7 +9771,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chats (bulk) Delete chats by given ID(s) or delete all chats.
+        /// Delete chats (bulk) Delete chats by given IDs or delete all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -9782,7 +9782,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chats (bulk) Delete chats by given ID(s) or delete all chats.
+        /// Delete chats (bulk) Delete chats by given IDs or delete all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -9849,7 +9849,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chats (bulk) Delete chats by given ID(s) or delete all chats.
+        /// Delete chats (bulk) Delete chats by given IDs or delete all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -9861,7 +9861,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chats (bulk) Delete chats by given ID(s) or delete all chats.
+        /// Delete chats (bulk) Delete chats by given IDs or delete all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -12197,7 +12197,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete sessions (bulk) Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+        /// Delete sessions (bulk) Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -12208,7 +12208,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete sessions (bulk) Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+        /// Delete sessions (bulk) Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -12275,7 +12275,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete sessions (bulk) Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+        /// Delete sessions (bulk) Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -12287,7 +12287,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete sessions (bulk) Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+        /// Delete sessions (bulk) Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -13240,7 +13240,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete templates (bulk) Delete template by given ID(s) or delete all templates.
+        /// Delete templates (bulk) Delete templates by given IDs or delete all templates.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -13251,7 +13251,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete templates (bulk) Delete template by given ID(s) or delete all templates.
+        /// Delete templates (bulk) Delete templates by given IDs or delete all templates.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -13318,7 +13318,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete templates (bulk) Delete template by given ID(s) or delete all templates.
+        /// Delete templates (bulk) Delete templates by given IDs or delete all templates.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -13330,7 +13330,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete templates (bulk) Delete template by given ID(s) or delete all templates.
+        /// Delete templates (bulk) Delete templates by given IDs or delete all templates.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -19281,8 +19281,8 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
-        /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
+        /// <param name="favoriteOnly">Return only favorited lists. (optional, default to 0)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
         /// <returns>GetListsPaginatedResponse</returns>
         public GetListsPaginatedResponse GetLists (int? page = null, int? limit = null, string orderBy = null, string direction = null, int? favoriteOnly = null, int? onlyMine = null)
         {
@@ -19298,8 +19298,8 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
-        /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
+        /// <param name="favoriteOnly">Return only favorited lists. (optional, default to 0)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
         /// <returns>ApiResponse of GetListsPaginatedResponse</returns>
         public ApiResponse< GetListsPaginatedResponse > GetListsWithHttpInfo (int? page = null, int? limit = null, string orderBy = null, string direction = null, int? favoriteOnly = null, int? onlyMine = null)
         {
@@ -19366,8 +19366,8 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
-        /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
+        /// <param name="favoriteOnly">Return only favorited lists. (optional, default to 0)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
         /// <returns>Task of GetListsPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<GetListsPaginatedResponse> GetListsAsync (int? page = null, int? limit = null, string orderBy = null, string direction = null, int? favoriteOnly = null, int? onlyMine = null)
         {
@@ -19384,8 +19384,8 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
-        /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
-        /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
+        /// <param name="favoriteOnly">Return only favorited lists. (optional, default to 0)</param>
+        /// <param name="onlyMine">Return only current user lists. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetListsPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetListsPaginatedResponse>> GetListsAsyncWithHttpInfo (int? page = null, int? limit = null, string orderBy = null, string direction = null, int? favoriteOnly = null, int? onlyMine = null)
         {
@@ -20084,10 +20084,10 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session details Get a specific session’s details
+        /// Get a session&#x60;s details Get a specific session’s details.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">a session ID</param>
+        /// <param name="id">Session ID.</param>
         /// <returns>MessageSession</returns>
         public MessageSession GetMessageSession (int? id)
         {
@@ -20096,10 +20096,10 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session details Get a specific session’s details
+        /// Get a session&#x60;s details Get a specific session’s details.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">a session ID</param>
+        /// <param name="id">Session ID.</param>
         /// <returns>ApiResponse of MessageSession</returns>
         public ApiResponse< MessageSession > GetMessageSessionWithHttpInfo (int? id)
         {
@@ -20157,10 +20157,10 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session details Get a specific session’s details
+        /// Get a session&#x60;s details Get a specific session’s details.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">a session ID</param>
+        /// <param name="id">Session ID.</param>
         /// <returns>Task of MessageSession</returns>
         public async System.Threading.Tasks.Task<MessageSession> GetMessageSessionAsync (int? id)
         {
@@ -20170,10 +20170,10 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session details Get a specific session’s details
+        /// Get a session&#x60;s details Get a specific session’s details.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">a session ID</param>
+        /// <param name="id">Session ID.</param>
         /// <returns>Task of ApiResponse (MessageSession)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<MessageSession>> GetMessageSessionAsyncWithHttpInfo (int? id)
         {
@@ -20231,11 +20231,11 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session statistics 
+        /// Get a session&#x60;s statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>GetMessageSessionStatResponse</returns>
         public GetMessageSessionStatResponse GetMessageSessionStat (int? id, int? includeDeleted = null)
         {
@@ -20244,11 +20244,11 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session statistics 
+        /// Get a session&#x60;s statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>ApiResponse of GetMessageSessionStatResponse</returns>
         public ApiResponse< GetMessageSessionStatResponse > GetMessageSessionStatWithHttpInfo (int? id, int? includeDeleted = null)
         {
@@ -20307,11 +20307,11 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session statistics 
+        /// Get a session&#x60;s statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>Task of GetMessageSessionStatResponse</returns>
         public async System.Threading.Tasks.Task<GetMessageSessionStatResponse> GetMessageSessionStatAsync (int? id, int? includeDeleted = null)
         {
@@ -20321,11 +20321,11 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session statistics 
+        /// Get a session&#x60;s statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetMessageSessionStatResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetMessageSessionStatResponse>> GetMessageSessionStatAsyncWithHttpInfo (int? id, int? includeDeleted = null)
         {
@@ -20384,14 +20384,14 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session messages A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+        /// Get a session&#x60;s messages A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>GetMessagesBySessionIdPaginatedResponse</returns>
         public GetMessagesBySessionIdPaginatedResponse GetMessagesBySessionId (int? id, int? page = null, int? limit = null, string statuses = null, int? includeDeleted = null)
         {
@@ -20400,14 +20400,14 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session messages A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+        /// Get a session&#x60;s messages A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>ApiResponse of GetMessagesBySessionIdPaginatedResponse</returns>
         public ApiResponse< GetMessagesBySessionIdPaginatedResponse > GetMessagesBySessionIdWithHttpInfo (int? id, int? page = null, int? limit = null, string statuses = null, int? includeDeleted = null)
         {
@@ -20469,14 +20469,14 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session messages A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+        /// Get a session&#x60;s messages A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>Task of GetMessagesBySessionIdPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<GetMessagesBySessionIdPaginatedResponse> GetMessagesBySessionIdAsync (int? id, int? page = null, int? limit = null, string statuses = null, int? includeDeleted = null)
         {
@@ -20486,14 +20486,14 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session messages A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+        /// Get a session&#x60;s messages A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetMessagesBySessionIdPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetMessagesBySessionIdPaginatedResponse>> GetMessagesBySessionIdAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string statuses = null, int? includeDeleted = null)
         {
@@ -22363,7 +22363,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a template details Get a single template.
+        /// Get a template&#x60;s details Get a single template.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -22375,7 +22375,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a template details Get a single template.
+        /// Get a template&#x60;s details Get a single template.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -22436,7 +22436,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a template details Get a single template.
+        /// Get a template&#x60;s details Get a single template.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -22449,7 +22449,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a template details Get a single template.
+        /// Get a template&#x60;s details Get a single template.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -23561,7 +23561,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as read (bulk) Mark several chats as read by chat ids or mark all chats as read
+        /// Mark chats as read (bulk) Mark several chats as read by chat IDs or mark all chats as read
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -23572,7 +23572,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as read (bulk) Mark several chats as read by chat ids or mark all chats as read
+        /// Mark chats as read (bulk) Mark several chats as read by chat IDs or mark all chats as read
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -23639,7 +23639,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as read (bulk) Mark several chats as read by chat ids or mark all chats as read
+        /// Mark chats as read (bulk) Mark several chats as read by chat IDs or mark all chats as read
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -23651,7 +23651,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as read (bulk) Mark several chats as read by chat ids or mark all chats as read
+        /// Mark chats as read (bulk) Mark several chats as read by chat IDs or mark all chats as read
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -23718,7 +23718,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as unread (bulk) Mark several chats as UNread by chat ids or mark all chats as UNread
+        /// Mark chats as unread (bulk) Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -23729,7 +23729,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as unread (bulk) Mark several chats as UNread by chat ids or mark all chats as UNread
+        /// Mark chats as unread (bulk) Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -23796,7 +23796,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as unread (bulk) Mark several chats as UNread by chat ids or mark all chats as UNread
+        /// Mark chats as unread (bulk) Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -23808,7 +23808,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as unread (bulk) Mark several chats as UNread by chat ids or mark all chats as UNread
+        /// Mark chats as unread (bulk) Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -24036,7 +24036,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chats (bulk) Mute several chats by chat ids or mute all chats
+        /// Mute chats (bulk) Mute several chats by chat IDs or mute all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -24047,7 +24047,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chats (bulk) Mute several chats by chat ids or mute all chats
+        /// Mute chats (bulk) Mute several chats by chat IDs or mute all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -24114,7 +24114,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chats (bulk) Mute several chats by chat ids or mute all chats
+        /// Mute chats (bulk) Mute several chats by chat IDs or mute all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -24126,7 +24126,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chats (bulk) Mute several chats by chat ids or mute all chats
+        /// Mute chats (bulk) Mute several chats by chat IDs or mute all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -24328,7 +24328,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Reopen chats (bulk) Reopen chats by chat ids or reopen all chats
+        /// Reopen chats (bulk) Reopen chats by chat IDs or reopen all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -24339,7 +24339,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Reopen chats (bulk) Reopen chats by chat ids or reopen all chats
+        /// Reopen chats (bulk) Reopen chats by chat IDs or reopen all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -24406,7 +24406,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Reopen chats (bulk) Reopen chats by chat ids or reopen all chats
+        /// Reopen chats (bulk) Reopen chats by chat IDs or reopen all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -24418,7 +24418,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Reopen chats (bulk) Reopen chats by chat ids or reopen all chats
+        /// Reopen chats (bulk) Reopen chats by chat IDs or reopen all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -26198,9 +26198,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find template by ID(s) (optional)</param>
-        /// <param name="name">Find template by name (optional)</param>
-        /// <param name="content">Find template by content (optional)</param>
+        /// <param name="ids">Find template by ID(s). (optional)</param>
+        /// <param name="name">Find template by name. (optional)</param>
+        /// <param name="content">Find template by content. (optional)</param>
         /// <returns>SearchTemplatesPaginatedResponse</returns>
         public SearchTemplatesPaginatedResponse SearchTemplates (int? page = null, int? limit = null, string ids = null, string name = null, string content = null)
         {
@@ -26214,9 +26214,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find template by ID(s) (optional)</param>
-        /// <param name="name">Find template by name (optional)</param>
-        /// <param name="content">Find template by content (optional)</param>
+        /// <param name="ids">Find template by ID(s). (optional)</param>
+        /// <param name="name">Find template by name. (optional)</param>
+        /// <param name="content">Find template by content. (optional)</param>
         /// <returns>ApiResponse of SearchTemplatesPaginatedResponse</returns>
         public ApiResponse< SearchTemplatesPaginatedResponse > SearchTemplatesWithHttpInfo (int? page = null, int? limit = null, string ids = null, string name = null, string content = null)
         {
@@ -26280,9 +26280,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find template by ID(s) (optional)</param>
-        /// <param name="name">Find template by name (optional)</param>
-        /// <param name="content">Find template by content (optional)</param>
+        /// <param name="ids">Find template by ID(s). (optional)</param>
+        /// <param name="name">Find template by name. (optional)</param>
+        /// <param name="content">Find template by content. (optional)</param>
         /// <returns>Task of SearchTemplatesPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<SearchTemplatesPaginatedResponse> SearchTemplatesAsync (int? page = null, int? limit = null, string ids = null, string name = null, string content = null)
         {
@@ -26297,9 +26297,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find template by ID(s) (optional)</param>
-        /// <param name="name">Find template by name (optional)</param>
-        /// <param name="content">Find template by content (optional)</param>
+        /// <param name="ids">Find template by ID(s). (optional)</param>
+        /// <param name="name">Find template by name. (optional)</param>
+        /// <param name="content">Find template by content. (optional)</param>
         /// <returns>Task of ApiResponse (SearchTemplatesPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SearchTemplatesPaginatedResponse>> SearchTemplatesAsyncWithHttpInfo (int? page = null, int? limit = null, string ids = null, string name = null, string content = null)
         {
@@ -27155,7 +27155,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unmute chats (bulk) Unmute several chats by chat ids or unmute all chats
+        /// Unmute chats (bulk) Unmute several chats by chat IDs or unmute all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -27166,7 +27166,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unmute chats (bulk) Unmute several chats by chat ids or unmute all chats
+        /// Unmute chats (bulk) Unmute several chats by chat IDs or unmute all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -27233,7 +27233,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unmute chats (bulk) Unmute several chats by chat ids or unmute all chats
+        /// Unmute chats (bulk) Unmute several chats by chat IDs or unmute all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -27245,7 +27245,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unmute chats (bulk) Unmute several chats by chat ids or unmute all chats
+        /// Unmute chats (bulk) Unmute several chats by chat IDs or unmute all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>

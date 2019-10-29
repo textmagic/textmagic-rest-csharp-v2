@@ -5,11 +5,11 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int?** | Message ID. | 
 **Sender** | **string** | Message sender (phone number or alphanumeric Sender ID). | [optional] 
-**Receiver** | **string** | Recipient phone number. | [optional] 
+**Receiver** | **string** | Recipient&#x60;s phone number. | [optional] 
 **Text** | **string** |  | 
 **Status** | **string** | Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.  | 
 **ContactId** | **int?** | Recipient contact ID. | 
-**SessionId** | **int?** | Message Session ID of a Message. | 
+**SessionId** | **int?** | Message Session ID of a message. | 
 **MessageTime** | **DateTime?** | Sending time. | 
 **Avatar** | **string** |  | 
 **Deleted** | **bool?** | Indicates that the message has been deleted. | [optional] 
@@ -18,10 +18,10 @@ Name | Type | Description | Notes
 **FirstName** | **string** | Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).  | 
 **LastName** | **string** | Contact last name. | 
 **Country** | **string** | The 2-letter ISO country code of the recipient&#39;s phone number.  | 
-**Phone** | **string** | Receipent phone number. | [optional] 
+**Phone** | **string** | Receipent&#x60;s phone number. | [optional] 
 **Price** | **float?** | Message price. | [optional] 
 **PartsCount** | **int?** | Message parts (multiples of 160 characters) count. | 
-**FromEmail** | **string** | The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address. | [optional] 
+**FromEmail** | **string** | The user email which this message came from. For Email2SMS and Distribution Lists the messages, it is an original email address - in other cases, it is an account email address. | [optional] 
 **FromNumber** | **string** | The Phone number used to send the SMS. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

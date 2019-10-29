@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class User :  IEquatable<User>, IValidatableObject
     {
         /// <summary>
-        /// User&#39;s prefered format of time display * *12h* - AM/PM format * *24h* - 24 hour clock format 
+        /// User&#39;s preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format. 
         /// </summary>
-        /// <value>User&#39;s prefered format of time display * *12h* - AM/PM format * *24h* - 24 hour clock format </value>
+        /// <value>User&#39;s preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum DisplayTimeFormatEnum
         {
@@ -52,15 +52,15 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// User&#39;s prefered format of time display * *12h* - AM/PM format * *24h* - 24 hour clock format 
+        /// User&#39;s preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format. 
         /// </summary>
-        /// <value>User&#39;s prefered format of time display * *12h* - AM/PM format * *24h* - 24 hour clock format </value>
+        /// <value>User&#39;s preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format. </value>
         [DataMember(Name="displayTimeFormat", EmitDefaultValue=false)]
         public DisplayTimeFormatEnum? DisplayTimeFormat { get; set; }
         /// <summary>
-        /// Current account status: * **A** for Active * **T** for Trial. 
+        /// Current account status: * **A** for Active; * **T** for Trial. 
         /// </summary>
-        /// <value>Current account status: * **A** for Active * **T** for Trial. </value>
+        /// <value>Current account status: * **A** for Active; * **T** for Trial. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StatusEnum
         {
@@ -79,15 +79,15 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Current account status: * **A** for Active * **T** for Trial. 
+        /// Current account status: * **A** for Active; * **T** for Trial. 
         /// </summary>
-        /// <value>Current account status: * **A** for Active * **T** for Trial. </value>
+        /// <value>Current account status: * **A** for Active; * **T** for Trial. </value>
         [DataMember(Name="status", EmitDefaultValue=false)]
         public StatusEnum Status { get; set; }
         /// <summary>
-        /// Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User 
+        /// Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User 
         /// </summary>
-        /// <value>Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User </value>
+        /// <value>Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum SubaccountTypeEnum
         {
@@ -112,9 +112,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User 
+        /// Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User 
         /// </summary>
-        /// <value>Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User </value>
+        /// <value>Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User </value>
         [DataMember(Name="subaccountType", EmitDefaultValue=false)]
         public SubaccountTypeEnum SubaccountType { get; set; }
         /// <summary>
@@ -126,21 +126,21 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="User" /> class.
         /// </summary>
         /// <param name="id">User ID. (required).</param>
-        /// <param name="displayTimeFormat">User&#39;s prefered format of time display * *12h* - AM/PM format * *24h* - 24 hour clock format .</param>
+        /// <param name="displayTimeFormat">User&#39;s preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format. .</param>
         /// <param name="username">Username. (required).</param>
         /// <param name="firstName">Account first name. (required).</param>
         /// <param name="lastName">Account last name. (required).</param>
         /// <param name="email">User email address. (required).</param>
-        /// <param name="status">Current account status: * **A** for Active * **T** for Trial.  (required).</param>
+        /// <param name="status">Current account status: * **A** for Active; * **T** for Trial.  (required).</param>
         /// <param name="balance">Account balance (in account currency). (required).</param>
-        /// <param name="phone">User phone number (required).</param>
+        /// <param name="phone">User&#x60;s phone number. (required).</param>
         /// <param name="company">Account company name. (required).</param>
         /// <param name="currency">currency (required).</param>
         /// <param name="country">country (required).</param>
         /// <param name="timezone">timezone (required).</param>
-        /// <param name="subaccountType">Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User  (required).</param>
-        /// <param name="emailAccepted">Is account has confirmed Email. (required).</param>
-        /// <param name="phoneAccepted">Is account has confirmed Phone number. (required).</param>
+        /// <param name="subaccountType">Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User  (required).</param>
+        /// <param name="emailAccepted">Does the account have a confirmed email? (required).</param>
+        /// <param name="phoneAccepted">Does the account have a confirmed phone number? (required).</param>
         /// <param name="avatar">avatar (required).</param>
         public User(int? id = default(int?), DisplayTimeFormatEnum? displayTimeFormat = default(DisplayTimeFormatEnum?), string username = default(string), string firstName = default(string), string lastName = default(string), string email = default(string), StatusEnum status = default(StatusEnum), decimal? balance = default(decimal?), string phone = default(string), string company = default(string), Currency currency = default(Currency), Country country = default(Country), Timezone timezone = default(Timezone), SubaccountTypeEnum subaccountType = default(SubaccountTypeEnum), bool? emailAccepted = default(bool?), bool? phoneAccepted = default(bool?), UserImage avatar = default(UserImage))
         {
@@ -336,9 +336,9 @@ namespace TextMagicClient.Model
         public decimal? Balance { get; set; }
 
         /// <summary>
-        /// User phone number
+        /// User&#x60;s phone number.
         /// </summary>
-        /// <value>User phone number</value>
+        /// <value>User&#x60;s phone number.</value>
         [DataMember(Name="phone", EmitDefaultValue=false)]
         public string Phone { get; set; }
 
@@ -369,16 +369,16 @@ namespace TextMagicClient.Model
 
 
         /// <summary>
-        /// Is account has confirmed Email.
+        /// Does the account have a confirmed email?
         /// </summary>
-        /// <value>Is account has confirmed Email.</value>
+        /// <value>Does the account have a confirmed email?</value>
         [DataMember(Name="emailAccepted", EmitDefaultValue=false)]
         public bool? EmailAccepted { get; set; }
 
         /// <summary>
-        /// Is account has confirmed Phone number.
+        /// Does the account have a confirmed phone number?
         /// </summary>
-        /// <value>Is account has confirmed Phone number.</value>
+        /// <value>Does the account have a confirmed phone number?</value>
         [DataMember(Name="phoneAccepted", EmitDefaultValue=false)]
         public bool? PhoneAccepted { get; set; }
 
