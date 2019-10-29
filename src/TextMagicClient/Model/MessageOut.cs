@@ -150,7 +150,7 @@ namespace TextMagicClient.Model
         /// <param name="price">Message price..</param>
         /// <param name="partsCount">Message parts (multiples of 160 characters) count. (required).</param>
         /// <param name="fromEmail">The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address..</param>
-        /// <param name="fromNumber">Phone number used to send the SMS..</param>
+        /// <param name="fromNumber">The Phone number used to send the SMS..</param>
         public MessageOut(int? id = default(int?), string sender = default(string), string receiver = default(string), string text = default(string), StatusEnum status = default(StatusEnum), int? contactId = default(int?), int? sessionId = default(int?), DateTime? messageTime = default(DateTime?), string avatar = default(string), bool? deleted = default(bool?), string charset = default(string), string charsetLabel = default(string), string firstName = default(string), string lastName = default(string), string country = default(string), string phone = default(string), float? price = default(float?), int? partsCount = default(int?), string fromEmail = default(string), string fromNumber = default(string))
         {
             // to ensure "id" is required (not null)
@@ -405,9 +405,9 @@ namespace TextMagicClient.Model
         public string FromEmail { get; set; }
 
         /// <summary>
-        /// Phone number used to send the SMS.
+        /// The Phone number used to send the SMS.
         /// </summary>
-        /// <value>Phone number used to send the SMS.</value>
+        /// <value>The Phone number used to send the SMS.</value>
         [DataMember(Name="fromNumber", EmitDefaultValue=false)]
         public string FromNumber { get; set; }
 

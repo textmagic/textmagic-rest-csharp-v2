@@ -38,8 +38,8 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="SendMessageInputObject" /> class.
         /// </summary>
-        /// <param name="text">Message text. Required if **template_id** is not set. (required).</param>
-        /// <param name="templateId">Template used instead of message text. Required if **text** is not set..</param>
+        /// <param name="text">Message text. Required if the **template_id** is not set. (required).</param>
+        /// <param name="templateId">Template used instead of message text. Required if the **text** is not set..</param>
         /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now..</param>
         /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to **sendingTimezone**..</param>
         /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone..</param>
@@ -52,7 +52,7 @@ namespace TextMagicClient.Model
         /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs)..</param>
         /// <param name="rrule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details..</param>
         /// <param name="createChat">Should sending method try to create new Chat (if not exist) with specified recipients? (default to false).</param>
-        /// <param name="tts">Send a Text to Speech message. (default to false).</param>
+        /// <param name="tts">Send a Text-to-Speech message. (default to false).</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (default to false).</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country..</param>
         public SendMessageInputObject(string text = default(string), int? templateId = default(int?), int? sendingTime = default(int?), string sendingDateTime = default(string), string sendingTimezone = default(string), string contacts = default(string), string lists = default(string), string phones = default(string), bool? cutExtra = false, int? partsCount = default(int?), int? referenceId = default(int?), string from = default(string), string rrule = default(string), bool? createChat = false, bool? tts = false, bool? local = false, string localCountry = default(string))
@@ -125,16 +125,16 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Message text. Required if **template_id** is not set.
+        /// Message text. Required if the **template_id** is not set.
         /// </summary>
-        /// <value>Message text. Required if **template_id** is not set.</value>
+        /// <value>Message text. Required if the **template_id** is not set.</value>
         [DataMember(Name="text", EmitDefaultValue=false)]
         public string Text { get; set; }
 
         /// <summary>
-        /// Template used instead of message text. Required if **text** is not set.
+        /// Template used instead of message text. Required if the **text** is not set.
         /// </summary>
-        /// <value>Template used instead of message text. Required if **text** is not set.</value>
+        /// <value>Template used instead of message text. Required if the **text** is not set.</value>
         [DataMember(Name="templateId", EmitDefaultValue=false)]
         public int? TemplateId { get; set; }
 
@@ -223,9 +223,9 @@ namespace TextMagicClient.Model
         public bool? CreateChat { get; set; }
 
         /// <summary>
-        /// Send a Text to Speech message.
+        /// Send a Text-to-Speech message.
         /// </summary>
-        /// <value>Send a Text to Speech message.</value>
+        /// <value>Send a Text-to-Speech message.</value>
         [DataMember(Name="tts", EmitDefaultValue=false)]
         public bool? Tts { get; set; }
 

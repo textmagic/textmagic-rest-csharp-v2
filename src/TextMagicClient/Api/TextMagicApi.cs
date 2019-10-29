@@ -790,7 +790,7 @@ namespace TextMagicClient.Api
         /// Delete messages (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete outbound messages by given ID(s) or delete all outbound messages.
+        /// Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -801,7 +801,7 @@ namespace TextMagicClient.Api
         /// Delete messages (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete outbound messages by given ID(s) or delete all outbound messages.
+        /// Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -1020,7 +1020,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetAllInboundMessagesPaginatedResponse</returns>
         GetAllInboundMessagesPaginatedResponse GetAllInboundMessages (int? page = null, int? limit = null, string orderBy = null, string direction = null);
 
@@ -1034,7 +1034,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetAllInboundMessagesPaginatedResponse</returns>
         ApiResponse<GetAllInboundMessagesPaginatedResponse> GetAllInboundMessagesWithHttpInfo (int? page = null, int? limit = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -1096,7 +1096,7 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetAllScheduledMessagesPaginatedResponse</returns>
         GetAllScheduledMessagesPaginatedResponse GetAllScheduledMessages (int? page = null, int? limit = null, string status = null, string orderBy = null, string direction = null);
 
@@ -1111,7 +1111,7 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetAllScheduledMessagesPaginatedResponse</returns>
         ApiResponse<GetAllScheduledMessagesPaginatedResponse> GetAllScheduledMessagesWithHttpInfo (int? page = null, int? limit = null, string status = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -1230,9 +1230,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find blocked contacts by specified search query (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="query">Find blocked contacts by specified search query. (optional)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetBlockedContactsPaginatedResponse</returns>
         GetBlockedContactsPaginatedResponse GetBlockedContacts (int? page = null, int? limit = null, string query = null, string orderBy = null, string direction = null);
 
@@ -1245,9 +1245,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find blocked contacts by specified search query (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="query">Find blocked contacts by specified search query. (optional)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetBlockedContactsPaginatedResponse</returns>
         ApiResponse<GetBlockedContactsPaginatedResponse> GetBlockedContactsWithHttpInfo (int? page = null, int? limit = null, string query = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -1349,7 +1349,7 @@ namespace TextMagicClient.Api
         /// <param name="query">Find messages by specified search query (optional)</param>
         /// <param name="start">Return messages since specified timestamp only (optional)</param>
         /// <param name="end">Return messages up to specified timestamp only (optional)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls (optional, default to 0)</param>
         /// <returns>GetChatMessagesPaginatedResponse</returns>
         GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null);
@@ -1367,7 +1367,7 @@ namespace TextMagicClient.Api
         /// <param name="query">Find messages by specified search query (optional)</param>
         /// <param name="start">Return messages since specified timestamp only (optional)</param>
         /// <param name="end">Return messages up to specified timestamp only (optional)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls (optional, default to 0)</param>
         /// <returns>ApiResponse of GetChatMessagesPaginatedResponse</returns>
         ApiResponse<GetChatMessagesPaginatedResponse> GetChatMessagesWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null);
@@ -1511,8 +1511,8 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetContactsPaginatedResponse</returns>
         GetContactsPaginatedResponse GetContacts (int? page = null, int? limit = null, int? shared = null, string orderBy = null, string direction = null);
 
@@ -1526,8 +1526,8 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetContactsPaginatedResponse</returns>
         ApiResponse<GetContactsPaginatedResponse> GetContactsWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -1537,7 +1537,7 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions by given search term
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="query">Find recipients by specified search query</param>
+        /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
         /// <returns>GetContactsAutocompleteResponse</returns>
@@ -1550,7 +1550,7 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions by given search term
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="query">Find recipients by specified search query</param>
+        /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
         /// <returns>ApiResponse of GetContactsAutocompleteResponse</returns>
@@ -1566,7 +1566,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetContactsByListIdPaginatedResponse</returns>
         GetContactsByListIdPaginatedResponse GetContactsByListId (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null);
 
@@ -1581,7 +1581,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetContactsByListIdPaginatedResponse</returns>
         ApiResponse<GetContactsByListIdPaginatedResponse> GetContactsByListIdWithHttpInfo (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -1826,8 +1826,8 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <returns>GetListsPaginatedResponse</returns>
@@ -1842,8 +1842,8 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <returns>ApiResponse of GetListsPaginatedResponse</returns>
@@ -1877,7 +1877,7 @@ namespace TextMagicClient.Api
         /// Preview message
         /// </summary>
         /// <remarks>
-        /// Get messages preview (with tags merged) up to 100 messages per session.
+        /// Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -1894,7 +1894,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>GetMessagePreviewResponse</returns>
@@ -1904,7 +1904,7 @@ namespace TextMagicClient.Api
         /// Preview message
         /// </summary>
         /// <remarks>
-        /// Get messages preview (with tags merged) up to 100 messages per session.
+        /// Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -1921,7 +1921,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>ApiResponse of GetMessagePreviewResponse</returns>
@@ -1948,7 +1948,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>GetMessagePriceResponse</returns>
@@ -1976,7 +1976,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>ApiResponse of GetMessagePriceResponse</returns>
@@ -2123,14 +2123,14 @@ namespace TextMagicClient.Api
         /// Get history
         /// </summary>
         /// <remarks>
-        /// Get outbound messages history.
+        /// Get the outbound messages history.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. (optional)</param>
         /// <param name="query">Find message by specified search query (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetOutboundMessagesHistoryPaginatedResponse</returns>
         GetOutboundMessagesHistoryPaginatedResponse GetOutboundMessagesHistory (int? limit = null, int? lastId = null, string query = null, string orderBy = null, string direction = null);
 
@@ -2138,14 +2138,14 @@ namespace TextMagicClient.Api
         /// Get history
         /// </summary>
         /// <remarks>
-        /// Get outbound messages history.
+        /// Get the outbound messages history.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. (optional)</param>
         /// <param name="query">Find message by specified search query (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetOutboundMessagesHistoryPaginatedResponse</returns>
         ApiResponse<GetOutboundMessagesHistoryPaginatedResponse> GetOutboundMessagesHistoryWithHttpInfo (int? limit = null, int? lastId = null, string query = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -2767,8 +2767,8 @@ namespace TextMagicClient.Api
         /// <param name="query">Find contacts by specified search query (optional)</param>
         /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
         /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>SearchContactsPaginatedResponse</returns>
         SearchContactsPaginatedResponse SearchContacts (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null);
 
@@ -2788,8 +2788,8 @@ namespace TextMagicClient.Api
         /// <param name="query">Find contacts by specified search query (optional)</param>
         /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
         /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of SearchContactsPaginatedResponse</returns>
         ApiResponse<SearchContactsPaginatedResponse> SearchContactsWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -2801,11 +2801,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="query">Find recipients by specified search query (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="query">Find recipients by specified search query. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
-        /// <param name="expand">Expand by adding firstName, lastName and contactId (optional, default to 0)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
+        /// <param name="expand">Expand by adding firstName, lastName and contactId. (optional, default to 0)</param>
         /// <returns>SearchInboundMessagesPaginatedResponse</returns>
         SearchInboundMessagesPaginatedResponse SearchInboundMessages (int? page = null, int? limit = null, string ids = null, string query = null, string orderBy = null, string direction = null, int? expand = null);
 
@@ -2818,11 +2818,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="query">Find recipients by specified search query (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="query">Find recipients by specified search query. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
-        /// <param name="expand">Expand by adding firstName, lastName and contactId (optional, default to 0)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
+        /// <param name="expand">Expand by adding firstName, lastName and contactId. (optional, default to 0)</param>
         /// <returns>ApiResponse of SearchInboundMessagesPaginatedResponse</returns>
         ApiResponse<SearchInboundMessagesPaginatedResponse> SearchInboundMessagesWithHttpInfo (int? page = null, int? limit = null, string ids = null, string query = null, string orderBy = null, string direction = null, int? expand = null);
         /// <summary>
@@ -2839,7 +2839,7 @@ namespace TextMagicClient.Api
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>SearchListsPaginatedResponse</returns>
         SearchListsPaginatedResponse SearchLists (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null);
 
@@ -2857,7 +2857,7 @@ namespace TextMagicClient.Api
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of SearchListsPaginatedResponse</returns>
         ApiResponse<SearchListsPaginatedResponse> SearchListsWithHttpInfo (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -2869,12 +2869,12 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="sessionId">Find messages by session ID (optional)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
-        /// <param name="query">Find messages by specified search query (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="sessionId">Find messages by session ID. (optional)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
+        /// <param name="query">Find messages by specified search query. (optional)</param>
         /// <returns>SearchOutboundMessagesPaginatedResponse</returns>
         SearchOutboundMessagesPaginatedResponse SearchOutboundMessages (int? page = null, int? limit = null, int? lastId = null, string ids = null, int? sessionId = null, string statuses = null, int? includeDeleted = null, string query = null);
 
@@ -2887,12 +2887,12 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="sessionId">Find messages by session ID (optional)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
-        /// <param name="query">Find messages by specified search query (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="sessionId">Find messages by session ID. (optional)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
+        /// <param name="query">Find messages by specified search query. (optional)</param>
         /// <returns>ApiResponse of SearchOutboundMessagesPaginatedResponse</returns>
         ApiResponse<SearchOutboundMessagesPaginatedResponse> SearchOutboundMessagesWithHttpInfo (int? page = null, int? limit = null, int? lastId = null, string ids = null, int? sessionId = null, string statuses = null, int? includeDeleted = null, string query = null);
         /// <summary>
@@ -2908,7 +2908,7 @@ namespace TextMagicClient.Api
         /// <param name="ids">Find schedules by ID(s) (optional)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>SearchScheduledMessagesPaginatedResponse</returns>
         SearchScheduledMessagesPaginatedResponse SearchScheduledMessages (int? page = null, int? limit = null, string query = null, string ids = null, string status = null, string orderBy = null, string direction = null);
 
@@ -2925,7 +2925,7 @@ namespace TextMagicClient.Api
         /// <param name="ids">Find schedules by ID(s) (optional)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of SearchScheduledMessagesPaginatedResponse</returns>
         ApiResponse<SearchScheduledMessagesPaginatedResponse> SearchScheduledMessagesWithHttpInfo (int? page = null, int? limit = null, string query = null, string ids = null, string status = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -4224,7 +4224,7 @@ namespace TextMagicClient.Api
         /// Delete messages (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete outbound messages by given ID(s) or delete all outbound messages.
+        /// Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -4235,7 +4235,7 @@ namespace TextMagicClient.Api
         /// Delete messages (bulk)
         /// </summary>
         /// <remarks>
-        /// Delete outbound messages by given ID(s) or delete all outbound messages.
+        /// Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -4454,7 +4454,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetAllInboundMessagesPaginatedResponse</returns>
         System.Threading.Tasks.Task<GetAllInboundMessagesPaginatedResponse> GetAllInboundMessagesAsync (int? page = null, int? limit = null, string orderBy = null, string direction = null);
 
@@ -4468,7 +4468,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetAllInboundMessagesPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetAllInboundMessagesPaginatedResponse>> GetAllInboundMessagesAsyncWithHttpInfo (int? page = null, int? limit = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -4530,7 +4530,7 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetAllScheduledMessagesPaginatedResponse</returns>
         System.Threading.Tasks.Task<GetAllScheduledMessagesPaginatedResponse> GetAllScheduledMessagesAsync (int? page = null, int? limit = null, string status = null, string orderBy = null, string direction = null);
 
@@ -4545,7 +4545,7 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetAllScheduledMessagesPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetAllScheduledMessagesPaginatedResponse>> GetAllScheduledMessagesAsyncWithHttpInfo (int? page = null, int? limit = null, string status = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -4664,9 +4664,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find blocked contacts by specified search query (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="query">Find blocked contacts by specified search query. (optional)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetBlockedContactsPaginatedResponse</returns>
         System.Threading.Tasks.Task<GetBlockedContactsPaginatedResponse> GetBlockedContactsAsync (int? page = null, int? limit = null, string query = null, string orderBy = null, string direction = null);
 
@@ -4679,9 +4679,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find blocked contacts by specified search query (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="query">Find blocked contacts by specified search query. (optional)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetBlockedContactsPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetBlockedContactsPaginatedResponse>> GetBlockedContactsAsyncWithHttpInfo (int? page = null, int? limit = null, string query = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -4783,7 +4783,7 @@ namespace TextMagicClient.Api
         /// <param name="query">Find messages by specified search query (optional)</param>
         /// <param name="start">Return messages since specified timestamp only (optional)</param>
         /// <param name="end">Return messages up to specified timestamp only (optional)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls (optional, default to 0)</param>
         /// <returns>Task of GetChatMessagesPaginatedResponse</returns>
         System.Threading.Tasks.Task<GetChatMessagesPaginatedResponse> GetChatMessagesAsync (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null);
@@ -4801,7 +4801,7 @@ namespace TextMagicClient.Api
         /// <param name="query">Find messages by specified search query (optional)</param>
         /// <param name="start">Return messages since specified timestamp only (optional)</param>
         /// <param name="end">Return messages up to specified timestamp only (optional)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetChatMessagesPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetChatMessagesPaginatedResponse>> GetChatMessagesAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null);
@@ -4945,8 +4945,8 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetContactsPaginatedResponse</returns>
         System.Threading.Tasks.Task<GetContactsPaginatedResponse> GetContactsAsync (int? page = null, int? limit = null, int? shared = null, string orderBy = null, string direction = null);
 
@@ -4960,8 +4960,8 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetContactsPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetContactsPaginatedResponse>> GetContactsAsyncWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -4971,7 +4971,7 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions by given search term
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="query">Find recipients by specified search query</param>
+        /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
         /// <returns>Task of GetContactsAutocompleteResponse</returns>
@@ -4984,7 +4984,7 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions by given search term
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="query">Find recipients by specified search query</param>
+        /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetContactsAutocompleteResponse)</returns>
@@ -5000,7 +5000,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetContactsByListIdPaginatedResponse</returns>
         System.Threading.Tasks.Task<GetContactsByListIdPaginatedResponse> GetContactsByListIdAsync (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null);
 
@@ -5015,7 +5015,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetContactsByListIdPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetContactsByListIdPaginatedResponse>> GetContactsByListIdAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -5260,8 +5260,8 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <returns>Task of GetListsPaginatedResponse</returns>
@@ -5276,8 +5276,8 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetListsPaginatedResponse)</returns>
@@ -5311,7 +5311,7 @@ namespace TextMagicClient.Api
         /// Preview message
         /// </summary>
         /// <remarks>
-        /// Get messages preview (with tags merged) up to 100 messages per session.
+        /// Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -5328,7 +5328,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of GetMessagePreviewResponse</returns>
@@ -5338,7 +5338,7 @@ namespace TextMagicClient.Api
         /// Preview message
         /// </summary>
         /// <remarks>
-        /// Get messages preview (with tags merged) up to 100 messages per session.
+        /// Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -5355,7 +5355,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of ApiResponse (GetMessagePreviewResponse)</returns>
@@ -5382,7 +5382,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of GetMessagePriceResponse</returns>
@@ -5410,7 +5410,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of ApiResponse (GetMessagePriceResponse)</returns>
@@ -5557,14 +5557,14 @@ namespace TextMagicClient.Api
         /// Get history
         /// </summary>
         /// <remarks>
-        /// Get outbound messages history.
+        /// Get the outbound messages history.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. (optional)</param>
         /// <param name="query">Find message by specified search query (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetOutboundMessagesHistoryPaginatedResponse</returns>
         System.Threading.Tasks.Task<GetOutboundMessagesHistoryPaginatedResponse> GetOutboundMessagesHistoryAsync (int? limit = null, int? lastId = null, string query = null, string orderBy = null, string direction = null);
 
@@ -5572,14 +5572,14 @@ namespace TextMagicClient.Api
         /// Get history
         /// </summary>
         /// <remarks>
-        /// Get outbound messages history.
+        /// Get the outbound messages history.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. (optional)</param>
         /// <param name="query">Find message by specified search query (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetOutboundMessagesHistoryPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetOutboundMessagesHistoryPaginatedResponse>> GetOutboundMessagesHistoryAsyncWithHttpInfo (int? limit = null, int? lastId = null, string query = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -6201,8 +6201,8 @@ namespace TextMagicClient.Api
         /// <param name="query">Find contacts by specified search query (optional)</param>
         /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
         /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of SearchContactsPaginatedResponse</returns>
         System.Threading.Tasks.Task<SearchContactsPaginatedResponse> SearchContactsAsync (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null);
 
@@ -6222,8 +6222,8 @@ namespace TextMagicClient.Api
         /// <param name="query">Find contacts by specified search query (optional)</param>
         /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
         /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SearchContactsPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<SearchContactsPaginatedResponse>> SearchContactsAsyncWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -6235,11 +6235,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="query">Find recipients by specified search query (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="query">Find recipients by specified search query. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
-        /// <param name="expand">Expand by adding firstName, lastName and contactId (optional, default to 0)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
+        /// <param name="expand">Expand by adding firstName, lastName and contactId. (optional, default to 0)</param>
         /// <returns>Task of SearchInboundMessagesPaginatedResponse</returns>
         System.Threading.Tasks.Task<SearchInboundMessagesPaginatedResponse> SearchInboundMessagesAsync (int? page = null, int? limit = null, string ids = null, string query = null, string orderBy = null, string direction = null, int? expand = null);
 
@@ -6252,11 +6252,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="query">Find recipients by specified search query (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="query">Find recipients by specified search query. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
-        /// <param name="expand">Expand by adding firstName, lastName and contactId (optional, default to 0)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
+        /// <param name="expand">Expand by adding firstName, lastName and contactId. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (SearchInboundMessagesPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<SearchInboundMessagesPaginatedResponse>> SearchInboundMessagesAsyncWithHttpInfo (int? page = null, int? limit = null, string ids = null, string query = null, string orderBy = null, string direction = null, int? expand = null);
         /// <summary>
@@ -6273,7 +6273,7 @@ namespace TextMagicClient.Api
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of SearchListsPaginatedResponse</returns>
         System.Threading.Tasks.Task<SearchListsPaginatedResponse> SearchListsAsync (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null);
 
@@ -6291,7 +6291,7 @@ namespace TextMagicClient.Api
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SearchListsPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<SearchListsPaginatedResponse>> SearchListsAsyncWithHttpInfo (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -6303,12 +6303,12 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="sessionId">Find messages by session ID (optional)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
-        /// <param name="query">Find messages by specified search query (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="sessionId">Find messages by session ID. (optional)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
+        /// <param name="query">Find messages by specified search query. (optional)</param>
         /// <returns>Task of SearchOutboundMessagesPaginatedResponse</returns>
         System.Threading.Tasks.Task<SearchOutboundMessagesPaginatedResponse> SearchOutboundMessagesAsync (int? page = null, int? limit = null, int? lastId = null, string ids = null, int? sessionId = null, string statuses = null, int? includeDeleted = null, string query = null);
 
@@ -6321,12 +6321,12 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="sessionId">Find messages by session ID (optional)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
-        /// <param name="query">Find messages by specified search query (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="sessionId">Find messages by session ID. (optional)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
+        /// <param name="query">Find messages by specified search query. (optional)</param>
         /// <returns>Task of ApiResponse (SearchOutboundMessagesPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<SearchOutboundMessagesPaginatedResponse>> SearchOutboundMessagesAsyncWithHttpInfo (int? page = null, int? limit = null, int? lastId = null, string ids = null, int? sessionId = null, string statuses = null, int? includeDeleted = null, string query = null);
         /// <summary>
@@ -6342,7 +6342,7 @@ namespace TextMagicClient.Api
         /// <param name="ids">Find schedules by ID(s) (optional)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of SearchScheduledMessagesPaginatedResponse</returns>
         System.Threading.Tasks.Task<SearchScheduledMessagesPaginatedResponse> SearchScheduledMessagesAsync (int? page = null, int? limit = null, string query = null, string ids = null, string status = null, string orderBy = null, string direction = null);
 
@@ -6359,7 +6359,7 @@ namespace TextMagicClient.Api
         /// <param name="ids">Find schedules by ID(s) (optional)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SearchScheduledMessagesPaginatedResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<SearchScheduledMessagesPaginatedResponse>> SearchScheduledMessagesAsyncWithHttpInfo (int? page = null, int? limit = null, string query = null, string ids = null, string status = null, string orderBy = null, string direction = null);
         /// <summary>
@@ -12497,7 +12497,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete messages (bulk) Delete outbound messages by given ID(s) or delete all outbound messages.
+        /// Delete messages (bulk) Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -12508,7 +12508,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete messages (bulk) Delete outbound messages by given ID(s) or delete all outbound messages.
+        /// Delete messages (bulk) Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -12575,7 +12575,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete messages (bulk) Delete outbound messages by given ID(s) or delete all outbound messages.
+        /// Delete messages (bulk) Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -12587,7 +12587,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete messages (bulk) Delete outbound messages by given ID(s) or delete all outbound messages.
+        /// Delete messages (bulk) Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -14021,7 +14021,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetAllInboundMessagesPaginatedResponse</returns>
         public GetAllInboundMessagesPaginatedResponse GetAllInboundMessages (int? page = null, int? limit = null, string orderBy = null, string direction = null)
         {
@@ -14036,7 +14036,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetAllInboundMessagesPaginatedResponse</returns>
         public ApiResponse< GetAllInboundMessagesPaginatedResponse > GetAllInboundMessagesWithHttpInfo (int? page = null, int? limit = null, string orderBy = null, string direction = null)
         {
@@ -14100,7 +14100,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetAllInboundMessagesPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<GetAllInboundMessagesPaginatedResponse> GetAllInboundMessagesAsync (int? page = null, int? limit = null, string orderBy = null, string direction = null)
         {
@@ -14116,7 +14116,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetAllInboundMessagesPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetAllInboundMessagesPaginatedResponse>> GetAllInboundMessagesAsyncWithHttpInfo (int? page = null, int? limit = null, string orderBy = null, string direction = null)
         {
@@ -14481,7 +14481,7 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetAllScheduledMessagesPaginatedResponse</returns>
         public GetAllScheduledMessagesPaginatedResponse GetAllScheduledMessages (int? page = null, int? limit = null, string status = null, string orderBy = null, string direction = null)
         {
@@ -14497,7 +14497,7 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetAllScheduledMessagesPaginatedResponse</returns>
         public ApiResponse< GetAllScheduledMessagesPaginatedResponse > GetAllScheduledMessagesWithHttpInfo (int? page = null, int? limit = null, string status = null, string orderBy = null, string direction = null)
         {
@@ -14563,7 +14563,7 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetAllScheduledMessagesPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<GetAllScheduledMessagesPaginatedResponse> GetAllScheduledMessagesAsync (int? page = null, int? limit = null, string status = null, string orderBy = null, string direction = null)
         {
@@ -14580,7 +14580,7 @@ namespace TextMagicClient.Api
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetAllScheduledMessagesPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetAllScheduledMessagesPaginatedResponse>> GetAllScheduledMessagesAsyncWithHttpInfo (int? page = null, int? limit = null, string status = null, string orderBy = null, string direction = null)
         {
@@ -15361,9 +15361,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find blocked contacts by specified search query (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="query">Find blocked contacts by specified search query. (optional)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetBlockedContactsPaginatedResponse</returns>
         public GetBlockedContactsPaginatedResponse GetBlockedContacts (int? page = null, int? limit = null, string query = null, string orderBy = null, string direction = null)
         {
@@ -15377,9 +15377,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find blocked contacts by specified search query (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="query">Find blocked contacts by specified search query. (optional)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetBlockedContactsPaginatedResponse</returns>
         public ApiResponse< GetBlockedContactsPaginatedResponse > GetBlockedContactsWithHttpInfo (int? page = null, int? limit = null, string query = null, string orderBy = null, string direction = null)
         {
@@ -15443,9 +15443,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find blocked contacts by specified search query (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="query">Find blocked contacts by specified search query. (optional)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetBlockedContactsPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<GetBlockedContactsPaginatedResponse> GetBlockedContactsAsync (int? page = null, int? limit = null, string query = null, string orderBy = null, string direction = null)
         {
@@ -15460,9 +15460,9 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="query">Find blocked contacts by specified search query (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="query">Find blocked contacts by specified search query. (optional)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetBlockedContactsPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetBlockedContactsPaginatedResponse>> GetBlockedContactsAsyncWithHttpInfo (int? page = null, int? limit = null, string query = null, string orderBy = null, string direction = null)
         {
@@ -16118,7 +16118,7 @@ namespace TextMagicClient.Api
         /// <param name="query">Find messages by specified search query (optional)</param>
         /// <param name="start">Return messages since specified timestamp only (optional)</param>
         /// <param name="end">Return messages up to specified timestamp only (optional)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls (optional, default to 0)</param>
         /// <returns>GetChatMessagesPaginatedResponse</returns>
         public GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null)
@@ -16137,7 +16137,7 @@ namespace TextMagicClient.Api
         /// <param name="query">Find messages by specified search query (optional)</param>
         /// <param name="start">Return messages since specified timestamp only (optional)</param>
         /// <param name="end">Return messages up to specified timestamp only (optional)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls (optional, default to 0)</param>
         /// <returns>ApiResponse of GetChatMessagesPaginatedResponse</returns>
         public ApiResponse< GetChatMessagesPaginatedResponse > GetChatMessagesWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null)
@@ -16212,7 +16212,7 @@ namespace TextMagicClient.Api
         /// <param name="query">Find messages by specified search query (optional)</param>
         /// <param name="start">Return messages since specified timestamp only (optional)</param>
         /// <param name="end">Return messages up to specified timestamp only (optional)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls (optional, default to 0)</param>
         /// <returns>Task of GetChatMessagesPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<GetChatMessagesPaginatedResponse> GetChatMessagesAsync (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null)
@@ -16232,7 +16232,7 @@ namespace TextMagicClient.Api
         /// <param name="query">Find messages by specified search query (optional)</param>
         /// <param name="start">Return messages since specified timestamp only (optional)</param>
         /// <param name="end">Return messages up to specified timestamp only (optional)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetChatMessagesPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetChatMessagesPaginatedResponse>> GetChatMessagesAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null)
@@ -17198,8 +17198,8 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetContactsPaginatedResponse</returns>
         public GetContactsPaginatedResponse GetContacts (int? page = null, int? limit = null, int? shared = null, string orderBy = null, string direction = null)
         {
@@ -17214,8 +17214,8 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetContactsPaginatedResponse</returns>
         public ApiResponse< GetContactsPaginatedResponse > GetContactsWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string orderBy = null, string direction = null)
         {
@@ -17280,8 +17280,8 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetContactsPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<GetContactsPaginatedResponse> GetContactsAsync (int? page = null, int? limit = null, int? shared = null, string orderBy = null, string direction = null)
         {
@@ -17297,8 +17297,8 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="shared">Should shared contacts to be included (optional, default to 0)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetContactsPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetContactsPaginatedResponse>> GetContactsAsyncWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string orderBy = null, string direction = null)
         {
@@ -17360,7 +17360,7 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search term
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="query">Find recipients by specified search query</param>
+        /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
         /// <returns>GetContactsAutocompleteResponse</returns>
@@ -17374,7 +17374,7 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search term
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="query">Find recipients by specified search query</param>
+        /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
         /// <returns>ApiResponse of GetContactsAutocompleteResponse</returns>
@@ -17439,7 +17439,7 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search term
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="query">Find recipients by specified search query</param>
+        /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
         /// <returns>Task of GetContactsAutocompleteResponse</returns>
@@ -17454,7 +17454,7 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search term
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="query">Find recipients by specified search query</param>
+        /// <param name="query">Find recipients by specified search query.</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lists">Should lists be returned or not (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetContactsAutocompleteResponse)</returns>
@@ -17523,7 +17523,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetContactsByListIdPaginatedResponse</returns>
         public GetContactsByListIdPaginatedResponse GetContactsByListId (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null)
         {
@@ -17539,7 +17539,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetContactsByListIdPaginatedResponse</returns>
         public ApiResponse< GetContactsByListIdPaginatedResponse > GetContactsByListIdWithHttpInfo (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null)
         {
@@ -17608,7 +17608,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetContactsByListIdPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<GetContactsByListIdPaginatedResponse> GetContactsByListIdAsync (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null)
         {
@@ -17625,7 +17625,7 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetContactsByListIdPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetContactsByListIdPaginatedResponse>> GetContactsByListIdAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string orderBy = null, string direction = null)
         {
@@ -19279,8 +19279,8 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <returns>GetListsPaginatedResponse</returns>
@@ -19296,8 +19296,8 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <returns>ApiResponse of GetListsPaginatedResponse</returns>
@@ -19364,8 +19364,8 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <returns>Task of GetListsPaginatedResponse</returns>
@@ -19382,8 +19382,8 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="favoriteOnly">Return only favorite lists (optional, default to 0)</param>
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetListsPaginatedResponse)</returns>
@@ -19604,7 +19604,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Preview message Get messages preview (with tags merged) up to 100 messages per session.
+        /// Preview message Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -19621,7 +19621,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>GetMessagePreviewResponse</returns>
@@ -19632,7 +19632,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Preview message Get messages preview (with tags merged) up to 100 messages per session.
+        /// Preview message Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -19649,7 +19649,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>ApiResponse of GetMessagePreviewResponse</returns>
@@ -19722,7 +19722,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Preview message Get messages preview (with tags merged) up to 100 messages per session.
+        /// Preview message Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -19739,7 +19739,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of GetMessagePreviewResponse</returns>
@@ -19751,7 +19751,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Preview message Get messages preview (with tags merged) up to 100 messages per session.
+        /// Preview message Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -19768,7 +19768,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of ApiResponse (GetMessagePreviewResponse)</returns>
@@ -19859,7 +19859,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>GetMessagePriceResponse</returns>
@@ -19888,7 +19888,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>ApiResponse of GetMessagePriceResponse</returns>
@@ -19980,7 +19980,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of GetMessagePriceResponse</returns>
@@ -20010,7 +20010,7 @@ namespace TextMagicClient.Api
         /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
-        /// <param name="tts">Send a Text to Speech message. (optional, default to 0)</param>
+        /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)</param>
         /// <returns>Task of ApiResponse (GetMessagePriceResponse)</returns>
@@ -20990,14 +20990,14 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get history Get outbound messages history.
+        /// Get history Get the outbound messages history.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. (optional)</param>
         /// <param name="query">Find message by specified search query (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>GetOutboundMessagesHistoryPaginatedResponse</returns>
         public GetOutboundMessagesHistoryPaginatedResponse GetOutboundMessagesHistory (int? limit = null, int? lastId = null, string query = null, string orderBy = null, string direction = null)
         {
@@ -21006,14 +21006,14 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get history Get outbound messages history.
+        /// Get history Get the outbound messages history.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. (optional)</param>
         /// <param name="query">Find message by specified search query (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of GetOutboundMessagesHistoryPaginatedResponse</returns>
         public ApiResponse< GetOutboundMessagesHistoryPaginatedResponse > GetOutboundMessagesHistoryWithHttpInfo (int? limit = null, int? lastId = null, string query = null, string orderBy = null, string direction = null)
         {
@@ -21072,14 +21072,14 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get history Get outbound messages history.
+        /// Get history Get the outbound messages history.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. (optional)</param>
         /// <param name="query">Find message by specified search query (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of GetOutboundMessagesHistoryPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<GetOutboundMessagesHistoryPaginatedResponse> GetOutboundMessagesHistoryAsync (int? limit = null, int? lastId = null, string query = null, string orderBy = null, string direction = null)
         {
@@ -21089,14 +21089,14 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get history Get outbound messages history.
+        /// Get history Get the outbound messages history.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. (optional)</param>
         /// <param name="query">Find message by specified search query (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (GetOutboundMessagesHistoryPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<GetOutboundMessagesHistoryPaginatedResponse>> GetOutboundMessagesHistoryAsyncWithHttpInfo (int? limit = null, int? lastId = null, string query = null, string orderBy = null, string direction = null)
         {
@@ -25284,8 +25284,8 @@ namespace TextMagicClient.Api
         /// <param name="query">Find contacts by specified search query (optional)</param>
         /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
         /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>SearchContactsPaginatedResponse</returns>
         public SearchContactsPaginatedResponse SearchContacts (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null)
         {
@@ -25306,8 +25306,8 @@ namespace TextMagicClient.Api
         /// <param name="query">Find contacts by specified search query (optional)</param>
         /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
         /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of SearchContactsPaginatedResponse</returns>
         public ApiResponse< SearchContactsPaginatedResponse > SearchContactsWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null)
         {
@@ -25384,8 +25384,8 @@ namespace TextMagicClient.Api
         /// <param name="query">Find contacts by specified search query (optional)</param>
         /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
         /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of SearchContactsPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<SearchContactsPaginatedResponse> SearchContactsAsync (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null)
         {
@@ -25407,8 +25407,8 @@ namespace TextMagicClient.Api
         /// <param name="query">Find contacts by specified search query (optional)</param>
         /// <param name="local">Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)</param>
         /// <param name="country">2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)</param>
-        /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SearchContactsPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SearchContactsPaginatedResponse>> SearchContactsAsyncWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null)
         {
@@ -25478,11 +25478,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="query">Find recipients by specified search query (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="query">Find recipients by specified search query. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
-        /// <param name="expand">Expand by adding firstName, lastName and contactId (optional, default to 0)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
+        /// <param name="expand">Expand by adding firstName, lastName and contactId. (optional, default to 0)</param>
         /// <returns>SearchInboundMessagesPaginatedResponse</returns>
         public SearchInboundMessagesPaginatedResponse SearchInboundMessages (int? page = null, int? limit = null, string ids = null, string query = null, string orderBy = null, string direction = null, int? expand = null)
         {
@@ -25496,11 +25496,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="query">Find recipients by specified search query (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="query">Find recipients by specified search query. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
-        /// <param name="expand">Expand by adding firstName, lastName and contactId (optional, default to 0)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
+        /// <param name="expand">Expand by adding firstName, lastName and contactId. (optional, default to 0)</param>
         /// <returns>ApiResponse of SearchInboundMessagesPaginatedResponse</returns>
         public ApiResponse< SearchInboundMessagesPaginatedResponse > SearchInboundMessagesWithHttpInfo (int? page = null, int? limit = null, string ids = null, string query = null, string orderBy = null, string direction = null, int? expand = null)
         {
@@ -25566,11 +25566,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="query">Find recipients by specified search query (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="query">Find recipients by specified search query. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
-        /// <param name="expand">Expand by adding firstName, lastName and contactId (optional, default to 0)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
+        /// <param name="expand">Expand by adding firstName, lastName and contactId. (optional, default to 0)</param>
         /// <returns>Task of SearchInboundMessagesPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<SearchInboundMessagesPaginatedResponse> SearchInboundMessagesAsync (int? page = null, int? limit = null, string ids = null, string query = null, string orderBy = null, string direction = null, int? expand = null)
         {
@@ -25585,11 +25585,11 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="query">Find recipients by specified search query (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="query">Find recipients by specified search query. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
-        /// <param name="expand">Expand by adding firstName, lastName and contactId (optional, default to 0)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
+        /// <param name="expand">Expand by adding firstName, lastName and contactId. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (SearchInboundMessagesPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SearchInboundMessagesPaginatedResponse>> SearchInboundMessagesAsyncWithHttpInfo (int? page = null, int? limit = null, string ids = null, string query = null, string orderBy = null, string direction = null, int? expand = null)
         {
@@ -25660,7 +25660,7 @@ namespace TextMagicClient.Api
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>SearchListsPaginatedResponse</returns>
         public SearchListsPaginatedResponse SearchLists (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null)
         {
@@ -25679,7 +25679,7 @@ namespace TextMagicClient.Api
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of SearchListsPaginatedResponse</returns>
         public ApiResponse< SearchListsPaginatedResponse > SearchListsWithHttpInfo (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null)
         {
@@ -25751,7 +25751,7 @@ namespace TextMagicClient.Api
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of SearchListsPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<SearchListsPaginatedResponse> SearchListsAsync (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null)
         {
@@ -25771,7 +25771,7 @@ namespace TextMagicClient.Api
         /// <param name="onlyMine">Return only current user lists (optional, default to 0)</param>
         /// <param name="onlyDefault">Return only default lists (optional, default to 0)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SearchListsPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SearchListsPaginatedResponse>> SearchListsAsyncWithHttpInfo (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null)
         {
@@ -25838,12 +25838,12 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="sessionId">Find messages by session ID (optional)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
-        /// <param name="query">Find messages by specified search query (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="sessionId">Find messages by session ID. (optional)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
+        /// <param name="query">Find messages by specified search query. (optional)</param>
         /// <returns>SearchOutboundMessagesPaginatedResponse</returns>
         public SearchOutboundMessagesPaginatedResponse SearchOutboundMessages (int? page = null, int? limit = null, int? lastId = null, string ids = null, int? sessionId = null, string statuses = null, int? includeDeleted = null, string query = null)
         {
@@ -25857,12 +25857,12 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="sessionId">Find messages by session ID (optional)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
-        /// <param name="query">Find messages by specified search query (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="sessionId">Find messages by session ID. (optional)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
+        /// <param name="query">Find messages by specified search query. (optional)</param>
         /// <returns>ApiResponse of SearchOutboundMessagesPaginatedResponse</returns>
         public ApiResponse< SearchOutboundMessagesPaginatedResponse > SearchOutboundMessagesWithHttpInfo (int? page = null, int? limit = null, int? lastId = null, string ids = null, int? sessionId = null, string statuses = null, int? includeDeleted = null, string query = null)
         {
@@ -25929,12 +25929,12 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="sessionId">Find messages by session ID (optional)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
-        /// <param name="query">Find messages by specified search query (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="sessionId">Find messages by session ID. (optional)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
+        /// <param name="query">Find messages by specified search query. (optional)</param>
         /// <returns>Task of SearchOutboundMessagesPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<SearchOutboundMessagesPaginatedResponse> SearchOutboundMessagesAsync (int? page = null, int? limit = null, int? lastId = null, string ids = null, int? sessionId = null, string statuses = null, int? includeDeleted = null, string query = null)
         {
@@ -25949,12 +25949,12 @@ namespace TextMagicClient.Api
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
-        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
-        /// <param name="ids">Find message by ID(s) (optional)</param>
-        /// <param name="sessionId">Find messages by session ID (optional)</param>
-        /// <param name="statuses">Find messages by status (optional)</param>
-        /// <param name="includeDeleted">Search also in deleted messages (optional, default to 0)</param>
-        /// <param name="query">Find messages by specified search query (optional)</param>
+        /// <param name="lastId">Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)</param>
+        /// <param name="ids">Find message by ID(s). (optional)</param>
+        /// <param name="sessionId">Find messages by session ID. (optional)</param>
+        /// <param name="statuses">Find messages by status. (optional)</param>
+        /// <param name="includeDeleted">Search also in deleted messages. (optional, default to 0)</param>
+        /// <param name="query">Find messages by specified search query. (optional)</param>
         /// <returns>Task of ApiResponse (SearchOutboundMessagesPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SearchOutboundMessagesPaginatedResponse>> SearchOutboundMessagesAsyncWithHttpInfo (int? page = null, int? limit = null, int? lastId = null, string ids = null, int? sessionId = null, string statuses = null, int? includeDeleted = null, string query = null)
         {
@@ -26025,7 +26025,7 @@ namespace TextMagicClient.Api
         /// <param name="ids">Find schedules by ID(s) (optional)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>SearchScheduledMessagesPaginatedResponse</returns>
         public SearchScheduledMessagesPaginatedResponse SearchScheduledMessages (int? page = null, int? limit = null, string query = null, string ids = null, string status = null, string orderBy = null, string direction = null)
         {
@@ -26043,7 +26043,7 @@ namespace TextMagicClient.Api
         /// <param name="ids">Find schedules by ID(s) (optional)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of SearchScheduledMessagesPaginatedResponse</returns>
         public ApiResponse< SearchScheduledMessagesPaginatedResponse > SearchScheduledMessagesWithHttpInfo (int? page = null, int? limit = null, string query = null, string ids = null, string status = null, string orderBy = null, string direction = null)
         {
@@ -26113,7 +26113,7 @@ namespace TextMagicClient.Api
         /// <param name="ids">Find schedules by ID(s) (optional)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of SearchScheduledMessagesPaginatedResponse</returns>
         public async System.Threading.Tasks.Task<SearchScheduledMessagesPaginatedResponse> SearchScheduledMessagesAsync (int? page = null, int? limit = null, string query = null, string ids = null, string status = null, string orderBy = null, string direction = null)
         {
@@ -26132,7 +26132,7 @@ namespace TextMagicClient.Api
         /// <param name="ids">Find schedules by ID(s) (optional)</param>
         /// <param name="status">Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)</param>
         /// <param name="orderBy">Order results by some field. Default is id (optional, default to id)</param>
-        /// <param name="direction">Order direction. Default is desc (optional, default to desc)</param>
+        /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SearchScheduledMessagesPaginatedResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SearchScheduledMessagesPaginatedResponse>> SearchScheduledMessagesAsyncWithHttpInfo (int? page = null, int? limit = null, string query = null, string ids = null, string status = null, string orderBy = null, string direction = null)
         {
