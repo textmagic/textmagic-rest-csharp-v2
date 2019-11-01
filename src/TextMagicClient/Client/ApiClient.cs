@@ -53,12 +53,12 @@ namespace TextMagicClient.Client
         public ApiClient()
         {
             Configuration = TextMagicClient.Client.Configuration.Default;
-            RestClient = new RestClient("http://rest.textmagic.com");
+            RestClient = new RestClient("https://rest.textmagic.com");
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
-        /// with default base path (http://rest.textmagic.com).
+        /// with default base path (https://rest.textmagic.com).
         /// </summary>
         /// <param name="config">An instance of Configuration.</param>
         public ApiClient(Configuration config)
@@ -73,7 +73,7 @@ namespace TextMagicClient.Client
         /// with default configuration.
         /// </summary>
         /// <param name="basePath">The base path.</param>
-        public ApiClient(String basePath = "http://rest.textmagic.com")
+        public ApiClient(String basePath = "https://rest.textmagic.com")
         {
            if (String.IsNullOrEmpty(basePath))
                 throw new ArgumentException("basePath cannot be empty");

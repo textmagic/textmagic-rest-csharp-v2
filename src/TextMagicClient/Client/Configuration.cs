@@ -29,7 +29,7 @@ namespace TextMagicClient.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "2.0.826";
+        public const string Version = "2.0.865";
 
         /// <summary>
         /// Identifier for ISO 8601 DateTime Format
@@ -115,7 +115,7 @@ namespace TextMagicClient.Client
         public Configuration()
         {
             UserAgent = "textmagic client";
-            BasePath = "http://rest.textmagic.com";
+            BasePath = "https://rest.textmagic.com";
             DefaultHeader = new ConcurrentDictionary<string, string>();
             ApiKey = new ConcurrentDictionary<string, string>();
             ApiKeyPrefix = new ConcurrentDictionary<string, string>();
@@ -131,7 +131,7 @@ namespace TextMagicClient.Client
             IDictionary<string, string> defaultHeader,
             IDictionary<string, string> apiKey,
             IDictionary<string, string> apiKeyPrefix,
-            string basePath = "http://rest.textmagic.com") : this()
+            string basePath = "https://rest.textmagic.com") : this()
         {
             if (string.IsNullOrWhiteSpace(basePath))
                 throw new ArgumentException("The provided basePath is invalid.", "basePath");
@@ -422,7 +422,7 @@ namespace TextMagicClient.Client
             report += "    OS: " + System.Environment.OSVersion + "\n";
             report += "    .NET Framework Version: " + System.Environment.Version  + "\n";
             report += "    Version of the API: 2\n";
-            report += "    SDK Package Version: 2.0.826\n";
+            report += "    SDK Package Version: 2.0.865\n";
 
             return report;
         }
