@@ -47,7 +47,8 @@ namespace TextMagicClient.Model
         /// <param name="firstName">Sender contact first name..</param>
         /// <param name="lastName">Sender contact last name..</param>
         /// <param name="avatar">avatar (required).</param>
-        public MessageIn(int? id = default(int?), string sender = default(string), string receiver = default(string), DateTime? messageTime = default(DateTime?), string text = default(string), int? contactId = default(int?), string firstName = default(string), string lastName = default(string), string avatar = default(string))
+        /// <param name="email">Sender email..</param>
+        public MessageIn(int? id = default(int?), string sender = default(string), string receiver = default(string), DateTime? messageTime = default(DateTime?), string text = default(string), int? contactId = default(int?), string firstName = default(string), string lastName = default(string), string avatar = default(string), string email = default(string))
         {
             // to ensure "id" is required (not null)
             if (id == null)
@@ -106,6 +107,7 @@ namespace TextMagicClient.Model
             this.ContactId = contactId;
             this.FirstName = firstName;
             this.LastName = lastName;
+            this.Email = email;
         }
         
         /// <summary>
@@ -171,6 +173,13 @@ namespace TextMagicClient.Model
         public string Avatar { get; set; }
 
         /// <summary>
+        /// Sender email.
+        /// </summary>
+        /// <value>Sender email.</value>
+        [DataMember(Name="email", EmitDefaultValue=false)]
+        public string Email { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -187,6 +196,7 @@ namespace TextMagicClient.Model
             sb.Append("  FirstName: ").Append(FirstName).Append("\n");
             sb.Append("  LastName: ").Append(LastName).Append("\n");
             sb.Append("  Avatar: ").Append(Avatar).Append("\n");
+            sb.Append("  Email: ").Append(Email).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -265,6 +275,11 @@ namespace TextMagicClient.Model
                     this.Avatar == input.Avatar ||
                     (this.Avatar != null &&
                     this.Avatar.Equals(input.Avatar))
+                ) && 
+                (
+                    this.Email == input.Email ||
+                    (this.Email != null &&
+                    this.Email.Equals(input.Email))
                 );
         }
 
@@ -295,6 +310,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.LastName.GetHashCode();
                 if (this.Avatar != null)
                     hashCode = hashCode * 59 + this.Avatar.GetHashCode();
+                if (this.Email != null)
+                    hashCode = hashCode * 59 + this.Email.GetHashCode();
                 return hashCode;
             }
         }
