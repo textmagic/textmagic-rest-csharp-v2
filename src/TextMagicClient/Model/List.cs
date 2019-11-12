@@ -41,7 +41,7 @@ namespace TextMagicClient.Model
         /// <param name="id">List ID. (required).</param>
         /// <param name="name">List name. (required).</param>
         /// <param name="description">Description of the list. (required).</param>
-        /// <param name="favorited">Is the List favorited? See [Favorites list](http://docs.textmagictesting.com/#operation/getFavourites). (required).</param>
+        /// <param name="favorited">Is the List favorited? See [Favorites list](https://docs.textmagic.com/#operation/getFavourites). (required).</param>
         /// <param name="membersCount">List members count. (required).</param>
         /// <param name="user">user (required).</param>
         /// <param name="service">Internal service field. (required).</param>
@@ -164,9 +164,9 @@ namespace TextMagicClient.Model
         public string Description { get; set; }
 
         /// <summary>
-        /// Is the List favorited? See [Favorites list](http://docs.textmagictesting.com/#operation/getFavourites).
+        /// Is the List favorited? See [Favorites list](https://docs.textmagic.com/#operation/getFavourites).
         /// </summary>
-        /// <value>Is the List favorited? See [Favorites list](http://docs.textmagictesting.com/#operation/getFavourites).</value>
+        /// <value>Is the List favorited? See [Favorites list](https://docs.textmagic.com/#operation/getFavourites).</value>
         [DataMember(Name="favorited", EmitDefaultValue=false)]
         public bool? Favorited { get; set; }
 

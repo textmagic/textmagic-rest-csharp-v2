@@ -28,7 +28,7 @@ namespace TextMagicClient.Api
         /// Assign contacts to a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+        /// &gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="assignContactsToListInputObject"></param>
@@ -40,7 +40,7 @@ namespace TextMagicClient.Api
         /// Assign contacts to a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+        /// &gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="assignContactsToListInputObject"></param>
@@ -51,7 +51,7 @@ namespace TextMagicClient.Api
         /// Block a contact by phone number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/blockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Block a contact from inbound and outbound communication by phone number.
+        /// Block a contact from inbound and outbound communication by phone number.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockContactInputObject"></param>
@@ -62,7 +62,7 @@ namespace TextMagicClient.Api
         /// Block a contact by phone number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/blockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Block a contact from inbound and outbound communication by phone number.
+        /// Block a contact from inbound and outbound communication by phone number.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockContactInputObject"></param>
@@ -72,7 +72,7 @@ namespace TextMagicClient.Api
         /// Buy a dedicated number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
+        /// To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="buyDedicatedNumberInputObject"></param>
@@ -83,7 +83,7 @@ namespace TextMagicClient.Api
         /// Buy a dedicated number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
+        /// To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="buyDedicatedNumberInputObject"></param>
@@ -93,7 +93,7 @@ namespace TextMagicClient.Api
         /// Cancel verification process
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;You can cancel the verification not earlier than 30 seconds after the initial request.
+        /// You can cancel the verification not earlier than 30 seconds after the initial request.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="verifyId">The verifyId that you received in Step 1.</param>
@@ -104,7 +104,7 @@ namespace TextMagicClient.Api
         /// Cancel verification process
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;You can cancel the verification not earlier than 30 seconds after the initial request.
+        /// You can cancel the verification not earlier than 30 seconds after the initial request.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="verifyId">The verifyId that you received in Step 1.</param>
@@ -114,7 +114,7 @@ namespace TextMagicClient.Api
         /// Step 2: Check the verification code 
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check received code from user with the code which was actually sent.
+        /// Check received code from user with the code which was actually sent.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="checkPhoneVerificationCodeInputObject"></param>
@@ -125,7 +125,7 @@ namespace TextMagicClient.Api
         /// Step 2: Check the verification code 
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check received code from user with the code which was actually sent.
+        /// Check received code from user with the code which was actually sent.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="checkPhoneVerificationCodeInputObject"></param>
@@ -135,7 +135,7 @@ namespace TextMagicClient.Api
         /// Reset list members to the specified contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="clearAndAssignContactsToListInputObject"></param>
@@ -147,7 +147,7 @@ namespace TextMagicClient.Api
         /// Reset list members to the specified contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="clearAndAssignContactsToListInputObject"></param>
@@ -158,7 +158,7 @@ namespace TextMagicClient.Api
         /// Close chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close chats by chat IDs or close all chats
+        /// Close chats by chat IDs or close all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -169,7 +169,7 @@ namespace TextMagicClient.Api
         /// Close chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close chats by chat IDs or close all chats
+        /// Close chats by chat IDs or close all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -179,7 +179,7 @@ namespace TextMagicClient.Api
         /// Close read chats
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeReadChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close all chats that have no unread messages.
+        /// Close all chats that have no unread messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns></returns>
@@ -189,7 +189,7 @@ namespace TextMagicClient.Api
         /// Close read chats
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeReadChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close all chats that have no unread messages.
+        /// Close all chats that have no unread messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -198,7 +198,7 @@ namespace TextMagicClient.Api
         /// Close sub-account
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -209,7 +209,7 @@ namespace TextMagicClient.Api
         /// Close sub-account
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -219,7 +219,7 @@ namespace TextMagicClient.Api
         /// Add a new contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/createContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactInputObject"></param>
@@ -230,7 +230,7 @@ namespace TextMagicClient.Api
         /// Add a new contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/createContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactInputObject"></param>
@@ -240,7 +240,7 @@ namespace TextMagicClient.Api
         /// Create a new contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactNoteInputObject"></param>
@@ -252,7 +252,7 @@ namespace TextMagicClient.Api
         /// Create a new contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactNoteInputObject"></param>
@@ -263,7 +263,7 @@ namespace TextMagicClient.Api
         /// Add a new custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCustomFieldInputObject"></param>
@@ -274,7 +274,7 @@ namespace TextMagicClient.Api
         /// Add a new custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCustomFieldInputObject"></param>
@@ -284,7 +284,7 @@ namespace TextMagicClient.Api
         /// Create a new list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/createList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createListInputObject"></param>
@@ -295,7 +295,7 @@ namespace TextMagicClient.Api
         /// Create a new list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/createList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createListInputObject"></param>
@@ -305,7 +305,7 @@ namespace TextMagicClient.Api
         /// Create a template
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/createTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
+        /// There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createTemplateInputObject"></param>
@@ -316,7 +316,7 @@ namespace TextMagicClient.Api
         /// Create a template
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/createTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
+        /// There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createTemplateInputObject"></param>
@@ -326,7 +326,7 @@ namespace TextMagicClient.Api
         /// Delete contacts (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns></returns>
@@ -336,7 +336,7 @@ namespace TextMagicClient.Api
         /// Delete contacts (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -345,7 +345,7 @@ namespace TextMagicClient.Api
         /// Delete all messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete all messages.
+        /// Delete all messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns></returns>
@@ -355,7 +355,7 @@ namespace TextMagicClient.Api
         /// Delete all messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete all messages.
+        /// Delete all messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -364,7 +364,7 @@ namespace TextMagicClient.Api
         /// Delete an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/deleteAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns></returns>
@@ -374,7 +374,7 @@ namespace TextMagicClient.Api
         /// Delete an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/deleteAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -383,7 +383,7 @@ namespace TextMagicClient.Api
         /// Delete chat messages by ID(s)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete messages from chat by given message IDs.
+        /// Delete messages from chat by given message IDs.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -395,7 +395,7 @@ namespace TextMagicClient.Api
         /// Delete chat messages by ID(s)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete messages from chat by given message IDs.
+        /// Delete messages from chat by given message IDs.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -406,7 +406,7 @@ namespace TextMagicClient.Api
         /// Delete chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete chats by given IDs or delete all chats.
+        /// Delete chats by given IDs or delete all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -417,7 +417,7 @@ namespace TextMagicClient.Api
         /// Delete chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete chats by given IDs or delete all chats.
+        /// Delete chats by given IDs or delete all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -427,7 +427,7 @@ namespace TextMagicClient.Api
         /// Delete a contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
+        /// &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -438,7 +438,7 @@ namespace TextMagicClient.Api
         /// Delete a contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
+        /// &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -448,7 +448,7 @@ namespace TextMagicClient.Api
         /// Delete an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -459,7 +459,7 @@ namespace TextMagicClient.Api
         /// Delete an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -469,7 +469,7 @@ namespace TextMagicClient.Api
         /// Delete a contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -480,7 +480,7 @@ namespace TextMagicClient.Api
         /// Delete a contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -490,7 +490,7 @@ namespace TextMagicClient.Api
         /// Delete contact notes (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -502,7 +502,7 @@ namespace TextMagicClient.Api
         /// Delete contact notes (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -513,7 +513,7 @@ namespace TextMagicClient.Api
         /// Delete contacts by IDs (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContactsByIdsInputObject"></param>
@@ -524,7 +524,7 @@ namespace TextMagicClient.Api
         /// Delete contacts by IDs (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContactsByIdsInputObject"></param>
@@ -534,7 +534,7 @@ namespace TextMagicClient.Api
         /// Unassign contacts from a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+        /// &gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContacsFromListObject"></param>
@@ -546,7 +546,7 @@ namespace TextMagicClient.Api
         /// Unassign contacts from a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+        /// &gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContacsFromListObject"></param>
@@ -557,7 +557,7 @@ namespace TextMagicClient.Api
         /// Delete a custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
+        /// &gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -568,7 +568,7 @@ namespace TextMagicClient.Api
         /// Delete a custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
+        /// &gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -578,7 +578,7 @@ namespace TextMagicClient.Api
         /// Cancel a dedicated number subscription
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -589,7 +589,7 @@ namespace TextMagicClient.Api
         /// Cancel a dedicated number subscription
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -599,7 +599,7 @@ namespace TextMagicClient.Api
         /// Delete a single inbound message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -610,7 +610,7 @@ namespace TextMagicClient.Api
         /// Delete a single inbound message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -620,7 +620,7 @@ namespace TextMagicClient.Api
         /// Delete inbound messages (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteInboundMessagesBulkInputObject"></param>
@@ -631,7 +631,7 @@ namespace TextMagicClient.Api
         /// Delete inbound messages (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteInboundMessagesBulkInputObject"></param>
@@ -641,7 +641,7 @@ namespace TextMagicClient.Api
         /// Delete a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
+        /// This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -652,7 +652,7 @@ namespace TextMagicClient.Api
         /// Delete a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
+        /// This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -662,7 +662,7 @@ namespace TextMagicClient.Api
         /// Delete an avatar for a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete an avatar for a list
+        /// Delete an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -673,7 +673,7 @@ namespace TextMagicClient.Api
         /// Delete an avatar for a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete an avatar for a list
+        /// Delete an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -683,7 +683,7 @@ namespace TextMagicClient.Api
         /// Delete contacts from a list (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete contacts from a list (bulk)
+        /// Delete contacts from a list (bulk)
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -695,7 +695,7 @@ namespace TextMagicClient.Api
         /// Delete contacts from a list (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete contacts from a list (bulk)
+        /// Delete contacts from a list (bulk)
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -706,7 +706,7 @@ namespace TextMagicClient.Api
         /// Delete lists (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListsBulkInputObject"></param>
@@ -717,7 +717,7 @@ namespace TextMagicClient.Api
         /// Delete lists (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListsBulkInputObject"></param>
@@ -727,7 +727,7 @@ namespace TextMagicClient.Api
         /// Delete a session
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
+        /// Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -738,7 +738,7 @@ namespace TextMagicClient.Api
         /// Delete a session
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
+        /// Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -748,7 +748,7 @@ namespace TextMagicClient.Api
         /// Delete sessions (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
+        /// Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -759,7 +759,7 @@ namespace TextMagicClient.Api
         /// Delete sessions (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
+        /// Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -769,7 +769,7 @@ namespace TextMagicClient.Api
         /// Delete message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a single message.
+        /// Delete a single message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -780,7 +780,7 @@ namespace TextMagicClient.Api
         /// Delete message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a single message.
+        /// Delete a single message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -790,7 +790,7 @@ namespace TextMagicClient.Api
         /// Delete messages (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete outbound messages by the given ID(s) or delete all outbound messages.
+        /// Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -801,7 +801,7 @@ namespace TextMagicClient.Api
         /// Delete messages (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete outbound messages by the given ID(s) or delete all outbound messages.
+        /// Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -811,7 +811,7 @@ namespace TextMagicClient.Api
         /// Delete a single scheduled message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -822,7 +822,7 @@ namespace TextMagicClient.Api
         /// Delete a single scheduled message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -832,7 +832,7 @@ namespace TextMagicClient.Api
         /// Delete scheduled messages (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteScheduledMessagesBulkInputObject"></param>
@@ -843,7 +843,7 @@ namespace TextMagicClient.Api
         /// Delete scheduled messages (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteScheduledMessagesBulkInputObject"></param>
@@ -853,7 +853,7 @@ namespace TextMagicClient.Api
         /// Delete a Sender ID
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -864,7 +864,7 @@ namespace TextMagicClient.Api
         /// Delete a Sender ID
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -874,7 +874,7 @@ namespace TextMagicClient.Api
         /// Delete a template
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -885,7 +885,7 @@ namespace TextMagicClient.Api
         /// Delete a template
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -895,7 +895,7 @@ namespace TextMagicClient.Api
         /// Delete templates (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete templates by given IDs or delete all templates.
+        /// Delete templates by given IDs or delete all templates.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -906,7 +906,7 @@ namespace TextMagicClient.Api
         /// Delete templates (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete templates by given IDs or delete all templates.
+        /// Delete templates by given IDs or delete all templates.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -916,7 +916,7 @@ namespace TextMagicClient.Api
         /// Carrier Lookup
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
+        /// This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
@@ -928,7 +928,7 @@ namespace TextMagicClient.Api
         /// Carrier Lookup
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
+        /// This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
@@ -939,7 +939,7 @@ namespace TextMagicClient.Api
         /// Email Lookup
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -950,7 +950,7 @@ namespace TextMagicClient.Api
         /// Email Lookup
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -960,7 +960,7 @@ namespace TextMagicClient.Api
         /// Get all bulk sessions
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -972,7 +972,7 @@ namespace TextMagicClient.Api
         /// Get all bulk sessions
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -983,7 +983,7 @@ namespace TextMagicClient.Api
         /// Get all chats
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getAllChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="status">Fetch only (a)ctive, (c)losed or (d)eleted chats. (optional)</param>
@@ -999,7 +999,7 @@ namespace TextMagicClient.Api
         /// Get all chats
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getAllChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="status">Fetch only (a)ctive, (c)losed or (d)eleted chats. (optional)</param>
@@ -1014,7 +1014,7 @@ namespace TextMagicClient.Api
         /// Get all inbound messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1028,7 +1028,7 @@ namespace TextMagicClient.Api
         /// Get all inbound messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1041,7 +1041,7 @@ namespace TextMagicClient.Api
         /// Get all sessions
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
+        /// Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1053,7 +1053,7 @@ namespace TextMagicClient.Api
         /// Get all sessions
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
+        /// Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1064,7 +1064,7 @@ namespace TextMagicClient.Api
         /// Get all messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all user oubound messages.
+        /// Get all user oubound messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1077,7 +1077,7 @@ namespace TextMagicClient.Api
         /// Get all messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all user oubound messages.
+        /// Get all user oubound messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1089,7 +1089,7 @@ namespace TextMagicClient.Api
         /// Get all scheduled messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1104,7 +1104,7 @@ namespace TextMagicClient.Api
         /// Get all scheduled messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1118,7 +1118,7 @@ namespace TextMagicClient.Api
         /// Get all templates
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional)</param>
@@ -1130,7 +1130,7 @@ namespace TextMagicClient.Api
         /// Get all templates
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional)</param>
@@ -1141,7 +1141,7 @@ namespace TextMagicClient.Api
         /// Find dedicated numbers available for purchase
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter dedicated number country ISO code.</param>
@@ -1154,7 +1154,7 @@ namespace TextMagicClient.Api
         /// Find dedicated numbers available for purchase
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter dedicated number country ISO code.</param>
@@ -1166,7 +1166,7 @@ namespace TextMagicClient.Api
         /// Get available sender settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
+        /// Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -1177,7 +1177,7 @@ namespace TextMagicClient.Api
         /// Get available sender settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
+        /// Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -1187,7 +1187,7 @@ namespace TextMagicClient.Api
         /// Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetBalanceNotificationOptionsResponse</returns>
@@ -1197,7 +1197,7 @@ namespace TextMagicClient.Api
         /// Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetBalanceNotificationOptionsResponse</returns>
@@ -1206,7 +1206,7 @@ namespace TextMagicClient.Api
         /// Get balance notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetBalanceNotificationSettingsResponse</returns>
@@ -1216,7 +1216,7 @@ namespace TextMagicClient.Api
         /// Get balance notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetBalanceNotificationSettingsResponse</returns>
@@ -1225,7 +1225,7 @@ namespace TextMagicClient.Api
         /// Get blocked contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1240,7 +1240,7 @@ namespace TextMagicClient.Api
         /// Get blocked contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1254,7 +1254,7 @@ namespace TextMagicClient.Api
         /// Get bulk session status
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1265,7 +1265,7 @@ namespace TextMagicClient.Api
         /// Get bulk session status
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1275,7 +1275,7 @@ namespace TextMagicClient.Api
         /// Fetch callback URL settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetCallbackSettingsResponse</returns>
@@ -1285,7 +1285,7 @@ namespace TextMagicClient.Api
         /// Fetch callback URL settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetCallbackSettingsResponse</returns>
@@ -1294,7 +1294,7 @@ namespace TextMagicClient.Api
         /// Get a single chat
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1305,7 +1305,7 @@ namespace TextMagicClient.Api
         /// Get a single chat
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1315,7 +1315,7 @@ namespace TextMagicClient.Api
         /// Find chats by phone
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -1328,7 +1328,7 @@ namespace TextMagicClient.Api
         /// Find chats by phone
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -1340,7 +1340,7 @@ namespace TextMagicClient.Api
         /// Get chat messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1358,7 +1358,7 @@ namespace TextMagicClient.Api
         /// Get chat messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1375,7 +1375,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Contact ID.</param>
@@ -1386,7 +1386,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Contact ID.</param>
@@ -1396,7 +1396,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific contact by phone number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -1407,7 +1407,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific contact by phone number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -1417,7 +1417,7 @@ namespace TextMagicClient.Api
         /// Check if a phone number is blocked
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number to check.</param>
@@ -1428,7 +1428,7 @@ namespace TextMagicClient.Api
         /// Check if a phone number is blocked
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number to check.</param>
@@ -1438,7 +1438,7 @@ namespace TextMagicClient.Api
         /// Check import progress
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contact import session progress.
+        /// Get contact import session progress.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1449,7 +1449,7 @@ namespace TextMagicClient.Api
         /// Check import progress
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contact import session progress.
+        /// Get contact import session progress.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1459,7 +1459,7 @@ namespace TextMagicClient.Api
         /// Get a contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1470,7 +1470,7 @@ namespace TextMagicClient.Api
         /// Get a contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1480,7 +1480,7 @@ namespace TextMagicClient.Api
         /// Fetch notes assigned to a given contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1493,7 +1493,7 @@ namespace TextMagicClient.Api
         /// Fetch notes assigned to a given contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1505,7 +1505,7 @@ namespace TextMagicClient.Api
         /// Get all contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1520,7 +1520,7 @@ namespace TextMagicClient.Api
         /// Get all contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1534,7 +1534,7 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contacts autocomplete suggestions by given search terms.
+        /// Get contacts autocomplete suggestions by given search terms.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
@@ -1547,7 +1547,7 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contacts autocomplete suggestions by given search terms.
+        /// Get contacts autocomplete suggestions by given search terms.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
@@ -1559,7 +1559,7 @@ namespace TextMagicClient.Api
         /// Get all contacts in a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+        /// A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Given group ID.</param>
@@ -1574,7 +1574,7 @@ namespace TextMagicClient.Api
         /// Get all contacts in a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+        /// A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Given group ID.</param>
@@ -1588,7 +1588,7 @@ namespace TextMagicClient.Api
         /// Get countries
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetCountriesResponse</returns>
@@ -1598,7 +1598,7 @@ namespace TextMagicClient.Api
         /// Get countries
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetCountriesResponse</returns>
@@ -1607,7 +1607,7 @@ namespace TextMagicClient.Api
         /// Get current account information
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/getCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>User</returns>
@@ -1617,7 +1617,7 @@ namespace TextMagicClient.Api
         /// Get current account information
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/getCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of User</returns>
@@ -1626,7 +1626,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1637,7 +1637,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1647,7 +1647,7 @@ namespace TextMagicClient.Api
         /// Get all custom fields
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1659,7 +1659,7 @@ namespace TextMagicClient.Api
         /// Get all custom fields
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1670,7 +1670,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific dedicated number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1681,7 +1681,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific dedicated number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1691,7 +1691,7 @@ namespace TextMagicClient.Api
         /// Get favorite contacts and lists
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getFavorites\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1704,7 +1704,7 @@ namespace TextMagicClient.Api
         /// Get favorite contacts and lists
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getFavorites\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1716,7 +1716,7 @@ namespace TextMagicClient.Api
         /// Get a single inbound message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -1727,7 +1727,7 @@ namespace TextMagicClient.Api
         /// Get a single inbound message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -1737,7 +1737,7 @@ namespace TextMagicClient.Api
         /// Get inbound messages notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetInboundMessagesNotificationSettingsResponse</returns>
@@ -1747,7 +1747,7 @@ namespace TextMagicClient.Api
         /// Get inbound messages notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetInboundMessagesNotificationSettingsResponse</returns>
@@ -1756,7 +1756,7 @@ namespace TextMagicClient.Api
         /// Get all invoices
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Invoices/getInvoices\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;With the TextMagic API, you can check the invoices and transactions for your account.
+        /// With the TextMagic API, you can check the invoices and transactions for your account.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1768,7 +1768,7 @@ namespace TextMagicClient.Api
         /// Get all invoices
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Invoices/getInvoices\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;With the TextMagic API, you can check the invoices and transactions for your account.
+        /// With the TextMagic API, you can check the invoices and transactions for your account.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -1779,7 +1779,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1790,7 +1790,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1800,7 +1800,7 @@ namespace TextMagicClient.Api
         /// Get all contact IDs in a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1811,7 +1811,7 @@ namespace TextMagicClient.Api
         /// Get all contact IDs in a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1821,7 +1821,7 @@ namespace TextMagicClient.Api
         /// Get all lists
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
@@ -1837,7 +1837,7 @@ namespace TextMagicClient.Api
         /// Get all lists
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
@@ -1852,7 +1852,7 @@ namespace TextMagicClient.Api
         /// Get a contact&#39;s lists
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all the lists in which a contact is included.
+        /// Get all the lists in which a contact is included.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1865,7 +1865,7 @@ namespace TextMagicClient.Api
         /// Get a contact&#39;s lists
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all the lists in which a contact is included.
+        /// Get all the lists in which a contact is included.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1877,7 +1877,7 @@ namespace TextMagicClient.Api
         /// Preview message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -1891,7 +1891,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
@@ -1904,7 +1904,7 @@ namespace TextMagicClient.Api
         /// Preview message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -1918,7 +1918,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
@@ -1930,7 +1930,7 @@ namespace TextMagicClient.Api
         /// Check message price
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check pricing for a new outbound message.
+        /// Check pricing for a new outbound message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
@@ -1945,7 +1945,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
@@ -1958,7 +1958,7 @@ namespace TextMagicClient.Api
         /// Check message price
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check pricing for a new outbound message.
+        /// Check pricing for a new outbound message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
@@ -1973,7 +1973,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
@@ -1985,7 +1985,7 @@ namespace TextMagicClient.Api
         /// Get a session&#x60;s details
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a specific session’s details.
+        /// Get a specific session’s details.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Session ID.</param>
@@ -1996,7 +1996,7 @@ namespace TextMagicClient.Api
         /// Get a session&#x60;s details
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a specific session’s details.
+        /// Get a specific session’s details.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Session ID.</param>
@@ -2006,7 +2006,7 @@ namespace TextMagicClient.Api
         /// Get a session&#x60;s statistics
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2018,7 +2018,7 @@ namespace TextMagicClient.Api
         /// Get a session&#x60;s statistics
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2029,7 +2029,7 @@ namespace TextMagicClient.Api
         /// Get a session&#x60;s messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
+        /// A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2044,7 +2044,7 @@ namespace TextMagicClient.Api
         /// Get a session&#x60;s messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
+        /// A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2058,7 +2058,7 @@ namespace TextMagicClient.Api
         /// Get sent/received messages counters values
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get total contacts, sent messages and received messages counters values.
+        /// Get total contacts, sent messages and received messages counters values.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetMessagingCountersResponse</returns>
@@ -2068,7 +2068,7 @@ namespace TextMagicClient.Api
         /// Get sent/received messages counters values
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get total contacts, sent messages and received messages counters values.
+        /// Get total contacts, sent messages and received messages counters values.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetMessagingCountersResponse</returns>
@@ -2077,7 +2077,7 @@ namespace TextMagicClient.Api
         /// Get messaging statistics
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
@@ -2090,7 +2090,7 @@ namespace TextMagicClient.Api
         /// Get messaging statistics
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
@@ -2102,7 +2102,7 @@ namespace TextMagicClient.Api
         /// Get a single message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single outgoing message.
+        /// Get a single outgoing message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2113,7 +2113,7 @@ namespace TextMagicClient.Api
         /// Get a single message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single outgoing message.
+        /// Get a single outgoing message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2123,7 +2123,7 @@ namespace TextMagicClient.Api
         /// Get history
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the outbound messages history.
+        /// Get the outbound messages history.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
@@ -2138,7 +2138,7 @@ namespace TextMagicClient.Api
         /// Get history
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the outbound messages history.
+        /// Get the outbound messages history.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
@@ -2152,7 +2152,7 @@ namespace TextMagicClient.Api
         /// Get a single scheduled message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2163,7 +2163,7 @@ namespace TextMagicClient.Api
         /// Get a single scheduled message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2173,7 +2173,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific Sender ID
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2184,7 +2184,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific Sender ID
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2194,7 +2194,7 @@ namespace TextMagicClient.Api
         /// Get all your approved Sender IDs
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2206,7 +2206,7 @@ namespace TextMagicClient.Api
         /// Get all your approved Sender IDs
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2217,7 +2217,7 @@ namespace TextMagicClient.Api
         /// Get current sender settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
@@ -2228,7 +2228,7 @@ namespace TextMagicClient.Api
         /// Get current sender settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
@@ -2238,7 +2238,7 @@ namespace TextMagicClient.Api
         /// Get spending statistics
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2252,7 +2252,7 @@ namespace TextMagicClient.Api
         /// Get spending statistics
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2265,7 +2265,7 @@ namespace TextMagicClient.Api
         /// Get sub-account information
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2276,7 +2276,7 @@ namespace TextMagicClient.Api
         /// Get sub-account information
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2286,7 +2286,7 @@ namespace TextMagicClient.Api
         /// Get a sub-accounts list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2298,7 +2298,7 @@ namespace TextMagicClient.Api
         /// Get a sub-accounts list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2309,7 +2309,7 @@ namespace TextMagicClient.Api
         /// Get all sub-accounts with their REST API tokens associated with a specified app name
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+        /// Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="getSubaccountsWithTokensInputObject"></param>
@@ -2322,7 +2322,7 @@ namespace TextMagicClient.Api
         /// Get all sub-accounts with their REST API tokens associated with a specified app name
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+        /// Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="getSubaccountsWithTokensInputObject"></param>
@@ -2334,7 +2334,7 @@ namespace TextMagicClient.Api
         /// Get a template&#x60;s details
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single template.
+        /// Get a single template.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2345,7 +2345,7 @@ namespace TextMagicClient.Api
         /// Get a template&#x60;s details
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single template.
+        /// Get a single template.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2355,7 +2355,7 @@ namespace TextMagicClient.Api
         /// Get timezones
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Return all available timezone IDs
+        /// Return all available timezone IDs
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
@@ -2366,7 +2366,7 @@ namespace TextMagicClient.Api
         /// Get timezones
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Return all available timezone IDs
+        /// Return all available timezone IDs
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
@@ -2376,7 +2376,7 @@ namespace TextMagicClient.Api
         /// Get unread messages number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the total amount of unread messages in the current user chats.
+        /// Get the total amount of unread messages in the current user chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetUnreadMessagesTotalResponse</returns>
@@ -2386,7 +2386,7 @@ namespace TextMagicClient.Api
         /// Get unread messages number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the total amount of unread messages in the current user chats.
+        /// Get the total amount of unread messages in the current user chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetUnreadMessagesTotalResponse</returns>
@@ -2395,7 +2395,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific unsubscribed contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2406,7 +2406,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific unsubscribed contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2416,7 +2416,7 @@ namespace TextMagicClient.Api
         /// Get all unsubscribed contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
+        /// When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2428,7 +2428,7 @@ namespace TextMagicClient.Api
         /// Get all unsubscribed contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
+        /// When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2439,7 +2439,7 @@ namespace TextMagicClient.Api
         /// Get all your dedicated numbers
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2452,7 +2452,7 @@ namespace TextMagicClient.Api
         /// Get all your dedicated numbers
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2464,7 +2464,7 @@ namespace TextMagicClient.Api
         /// Import contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/importContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Import contacts from the CSV, XLS or XLSX file.
+        /// Import contacts from the CSV, XLS or XLSX file.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats.</param>
@@ -2478,7 +2478,7 @@ namespace TextMagicClient.Api
         /// Import contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/importContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Import contacts from the CSV, XLS or XLSX file.
+        /// Import contacts from the CSV, XLS or XLSX file.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats.</param>
@@ -2491,7 +2491,7 @@ namespace TextMagicClient.Api
         /// Invite a new sub-account
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inviteSubaccountInputObject"></param>
@@ -2502,7 +2502,7 @@ namespace TextMagicClient.Api
         /// Invite a new sub-account
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inviteSubaccountInputObject"></param>
@@ -2512,7 +2512,7 @@ namespace TextMagicClient.Api
         /// Mark chats as read (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as read by chat IDs or mark all chats as read
+        /// Mark several chats as read by chat IDs or mark all chats as read
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -2523,7 +2523,7 @@ namespace TextMagicClient.Api
         /// Mark chats as read (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as read by chat IDs or mark all chats as read
+        /// Mark several chats as read by chat IDs or mark all chats as read
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -2533,7 +2533,7 @@ namespace TextMagicClient.Api
         /// Mark chats as unread (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as UNread by chat IDs or mark all chats as UNread
+        /// Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -2544,7 +2544,7 @@ namespace TextMagicClient.Api
         /// Mark chats as unread (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as UNread by chat IDs or mark all chats as UNread
+        /// Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -2554,7 +2554,7 @@ namespace TextMagicClient.Api
         /// Mute chat sounds
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatInputObject"></param>
@@ -2565,7 +2565,7 @@ namespace TextMagicClient.Api
         /// Mute chat sounds
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatInputObject"></param>
@@ -2575,7 +2575,7 @@ namespace TextMagicClient.Api
         /// Mute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mute several chats by chat ids or mute all chats.
+        /// Mute several chats by chat ids or mute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -2586,7 +2586,7 @@ namespace TextMagicClient.Api
         /// Mute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mute several chats by chat ids or mute all chats.
+        /// Mute several chats by chat ids or mute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -2596,7 +2596,7 @@ namespace TextMagicClient.Api
         /// Ping
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Make a simple ping request.
+        /// Make a simple ping request.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>PingResponse</returns>
@@ -2606,7 +2606,7 @@ namespace TextMagicClient.Api
         /// Ping
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Make a simple ping request.
+        /// Make a simple ping request.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of PingResponse</returns>
@@ -2615,7 +2615,7 @@ namespace TextMagicClient.Api
         /// Reopen chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Reopen chats by chat IDs or reopen all chats
+        /// Reopen chats by chat IDs or reopen all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -2626,7 +2626,7 @@ namespace TextMagicClient.Api
         /// Reopen chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Reopen chats by chat IDs or reopen all chats
+        /// Reopen chats by chat IDs or reopen all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -2636,7 +2636,7 @@ namespace TextMagicClient.Api
         /// Request a new REST API token for sub-account
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Returning user object, key and app name.
+        /// Returning user object, key and app name.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestNewSubaccountTokenInputObject"></param>
@@ -2647,7 +2647,7 @@ namespace TextMagicClient.Api
         /// Request a new REST API token for sub-account
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Returning user object, key and app name.
+        /// Returning user object, key and app name.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestNewSubaccountTokenInputObject"></param>
@@ -2657,7 +2657,7 @@ namespace TextMagicClient.Api
         /// Apply for a new Sender ID
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Sender IDs are shared among all of your sub-accounts.
+        /// &gt; Sender IDs are shared among all of your sub-accounts.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -2668,7 +2668,7 @@ namespace TextMagicClient.Api
         /// Apply for a new Sender ID
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Sender IDs are shared among all of your sub-accounts.
+        /// &gt; Sender IDs are shared among all of your sub-accounts.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -2678,7 +2678,7 @@ namespace TextMagicClient.Api
         /// Find chats by message text
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2691,7 +2691,7 @@ namespace TextMagicClient.Api
         /// Find chats by message text
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2703,7 +2703,7 @@ namespace TextMagicClient.Api
         /// Find chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2716,7 +2716,7 @@ namespace TextMagicClient.Api
         /// Find chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2728,7 +2728,7 @@ namespace TextMagicClient.Api
         /// Find chats by recipient
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find chats by recipient (contact, list name or phone number).
+        /// Find chats by recipient (contact, list name or phone number).
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2742,7 +2742,7 @@ namespace TextMagicClient.Api
         /// Find chats by recipient
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find chats by recipient (contact, list name or phone number).
+        /// Find chats by recipient (contact, list name or phone number).
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2755,7 +2755,7 @@ namespace TextMagicClient.Api
         /// Find contacts by given criteria
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/searchContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2776,7 +2776,7 @@ namespace TextMagicClient.Api
         /// Find contacts by given criteria
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/searchContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2796,7 +2796,7 @@ namespace TextMagicClient.Api
         /// Find inbound messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find inbound messages by given parameters.
+        /// Find inbound messages by given parameters.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2813,7 +2813,7 @@ namespace TextMagicClient.Api
         /// Find inbound messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find inbound messages by given parameters.
+        /// Find inbound messages by given parameters.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2829,7 +2829,7 @@ namespace TextMagicClient.Api
         /// Find lists by given criteria
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/searchLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2847,7 +2847,7 @@ namespace TextMagicClient.Api
         /// Find lists by given criteria
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/searchLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2864,7 +2864,7 @@ namespace TextMagicClient.Api
         /// Find messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find outbound messages by given parameters.
+        /// Find outbound messages by given parameters.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2882,7 +2882,7 @@ namespace TextMagicClient.Api
         /// Find messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find outbound messages by given parameters.
+        /// Find outbound messages by given parameters.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2899,7 +2899,7 @@ namespace TextMagicClient.Api
         /// Find scheduled messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2916,7 +2916,7 @@ namespace TextMagicClient.Api
         /// Find scheduled messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2932,7 +2932,7 @@ namespace TextMagicClient.Api
         /// Find templates by criteria
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/searchTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find user templates by given parameters.
+        /// Find user templates by given parameters.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2947,7 +2947,7 @@ namespace TextMagicClient.Api
         /// Find templates by criteria
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/searchTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find user templates by given parameters.
+        /// Find user templates by given parameters.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -2961,7 +2961,7 @@ namespace TextMagicClient.Api
         /// Send message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This is the main entrypoint to send messages. See the examples above for the reference.
+        /// This is the main entrypoint to send messages. See the examples above for the reference.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -2972,7 +2972,7 @@ namespace TextMagicClient.Api
         /// Send message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This is the main entrypoint to send messages. See the examples above for the reference.
+        /// This is the main entrypoint to send messages. See the examples above for the reference.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -2982,7 +2982,7 @@ namespace TextMagicClient.Api
         /// Step 1: Send a verification code 
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Sends a verification code to a specified phone number.
+        /// Sends a verification code to a specified phone number.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendPhoneVerificationCodeInputObject"></param>
@@ -2993,7 +2993,7 @@ namespace TextMagicClient.Api
         /// Step 1: Send a verification code 
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Sends a verification code to a specified phone number.
+        /// Sends a verification code to a specified phone number.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendPhoneVerificationCodeInputObject"></param>
@@ -3003,7 +3003,7 @@ namespace TextMagicClient.Api
         /// Change chat status
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/setChatStatus\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Set the status of the chat given by ID.
+        /// Set the status of the chat given by ID.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -3014,7 +3014,7 @@ namespace TextMagicClient.Api
         /// Change chat status
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/setChatStatus\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Set the status of the chat given by ID.
+        /// Set the status of the chat given by ID.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -3024,7 +3024,7 @@ namespace TextMagicClient.Api
         /// Unblock a contact by phone number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock a contact by phone number
+        /// Unblock a contact by phone number
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactInputObject"></param>
@@ -3035,7 +3035,7 @@ namespace TextMagicClient.Api
         /// Unblock a contact by phone number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock a contact by phone number
+        /// Unblock a contact by phone number
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactInputObject"></param>
@@ -3045,7 +3045,7 @@ namespace TextMagicClient.Api
         /// Unblock contacts (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock several contacts by blocked contact IDs or unblock all contacts.
+        /// Unblock several contacts by blocked contact IDs or unblock all contacts.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactsBulkInputObject"></param>
@@ -3056,7 +3056,7 @@ namespace TextMagicClient.Api
         /// Unblock contacts (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock several contacts by blocked contact IDs or unblock all contacts.
+        /// Unblock several contacts by blocked contact IDs or unblock all contacts.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactsBulkInputObject"></param>
@@ -3066,7 +3066,7 @@ namespace TextMagicClient.Api
         /// Unmute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unmute several chats by chat ids or unmute all chats.
+        /// Unmute several chats by chat ids or unmute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -3077,7 +3077,7 @@ namespace TextMagicClient.Api
         /// Unmute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unmute several chats by chat ids or unmute all chats.
+        /// Unmute several chats by chat ids or unmute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -3087,7 +3087,7 @@ namespace TextMagicClient.Api
         /// Manually unsubscribe a contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
+        /// &gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unsubscribeContactInputObject"></param>
@@ -3098,7 +3098,7 @@ namespace TextMagicClient.Api
         /// Manually unsubscribe a contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
+        /// &gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unsubscribeContactInputObject"></param>
@@ -3108,7 +3108,7 @@ namespace TextMagicClient.Api
         /// Update balance notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateBalanceNotificationSettingsInputObject"></param>
@@ -3119,7 +3119,7 @@ namespace TextMagicClient.Api
         /// Update balance notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateBalanceNotificationSettingsInputObject"></param>
@@ -3129,7 +3129,7 @@ namespace TextMagicClient.Api
         /// Update callback URL settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCallbackSettingsInputObject"></param>
@@ -3140,7 +3140,7 @@ namespace TextMagicClient.Api
         /// Update callback URL settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCallbackSettingsInputObject"></param>
@@ -3150,7 +3150,7 @@ namespace TextMagicClient.Api
         /// Update chat desktop notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateChatDesktopNotificationSettingsInputObject"></param>
@@ -3161,7 +3161,7 @@ namespace TextMagicClient.Api
         /// Update chat desktop notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateChatDesktopNotificationSettingsInputObject"></param>
@@ -3171,7 +3171,7 @@ namespace TextMagicClient.Api
         /// Edit a contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/updateContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactInputObject"></param>
@@ -3183,7 +3183,7 @@ namespace TextMagicClient.Api
         /// Edit a contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/updateContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactInputObject"></param>
@@ -3194,7 +3194,7 @@ namespace TextMagicClient.Api
         /// Update a contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactNoteInputObject"></param>
@@ -3206,7 +3206,7 @@ namespace TextMagicClient.Api
         /// Update a contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactNoteInputObject"></param>
@@ -3217,7 +3217,7 @@ namespace TextMagicClient.Api
         /// Edit current account info
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCurrentUserInputObject"></param>
@@ -3228,7 +3228,7 @@ namespace TextMagicClient.Api
         /// Edit current account info
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCurrentUserInputObject"></param>
@@ -3238,7 +3238,7 @@ namespace TextMagicClient.Api
         /// Edit a custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldInputObject"></param>
@@ -3250,7 +3250,7 @@ namespace TextMagicClient.Api
         /// Edit a custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldInputObject"></param>
@@ -3261,7 +3261,7 @@ namespace TextMagicClient.Api
         /// Edit the custom field value of a specified contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldValueInputObject"></param>
@@ -3273,7 +3273,7 @@ namespace TextMagicClient.Api
         /// Edit the custom field value of a specified contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldValueInputObject"></param>
@@ -3284,7 +3284,7 @@ namespace TextMagicClient.Api
         /// Update inbound messages notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateInboundMessagesNotificationSettingsInputObject"></param>
@@ -3295,7 +3295,7 @@ namespace TextMagicClient.Api
         /// Update inbound messages notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateInboundMessagesNotificationSettingsInputObject"></param>
@@ -3305,7 +3305,7 @@ namespace TextMagicClient.Api
         /// Edit a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/updateList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3317,7 +3317,7 @@ namespace TextMagicClient.Api
         /// Edit a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/updateList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3328,7 +3328,7 @@ namespace TextMagicClient.Api
         /// Change sender settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateSenderSettingInputObject"></param>
@@ -3339,7 +3339,7 @@ namespace TextMagicClient.Api
         /// Change sender settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateSenderSettingInputObject"></param>
@@ -3349,7 +3349,7 @@ namespace TextMagicClient.Api
         /// Update a template
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/updateTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateTemplateInputObject"></param>
@@ -3361,7 +3361,7 @@ namespace TextMagicClient.Api
         /// Update a template
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/updateTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateTemplateInputObject"></param>
@@ -3372,7 +3372,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/uploadAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -3383,7 +3383,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/uploadAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -3393,7 +3393,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -3405,7 +3405,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -3416,7 +3416,7 @@ namespace TextMagicClient.Api
         /// Add an avatar for a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Add an avatar for a list
+        /// Add an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -3428,7 +3428,7 @@ namespace TextMagicClient.Api
         /// Add an avatar for a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Add an avatar for a list
+        /// Add an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -3439,7 +3439,7 @@ namespace TextMagicClient.Api
         /// Upload message attachment
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Upload a new file to insert it as a link.
+        /// Upload a new file to insert it as a link.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
@@ -3450,7 +3450,7 @@ namespace TextMagicClient.Api
         /// Upload message attachment
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Upload a new file to insert it as a link.
+        /// Upload a new file to insert it as a link.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
@@ -3462,7 +3462,7 @@ namespace TextMagicClient.Api
         /// Assign contacts to a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+        /// &gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="assignContactsToListInputObject"></param>
@@ -3474,7 +3474,7 @@ namespace TextMagicClient.Api
         /// Assign contacts to a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+        /// &gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="assignContactsToListInputObject"></param>
@@ -3485,7 +3485,7 @@ namespace TextMagicClient.Api
         /// Block a contact by phone number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/blockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Block a contact from inbound and outbound communication by phone number.
+        /// Block a contact from inbound and outbound communication by phone number.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockContactInputObject"></param>
@@ -3496,7 +3496,7 @@ namespace TextMagicClient.Api
         /// Block a contact by phone number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/blockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Block a contact from inbound and outbound communication by phone number.
+        /// Block a contact from inbound and outbound communication by phone number.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockContactInputObject"></param>
@@ -3506,7 +3506,7 @@ namespace TextMagicClient.Api
         /// Buy a dedicated number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
+        /// To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="buyDedicatedNumberInputObject"></param>
@@ -3517,7 +3517,7 @@ namespace TextMagicClient.Api
         /// Buy a dedicated number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
+        /// To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="buyDedicatedNumberInputObject"></param>
@@ -3527,7 +3527,7 @@ namespace TextMagicClient.Api
         /// Cancel verification process
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;You can cancel the verification not earlier than 30 seconds after the initial request.
+        /// You can cancel the verification not earlier than 30 seconds after the initial request.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="verifyId">The verifyId that you received in Step 1.</param>
@@ -3538,7 +3538,7 @@ namespace TextMagicClient.Api
         /// Cancel verification process
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;You can cancel the verification not earlier than 30 seconds after the initial request.
+        /// You can cancel the verification not earlier than 30 seconds after the initial request.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="verifyId">The verifyId that you received in Step 1.</param>
@@ -3548,7 +3548,7 @@ namespace TextMagicClient.Api
         /// Step 2: Check the verification code 
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check received code from user with the code which was actually sent.
+        /// Check received code from user with the code which was actually sent.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="checkPhoneVerificationCodeInputObject"></param>
@@ -3559,7 +3559,7 @@ namespace TextMagicClient.Api
         /// Step 2: Check the verification code 
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check received code from user with the code which was actually sent.
+        /// Check received code from user with the code which was actually sent.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="checkPhoneVerificationCodeInputObject"></param>
@@ -3569,7 +3569,7 @@ namespace TextMagicClient.Api
         /// Reset list members to the specified contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="clearAndAssignContactsToListInputObject"></param>
@@ -3581,7 +3581,7 @@ namespace TextMagicClient.Api
         /// Reset list members to the specified contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="clearAndAssignContactsToListInputObject"></param>
@@ -3592,7 +3592,7 @@ namespace TextMagicClient.Api
         /// Close chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close chats by chat IDs or close all chats
+        /// Close chats by chat IDs or close all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -3603,7 +3603,7 @@ namespace TextMagicClient.Api
         /// Close chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close chats by chat IDs or close all chats
+        /// Close chats by chat IDs or close all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -3613,7 +3613,7 @@ namespace TextMagicClient.Api
         /// Close read chats
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeReadChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close all chats that have no unread messages.
+        /// Close all chats that have no unread messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of void</returns>
@@ -3623,7 +3623,7 @@ namespace TextMagicClient.Api
         /// Close read chats
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeReadChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close all chats that have no unread messages.
+        /// Close all chats that have no unread messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse</returns>
@@ -3632,7 +3632,7 @@ namespace TextMagicClient.Api
         /// Close sub-account
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3643,7 +3643,7 @@ namespace TextMagicClient.Api
         /// Close sub-account
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3653,7 +3653,7 @@ namespace TextMagicClient.Api
         /// Add a new contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/createContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactInputObject"></param>
@@ -3664,7 +3664,7 @@ namespace TextMagicClient.Api
         /// Add a new contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/createContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactInputObject"></param>
@@ -3674,7 +3674,7 @@ namespace TextMagicClient.Api
         /// Create a new contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactNoteInputObject"></param>
@@ -3686,7 +3686,7 @@ namespace TextMagicClient.Api
         /// Create a new contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactNoteInputObject"></param>
@@ -3697,7 +3697,7 @@ namespace TextMagicClient.Api
         /// Add a new custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCustomFieldInputObject"></param>
@@ -3708,7 +3708,7 @@ namespace TextMagicClient.Api
         /// Add a new custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCustomFieldInputObject"></param>
@@ -3718,7 +3718,7 @@ namespace TextMagicClient.Api
         /// Create a new list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/createList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createListInputObject"></param>
@@ -3729,7 +3729,7 @@ namespace TextMagicClient.Api
         /// Create a new list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/createList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createListInputObject"></param>
@@ -3739,7 +3739,7 @@ namespace TextMagicClient.Api
         /// Create a template
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/createTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
+        /// There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createTemplateInputObject"></param>
@@ -3750,7 +3750,7 @@ namespace TextMagicClient.Api
         /// Create a template
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/createTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
+        /// There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createTemplateInputObject"></param>
@@ -3760,7 +3760,7 @@ namespace TextMagicClient.Api
         /// Delete contacts (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of void</returns>
@@ -3770,7 +3770,7 @@ namespace TextMagicClient.Api
         /// Delete contacts (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse</returns>
@@ -3779,7 +3779,7 @@ namespace TextMagicClient.Api
         /// Delete all messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete all messages.
+        /// Delete all messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of void</returns>
@@ -3789,7 +3789,7 @@ namespace TextMagicClient.Api
         /// Delete all messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete all messages.
+        /// Delete all messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse</returns>
@@ -3798,7 +3798,7 @@ namespace TextMagicClient.Api
         /// Delete an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/deleteAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of void</returns>
@@ -3808,7 +3808,7 @@ namespace TextMagicClient.Api
         /// Delete an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/deleteAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse</returns>
@@ -3817,7 +3817,7 @@ namespace TextMagicClient.Api
         /// Delete chat messages by ID(s)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete messages from chat by given message IDs.
+        /// Delete messages from chat by given message IDs.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -3829,7 +3829,7 @@ namespace TextMagicClient.Api
         /// Delete chat messages by ID(s)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete messages from chat by given message IDs.
+        /// Delete messages from chat by given message IDs.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -3840,7 +3840,7 @@ namespace TextMagicClient.Api
         /// Delete chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete chats by given IDs or delete all chats.
+        /// Delete chats by given IDs or delete all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -3851,7 +3851,7 @@ namespace TextMagicClient.Api
         /// Delete chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete chats by given IDs or delete all chats.
+        /// Delete chats by given IDs or delete all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -3861,7 +3861,7 @@ namespace TextMagicClient.Api
         /// Delete a contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
+        /// &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3872,7 +3872,7 @@ namespace TextMagicClient.Api
         /// Delete a contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
+        /// &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3882,7 +3882,7 @@ namespace TextMagicClient.Api
         /// Delete an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3893,7 +3893,7 @@ namespace TextMagicClient.Api
         /// Delete an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3903,7 +3903,7 @@ namespace TextMagicClient.Api
         /// Delete a contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3914,7 +3914,7 @@ namespace TextMagicClient.Api
         /// Delete a contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3924,7 +3924,7 @@ namespace TextMagicClient.Api
         /// Delete contact notes (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3936,7 +3936,7 @@ namespace TextMagicClient.Api
         /// Delete contact notes (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3947,7 +3947,7 @@ namespace TextMagicClient.Api
         /// Delete contacts by IDs (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContactsByIdsInputObject"></param>
@@ -3958,7 +3958,7 @@ namespace TextMagicClient.Api
         /// Delete contacts by IDs (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContactsByIdsInputObject"></param>
@@ -3968,7 +3968,7 @@ namespace TextMagicClient.Api
         /// Unassign contacts from a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+        /// &gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContacsFromListObject"></param>
@@ -3980,7 +3980,7 @@ namespace TextMagicClient.Api
         /// Unassign contacts from a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+        /// &gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContacsFromListObject"></param>
@@ -3991,7 +3991,7 @@ namespace TextMagicClient.Api
         /// Delete a custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
+        /// &gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4002,7 +4002,7 @@ namespace TextMagicClient.Api
         /// Delete a custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
+        /// &gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4012,7 +4012,7 @@ namespace TextMagicClient.Api
         /// Cancel a dedicated number subscription
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4023,7 +4023,7 @@ namespace TextMagicClient.Api
         /// Cancel a dedicated number subscription
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4033,7 +4033,7 @@ namespace TextMagicClient.Api
         /// Delete a single inbound message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -4044,7 +4044,7 @@ namespace TextMagicClient.Api
         /// Delete a single inbound message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -4054,7 +4054,7 @@ namespace TextMagicClient.Api
         /// Delete inbound messages (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteInboundMessagesBulkInputObject"></param>
@@ -4065,7 +4065,7 @@ namespace TextMagicClient.Api
         /// Delete inbound messages (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteInboundMessagesBulkInputObject"></param>
@@ -4075,7 +4075,7 @@ namespace TextMagicClient.Api
         /// Delete a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
+        /// This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4086,7 +4086,7 @@ namespace TextMagicClient.Api
         /// Delete a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
+        /// This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4096,7 +4096,7 @@ namespace TextMagicClient.Api
         /// Delete an avatar for a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete an avatar for a list
+        /// Delete an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4107,7 +4107,7 @@ namespace TextMagicClient.Api
         /// Delete an avatar for a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete an avatar for a list
+        /// Delete an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4117,7 +4117,7 @@ namespace TextMagicClient.Api
         /// Delete contacts from a list (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete contacts from a list (bulk)
+        /// Delete contacts from a list (bulk)
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -4129,7 +4129,7 @@ namespace TextMagicClient.Api
         /// Delete contacts from a list (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete contacts from a list (bulk)
+        /// Delete contacts from a list (bulk)
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -4140,7 +4140,7 @@ namespace TextMagicClient.Api
         /// Delete lists (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListsBulkInputObject"></param>
@@ -4151,7 +4151,7 @@ namespace TextMagicClient.Api
         /// Delete lists (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListsBulkInputObject"></param>
@@ -4161,7 +4161,7 @@ namespace TextMagicClient.Api
         /// Delete a session
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
+        /// Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4172,7 +4172,7 @@ namespace TextMagicClient.Api
         /// Delete a session
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
+        /// Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4182,7 +4182,7 @@ namespace TextMagicClient.Api
         /// Delete sessions (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
+        /// Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -4193,7 +4193,7 @@ namespace TextMagicClient.Api
         /// Delete sessions (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
+        /// Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -4203,7 +4203,7 @@ namespace TextMagicClient.Api
         /// Delete message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a single message.
+        /// Delete a single message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4214,7 +4214,7 @@ namespace TextMagicClient.Api
         /// Delete message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a single message.
+        /// Delete a single message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4224,7 +4224,7 @@ namespace TextMagicClient.Api
         /// Delete messages (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete outbound messages by the given ID(s) or delete all outbound messages.
+        /// Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -4235,7 +4235,7 @@ namespace TextMagicClient.Api
         /// Delete messages (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete outbound messages by the given ID(s) or delete all outbound messages.
+        /// Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -4245,7 +4245,7 @@ namespace TextMagicClient.Api
         /// Delete a single scheduled message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4256,7 +4256,7 @@ namespace TextMagicClient.Api
         /// Delete a single scheduled message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4266,7 +4266,7 @@ namespace TextMagicClient.Api
         /// Delete scheduled messages (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteScheduledMessagesBulkInputObject"></param>
@@ -4277,7 +4277,7 @@ namespace TextMagicClient.Api
         /// Delete scheduled messages (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteScheduledMessagesBulkInputObject"></param>
@@ -4287,7 +4287,7 @@ namespace TextMagicClient.Api
         /// Delete a Sender ID
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4298,7 +4298,7 @@ namespace TextMagicClient.Api
         /// Delete a Sender ID
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4308,7 +4308,7 @@ namespace TextMagicClient.Api
         /// Delete a template
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4319,7 +4319,7 @@ namespace TextMagicClient.Api
         /// Delete a template
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4329,7 +4329,7 @@ namespace TextMagicClient.Api
         /// Delete templates (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete templates by given IDs or delete all templates.
+        /// Delete templates by given IDs or delete all templates.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -4340,7 +4340,7 @@ namespace TextMagicClient.Api
         /// Delete templates (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete templates by given IDs or delete all templates.
+        /// Delete templates by given IDs or delete all templates.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -4350,7 +4350,7 @@ namespace TextMagicClient.Api
         /// Carrier Lookup
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
+        /// This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
@@ -4362,7 +4362,7 @@ namespace TextMagicClient.Api
         /// Carrier Lookup
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
+        /// This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
@@ -4373,7 +4373,7 @@ namespace TextMagicClient.Api
         /// Email Lookup
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -4384,7 +4384,7 @@ namespace TextMagicClient.Api
         /// Email Lookup
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -4394,7 +4394,7 @@ namespace TextMagicClient.Api
         /// Get all bulk sessions
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4406,7 +4406,7 @@ namespace TextMagicClient.Api
         /// Get all bulk sessions
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4417,7 +4417,7 @@ namespace TextMagicClient.Api
         /// Get all chats
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getAllChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="status">Fetch only (a)ctive, (c)losed or (d)eleted chats. (optional)</param>
@@ -4433,7 +4433,7 @@ namespace TextMagicClient.Api
         /// Get all chats
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getAllChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="status">Fetch only (a)ctive, (c)losed or (d)eleted chats. (optional)</param>
@@ -4448,7 +4448,7 @@ namespace TextMagicClient.Api
         /// Get all inbound messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4462,7 +4462,7 @@ namespace TextMagicClient.Api
         /// Get all inbound messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4475,7 +4475,7 @@ namespace TextMagicClient.Api
         /// Get all sessions
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
+        /// Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4487,7 +4487,7 @@ namespace TextMagicClient.Api
         /// Get all sessions
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
+        /// Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4498,7 +4498,7 @@ namespace TextMagicClient.Api
         /// Get all messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all user oubound messages.
+        /// Get all user oubound messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4511,7 +4511,7 @@ namespace TextMagicClient.Api
         /// Get all messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all user oubound messages.
+        /// Get all user oubound messages.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4523,7 +4523,7 @@ namespace TextMagicClient.Api
         /// Get all scheduled messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4538,7 +4538,7 @@ namespace TextMagicClient.Api
         /// Get all scheduled messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4552,7 +4552,7 @@ namespace TextMagicClient.Api
         /// Get all templates
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional)</param>
@@ -4564,7 +4564,7 @@ namespace TextMagicClient.Api
         /// Get all templates
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional)</param>
@@ -4575,7 +4575,7 @@ namespace TextMagicClient.Api
         /// Find dedicated numbers available for purchase
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter dedicated number country ISO code.</param>
@@ -4588,7 +4588,7 @@ namespace TextMagicClient.Api
         /// Find dedicated numbers available for purchase
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter dedicated number country ISO code.</param>
@@ -4600,7 +4600,7 @@ namespace TextMagicClient.Api
         /// Get available sender settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
+        /// Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -4611,7 +4611,7 @@ namespace TextMagicClient.Api
         /// Get available sender settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
+        /// Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -4621,7 +4621,7 @@ namespace TextMagicClient.Api
         /// Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetBalanceNotificationOptionsResponse</returns>
@@ -4631,7 +4631,7 @@ namespace TextMagicClient.Api
         /// Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetBalanceNotificationOptionsResponse)</returns>
@@ -4640,7 +4640,7 @@ namespace TextMagicClient.Api
         /// Get balance notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetBalanceNotificationSettingsResponse</returns>
@@ -4650,7 +4650,7 @@ namespace TextMagicClient.Api
         /// Get balance notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetBalanceNotificationSettingsResponse)</returns>
@@ -4659,7 +4659,7 @@ namespace TextMagicClient.Api
         /// Get blocked contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4674,7 +4674,7 @@ namespace TextMagicClient.Api
         /// Get blocked contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4688,7 +4688,7 @@ namespace TextMagicClient.Api
         /// Get bulk session status
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4699,7 +4699,7 @@ namespace TextMagicClient.Api
         /// Get bulk session status
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4709,7 +4709,7 @@ namespace TextMagicClient.Api
         /// Fetch callback URL settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetCallbackSettingsResponse</returns>
@@ -4719,7 +4719,7 @@ namespace TextMagicClient.Api
         /// Fetch callback URL settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetCallbackSettingsResponse)</returns>
@@ -4728,7 +4728,7 @@ namespace TextMagicClient.Api
         /// Get a single chat
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4739,7 +4739,7 @@ namespace TextMagicClient.Api
         /// Get a single chat
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4749,7 +4749,7 @@ namespace TextMagicClient.Api
         /// Find chats by phone
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -4762,7 +4762,7 @@ namespace TextMagicClient.Api
         /// Find chats by phone
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -4774,7 +4774,7 @@ namespace TextMagicClient.Api
         /// Get chat messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4792,7 +4792,7 @@ namespace TextMagicClient.Api
         /// Get chat messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4809,7 +4809,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Contact ID.</param>
@@ -4820,7 +4820,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Contact ID.</param>
@@ -4830,7 +4830,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific contact by phone number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -4841,7 +4841,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific contact by phone number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -4851,7 +4851,7 @@ namespace TextMagicClient.Api
         /// Check if a phone number is blocked
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number to check.</param>
@@ -4862,7 +4862,7 @@ namespace TextMagicClient.Api
         /// Check if a phone number is blocked
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number to check.</param>
@@ -4872,7 +4872,7 @@ namespace TextMagicClient.Api
         /// Check import progress
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contact import session progress.
+        /// Get contact import session progress.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4883,7 +4883,7 @@ namespace TextMagicClient.Api
         /// Check import progress
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contact import session progress.
+        /// Get contact import session progress.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4893,7 +4893,7 @@ namespace TextMagicClient.Api
         /// Get a contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4904,7 +4904,7 @@ namespace TextMagicClient.Api
         /// Get a contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4914,7 +4914,7 @@ namespace TextMagicClient.Api
         /// Fetch notes assigned to a given contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4927,7 +4927,7 @@ namespace TextMagicClient.Api
         /// Fetch notes assigned to a given contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4939,7 +4939,7 @@ namespace TextMagicClient.Api
         /// Get all contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4954,7 +4954,7 @@ namespace TextMagicClient.Api
         /// Get all contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -4968,7 +4968,7 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contacts autocomplete suggestions by given search terms.
+        /// Get contacts autocomplete suggestions by given search terms.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
@@ -4981,7 +4981,7 @@ namespace TextMagicClient.Api
         /// Get contacts autocomplete suggestions
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contacts autocomplete suggestions by given search terms.
+        /// Get contacts autocomplete suggestions by given search terms.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
@@ -4993,7 +4993,7 @@ namespace TextMagicClient.Api
         /// Get all contacts in a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+        /// A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Given group ID.</param>
@@ -5008,7 +5008,7 @@ namespace TextMagicClient.Api
         /// Get all contacts in a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+        /// A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Given group ID.</param>
@@ -5022,7 +5022,7 @@ namespace TextMagicClient.Api
         /// Get countries
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetCountriesResponse</returns>
@@ -5032,7 +5032,7 @@ namespace TextMagicClient.Api
         /// Get countries
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetCountriesResponse)</returns>
@@ -5041,7 +5041,7 @@ namespace TextMagicClient.Api
         /// Get current account information
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/getCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of User</returns>
@@ -5051,7 +5051,7 @@ namespace TextMagicClient.Api
         /// Get current account information
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/getCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (User)</returns>
@@ -5060,7 +5060,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5071,7 +5071,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5081,7 +5081,7 @@ namespace TextMagicClient.Api
         /// Get all custom fields
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5093,7 +5093,7 @@ namespace TextMagicClient.Api
         /// Get all custom fields
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5104,7 +5104,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific dedicated number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5115,7 +5115,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific dedicated number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5125,7 +5125,7 @@ namespace TextMagicClient.Api
         /// Get favorite contacts and lists
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getFavorites\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5138,7 +5138,7 @@ namespace TextMagicClient.Api
         /// Get favorite contacts and lists
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getFavorites\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5150,7 +5150,7 @@ namespace TextMagicClient.Api
         /// Get a single inbound message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -5161,7 +5161,7 @@ namespace TextMagicClient.Api
         /// Get a single inbound message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -5171,7 +5171,7 @@ namespace TextMagicClient.Api
         /// Get inbound messages notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetInboundMessagesNotificationSettingsResponse</returns>
@@ -5181,7 +5181,7 @@ namespace TextMagicClient.Api
         /// Get inbound messages notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetInboundMessagesNotificationSettingsResponse)</returns>
@@ -5190,7 +5190,7 @@ namespace TextMagicClient.Api
         /// Get all invoices
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Invoices/getInvoices\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;With the TextMagic API, you can check the invoices and transactions for your account.
+        /// With the TextMagic API, you can check the invoices and transactions for your account.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5202,7 +5202,7 @@ namespace TextMagicClient.Api
         /// Get all invoices
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Invoices/getInvoices\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;With the TextMagic API, you can check the invoices and transactions for your account.
+        /// With the TextMagic API, you can check the invoices and transactions for your account.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5213,7 +5213,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5224,7 +5224,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5234,7 +5234,7 @@ namespace TextMagicClient.Api
         /// Get all contact IDs in a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5245,7 +5245,7 @@ namespace TextMagicClient.Api
         /// Get all contact IDs in a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5255,7 +5255,7 @@ namespace TextMagicClient.Api
         /// Get all lists
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
@@ -5271,7 +5271,7 @@ namespace TextMagicClient.Api
         /// Get all lists
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
@@ -5286,7 +5286,7 @@ namespace TextMagicClient.Api
         /// Get a contact&#39;s lists
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all the lists in which a contact is included.
+        /// Get all the lists in which a contact is included.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5299,7 +5299,7 @@ namespace TextMagicClient.Api
         /// Get a contact&#39;s lists
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all the lists in which a contact is included.
+        /// Get all the lists in which a contact is included.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5311,7 +5311,7 @@ namespace TextMagicClient.Api
         /// Preview message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -5325,7 +5325,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
@@ -5338,7 +5338,7 @@ namespace TextMagicClient.Api
         /// Preview message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -5352,7 +5352,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
@@ -5364,7 +5364,7 @@ namespace TextMagicClient.Api
         /// Check message price
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check pricing for a new outbound message.
+        /// Check pricing for a new outbound message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
@@ -5379,7 +5379,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
@@ -5392,7 +5392,7 @@ namespace TextMagicClient.Api
         /// Check message price
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check pricing for a new outbound message.
+        /// Check pricing for a new outbound message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
@@ -5407,7 +5407,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
@@ -5419,7 +5419,7 @@ namespace TextMagicClient.Api
         /// Get a session&#x60;s details
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a specific session’s details.
+        /// Get a specific session’s details.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Session ID.</param>
@@ -5430,7 +5430,7 @@ namespace TextMagicClient.Api
         /// Get a session&#x60;s details
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a specific session’s details.
+        /// Get a specific session’s details.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Session ID.</param>
@@ -5440,7 +5440,7 @@ namespace TextMagicClient.Api
         /// Get a session&#x60;s statistics
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5452,7 +5452,7 @@ namespace TextMagicClient.Api
         /// Get a session&#x60;s statistics
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5463,7 +5463,7 @@ namespace TextMagicClient.Api
         /// Get a session&#x60;s messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
+        /// A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5478,7 +5478,7 @@ namespace TextMagicClient.Api
         /// Get a session&#x60;s messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
+        /// A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5492,7 +5492,7 @@ namespace TextMagicClient.Api
         /// Get sent/received messages counters values
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get total contacts, sent messages and received messages counters values.
+        /// Get total contacts, sent messages and received messages counters values.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetMessagingCountersResponse</returns>
@@ -5502,7 +5502,7 @@ namespace TextMagicClient.Api
         /// Get sent/received messages counters values
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get total contacts, sent messages and received messages counters values.
+        /// Get total contacts, sent messages and received messages counters values.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetMessagingCountersResponse)</returns>
@@ -5511,7 +5511,7 @@ namespace TextMagicClient.Api
         /// Get messaging statistics
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
@@ -5524,7 +5524,7 @@ namespace TextMagicClient.Api
         /// Get messaging statistics
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
@@ -5536,7 +5536,7 @@ namespace TextMagicClient.Api
         /// Get a single message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single outgoing message.
+        /// Get a single outgoing message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5547,7 +5547,7 @@ namespace TextMagicClient.Api
         /// Get a single message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single outgoing message.
+        /// Get a single outgoing message.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5557,7 +5557,7 @@ namespace TextMagicClient.Api
         /// Get history
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the outbound messages history.
+        /// Get the outbound messages history.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
@@ -5572,7 +5572,7 @@ namespace TextMagicClient.Api
         /// Get history
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the outbound messages history.
+        /// Get the outbound messages history.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
@@ -5586,7 +5586,7 @@ namespace TextMagicClient.Api
         /// Get a single scheduled message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5597,7 +5597,7 @@ namespace TextMagicClient.Api
         /// Get a single scheduled message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5607,7 +5607,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific Sender ID
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5618,7 +5618,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific Sender ID
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5628,7 +5628,7 @@ namespace TextMagicClient.Api
         /// Get all your approved Sender IDs
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5640,7 +5640,7 @@ namespace TextMagicClient.Api
         /// Get all your approved Sender IDs
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5651,7 +5651,7 @@ namespace TextMagicClient.Api
         /// Get current sender settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
@@ -5662,7 +5662,7 @@ namespace TextMagicClient.Api
         /// Get current sender settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
@@ -5672,7 +5672,7 @@ namespace TextMagicClient.Api
         /// Get spending statistics
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5686,7 +5686,7 @@ namespace TextMagicClient.Api
         /// Get spending statistics
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5699,7 +5699,7 @@ namespace TextMagicClient.Api
         /// Get sub-account information
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5710,7 +5710,7 @@ namespace TextMagicClient.Api
         /// Get sub-account information
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5720,7 +5720,7 @@ namespace TextMagicClient.Api
         /// Get a sub-accounts list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5732,7 +5732,7 @@ namespace TextMagicClient.Api
         /// Get a sub-accounts list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5743,7 +5743,7 @@ namespace TextMagicClient.Api
         /// Get all sub-accounts with their REST API tokens associated with a specified app name
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+        /// Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="getSubaccountsWithTokensInputObject"></param>
@@ -5756,7 +5756,7 @@ namespace TextMagicClient.Api
         /// Get all sub-accounts with their REST API tokens associated with a specified app name
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+        /// Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="getSubaccountsWithTokensInputObject"></param>
@@ -5768,7 +5768,7 @@ namespace TextMagicClient.Api
         /// Get a template&#x60;s details
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single template.
+        /// Get a single template.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5779,7 +5779,7 @@ namespace TextMagicClient.Api
         /// Get a template&#x60;s details
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single template.
+        /// Get a single template.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5789,7 +5789,7 @@ namespace TextMagicClient.Api
         /// Get timezones
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Return all available timezone IDs
+        /// Return all available timezone IDs
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
@@ -5800,7 +5800,7 @@ namespace TextMagicClient.Api
         /// Get timezones
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Return all available timezone IDs
+        /// Return all available timezone IDs
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
@@ -5810,7 +5810,7 @@ namespace TextMagicClient.Api
         /// Get unread messages number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the total amount of unread messages in the current user chats.
+        /// Get the total amount of unread messages in the current user chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetUnreadMessagesTotalResponse</returns>
@@ -5820,7 +5820,7 @@ namespace TextMagicClient.Api
         /// Get unread messages number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the total amount of unread messages in the current user chats.
+        /// Get the total amount of unread messages in the current user chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetUnreadMessagesTotalResponse)</returns>
@@ -5829,7 +5829,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific unsubscribed contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5840,7 +5840,7 @@ namespace TextMagicClient.Api
         /// Get the details of a specific unsubscribed contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5850,7 +5850,7 @@ namespace TextMagicClient.Api
         /// Get all unsubscribed contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
+        /// When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5862,7 +5862,7 @@ namespace TextMagicClient.Api
         /// Get all unsubscribed contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
+        /// When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5873,7 +5873,7 @@ namespace TextMagicClient.Api
         /// Get all your dedicated numbers
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5886,7 +5886,7 @@ namespace TextMagicClient.Api
         /// Get all your dedicated numbers
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -5898,7 +5898,7 @@ namespace TextMagicClient.Api
         /// Import contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/importContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Import contacts from the CSV, XLS or XLSX file.
+        /// Import contacts from the CSV, XLS or XLSX file.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats.</param>
@@ -5912,7 +5912,7 @@ namespace TextMagicClient.Api
         /// Import contacts
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/importContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Import contacts from the CSV, XLS or XLSX file.
+        /// Import contacts from the CSV, XLS or XLSX file.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats.</param>
@@ -5925,7 +5925,7 @@ namespace TextMagicClient.Api
         /// Invite a new sub-account
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inviteSubaccountInputObject"></param>
@@ -5936,7 +5936,7 @@ namespace TextMagicClient.Api
         /// Invite a new sub-account
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inviteSubaccountInputObject"></param>
@@ -5946,7 +5946,7 @@ namespace TextMagicClient.Api
         /// Mark chats as read (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as read by chat IDs or mark all chats as read
+        /// Mark several chats as read by chat IDs or mark all chats as read
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -5957,7 +5957,7 @@ namespace TextMagicClient.Api
         /// Mark chats as read (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as read by chat IDs or mark all chats as read
+        /// Mark several chats as read by chat IDs or mark all chats as read
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -5967,7 +5967,7 @@ namespace TextMagicClient.Api
         /// Mark chats as unread (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as UNread by chat IDs or mark all chats as UNread
+        /// Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -5978,7 +5978,7 @@ namespace TextMagicClient.Api
         /// Mark chats as unread (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as UNread by chat IDs or mark all chats as UNread
+        /// Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -5988,7 +5988,7 @@ namespace TextMagicClient.Api
         /// Mute chat sounds
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatInputObject"></param>
@@ -5999,7 +5999,7 @@ namespace TextMagicClient.Api
         /// Mute chat sounds
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatInputObject"></param>
@@ -6009,7 +6009,7 @@ namespace TextMagicClient.Api
         /// Mute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mute several chats by chat ids or mute all chats.
+        /// Mute several chats by chat ids or mute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -6020,7 +6020,7 @@ namespace TextMagicClient.Api
         /// Mute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mute several chats by chat ids or mute all chats.
+        /// Mute several chats by chat ids or mute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -6030,7 +6030,7 @@ namespace TextMagicClient.Api
         /// Ping
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Make a simple ping request.
+        /// Make a simple ping request.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of PingResponse</returns>
@@ -6040,7 +6040,7 @@ namespace TextMagicClient.Api
         /// Ping
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Make a simple ping request.
+        /// Make a simple ping request.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (PingResponse)</returns>
@@ -6049,7 +6049,7 @@ namespace TextMagicClient.Api
         /// Reopen chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Reopen chats by chat IDs or reopen all chats
+        /// Reopen chats by chat IDs or reopen all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -6060,7 +6060,7 @@ namespace TextMagicClient.Api
         /// Reopen chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Reopen chats by chat IDs or reopen all chats
+        /// Reopen chats by chat IDs or reopen all chats
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -6070,7 +6070,7 @@ namespace TextMagicClient.Api
         /// Request a new REST API token for sub-account
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Returning user object, key and app name.
+        /// Returning user object, key and app name.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestNewSubaccountTokenInputObject"></param>
@@ -6081,7 +6081,7 @@ namespace TextMagicClient.Api
         /// Request a new REST API token for sub-account
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Returning user object, key and app name.
+        /// Returning user object, key and app name.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestNewSubaccountTokenInputObject"></param>
@@ -6091,7 +6091,7 @@ namespace TextMagicClient.Api
         /// Apply for a new Sender ID
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Sender IDs are shared among all of your sub-accounts.
+        /// &gt; Sender IDs are shared among all of your sub-accounts.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -6102,7 +6102,7 @@ namespace TextMagicClient.Api
         /// Apply for a new Sender ID
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Sender IDs are shared among all of your sub-accounts.
+        /// &gt; Sender IDs are shared among all of your sub-accounts.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -6112,7 +6112,7 @@ namespace TextMagicClient.Api
         /// Find chats by message text
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6125,7 +6125,7 @@ namespace TextMagicClient.Api
         /// Find chats by message text
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6137,7 +6137,7 @@ namespace TextMagicClient.Api
         /// Find chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6150,7 +6150,7 @@ namespace TextMagicClient.Api
         /// Find chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6162,7 +6162,7 @@ namespace TextMagicClient.Api
         /// Find chats by recipient
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find chats by recipient (contact, list name or phone number).
+        /// Find chats by recipient (contact, list name or phone number).
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6176,7 +6176,7 @@ namespace TextMagicClient.Api
         /// Find chats by recipient
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find chats by recipient (contact, list name or phone number).
+        /// Find chats by recipient (contact, list name or phone number).
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6189,7 +6189,7 @@ namespace TextMagicClient.Api
         /// Find contacts by given criteria
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/searchContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6210,7 +6210,7 @@ namespace TextMagicClient.Api
         /// Find contacts by given criteria
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/searchContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6230,7 +6230,7 @@ namespace TextMagicClient.Api
         /// Find inbound messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find inbound messages by given parameters.
+        /// Find inbound messages by given parameters.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6247,7 +6247,7 @@ namespace TextMagicClient.Api
         /// Find inbound messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find inbound messages by given parameters.
+        /// Find inbound messages by given parameters.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6263,7 +6263,7 @@ namespace TextMagicClient.Api
         /// Find lists by given criteria
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/searchLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6281,7 +6281,7 @@ namespace TextMagicClient.Api
         /// Find lists by given criteria
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/searchLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6298,7 +6298,7 @@ namespace TextMagicClient.Api
         /// Find messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find outbound messages by given parameters.
+        /// Find outbound messages by given parameters.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6316,7 +6316,7 @@ namespace TextMagicClient.Api
         /// Find messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find outbound messages by given parameters.
+        /// Find outbound messages by given parameters.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6333,7 +6333,7 @@ namespace TextMagicClient.Api
         /// Find scheduled messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6350,7 +6350,7 @@ namespace TextMagicClient.Api
         /// Find scheduled messages
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6366,7 +6366,7 @@ namespace TextMagicClient.Api
         /// Find templates by criteria
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/searchTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find user templates by given parameters.
+        /// Find user templates by given parameters.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6381,7 +6381,7 @@ namespace TextMagicClient.Api
         /// Find templates by criteria
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/searchTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find user templates by given parameters.
+        /// Find user templates by given parameters.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -6395,7 +6395,7 @@ namespace TextMagicClient.Api
         /// Send message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This is the main entrypoint to send messages. See the examples above for the reference.
+        /// This is the main entrypoint to send messages. See the examples above for the reference.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -6406,7 +6406,7 @@ namespace TextMagicClient.Api
         /// Send message
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This is the main entrypoint to send messages. See the examples above for the reference.
+        /// This is the main entrypoint to send messages. See the examples above for the reference.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -6416,7 +6416,7 @@ namespace TextMagicClient.Api
         /// Step 1: Send a verification code 
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Sends a verification code to a specified phone number.
+        /// Sends a verification code to a specified phone number.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendPhoneVerificationCodeInputObject"></param>
@@ -6427,7 +6427,7 @@ namespace TextMagicClient.Api
         /// Step 1: Send a verification code 
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Sends a verification code to a specified phone number.
+        /// Sends a verification code to a specified phone number.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendPhoneVerificationCodeInputObject"></param>
@@ -6437,7 +6437,7 @@ namespace TextMagicClient.Api
         /// Change chat status
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/setChatStatus\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Set the status of the chat given by ID.
+        /// Set the status of the chat given by ID.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -6448,7 +6448,7 @@ namespace TextMagicClient.Api
         /// Change chat status
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/setChatStatus\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Set the status of the chat given by ID.
+        /// Set the status of the chat given by ID.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -6458,7 +6458,7 @@ namespace TextMagicClient.Api
         /// Unblock a contact by phone number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock a contact by phone number
+        /// Unblock a contact by phone number
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactInputObject"></param>
@@ -6469,7 +6469,7 @@ namespace TextMagicClient.Api
         /// Unblock a contact by phone number
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock a contact by phone number
+        /// Unblock a contact by phone number
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactInputObject"></param>
@@ -6479,7 +6479,7 @@ namespace TextMagicClient.Api
         /// Unblock contacts (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock several contacts by blocked contact IDs or unblock all contacts.
+        /// Unblock several contacts by blocked contact IDs or unblock all contacts.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactsBulkInputObject"></param>
@@ -6490,7 +6490,7 @@ namespace TextMagicClient.Api
         /// Unblock contacts (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock several contacts by blocked contact IDs or unblock all contacts.
+        /// Unblock several contacts by blocked contact IDs or unblock all contacts.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactsBulkInputObject"></param>
@@ -6500,7 +6500,7 @@ namespace TextMagicClient.Api
         /// Unmute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unmute several chats by chat ids or unmute all chats.
+        /// Unmute several chats by chat ids or unmute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -6511,7 +6511,7 @@ namespace TextMagicClient.Api
         /// Unmute chats (bulk)
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unmute several chats by chat ids or unmute all chats.
+        /// Unmute several chats by chat ids or unmute all chats.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -6521,7 +6521,7 @@ namespace TextMagicClient.Api
         /// Manually unsubscribe a contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
+        /// &gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unsubscribeContactInputObject"></param>
@@ -6532,7 +6532,7 @@ namespace TextMagicClient.Api
         /// Manually unsubscribe a contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
+        /// &gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unsubscribeContactInputObject"></param>
@@ -6542,7 +6542,7 @@ namespace TextMagicClient.Api
         /// Update balance notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateBalanceNotificationSettingsInputObject"></param>
@@ -6553,7 +6553,7 @@ namespace TextMagicClient.Api
         /// Update balance notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateBalanceNotificationSettingsInputObject"></param>
@@ -6563,7 +6563,7 @@ namespace TextMagicClient.Api
         /// Update callback URL settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCallbackSettingsInputObject"></param>
@@ -6574,7 +6574,7 @@ namespace TextMagicClient.Api
         /// Update callback URL settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCallbackSettingsInputObject"></param>
@@ -6584,7 +6584,7 @@ namespace TextMagicClient.Api
         /// Update chat desktop notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateChatDesktopNotificationSettingsInputObject"></param>
@@ -6595,7 +6595,7 @@ namespace TextMagicClient.Api
         /// Update chat desktop notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateChatDesktopNotificationSettingsInputObject"></param>
@@ -6605,7 +6605,7 @@ namespace TextMagicClient.Api
         /// Edit a contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/updateContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactInputObject"></param>
@@ -6617,7 +6617,7 @@ namespace TextMagicClient.Api
         /// Edit a contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/updateContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactInputObject"></param>
@@ -6628,7 +6628,7 @@ namespace TextMagicClient.Api
         /// Update a contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactNoteInputObject"></param>
@@ -6640,7 +6640,7 @@ namespace TextMagicClient.Api
         /// Update a contact note
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactNoteInputObject"></param>
@@ -6651,7 +6651,7 @@ namespace TextMagicClient.Api
         /// Edit current account info
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCurrentUserInputObject"></param>
@@ -6662,7 +6662,7 @@ namespace TextMagicClient.Api
         /// Edit current account info
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCurrentUserInputObject"></param>
@@ -6672,7 +6672,7 @@ namespace TextMagicClient.Api
         /// Edit a custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldInputObject"></param>
@@ -6684,7 +6684,7 @@ namespace TextMagicClient.Api
         /// Edit a custom field
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldInputObject"></param>
@@ -6695,7 +6695,7 @@ namespace TextMagicClient.Api
         /// Edit the custom field value of a specified contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldValueInputObject"></param>
@@ -6707,7 +6707,7 @@ namespace TextMagicClient.Api
         /// Edit the custom field value of a specified contact
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldValueInputObject"></param>
@@ -6718,7 +6718,7 @@ namespace TextMagicClient.Api
         /// Update inbound messages notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateInboundMessagesNotificationSettingsInputObject"></param>
@@ -6729,7 +6729,7 @@ namespace TextMagicClient.Api
         /// Update inbound messages notification settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateInboundMessagesNotificationSettingsInputObject"></param>
@@ -6739,7 +6739,7 @@ namespace TextMagicClient.Api
         /// Edit a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/updateList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6751,7 +6751,7 @@ namespace TextMagicClient.Api
         /// Edit a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/updateList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6762,7 +6762,7 @@ namespace TextMagicClient.Api
         /// Change sender settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateSenderSettingInputObject"></param>
@@ -6773,7 +6773,7 @@ namespace TextMagicClient.Api
         /// Change sender settings
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateSenderSettingInputObject"></param>
@@ -6783,7 +6783,7 @@ namespace TextMagicClient.Api
         /// Update a template
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/updateTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateTemplateInputObject"></param>
@@ -6795,7 +6795,7 @@ namespace TextMagicClient.Api
         /// Update a template
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/updateTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateTemplateInputObject"></param>
@@ -6806,7 +6806,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/uploadAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -6817,7 +6817,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/uploadAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -6827,7 +6827,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -6839,7 +6839,7 @@ namespace TextMagicClient.Api
         /// Upload an avatar
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -6850,7 +6850,7 @@ namespace TextMagicClient.Api
         /// Add an avatar for a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Add an avatar for a list
+        /// Add an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -6862,7 +6862,7 @@ namespace TextMagicClient.Api
         /// Add an avatar for a list
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Add an avatar for a list
+        /// Add an avatar for a list
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -6873,7 +6873,7 @@ namespace TextMagicClient.Api
         /// Upload message attachment
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Upload a new file to insert it as a link.
+        /// Upload a new file to insert it as a link.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
@@ -6884,7 +6884,7 @@ namespace TextMagicClient.Api
         /// Upload message attachment
         /// </summary>
         /// <remarks>
-        /// &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Upload a new file to insert it as a link.
+        /// Upload a new file to insert it as a link.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
@@ -6991,7 +6991,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Assign contacts to a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+        /// Assign contacts to a list &gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="assignContactsToListInputObject"></param>
@@ -7004,7 +7004,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Assign contacts to a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+        /// Assign contacts to a list &gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="assignContactsToListInputObject"></param>
@@ -7077,7 +7077,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Assign contacts to a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+        /// Assign contacts to a list &gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="assignContactsToListInputObject"></param>
@@ -7091,7 +7091,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Assign contacts to a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+        /// Assign contacts to a list &gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="assignContactsToListInputObject"></param>
@@ -7164,7 +7164,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Block a contact by phone number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/blockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Block a contact from inbound and outbound communication by phone number.
+        /// Block a contact by phone number Block a contact from inbound and outbound communication by phone number.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockContactInputObject"></param>
@@ -7176,7 +7176,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Block a contact by phone number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/blockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Block a contact from inbound and outbound communication by phone number.
+        /// Block a contact by phone number Block a contact from inbound and outbound communication by phone number.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockContactInputObject"></param>
@@ -7244,7 +7244,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Block a contact by phone number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/blockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Block a contact from inbound and outbound communication by phone number.
+        /// Block a contact by phone number Block a contact from inbound and outbound communication by phone number.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockContactInputObject"></param>
@@ -7257,7 +7257,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Block a contact by phone number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/blockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Block a contact from inbound and outbound communication by phone number.
+        /// Block a contact by phone number Block a contact from inbound and outbound communication by phone number.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockContactInputObject"></param>
@@ -7325,7 +7325,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Buy a dedicated number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
+        /// Buy a dedicated number To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="buyDedicatedNumberInputObject"></param>
@@ -7336,7 +7336,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Buy a dedicated number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
+        /// Buy a dedicated number To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="buyDedicatedNumberInputObject"></param>
@@ -7404,7 +7404,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Buy a dedicated number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
+        /// Buy a dedicated number To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="buyDedicatedNumberInputObject"></param>
@@ -7416,7 +7416,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Buy a dedicated number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
+        /// Buy a dedicated number To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="buyDedicatedNumberInputObject"></param>
@@ -7484,7 +7484,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Cancel verification process &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;You can cancel the verification not earlier than 30 seconds after the initial request.
+        /// Cancel verification process You can cancel the verification not earlier than 30 seconds after the initial request.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="verifyId">The verifyId that you received in Step 1.</param>
@@ -7495,7 +7495,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Cancel verification process &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;You can cancel the verification not earlier than 30 seconds after the initial request.
+        /// Cancel verification process You can cancel the verification not earlier than 30 seconds after the initial request.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="verifyId">The verifyId that you received in Step 1.</param>
@@ -7556,7 +7556,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Cancel verification process &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;You can cancel the verification not earlier than 30 seconds after the initial request.
+        /// Cancel verification process You can cancel the verification not earlier than 30 seconds after the initial request.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="verifyId">The verifyId that you received in Step 1.</param>
@@ -7568,7 +7568,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Cancel verification process &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;You can cancel the verification not earlier than 30 seconds after the initial request.
+        /// Cancel verification process You can cancel the verification not earlier than 30 seconds after the initial request.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="verifyId">The verifyId that you received in Step 1.</param>
@@ -7629,7 +7629,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Step 2: Check the verification code  &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check received code from user with the code which was actually sent.
+        /// Step 2: Check the verification code  Check received code from user with the code which was actually sent.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="checkPhoneVerificationCodeInputObject"></param>
@@ -7640,7 +7640,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Step 2: Check the verification code  &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check received code from user with the code which was actually sent.
+        /// Step 2: Check the verification code  Check received code from user with the code which was actually sent.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="checkPhoneVerificationCodeInputObject"></param>
@@ -7708,7 +7708,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Step 2: Check the verification code  &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check received code from user with the code which was actually sent.
+        /// Step 2: Check the verification code  Check received code from user with the code which was actually sent.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="checkPhoneVerificationCodeInputObject"></param>
@@ -7720,7 +7720,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Step 2: Check the verification code  &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check received code from user with the code which was actually sent.
+        /// Step 2: Check the verification code  Check received code from user with the code which was actually sent.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="checkPhoneVerificationCodeInputObject"></param>
@@ -7788,7 +7788,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Reset list members to the specified contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Reset list members to the specified contacts 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="clearAndAssignContactsToListInputObject"></param>
@@ -7801,7 +7801,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Reset list members to the specified contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Reset list members to the specified contacts 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="clearAndAssignContactsToListInputObject"></param>
@@ -7874,7 +7874,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Reset list members to the specified contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Reset list members to the specified contacts 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="clearAndAssignContactsToListInputObject"></param>
@@ -7888,7 +7888,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Reset list members to the specified contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Reset list members to the specified contacts 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="clearAndAssignContactsToListInputObject"></param>
@@ -7961,7 +7961,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close chats by chat IDs or close all chats
+        /// Close chats (bulk) Close chats by chat IDs or close all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -7972,7 +7972,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close chats by chat IDs or close all chats
+        /// Close chats (bulk) Close chats by chat IDs or close all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -8039,7 +8039,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close chats by chat IDs or close all chats
+        /// Close chats (bulk) Close chats by chat IDs or close all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -8051,7 +8051,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close chats by chat IDs or close all chats
+        /// Close chats (bulk) Close chats by chat IDs or close all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="closeChatsBulkInputObject"></param>
@@ -8118,7 +8118,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close read chats &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeReadChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close all chats that have no unread messages.
+        /// Close read chats Close all chats that have no unread messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns></returns>
@@ -8128,7 +8128,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close read chats &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeReadChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close all chats that have no unread messages.
+        /// Close read chats Close all chats that have no unread messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -8183,7 +8183,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close read chats &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeReadChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close all chats that have no unread messages.
+        /// Close read chats Close all chats that have no unread messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of void</returns>
@@ -8194,7 +8194,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close read chats &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeReadChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close all chats that have no unread messages.
+        /// Close read chats Close all chats that have no unread messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse</returns>
@@ -8249,7 +8249,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close sub-account &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Close sub-account 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -8260,7 +8260,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close sub-account &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Close sub-account 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -8320,7 +8320,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close sub-account &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Close sub-account 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -8332,7 +8332,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Close sub-account &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Close sub-account 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -8392,7 +8392,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add a new contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/createContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Add a new contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactInputObject"></param>
@@ -8404,7 +8404,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add a new contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/createContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Add a new contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactInputObject"></param>
@@ -8472,7 +8472,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add a new contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/createContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Add a new contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactInputObject"></param>
@@ -8485,7 +8485,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add a new contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/createContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Add a new contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactInputObject"></param>
@@ -8553,7 +8553,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Create a new contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Create a new contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactNoteInputObject"></param>
@@ -8566,7 +8566,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Create a new contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Create a new contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactNoteInputObject"></param>
@@ -8639,7 +8639,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Create a new contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Create a new contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactNoteInputObject"></param>
@@ -8653,7 +8653,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Create a new contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Create a new contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createContactNoteInputObject"></param>
@@ -8726,7 +8726,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add a new custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Add a new custom field 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCustomFieldInputObject"></param>
@@ -8738,7 +8738,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add a new custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Add a new custom field 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCustomFieldInputObject"></param>
@@ -8806,7 +8806,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add a new custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Add a new custom field 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCustomFieldInputObject"></param>
@@ -8819,7 +8819,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add a new custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Add a new custom field 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCustomFieldInputObject"></param>
@@ -8887,7 +8887,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Create a new list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/createList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Create a new list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createListInputObject"></param>
@@ -8899,7 +8899,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Create a new list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/createList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Create a new list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createListInputObject"></param>
@@ -8967,7 +8967,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Create a new list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/createList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Create a new list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createListInputObject"></param>
@@ -8980,7 +8980,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Create a new list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/createList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Create a new list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createListInputObject"></param>
@@ -9048,7 +9048,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Create a template &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/createTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
+        /// Create a template There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createTemplateInputObject"></param>
@@ -9060,7 +9060,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Create a template &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/createTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
+        /// Create a template There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createTemplateInputObject"></param>
@@ -9128,7 +9128,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Create a template &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/createTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
+        /// Create a template There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createTemplateInputObject"></param>
@@ -9141,7 +9141,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Create a template &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/createTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
+        /// Create a template There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createTemplateInputObject"></param>
@@ -9209,7 +9209,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete contacts (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns></returns>
@@ -9219,7 +9219,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete contacts (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -9274,7 +9274,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete contacts (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of void</returns>
@@ -9285,7 +9285,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete contacts (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse</returns>
@@ -9340,7 +9340,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete all messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete all messages.
+        /// Delete all messages Delete all messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns></returns>
@@ -9350,7 +9350,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete all messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete all messages.
+        /// Delete all messages Delete all messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -9405,7 +9405,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete all messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete all messages.
+        /// Delete all messages Delete all messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of void</returns>
@@ -9416,7 +9416,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete all messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete all messages.
+        /// Delete all messages Delete all messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse</returns>
@@ -9471,7 +9471,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/deleteAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns></returns>
@@ -9481,7 +9481,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/deleteAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -9536,7 +9536,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/deleteAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of void</returns>
@@ -9547,7 +9547,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/deleteAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse</returns>
@@ -9602,7 +9602,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chat messages by ID(s) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete messages from chat by given message IDs.
+        /// Delete chat messages by ID(s) Delete messages from chat by given message IDs.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -9614,7 +9614,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chat messages by ID(s) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete messages from chat by given message IDs.
+        /// Delete chat messages by ID(s) Delete messages from chat by given message IDs.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -9686,7 +9686,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chat messages by ID(s) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete messages from chat by given message IDs.
+        /// Delete chat messages by ID(s) Delete messages from chat by given message IDs.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -9699,7 +9699,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chat messages by ID(s) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete messages from chat by given message IDs.
+        /// Delete chat messages by ID(s) Delete messages from chat by given message IDs.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatMessagesBulkInputObject"></param>
@@ -9771,7 +9771,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete chats by given IDs or delete all chats.
+        /// Delete chats (bulk) Delete chats by given IDs or delete all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -9782,7 +9782,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete chats by given IDs or delete all chats.
+        /// Delete chats (bulk) Delete chats by given IDs or delete all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -9849,7 +9849,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete chats by given IDs or delete all chats.
+        /// Delete chats (bulk) Delete chats by given IDs or delete all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -9861,7 +9861,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete chats by given IDs or delete all chats.
+        /// Delete chats (bulk) Delete chats by given IDs or delete all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteChatsBulkInputObject"></param>
@@ -9928,7 +9928,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
+        /// Delete a contact &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -9939,7 +9939,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
+        /// Delete a contact &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -9999,7 +9999,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
+        /// Delete a contact &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10011,7 +10011,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
+        /// Delete a contact &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10071,7 +10071,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10082,7 +10082,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10143,7 +10143,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10155,7 +10155,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10216,7 +10216,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10227,7 +10227,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10287,7 +10287,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10299,7 +10299,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10359,7 +10359,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contact notes (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete contact notes (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10371,7 +10371,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contact notes (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete contact notes (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10443,7 +10443,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contact notes (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete contact notes (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10456,7 +10456,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contact notes (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete contact notes (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10528,7 +10528,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts by IDs (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete contacts by IDs (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContactsByIdsInputObject"></param>
@@ -10539,7 +10539,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts by IDs (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete contacts by IDs (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContactsByIdsInputObject"></param>
@@ -10606,7 +10606,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts by IDs (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete contacts by IDs (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContactsByIdsInputObject"></param>
@@ -10618,7 +10618,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts by IDs (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete contacts by IDs (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContactsByIdsInputObject"></param>
@@ -10685,7 +10685,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unassign contacts from a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+        /// Unassign contacts from a list &gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContacsFromListObject"></param>
@@ -10697,7 +10697,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unassign contacts from a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+        /// Unassign contacts from a list &gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContacsFromListObject"></param>
@@ -10769,7 +10769,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unassign contacts from a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+        /// Unassign contacts from a list &gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContacsFromListObject"></param>
@@ -10782,7 +10782,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unassign contacts from a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+        /// Unassign contacts from a list &gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteContacsFromListObject"></param>
@@ -10854,7 +10854,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
+        /// Delete a custom field &gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10865,7 +10865,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
+        /// Delete a custom field &gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10925,7 +10925,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
+        /// Delete a custom field &gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10937,7 +10937,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
+        /// Delete a custom field &gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10997,7 +10997,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Cancel a dedicated number subscription &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Cancel a dedicated number subscription 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11008,7 +11008,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Cancel a dedicated number subscription &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Cancel a dedicated number subscription 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11068,7 +11068,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Cancel a dedicated number subscription &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Cancel a dedicated number subscription 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11080,7 +11080,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Cancel a dedicated number subscription &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Cancel a dedicated number subscription 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11140,7 +11140,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a single inbound message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// Delete a single inbound message &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -11151,7 +11151,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a single inbound message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// Delete a single inbound message &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -11211,7 +11211,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a single inbound message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// Delete a single inbound message &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -11223,7 +11223,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a single inbound message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// Delete a single inbound message &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -11283,7 +11283,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete inbound messages (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// Delete inbound messages (bulk) &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteInboundMessagesBulkInputObject"></param>
@@ -11294,7 +11294,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete inbound messages (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// Delete inbound messages (bulk) &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteInboundMessagesBulkInputObject"></param>
@@ -11361,7 +11361,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete inbound messages (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// Delete inbound messages (bulk) &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteInboundMessagesBulkInputObject"></param>
@@ -11373,7 +11373,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete inbound messages (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+        /// Delete inbound messages (bulk) &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteInboundMessagesBulkInputObject"></param>
@@ -11440,7 +11440,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
+        /// Delete a list This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11451,7 +11451,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
+        /// Delete a list This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11511,7 +11511,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
+        /// Delete a list This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11523,7 +11523,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
+        /// Delete a list This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11583,7 +11583,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar for a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete an avatar for a list
+        /// Delete an avatar for a list Delete an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11594,7 +11594,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar for a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete an avatar for a list
+        /// Delete an avatar for a list Delete an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11655,7 +11655,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar for a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete an avatar for a list
+        /// Delete an avatar for a list Delete an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11667,7 +11667,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete an avatar for a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete an avatar for a list
+        /// Delete an avatar for a list Delete an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11728,7 +11728,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts from a list (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete contacts from a list (bulk)
+        /// Delete contacts from a list (bulk) Delete contacts from a list (bulk)
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -11740,7 +11740,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts from a list (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete contacts from a list (bulk)
+        /// Delete contacts from a list (bulk) Delete contacts from a list (bulk)
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -11812,7 +11812,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts from a list (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete contacts from a list (bulk)
+        /// Delete contacts from a list (bulk) Delete contacts from a list (bulk)
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -11825,7 +11825,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete contacts from a list (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete contacts from a list (bulk)
+        /// Delete contacts from a list (bulk) Delete contacts from a list (bulk)
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListContactsBulkInputObject"></param>
@@ -11897,7 +11897,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete lists (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete lists (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListsBulkInputObject"></param>
@@ -11908,7 +11908,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete lists (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete lists (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListsBulkInputObject"></param>
@@ -11975,7 +11975,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete lists (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete lists (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListsBulkInputObject"></param>
@@ -11987,7 +11987,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete lists (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete lists (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteListsBulkInputObject"></param>
@@ -12054,7 +12054,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a session &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
+        /// Delete a session Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -12065,7 +12065,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a session &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
+        /// Delete a session Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -12125,7 +12125,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a session &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
+        /// Delete a session Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -12137,7 +12137,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a session &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
+        /// Delete a session Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -12197,7 +12197,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete sessions (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
+        /// Delete sessions (bulk) Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -12208,7 +12208,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete sessions (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
+        /// Delete sessions (bulk) Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -12275,7 +12275,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete sessions (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
+        /// Delete sessions (bulk) Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -12287,7 +12287,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete sessions (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
+        /// Delete sessions (bulk) Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteMessageSessionsBulkInputObject"></param>
@@ -12354,7 +12354,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a single message.
+        /// Delete message Delete a single message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -12365,7 +12365,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a single message.
+        /// Delete message Delete a single message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -12425,7 +12425,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a single message.
+        /// Delete message Delete a single message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -12437,7 +12437,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a single message.
+        /// Delete message Delete a single message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -12497,7 +12497,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete messages (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete outbound messages by the given ID(s) or delete all outbound messages.
+        /// Delete messages (bulk) Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -12508,7 +12508,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete messages (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete outbound messages by the given ID(s) or delete all outbound messages.
+        /// Delete messages (bulk) Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -12575,7 +12575,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete messages (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete outbound messages by the given ID(s) or delete all outbound messages.
+        /// Delete messages (bulk) Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -12587,7 +12587,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete messages (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete outbound messages by the given ID(s) or delete all outbound messages.
+        /// Delete messages (bulk) Delete outbound messages by the given ID(s) or delete all outbound messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteOutboundMessagesBulkInputObject"></param>
@@ -12654,7 +12654,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a single scheduled message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a single scheduled message 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -12665,7 +12665,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a single scheduled message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a single scheduled message 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -12725,7 +12725,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a single scheduled message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a single scheduled message 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -12737,7 +12737,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a single scheduled message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a single scheduled message 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -12797,7 +12797,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete scheduled messages (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete scheduled messages (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteScheduledMessagesBulkInputObject"></param>
@@ -12808,7 +12808,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete scheduled messages (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete scheduled messages (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteScheduledMessagesBulkInputObject"></param>
@@ -12875,7 +12875,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete scheduled messages (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete scheduled messages (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteScheduledMessagesBulkInputObject"></param>
@@ -12887,7 +12887,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete scheduled messages (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete scheduled messages (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteScheduledMessagesBulkInputObject"></param>
@@ -12954,7 +12954,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a Sender ID &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a Sender ID 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -12965,7 +12965,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a Sender ID &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a Sender ID 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -13025,7 +13025,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a Sender ID &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a Sender ID 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -13037,7 +13037,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a Sender ID &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a Sender ID 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -13097,7 +13097,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a template &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a template 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -13108,7 +13108,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a template &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a template 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -13168,7 +13168,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a template &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a template 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -13180,7 +13180,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete a template &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Delete a template 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -13240,7 +13240,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete templates (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete templates by given IDs or delete all templates.
+        /// Delete templates (bulk) Delete templates by given IDs or delete all templates.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -13251,7 +13251,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete templates (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete templates by given IDs or delete all templates.
+        /// Delete templates (bulk) Delete templates by given IDs or delete all templates.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -13318,7 +13318,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete templates (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete templates by given IDs or delete all templates.
+        /// Delete templates (bulk) Delete templates by given IDs or delete all templates.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -13330,7 +13330,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Delete templates (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete templates by given IDs or delete all templates.
+        /// Delete templates (bulk) Delete templates by given IDs or delete all templates.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteTemplatesBulkInputObject"></param>
@@ -13397,7 +13397,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Carrier Lookup &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
+        /// Carrier Lookup This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
@@ -13410,7 +13410,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Carrier Lookup &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
+        /// Carrier Lookup This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
@@ -13473,7 +13473,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Carrier Lookup &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
+        /// Carrier Lookup This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
@@ -13487,7 +13487,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Carrier Lookup &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
+        /// Carrier Lookup This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). </param>
@@ -13550,7 +13550,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Email Lookup &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// Email Lookup To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -13562,7 +13562,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Email Lookup &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// Email Lookup To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -13623,7 +13623,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Email Lookup &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// Email Lookup To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -13636,7 +13636,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Email Lookup &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+        /// Email Lookup To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="email">Email address.</param>
@@ -13697,7 +13697,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all bulk sessions &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all bulk sessions 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -13710,7 +13710,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all bulk sessions &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all bulk sessions 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -13770,7 +13770,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all bulk sessions &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all bulk sessions 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -13784,7 +13784,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all bulk sessions &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all bulk sessions 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -13844,7 +13844,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all chats &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getAllChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all chats 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="status">Fetch only (a)ctive, (c)losed or (d)eleted chats. (optional)</param>
@@ -13861,7 +13861,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all chats &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getAllChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all chats 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="status">Fetch only (a)ctive, (c)losed or (d)eleted chats. (optional)</param>
@@ -13929,7 +13929,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all chats &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getAllChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all chats 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="status">Fetch only (a)ctive, (c)losed or (d)eleted chats. (optional)</param>
@@ -13947,7 +13947,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all chats &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getAllChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all chats 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="status">Fetch only (a)ctive, (c)losed or (d)eleted chats. (optional)</param>
@@ -14015,7 +14015,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all inbound messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all inbound messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14030,7 +14030,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all inbound messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all inbound messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14094,7 +14094,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all inbound messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all inbound messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14110,7 +14110,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all inbound messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all inbound messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14174,7 +14174,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all sessions &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
+        /// Get all sessions Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14187,7 +14187,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all sessions &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
+        /// Get all sessions Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14247,7 +14247,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all sessions &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
+        /// Get all sessions Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14261,7 +14261,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all sessions &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
+        /// Get all sessions Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14321,7 +14321,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all user oubound messages.
+        /// Get all messages Get all user oubound messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14335,7 +14335,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all user oubound messages.
+        /// Get all messages Get all user oubound messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14397,7 +14397,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all user oubound messages.
+        /// Get all messages Get all user oubound messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14412,7 +14412,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all user oubound messages.
+        /// Get all messages Get all user oubound messages.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14474,7 +14474,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all scheduled messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all scheduled messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14490,7 +14490,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all scheduled messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all scheduled messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14556,7 +14556,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all scheduled messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all scheduled messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14573,7 +14573,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all scheduled messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all scheduled messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -14639,7 +14639,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all templates &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all templates 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional)</param>
@@ -14652,7 +14652,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all templates &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all templates 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional)</param>
@@ -14712,7 +14712,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all templates &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all templates 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional)</param>
@@ -14726,7 +14726,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all templates &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all templates 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional)</param>
@@ -14786,7 +14786,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find dedicated numbers available for purchase &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find dedicated numbers available for purchase 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter dedicated number country ISO code.</param>
@@ -14800,7 +14800,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find dedicated numbers available for purchase &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find dedicated numbers available for purchase 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter dedicated number country ISO code.</param>
@@ -14865,7 +14865,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find dedicated numbers available for purchase &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find dedicated numbers available for purchase 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter dedicated number country ISO code.</param>
@@ -14880,7 +14880,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find dedicated numbers available for purchase &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find dedicated numbers available for purchase 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter dedicated number country ISO code.</param>
@@ -14945,7 +14945,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get available sender settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
+        /// Get available sender settings Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -14957,7 +14957,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get available sender settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
+        /// Get available sender settings Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -15015,7 +15015,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get available sender settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
+        /// Get available sender settings Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -15028,7 +15028,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get available sender settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
+        /// Get available sender settings Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)</param>
@@ -15086,7 +15086,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetBalanceNotificationOptionsResponse</returns>
@@ -15097,7 +15097,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetBalanceNotificationOptionsResponse</returns>
@@ -15153,7 +15153,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetBalanceNotificationOptionsResponse</returns>
@@ -15165,7 +15165,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetBalanceNotificationOptionsResponse)</returns>
@@ -15221,7 +15221,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get balance notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get balance notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetBalanceNotificationSettingsResponse</returns>
@@ -15232,7 +15232,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get balance notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get balance notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetBalanceNotificationSettingsResponse</returns>
@@ -15288,7 +15288,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get balance notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get balance notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetBalanceNotificationSettingsResponse</returns>
@@ -15300,7 +15300,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get balance notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get balance notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetBalanceNotificationSettingsResponse)</returns>
@@ -15356,7 +15356,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get blocked contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get blocked contacts 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -15372,7 +15372,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get blocked contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get blocked contacts 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -15438,7 +15438,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get blocked contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get blocked contacts 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -15455,7 +15455,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get blocked contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get blocked contacts 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -15521,7 +15521,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get bulk session status &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get bulk session status 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -15533,7 +15533,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get bulk session status &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get bulk session status 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -15594,7 +15594,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get bulk session status &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get bulk session status 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -15607,7 +15607,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get bulk session status &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get bulk session status 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -15668,7 +15668,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Fetch callback URL settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Fetch callback URL settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetCallbackSettingsResponse</returns>
@@ -15679,7 +15679,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Fetch callback URL settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Fetch callback URL settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetCallbackSettingsResponse</returns>
@@ -15735,7 +15735,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Fetch callback URL settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Fetch callback URL settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetCallbackSettingsResponse</returns>
@@ -15747,7 +15747,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Fetch callback URL settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Fetch callback URL settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetCallbackSettingsResponse)</returns>
@@ -15803,7 +15803,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single chat &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a single chat 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -15815,7 +15815,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single chat &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a single chat 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -15876,7 +15876,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single chat &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a single chat 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -15889,7 +15889,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single chat &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a single chat 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -15950,7 +15950,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats by phone &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find chats by phone 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -15964,7 +15964,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats by phone &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find chats by phone 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -16029,7 +16029,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats by phone &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find chats by phone 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -16044,7 +16044,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats by phone &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find chats by phone 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -16109,7 +16109,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get chat messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get chat messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -16128,7 +16128,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get chat messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get chat messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -16203,7 +16203,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get chat messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get chat messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -16223,7 +16223,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get chat messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get chat messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -16298,7 +16298,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Contact ID.</param>
@@ -16310,7 +16310,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Contact ID.</param>
@@ -16371,7 +16371,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Contact ID.</param>
@@ -16384,7 +16384,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Contact ID.</param>
@@ -16445,7 +16445,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific contact by phone number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific contact by phone number 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -16457,7 +16457,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific contact by phone number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific contact by phone number 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -16518,7 +16518,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific contact by phone number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific contact by phone number 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -16531,7 +16531,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific contact by phone number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific contact by phone number 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone"></param>
@@ -16592,7 +16592,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Check if a phone number is blocked &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Check if a phone number is blocked 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number to check.</param>
@@ -16604,7 +16604,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Check if a phone number is blocked &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Check if a phone number is blocked 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number to check.</param>
@@ -16665,7 +16665,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Check if a phone number is blocked &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Check if a phone number is blocked 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number to check.</param>
@@ -16678,7 +16678,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Check if a phone number is blocked &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Check if a phone number is blocked 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="phone">Phone number to check.</param>
@@ -16739,7 +16739,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Check import progress &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contact import session progress.
+        /// Check import progress Get contact import session progress.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -16751,7 +16751,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Check import progress &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contact import session progress.
+        /// Check import progress Get contact import session progress.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -16812,7 +16812,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Check import progress &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contact import session progress.
+        /// Check import progress Get contact import session progress.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -16825,7 +16825,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Check import progress &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contact import session progress.
+        /// Check import progress Get contact import session progress.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -16886,7 +16886,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -16898,7 +16898,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -16959,7 +16959,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -16972,7 +16972,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -17033,7 +17033,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Fetch notes assigned to a given contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Fetch notes assigned to a given contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -17047,7 +17047,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Fetch notes assigned to a given contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Fetch notes assigned to a given contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -17112,7 +17112,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Fetch notes assigned to a given contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Fetch notes assigned to a given contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -17127,7 +17127,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Fetch notes assigned to a given contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Fetch notes assigned to a given contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -17192,7 +17192,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all contacts 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -17208,7 +17208,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all contacts 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -17274,7 +17274,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all contacts 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -17291,7 +17291,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all contacts 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -17357,7 +17357,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get contacts autocomplete suggestions &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contacts autocomplete suggestions by given search terms.
+        /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search terms.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
@@ -17371,7 +17371,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get contacts autocomplete suggestions &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contacts autocomplete suggestions by given search terms.
+        /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search terms.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
@@ -17436,7 +17436,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get contacts autocomplete suggestions &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contacts autocomplete suggestions by given search terms.
+        /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search terms.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
@@ -17451,7 +17451,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get contacts autocomplete suggestions &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contacts autocomplete suggestions by given search terms.
+        /// Get contacts autocomplete suggestions Get contacts autocomplete suggestions by given search terms.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="query">Find recipients by specified search query.</param>
@@ -17516,7 +17516,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts in a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+        /// Get all contacts in a list A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Given group ID.</param>
@@ -17532,7 +17532,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts in a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+        /// Get all contacts in a list A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Given group ID.</param>
@@ -17601,7 +17601,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts in a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+        /// Get all contacts in a list A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Given group ID.</param>
@@ -17618,7 +17618,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contacts in a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+        /// Get all contacts in a list A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Given group ID.</param>
@@ -17687,7 +17687,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get countries &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get countries 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetCountriesResponse</returns>
@@ -17698,7 +17698,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get countries &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get countries 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetCountriesResponse</returns>
@@ -17754,7 +17754,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get countries &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get countries 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetCountriesResponse</returns>
@@ -17766,7 +17766,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get countries &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get countries 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetCountriesResponse)</returns>
@@ -17822,7 +17822,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get current account information &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/getCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get current account information 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>User</returns>
@@ -17833,7 +17833,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get current account information &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/getCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get current account information 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of User</returns>
@@ -17889,7 +17889,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get current account information &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/getCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get current account information 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of User</returns>
@@ -17901,7 +17901,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get current account information &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/getCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get current account information 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (User)</returns>
@@ -17957,7 +17957,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific custom field 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -17969,7 +17969,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific custom field 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -18030,7 +18030,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific custom field 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -18043,7 +18043,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific custom field 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -18104,7 +18104,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all custom fields &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all custom fields 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -18117,7 +18117,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all custom fields &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all custom fields 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -18177,7 +18177,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all custom fields &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all custom fields 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -18191,7 +18191,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all custom fields &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all custom fields 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -18251,7 +18251,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific dedicated number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific dedicated number 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -18263,7 +18263,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific dedicated number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific dedicated number 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -18324,7 +18324,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific dedicated number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific dedicated number 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -18337,7 +18337,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific dedicated number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific dedicated number 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -18398,7 +18398,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get favorite contacts and lists &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getFavorites\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get favorite contacts and lists 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -18412,7 +18412,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get favorite contacts and lists &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getFavorites\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get favorite contacts and lists 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -18474,7 +18474,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get favorite contacts and lists &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getFavorites\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get favorite contacts and lists 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -18489,7 +18489,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get favorite contacts and lists &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getFavorites\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get favorite contacts and lists 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -18551,7 +18551,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single inbound message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a single inbound message 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -18563,7 +18563,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single inbound message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a single inbound message 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -18624,7 +18624,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single inbound message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a single inbound message 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -18637,7 +18637,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single inbound message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a single inbound message 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The unique numeric ID for the inbound message.</param>
@@ -18698,7 +18698,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get inbound messages notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get inbound messages notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetInboundMessagesNotificationSettingsResponse</returns>
@@ -18709,7 +18709,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get inbound messages notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get inbound messages notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetInboundMessagesNotificationSettingsResponse</returns>
@@ -18765,7 +18765,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get inbound messages notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get inbound messages notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetInboundMessagesNotificationSettingsResponse</returns>
@@ -18777,7 +18777,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get inbound messages notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get inbound messages notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetInboundMessagesNotificationSettingsResponse)</returns>
@@ -18833,7 +18833,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all invoices &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Invoices/getInvoices\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;With the TextMagic API, you can check the invoices and transactions for your account.
+        /// Get all invoices With the TextMagic API, you can check the invoices and transactions for your account.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -18846,7 +18846,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all invoices &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Invoices/getInvoices\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;With the TextMagic API, you can check the invoices and transactions for your account.
+        /// Get all invoices With the TextMagic API, you can check the invoices and transactions for your account.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -18906,7 +18906,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all invoices &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Invoices/getInvoices\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;With the TextMagic API, you can check the invoices and transactions for your account.
+        /// Get all invoices With the TextMagic API, you can check the invoices and transactions for your account.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -18920,7 +18920,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all invoices &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Invoices/getInvoices\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;With the TextMagic API, you can check the invoices and transactions for your account.
+        /// Get all invoices With the TextMagic API, you can check the invoices and transactions for your account.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -18980,7 +18980,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -18992,7 +18992,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19053,7 +19053,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19066,7 +19066,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19127,7 +19127,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contact IDs in a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all contact IDs in a list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19139,7 +19139,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contact IDs in a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all contact IDs in a list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19200,7 +19200,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contact IDs in a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all contact IDs in a list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19213,7 +19213,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all contact IDs in a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all contact IDs in a list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19274,7 +19274,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all lists &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all lists 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
@@ -19291,7 +19291,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all lists &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all lists 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
@@ -19359,7 +19359,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all lists &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all lists 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
@@ -19377,7 +19377,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all lists &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all lists 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">The current fetched page. (optional, default to 1)</param>
@@ -19445,7 +19445,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a contact&#39;s lists &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all the lists in which a contact is included.
+        /// Get a contact&#39;s lists Get all the lists in which a contact is included.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19459,7 +19459,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a contact&#39;s lists &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all the lists in which a contact is included.
+        /// Get a contact&#39;s lists Get all the lists in which a contact is included.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19524,7 +19524,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a contact&#39;s lists &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all the lists in which a contact is included.
+        /// Get a contact&#39;s lists Get all the lists in which a contact is included.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19539,7 +19539,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a contact&#39;s lists &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all the lists in which a contact is included.
+        /// Get a contact&#39;s lists Get all the lists in which a contact is included.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -19604,7 +19604,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Preview message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Preview message Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -19618,7 +19618,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
@@ -19632,7 +19632,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Preview message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Preview message Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -19646,7 +19646,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
@@ -19722,7 +19722,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Preview message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Preview message Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -19736,7 +19736,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
@@ -19751,7 +19751,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Preview message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Preview message Get a messages preview (with tags merged) of up to 100 messages per session.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -19765,7 +19765,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send Text-to-Speech message. (optional, default to 0)</param>
@@ -19841,7 +19841,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Check message price &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check pricing for a new outbound message.
+        /// Check message price Check pricing for a new outbound message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
@@ -19856,7 +19856,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
@@ -19870,7 +19870,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Check message price &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check pricing for a new outbound message.
+        /// Check message price Check pricing for a new outbound message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
@@ -19885,7 +19885,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
@@ -19962,7 +19962,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Check message price &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check pricing for a new outbound message.
+        /// Check message price Check pricing for a new outbound message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
@@ -19977,7 +19977,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
@@ -19992,7 +19992,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Check message price &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check pricing for a new outbound message.
+        /// Check message price Check pricing for a new outbound message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="includeBlocked">Should we show the pricing for blocked contacts? (optional, default to 0)</param>
@@ -20007,7 +20007,7 @@ namespace TextMagicClient.Api
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional, default to 0)</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional, default to 6)</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure. (optional)</param>
-        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)</param>
+        /// <param name="from">One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional)</param>
         /// <param name="rule">An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)</param>
         /// <param name="createChat">Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)</param>
         /// <param name="tts">Send a Text-to-Speech message. (optional, default to 0)</param>
@@ -20084,7 +20084,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session&#x60;s details &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a specific session’s details.
+        /// Get a session&#x60;s details Get a specific session’s details.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Session ID.</param>
@@ -20096,7 +20096,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session&#x60;s details &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a specific session’s details.
+        /// Get a session&#x60;s details Get a specific session’s details.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Session ID.</param>
@@ -20157,7 +20157,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session&#x60;s details &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a specific session’s details.
+        /// Get a session&#x60;s details Get a specific session’s details.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Session ID.</param>
@@ -20170,7 +20170,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session&#x60;s details &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a specific session’s details.
+        /// Get a session&#x60;s details Get a specific session’s details.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Session ID.</param>
@@ -20231,7 +20231,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session&#x60;s statistics &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a session&#x60;s statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -20244,7 +20244,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session&#x60;s statistics &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a session&#x60;s statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -20307,7 +20307,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session&#x60;s statistics &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a session&#x60;s statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -20321,7 +20321,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session&#x60;s statistics &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a session&#x60;s statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -20384,7 +20384,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session&#x60;s messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
+        /// Get a session&#x60;s messages A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -20400,7 +20400,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session&#x60;s messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
+        /// Get a session&#x60;s messages A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -20469,7 +20469,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session&#x60;s messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
+        /// Get a session&#x60;s messages A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -20486,7 +20486,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a session&#x60;s messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
+        /// Get a session&#x60;s messages A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -20555,7 +20555,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get sent/received messages counters values &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get total contacts, sent messages and received messages counters values.
+        /// Get sent/received messages counters values Get total contacts, sent messages and received messages counters values.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetMessagingCountersResponse</returns>
@@ -20566,7 +20566,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get sent/received messages counters values &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get total contacts, sent messages and received messages counters values.
+        /// Get sent/received messages counters values Get total contacts, sent messages and received messages counters values.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetMessagingCountersResponse</returns>
@@ -20622,7 +20622,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get sent/received messages counters values &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get total contacts, sent messages and received messages counters values.
+        /// Get sent/received messages counters values Get total contacts, sent messages and received messages counters values.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetMessagingCountersResponse</returns>
@@ -20634,7 +20634,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get sent/received messages counters values &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get total contacts, sent messages and received messages counters values.
+        /// Get sent/received messages counters values Get total contacts, sent messages and received messages counters values.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetMessagingCountersResponse)</returns>
@@ -20690,7 +20690,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get messaging statistics &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get messaging statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
@@ -20704,7 +20704,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get messaging statistics &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get messaging statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
@@ -20766,7 +20766,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get messaging statistics &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get messaging statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
@@ -20781,7 +20781,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get messaging statistics &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get messaging statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="by">*   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)</param>
@@ -20843,7 +20843,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single outgoing message.
+        /// Get a single message Get a single outgoing message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -20855,7 +20855,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single outgoing message.
+        /// Get a single message Get a single outgoing message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -20916,7 +20916,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single outgoing message.
+        /// Get a single message Get a single outgoing message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -20929,7 +20929,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single outgoing message.
+        /// Get a single message Get a single outgoing message.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -20990,7 +20990,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get history &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the outbound messages history.
+        /// Get history Get the outbound messages history.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
@@ -21006,7 +21006,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get history &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the outbound messages history.
+        /// Get history Get the outbound messages history.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
@@ -21072,7 +21072,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get history &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the outbound messages history.
+        /// Get history Get the outbound messages history.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
@@ -21089,7 +21089,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get history &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the outbound messages history.
+        /// Get history Get the outbound messages history.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
@@ -21155,7 +21155,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single scheduled message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a single scheduled message 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -21167,7 +21167,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single scheduled message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a single scheduled message 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -21228,7 +21228,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single scheduled message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a single scheduled message 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -21241,7 +21241,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a single scheduled message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a single scheduled message 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -21302,7 +21302,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific Sender ID &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific Sender ID 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -21314,7 +21314,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific Sender ID &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific Sender ID 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -21375,7 +21375,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific Sender ID &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific Sender ID 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -21388,7 +21388,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific Sender ID &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific Sender ID 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -21449,7 +21449,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all your approved Sender IDs &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all your approved Sender IDs 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -21462,7 +21462,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all your approved Sender IDs &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all your approved Sender IDs 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -21522,7 +21522,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all your approved Sender IDs &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all your approved Sender IDs 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -21536,7 +21536,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all your approved Sender IDs &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all your approved Sender IDs 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -21596,7 +21596,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get current sender settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get current sender settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
@@ -21608,7 +21608,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get current sender settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get current sender settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
@@ -21666,7 +21666,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get current sender settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get current sender settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
@@ -21679,7 +21679,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get current sender settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get current sender settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="country">Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)</param>
@@ -21737,7 +21737,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get spending statistics &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get spending statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -21752,7 +21752,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get spending statistics &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get spending statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -21816,7 +21816,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get spending statistics &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get spending statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -21832,7 +21832,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get spending statistics &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get spending statistics 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -21896,7 +21896,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get sub-account information &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get sub-account information 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -21908,7 +21908,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get sub-account information &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get sub-account information 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -21969,7 +21969,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get sub-account information &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get sub-account information 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -21982,7 +21982,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get sub-account information &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get sub-account information 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -22043,7 +22043,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a sub-accounts list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a sub-accounts list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -22056,7 +22056,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a sub-accounts list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a sub-accounts list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -22116,7 +22116,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a sub-accounts list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a sub-accounts list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -22130,7 +22130,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a sub-accounts list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get a sub-accounts list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -22190,7 +22190,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all sub-accounts with their REST API tokens associated with a specified app name &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+        /// Get all sub-accounts with their REST API tokens associated with a specified app name Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="getSubaccountsWithTokensInputObject"></param>
@@ -22204,7 +22204,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all sub-accounts with their REST API tokens associated with a specified app name &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+        /// Get all sub-accounts with their REST API tokens associated with a specified app name Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="getSubaccountsWithTokensInputObject"></param>
@@ -22276,7 +22276,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all sub-accounts with their REST API tokens associated with a specified app name &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+        /// Get all sub-accounts with their REST API tokens associated with a specified app name Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="getSubaccountsWithTokensInputObject"></param>
@@ -22291,7 +22291,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all sub-accounts with their REST API tokens associated with a specified app name &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+        /// Get all sub-accounts with their REST API tokens associated with a specified app name Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="getSubaccountsWithTokensInputObject"></param>
@@ -22363,7 +22363,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a template&#x60;s details &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single template.
+        /// Get a template&#x60;s details Get a single template.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -22375,7 +22375,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a template&#x60;s details &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single template.
+        /// Get a template&#x60;s details Get a single template.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -22436,7 +22436,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a template&#x60;s details &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single template.
+        /// Get a template&#x60;s details Get a single template.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -22449,7 +22449,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get a template&#x60;s details &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single template.
+        /// Get a template&#x60;s details Get a single template.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -22510,7 +22510,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get timezones &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Return all available timezone IDs
+        /// Get timezones Return all available timezone IDs
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
@@ -22522,7 +22522,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get timezones &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Return all available timezone IDs
+        /// Get timezones Return all available timezone IDs
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
@@ -22580,7 +22580,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get timezones &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Return all available timezone IDs
+        /// Get timezones Return all available timezone IDs
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
@@ -22593,7 +22593,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get timezones &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Return all available timezone IDs
+        /// Get timezones Return all available timezone IDs
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="full">Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)</param>
@@ -22651,7 +22651,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get unread messages number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the total amount of unread messages in the current user chats.
+        /// Get unread messages number Get the total amount of unread messages in the current user chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetUnreadMessagesTotalResponse</returns>
@@ -22662,7 +22662,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get unread messages number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the total amount of unread messages in the current user chats.
+        /// Get unread messages number Get the total amount of unread messages in the current user chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetUnreadMessagesTotalResponse</returns>
@@ -22718,7 +22718,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get unread messages number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the total amount of unread messages in the current user chats.
+        /// Get unread messages number Get the total amount of unread messages in the current user chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of GetUnreadMessagesTotalResponse</returns>
@@ -22730,7 +22730,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get unread messages number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the total amount of unread messages in the current user chats.
+        /// Get unread messages number Get the total amount of unread messages in the current user chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (GetUnreadMessagesTotalResponse)</returns>
@@ -22786,7 +22786,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific unsubscribed contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific unsubscribed contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -22798,7 +22798,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific unsubscribed contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific unsubscribed contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -22859,7 +22859,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific unsubscribed contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific unsubscribed contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -22872,7 +22872,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get the details of a specific unsubscribed contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get the details of a specific unsubscribed contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -22933,7 +22933,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all unsubscribed contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
+        /// Get all unsubscribed contacts When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -22946,7 +22946,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all unsubscribed contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
+        /// Get all unsubscribed contacts When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -23006,7 +23006,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all unsubscribed contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
+        /// Get all unsubscribed contacts When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -23020,7 +23020,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all unsubscribed contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
+        /// Get all unsubscribed contacts When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -23080,7 +23080,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all your dedicated numbers &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all your dedicated numbers 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -23094,7 +23094,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all your dedicated numbers &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all your dedicated numbers 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -23156,7 +23156,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all your dedicated numbers &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all your dedicated numbers 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -23171,7 +23171,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Get all your dedicated numbers &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Get all your dedicated numbers 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -23233,7 +23233,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Import contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/importContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Import contacts from the CSV, XLS or XLSX file.
+        /// Import contacts Import contacts from the CSV, XLS or XLSX file.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats.</param>
@@ -23248,7 +23248,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Import contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/importContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Import contacts from the CSV, XLS or XLSX file.
+        /// Import contacts Import contacts from the CSV, XLS or XLSX file.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats.</param>
@@ -23318,7 +23318,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Import contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/importContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Import contacts from the CSV, XLS or XLSX file.
+        /// Import contacts Import contacts from the CSV, XLS or XLSX file.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats.</param>
@@ -23334,7 +23334,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Import contacts &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/importContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Import contacts from the CSV, XLS or XLSX file.
+        /// Import contacts Import contacts from the CSV, XLS or XLSX file.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File containing contacts in csv or xls(x) formats.</param>
@@ -23404,7 +23404,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Invite a new sub-account &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Invite a new sub-account 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inviteSubaccountInputObject"></param>
@@ -23415,7 +23415,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Invite a new sub-account &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Invite a new sub-account 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inviteSubaccountInputObject"></param>
@@ -23482,7 +23482,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Invite a new sub-account &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Invite a new sub-account 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inviteSubaccountInputObject"></param>
@@ -23494,7 +23494,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Invite a new sub-account &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Invite a new sub-account 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inviteSubaccountInputObject"></param>
@@ -23561,7 +23561,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as read (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as read by chat IDs or mark all chats as read
+        /// Mark chats as read (bulk) Mark several chats as read by chat IDs or mark all chats as read
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -23572,7 +23572,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as read (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as read by chat IDs or mark all chats as read
+        /// Mark chats as read (bulk) Mark several chats as read by chat IDs or mark all chats as read
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -23639,7 +23639,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as read (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as read by chat IDs or mark all chats as read
+        /// Mark chats as read (bulk) Mark several chats as read by chat IDs or mark all chats as read
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -23651,7 +23651,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as read (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as read by chat IDs or mark all chats as read
+        /// Mark chats as read (bulk) Mark several chats as read by chat IDs or mark all chats as read
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsReadBulkInputObject"></param>
@@ -23718,7 +23718,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as unread (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as UNread by chat IDs or mark all chats as UNread
+        /// Mark chats as unread (bulk) Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -23729,7 +23729,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as unread (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as UNread by chat IDs or mark all chats as UNread
+        /// Mark chats as unread (bulk) Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -23796,7 +23796,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as unread (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as UNread by chat IDs or mark all chats as UNread
+        /// Mark chats as unread (bulk) Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -23808,7 +23808,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mark chats as unread (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as UNread by chat IDs or mark all chats as UNread
+        /// Mark chats as unread (bulk) Mark several chats as UNread by chat IDs or mark all chats as UNread
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="markChatsUnreadBulkInputObject"></param>
@@ -23875,7 +23875,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chat sounds &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Mute chat sounds 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatInputObject"></param>
@@ -23887,7 +23887,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chat sounds &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Mute chat sounds 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatInputObject"></param>
@@ -23955,7 +23955,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chat sounds &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Mute chat sounds 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatInputObject"></param>
@@ -23968,7 +23968,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chat sounds &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Mute chat sounds 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatInputObject"></param>
@@ -24036,7 +24036,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mute several chats by chat ids or mute all chats.
+        /// Mute chats (bulk) Mute several chats by chat ids or mute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -24047,7 +24047,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mute several chats by chat ids or mute all chats.
+        /// Mute chats (bulk) Mute several chats by chat ids or mute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -24114,7 +24114,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mute several chats by chat ids or mute all chats.
+        /// Mute chats (bulk) Mute several chats by chat ids or mute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -24126,7 +24126,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Mute chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mute several chats by chat ids or mute all chats.
+        /// Mute chats (bulk) Mute several chats by chat ids or mute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="muteChatsBulkInputObject"></param>
@@ -24193,7 +24193,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Ping &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Make a simple ping request.
+        /// Ping Make a simple ping request.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>PingResponse</returns>
@@ -24204,7 +24204,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Ping &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Make a simple ping request.
+        /// Ping Make a simple ping request.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of PingResponse</returns>
@@ -24260,7 +24260,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Ping &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Make a simple ping request.
+        /// Ping Make a simple ping request.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of PingResponse</returns>
@@ -24272,7 +24272,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Ping &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Make a simple ping request.
+        /// Ping Make a simple ping request.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (PingResponse)</returns>
@@ -24328,7 +24328,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Reopen chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Reopen chats by chat IDs or reopen all chats
+        /// Reopen chats (bulk) Reopen chats by chat IDs or reopen all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -24339,7 +24339,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Reopen chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Reopen chats by chat IDs or reopen all chats
+        /// Reopen chats (bulk) Reopen chats by chat IDs or reopen all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -24406,7 +24406,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Reopen chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Reopen chats by chat IDs or reopen all chats
+        /// Reopen chats (bulk) Reopen chats by chat IDs or reopen all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -24418,7 +24418,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Reopen chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Reopen chats by chat IDs or reopen all chats
+        /// Reopen chats (bulk) Reopen chats by chat IDs or reopen all chats
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reopenChatsBulkInputObject"></param>
@@ -24485,7 +24485,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Request a new REST API token for sub-account &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Returning user object, key and app name.
+        /// Request a new REST API token for sub-account Returning user object, key and app name.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestNewSubaccountTokenInputObject"></param>
@@ -24497,7 +24497,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Request a new REST API token for sub-account &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Returning user object, key and app name.
+        /// Request a new REST API token for sub-account Returning user object, key and app name.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestNewSubaccountTokenInputObject"></param>
@@ -24565,7 +24565,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Request a new REST API token for sub-account &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Returning user object, key and app name.
+        /// Request a new REST API token for sub-account Returning user object, key and app name.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestNewSubaccountTokenInputObject"></param>
@@ -24578,7 +24578,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Request a new REST API token for sub-account &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Returning user object, key and app name.
+        /// Request a new REST API token for sub-account Returning user object, key and app name.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestNewSubaccountTokenInputObject"></param>
@@ -24646,7 +24646,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Apply for a new Sender ID &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Sender IDs are shared among all of your sub-accounts.
+        /// Apply for a new Sender ID &gt; Sender IDs are shared among all of your sub-accounts.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -24658,7 +24658,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Apply for a new Sender ID &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Sender IDs are shared among all of your sub-accounts.
+        /// Apply for a new Sender ID &gt; Sender IDs are shared among all of your sub-accounts.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -24726,7 +24726,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Apply for a new Sender ID &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Sender IDs are shared among all of your sub-accounts.
+        /// Apply for a new Sender ID &gt; Sender IDs are shared among all of your sub-accounts.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -24739,7 +24739,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Apply for a new Sender ID &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Sender IDs are shared among all of your sub-accounts.
+        /// Apply for a new Sender ID &gt; Sender IDs are shared among all of your sub-accounts.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestSenderIdInputObject"></param>
@@ -24807,7 +24807,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats by message text &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find chats by message text 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -24821,7 +24821,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats by message text &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find chats by message text 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -24883,7 +24883,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats by message text &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find chats by message text 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -24898,7 +24898,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats by message text &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find chats by message text 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -24960,7 +24960,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find chats (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -24974,7 +24974,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find chats (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25036,7 +25036,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find chats (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25051,7 +25051,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find chats (bulk) 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25113,7 +25113,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats by recipient &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find chats by recipient (contact, list name or phone number).
+        /// Find chats by recipient Find chats by recipient (contact, list name or phone number).
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25128,7 +25128,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats by recipient &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find chats by recipient (contact, list name or phone number).
+        /// Find chats by recipient Find chats by recipient (contact, list name or phone number).
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25192,7 +25192,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats by recipient &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find chats by recipient (contact, list name or phone number).
+        /// Find chats by recipient Find chats by recipient (contact, list name or phone number).
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25208,7 +25208,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find chats by recipient &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find chats by recipient (contact, list name or phone number).
+        /// Find chats by recipient Find chats by recipient (contact, list name or phone number).
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25272,7 +25272,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find contacts by given criteria &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/searchContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find contacts by given criteria 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25294,7 +25294,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find contacts by given criteria &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/searchContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find contacts by given criteria 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25372,7 +25372,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find contacts by given criteria &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/searchContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find contacts by given criteria 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25395,7 +25395,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find contacts by given criteria &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/searchContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find contacts by given criteria 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25473,7 +25473,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find inbound messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find inbound messages by given parameters.
+        /// Find inbound messages Find inbound messages by given parameters.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25491,7 +25491,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find inbound messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find inbound messages by given parameters.
+        /// Find inbound messages Find inbound messages by given parameters.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25561,7 +25561,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find inbound messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find inbound messages by given parameters.
+        /// Find inbound messages Find inbound messages by given parameters.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25580,7 +25580,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find inbound messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find inbound messages by given parameters.
+        /// Find inbound messages Find inbound messages by given parameters.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25650,7 +25650,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find lists by given criteria &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/searchLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find lists by given criteria 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25669,7 +25669,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find lists by given criteria &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/searchLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find lists by given criteria 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25741,7 +25741,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find lists by given criteria &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/searchLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find lists by given criteria 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25761,7 +25761,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find lists by given criteria &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/searchLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find lists by given criteria 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25833,7 +25833,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find outbound messages by given parameters.
+        /// Find messages Find outbound messages by given parameters.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25852,7 +25852,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find outbound messages by given parameters.
+        /// Find messages Find outbound messages by given parameters.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25924,7 +25924,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find outbound messages by given parameters.
+        /// Find messages Find outbound messages by given parameters.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -25944,7 +25944,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find outbound messages by given parameters.
+        /// Find messages Find outbound messages by given parameters.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -26016,7 +26016,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find scheduled messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find scheduled messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -26034,7 +26034,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find scheduled messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find scheduled messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -26104,7 +26104,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find scheduled messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find scheduled messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -26123,7 +26123,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find scheduled messages &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Find scheduled messages 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -26193,7 +26193,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find templates by criteria &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/searchTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find user templates by given parameters.
+        /// Find templates by criteria Find user templates by given parameters.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -26209,7 +26209,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find templates by criteria &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/searchTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find user templates by given parameters.
+        /// Find templates by criteria Find user templates by given parameters.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -26275,7 +26275,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find templates by criteria &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/searchTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find user templates by given parameters.
+        /// Find templates by criteria Find user templates by given parameters.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -26292,7 +26292,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Find templates by criteria &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/searchTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find user templates by given parameters.
+        /// Find templates by criteria Find user templates by given parameters.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
@@ -26358,7 +26358,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Send message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This is the main entrypoint to send messages. See the examples above for the reference.
+        /// Send message This is the main entrypoint to send messages. See the examples above for the reference.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -26370,7 +26370,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Send message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This is the main entrypoint to send messages. See the examples above for the reference.
+        /// Send message This is the main entrypoint to send messages. See the examples above for the reference.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -26438,7 +26438,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Send message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This is the main entrypoint to send messages. See the examples above for the reference.
+        /// Send message This is the main entrypoint to send messages. See the examples above for the reference.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -26451,7 +26451,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Send message &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This is the main entrypoint to send messages. See the examples above for the reference.
+        /// Send message This is the main entrypoint to send messages. See the examples above for the reference.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendMessageInputObject"></param>
@@ -26519,7 +26519,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Step 1: Send a verification code  &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Sends a verification code to a specified phone number.
+        /// Step 1: Send a verification code  Sends a verification code to a specified phone number.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendPhoneVerificationCodeInputObject"></param>
@@ -26531,7 +26531,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Step 1: Send a verification code  &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Sends a verification code to a specified phone number.
+        /// Step 1: Send a verification code  Sends a verification code to a specified phone number.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendPhoneVerificationCodeInputObject"></param>
@@ -26599,7 +26599,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Step 1: Send a verification code  &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Sends a verification code to a specified phone number.
+        /// Step 1: Send a verification code  Sends a verification code to a specified phone number.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendPhoneVerificationCodeInputObject"></param>
@@ -26612,7 +26612,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Step 1: Send a verification code  &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Sends a verification code to a specified phone number.
+        /// Step 1: Send a verification code  Sends a verification code to a specified phone number.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="sendPhoneVerificationCodeInputObject"></param>
@@ -26680,7 +26680,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Change chat status &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/setChatStatus\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Set the status of the chat given by ID.
+        /// Change chat status Set the status of the chat given by ID.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -26692,7 +26692,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Change chat status &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/setChatStatus\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Set the status of the chat given by ID.
+        /// Change chat status Set the status of the chat given by ID.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -26760,7 +26760,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Change chat status &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/setChatStatus\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Set the status of the chat given by ID.
+        /// Change chat status Set the status of the chat given by ID.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -26773,7 +26773,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Change chat status &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/setChatStatus\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Set the status of the chat given by ID.
+        /// Change chat status Set the status of the chat given by ID.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="setChatStatusInputObject"></param>
@@ -26841,7 +26841,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unblock a contact by phone number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock a contact by phone number
+        /// Unblock a contact by phone number Unblock a contact by phone number
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactInputObject"></param>
@@ -26852,7 +26852,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unblock a contact by phone number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock a contact by phone number
+        /// Unblock a contact by phone number Unblock a contact by phone number
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactInputObject"></param>
@@ -26919,7 +26919,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unblock a contact by phone number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock a contact by phone number
+        /// Unblock a contact by phone number Unblock a contact by phone number
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactInputObject"></param>
@@ -26931,7 +26931,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unblock a contact by phone number &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock a contact by phone number
+        /// Unblock a contact by phone number Unblock a contact by phone number
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactInputObject"></param>
@@ -26998,7 +26998,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unblock contacts (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock several contacts by blocked contact IDs or unblock all contacts.
+        /// Unblock contacts (bulk) Unblock several contacts by blocked contact IDs or unblock all contacts.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactsBulkInputObject"></param>
@@ -27009,7 +27009,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unblock contacts (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock several contacts by blocked contact IDs or unblock all contacts.
+        /// Unblock contacts (bulk) Unblock several contacts by blocked contact IDs or unblock all contacts.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactsBulkInputObject"></param>
@@ -27076,7 +27076,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unblock contacts (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock several contacts by blocked contact IDs or unblock all contacts.
+        /// Unblock contacts (bulk) Unblock several contacts by blocked contact IDs or unblock all contacts.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactsBulkInputObject"></param>
@@ -27088,7 +27088,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unblock contacts (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock several contacts by blocked contact IDs or unblock all contacts.
+        /// Unblock contacts (bulk) Unblock several contacts by blocked contact IDs or unblock all contacts.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unblockContactsBulkInputObject"></param>
@@ -27155,7 +27155,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unmute chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unmute several chats by chat ids or unmute all chats.
+        /// Unmute chats (bulk) Unmute several chats by chat ids or unmute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -27166,7 +27166,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unmute chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unmute several chats by chat ids or unmute all chats.
+        /// Unmute chats (bulk) Unmute several chats by chat ids or unmute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -27233,7 +27233,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unmute chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unmute several chats by chat ids or unmute all chats.
+        /// Unmute chats (bulk) Unmute several chats by chat ids or unmute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -27245,7 +27245,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Unmute chats (bulk) &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unmute several chats by chat ids or unmute all chats.
+        /// Unmute chats (bulk) Unmute several chats by chat ids or unmute all chats.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unmuteChatsBulkInputObject"></param>
@@ -27312,7 +27312,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Manually unsubscribe a contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
+        /// Manually unsubscribe a contact &gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unsubscribeContactInputObject"></param>
@@ -27324,7 +27324,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Manually unsubscribe a contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
+        /// Manually unsubscribe a contact &gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unsubscribeContactInputObject"></param>
@@ -27392,7 +27392,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Manually unsubscribe a contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
+        /// Manually unsubscribe a contact &gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unsubscribeContactInputObject"></param>
@@ -27405,7 +27405,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Manually unsubscribe a contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
+        /// Manually unsubscribe a contact &gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="unsubscribeContactInputObject"></param>
@@ -27473,7 +27473,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update balance notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update balance notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateBalanceNotificationSettingsInputObject"></param>
@@ -27484,7 +27484,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update balance notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update balance notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateBalanceNotificationSettingsInputObject"></param>
@@ -27551,7 +27551,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update balance notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update balance notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateBalanceNotificationSettingsInputObject"></param>
@@ -27563,7 +27563,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update balance notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update balance notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateBalanceNotificationSettingsInputObject"></param>
@@ -27630,7 +27630,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update callback URL settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update callback URL settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCallbackSettingsInputObject"></param>
@@ -27641,7 +27641,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update callback URL settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update callback URL settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCallbackSettingsInputObject"></param>
@@ -27709,7 +27709,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update callback URL settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update callback URL settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCallbackSettingsInputObject"></param>
@@ -27721,7 +27721,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update callback URL settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update callback URL settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCallbackSettingsInputObject"></param>
@@ -27789,7 +27789,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update chat desktop notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update chat desktop notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateChatDesktopNotificationSettingsInputObject"></param>
@@ -27800,7 +27800,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update chat desktop notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update chat desktop notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateChatDesktopNotificationSettingsInputObject"></param>
@@ -27868,7 +27868,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update chat desktop notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update chat desktop notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateChatDesktopNotificationSettingsInputObject"></param>
@@ -27880,7 +27880,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update chat desktop notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update chat desktop notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateChatDesktopNotificationSettingsInputObject"></param>
@@ -27948,7 +27948,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit a contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/updateContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit a contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactInputObject"></param>
@@ -27961,7 +27961,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit a contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/updateContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit a contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactInputObject"></param>
@@ -28034,7 +28034,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit a contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/updateContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit a contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactInputObject"></param>
@@ -28048,7 +28048,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit a contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/updateContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit a contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactInputObject"></param>
@@ -28121,7 +28121,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update a contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update a contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactNoteInputObject"></param>
@@ -28134,7 +28134,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update a contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update a contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactNoteInputObject"></param>
@@ -28207,7 +28207,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update a contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update a contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactNoteInputObject"></param>
@@ -28221,7 +28221,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update a contact note &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update a contact note 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateContactNoteInputObject"></param>
@@ -28294,7 +28294,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit current account info &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit current account info 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCurrentUserInputObject"></param>
@@ -28306,7 +28306,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit current account info &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit current account info 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCurrentUserInputObject"></param>
@@ -28374,7 +28374,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit current account info &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit current account info 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCurrentUserInputObject"></param>
@@ -28387,7 +28387,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit current account info &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit current account info 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCurrentUserInputObject"></param>
@@ -28455,7 +28455,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit a custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit a custom field 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldInputObject"></param>
@@ -28468,7 +28468,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit a custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit a custom field 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldInputObject"></param>
@@ -28541,7 +28541,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit a custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit a custom field 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldInputObject"></param>
@@ -28555,7 +28555,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit a custom field &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit a custom field 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldInputObject"></param>
@@ -28628,7 +28628,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit the custom field value of a specified contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit the custom field value of a specified contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldValueInputObject"></param>
@@ -28641,7 +28641,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit the custom field value of a specified contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit the custom field value of a specified contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldValueInputObject"></param>
@@ -28714,7 +28714,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit the custom field value of a specified contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit the custom field value of a specified contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldValueInputObject"></param>
@@ -28728,7 +28728,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit the custom field value of a specified contact &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit the custom field value of a specified contact 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateCustomFieldValueInputObject"></param>
@@ -28801,7 +28801,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update inbound messages notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update inbound messages notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateInboundMessagesNotificationSettingsInputObject"></param>
@@ -28812,7 +28812,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update inbound messages notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update inbound messages notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateInboundMessagesNotificationSettingsInputObject"></param>
@@ -28879,7 +28879,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update inbound messages notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update inbound messages notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateInboundMessagesNotificationSettingsInputObject"></param>
@@ -28891,7 +28891,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update inbound messages notification settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update inbound messages notification settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateInboundMessagesNotificationSettingsInputObject"></param>
@@ -28958,7 +28958,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/updateList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit a list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -28971,7 +28971,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/updateList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit a list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -29041,7 +29041,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/updateList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit a list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -29055,7 +29055,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Edit a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/updateList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Edit a list 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -29125,7 +29125,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Change sender settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Change sender settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateSenderSettingInputObject"></param>
@@ -29136,7 +29136,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Change sender settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Change sender settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateSenderSettingInputObject"></param>
@@ -29203,7 +29203,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Change sender settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Change sender settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateSenderSettingInputObject"></param>
@@ -29215,7 +29215,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Change sender settings &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Change sender settings 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateSenderSettingInputObject"></param>
@@ -29282,7 +29282,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update a template &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/updateTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update a template 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateTemplateInputObject"></param>
@@ -29295,7 +29295,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update a template &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/updateTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update a template 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateTemplateInputObject"></param>
@@ -29368,7 +29368,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update a template &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/updateTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update a template 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateTemplateInputObject"></param>
@@ -29382,7 +29382,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Update a template &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/updateTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Update a template 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="updateTemplateInputObject"></param>
@@ -29455,7 +29455,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Upload an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/uploadAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -29466,7 +29466,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Upload an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/uploadAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -29527,7 +29527,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Upload an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/uploadAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -29539,7 +29539,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Upload an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/uploadAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">User avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -29600,7 +29600,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Upload an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -29613,7 +29613,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Upload an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -29679,7 +29679,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Upload an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -29693,7 +29693,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Upload an avatar &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
+        /// Upload an avatar 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">Contact avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -29759,7 +29759,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add an avatar for a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Add an avatar for a list
+        /// Add an avatar for a list Add an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -29772,7 +29772,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add an avatar for a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Add an avatar for a list
+        /// Add an avatar for a list Add an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -29838,7 +29838,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add an avatar for a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Add an avatar for a list
+        /// Add an avatar for a list Add an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -29852,7 +29852,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Add an avatar for a list &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Add an avatar for a list
+        /// Add an avatar for a list Add an avatar for a list
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="image">List avatar. Should be a PNG or JPG file not more than 10 MB.</param>
@@ -29918,7 +29918,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Upload message attachment &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Upload a new file to insert it as a link.
+        /// Upload message attachment Upload a new file to insert it as a link.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
@@ -29930,7 +29930,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Upload message attachment &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Upload a new file to insert it as a link.
+        /// Upload message attachment Upload a new file to insert it as a link.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
@@ -29991,7 +29991,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Upload message attachment &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Upload a new file to insert it as a link.
+        /// Upload message attachment Upload a new file to insert it as a link.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
@@ -30004,7 +30004,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Upload message attachment &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Upload a new file to insert it as a link.
+        /// Upload message attachment Upload a new file to insert it as a link.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>

@@ -83,10 +83,10 @@ namespace TextMagicClient.Model
         /// <param name="messageTime">Time when  the message arrived at TextMagic. (required).</param>
         /// <param name="text">Message text. (required).</param>
         /// <param name="receiver">Receiver&#39;s phone number. (required).</param>
-        /// <param name="status">Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details. (required).</param>
+        /// <param name="status">Message status (for chats outbound only). See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details. (required).</param>
         /// <param name="firstName">Contact first name. (required).</param>
         /// <param name="lastName">Contact last name. (required).</param>
-        /// <param name="sessionId">Session ID of a message. See [message sessions](http://docs.textmagictesting.com/#tag/Outbound-Message-Sessions) for details. (required).</param>
+        /// <param name="sessionId">Session ID of a message. See [message sessions](https://docs.textmagic.com/#tag/Outbound-Message-Sessions) for details. (required).</param>
         public Conversation(int? id = default(int?), DirectionEnum direction = default(DirectionEnum), string sender = default(string), DateTime? messageTime = default(DateTime?), string text = default(string), string receiver = default(string), string status = default(string), string firstName = default(string), string lastName = default(string), int? sessionId = default(int?))
         {
             // to ensure "id" is required (not null)
@@ -217,9 +217,9 @@ namespace TextMagicClient.Model
         public string Receiver { get; set; }
 
         /// <summary>
-        /// Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.
+        /// Message status (for chats outbound only). See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details.
         /// </summary>
-        /// <value>Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.</value>
+        /// <value>Message status (for chats outbound only). See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details.</value>
         [DataMember(Name="status", EmitDefaultValue=false)]
         public string Status { get; set; }
 
@@ -238,9 +238,9 @@ namespace TextMagicClient.Model
         public string LastName { get; set; }
 
         /// <summary>
-        /// Session ID of a message. See [message sessions](http://docs.textmagictesting.com/#tag/Outbound-Message-Sessions) for details.
+        /// Session ID of a message. See [message sessions](https://docs.textmagic.com/#tag/Outbound-Message-Sessions) for details.
         /// </summary>
-        /// <value>Session ID of a message. See [message sessions](http://docs.textmagictesting.com/#tag/Outbound-Message-Sessions) for details.</value>
+        /// <value>Session ID of a message. See [message sessions](https://docs.textmagic.com/#tag/Outbound-Message-Sessions) for details.</value>
         [DataMember(Name="sessionId", EmitDefaultValue=false)]
         public int? SessionId { get; set; }
 

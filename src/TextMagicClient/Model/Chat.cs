@@ -114,7 +114,7 @@ namespace TextMagicClient.Model
         /// <param name="originalId">originalId (required).</param>
         /// <param name="phone">Chat partner&#39;s phone number. (required).</param>
         /// <param name="contact">contact (required).</param>
-        /// <param name="unsubscribedContactId">If this field has a value, it means that the chat phone number has been unsubscribed from you and this value is an ID of an Unsubscribed contact entity. See [Get all unsubscribed contacts](http://docs.textmagictesting.com/#operation/getUnsubscribers). (required).</param>
+        /// <param name="unsubscribedContactId">If this field has a value, it means that the chat phone number has been unsubscribed from you and this value is an ID of an Unsubscribed contact entity. See [Get all unsubscribed contacts](https://docs.textmagic.com/#operation/getUnsubscribers). (required).</param>
         /// <param name="unread">Total unread incoming messages. (required).</param>
         /// <param name="updatedAt">Time when the last incoming message arrived at this chat. (required).</param>
         /// <param name="status">Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted.  (required).</param>
@@ -291,9 +291,9 @@ namespace TextMagicClient.Model
         public Contact Contact { get; set; }
 
         /// <summary>
-        /// If this field has a value, it means that the chat phone number has been unsubscribed from you and this value is an ID of an Unsubscribed contact entity. See [Get all unsubscribed contacts](http://docs.textmagictesting.com/#operation/getUnsubscribers).
+        /// If this field has a value, it means that the chat phone number has been unsubscribed from you and this value is an ID of an Unsubscribed contact entity. See [Get all unsubscribed contacts](https://docs.textmagic.com/#operation/getUnsubscribers).
         /// </summary>
-        /// <value>If this field has a value, it means that the chat phone number has been unsubscribed from you and this value is an ID of an Unsubscribed contact entity. See [Get all unsubscribed contacts](http://docs.textmagictesting.com/#operation/getUnsubscribers).</value>
+        /// <value>If this field has a value, it means that the chat phone number has been unsubscribed from you and this value is an ID of an Unsubscribed contact entity. See [Get all unsubscribed contacts](https://docs.textmagic.com/#operation/getUnsubscribers).</value>
         [DataMember(Name="unsubscribedContactId", EmitDefaultValue=false)]
         public int? UnsubscribedContactId { get; set; }
 

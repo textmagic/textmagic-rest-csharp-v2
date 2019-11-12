@@ -40,7 +40,7 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <param name="id">Template ID. (required).</param>
         /// <param name="name">Template name. (required).</param>
-        /// <param name="content">Template text. May contain tags inside braces. See the [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)). (required).</param>
+        /// <param name="content">Template text. May contain tags inside braces. See the [Custom fields list](https://docs.textmagic.com/#section/Custom-fields-list-(Merge-tags)). (required).</param>
         /// <param name="lastModified">Time when the template was last modified. (required).</param>
         public MessageTemplate(int? id = default(int?), string name = default(string), string content = default(string), DateTime? lastModified = default(DateTime?))
         {
@@ -97,9 +97,9 @@ namespace TextMagicClient.Model
         public string Name { get; set; }
 
         /// <summary>
-        /// Template text. May contain tags inside braces. See the [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).
+        /// Template text. May contain tags inside braces. See the [Custom fields list](https://docs.textmagic.com/#section/Custom-fields-list-(Merge-tags)).
         /// </summary>
-        /// <value>Template text. May contain tags inside braces. See the [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).</value>
+        /// <value>Template text. May contain tags inside braces. See the [Custom fields list](https://docs.textmagic.com/#section/Custom-fields-list-(Merge-tags)).</value>
         [DataMember(Name="content", EmitDefaultValue=false)]
         public string Content { get; set; }
 

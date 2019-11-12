@@ -41,7 +41,7 @@ namespace TextMagicClient.Model
         /// <param name="replyRate">The number of incoming messages divided by the number of total messages. (required).</param>
         /// <param name="date">Time interval start: empty if the **by** parameter was set to **off**.  (required).</param>
         /// <param name="deliveryRate">Message delivery rate:the number of delivered messages divided by the number of total messages. (required).</param>
-        /// <param name="costs">Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/#tag/User) currency.  (required).</param>
+        /// <param name="costs">Cost for sent messages during this period. The costs are in the [Account](https://docs.textmagic.com/#tag/User) currency.  (required).</param>
         /// <param name="messagesReceived">Total received messages count. (required).</param>
         /// <param name="messagesSentDelivered">Delivered messages count. As messages are retried for up to 48 hours, this value could change. (required).</param>
         /// <param name="messagesSentAccepted">Messages accepted for delivery (in queue) but not yet delivered. (required).</param>
@@ -174,9 +174,9 @@ namespace TextMagicClient.Model
         public float? DeliveryRate { get; set; }
 
         /// <summary>
-        /// Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/#tag/User) currency. 
+        /// Cost for sent messages during this period. The costs are in the [Account](https://docs.textmagic.com/#tag/User) currency. 
         /// </summary>
-        /// <value>Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/#tag/User) currency. </value>
+        /// <value>Cost for sent messages during this period. The costs are in the [Account](https://docs.textmagic.com/#tag/User) currency. </value>
         [DataMember(Name="costs", EmitDefaultValue=false)]
         public float? Costs { get; set; }
 

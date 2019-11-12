@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **ReplyRate** | **float?** | The number of incoming messages divided by the number of total messages. | 
 **Date** | **DateTime?** | Time interval start: empty if the **by** parameter was set to **off**.  | 
 **DeliveryRate** | **float?** | Message delivery rate:the number of delivered messages divided by the number of total messages. | 
-**Costs** | **float?** | Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/#tag/User) currency.  | 
+**Costs** | **float?** | Cost for sent messages during this period. The costs are in the [Account](https://docs.textmagic.com/#tag/User) currency.  | 
 **MessagesReceived** | **int?** | Total received messages count. | 
 **MessagesSentDelivered** | **int?** | Delivered messages count. As messages are retried for up to 48 hours, this value could change. | 
 **MessagesSentAccepted** | **int?** | Messages accepted for delivery (in queue) but not yet delivered. | 

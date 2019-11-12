@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class MessageOut :  IEquatable<MessageOut>, IValidatableObject
     {
         /// <summary>
-        /// Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details. 
+        /// Delivery status of the message. See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details. 
         /// </summary>
-        /// <value>Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details. </value>
+        /// <value>Delivery status of the message. See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details. </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StatusEnum
         {
@@ -118,9 +118,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details. 
+        /// Delivery status of the message. See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details. 
         /// </summary>
-        /// <value>Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details. </value>
+        /// <value>Delivery status of the message. See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details. </value>
         [DataMember(Name="status", EmitDefaultValue=false)]
         public StatusEnum Status { get; set; }
         /// <summary>
@@ -135,7 +135,7 @@ namespace TextMagicClient.Model
         /// <param name="sender">Message sender (phone number or alphanumeric Sender ID)..</param>
         /// <param name="receiver">Recipient&#x60;s phone number..</param>
         /// <param name="text">text (required).</param>
-        /// <param name="status">Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.  (required).</param>
+        /// <param name="status">Delivery status of the message. See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details.  (required).</param>
         /// <param name="contactId">Recipient contact ID. (required).</param>
         /// <param name="sessionId">Message Session ID of a message. (required).</param>
         /// <param name="messageTime">Sending time. (required).</param>
@@ -143,7 +143,7 @@ namespace TextMagicClient.Model
         /// <param name="deleted">Indicates that the message has been deleted..</param>
         /// <param name="charset">Message charset. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS.  (required).</param>
         /// <param name="charsetLabel">Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages.  (required).</param>
-        /// <param name="firstName">Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).  (required).</param>
+        /// <param name="firstName">Contact first name. Could be substituted from your [Contacts](https://docs.textmagic.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).  (required).</param>
         /// <param name="lastName">Contact last name. (required).</param>
         /// <param name="country">The 2-letter ISO country code of the recipient&#39;s phone number.  (required).</param>
         /// <param name="phone">Receipent&#x60;s phone number..</param>
@@ -356,9 +356,9 @@ namespace TextMagicClient.Model
         public string CharsetLabel { get; set; }
 
         /// <summary>
-        /// Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID). 
+        /// Contact first name. Could be substituted from your [Contacts](https://docs.textmagic.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID). 
         /// </summary>
-        /// <value>Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID). </value>
+        /// <value>Contact first name. Could be substituted from your [Contacts](https://docs.textmagic.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID). </value>
         [DataMember(Name="firstName", EmitDefaultValue=false)]
         public string FirstName { get; set; }
 

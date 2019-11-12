@@ -160,7 +160,7 @@ Method | HTTP request | Description
 
 Assign contacts to a list
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\" target=\"_blank\">Try in sandbox</a><br>> Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+> Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
 
 ### Example
 ```csharp
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 
 Block a contact by phone number
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/blockContact\" target=\"_blank\">Try in sandbox</a><br>Block a contact from inbound and outbound communication by phone number.
+Block a contact from inbound and outbound communication by phone number.
 
 ### Example
 ```csharp
@@ -292,7 +292,7 @@ Name | Type | Description  | Notes
 
 Buy a dedicated number
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\" target=\"_blank\">Try in sandbox</a><br>To buy a dedicated number, you first need to find an available number matching your criteria using the `/api/v2/numbers/available` command described above.
+To buy a dedicated number, you first need to find an available number matching your criteria using the `/api/v2/numbers/available` command described above.
 
 ### Example
 ```csharp
@@ -356,7 +356,7 @@ void (empty response body)
 
 Cancel verification process
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\" target=\"_blank\">Try in sandbox</a><br>You can cancel the verification not earlier than 30 seconds after the initial request.
+You can cancel the verification not earlier than 30 seconds after the initial request.
 
 ### Example
 ```csharp
@@ -420,7 +420,7 @@ void (empty response body)
 
 Step 2: Check the verification code 
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\" target=\"_blank\">Try in sandbox</a><br>Check received code from user with the code which was actually sent.
+Check received code from user with the code which was actually sent.
 
 ### Example
 ```csharp
@@ -483,8 +483,6 @@ void (empty response body)
 > ResourceLinkResponse ClearAndAssignContactsToList (ClearAndAssignContactsToListInputObject clearAndAssignContactsToListInputObject, int? id)
 
 Reset list members to the specified contacts
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -551,7 +549,7 @@ Name | Type | Description  | Notes
 
 Close chats (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Close chats by chat IDs or close all chats
+Close chats by chat IDs or close all chats
 
 ### Example
 ```csharp
@@ -615,7 +613,7 @@ void (empty response body)
 
 Close read chats
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/closeReadChats\" target=\"_blank\">Try in sandbox</a><br>Close all chats that have no unread messages.
+Close all chats that have no unread messages.
 
 ### Example
 ```csharp
@@ -674,8 +672,6 @@ void (empty response body)
 > void CloseSubaccount (int? id)
 
 Close sub-account
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -739,8 +735,6 @@ void (empty response body)
 
 Add a new contact
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/createContact\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -803,8 +797,6 @@ Name | Type | Description  | Notes
 > ResourceLinkResponse CreateContactNote (CreateContactNoteInputObject createContactNoteInputObject, int? id)
 
 Create a new contact note
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -871,8 +863,6 @@ Name | Type | Description  | Notes
 
 Add a new custom field
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -935,8 +925,6 @@ Name | Type | Description  | Notes
 > ResourceLinkResponse CreateList (CreateListInputObject createListInputObject)
 
 Create a new list
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/createList\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -1001,7 +989,7 @@ Name | Type | Description  | Notes
 
 Create a template
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/createTemplate\" target=\"_blank\">Try in sandbox</a><br>There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
+There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
 
 ### Example
 ```csharp
@@ -1066,8 +1054,6 @@ Name | Type | Description  | Notes
 
 Delete contacts (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -1126,7 +1112,7 @@ void (empty response body)
 
 Delete all messages
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\" target=\"_blank\">Try in sandbox</a><br>Delete all messages.
+Delete all messages.
 
 ### Example
 ```csharp
@@ -1186,8 +1172,6 @@ void (empty response body)
 
 Delete an avatar
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Account/deleteAvatar\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -1246,7 +1230,7 @@ void (empty response body)
 
 Delete chat messages by ID(s)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\" target=\"_blank\">Try in sandbox</a><br>Delete messages from chat by given message IDs.
+Delete messages from chat by given message IDs.
 
 ### Example
 ```csharp
@@ -1312,7 +1296,7 @@ void (empty response body)
 
 Delete chats (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Delete chats by given IDs or delete all chats.
+Delete chats by given IDs or delete all chats.
 
 ### Example
 ```csharp
@@ -1376,7 +1360,7 @@ void (empty response body)
 
 Delete a contact
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/deleteContact\" target=\"_blank\">Try in sandbox</a><br>> This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
+> This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
 
 ### Example
 ```csharp
@@ -1440,8 +1424,6 @@ void (empty response body)
 
 Delete an avatar
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -1504,8 +1486,6 @@ void (empty response body)
 
 Delete a contact note
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -1567,8 +1547,6 @@ void (empty response body)
 > void DeleteContactNotesBulk (int? id, DeleteContactNotesBulkInputObject deleteContactNotesBulkInputObject)
 
 Delete contact notes (bulk)
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -1634,8 +1612,6 @@ void (empty response body)
 
 Delete contacts by IDs (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -1698,7 +1674,7 @@ void (empty response body)
 
 Unassign contacts from a list
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\" target=\"_blank\">Try in sandbox</a><br>> When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+> When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
 
 ### Example
 ```csharp
@@ -1764,7 +1740,7 @@ void (empty response body)
 
 Delete a custom field
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\" target=\"_blank\">Try in sandbox</a><br>> When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
+> When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
 
 ### Example
 ```csharp
@@ -1828,8 +1804,6 @@ void (empty response body)
 
 Cancel a dedicated number subscription
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -1892,7 +1866,7 @@ void (empty response body)
 
 Delete a single inbound message
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\" target=\"_blank\">Try in sandbox</a><br>> Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+> Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
 
 ### Example
 ```csharp
@@ -1956,7 +1930,7 @@ void (empty response body)
 
 Delete inbound messages (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\" target=\"_blank\">Try in sandbox</a><br>> Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+> Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
 
 ### Example
 ```csharp
@@ -2020,7 +1994,7 @@ void (empty response body)
 
 Delete a list
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteList\" target=\"_blank\">Try in sandbox</a><br>This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
+This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
 
 ### Example
 ```csharp
@@ -2084,7 +2058,7 @@ void (empty response body)
 
 Delete an avatar for a list
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\" target=\"_blank\">Try in sandbox</a><br>Delete an avatar for a list
+Delete an avatar for a list
 
 ### Example
 ```csharp
@@ -2148,7 +2122,7 @@ void (empty response body)
 
 Delete contacts from a list (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\" target=\"_blank\">Try in sandbox</a><br>Delete contacts from a list (bulk)
+Delete contacts from a list (bulk)
 
 ### Example
 ```csharp
@@ -2214,8 +2188,6 @@ void (empty response body)
 
 Delete lists (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -2278,7 +2250,7 @@ void (empty response body)
 
 Delete a session
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\" target=\"_blank\">Try in sandbox</a><br>Delete a message session, together with all nested messages. > You will not be refunded for any deleted sent sessions. 
+Delete a message session, together with all nested messages. > You will not be refunded for any deleted sent sessions. 
 
 ### Example
 ```csharp
@@ -2342,7 +2314,7 @@ void (empty response body)
 
 Delete sessions (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\" target=\"_blank\">Try in sandbox</a><br>Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
+Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
 
 ### Example
 ```csharp
@@ -2406,7 +2378,7 @@ void (empty response body)
 
 Delete message
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\" target=\"_blank\">Try in sandbox</a><br>Delete a single message.
+Delete a single message.
 
 ### Example
 ```csharp
@@ -2470,7 +2442,7 @@ void (empty response body)
 
 Delete messages (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\" target=\"_blank\">Try in sandbox</a><br>Delete outbound messages by the given ID(s) or delete all outbound messages.
+Delete outbound messages by the given ID(s) or delete all outbound messages.
 
 ### Example
 ```csharp
@@ -2534,8 +2506,6 @@ void (empty response body)
 
 Delete a single scheduled message
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -2597,8 +2567,6 @@ void (empty response body)
 > void DeleteScheduledMessagesBulk (DeleteScheduledMessagesBulkInputObject deleteScheduledMessagesBulkInputObject)
 
 Delete scheduled messages (bulk)
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -2662,8 +2630,6 @@ void (empty response body)
 
 Delete a Sender ID
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -2725,8 +2691,6 @@ void (empty response body)
 > void DeleteTemplate (int? id)
 
 Delete a template
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -2790,7 +2754,7 @@ void (empty response body)
 
 Delete templates (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\" target=\"_blank\">Try in sandbox</a><br>Delete templates by given IDs or delete all templates.
+Delete templates by given IDs or delete all templates.
 
 ### Example
 ```csharp
@@ -2854,7 +2818,7 @@ void (empty response body)
 
 Carrier Lookup
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\" target=\"_blank\">Try in sandbox</a><br>This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers must be checked one by one. You cannot check multiple numbers in one request.   
+This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers must be checked one by one. You cannot check multiple numbers in one request.   
 
 ### Example
 ```csharp
@@ -2921,7 +2885,7 @@ Name | Type | Description  | Notes
 
 Email Lookup
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\" target=\"_blank\">Try in sandbox</a><br>To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
 
 ### Example
 ```csharp
@@ -2985,8 +2949,6 @@ Name | Type | Description  | Notes
 > GetAllBulkSessionsPaginatedResponse GetAllBulkSessions (int? page = null, int? limit = null)
 
 Get all bulk sessions
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -3052,8 +3014,6 @@ Name | Type | Description  | Notes
 > GetAllChatsPaginatedResponse GetAllChats (string status = null, int? page = null, int? limit = null, string orderBy = null, int? voice = null, int? flat = null)
 
 Get all chats
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getAllChats\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -3128,8 +3088,6 @@ Name | Type | Description  | Notes
 
 Get all inbound messages
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -3199,7 +3157,7 @@ Name | Type | Description  | Notes
 
 Get all sessions
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\" target=\"_blank\">Try in sandbox</a><br>Get all message sending sessions. > This list contains all of your sessions, including those which were sent but not via API 
+Get all message sending sessions. > This list contains all of your sessions, including those which were sent but not via API 
 
 ### Example
 ```csharp
@@ -3266,7 +3224,7 @@ Name | Type | Description  | Notes
 
 Get all messages
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\" target=\"_blank\">Try in sandbox</a><br>Get all user oubound messages.
+Get all user oubound messages.
 
 ### Example
 ```csharp
@@ -3334,8 +3292,6 @@ Name | Type | Description  | Notes
 > GetAllScheduledMessagesPaginatedResponse GetAllScheduledMessages (int? page = null, int? limit = null, string status = null, string orderBy = null, string direction = null)
 
 Get all scheduled messages
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -3408,8 +3364,6 @@ Name | Type | Description  | Notes
 
 Get all templates
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -3474,8 +3428,6 @@ Name | Type | Description  | Notes
 > GetAvailableDedicatedNumbersResponse GetAvailableDedicatedNumbers (string country, int? prefix = null, int? tollfree = null)
 
 Find dedicated numbers available for purchase
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -3544,7 +3496,7 @@ Name | Type | Description  | Notes
 
 Get available sender settings
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\" target=\"_blank\">Try in sandbox</a><br>Get all available sender setting options which can be used in the \"from\" parameter of the POST messages method.
+Get all available sender setting options which can be used in the \"from\" parameter of the POST messages method.
 
 ### Example
 ```csharp
@@ -3609,8 +3561,6 @@ Name | Type | Description  | Notes
 
 Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -3670,8 +3620,6 @@ This endpoint does not need any parameter.
 
 Get balance notification settings
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -3730,8 +3678,6 @@ This endpoint does not need any parameter.
 > GetBlockedContactsPaginatedResponse GetBlockedContacts (int? page = null, int? limit = null, string query = null, string orderBy = null, string direction = null)
 
 Get blocked contacts
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -3804,8 +3750,6 @@ Name | Type | Description  | Notes
 
 Get bulk session status
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -3869,8 +3813,6 @@ Name | Type | Description  | Notes
 
 Fetch callback URL settings
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -3929,8 +3871,6 @@ This endpoint does not need any parameter.
 > Chat GetChat (int? id)
 
 Get a single chat
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getChat\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -3994,8 +3934,6 @@ Name | Type | Description  | Notes
 > Chat GetChatByPhone (string phone, int? upsert = null, int? reopen = null)
 
 Find chats by phone
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -4063,8 +4001,6 @@ Name | Type | Description  | Notes
 > GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null)
 
 Get chat messages
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getChatMessages\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -4143,8 +4079,6 @@ Name | Type | Description  | Notes
 
 Get the details of a specific contact
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContact\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -4207,8 +4141,6 @@ Name | Type | Description  | Notes
 > Contact GetContactByPhone (string phone)
 
 Get the details of a specific contact by phone number
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -4273,8 +4205,6 @@ Name | Type | Description  | Notes
 
 Check if a phone number is blocked
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -4338,7 +4268,7 @@ Name | Type | Description  | Notes
 
 Check import progress
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\" target=\"_blank\">Try in sandbox</a><br>Get contact import session progress.
+Get contact import session progress.
 
 ### Example
 ```csharp
@@ -4403,8 +4333,6 @@ Name | Type | Description  | Notes
 
 Get a contact note
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -4467,8 +4395,6 @@ Name | Type | Description  | Notes
 > GetContactNotesPaginatedResponse GetContactNotes (int? id, int? page = null, int? limit = null)
 
 Fetch notes assigned to a given contact
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -4536,8 +4462,6 @@ Name | Type | Description  | Notes
 > GetContactsPaginatedResponse GetContacts (int? page = null, int? limit = null, int? shared = null, string orderBy = null, string direction = null)
 
 Get all contacts
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContacts\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -4610,7 +4534,7 @@ Name | Type | Description  | Notes
 
 Get contacts autocomplete suggestions
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\" target=\"_blank\">Try in sandbox</a><br>Get contacts autocomplete suggestions by given search terms.
+Get contacts autocomplete suggestions by given search terms.
 
 ### Example
 ```csharp
@@ -4679,7 +4603,7 @@ Name | Type | Description  | Notes
 
 Get all contacts in a list
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\" target=\"_blank\">Try in sandbox</a><br>A useful synonym for the \"contacts/search\" command with the provided \"listId\" parameter.
+A useful synonym for the \"contacts/search\" command with the provided \"listId\" parameter.
 
 ### Example
 ```csharp
@@ -4752,8 +4676,6 @@ Name | Type | Description  | Notes
 
 Get countries
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -4813,8 +4735,6 @@ This endpoint does not need any parameter.
 
 Get current account information
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Account/getCurrentUser\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -4873,8 +4793,6 @@ This endpoint does not need any parameter.
 > UserCustomField GetCustomField (int? id)
 
 Get the details of a specific custom field
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -4938,8 +4856,6 @@ Name | Type | Description  | Notes
 > GetCustomFieldsPaginatedResponse GetCustomFields (int? page = null, int? limit = null)
 
 Get all custom fields
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -5006,8 +4922,6 @@ Name | Type | Description  | Notes
 
 Get the details of a specific dedicated number
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -5070,8 +4984,6 @@ Name | Type | Description  | Notes
 > GetFavoritesPaginatedResponse GetFavorites (int? page = null, int? limit = null, string query = null)
 
 Get favorite contacts and lists
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getFavorites\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -5140,8 +5052,6 @@ Name | Type | Description  | Notes
 
 Get a single inbound message
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -5205,8 +5115,6 @@ Name | Type | Description  | Notes
 
 Get inbound messages notification settings
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -5266,7 +5174,7 @@ This endpoint does not need any parameter.
 
 Get all invoices
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Invoices/getInvoices\" target=\"_blank\">Try in sandbox</a><br>With the TextMagic API, you can check the invoices and transactions for your account.
+With the TextMagic API, you can check the invoices and transactions for your account.
 
 ### Example
 ```csharp
@@ -5333,8 +5241,6 @@ Name | Type | Description  | Notes
 
 Get the details of a specific list
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getList\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -5398,8 +5304,6 @@ Name | Type | Description  | Notes
 
 Get all contact IDs in a list
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -5462,8 +5366,6 @@ Name | Type | Description  | Notes
 > GetListsPaginatedResponse GetLists (int? page = null, int? limit = null, string orderBy = null, string direction = null, int? favoriteOnly = null, int? onlyMine = null)
 
 Get all lists
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getLists\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -5538,7 +5440,7 @@ Name | Type | Description  | Notes
 
 Get a contact's lists
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\" target=\"_blank\">Try in sandbox</a><br>Get all the lists in which a contact is included.
+Get all the lists in which a contact is included.
 
 ### Example
 ```csharp
@@ -5607,7 +5509,7 @@ Name | Type | Description  | Notes
 
 Preview message
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\" target=\"_blank\">Try in sandbox</a><br>Get a messages preview (with tags merged) of up to 100 messages per session.
+Get a messages preview (with tags merged) of up to 100 messages per session.
 
 ### Example
 ```csharp
@@ -5639,7 +5541,7 @@ namespace Example
             var cutExtra = 56;  // int? | Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional)  (default to 0)
             var partsCount = 56;  // int? | Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). (optional)  (default to 6)
             var referenceId = 1;  // int? | Custom message reference id which can be used in your application infrastructure. (optional) 
-            var from = "Test Sender ID";  // string | One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional) 
+            var from = "Test Sender ID";  // string | One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional) 
             var rule = "FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1;COUNT=1";  // string | An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional) 
             var createChat = 56;  // int? | Should the sending method try to create new Chat(if not exist) with specified recipients? (optional)  (default to 0)
             var tts = 56;  // int? | Send Text-to-Speech message. (optional)  (default to 0)
@@ -5676,7 +5578,7 @@ Name | Type | Description  | Notes
  **cutExtra** | **int?**| Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. | [optional] [default to 0]
  **partsCount** | **int?**| Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). | [optional] [default to 6]
  **referenceId** | **int?**| Custom message reference id which can be used in your application infrastructure. | [optional] 
- **from** | **string**| One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). | [optional] 
+ **from** | **string**| One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). | [optional] 
  **rule** | **string**| An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. | [optional] 
  **createChat** | **int?**| Should the sending method try to create new Chat(if not exist) with specified recipients? | [optional] [default to 0]
  **tts** | **int?**| Send Text-to-Speech message. | [optional] [default to 0]
@@ -5704,7 +5606,7 @@ Name | Type | Description  | Notes
 
 Check message price
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\" target=\"_blank\">Try in sandbox</a><br>Check pricing for a new outbound message.
+Check pricing for a new outbound message.
 
 ### Example
 ```csharp
@@ -5737,7 +5639,7 @@ namespace Example
             var cutExtra = 56;  // int? | Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (optional)  (default to 0)
             var partsCount = 56;  // int? | Maximum message parts count (TextMagic allows sending 1 to 6 message parts). (optional)  (default to 6)
             var referenceId = 1;  // int? | Custom message reference id which can be used in your application infrastructure. (optional) 
-            var from = "Test Sender ID";  // string | One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional) 
+            var from = "Test Sender ID";  // string | One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). (optional) 
             var rule = "FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1;COUNT=1";  // string | An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional) 
             var createChat = 56;  // int? | Should the sending method try to create new Chat (if not exist) with specified recipients? (optional)  (default to 0)
             var tts = 56;  // int? | Send a Text-to-Speech message. (optional)  (default to 0)
@@ -5775,7 +5677,7 @@ Name | Type | Description  | Notes
  **cutExtra** | **int?**| Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. | [optional] [default to 0]
  **partsCount** | **int?**| Maximum message parts count (TextMagic allows sending 1 to 6 message parts). | [optional] [default to 6]
  **referenceId** | **int?**| Custom message reference id which can be used in your application infrastructure. | [optional] 
- **from** | **string**| One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). | [optional] 
+ **from** | **string**| One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs). | [optional] 
  **rule** | **string**| An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. | [optional] 
  **createChat** | **int?**| Should the sending method try to create new Chat (if not exist) with specified recipients? | [optional] [default to 0]
  **tts** | **int?**| Send a Text-to-Speech message. | [optional] [default to 0]
@@ -5803,7 +5705,7 @@ Name | Type | Description  | Notes
 
 Get a session`s details
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\" target=\"_blank\">Try in sandbox</a><br>Get a specific session’s details.
+Get a specific session’s details.
 
 ### Example
 ```csharp
@@ -5867,8 +5769,6 @@ Name | Type | Description  | Notes
 > GetMessageSessionStatResponse GetMessageSessionStat (int? id, int? includeDeleted = null)
 
 Get a session`s statistics
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -5935,7 +5835,7 @@ Name | Type | Description  | Notes
 
 Get a session`s messages
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\" target=\"_blank\">Try in sandbox</a><br>A useful synonym for the \"messages/search\" command with the provided \"sessionId\" parameter.
+A useful synonym for the \"messages/search\" command with the provided \"sessionId\" parameter.
 
 ### Example
 ```csharp
@@ -6008,7 +5908,7 @@ Name | Type | Description  | Notes
 
 Get sent/received messages counters values
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\" target=\"_blank\">Try in sandbox</a><br>Get total contacts, sent messages and received messages counters values.
+Get total contacts, sent messages and received messages counters values.
 
 ### Example
 ```csharp
@@ -6068,8 +5968,6 @@ This endpoint does not need any parameter.
 > GetMessagingStatResponse GetMessagingStat (string by = null, int? start = null, int? end = null)
 
 Get messaging statistics
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -6138,7 +6036,7 @@ Name | Type | Description  | Notes
 
 Get a single message
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\" target=\"_blank\">Try in sandbox</a><br>Get a single outgoing message.
+Get a single outgoing message.
 
 ### Example
 ```csharp
@@ -6203,7 +6101,7 @@ Name | Type | Description  | Notes
 
 Get history
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\" target=\"_blank\">Try in sandbox</a><br>Get the outbound messages history.
+Get the outbound messages history.
 
 ### Example
 ```csharp
@@ -6276,8 +6174,6 @@ Name | Type | Description  | Notes
 
 Get a single scheduled message
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -6341,8 +6237,6 @@ Name | Type | Description  | Notes
 
 Get the details of a specific Sender ID
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -6405,8 +6299,6 @@ Name | Type | Description  | Notes
 > GetSenderIdsPaginatedResponse GetSenderIds (int? page = null, int? limit = null)
 
 Get all your approved Sender IDs
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -6473,8 +6365,6 @@ Name | Type | Description  | Notes
 
 Get current sender settings
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -6537,8 +6427,6 @@ Name | Type | Description  | Notes
 > GetSpendingStatPaginatedResponse GetSpendingStat (int? page = null, int? limit = null, string start = null, string end = null)
 
 Get spending statistics
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -6609,8 +6497,6 @@ Name | Type | Description  | Notes
 
 Get sub-account information
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -6673,8 +6559,6 @@ Name | Type | Description  | Notes
 > User GetSubaccounts (int? page = null, int? limit = null)
 
 Get a sub-accounts list
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -6741,7 +6625,7 @@ Name | Type | Description  | Notes
 
 Get all sub-accounts with their REST API tokens associated with a specified app name
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\" target=\"_blank\">Try in sandbox</a><br>Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
 
 ### Example
 ```csharp
@@ -6810,7 +6694,7 @@ Name | Type | Description  | Notes
 
 Get a template`s details
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/getTemplate\" target=\"_blank\">Try in sandbox</a><br>Get a single template.
+Get a single template.
 
 ### Example
 ```csharp
@@ -6875,7 +6759,7 @@ Name | Type | Description  | Notes
 
 Get timezones
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\" target=\"_blank\">Try in sandbox</a><br>Return all available timezone IDs
+Return all available timezone IDs
 
 ### Example
 ```csharp
@@ -6940,7 +6824,7 @@ Name | Type | Description  | Notes
 
 Get unread messages number
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\" target=\"_blank\">Try in sandbox</a><br>Get the total amount of unread messages in the current user chats.
+Get the total amount of unread messages in the current user chats.
 
 ### Example
 ```csharp
@@ -7000,8 +6884,6 @@ This endpoint does not need any parameter.
 > UnsubscribedContact GetUnsubscribedContact (int? id)
 
 Get the details of a specific unsubscribed contact
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -7066,7 +6948,7 @@ Name | Type | Description  | Notes
 
 Get all unsubscribed contacts
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\" target=\"_blank\">Try in sandbox</a><br>When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
+When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
 
 ### Example
 ```csharp
@@ -7132,8 +7014,6 @@ Name | Type | Description  | Notes
 > GetUserDedicatedNumbersPaginatedResponse GetUserDedicatedNumbers (int? page = null, int? limit = null, int? surveyId = null)
 
 Get all your dedicated numbers
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -7202,7 +7082,7 @@ Name | Type | Description  | Notes
 
 Import contacts
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/importContacts\" target=\"_blank\">Try in sandbox</a><br>Import contacts from the CSV, XLS or XLSX file.
+Import contacts from the CSV, XLS or XLSX file.
 
 ### Example
 ```csharp
@@ -7273,8 +7153,6 @@ Name | Type | Description  | Notes
 
 Invite a new sub-account
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -7337,7 +7215,7 @@ void (empty response body)
 
 Mark chats as read (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\" target=\"_blank\">Try in sandbox</a><br>Mark several chats as read by chat IDs or mark all chats as read
+Mark several chats as read by chat IDs or mark all chats as read
 
 ### Example
 ```csharp
@@ -7401,7 +7279,7 @@ void (empty response body)
 
 Mark chats as unread (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\" target=\"_blank\">Try in sandbox</a><br>Mark several chats as UNread by chat IDs or mark all chats as UNread
+Mark several chats as UNread by chat IDs or mark all chats as UNread
 
 ### Example
 ```csharp
@@ -7464,8 +7342,6 @@ void (empty response body)
 > ResourceLinkResponse MuteChat (MuteChatInputObject muteChatInputObject)
 
 Mute chat sounds
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/muteChat\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -7530,7 +7406,7 @@ Name | Type | Description  | Notes
 
 Mute chats (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Mute several chats by chat ids or mute all chats.
+Mute several chats by chat ids or mute all chats.
 
 ### Example
 ```csharp
@@ -7594,7 +7470,7 @@ void (empty response body)
 
 Ping
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\" target=\"_blank\">Try in sandbox</a><br>Make a simple ping request.
+Make a simple ping request.
 
 ### Example
 ```csharp
@@ -7655,7 +7531,7 @@ This endpoint does not need any parameter.
 
 Reopen chats (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Reopen chats by chat IDs or reopen all chats
+Reopen chats by chat IDs or reopen all chats
 
 ### Example
 ```csharp
@@ -7719,7 +7595,7 @@ void (empty response body)
 
 Request a new REST API token for sub-account
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\" target=\"_blank\">Try in sandbox</a><br>Returning user object, key and app name.
+Returning user object, key and app name.
 
 ### Example
 ```csharp
@@ -7784,7 +7660,7 @@ Name | Type | Description  | Notes
 
 Apply for a new Sender ID
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\" target=\"_blank\">Try in sandbox</a><br>> Sender IDs are shared among all of your sub-accounts.
+> Sender IDs are shared among all of your sub-accounts.
 
 ### Example
 ```csharp
@@ -7848,8 +7724,6 @@ Name | Type | Description  | Notes
 > SearchChatsPaginatedResponse SearchChats (int? page = null, int? limit = null, string query = null)
 
 Find chats by message text
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/searchChats\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -7918,8 +7792,6 @@ Name | Type | Description  | Notes
 
 Find chats (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -7987,7 +7859,7 @@ Name | Type | Description  | Notes
 
 Find chats by recipient
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\" target=\"_blank\">Try in sandbox</a><br>Find chats by recipient (contact, list name or phone number).
+Find chats by recipient (contact, list name or phone number).
 
 ### Example
 ```csharp
@@ -8057,8 +7929,6 @@ Name | Type | Description  | Notes
 > SearchContactsPaginatedResponse SearchContacts (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null)
 
 Find contacts by given criteria
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/searchContacts\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -8143,7 +8013,7 @@ Name | Type | Description  | Notes
 
 Find inbound messages
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\" target=\"_blank\">Try in sandbox</a><br>Find inbound messages by given parameters.
+Find inbound messages by given parameters.
 
 ### Example
 ```csharp
@@ -8219,8 +8089,6 @@ Name | Type | Description  | Notes
 > SearchListsPaginatedResponse SearchLists (int? page = null, int? limit = null, string ids = null, string query = null, int? onlyMine = null, int? onlyDefault = null, string orderBy = null, string direction = null)
 
 Find lists by given criteria
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/searchLists\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -8299,7 +8167,7 @@ Name | Type | Description  | Notes
 
 Find messages
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\" target=\"_blank\">Try in sandbox</a><br>Find outbound messages by given parameters.
+Find outbound messages by given parameters.
 
 ### Example
 ```csharp
@@ -8378,8 +8246,6 @@ Name | Type | Description  | Notes
 
 Find scheduled messages
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -8455,7 +8321,7 @@ Name | Type | Description  | Notes
 
 Find templates by criteria
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/searchTemplates\" target=\"_blank\">Try in sandbox</a><br>Find user templates by given parameters.
+Find user templates by given parameters.
 
 ### Example
 ```csharp
@@ -8528,7 +8394,7 @@ Name | Type | Description  | Notes
 
 Send message
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\" target=\"_blank\">Try in sandbox</a><br>This is the main entrypoint to send messages. See the examples above for the reference.
+This is the main entrypoint to send messages. See the examples above for the reference.
 
 ### Example
 ```csharp
@@ -8593,7 +8459,7 @@ Name | Type | Description  | Notes
 
 Step 1: Send a verification code 
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\" target=\"_blank\">Try in sandbox</a><br>Sends a verification code to a specified phone number.
+Sends a verification code to a specified phone number.
 
 ### Example
 ```csharp
@@ -8658,7 +8524,7 @@ Name | Type | Description  | Notes
 
 Change chat status
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/setChatStatus\" target=\"_blank\">Try in sandbox</a><br>Set the status of the chat given by ID.
+Set the status of the chat given by ID.
 
 ### Example
 ```csharp
@@ -8723,7 +8589,7 @@ Name | Type | Description  | Notes
 
 Unblock a contact by phone number
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/unblockContact\" target=\"_blank\">Try in sandbox</a><br>Unblock a contact by phone number
+Unblock a contact by phone number
 
 ### Example
 ```csharp
@@ -8787,7 +8653,7 @@ void (empty response body)
 
 Unblock contacts (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\" target=\"_blank\">Try in sandbox</a><br>Unblock several contacts by blocked contact IDs or unblock all contacts.
+Unblock several contacts by blocked contact IDs or unblock all contacts.
 
 ### Example
 ```csharp
@@ -8851,7 +8717,7 @@ void (empty response body)
 
 Unmute chats (bulk)
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Unmute several chats by chat ids or unmute all chats.
+Unmute several chats by chat ids or unmute all chats.
 
 ### Example
 ```csharp
@@ -8915,7 +8781,7 @@ void (empty response body)
 
 Manually unsubscribe a contact
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\" target=\"_blank\">Try in sandbox</a><br>> Please note, if you unsubscribe a contact, this action cannot be reversed. 
+> Please note, if you unsubscribe a contact, this action cannot be reversed. 
 
 ### Example
 ```csharp
@@ -8980,8 +8846,6 @@ Name | Type | Description  | Notes
 
 Update balance notification settings
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -9043,8 +8907,6 @@ void (empty response body)
 > void UpdateCallbackSettings (UpdateCallbackSettingsInputObject updateCallbackSettingsInputObject)
 
 Update callback URL settings
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -9108,8 +8970,6 @@ void (empty response body)
 
 Update chat desktop notification settings
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -9171,8 +9031,6 @@ void (empty response body)
 > ResourceLinkResponse UpdateContact (UpdateContactInputObject updateContactInputObject, int? id)
 
 Edit a contact
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/updateContact\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -9239,8 +9097,6 @@ Name | Type | Description  | Notes
 
 Update a contact note
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -9306,8 +9162,6 @@ Name | Type | Description  | Notes
 
 Edit current account info
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -9370,8 +9224,6 @@ Name | Type | Description  | Notes
 > ResourceLinkResponse UpdateCustomField (UpdateCustomFieldInputObject updateCustomFieldInputObject, int? id)
 
 Edit a custom field
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -9438,8 +9290,6 @@ Name | Type | Description  | Notes
 
 Edit the custom field value of a specified contact
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -9505,8 +9355,6 @@ Name | Type | Description  | Notes
 
 Update inbound messages notification settings
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -9568,8 +9416,6 @@ void (empty response body)
 > ResourceLinkResponse UpdateList (int? id, UpdateListObject updateListObject = null)
 
 Edit a list
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/updateList\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -9636,8 +9482,6 @@ Name | Type | Description  | Notes
 
 Change sender settings
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -9699,8 +9543,6 @@ void (empty response body)
 > ResourceLinkResponse UpdateTemplate (UpdateTemplateInputObject updateTemplateInputObject, int? id)
 
 Update a template
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/updateTemplate\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -9767,8 +9609,6 @@ Name | Type | Description  | Notes
 
 Upload an avatar
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Account/uploadAvatar\" target=\"_blank\">Try in sandbox</a><br>
-
 ### Example
 ```csharp
 using System;
@@ -9830,8 +9670,6 @@ void (empty response body)
 > ResourceLinkResponse UploadContactAvatar (System.IO.Stream image, int? id)
 
 Upload an avatar
-
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\" target=\"_blank\">Try in sandbox</a><br>
 
 ### Example
 ```csharp
@@ -9898,7 +9736,7 @@ Name | Type | Description  | Notes
 
 Add an avatar for a list
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\" target=\"_blank\">Try in sandbox</a><br>Add an avatar for a list
+Add an avatar for a list
 
 ### Example
 ```csharp
@@ -9965,7 +9803,7 @@ Name | Type | Description  | Notes
 
 Upload message attachment
 
-<a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\" target=\"_blank\">Try in sandbox</a><br>Upload a new file to insert it as a link.
+Upload a new file to insert it as a link.
 
 ### Example
 ```csharp

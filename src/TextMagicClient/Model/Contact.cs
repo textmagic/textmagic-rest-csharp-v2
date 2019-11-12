@@ -39,15 +39,15 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="Contact" /> class.
         /// </summary>
         /// <param name="id">Contact ID. (required).</param>
-        /// <param name="favorited">Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites). (required).</param>
-        /// <param name="blocked">Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts). (required).</param>
+        /// <param name="favorited">Is the Contact favorite? [Favorite list](https://docs.textmagic.com/#operation/getFavorites). (required).</param>
+        /// <param name="blocked">Is the Contact blocked? [Blocked contacts](https://docs.textmagic.com/#operation/getBlockedContacts). (required).</param>
         /// <param name="firstName">Contact first name. (required).</param>
         /// <param name="lastName">Contact last name. (required).</param>
         /// <param name="companyName">Company name. (required).</param>
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164). (required).</param>
         /// <param name="email">Contact email address. (required).</param>
         /// <param name="country">Contact country. (required).</param>
-        /// <param name="customFields">See the [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section. (required).</param>
+        /// <param name="customFields">See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section. (required).</param>
         /// <param name="user">user (required).</param>
         /// <param name="lists">lists (required).</param>
         /// <param name="phoneType">Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is a Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined.  (required).</param>
@@ -200,16 +200,16 @@ namespace TextMagicClient.Model
         public int? Id { get; set; }
 
         /// <summary>
-        /// Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites).
+        /// Is the Contact favorite? [Favorite list](https://docs.textmagic.com/#operation/getFavorites).
         /// </summary>
-        /// <value>Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites).</value>
+        /// <value>Is the Contact favorite? [Favorite list](https://docs.textmagic.com/#operation/getFavorites).</value>
         [DataMember(Name="favorited", EmitDefaultValue=false)]
         public bool? Favorited { get; set; }
 
         /// <summary>
-        /// Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts).
+        /// Is the Contact blocked? [Blocked contacts](https://docs.textmagic.com/#operation/getBlockedContacts).
         /// </summary>
-        /// <value>Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts).</value>
+        /// <value>Is the Contact blocked? [Blocked contacts](https://docs.textmagic.com/#operation/getBlockedContacts).</value>
         [DataMember(Name="blocked", EmitDefaultValue=false)]
         public bool? Blocked { get; set; }
 
@@ -256,9 +256,9 @@ namespace TextMagicClient.Model
         public Country Country { get; set; }
 
         /// <summary>
-        /// See the [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.
+        /// See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section.
         /// </summary>
-        /// <value>See the [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.</value>
+        /// <value>See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section.</value>
         [DataMember(Name="customFields", EmitDefaultValue=false)]
         public List<ContactCustomField> CustomFields { get; set; }
 

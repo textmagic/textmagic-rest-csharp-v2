@@ -33,7 +33,7 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BadRequestResponseErrors" /> class.
         /// </summary>
-        /// <param name="common">Array of messages with errors related to the entire request. For example, you did not specify either the **text** or the **templateId** when [sending the message](http://docs.textmagictesting.com/#tag/Outbound-Messages). .</param>
+        /// <param name="common">Array of messages with errors related to the entire request. For example, you did not specify either the **text** or the **templateId** when [sending the message](https://docs.textmagic.com/#tag/Outbound-Messages). .</param>
         /// <param name="fields">Associative array. The keys are the POST/PUT parameter names and the values are arrays with error messages for these parameters. .</param>
         public BadRequestResponseErrors(List<string> common = default(List<string>), Object fields = default(Object))
         {
@@ -42,9 +42,9 @@ namespace TextMagicClient.Model
         }
         
         /// <summary>
-        /// Array of messages with errors related to the entire request. For example, you did not specify either the **text** or the **templateId** when [sending the message](http://docs.textmagictesting.com/#tag/Outbound-Messages). 
+        /// Array of messages with errors related to the entire request. For example, you did not specify either the **text** or the **templateId** when [sending the message](https://docs.textmagic.com/#tag/Outbound-Messages). 
         /// </summary>
-        /// <value>Array of messages with errors related to the entire request. For example, you did not specify either the **text** or the **templateId** when [sending the message](http://docs.textmagictesting.com/#tag/Outbound-Messages). </value>
+        /// <value>Array of messages with errors related to the entire request. For example, you did not specify either the **text** or the **templateId** when [sending the message](https://docs.textmagic.com/#tag/Outbound-Messages). </value>
         [DataMember(Name="common", EmitDefaultValue=false)]
         public List<string> Common { get; set; }
 

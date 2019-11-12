@@ -44,7 +44,7 @@ namespace TextMagicClient.Model
         /// <param name="cutExtra">Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. (default to false).</param>
         /// <param name="partsCount">Maximum message parts count (TextMagic allows sending 1 to 6 message parts)..</param>
         /// <param name="referenceId">Custom message reference id which can be used in your application infrastructure..</param>
-        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs)..</param>
+        /// <param name="from">One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs)..</param>
         /// <param name="rrule">iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details..</param>
         /// <param name="createChat">Should sending method try to create new Chat (if not exist) with specified recipients? (default to false).</param>
         /// <param name="tts">Send a Text-to-Speech message. (default to false).</param>
@@ -181,9 +181,9 @@ namespace TextMagicClient.Model
         public int? ReferenceId { get; set; }
 
         /// <summary>
-        /// One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
+        /// One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs).
         /// </summary>
-        /// <value>One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).</value>
+        /// <value>One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs).</value>
         [DataMember(Name="from", EmitDefaultValue=false)]
         public string From { get; set; }
 
