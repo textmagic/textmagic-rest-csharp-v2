@@ -416,7 +416,7 @@ void (empty response body)
 
 <a name="checkphoneverificationcodetfa"></a>
 # **CheckPhoneVerificationCodeTFA**
-> void CheckPhoneVerificationCodeTFA (CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject)
+> void CheckPhoneVerificationCodeTFA (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject)
 
 Step 2: Check the verification code 
 
@@ -441,12 +441,12 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var checkPhoneVerificationCodeInputObject = new CheckPhoneVerificationCodeInputObject(); // CheckPhoneVerificationCodeInputObject | 
+            var checkPhoneVerificationCodeTFAInputObject = new CheckPhoneVerificationCodeTFAInputObject(); // CheckPhoneVerificationCodeTFAInputObject | 
 
             try
             {
                 // Step 2: Check the verification code 
-                apiInstance.CheckPhoneVerificationCodeTFA(checkPhoneVerificationCodeInputObject);
+                apiInstance.CheckPhoneVerificationCodeTFA(checkPhoneVerificationCodeTFAInputObject);
             }
             catch (Exception e)
             {
@@ -461,7 +461,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **checkPhoneVerificationCodeInputObject** | [**CheckPhoneVerificationCodeInputObject**](CheckPhoneVerificationCodeInputObject.md)|  | 
+ **checkPhoneVerificationCodeTFAInputObject** | [**CheckPhoneVerificationCodeTFAInputObject**](CheckPhoneVerificationCodeTFAInputObject.md)|  | 
 
 ### Return type
 
@@ -8455,7 +8455,7 @@ Name | Type | Description  | Notes
 
 <a name="sendphoneverificationcodetfa"></a>
 # **SendPhoneVerificationCodeTFA**
-> SendPhoneVerificationCodeResponse SendPhoneVerificationCodeTFA (SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject)
+> SendPhoneVerificationCodeResponse SendPhoneVerificationCodeTFA (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject)
 
 Step 1: Send a verification code 
 
@@ -8480,12 +8480,12 @@ namespace Example
             Configuration.Default.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TextMagicApi();
-            var sendPhoneVerificationCodeInputObject = new SendPhoneVerificationCodeInputObject(); // SendPhoneVerificationCodeInputObject | 
+            var sendPhoneVerificationCodeTFAInputObject = new SendPhoneVerificationCodeTFAInputObject(); // SendPhoneVerificationCodeTFAInputObject | 
 
             try
             {
                 // Step 1: Send a verification code 
-                SendPhoneVerificationCodeResponse result = apiInstance.SendPhoneVerificationCodeTFA(sendPhoneVerificationCodeInputObject);
+                SendPhoneVerificationCodeResponse result = apiInstance.SendPhoneVerificationCodeTFA(sendPhoneVerificationCodeTFAInputObject);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -8501,7 +8501,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sendPhoneVerificationCodeInputObject** | [**SendPhoneVerificationCodeInputObject**](SendPhoneVerificationCodeInputObject.md)|  | 
+ **sendPhoneVerificationCodeTFAInputObject** | [**SendPhoneVerificationCodeTFAInputObject**](SendPhoneVerificationCodeTFAInputObject.md)|  | 
 
 ### Return type
 

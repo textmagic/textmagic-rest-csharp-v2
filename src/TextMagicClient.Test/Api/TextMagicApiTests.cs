@@ -120,8 +120,8 @@ namespace TextMagicClient.Test
         public void CheckPhoneVerificationCodeTFATest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject = null;
-            //instance.CheckPhoneVerificationCodeTFA(checkPhoneVerificationCodeInputObject);
+            //CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject = null;
+            //instance.CheckPhoneVerificationCodeTFA(checkPhoneVerificationCodeTFAInputObject);
             
         }
         
@@ -1737,8 +1737,8 @@ namespace TextMagicClient.Test
         public void SendPhoneVerificationCodeTFATest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject = null;
-            //var response = instance.SendPhoneVerificationCodeTFA(sendPhoneVerificationCodeInputObject);
+            //SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject = null;
+            //var response = instance.SendPhoneVerificationCodeTFA(sendPhoneVerificationCodeTFAInputObject);
             //Assert.IsInstanceOf<SendPhoneVerificationCodeResponse> (response, "response is SendPhoneVerificationCodeResponse");
         }
         

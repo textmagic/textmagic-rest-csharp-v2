@@ -25,17 +25,17 @@ using SwaggerDateConverter = TextMagicClient.Client.SwaggerDateConverter;
 namespace TextMagicClient.Model
 {
     /// <summary>
-    /// CheckPhoneVerificationCodeInputObject
+    /// CheckPhoneVerificationCodeTFAInputObject
     /// </summary>
     [DataContract]
-    public partial class CheckPhoneVerificationCodeInputObject :  IEquatable<CheckPhoneVerificationCodeInputObject>, IValidatableObject
+    public partial class CheckPhoneVerificationCodeTFAInputObject :  IEquatable<CheckPhoneVerificationCodeTFAInputObject>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CheckPhoneVerificationCodeInputObject" /> class.
+        /// Initializes a new instance of the <see cref="CheckPhoneVerificationCodeTFAInputObject" /> class.
         /// </summary>
         /// <param name="code">Verification code received by the user and entered into the form field..</param>
         /// <param name="verifyId">VerifyId from Step 1 to match both requests together..</param>
-        public CheckPhoneVerificationCodeInputObject(int? code = default(int?), string verifyId = default(string))
+        public CheckPhoneVerificationCodeTFAInputObject(int? code = default(int?), string verifyId = default(string))
         {
             this.Code = code;
             this.VerifyId = verifyId;
@@ -62,7 +62,7 @@ namespace TextMagicClient.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class CheckPhoneVerificationCodeInputObject {\n");
+            sb.Append("class CheckPhoneVerificationCodeTFAInputObject {\n");
             sb.Append("  Code: ").Append(Code).Append("\n");
             sb.Append("  VerifyId: ").Append(VerifyId).Append("\n");
             sb.Append("}\n");
@@ -85,15 +85,15 @@ namespace TextMagicClient.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as CheckPhoneVerificationCodeInputObject);
+            return this.Equals(input as CheckPhoneVerificationCodeTFAInputObject);
         }
 
         /// <summary>
-        /// Returns true if CheckPhoneVerificationCodeInputObject instances are equal
+        /// Returns true if CheckPhoneVerificationCodeTFAInputObject instances are equal
         /// </summary>
-        /// <param name="input">Instance of CheckPhoneVerificationCodeInputObject to be compared</param>
+        /// <param name="input">Instance of CheckPhoneVerificationCodeTFAInputObject to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(CheckPhoneVerificationCodeInputObject input)
+        public bool Equals(CheckPhoneVerificationCodeTFAInputObject input)
         {
             if (input == null)
                 return false;

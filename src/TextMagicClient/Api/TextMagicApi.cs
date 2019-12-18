@@ -117,9 +117,9 @@ namespace TextMagicClient.Api
         /// Check received code from user with the code which was actually sent.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeInputObject"></param>
+        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
         /// <returns></returns>
-        void CheckPhoneVerificationCodeTFA (CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject);
+        void CheckPhoneVerificationCodeTFA (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject);
 
         /// <summary>
         /// Step 2: Check the verification code 
@@ -128,9 +128,9 @@ namespace TextMagicClient.Api
         /// Check received code from user with the code which was actually sent.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeInputObject"></param>
+        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> CheckPhoneVerificationCodeTFAWithHttpInfo (CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject);
+        ApiResponse<Object> CheckPhoneVerificationCodeTFAWithHttpInfo (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject);
         /// <summary>
         /// Reset list members to the specified contacts
         /// </summary>
@@ -2985,9 +2985,9 @@ namespace TextMagicClient.Api
         /// Sends a verification code to a specified phone number.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeInputObject"></param>
+        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>SendPhoneVerificationCodeResponse</returns>
-        SendPhoneVerificationCodeResponse SendPhoneVerificationCodeTFA (SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject);
+        SendPhoneVerificationCodeResponse SendPhoneVerificationCodeTFA (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject);
 
         /// <summary>
         /// Step 1: Send a verification code 
@@ -2996,9 +2996,9 @@ namespace TextMagicClient.Api
         /// Sends a verification code to a specified phone number.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeInputObject"></param>
+        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>ApiResponse of SendPhoneVerificationCodeResponse</returns>
-        ApiResponse<SendPhoneVerificationCodeResponse> SendPhoneVerificationCodeTFAWithHttpInfo (SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject);
+        ApiResponse<SendPhoneVerificationCodeResponse> SendPhoneVerificationCodeTFAWithHttpInfo (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject);
         /// <summary>
         /// Change chat status
         /// </summary>
@@ -3551,9 +3551,9 @@ namespace TextMagicClient.Api
         /// Check received code from user with the code which was actually sent.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeInputObject"></param>
+        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task CheckPhoneVerificationCodeTFAAsync (CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject);
+        System.Threading.Tasks.Task CheckPhoneVerificationCodeTFAAsync (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject);
 
         /// <summary>
         /// Step 2: Check the verification code 
@@ -3562,9 +3562,9 @@ namespace TextMagicClient.Api
         /// Check received code from user with the code which was actually sent.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeInputObject"></param>
+        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> CheckPhoneVerificationCodeTFAAsyncWithHttpInfo (CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject);
+        System.Threading.Tasks.Task<ApiResponse<Object>> CheckPhoneVerificationCodeTFAAsyncWithHttpInfo (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject);
         /// <summary>
         /// Reset list members to the specified contacts
         /// </summary>
@@ -6419,9 +6419,9 @@ namespace TextMagicClient.Api
         /// Sends a verification code to a specified phone number.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeInputObject"></param>
+        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>Task of SendPhoneVerificationCodeResponse</returns>
-        System.Threading.Tasks.Task<SendPhoneVerificationCodeResponse> SendPhoneVerificationCodeTFAAsync (SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject);
+        System.Threading.Tasks.Task<SendPhoneVerificationCodeResponse> SendPhoneVerificationCodeTFAAsync (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject);
 
         /// <summary>
         /// Step 1: Send a verification code 
@@ -6430,9 +6430,9 @@ namespace TextMagicClient.Api
         /// Sends a verification code to a specified phone number.
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeInputObject"></param>
+        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>Task of ApiResponse (SendPhoneVerificationCodeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendPhoneVerificationCodeResponse>> SendPhoneVerificationCodeTFAAsyncWithHttpInfo (SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject);
+        System.Threading.Tasks.Task<ApiResponse<SendPhoneVerificationCodeResponse>> SendPhoneVerificationCodeTFAAsyncWithHttpInfo (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject);
         /// <summary>
         /// Change chat status
         /// </summary>
@@ -7632,24 +7632,24 @@ namespace TextMagicClient.Api
         /// Step 2: Check the verification code  Check received code from user with the code which was actually sent.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeInputObject"></param>
+        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
         /// <returns></returns>
-        public void CheckPhoneVerificationCodeTFA (CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject)
+        public void CheckPhoneVerificationCodeTFA (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject)
         {
-             CheckPhoneVerificationCodeTFAWithHttpInfo(checkPhoneVerificationCodeInputObject);
+             CheckPhoneVerificationCodeTFAWithHttpInfo(checkPhoneVerificationCodeTFAInputObject);
         }
 
         /// <summary>
         /// Step 2: Check the verification code  Check received code from user with the code which was actually sent.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeInputObject"></param>
+        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> CheckPhoneVerificationCodeTFAWithHttpInfo (CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject)
+        public ApiResponse<Object> CheckPhoneVerificationCodeTFAWithHttpInfo (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject)
         {
-            // verify the required parameter 'checkPhoneVerificationCodeInputObject' is set
-            if (checkPhoneVerificationCodeInputObject == null)
-                throw new ApiException(400, "Missing required parameter 'checkPhoneVerificationCodeInputObject' when calling TextMagicApi->CheckPhoneVerificationCodeTFA");
+            // verify the required parameter 'checkPhoneVerificationCodeTFAInputObject' is set
+            if (checkPhoneVerificationCodeTFAInputObject == null)
+                throw new ApiException(400, "Missing required parameter 'checkPhoneVerificationCodeTFAInputObject' when calling TextMagicApi->CheckPhoneVerificationCodeTFA");
 
             var localVarPath = "/api/v2/verify";
             var localVarPathParams = new Dictionary<String, String>();
@@ -7673,13 +7673,13 @@ namespace TextMagicClient.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (checkPhoneVerificationCodeInputObject != null && checkPhoneVerificationCodeInputObject.GetType() != typeof(byte[]))
+            if (checkPhoneVerificationCodeTFAInputObject != null && checkPhoneVerificationCodeTFAInputObject.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(checkPhoneVerificationCodeInputObject); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(checkPhoneVerificationCodeTFAInputObject); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = checkPhoneVerificationCodeInputObject; // byte array
+                localVarPostBody = checkPhoneVerificationCodeTFAInputObject; // byte array
             }
 
             // authentication (BasicAuth) required
@@ -7711,11 +7711,11 @@ namespace TextMagicClient.Api
         /// Step 2: Check the verification code  Check received code from user with the code which was actually sent.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeInputObject"></param>
+        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task CheckPhoneVerificationCodeTFAAsync (CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject)
+        public async System.Threading.Tasks.Task CheckPhoneVerificationCodeTFAAsync (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject)
         {
-             await CheckPhoneVerificationCodeTFAAsyncWithHttpInfo(checkPhoneVerificationCodeInputObject);
+             await CheckPhoneVerificationCodeTFAAsyncWithHttpInfo(checkPhoneVerificationCodeTFAInputObject);
 
         }
 
@@ -7723,13 +7723,13 @@ namespace TextMagicClient.Api
         /// Step 2: Check the verification code  Check received code from user with the code which was actually sent.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeInputObject"></param>
+        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> CheckPhoneVerificationCodeTFAAsyncWithHttpInfo (CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CheckPhoneVerificationCodeTFAAsyncWithHttpInfo (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject)
         {
-            // verify the required parameter 'checkPhoneVerificationCodeInputObject' is set
-            if (checkPhoneVerificationCodeInputObject == null)
-                throw new ApiException(400, "Missing required parameter 'checkPhoneVerificationCodeInputObject' when calling TextMagicApi->CheckPhoneVerificationCodeTFA");
+            // verify the required parameter 'checkPhoneVerificationCodeTFAInputObject' is set
+            if (checkPhoneVerificationCodeTFAInputObject == null)
+                throw new ApiException(400, "Missing required parameter 'checkPhoneVerificationCodeTFAInputObject' when calling TextMagicApi->CheckPhoneVerificationCodeTFA");
 
             var localVarPath = "/api/v2/verify";
             var localVarPathParams = new Dictionary<String, String>();
@@ -7753,13 +7753,13 @@ namespace TextMagicClient.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (checkPhoneVerificationCodeInputObject != null && checkPhoneVerificationCodeInputObject.GetType() != typeof(byte[]))
+            if (checkPhoneVerificationCodeTFAInputObject != null && checkPhoneVerificationCodeTFAInputObject.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(checkPhoneVerificationCodeInputObject); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(checkPhoneVerificationCodeTFAInputObject); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = checkPhoneVerificationCodeInputObject; // byte array
+                localVarPostBody = checkPhoneVerificationCodeTFAInputObject; // byte array
             }
 
             // authentication (BasicAuth) required
@@ -26522,11 +26522,11 @@ namespace TextMagicClient.Api
         /// Step 1: Send a verification code  Sends a verification code to a specified phone number.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeInputObject"></param>
+        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>SendPhoneVerificationCodeResponse</returns>
-        public SendPhoneVerificationCodeResponse SendPhoneVerificationCodeTFA (SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject)
+        public SendPhoneVerificationCodeResponse SendPhoneVerificationCodeTFA (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject)
         {
-             ApiResponse<SendPhoneVerificationCodeResponse> localVarResponse = SendPhoneVerificationCodeTFAWithHttpInfo(sendPhoneVerificationCodeInputObject);
+             ApiResponse<SendPhoneVerificationCodeResponse> localVarResponse = SendPhoneVerificationCodeTFAWithHttpInfo(sendPhoneVerificationCodeTFAInputObject);
              return localVarResponse.Data;
         }
 
@@ -26534,13 +26534,13 @@ namespace TextMagicClient.Api
         /// Step 1: Send a verification code  Sends a verification code to a specified phone number.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeInputObject"></param>
+        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>ApiResponse of SendPhoneVerificationCodeResponse</returns>
-        public ApiResponse< SendPhoneVerificationCodeResponse > SendPhoneVerificationCodeTFAWithHttpInfo (SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject)
+        public ApiResponse< SendPhoneVerificationCodeResponse > SendPhoneVerificationCodeTFAWithHttpInfo (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject)
         {
-            // verify the required parameter 'sendPhoneVerificationCodeInputObject' is set
-            if (sendPhoneVerificationCodeInputObject == null)
-                throw new ApiException(400, "Missing required parameter 'sendPhoneVerificationCodeInputObject' when calling TextMagicApi->SendPhoneVerificationCodeTFA");
+            // verify the required parameter 'sendPhoneVerificationCodeTFAInputObject' is set
+            if (sendPhoneVerificationCodeTFAInputObject == null)
+                throw new ApiException(400, "Missing required parameter 'sendPhoneVerificationCodeTFAInputObject' when calling TextMagicApi->SendPhoneVerificationCodeTFA");
 
             var localVarPath = "/api/v2/verify";
             var localVarPathParams = new Dictionary<String, String>();
@@ -26564,13 +26564,13 @@ namespace TextMagicClient.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (sendPhoneVerificationCodeInputObject != null && sendPhoneVerificationCodeInputObject.GetType() != typeof(byte[]))
+            if (sendPhoneVerificationCodeTFAInputObject != null && sendPhoneVerificationCodeTFAInputObject.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(sendPhoneVerificationCodeInputObject); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(sendPhoneVerificationCodeTFAInputObject); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = sendPhoneVerificationCodeInputObject; // byte array
+                localVarPostBody = sendPhoneVerificationCodeTFAInputObject; // byte array
             }
 
             // authentication (BasicAuth) required
@@ -26602,11 +26602,11 @@ namespace TextMagicClient.Api
         /// Step 1: Send a verification code  Sends a verification code to a specified phone number.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeInputObject"></param>
+        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>Task of SendPhoneVerificationCodeResponse</returns>
-        public async System.Threading.Tasks.Task<SendPhoneVerificationCodeResponse> SendPhoneVerificationCodeTFAAsync (SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject)
+        public async System.Threading.Tasks.Task<SendPhoneVerificationCodeResponse> SendPhoneVerificationCodeTFAAsync (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject)
         {
-             ApiResponse<SendPhoneVerificationCodeResponse> localVarResponse = await SendPhoneVerificationCodeTFAAsyncWithHttpInfo(sendPhoneVerificationCodeInputObject);
+             ApiResponse<SendPhoneVerificationCodeResponse> localVarResponse = await SendPhoneVerificationCodeTFAAsyncWithHttpInfo(sendPhoneVerificationCodeTFAInputObject);
              return localVarResponse.Data;
 
         }
@@ -26615,13 +26615,13 @@ namespace TextMagicClient.Api
         /// Step 1: Send a verification code  Sends a verification code to a specified phone number.
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeInputObject"></param>
+        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
         /// <returns>Task of ApiResponse (SendPhoneVerificationCodeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendPhoneVerificationCodeResponse>> SendPhoneVerificationCodeTFAAsyncWithHttpInfo (SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject)
+        public async System.Threading.Tasks.Task<ApiResponse<SendPhoneVerificationCodeResponse>> SendPhoneVerificationCodeTFAAsyncWithHttpInfo (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject)
         {
-            // verify the required parameter 'sendPhoneVerificationCodeInputObject' is set
-            if (sendPhoneVerificationCodeInputObject == null)
-                throw new ApiException(400, "Missing required parameter 'sendPhoneVerificationCodeInputObject' when calling TextMagicApi->SendPhoneVerificationCodeTFA");
+            // verify the required parameter 'sendPhoneVerificationCodeTFAInputObject' is set
+            if (sendPhoneVerificationCodeTFAInputObject == null)
+                throw new ApiException(400, "Missing required parameter 'sendPhoneVerificationCodeTFAInputObject' when calling TextMagicApi->SendPhoneVerificationCodeTFA");
 
             var localVarPath = "/api/v2/verify";
             var localVarPathParams = new Dictionary<String, String>();
@@ -26645,13 +26645,13 @@ namespace TextMagicClient.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (sendPhoneVerificationCodeInputObject != null && sendPhoneVerificationCodeInputObject.GetType() != typeof(byte[]))
+            if (sendPhoneVerificationCodeTFAInputObject != null && sendPhoneVerificationCodeTFAInputObject.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(sendPhoneVerificationCodeInputObject); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(sendPhoneVerificationCodeTFAInputObject); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = sendPhoneVerificationCodeInputObject; // byte array
+                localVarPostBody = sendPhoneVerificationCodeTFAInputObject; // byte array
             }
 
             // authentication (BasicAuth) required
