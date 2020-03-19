@@ -38,10 +38,20 @@ namespace TextMagicClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="PingResponse" /> class.
         /// </summary>
+        /// <param name="userId">Current user Id. (required).</param>
         /// <param name="ping">Pong. (required).</param>
         /// <param name="utcDateTime">Current date and time. (required).</param>
-        public PingResponse(string ping = default(string), string utcDateTime = default(string))
+        public PingResponse(int? userId = default(int?), string ping = default(string), string utcDateTime = default(string))
         {
+            // to ensure "userId" is required (not null)
+            if (userId == null)
+            {
+                throw new InvalidDataException("userId is a required property for PingResponse and cannot be null");
+            }
+            else
+            {
+                this.UserId = userId;
+            }
             // to ensure "ping" is required (not null)
             if (ping == null)
             {
@@ -62,6 +72,13 @@ namespace TextMagicClient.Model
             }
         }
         
+        /// <summary>
+        /// Current user Id.
+        /// </summary>
+        /// <value>Current user Id.</value>
+        [DataMember(Name="userId", EmitDefaultValue=false)]
+        public int? UserId { get; set; }
+
         /// <summary>
         /// Pong.
         /// </summary>
@@ -84,6 +101,7 @@ namespace TextMagicClient.Model
         {
             var sb = new StringBuilder();
             sb.Append("class PingResponse {\n");
+            sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  Ping: ").Append(Ping).Append("\n");
             sb.Append("  UtcDateTime: ").Append(UtcDateTime).Append("\n");
             sb.Append("}\n");
@@ -121,6 +139,11 @@ namespace TextMagicClient.Model
 
             return 
                 (
+                    this.UserId == input.UserId ||
+                    (this.UserId != null &&
+                    this.UserId.Equals(input.UserId))
+                ) && 
+                (
                     this.Ping == input.Ping ||
                     (this.Ping != null &&
                     this.Ping.Equals(input.Ping))
@@ -141,6 +164,8 @@ namespace TextMagicClient.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.UserId != null)
+                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
                 if (this.Ping != null)
                     hashCode = hashCode * 59 + this.Ping.GetHashCode();
                 if (this.UtcDateTime != null)

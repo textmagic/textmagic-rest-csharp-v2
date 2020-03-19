@@ -28,7 +28,7 @@ Install-Package JsonSubTypes
 NOTE: RestSharp versions later than 105.1.0 have a bug which causes file uploads to fail. See [RestSharp#742](https://github.com/restsharp/RestSharp/issues/742)
 
 ## Installation
-Add the library to your project references or install it as a [NuGet package](https://www.nuget.org/packages/TextMagicClient/2.0.1067/).
+Add the library to your project references or install it as a [NuGet package](https://www.nuget.org/packages/TextMagicClient/2.0.1307/).
 
 ## C# usage example
 ```csharp
@@ -44,9 +44,9 @@ namespace ExampleApp
     {
         static void Main(string[] args)
         {
-            // Configure HTTP basic authorization: BasicAuth
+            // put your Username and API Key from https://my.textmagic.com/online/api/rest-api/keys page.
             Configuration.Default.Username = "YOUR_USERNAME";
-            Configuration.Default.Password = "YOUR_PASSWORD";
+            Configuration.Default.Password = "YOUR_API_KEY";
             Configuration.Default.BasePath = "https://rest.textmagic.com";
 
             var apiInstance = new TextMagicApi();
@@ -116,8 +116,9 @@ Imports TextMagicClient.Model
 
 Module Program
     Sub Main(args As String())
+        ' put your Username and API Key from https://my.textmagic.com/online/api/rest-api/keys page.
         Configuration.Default.Username = "YOUR_USERNAME"
-        Configuration.Default.Password = "YOUR_PASSWORD"
+        Configuration.Default.Password = "YOUR_API_KEY"
         Configuration.Default.BasePath = "https://rest.textmagic.com"
 
         Dim apiInstance = New TextMagicApi()

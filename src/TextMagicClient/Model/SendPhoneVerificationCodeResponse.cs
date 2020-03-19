@@ -40,7 +40,7 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <param name="verifyId">The ID of a verification request. This is required to finish the verification request in the next step. (required).</param>
         /// <param name="price">An amount of credit which will be deducted from your account balance when this verification is successfully completed. (required).</param>
-        public SendPhoneVerificationCodeResponse(Guid? verifyId = default(Guid?), decimal? price = default(decimal?))
+        public SendPhoneVerificationCodeResponse(string verifyId = default(string), decimal? price = default(decimal?))
         {
             // to ensure "verifyId" is required (not null)
             if (verifyId == null)
@@ -67,7 +67,7 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <value>The ID of a verification request. This is required to finish the verification request in the next step.</value>
         [DataMember(Name="verifyId", EmitDefaultValue=false)]
-        public Guid? VerifyId { get; set; }
+        public string VerifyId { get; set; }
 
         /// <summary>
         /// An amount of credit which will be deducted from your account balance when this verification is successfully completed.

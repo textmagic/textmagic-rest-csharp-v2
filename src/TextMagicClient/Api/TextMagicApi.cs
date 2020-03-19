@@ -2766,11 +2766,12 @@ namespace TextMagicClient.Api
         /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
         /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="exactMatch">Return only exactly matching contacts. Default is 0. (optional, default to 0)</param>
         /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>SearchContactsPaginatedResponse</returns>
-        SearchContactsPaginatedResponse SearchContacts (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null);
+        SearchContactsPaginatedResponse SearchContacts (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, int? exactMatch = null, string country = null, string orderBy = null, string direction = null);
 
         /// <summary>
         /// Find contacts by given criteria
@@ -2787,11 +2788,12 @@ namespace TextMagicClient.Api
         /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
         /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="exactMatch">Return only exactly matching contacts. Default is 0. (optional, default to 0)</param>
         /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of SearchContactsPaginatedResponse</returns>
-        ApiResponse<SearchContactsPaginatedResponse> SearchContactsWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null);
+        ApiResponse<SearchContactsPaginatedResponse> SearchContactsWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, int? exactMatch = null, string country = null, string orderBy = null, string direction = null);
         /// <summary>
         /// Find inbound messages
         /// </summary>
@@ -6200,11 +6202,12 @@ namespace TextMagicClient.Api
         /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
         /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="exactMatch">Return only exactly matching contacts. Default is 0. (optional, default to 0)</param>
         /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of SearchContactsPaginatedResponse</returns>
-        System.Threading.Tasks.Task<SearchContactsPaginatedResponse> SearchContactsAsync (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null);
+        System.Threading.Tasks.Task<SearchContactsPaginatedResponse> SearchContactsAsync (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, int? exactMatch = null, string country = null, string orderBy = null, string direction = null);
 
         /// <summary>
         /// Find contacts by given criteria
@@ -6221,11 +6224,12 @@ namespace TextMagicClient.Api
         /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
         /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="exactMatch">Return only exactly matching contacts. Default is 0. (optional, default to 0)</param>
         /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SearchContactsPaginatedResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SearchContactsPaginatedResponse>> SearchContactsAsyncWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null);
+        System.Threading.Tasks.Task<ApiResponse<SearchContactsPaginatedResponse>> SearchContactsAsyncWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, int? exactMatch = null, string country = null, string orderBy = null, string direction = null);
         /// <summary>
         /// Find inbound messages
         /// </summary>
@@ -25283,13 +25287,14 @@ namespace TextMagicClient.Api
         /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
         /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="exactMatch">Return only exactly matching contacts. Default is 0. (optional, default to 0)</param>
         /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>SearchContactsPaginatedResponse</returns>
-        public SearchContactsPaginatedResponse SearchContacts (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null)
+        public SearchContactsPaginatedResponse SearchContacts (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, int? exactMatch = null, string country = null, string orderBy = null, string direction = null)
         {
-             ApiResponse<SearchContactsPaginatedResponse> localVarResponse = SearchContactsWithHttpInfo(page, limit, shared, ids, listId, includeBlocked, query, local, country, orderBy, direction);
+             ApiResponse<SearchContactsPaginatedResponse> localVarResponse = SearchContactsWithHttpInfo(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction);
              return localVarResponse.Data;
         }
 
@@ -25305,11 +25310,12 @@ namespace TextMagicClient.Api
         /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
         /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="exactMatch">Return only exactly matching contacts. Default is 0. (optional, default to 0)</param>
         /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>ApiResponse of SearchContactsPaginatedResponse</returns>
-        public ApiResponse< SearchContactsPaginatedResponse > SearchContactsWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null)
+        public ApiResponse< SearchContactsPaginatedResponse > SearchContactsWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, int? exactMatch = null, string country = null, string orderBy = null, string direction = null)
         {
 
             var localVarPath = "/api/v2/contacts/search";
@@ -25342,6 +25348,7 @@ namespace TextMagicClient.Api
             if (includeBlocked != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "includeBlocked", includeBlocked)); // query parameter
             if (query != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "query", query)); // query parameter
             if (local != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "local", local)); // query parameter
+            if (exactMatch != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "exactMatch", exactMatch)); // query parameter
             if (country != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "country", country)); // query parameter
             if (orderBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "orderBy", orderBy)); // query parameter
             if (direction != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "direction", direction)); // query parameter
@@ -25383,13 +25390,14 @@ namespace TextMagicClient.Api
         /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
         /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="exactMatch">Return only exactly matching contacts. Default is 0. (optional, default to 0)</param>
         /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of SearchContactsPaginatedResponse</returns>
-        public async System.Threading.Tasks.Task<SearchContactsPaginatedResponse> SearchContactsAsync (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null)
+        public async System.Threading.Tasks.Task<SearchContactsPaginatedResponse> SearchContactsAsync (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, int? exactMatch = null, string country = null, string orderBy = null, string direction = null)
         {
-             ApiResponse<SearchContactsPaginatedResponse> localVarResponse = await SearchContactsAsyncWithHttpInfo(page, limit, shared, ids, listId, includeBlocked, query, local, country, orderBy, direction);
+             ApiResponse<SearchContactsPaginatedResponse> localVarResponse = await SearchContactsAsyncWithHttpInfo(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction);
              return localVarResponse.Data;
 
         }
@@ -25406,11 +25414,12 @@ namespace TextMagicClient.Api
         /// <param name="includeBlocked">Should blocked contacts be included? (optional)</param>
         /// <param name="query">Find contacts by specified search query. (optional)</param>
         /// <param name="local">Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)</param>
+        /// <param name="exactMatch">Return only exactly matching contacts. Default is 0. (optional, default to 0)</param>
         /// <param name="country">The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)</param>
         /// <param name="orderBy">Order results by some field. Default is id. (optional, default to id)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SearchContactsPaginatedResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SearchContactsPaginatedResponse>> SearchContactsAsyncWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SearchContactsPaginatedResponse>> SearchContactsAsyncWithHttpInfo (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, int? exactMatch = null, string country = null, string orderBy = null, string direction = null)
         {
 
             var localVarPath = "/api/v2/contacts/search";
@@ -25443,6 +25452,7 @@ namespace TextMagicClient.Api
             if (includeBlocked != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "includeBlocked", includeBlocked)); // query parameter
             if (query != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "query", query)); // query parameter
             if (local != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "local", local)); // query parameter
+            if (exactMatch != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "exactMatch", exactMatch)); // query parameter
             if (country != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "country", country)); // query parameter
             if (orderBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "orderBy", orderBy)); // query parameter
             if (direction != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "direction", direction)); // query parameter

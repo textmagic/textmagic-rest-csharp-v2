@@ -1621,10 +1621,11 @@ namespace TextMagicClient.Test
             //int? includeBlocked = null;
             //string query = null;
             //int? local = null;
+            //int? exactMatch = null;
             //string country = null;
             //string orderBy = null;
             //string direction = null;
-            //var response = instance.SearchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, country, orderBy, direction);
+            //var response = instance.SearchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction);
             //Assert.IsInstanceOf<SearchContactsPaginatedResponse> (response, "response is SearchContactsPaginatedResponse");
         }
         

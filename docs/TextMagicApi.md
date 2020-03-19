@@ -7926,7 +7926,7 @@ Name | Type | Description  | Notes
 
 <a name="searchcontacts"></a>
 # **SearchContacts**
-> SearchContactsPaginatedResponse SearchContacts (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, string country = null, string orderBy = null, string direction = null)
+> SearchContactsPaginatedResponse SearchContacts (int? page = null, int? limit = null, int? shared = null, string ids = null, int? listId = null, int? includeBlocked = null, string query = null, int? local = null, int? exactMatch = null, string country = null, string orderBy = null, string direction = null)
 
 Find contacts by given criteria
 
@@ -7957,6 +7957,7 @@ namespace Example
             var includeBlocked = 56;  // int? | Should blocked contacts be included? (optional) 
             var query = query_example;  // string | Find contacts by specified search query. (optional) 
             var local = 56;  // int? | Treat phone number passed in the \"query\" field as local. Default is 0. (optional)  (default to 0)
+            var exactMatch = 56;  // int? | Return only exactly matching contacts. Default is 0. (optional)  (default to 0)
             var country = country_example;  // string | The 2-letter ISO country code for local phone numbers, used when \"local\" is set to true. Default is the account country. (optional) 
             var orderBy = orderBy_example;  // string | Order results by some field. Default is id. (optional)  (default to id)
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
@@ -7964,7 +7965,7 @@ namespace Example
             try
             {
                 // Find contacts by given criteria
-                SearchContactsPaginatedResponse result = apiInstance.SearchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, country, orderBy, direction);
+                SearchContactsPaginatedResponse result = apiInstance.SearchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -7988,6 +7989,7 @@ Name | Type | Description  | Notes
  **includeBlocked** | **int?**| Should blocked contacts be included? | [optional] 
  **query** | **string**| Find contacts by specified search query. | [optional] 
  **local** | **int?**| Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. | [optional] [default to 0]
+ **exactMatch** | **int?**| Return only exactly matching contacts. Default is 0. | [optional] [default to 0]
  **country** | **string**| The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. | [optional] 
  **orderBy** | **string**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
