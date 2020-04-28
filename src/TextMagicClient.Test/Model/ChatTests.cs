@@ -186,6 +186,14 @@ namespace TextMagicClient.Test
         {
             // TODO unit test for the property 'Country'
         }
+        /// <summary>
+        /// Test the property 'Pinned'
+        /// </summary>
+        [Test]
+        public void PinnedTest()
+        {
+            // TODO unit test for the property 'Pinned'
+        }
 
     }
 

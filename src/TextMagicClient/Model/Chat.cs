@@ -125,7 +125,8 @@ namespace TextMagicClient.Model
         /// <param name="mutedUntil">Date and time until the chat will be muted. (required).</param>
         /// <param name="timeLeftMute">Time left untill the chat will be unmuted (seconds). (required).</param>
         /// <param name="country">country (required).</param>
-        public Chat(int? id = default(int?), int? originalId = default(int?), string phone = default(string), Contact contact = default(Contact), int? unsubscribedContactId = default(int?), int? unread = default(int?), DateTime? updatedAt = default(DateTime?), StatusEnum status = default(StatusEnum), int? mute = default(int?), string lastMessage = default(string), DirectionEnum direction = default(DirectionEnum), string from = default(string), DateTime? mutedUntil = default(DateTime?), int? timeLeftMute = default(int?), Country country = default(Country))
+        /// <param name="pinned">Indicates when the chat is pinned. (required).</param>
+        public Chat(int? id = default(int?), int? originalId = default(int?), string phone = default(string), Contact contact = default(Contact), int? unsubscribedContactId = default(int?), int? unread = default(int?), DateTime? updatedAt = default(DateTime?), StatusEnum status = default(StatusEnum), int? mute = default(int?), string lastMessage = default(string), DirectionEnum direction = default(DirectionEnum), string from = default(string), DateTime? mutedUntil = default(DateTime?), int? timeLeftMute = default(int?), Country country = default(Country), bool? pinned = default(bool?))
         {
             // to ensure "id" is required (not null)
             if (id == null)
@@ -262,6 +263,15 @@ namespace TextMagicClient.Model
             {
                 this.Country = country;
             }
+            // to ensure "pinned" is required (not null)
+            if (pinned == null)
+            {
+                throw new InvalidDataException("pinned is a required property for Chat and cannot be null");
+            }
+            else
+            {
+                this.Pinned = pinned;
+            }
         }
         
         /// <summary>
@@ -355,6 +365,13 @@ namespace TextMagicClient.Model
         public Country Country { get; set; }
 
         /// <summary>
+        /// Indicates when the chat is pinned.
+        /// </summary>
+        /// <value>Indicates when the chat is pinned.</value>
+        [DataMember(Name="pinned", EmitDefaultValue=false)]
+        public bool? Pinned { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -377,6 +394,7 @@ namespace TextMagicClient.Model
             sb.Append("  MutedUntil: ").Append(MutedUntil).Append("\n");
             sb.Append("  TimeLeftMute: ").Append(TimeLeftMute).Append("\n");
             sb.Append("  Country: ").Append(Country).Append("\n");
+            sb.Append("  Pinned: ").Append(Pinned).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -485,6 +503,11 @@ namespace TextMagicClient.Model
                     this.Country == input.Country ||
                     (this.Country != null &&
                     this.Country.Equals(input.Country))
+                ) && 
+                (
+                    this.Pinned == input.Pinned ||
+                    (this.Pinned != null &&
+                    this.Pinned.Equals(input.Pinned))
                 );
         }
 
@@ -527,6 +550,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.TimeLeftMute.GetHashCode();
                 if (this.Country != null)
                     hashCode = hashCode * 59 + this.Country.GetHashCode();
+                if (this.Pinned != null)
+                    hashCode = hashCode * 59 + this.Pinned.GetHashCode();
                 return hashCode;
             }
         }

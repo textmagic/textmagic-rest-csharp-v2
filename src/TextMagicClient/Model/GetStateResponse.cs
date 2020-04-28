@@ -62,6 +62,8 @@ namespace TextMagicClient.Model
         /// <param name="chatMarkedAsRead">chatMarkedAsRead (required).</param>
         /// <param name="chatMuted">chatMuted (required).</param>
         /// <param name="chatUnmuted">chatUnmuted (required).</param>
+        /// <param name="chatPinned">chatPinned (required).</param>
+        /// <param name="chatUnpinned">chatUnpinned (required).</param>
         /// <param name="chatDeleted">chatDeleted (required).</param>
         /// <param name="chatClosed">chatClosed (required).</param>
         /// <param name="chatReopened">chatReopened (required).</param>
@@ -77,7 +79,7 @@ namespace TextMagicClient.Model
         /// <param name="contactCacheClear">contactCacheClear (required).</param>
         /// <param name="listCacheClear">listCacheClear (required).</param>
         /// <param name="customFieldsCacheClear">customFieldsCacheClear (required).</param>
-        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatCacheClear = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?))
+        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatPinned = default(int?), int? chatUnpinned = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatCacheClear = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?))
         {
             // to ensure "systemCacheClear" is required (not null)
             if (systemCacheClear == null)
@@ -294,6 +296,24 @@ namespace TextMagicClient.Model
             else
             {
                 this.ChatUnmuted = chatUnmuted;
+            }
+            // to ensure "chatPinned" is required (not null)
+            if (chatPinned == null)
+            {
+                throw new InvalidDataException("chatPinned is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChatPinned = chatPinned;
+            }
+            // to ensure "chatUnpinned" is required (not null)
+            if (chatUnpinned == null)
+            {
+                throw new InvalidDataException("chatUnpinned is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChatUnpinned = chatUnpinned;
             }
             // to ensure "chatDeleted" is required (not null)
             if (chatDeleted == null)
@@ -577,6 +597,18 @@ namespace TextMagicClient.Model
         public int? ChatUnmuted { get; set; }
 
         /// <summary>
+        /// Gets or Sets ChatPinned
+        /// </summary>
+        [DataMember(Name="chatPinned", EmitDefaultValue=false)]
+        public int? ChatPinned { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ChatUnpinned
+        /// </summary>
+        [DataMember(Name="chatUnpinned", EmitDefaultValue=false)]
+        public int? ChatUnpinned { get; set; }
+
+        /// <summary>
         /// Gets or Sets ChatDeleted
         /// </summary>
         [DataMember(Name="chatDeleted", EmitDefaultValue=false)]
@@ -698,6 +730,8 @@ namespace TextMagicClient.Model
             sb.Append("  ChatMarkedAsRead: ").Append(ChatMarkedAsRead).Append("\n");
             sb.Append("  ChatMuted: ").Append(ChatMuted).Append("\n");
             sb.Append("  ChatUnmuted: ").Append(ChatUnmuted).Append("\n");
+            sb.Append("  ChatPinned: ").Append(ChatPinned).Append("\n");
+            sb.Append("  ChatUnpinned: ").Append(ChatUnpinned).Append("\n");
             sb.Append("  ChatDeleted: ").Append(ChatDeleted).Append("\n");
             sb.Append("  ChatClosed: ").Append(ChatClosed).Append("\n");
             sb.Append("  ChatReopened: ").Append(ChatReopened).Append("\n");
@@ -868,6 +902,16 @@ namespace TextMagicClient.Model
                     this.ChatUnmuted.Equals(input.ChatUnmuted))
                 ) && 
                 (
+                    this.ChatPinned == input.ChatPinned ||
+                    (this.ChatPinned != null &&
+                    this.ChatPinned.Equals(input.ChatPinned))
+                ) && 
+                (
+                    this.ChatUnpinned == input.ChatUnpinned ||
+                    (this.ChatUnpinned != null &&
+                    this.ChatUnpinned.Equals(input.ChatUnpinned))
+                ) && 
+                (
                     this.ChatDeleted == input.ChatDeleted ||
                     (this.ChatDeleted != null &&
                     this.ChatDeleted.Equals(input.ChatDeleted))
@@ -1001,6 +1045,10 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.ChatMuted.GetHashCode();
                 if (this.ChatUnmuted != null)
                     hashCode = hashCode * 59 + this.ChatUnmuted.GetHashCode();
+                if (this.ChatPinned != null)
+                    hashCode = hashCode * 59 + this.ChatPinned.GetHashCode();
+                if (this.ChatUnpinned != null)
+                    hashCode = hashCode * 59 + this.ChatUnpinned.GetHashCode();
                 if (this.ChatDeleted != null)
                     hashCode = hashCode * 59 + this.ChatDeleted.GetHashCode();
                 if (this.ChatClosed != null)

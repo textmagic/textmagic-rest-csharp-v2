@@ -259,6 +259,22 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'ChatUnmuted'
         }
         /// <summary>
+        /// Test the property 'ChatPinned'
+        /// </summary>
+        [Test]
+        public void ChatPinnedTest()
+        {
+            // TODO unit test for the property 'ChatPinned'
+        }
+        /// <summary>
+        /// Test the property 'ChatUnpinned'
+        /// </summary>
+        [Test]
+        public void ChatUnpinnedTest()
+        {
+            // TODO unit test for the property 'ChatUnpinned'
+        }
+        /// <summary>
         /// Test the property 'ChatDeleted'
         /// </summary>
         [Test]

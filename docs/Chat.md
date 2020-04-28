@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **MutedUntil** | **DateTime?** | Date and time until the chat will be muted. | 
 **TimeLeftMute** | **int?** | Time left untill the chat will be unmuted (seconds). | 
 **Country** | [**Country**](Country.md) |  | 
+**Pinned** | **bool?** | Indicates when the chat is pinned. | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
