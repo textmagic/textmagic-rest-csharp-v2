@@ -152,6 +152,7 @@ Method | HTTP request | Description
 [**UploadContactAvatar**](TextMagicApi.md#uploadcontactavatar) | **POST** /api/v2/contacts/{id}/avatar | Upload an avatar
 [**UploadListAvatar**](TextMagicApi.md#uploadlistavatar) | **POST** /api/v2/lists/{id}/avatar | Add an avatar for a list
 [**UploadMessageAttachment**](TextMagicApi.md#uploadmessageattachment) | **POST** /api/v2/messages/attachment | Upload message attachment
+[**UploadMessageMMSAttachment**](TextMagicApi.md#uploadmessagemmsattachment) | **POST** /api/v2/messages/mms/attachment | Upload message mms attachment
 
 
 <a name="assigncontactstolist"></a>
@@ -9837,6 +9838,71 @@ namespace Example
             catch (Exception e)
             {
                 Debug.Print("Exception when calling TextMagicApi.UploadMessageAttachment: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **System.IO.Stream**| Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats. | 
+
+### Return type
+
+[**UploadMessageAttachmentResponse**](UploadMessageAttachmentResponse.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="uploadmessagemmsattachment"></a>
+# **UploadMessageMMSAttachment**
+> UploadMessageAttachmentResponse UploadMessageMMSAttachment (System.IO.Stream file)
+
+Upload message mms attachment
+
+Upload a new file to mms.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TextMagicClient.Api;
+using TextMagicClient.Client;
+using TextMagicClient.Model;
+
+namespace Example
+{
+    public class UploadMessageMMSAttachmentExample
+    {
+        public void main()
+        {
+            // Configure HTTP basic authorization: BasicAuth
+            Configuration.Default.Username = "YOUR_USERNAME";
+            Configuration.Default.Password = "YOUR_PASSWORD";
+
+            var apiInstance = new TextMagicApi();
+            var file = new System.IO.Stream(); // System.IO.Stream | Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats.
+
+            try
+            {
+                // Upload message mms attachment
+                UploadMessageAttachmentResponse result = apiInstance.UploadMessageMMSAttachment(file);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TextMagicApi.UploadMessageMMSAttachment: " + e.Message );
             }
         }
     }

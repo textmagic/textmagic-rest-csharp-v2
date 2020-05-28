@@ -202,6 +202,22 @@ namespace TextMagicClient.Test
         {
             // TODO unit test for the property 'LocalCountry'
         }
+        /// <summary>
+        /// Test the property 'Destination'
+        /// </summary>
+        [Test]
+        public void DestinationTest()
+        {
+            // TODO unit test for the property 'Destination'
+        }
+        /// <summary>
+        /// Test the property 'Resources'
+        /// </summary>
+        [Test]
+        public void ResourcesTest()
+        {
+            // TODO unit test for the property 'Resources'
+        }
 
     }
 

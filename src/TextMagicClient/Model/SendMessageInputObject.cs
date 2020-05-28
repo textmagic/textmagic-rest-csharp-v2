@@ -50,7 +50,9 @@ namespace TextMagicClient.Model
         /// <param name="tts">Send a Text-to-Speech message. (default to false).</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (default to false).</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country..</param>
-        public SendMessageInputObject(string text = default(string), int? templateId = default(int?), int? sendingTime = default(int?), string sendingDateTime = default(string), string sendingTimezone = default(string), string contacts = default(string), string lists = default(string), string phones = default(string), bool? cutExtra = false, int? partsCount = default(int?), int? referenceId = default(int?), string from = default(string), string rrule = default(string), bool? createChat = false, bool? tts = false, bool? local = false, string localCountry = default(string))
+        /// <param name="destination">Messsage destination type allowed [mms, tts]. (default to &quot;false&quot;).</param>
+        /// <param name="resources">File name from mms attachment response (named as resource).</param>
+        public SendMessageInputObject(string text = default(string), int? templateId = default(int?), int? sendingTime = default(int?), string sendingDateTime = default(string), string sendingTimezone = default(string), string contacts = default(string), string lists = default(string), string phones = default(string), bool? cutExtra = false, int? partsCount = default(int?), int? referenceId = default(int?), string from = default(string), string rrule = default(string), bool? createChat = false, bool? tts = false, bool? local = false, string localCountry = default(string), string destination = "false", string resources = default(string))
         {
             this.Text = text;
             this.TemplateId = templateId;
@@ -101,6 +103,16 @@ namespace TextMagicClient.Model
                 this.Local = local;
             }
             this.LocalCountry = localCountry;
+            // use default value if no "destination" provided
+            if (destination == null)
+            {
+                this.Destination = "false";
+            }
+            else
+            {
+                this.Destination = destination;
+            }
+            this.Resources = resources;
         }
         
         /// <summary>
@@ -223,6 +235,20 @@ namespace TextMagicClient.Model
         public string LocalCountry { get; set; }
 
         /// <summary>
+        /// Messsage destination type allowed [mms, tts].
+        /// </summary>
+        /// <value>Messsage destination type allowed [mms, tts].</value>
+        [DataMember(Name="destination", EmitDefaultValue=false)]
+        public string Destination { get; set; }
+
+        /// <summary>
+        /// File name from mms attachment response (named as resource)
+        /// </summary>
+        /// <value>File name from mms attachment response (named as resource)</value>
+        [DataMember(Name="resources", EmitDefaultValue=false)]
+        public string Resources { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -247,6 +273,8 @@ namespace TextMagicClient.Model
             sb.Append("  Tts: ").Append(Tts).Append("\n");
             sb.Append("  Local: ").Append(Local).Append("\n");
             sb.Append("  LocalCountry: ").Append(LocalCountry).Append("\n");
+            sb.Append("  Destination: ").Append(Destination).Append("\n");
+            sb.Append("  Resources: ").Append(Resources).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -365,6 +393,16 @@ namespace TextMagicClient.Model
                     this.LocalCountry == input.LocalCountry ||
                     (this.LocalCountry != null &&
                     this.LocalCountry.Equals(input.LocalCountry))
+                ) && 
+                (
+                    this.Destination == input.Destination ||
+                    (this.Destination != null &&
+                    this.Destination.Equals(input.Destination))
+                ) && 
+                (
+                    this.Resources == input.Resources ||
+                    (this.Resources != null &&
+                    this.Resources.Equals(input.Resources))
                 );
         }
 
@@ -411,6 +449,10 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.Local.GetHashCode();
                 if (this.LocalCountry != null)
                     hashCode = hashCode * 59 + this.LocalCountry.GetHashCode();
+                if (this.Destination != null)
+                    hashCode = hashCode * 59 + this.Destination.GetHashCode();
+                if (this.Resources != null)
+                    hashCode = hashCode * 59 + this.Resources.GetHashCode();
                 return hashCode;
             }
         }

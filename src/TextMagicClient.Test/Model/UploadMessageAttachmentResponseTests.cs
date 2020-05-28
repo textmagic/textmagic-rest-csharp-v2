@@ -98,6 +98,14 @@ namespace TextMagicClient.Test
         {
             // TODO unit test for the property 'Size'
         }
+        /// <summary>
+        /// Test the property 'Resource'
+        /// </summary>
+        [Test]
+        public void ResourceTest()
+        {
+            // TODO unit test for the property 'Resource'
+        }
 
     }
 

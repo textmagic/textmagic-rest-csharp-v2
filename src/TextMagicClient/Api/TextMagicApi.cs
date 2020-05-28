@@ -3458,6 +3458,27 @@ namespace TextMagicClient.Api
         /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
         /// <returns>ApiResponse of UploadMessageAttachmentResponse</returns>
         ApiResponse<UploadMessageAttachmentResponse> UploadMessageAttachmentWithHttpInfo (System.IO.Stream file);
+        /// <summary>
+        /// Upload message mms attachment
+        /// </summary>
+        /// <remarks>
+        /// Upload a new file to mms.
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
+        /// <returns>UploadMessageAttachmentResponse</returns>
+        UploadMessageAttachmentResponse UploadMessageMMSAttachment (System.IO.Stream file);
+
+        /// <summary>
+        /// Upload message mms attachment
+        /// </summary>
+        /// <remarks>
+        /// Upload a new file to mms.
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
+        /// <returns>ApiResponse of UploadMessageAttachmentResponse</returns>
+        ApiResponse<UploadMessageAttachmentResponse> UploadMessageMMSAttachmentWithHttpInfo (System.IO.Stream file);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -6894,6 +6915,27 @@ namespace TextMagicClient.Api
         /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
         /// <returns>Task of ApiResponse (UploadMessageAttachmentResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<UploadMessageAttachmentResponse>> UploadMessageAttachmentAsyncWithHttpInfo (System.IO.Stream file);
+        /// <summary>
+        /// Upload message mms attachment
+        /// </summary>
+        /// <remarks>
+        /// Upload a new file to mms.
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
+        /// <returns>Task of UploadMessageAttachmentResponse</returns>
+        System.Threading.Tasks.Task<UploadMessageAttachmentResponse> UploadMessageMMSAttachmentAsync (System.IO.Stream file);
+
+        /// <summary>
+        /// Upload message mms attachment
+        /// </summary>
+        /// <remarks>
+        /// Upload a new file to mms.
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
+        /// <returns>Task of ApiResponse (UploadMessageAttachmentResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UploadMessageAttachmentResponse>> UploadMessageMMSAttachmentAsyncWithHttpInfo (System.IO.Stream file);
         #endregion Asynchronous Operations
     }
 
@@ -30066,6 +30108,153 @@ namespace TextMagicClient.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("UploadMessageAttachment", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<UploadMessageAttachmentResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (UploadMessageAttachmentResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UploadMessageAttachmentResponse)));
+        }
+
+        /// <summary>
+        /// Upload message mms attachment Upload a new file to mms.
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
+        /// <returns>UploadMessageAttachmentResponse</returns>
+        public UploadMessageAttachmentResponse UploadMessageMMSAttachment (System.IO.Stream file)
+        {
+             ApiResponse<UploadMessageAttachmentResponse> localVarResponse = UploadMessageMMSAttachmentWithHttpInfo(file);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Upload message mms attachment Upload a new file to mms.
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
+        /// <returns>ApiResponse of UploadMessageAttachmentResponse</returns>
+        public ApiResponse< UploadMessageAttachmentResponse > UploadMessageMMSAttachmentWithHttpInfo (System.IO.Stream file)
+        {
+            // verify the required parameter 'file' is set
+            if (file == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling TextMagicApi->UploadMessageMMSAttachment");
+
+            var localVarPath = "/api/v2/messages/mms/attachment";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", file));
+
+            // authentication (BasicAuth) required
+            // http basic authentication required
+            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
+            {
+                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UploadMessageMMSAttachment", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<UploadMessageAttachmentResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (UploadMessageAttachmentResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UploadMessageAttachmentResponse)));
+        }
+
+        /// <summary>
+        /// Upload message mms attachment Upload a new file to mms.
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
+        /// <returns>Task of UploadMessageAttachmentResponse</returns>
+        public async System.Threading.Tasks.Task<UploadMessageAttachmentResponse> UploadMessageMMSAttachmentAsync (System.IO.Stream file)
+        {
+             ApiResponse<UploadMessageAttachmentResponse> localVarResponse = await UploadMessageMMSAttachmentAsyncWithHttpInfo(file);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Upload message mms attachment Upload a new file to mms.
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats.</param>
+        /// <returns>Task of ApiResponse (UploadMessageAttachmentResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UploadMessageAttachmentResponse>> UploadMessageMMSAttachmentAsyncWithHttpInfo (System.IO.Stream file)
+        {
+            // verify the required parameter 'file' is set
+            if (file == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling TextMagicApi->UploadMessageMMSAttachment");
+
+            var localVarPath = "/api/v2/messages/mms/attachment";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", file));
+
+            // authentication (BasicAuth) required
+            // http basic authentication required
+            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
+            {
+                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UploadMessageMMSAttachment", localVarResponse);
                 if (exception != null) throw exception;
             }
 

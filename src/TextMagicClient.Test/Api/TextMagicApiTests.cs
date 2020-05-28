@@ -2003,6 +2003,18 @@ namespace TextMagicClient.Test
             //Assert.IsInstanceOf<UploadMessageAttachmentResponse> (response, "response is UploadMessageAttachmentResponse");
         }
         
+        /// <summary>
+        /// Test UploadMessageMMSAttachment
+        /// </summary>
+        [Test]
+        public void UploadMessageMMSAttachmentTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //System.IO.Stream file = null;
+            //var response = instance.UploadMessageMMSAttachment(file);
+            //Assert.IsInstanceOf<UploadMessageAttachmentResponse> (response, "response is UploadMessageAttachmentResponse");
+        }
+        
     }
 
 }

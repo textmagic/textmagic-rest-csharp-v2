@@ -42,7 +42,8 @@ namespace TextMagicClient.Model
         /// <param name="href">This is a relative link to your file. To construct a full link, just add “[https://my.textmagic.com/”](https://my.textmagic.com/%E2%80%9D) to the beginning (like this: [https://my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9)). For most modern devices, you can omit the “https://” part and write just [my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9), which will save you 8 characters.  (required).</param>
         /// <param name="name">File name of the uploaded file.  (required).</param>
         /// <param name="size">Attachment size in bytes. (required).</param>
-        public UploadMessageAttachmentResponse(int? chars = default(int?), string href = default(string), string name = default(string), int? size = default(int?))
+        /// <param name="resource">Internal file name (required).</param>
+        public UploadMessageAttachmentResponse(int? chars = default(int?), string href = default(string), string name = default(string), int? size = default(int?), string resource = default(string))
         {
             // to ensure "chars" is required (not null)
             if (chars == null)
@@ -80,6 +81,15 @@ namespace TextMagicClient.Model
             {
                 this.Size = size;
             }
+            // to ensure "resource" is required (not null)
+            if (resource == null)
+            {
+                throw new InvalidDataException("resource is a required property for UploadMessageAttachmentResponse and cannot be null");
+            }
+            else
+            {
+                this.Resource = resource;
+            }
         }
         
         /// <summary>
@@ -111,6 +121,13 @@ namespace TextMagicClient.Model
         public int? Size { get; set; }
 
         /// <summary>
+        /// Internal file name
+        /// </summary>
+        /// <value>Internal file name</value>
+        [DataMember(Name="resource", EmitDefaultValue=false)]
+        public string Resource { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -122,6 +139,7 @@ namespace TextMagicClient.Model
             sb.Append("  Href: ").Append(Href).Append("\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  Size: ").Append(Size).Append("\n");
+            sb.Append("  Resource: ").Append(Resource).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -175,6 +193,11 @@ namespace TextMagicClient.Model
                     this.Size == input.Size ||
                     (this.Size != null &&
                     this.Size.Equals(input.Size))
+                ) && 
+                (
+                    this.Resource == input.Resource ||
+                    (this.Resource != null &&
+                    this.Resource.Equals(input.Resource))
                 );
         }
 
@@ -195,6 +218,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.Name.GetHashCode();
                 if (this.Size != null)
                     hashCode = hashCode * 59 + this.Size.GetHashCode();
+                if (this.Resource != null)
+                    hashCode = hashCode * 59 + this.Resource.GetHashCode();
                 return hashCode;
             }
         }
