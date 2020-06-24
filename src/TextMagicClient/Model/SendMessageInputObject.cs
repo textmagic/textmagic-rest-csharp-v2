@@ -50,9 +50,9 @@ namespace TextMagicClient.Model
         /// <param name="tts">Send a Text-to-Speech message. (default to false).</param>
         /// <param name="local">Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (default to false).</param>
         /// <param name="localCountry">The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country..</param>
-        /// <param name="destination">Messsage destination type allowed [mms, tts]. (default to &quot;false&quot;).</param>
+        /// <param name="destination">Messsage destination type allowed [mms, tts]..</param>
         /// <param name="resources">File name from mms attachment response (named as resource).</param>
-        public SendMessageInputObject(string text = default(string), int? templateId = default(int?), int? sendingTime = default(int?), string sendingDateTime = default(string), string sendingTimezone = default(string), string contacts = default(string), string lists = default(string), string phones = default(string), bool? cutExtra = false, int? partsCount = default(int?), int? referenceId = default(int?), string from = default(string), string rrule = default(string), bool? createChat = false, bool? tts = false, bool? local = false, string localCountry = default(string), string destination = "false", string resources = default(string))
+        public SendMessageInputObject(string text = default(string), int? templateId = default(int?), int? sendingTime = default(int?), string sendingDateTime = default(string), string sendingTimezone = default(string), string contacts = default(string), string lists = default(string), string phones = default(string), bool? cutExtra = false, int? partsCount = default(int?), int? referenceId = default(int?), string from = default(string), string rrule = default(string), bool? createChat = false, bool? tts = false, bool? local = false, string localCountry = default(string), string destination = default(string), string resources = default(string))
         {
             this.Text = text;
             this.TemplateId = templateId;
@@ -103,15 +103,7 @@ namespace TextMagicClient.Model
                 this.Local = local;
             }
             this.LocalCountry = localCountry;
-            // use default value if no "destination" provided
-            if (destination == null)
-            {
-                this.Destination = "false";
-            }
-            else
-            {
-                this.Destination = destination;
-            }
+            this.Destination = destination;
             this.Resources = resources;
         }
         
