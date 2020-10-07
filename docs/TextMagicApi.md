@@ -3999,7 +3999,7 @@ Name | Type | Description  | Notes
 
 <a name="getchatmessages"></a>
 # **GetChatMessages**
-> GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null)
+> GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null)
 
 Get chat messages
 
@@ -4026,8 +4026,8 @@ namespace Example
             var page = 56;  // int? | Fetch specified results page. (optional)  (default to 1)
             var limit = 56;  // int? | The number of results per page. (optional)  (default to 10)
             var query = query_example;  // string | Find messages by specified search query. (optional) 
-            var start = 56;  // int? | Return messages since specified timestamp only. (optional) 
-            var end = 56;  // int? | Return messages up to specified timestamp only. (optional) 
+            var start = start_example;  // string | Return messages since specified timestamp only. Required when `end` parameter specified. (optional) 
+            var end = end_example;  // string | Return messages up to specified timestamp only. Required when `start` parameter specified. (optional) 
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
             var voice = 56;  // int? | Fetch results with voice calls. (optional)  (default to 0)
 
@@ -4054,8 +4054,8 @@ Name | Type | Description  | Notes
  **page** | **int?**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int?**| The number of results per page. | [optional] [default to 10]
  **query** | **string**| Find messages by specified search query. | [optional] 
- **start** | **int?**| Return messages since specified timestamp only. | [optional] 
- **end** | **int?**| Return messages up to specified timestamp only. | [optional] 
+ **start** | **string**| Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. | [optional] 
+ **end** | **string**| Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. | [optional] 
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
  **voice** | **int?**| Fetch results with voice calls. | [optional] [default to 0]
 

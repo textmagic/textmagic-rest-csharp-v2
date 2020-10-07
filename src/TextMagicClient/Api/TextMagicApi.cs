@@ -1347,12 +1347,12 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="query">Find messages by specified search query. (optional)</param>
-        /// <param name="start">Return messages since specified timestamp only. (optional)</param>
-        /// <param name="end">Return messages up to specified timestamp only. (optional)</param>
+        /// <param name="start">Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. (optional)</param>
+        /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
         /// <returns>GetChatMessagesPaginatedResponse</returns>
-        GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null);
+        GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null);
 
         /// <summary>
         /// Get chat messages
@@ -1365,12 +1365,12 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="query">Find messages by specified search query. (optional)</param>
-        /// <param name="start">Return messages since specified timestamp only. (optional)</param>
-        /// <param name="end">Return messages up to specified timestamp only. (optional)</param>
+        /// <param name="start">Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. (optional)</param>
+        /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
         /// <returns>ApiResponse of GetChatMessagesPaginatedResponse</returns>
-        ApiResponse<GetChatMessagesPaginatedResponse> GetChatMessagesWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null);
+        ApiResponse<GetChatMessagesPaginatedResponse> GetChatMessagesWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null);
         /// <summary>
         /// Get the details of a specific contact
         /// </summary>
@@ -4804,12 +4804,12 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="query">Find messages by specified search query. (optional)</param>
-        /// <param name="start">Return messages since specified timestamp only. (optional)</param>
-        /// <param name="end">Return messages up to specified timestamp only. (optional)</param>
+        /// <param name="start">Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. (optional)</param>
+        /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
         /// <returns>Task of GetChatMessagesPaginatedResponse</returns>
-        System.Threading.Tasks.Task<GetChatMessagesPaginatedResponse> GetChatMessagesAsync (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null);
+        System.Threading.Tasks.Task<GetChatMessagesPaginatedResponse> GetChatMessagesAsync (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null);
 
         /// <summary>
         /// Get chat messages
@@ -4822,12 +4822,12 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="query">Find messages by specified search query. (optional)</param>
-        /// <param name="start">Return messages since specified timestamp only. (optional)</param>
-        /// <param name="end">Return messages up to specified timestamp only. (optional)</param>
+        /// <param name="start">Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. (optional)</param>
+        /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetChatMessagesPaginatedResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetChatMessagesPaginatedResponse>> GetChatMessagesAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null);
+        System.Threading.Tasks.Task<ApiResponse<GetChatMessagesPaginatedResponse>> GetChatMessagesAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null);
         /// <summary>
         /// Get the details of a specific contact
         /// </summary>
@@ -16162,12 +16162,12 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="query">Find messages by specified search query. (optional)</param>
-        /// <param name="start">Return messages since specified timestamp only. (optional)</param>
-        /// <param name="end">Return messages up to specified timestamp only. (optional)</param>
+        /// <param name="start">Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. (optional)</param>
+        /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
         /// <returns>GetChatMessagesPaginatedResponse</returns>
-        public GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null)
+        public GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null)
         {
              ApiResponse<GetChatMessagesPaginatedResponse> localVarResponse = GetChatMessagesWithHttpInfo(id, page, limit, query, start, end, direction, voice);
              return localVarResponse.Data;
@@ -16181,12 +16181,12 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="query">Find messages by specified search query. (optional)</param>
-        /// <param name="start">Return messages since specified timestamp only. (optional)</param>
-        /// <param name="end">Return messages up to specified timestamp only. (optional)</param>
+        /// <param name="start">Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. (optional)</param>
+        /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
         /// <returns>ApiResponse of GetChatMessagesPaginatedResponse</returns>
-        public ApiResponse< GetChatMessagesPaginatedResponse > GetChatMessagesWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null)
+        public ApiResponse< GetChatMessagesPaginatedResponse > GetChatMessagesWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -16256,12 +16256,12 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="query">Find messages by specified search query. (optional)</param>
-        /// <param name="start">Return messages since specified timestamp only. (optional)</param>
-        /// <param name="end">Return messages up to specified timestamp only. (optional)</param>
+        /// <param name="start">Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. (optional)</param>
+        /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
         /// <returns>Task of GetChatMessagesPaginatedResponse</returns>
-        public async System.Threading.Tasks.Task<GetChatMessagesPaginatedResponse> GetChatMessagesAsync (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null)
+        public async System.Threading.Tasks.Task<GetChatMessagesPaginatedResponse> GetChatMessagesAsync (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null)
         {
              ApiResponse<GetChatMessagesPaginatedResponse> localVarResponse = await GetChatMessagesAsyncWithHttpInfo(id, page, limit, query, start, end, direction, voice);
              return localVarResponse.Data;
@@ -16276,12 +16276,12 @@ namespace TextMagicClient.Api
         /// <param name="page">Fetch specified results page. (optional, default to 1)</param>
         /// <param name="limit">The number of results per page. (optional, default to 10)</param>
         /// <param name="query">Find messages by specified search query. (optional)</param>
-        /// <param name="start">Return messages since specified timestamp only. (optional)</param>
-        /// <param name="end">Return messages up to specified timestamp only. (optional)</param>
+        /// <param name="start">Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. (optional)</param>
+        /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetChatMessagesPaginatedResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetChatMessagesPaginatedResponse>> GetChatMessagesAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, int? start = null, int? end = null, string direction = null, int? voice = null)
+        public async System.Threading.Tasks.Task<ApiResponse<GetChatMessagesPaginatedResponse>> GetChatMessagesAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null)
         {
             // verify the required parameter 'id' is set
             if (id == null)

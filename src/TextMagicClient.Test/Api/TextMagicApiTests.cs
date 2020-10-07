@@ -821,8 +821,8 @@ namespace TextMagicClient.Test
             //int? page = null;
             //int? limit = null;
             //string query = null;
-            //int? start = null;
-            //int? end = null;
+            //string start = null;
+            //string end = null;
             //string direction = null;
             //int? voice = null;
             //var response = instance.GetChatMessages(id, page, limit, query, start, end, direction, voice);
