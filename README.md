@@ -14,7 +14,7 @@ TextMagic’s application programming interface (API) provides the communication
 - Windows Phone 7.1 (Mango)
 
 ## Dependencies
-- [RestSharp](https://www.nuget.org/packages/RestSharp) - 105.1.0 or later
+- [RestSharp](https://www.nuget.org/packages/RestSharp) - 105.1.0
 - [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/) - 7.0.0 or later
 - [JsonSubTypes](https://www.nuget.org/packages/JsonSubTypes/) - 1.2.0 or later
 
@@ -28,7 +28,7 @@ Install-Package JsonSubTypes
 NOTE: RestSharp versions later than 105.1.0 have a bug which causes file uploads to fail. See [RestSharp#742](https://github.com/restsharp/RestSharp/issues/742)
 
 ## Installation
-Add the library to your project references or install it as a [NuGet package](https://www.nuget.org/packages/TextMagicClient/2.0.1588/).
+Add the library to your project references or install it as a [NuGet package](https://www.nuget.org/packages/TextMagicClient/2.0.2453/).
 
 ## C# usage example
 ```csharp
