@@ -36,7 +36,7 @@ namespace TextMagicClient.Model
         /// <param name="text">Message text. Required if the **template_id** is not set..</param>
         /// <param name="templateId">Template used instead of message text. Required if the **text** is not set..</param>
         /// <param name="sendingTime">DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now..</param>
-        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to **sendingTimezone**..</param>
+        /// <param name="sendingDateTime">Sending time in Y-m-d H:i:s format (e.g. 2022-05-27 13:05:10). This time is relative to **sendingTimezone**. Note: for correct operation, the value of seconds must not be less than 10..</param>
         /// <param name="sendingTimezone">ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone..</param>
         /// <param name="contacts">Comma separated array of contact resources id message will be sent to..</param>
         /// <param name="lists">Comma separated array of list resources id message will be sent to..</param>
@@ -129,9 +129,9 @@ namespace TextMagicClient.Model
         public int? SendingTime { get; set; }
 
         /// <summary>
-        /// Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to **sendingTimezone**.
+        /// Sending time in Y-m-d H:i:s format (e.g. 2022-05-27 13:05:10). This time is relative to **sendingTimezone**. Note: for correct operation, the value of seconds must not be less than 10.
         /// </summary>
-        /// <value>Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to **sendingTimezone**.</value>
+        /// <value>Sending time in Y-m-d H:i:s format (e.g. 2022-05-27 13:05:10). This time is relative to **sendingTimezone**. Note: for correct operation, the value of seconds must not be less than 10.</value>
         [DataMember(Name="sendingDateTime", EmitDefaultValue=false)]
         public string SendingDateTime { get; set; }
 

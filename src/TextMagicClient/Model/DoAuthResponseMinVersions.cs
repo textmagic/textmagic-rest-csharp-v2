@@ -41,7 +41,7 @@ namespace TextMagicClient.Model
         /// <param name="ios">ios (required).</param>
         /// <param name="android">android (required).</param>
         /// <param name="desktop">desktop (required).</param>
-        public DoAuthResponseMinVersions(int? ios = default(int?), int? android = default(int?), int? desktop = default(int?))
+        public DoAuthResponseMinVersions(string ios = default(string), string android = default(string), string desktop = default(string))
         {
             // to ensure "ios" is required (not null)
             if (ios == null)
@@ -76,19 +76,19 @@ namespace TextMagicClient.Model
         /// Gets or Sets Ios
         /// </summary>
         [DataMember(Name="ios", EmitDefaultValue=false)]
-        public int? Ios { get; set; }
+        public string Ios { get; set; }
 
         /// <summary>
         /// Gets or Sets Android
         /// </summary>
         [DataMember(Name="android", EmitDefaultValue=false)]
-        public int? Android { get; set; }
+        public string Android { get; set; }
 
         /// <summary>
         /// Gets or Sets Desktop
         /// </summary>
         [DataMember(Name="desktop", EmitDefaultValue=false)]
-        public int? Desktop { get; set; }
+        public string Desktop { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
