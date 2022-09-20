@@ -44,7 +44,7 @@ namespace TextMagicClient.Model
         /// <param name="alertEmail1">Low balance notification email 1. (required).</param>
         /// <param name="alertEmail2">Low balance notification email 2. (required).</param>
         /// <param name="alertEmail3">Low balance notification email 3. (required).</param>
-        public GetBalanceNotificationSettingsResponse(bool? lowBalanceNotification = default(bool?), string alertBalance = default(string), string alertPhone = default(string), string alertEmail1 = default(string), string alertEmail2 = default(string), string alertEmail3 = default(string))
+        public GetBalanceNotificationSettingsResponse(bool? lowBalanceNotification = default(bool?), decimal? alertBalance = default(decimal?), string alertPhone = default(string), string alertEmail1 = default(string), string alertEmail2 = default(string), string alertEmail3 = default(string))
         {
             // to ensure "lowBalanceNotification" is required (not null)
             if (lowBalanceNotification == null)
@@ -114,7 +114,7 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <value>If balance is below this value, user receive low balance notification.</value>
         [DataMember(Name="alertBalance", EmitDefaultValue=false)]
-        public string AlertBalance { get; set; }
+        public decimal? AlertBalance { get; set; }
 
         /// <summary>
         /// Low balance notification phone number.

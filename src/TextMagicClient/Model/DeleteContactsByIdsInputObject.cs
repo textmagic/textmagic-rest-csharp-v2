@@ -34,8 +34,8 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="DeleteContactsByIdsInputObject" /> class.
         /// </summary>
         /// <param name="ids">Entity ID(s), separated by comma..</param>
-        /// <param name="all">Entity ID(s), separated by comma..</param>
-        public DeleteContactsByIdsInputObject(string ids = default(string), bool? all = default(bool?))
+        /// <param name="all">Optional. Default is 0 (false). If set to 1 all the entities will be removed..</param>
+        public DeleteContactsByIdsInputObject(string ids = default(string), int? all = default(int?))
         {
             this.Ids = ids;
             this.All = all;
@@ -49,11 +49,11 @@ namespace TextMagicClient.Model
         public string Ids { get; set; }
 
         /// <summary>
-        /// Entity ID(s), separated by comma.
+        /// Optional. Default is 0 (false). If set to 1 all the entities will be removed.
         /// </summary>
-        /// <value>Entity ID(s), separated by comma.</value>
+        /// <value>Optional. Default is 0 (false). If set to 1 all the entities will be removed.</value>
         [DataMember(Name="all", EmitDefaultValue=false)]
-        public bool? All { get; set; }
+        public int? All { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
