@@ -7,6 +7,9 @@ Name | Type | Description | Notes
 **SystemExit** | **int?** |  | 
 **SystemAlert** | **int?** |  | 
 **SystemAccountStateChanged** | **int?** |  | 
+**SystemAccountAdditionalFields** | **int?** |  | 
+**SystemAccountPermissionsChanged** | **int?** |  | 
+**UserBalanceChanged** | **int?** |  | 
 **MessageDeleted** | **int?** |  | 
 **MessageIncoming** | **int?** |  | 
 **MessageIncomingDeleted** | **int?** |  | 
@@ -20,6 +23,7 @@ Name | Type | Description | Notes
 **MessageScheduleAdded** | **int?** |  | 
 **MessageScheduleStateChanged** | **int?** |  | 
 **MessageScheduleDeleted** | **int?** |  | 
+**MessageScheduleNotSentStateChanged** | **int?** |  | 
 **MessageScheduleCacheClear** | **int?** |  | 
 **MessageTemplateCacheClear** | **int?** |  | 
 **CallFinished** | **int?** |  | 
@@ -33,6 +37,8 @@ Name | Type | Description | Notes
 **ChatClosed** | **int?** |  | 
 **ChatReopened** | **int?** |  | 
 **ChatCacheClear** | **int?** |  | 
+**ChatRead** | **int?** |  | 
+**ChatUnread** | **int?** |  | 
 **ContactAdded** | **int?** |  | 
 **ContactDeleted** | **int?** |  | 
 **ContactStateChanged** | **int?** |  | 
@@ -44,6 +50,14 @@ Name | Type | Description | Notes
 **ContactCacheClear** | **int?** |  | 
 **ListCacheClear** | **int?** |  | 
 **CustomFieldsCacheClear** | **int?** |  | 
+**ProgressCarrierBulkLookup** | **int?** |  | 
+**ProgressEmailBulkLookup** | **int?** |  | 
+**ProgressSubAccountBulkImport** | **int?** |  | 
+**ProgressContactBulkImport** | **int?** |  | 
+**ForceRefreshWebApp** | **int?** |  | 
+**ChatSenderSettingsChanged** | **int?** |  | 
+**CountrySenderSettingsChanged** | **int?** |  | 
+**ChatSuggestedReplyChunk** | **int?** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

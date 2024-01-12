@@ -99,6 +99,30 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'SystemAccountStateChanged'
         }
         /// <summary>
+        /// Test the property 'SystemAccountAdditionalFields'
+        /// </summary>
+        [Test]
+        public void SystemAccountAdditionalFieldsTest()
+        {
+            // TODO unit test for the property 'SystemAccountAdditionalFields'
+        }
+        /// <summary>
+        /// Test the property 'SystemAccountPermissionsChanged'
+        /// </summary>
+        [Test]
+        public void SystemAccountPermissionsChangedTest()
+        {
+            // TODO unit test for the property 'SystemAccountPermissionsChanged'
+        }
+        /// <summary>
+        /// Test the property 'UserBalanceChanged'
+        /// </summary>
+        [Test]
+        public void UserBalanceChangedTest()
+        {
+            // TODO unit test for the property 'UserBalanceChanged'
+        }
+        /// <summary>
         /// Test the property 'MessageDeleted'
         /// </summary>
         [Test]
@@ -201,6 +225,14 @@ namespace TextMagicClient.Test
         public void MessageScheduleDeletedTest()
         {
             // TODO unit test for the property 'MessageScheduleDeleted'
+        }
+        /// <summary>
+        /// Test the property 'MessageScheduleNotSentStateChanged'
+        /// </summary>
+        [Test]
+        public void MessageScheduleNotSentStateChangedTest()
+        {
+            // TODO unit test for the property 'MessageScheduleNotSentStateChanged'
         }
         /// <summary>
         /// Test the property 'MessageScheduleCacheClear'
@@ -307,6 +339,22 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'ChatCacheClear'
         }
         /// <summary>
+        /// Test the property 'ChatRead'
+        /// </summary>
+        [Test]
+        public void ChatReadTest()
+        {
+            // TODO unit test for the property 'ChatRead'
+        }
+        /// <summary>
+        /// Test the property 'ChatUnread'
+        /// </summary>
+        [Test]
+        public void ChatUnreadTest()
+        {
+            // TODO unit test for the property 'ChatUnread'
+        }
+        /// <summary>
         /// Test the property 'ContactAdded'
         /// </summary>
         [Test]
@@ -393,6 +441,70 @@ namespace TextMagicClient.Test
         public void CustomFieldsCacheClearTest()
         {
             // TODO unit test for the property 'CustomFieldsCacheClear'
+        }
+        /// <summary>
+        /// Test the property 'ProgressCarrierBulkLookup'
+        /// </summary>
+        [Test]
+        public void ProgressCarrierBulkLookupTest()
+        {
+            // TODO unit test for the property 'ProgressCarrierBulkLookup'
+        }
+        /// <summary>
+        /// Test the property 'ProgressEmailBulkLookup'
+        /// </summary>
+        [Test]
+        public void ProgressEmailBulkLookupTest()
+        {
+            // TODO unit test for the property 'ProgressEmailBulkLookup'
+        }
+        /// <summary>
+        /// Test the property 'ProgressSubAccountBulkImport'
+        /// </summary>
+        [Test]
+        public void ProgressSubAccountBulkImportTest()
+        {
+            // TODO unit test for the property 'ProgressSubAccountBulkImport'
+        }
+        /// <summary>
+        /// Test the property 'ProgressContactBulkImport'
+        /// </summary>
+        [Test]
+        public void ProgressContactBulkImportTest()
+        {
+            // TODO unit test for the property 'ProgressContactBulkImport'
+        }
+        /// <summary>
+        /// Test the property 'ForceRefreshWebApp'
+        /// </summary>
+        [Test]
+        public void ForceRefreshWebAppTest()
+        {
+            // TODO unit test for the property 'ForceRefreshWebApp'
+        }
+        /// <summary>
+        /// Test the property 'ChatSenderSettingsChanged'
+        /// </summary>
+        [Test]
+        public void ChatSenderSettingsChangedTest()
+        {
+            // TODO unit test for the property 'ChatSenderSettingsChanged'
+        }
+        /// <summary>
+        /// Test the property 'CountrySenderSettingsChanged'
+        /// </summary>
+        [Test]
+        public void CountrySenderSettingsChangedTest()
+        {
+            // TODO unit test for the property 'CountrySenderSettingsChanged'
+        }
+        /// <summary>
+        /// Test the property 'ChatSuggestedReplyChunk'
+        /// </summary>
+        [Test]
+        public void ChatSuggestedReplyChunkTest()
+        {
+            // TODO unit test for the property 'ChatSuggestedReplyChunk'
         }
 
     }

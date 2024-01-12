@@ -98,6 +98,22 @@ namespace TextMagicClient.Test
         {
             // TODO unit test for the property 'SenderIds'
         }
+        /// <summary>
+        /// Test the property 'UserCarrierTwilio'
+        /// </summary>
+        [Test]
+        public void UserCarrierTwilioTest()
+        {
+            // TODO unit test for the property 'UserCarrierTwilio'
+        }
+        /// <summary>
+        /// Test the property 'UserCarrierVonage'
+        /// </summary>
+        [Test]
+        public void UserCarrierVonageTest()
+        {
+            // TODO unit test for the property 'UserCarrierVonage'
+        }
 
     }
 

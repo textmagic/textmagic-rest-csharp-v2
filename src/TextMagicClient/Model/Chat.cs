@@ -121,12 +121,13 @@ namespace TextMagicClient.Model
         /// <param name="mute">Indicates when the chat is muted. (required).</param>
         /// <param name="lastMessage">The last message content of a chat. (required).</param>
         /// <param name="direction">Last message type: * **ci** - incoming call; * **co** - outgoing call; * **i** - incoming message; * **o** - outgoing message.  (required).</param>
+        /// <param name="replyOptionsType">Used for chats prices. (required).</param>
         /// <param name="from">If filled, the value will be used as a sender number for all outgoing messages of a chat. (required).</param>
         /// <param name="mutedUntil">Date and time until the chat will be muted. (required).</param>
         /// <param name="timeLeftMute">Time left untill the chat will be unmuted (seconds). (required).</param>
         /// <param name="country">country (required).</param>
         /// <param name="pinned">Indicates when the chat is pinned. (required).</param>
-        public Chat(int? id = default(int?), int? originalId = default(int?), string phone = default(string), Contact contact = default(Contact), int? unsubscribedContactId = default(int?), int? unread = default(int?), DateTime? updatedAt = default(DateTime?), StatusEnum status = default(StatusEnum), int? mute = default(int?), string lastMessage = default(string), DirectionEnum direction = default(DirectionEnum), string from = default(string), DateTime? mutedUntil = default(DateTime?), int? timeLeftMute = default(int?), Country country = default(Country), bool? pinned = default(bool?))
+        public Chat(int? id = default(int?), int? originalId = default(int?), string phone = default(string), Contact contact = default(Contact), int? unsubscribedContactId = default(int?), int? unread = default(int?), DateTime? updatedAt = default(DateTime?), StatusEnum status = default(StatusEnum), int? mute = default(int?), string lastMessage = default(string), DirectionEnum direction = default(DirectionEnum), string replyOptionsType = default(string), string from = default(string), DateTime? mutedUntil = default(DateTime?), int? timeLeftMute = default(int?), Country country = default(Country), bool? pinned = default(bool?))
         {
             // to ensure "id" is required (not null)
             if (id == null)
@@ -226,6 +227,15 @@ namespace TextMagicClient.Model
             else
             {
                 this.Direction = direction;
+            }
+            // to ensure "replyOptionsType" is required (not null)
+            if (replyOptionsType == null)
+            {
+                throw new InvalidDataException("replyOptionsType is a required property for Chat and cannot be null");
+            }
+            else
+            {
+                this.ReplyOptionsType = replyOptionsType;
             }
             // to ensure "from" is required (not null)
             if (from == null)
@@ -338,6 +348,13 @@ namespace TextMagicClient.Model
 
 
         /// <summary>
+        /// Used for chats prices.
+        /// </summary>
+        /// <value>Used for chats prices.</value>
+        [DataMember(Name="replyOptionsType", EmitDefaultValue=false)]
+        public string ReplyOptionsType { get; set; }
+
+        /// <summary>
         /// If filled, the value will be used as a sender number for all outgoing messages of a chat.
         /// </summary>
         /// <value>If filled, the value will be used as a sender number for all outgoing messages of a chat.</value>
@@ -390,6 +407,7 @@ namespace TextMagicClient.Model
             sb.Append("  Mute: ").Append(Mute).Append("\n");
             sb.Append("  LastMessage: ").Append(LastMessage).Append("\n");
             sb.Append("  Direction: ").Append(Direction).Append("\n");
+            sb.Append("  ReplyOptionsType: ").Append(ReplyOptionsType).Append("\n");
             sb.Append("  From: ").Append(From).Append("\n");
             sb.Append("  MutedUntil: ").Append(MutedUntil).Append("\n");
             sb.Append("  TimeLeftMute: ").Append(TimeLeftMute).Append("\n");
@@ -485,6 +503,11 @@ namespace TextMagicClient.Model
                     this.Direction.Equals(input.Direction))
                 ) && 
                 (
+                    this.ReplyOptionsType == input.ReplyOptionsType ||
+                    (this.ReplyOptionsType != null &&
+                    this.ReplyOptionsType.Equals(input.ReplyOptionsType))
+                ) && 
+                (
                     this.From == input.From ||
                     (this.From != null &&
                     this.From.Equals(input.From))
@@ -542,6 +565,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.LastMessage.GetHashCode();
                 if (this.Direction != null)
                     hashCode = hashCode * 59 + this.Direction.GetHashCode();
+                if (this.ReplyOptionsType != null)
+                    hashCode = hashCode * 59 + this.ReplyOptionsType.GetHashCode();
                 if (this.From != null)
                     hashCode = hashCode * 59 + this.From.GetHashCode();
                 if (this.MutedUntil != null)

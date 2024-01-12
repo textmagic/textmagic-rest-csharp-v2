@@ -155,6 +155,14 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'Direction'
         }
         /// <summary>
+        /// Test the property 'ReplyOptionsType'
+        /// </summary>
+        [Test]
+        public void ReplyOptionsTypeTest()
+        {
+            // TODO unit test for the property 'ReplyOptionsType'
+        }
+        /// <summary>
         /// Test the property 'From'
         /// </summary>
         [Test]

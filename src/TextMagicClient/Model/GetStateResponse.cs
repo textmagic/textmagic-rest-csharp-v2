@@ -42,6 +42,9 @@ namespace TextMagicClient.Model
         /// <param name="systemExit">systemExit (required).</param>
         /// <param name="systemAlert">systemAlert (required).</param>
         /// <param name="systemAccountStateChanged">systemAccountStateChanged (required).</param>
+        /// <param name="systemAccountAdditionalFields">systemAccountAdditionalFields (required).</param>
+        /// <param name="systemAccountPermissionsChanged">systemAccountPermissionsChanged (required).</param>
+        /// <param name="userBalanceChanged">userBalanceChanged (required).</param>
         /// <param name="messageDeleted">messageDeleted (required).</param>
         /// <param name="messageIncoming">messageIncoming (required).</param>
         /// <param name="messageIncomingDeleted">messageIncomingDeleted (required).</param>
@@ -55,6 +58,7 @@ namespace TextMagicClient.Model
         /// <param name="messageScheduleAdded">messageScheduleAdded (required).</param>
         /// <param name="messageScheduleStateChanged">messageScheduleStateChanged (required).</param>
         /// <param name="messageScheduleDeleted">messageScheduleDeleted (required).</param>
+        /// <param name="messageScheduleNotSentStateChanged">messageScheduleNotSentStateChanged (required).</param>
         /// <param name="messageScheduleCacheClear">messageScheduleCacheClear (required).</param>
         /// <param name="messageTemplateCacheClear">messageTemplateCacheClear (required).</param>
         /// <param name="callFinished">callFinished (required).</param>
@@ -68,6 +72,8 @@ namespace TextMagicClient.Model
         /// <param name="chatClosed">chatClosed (required).</param>
         /// <param name="chatReopened">chatReopened (required).</param>
         /// <param name="chatCacheClear">chatCacheClear (required).</param>
+        /// <param name="chatRead">chatRead (required).</param>
+        /// <param name="chatUnread">chatUnread (required).</param>
         /// <param name="contactAdded">contactAdded (required).</param>
         /// <param name="contactDeleted">contactDeleted (required).</param>
         /// <param name="contactStateChanged">contactStateChanged (required).</param>
@@ -79,7 +85,15 @@ namespace TextMagicClient.Model
         /// <param name="contactCacheClear">contactCacheClear (required).</param>
         /// <param name="listCacheClear">listCacheClear (required).</param>
         /// <param name="customFieldsCacheClear">customFieldsCacheClear (required).</param>
-        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatPinned = default(int?), int? chatUnpinned = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatCacheClear = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?))
+        /// <param name="progressCarrierBulkLookup">progressCarrierBulkLookup (required).</param>
+        /// <param name="progressEmailBulkLookup">progressEmailBulkLookup (required).</param>
+        /// <param name="progressSubAccountBulkImport">progressSubAccountBulkImport (required).</param>
+        /// <param name="progressContactBulkImport">progressContactBulkImport (required).</param>
+        /// <param name="forceRefreshWebApp">forceRefreshWebApp (required).</param>
+        /// <param name="chatSenderSettingsChanged">chatSenderSettingsChanged (required).</param>
+        /// <param name="countrySenderSettingsChanged">countrySenderSettingsChanged (required).</param>
+        /// <param name="chatSuggestedReplyChunk">chatSuggestedReplyChunk (required).</param>
+        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? systemAccountAdditionalFields = default(int?), int? systemAccountPermissionsChanged = default(int?), int? userBalanceChanged = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleNotSentStateChanged = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatPinned = default(int?), int? chatUnpinned = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatCacheClear = default(int?), int? chatRead = default(int?), int? chatUnread = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?), int? progressCarrierBulkLookup = default(int?), int? progressEmailBulkLookup = default(int?), int? progressSubAccountBulkImport = default(int?), int? progressContactBulkImport = default(int?), int? forceRefreshWebApp = default(int?), int? chatSenderSettingsChanged = default(int?), int? countrySenderSettingsChanged = default(int?), int? chatSuggestedReplyChunk = default(int?))
         {
             // to ensure "systemCacheClear" is required (not null)
             if (systemCacheClear == null)
@@ -116,6 +130,33 @@ namespace TextMagicClient.Model
             else
             {
                 this.SystemAccountStateChanged = systemAccountStateChanged;
+            }
+            // to ensure "systemAccountAdditionalFields" is required (not null)
+            if (systemAccountAdditionalFields == null)
+            {
+                throw new InvalidDataException("systemAccountAdditionalFields is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.SystemAccountAdditionalFields = systemAccountAdditionalFields;
+            }
+            // to ensure "systemAccountPermissionsChanged" is required (not null)
+            if (systemAccountPermissionsChanged == null)
+            {
+                throw new InvalidDataException("systemAccountPermissionsChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.SystemAccountPermissionsChanged = systemAccountPermissionsChanged;
+            }
+            // to ensure "userBalanceChanged" is required (not null)
+            if (userBalanceChanged == null)
+            {
+                throw new InvalidDataException("userBalanceChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.UserBalanceChanged = userBalanceChanged;
             }
             // to ensure "messageDeleted" is required (not null)
             if (messageDeleted == null)
@@ -234,6 +275,15 @@ namespace TextMagicClient.Model
             {
                 this.MessageScheduleDeleted = messageScheduleDeleted;
             }
+            // to ensure "messageScheduleNotSentStateChanged" is required (not null)
+            if (messageScheduleNotSentStateChanged == null)
+            {
+                throw new InvalidDataException("messageScheduleNotSentStateChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.MessageScheduleNotSentStateChanged = messageScheduleNotSentStateChanged;
+            }
             // to ensure "messageScheduleCacheClear" is required (not null)
             if (messageScheduleCacheClear == null)
             {
@@ -351,6 +401,24 @@ namespace TextMagicClient.Model
             {
                 this.ChatCacheClear = chatCacheClear;
             }
+            // to ensure "chatRead" is required (not null)
+            if (chatRead == null)
+            {
+                throw new InvalidDataException("chatRead is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChatRead = chatRead;
+            }
+            // to ensure "chatUnread" is required (not null)
+            if (chatUnread == null)
+            {
+                throw new InvalidDataException("chatUnread is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChatUnread = chatUnread;
+            }
             // to ensure "contactAdded" is required (not null)
             if (contactAdded == null)
             {
@@ -450,6 +518,78 @@ namespace TextMagicClient.Model
             {
                 this.CustomFieldsCacheClear = customFieldsCacheClear;
             }
+            // to ensure "progressCarrierBulkLookup" is required (not null)
+            if (progressCarrierBulkLookup == null)
+            {
+                throw new InvalidDataException("progressCarrierBulkLookup is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ProgressCarrierBulkLookup = progressCarrierBulkLookup;
+            }
+            // to ensure "progressEmailBulkLookup" is required (not null)
+            if (progressEmailBulkLookup == null)
+            {
+                throw new InvalidDataException("progressEmailBulkLookup is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ProgressEmailBulkLookup = progressEmailBulkLookup;
+            }
+            // to ensure "progressSubAccountBulkImport" is required (not null)
+            if (progressSubAccountBulkImport == null)
+            {
+                throw new InvalidDataException("progressSubAccountBulkImport is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ProgressSubAccountBulkImport = progressSubAccountBulkImport;
+            }
+            // to ensure "progressContactBulkImport" is required (not null)
+            if (progressContactBulkImport == null)
+            {
+                throw new InvalidDataException("progressContactBulkImport is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ProgressContactBulkImport = progressContactBulkImport;
+            }
+            // to ensure "forceRefreshWebApp" is required (not null)
+            if (forceRefreshWebApp == null)
+            {
+                throw new InvalidDataException("forceRefreshWebApp is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ForceRefreshWebApp = forceRefreshWebApp;
+            }
+            // to ensure "chatSenderSettingsChanged" is required (not null)
+            if (chatSenderSettingsChanged == null)
+            {
+                throw new InvalidDataException("chatSenderSettingsChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChatSenderSettingsChanged = chatSenderSettingsChanged;
+            }
+            // to ensure "countrySenderSettingsChanged" is required (not null)
+            if (countrySenderSettingsChanged == null)
+            {
+                throw new InvalidDataException("countrySenderSettingsChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.CountrySenderSettingsChanged = countrySenderSettingsChanged;
+            }
+            // to ensure "chatSuggestedReplyChunk" is required (not null)
+            if (chatSuggestedReplyChunk == null)
+            {
+                throw new InvalidDataException("chatSuggestedReplyChunk is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChatSuggestedReplyChunk = chatSuggestedReplyChunk;
+            }
         }
         
         /// <summary>
@@ -475,6 +615,24 @@ namespace TextMagicClient.Model
         /// </summary>
         [DataMember(Name="systemAccountStateChanged", EmitDefaultValue=false)]
         public int? SystemAccountStateChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets SystemAccountAdditionalFields
+        /// </summary>
+        [DataMember(Name="systemAccountAdditionalFields", EmitDefaultValue=false)]
+        public int? SystemAccountAdditionalFields { get; set; }
+
+        /// <summary>
+        /// Gets or Sets SystemAccountPermissionsChanged
+        /// </summary>
+        [DataMember(Name="systemAccountPermissionsChanged", EmitDefaultValue=false)]
+        public int? SystemAccountPermissionsChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UserBalanceChanged
+        /// </summary>
+        [DataMember(Name="userBalanceChanged", EmitDefaultValue=false)]
+        public int? UserBalanceChanged { get; set; }
 
         /// <summary>
         /// Gets or Sets MessageDeleted
@@ -555,6 +713,12 @@ namespace TextMagicClient.Model
         public int? MessageScheduleDeleted { get; set; }
 
         /// <summary>
+        /// Gets or Sets MessageScheduleNotSentStateChanged
+        /// </summary>
+        [DataMember(Name="messageScheduleNotSentStateChanged", EmitDefaultValue=false)]
+        public int? MessageScheduleNotSentStateChanged { get; set; }
+
+        /// <summary>
         /// Gets or Sets MessageScheduleCacheClear
         /// </summary>
         [DataMember(Name="messageScheduleCacheClear", EmitDefaultValue=false)]
@@ -633,6 +797,18 @@ namespace TextMagicClient.Model
         public int? ChatCacheClear { get; set; }
 
         /// <summary>
+        /// Gets or Sets ChatRead
+        /// </summary>
+        [DataMember(Name="chatRead", EmitDefaultValue=false)]
+        public int? ChatRead { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ChatUnread
+        /// </summary>
+        [DataMember(Name="chatUnread", EmitDefaultValue=false)]
+        public int? ChatUnread { get; set; }
+
+        /// <summary>
         /// Gets or Sets ContactAdded
         /// </summary>
         [DataMember(Name="contactAdded", EmitDefaultValue=false)]
@@ -699,6 +875,54 @@ namespace TextMagicClient.Model
         public int? CustomFieldsCacheClear { get; set; }
 
         /// <summary>
+        /// Gets or Sets ProgressCarrierBulkLookup
+        /// </summary>
+        [DataMember(Name="progressCarrierBulkLookup", EmitDefaultValue=false)]
+        public int? ProgressCarrierBulkLookup { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ProgressEmailBulkLookup
+        /// </summary>
+        [DataMember(Name="progressEmailBulkLookup", EmitDefaultValue=false)]
+        public int? ProgressEmailBulkLookup { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ProgressSubAccountBulkImport
+        /// </summary>
+        [DataMember(Name="progressSubAccountBulkImport", EmitDefaultValue=false)]
+        public int? ProgressSubAccountBulkImport { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ProgressContactBulkImport
+        /// </summary>
+        [DataMember(Name="progressContactBulkImport", EmitDefaultValue=false)]
+        public int? ProgressContactBulkImport { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ForceRefreshWebApp
+        /// </summary>
+        [DataMember(Name="forceRefreshWebApp", EmitDefaultValue=false)]
+        public int? ForceRefreshWebApp { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ChatSenderSettingsChanged
+        /// </summary>
+        [DataMember(Name="chatSenderSettingsChanged", EmitDefaultValue=false)]
+        public int? ChatSenderSettingsChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CountrySenderSettingsChanged
+        /// </summary>
+        [DataMember(Name="countrySenderSettingsChanged", EmitDefaultValue=false)]
+        public int? CountrySenderSettingsChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ChatSuggestedReplyChunk
+        /// </summary>
+        [DataMember(Name="chatSuggestedReplyChunk", EmitDefaultValue=false)]
+        public int? ChatSuggestedReplyChunk { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -710,6 +934,9 @@ namespace TextMagicClient.Model
             sb.Append("  SystemExit: ").Append(SystemExit).Append("\n");
             sb.Append("  SystemAlert: ").Append(SystemAlert).Append("\n");
             sb.Append("  SystemAccountStateChanged: ").Append(SystemAccountStateChanged).Append("\n");
+            sb.Append("  SystemAccountAdditionalFields: ").Append(SystemAccountAdditionalFields).Append("\n");
+            sb.Append("  SystemAccountPermissionsChanged: ").Append(SystemAccountPermissionsChanged).Append("\n");
+            sb.Append("  UserBalanceChanged: ").Append(UserBalanceChanged).Append("\n");
             sb.Append("  MessageDeleted: ").Append(MessageDeleted).Append("\n");
             sb.Append("  MessageIncoming: ").Append(MessageIncoming).Append("\n");
             sb.Append("  MessageIncomingDeleted: ").Append(MessageIncomingDeleted).Append("\n");
@@ -723,6 +950,7 @@ namespace TextMagicClient.Model
             sb.Append("  MessageScheduleAdded: ").Append(MessageScheduleAdded).Append("\n");
             sb.Append("  MessageScheduleStateChanged: ").Append(MessageScheduleStateChanged).Append("\n");
             sb.Append("  MessageScheduleDeleted: ").Append(MessageScheduleDeleted).Append("\n");
+            sb.Append("  MessageScheduleNotSentStateChanged: ").Append(MessageScheduleNotSentStateChanged).Append("\n");
             sb.Append("  MessageScheduleCacheClear: ").Append(MessageScheduleCacheClear).Append("\n");
             sb.Append("  MessageTemplateCacheClear: ").Append(MessageTemplateCacheClear).Append("\n");
             sb.Append("  CallFinished: ").Append(CallFinished).Append("\n");
@@ -736,6 +964,8 @@ namespace TextMagicClient.Model
             sb.Append("  ChatClosed: ").Append(ChatClosed).Append("\n");
             sb.Append("  ChatReopened: ").Append(ChatReopened).Append("\n");
             sb.Append("  ChatCacheClear: ").Append(ChatCacheClear).Append("\n");
+            sb.Append("  ChatRead: ").Append(ChatRead).Append("\n");
+            sb.Append("  ChatUnread: ").Append(ChatUnread).Append("\n");
             sb.Append("  ContactAdded: ").Append(ContactAdded).Append("\n");
             sb.Append("  ContactDeleted: ").Append(ContactDeleted).Append("\n");
             sb.Append("  ContactStateChanged: ").Append(ContactStateChanged).Append("\n");
@@ -747,6 +977,14 @@ namespace TextMagicClient.Model
             sb.Append("  ContactCacheClear: ").Append(ContactCacheClear).Append("\n");
             sb.Append("  ListCacheClear: ").Append(ListCacheClear).Append("\n");
             sb.Append("  CustomFieldsCacheClear: ").Append(CustomFieldsCacheClear).Append("\n");
+            sb.Append("  ProgressCarrierBulkLookup: ").Append(ProgressCarrierBulkLookup).Append("\n");
+            sb.Append("  ProgressEmailBulkLookup: ").Append(ProgressEmailBulkLookup).Append("\n");
+            sb.Append("  ProgressSubAccountBulkImport: ").Append(ProgressSubAccountBulkImport).Append("\n");
+            sb.Append("  ProgressContactBulkImport: ").Append(ProgressContactBulkImport).Append("\n");
+            sb.Append("  ForceRefreshWebApp: ").Append(ForceRefreshWebApp).Append("\n");
+            sb.Append("  ChatSenderSettingsChanged: ").Append(ChatSenderSettingsChanged).Append("\n");
+            sb.Append("  CountrySenderSettingsChanged: ").Append(CountrySenderSettingsChanged).Append("\n");
+            sb.Append("  ChatSuggestedReplyChunk: ").Append(ChatSuggestedReplyChunk).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -800,6 +1038,21 @@ namespace TextMagicClient.Model
                     this.SystemAccountStateChanged == input.SystemAccountStateChanged ||
                     (this.SystemAccountStateChanged != null &&
                     this.SystemAccountStateChanged.Equals(input.SystemAccountStateChanged))
+                ) && 
+                (
+                    this.SystemAccountAdditionalFields == input.SystemAccountAdditionalFields ||
+                    (this.SystemAccountAdditionalFields != null &&
+                    this.SystemAccountAdditionalFields.Equals(input.SystemAccountAdditionalFields))
+                ) && 
+                (
+                    this.SystemAccountPermissionsChanged == input.SystemAccountPermissionsChanged ||
+                    (this.SystemAccountPermissionsChanged != null &&
+                    this.SystemAccountPermissionsChanged.Equals(input.SystemAccountPermissionsChanged))
+                ) && 
+                (
+                    this.UserBalanceChanged == input.UserBalanceChanged ||
+                    (this.UserBalanceChanged != null &&
+                    this.UserBalanceChanged.Equals(input.UserBalanceChanged))
                 ) && 
                 (
                     this.MessageDeleted == input.MessageDeleted ||
@@ -867,6 +1120,11 @@ namespace TextMagicClient.Model
                     this.MessageScheduleDeleted.Equals(input.MessageScheduleDeleted))
                 ) && 
                 (
+                    this.MessageScheduleNotSentStateChanged == input.MessageScheduleNotSentStateChanged ||
+                    (this.MessageScheduleNotSentStateChanged != null &&
+                    this.MessageScheduleNotSentStateChanged.Equals(input.MessageScheduleNotSentStateChanged))
+                ) && 
+                (
                     this.MessageScheduleCacheClear == input.MessageScheduleCacheClear ||
                     (this.MessageScheduleCacheClear != null &&
                     this.MessageScheduleCacheClear.Equals(input.MessageScheduleCacheClear))
@@ -932,6 +1190,16 @@ namespace TextMagicClient.Model
                     this.ChatCacheClear.Equals(input.ChatCacheClear))
                 ) && 
                 (
+                    this.ChatRead == input.ChatRead ||
+                    (this.ChatRead != null &&
+                    this.ChatRead.Equals(input.ChatRead))
+                ) && 
+                (
+                    this.ChatUnread == input.ChatUnread ||
+                    (this.ChatUnread != null &&
+                    this.ChatUnread.Equals(input.ChatUnread))
+                ) && 
+                (
                     this.ContactAdded == input.ContactAdded ||
                     (this.ContactAdded != null &&
                     this.ContactAdded.Equals(input.ContactAdded))
@@ -985,6 +1253,46 @@ namespace TextMagicClient.Model
                     this.CustomFieldsCacheClear == input.CustomFieldsCacheClear ||
                     (this.CustomFieldsCacheClear != null &&
                     this.CustomFieldsCacheClear.Equals(input.CustomFieldsCacheClear))
+                ) && 
+                (
+                    this.ProgressCarrierBulkLookup == input.ProgressCarrierBulkLookup ||
+                    (this.ProgressCarrierBulkLookup != null &&
+                    this.ProgressCarrierBulkLookup.Equals(input.ProgressCarrierBulkLookup))
+                ) && 
+                (
+                    this.ProgressEmailBulkLookup == input.ProgressEmailBulkLookup ||
+                    (this.ProgressEmailBulkLookup != null &&
+                    this.ProgressEmailBulkLookup.Equals(input.ProgressEmailBulkLookup))
+                ) && 
+                (
+                    this.ProgressSubAccountBulkImport == input.ProgressSubAccountBulkImport ||
+                    (this.ProgressSubAccountBulkImport != null &&
+                    this.ProgressSubAccountBulkImport.Equals(input.ProgressSubAccountBulkImport))
+                ) && 
+                (
+                    this.ProgressContactBulkImport == input.ProgressContactBulkImport ||
+                    (this.ProgressContactBulkImport != null &&
+                    this.ProgressContactBulkImport.Equals(input.ProgressContactBulkImport))
+                ) && 
+                (
+                    this.ForceRefreshWebApp == input.ForceRefreshWebApp ||
+                    (this.ForceRefreshWebApp != null &&
+                    this.ForceRefreshWebApp.Equals(input.ForceRefreshWebApp))
+                ) && 
+                (
+                    this.ChatSenderSettingsChanged == input.ChatSenderSettingsChanged ||
+                    (this.ChatSenderSettingsChanged != null &&
+                    this.ChatSenderSettingsChanged.Equals(input.ChatSenderSettingsChanged))
+                ) && 
+                (
+                    this.CountrySenderSettingsChanged == input.CountrySenderSettingsChanged ||
+                    (this.CountrySenderSettingsChanged != null &&
+                    this.CountrySenderSettingsChanged.Equals(input.CountrySenderSettingsChanged))
+                ) && 
+                (
+                    this.ChatSuggestedReplyChunk == input.ChatSuggestedReplyChunk ||
+                    (this.ChatSuggestedReplyChunk != null &&
+                    this.ChatSuggestedReplyChunk.Equals(input.ChatSuggestedReplyChunk))
                 );
         }
 
@@ -1005,6 +1313,12 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.SystemAlert.GetHashCode();
                 if (this.SystemAccountStateChanged != null)
                     hashCode = hashCode * 59 + this.SystemAccountStateChanged.GetHashCode();
+                if (this.SystemAccountAdditionalFields != null)
+                    hashCode = hashCode * 59 + this.SystemAccountAdditionalFields.GetHashCode();
+                if (this.SystemAccountPermissionsChanged != null)
+                    hashCode = hashCode * 59 + this.SystemAccountPermissionsChanged.GetHashCode();
+                if (this.UserBalanceChanged != null)
+                    hashCode = hashCode * 59 + this.UserBalanceChanged.GetHashCode();
                 if (this.MessageDeleted != null)
                     hashCode = hashCode * 59 + this.MessageDeleted.GetHashCode();
                 if (this.MessageIncoming != null)
@@ -1031,6 +1345,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.MessageScheduleStateChanged.GetHashCode();
                 if (this.MessageScheduleDeleted != null)
                     hashCode = hashCode * 59 + this.MessageScheduleDeleted.GetHashCode();
+                if (this.MessageScheduleNotSentStateChanged != null)
+                    hashCode = hashCode * 59 + this.MessageScheduleNotSentStateChanged.GetHashCode();
                 if (this.MessageScheduleCacheClear != null)
                     hashCode = hashCode * 59 + this.MessageScheduleCacheClear.GetHashCode();
                 if (this.MessageTemplateCacheClear != null)
@@ -1057,6 +1373,10 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.ChatReopened.GetHashCode();
                 if (this.ChatCacheClear != null)
                     hashCode = hashCode * 59 + this.ChatCacheClear.GetHashCode();
+                if (this.ChatRead != null)
+                    hashCode = hashCode * 59 + this.ChatRead.GetHashCode();
+                if (this.ChatUnread != null)
+                    hashCode = hashCode * 59 + this.ChatUnread.GetHashCode();
                 if (this.ContactAdded != null)
                     hashCode = hashCode * 59 + this.ContactAdded.GetHashCode();
                 if (this.ContactDeleted != null)
@@ -1079,6 +1399,22 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.ListCacheClear.GetHashCode();
                 if (this.CustomFieldsCacheClear != null)
                     hashCode = hashCode * 59 + this.CustomFieldsCacheClear.GetHashCode();
+                if (this.ProgressCarrierBulkLookup != null)
+                    hashCode = hashCode * 59 + this.ProgressCarrierBulkLookup.GetHashCode();
+                if (this.ProgressEmailBulkLookup != null)
+                    hashCode = hashCode * 59 + this.ProgressEmailBulkLookup.GetHashCode();
+                if (this.ProgressSubAccountBulkImport != null)
+                    hashCode = hashCode * 59 + this.ProgressSubAccountBulkImport.GetHashCode();
+                if (this.ProgressContactBulkImport != null)
+                    hashCode = hashCode * 59 + this.ProgressContactBulkImport.GetHashCode();
+                if (this.ForceRefreshWebApp != null)
+                    hashCode = hashCode * 59 + this.ForceRefreshWebApp.GetHashCode();
+                if (this.ChatSenderSettingsChanged != null)
+                    hashCode = hashCode * 59 + this.ChatSenderSettingsChanged.GetHashCode();
+                if (this.CountrySenderSettingsChanged != null)
+                    hashCode = hashCode * 59 + this.CountrySenderSettingsChanged.GetHashCode();
+                if (this.ChatSuggestedReplyChunk != null)
+                    hashCode = hashCode * 59 + this.ChatSuggestedReplyChunk.GetHashCode();
                 return hashCode;
             }
         }

@@ -7,6 +7,8 @@ Name | Type | Description | Notes
 **User** | **List&lt;string&gt;** | Array of verified account phone numbers (currently only one). | 
 **Shared** | **List&lt;string&gt;** | Array of shared number strings. | 
 **SenderIds** | **List&lt;string&gt;** | Array of alphanumeric sender IDs. | 
+**UserCarrierTwilio** | **List&lt;string&gt;** | Array of alphanumeric sender IDs. | 
+**UserCarrierVonage** | **List&lt;string&gt;** | Array of alphanumeric sender IDs. | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

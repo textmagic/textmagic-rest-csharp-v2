@@ -42,7 +42,9 @@ namespace TextMagicClient.Model
         /// <param name="user">Array of verified account phone numbers (currently only one). (required).</param>
         /// <param name="shared">Array of shared number strings. (required).</param>
         /// <param name="senderIds">Array of alphanumeric sender IDs. (required).</param>
-        public GetAvailableSenderSettingOptionsResponse(List<string> dedicated = default(List<string>), List<string> user = default(List<string>), List<string> shared = default(List<string>), List<string> senderIds = default(List<string>))
+        /// <param name="userCarrierTwilio">Array of alphanumeric sender IDs. (required).</param>
+        /// <param name="userCarrierVonage">Array of alphanumeric sender IDs. (required).</param>
+        public GetAvailableSenderSettingOptionsResponse(List<string> dedicated = default(List<string>), List<string> user = default(List<string>), List<string> shared = default(List<string>), List<string> senderIds = default(List<string>), List<string> userCarrierTwilio = default(List<string>), List<string> userCarrierVonage = default(List<string>))
         {
             // to ensure "dedicated" is required (not null)
             if (dedicated == null)
@@ -80,6 +82,24 @@ namespace TextMagicClient.Model
             {
                 this.SenderIds = senderIds;
             }
+            // to ensure "userCarrierTwilio" is required (not null)
+            if (userCarrierTwilio == null)
+            {
+                throw new InvalidDataException("userCarrierTwilio is a required property for GetAvailableSenderSettingOptionsResponse and cannot be null");
+            }
+            else
+            {
+                this.UserCarrierTwilio = userCarrierTwilio;
+            }
+            // to ensure "userCarrierVonage" is required (not null)
+            if (userCarrierVonage == null)
+            {
+                throw new InvalidDataException("userCarrierVonage is a required property for GetAvailableSenderSettingOptionsResponse and cannot be null");
+            }
+            else
+            {
+                this.UserCarrierVonage = userCarrierVonage;
+            }
         }
         
         /// <summary>
@@ -111,6 +131,20 @@ namespace TextMagicClient.Model
         public List<string> SenderIds { get; set; }
 
         /// <summary>
+        /// Array of alphanumeric sender IDs.
+        /// </summary>
+        /// <value>Array of alphanumeric sender IDs.</value>
+        [DataMember(Name="userCarrierTwilio", EmitDefaultValue=false)]
+        public List<string> UserCarrierTwilio { get; set; }
+
+        /// <summary>
+        /// Array of alphanumeric sender IDs.
+        /// </summary>
+        /// <value>Array of alphanumeric sender IDs.</value>
+        [DataMember(Name="userCarrierVonage", EmitDefaultValue=false)]
+        public List<string> UserCarrierVonage { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -122,6 +156,8 @@ namespace TextMagicClient.Model
             sb.Append("  User: ").Append(User).Append("\n");
             sb.Append("  Shared: ").Append(Shared).Append("\n");
             sb.Append("  SenderIds: ").Append(SenderIds).Append("\n");
+            sb.Append("  UserCarrierTwilio: ").Append(UserCarrierTwilio).Append("\n");
+            sb.Append("  UserCarrierVonage: ").Append(UserCarrierVonage).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -175,6 +211,16 @@ namespace TextMagicClient.Model
                     this.SenderIds == input.SenderIds ||
                     this.SenderIds != null &&
                     this.SenderIds.SequenceEqual(input.SenderIds)
+                ) && 
+                (
+                    this.UserCarrierTwilio == input.UserCarrierTwilio ||
+                    this.UserCarrierTwilio != null &&
+                    this.UserCarrierTwilio.SequenceEqual(input.UserCarrierTwilio)
+                ) && 
+                (
+                    this.UserCarrierVonage == input.UserCarrierVonage ||
+                    this.UserCarrierVonage != null &&
+                    this.UserCarrierVonage.SequenceEqual(input.UserCarrierVonage)
                 );
         }
 
@@ -195,6 +241,10 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.Shared.GetHashCode();
                 if (this.SenderIds != null)
                     hashCode = hashCode * 59 + this.SenderIds.GetHashCode();
+                if (this.UserCarrierTwilio != null)
+                    hashCode = hashCode * 59 + this.UserCarrierTwilio.GetHashCode();
+                if (this.UserCarrierVonage != null)
+                    hashCode = hashCode * 59 + this.UserCarrierVonage.GetHashCode();
                 return hashCode;
             }
         }
