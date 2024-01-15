@@ -92,8 +92,10 @@ namespace TextMagicClient.Model
         /// <param name="forceRefreshWebApp">forceRefreshWebApp (required).</param>
         /// <param name="chatSenderSettingsChanged">chatSenderSettingsChanged (required).</param>
         /// <param name="countrySenderSettingsChanged">countrySenderSettingsChanged (required).</param>
+        /// <param name="chatSummaryChunk">chatSummaryChunk (required).</param>
+        /// <param name="chatWaysToReplyChunk">chatWaysToReplyChunk (required).</param>
         /// <param name="chatSuggestedReplyChunk">chatSuggestedReplyChunk (required).</param>
-        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? systemAccountAdditionalFields = default(int?), int? systemAccountPermissionsChanged = default(int?), int? userBalanceChanged = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleNotSentStateChanged = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatPinned = default(int?), int? chatUnpinned = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatCacheClear = default(int?), int? chatRead = default(int?), int? chatUnread = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?), int? progressCarrierBulkLookup = default(int?), int? progressEmailBulkLookup = default(int?), int? progressSubAccountBulkImport = default(int?), int? progressContactBulkImport = default(int?), int? forceRefreshWebApp = default(int?), int? chatSenderSettingsChanged = default(int?), int? countrySenderSettingsChanged = default(int?), int? chatSuggestedReplyChunk = default(int?))
+        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? systemAccountAdditionalFields = default(int?), int? systemAccountPermissionsChanged = default(int?), int? userBalanceChanged = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleNotSentStateChanged = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatPinned = default(int?), int? chatUnpinned = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatCacheClear = default(int?), int? chatRead = default(int?), int? chatUnread = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?), int? progressCarrierBulkLookup = default(int?), int? progressEmailBulkLookup = default(int?), int? progressSubAccountBulkImport = default(int?), int? progressContactBulkImport = default(int?), int? forceRefreshWebApp = default(int?), int? chatSenderSettingsChanged = default(int?), int? countrySenderSettingsChanged = default(int?), int? chatSummaryChunk = default(int?), int? chatWaysToReplyChunk = default(int?), int? chatSuggestedReplyChunk = default(int?))
         {
             // to ensure "systemCacheClear" is required (not null)
             if (systemCacheClear == null)
@@ -581,6 +583,24 @@ namespace TextMagicClient.Model
             {
                 this.CountrySenderSettingsChanged = countrySenderSettingsChanged;
             }
+            // to ensure "chatSummaryChunk" is required (not null)
+            if (chatSummaryChunk == null)
+            {
+                throw new InvalidDataException("chatSummaryChunk is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChatSummaryChunk = chatSummaryChunk;
+            }
+            // to ensure "chatWaysToReplyChunk" is required (not null)
+            if (chatWaysToReplyChunk == null)
+            {
+                throw new InvalidDataException("chatWaysToReplyChunk is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChatWaysToReplyChunk = chatWaysToReplyChunk;
+            }
             // to ensure "chatSuggestedReplyChunk" is required (not null)
             if (chatSuggestedReplyChunk == null)
             {
@@ -917,6 +937,18 @@ namespace TextMagicClient.Model
         public int? CountrySenderSettingsChanged { get; set; }
 
         /// <summary>
+        /// Gets or Sets ChatSummaryChunk
+        /// </summary>
+        [DataMember(Name="chatSummaryChunk", EmitDefaultValue=false)]
+        public int? ChatSummaryChunk { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ChatWaysToReplyChunk
+        /// </summary>
+        [DataMember(Name="chatWaysToReplyChunk", EmitDefaultValue=false)]
+        public int? ChatWaysToReplyChunk { get; set; }
+
+        /// <summary>
         /// Gets or Sets ChatSuggestedReplyChunk
         /// </summary>
         [DataMember(Name="chatSuggestedReplyChunk", EmitDefaultValue=false)]
@@ -984,6 +1016,8 @@ namespace TextMagicClient.Model
             sb.Append("  ForceRefreshWebApp: ").Append(ForceRefreshWebApp).Append("\n");
             sb.Append("  ChatSenderSettingsChanged: ").Append(ChatSenderSettingsChanged).Append("\n");
             sb.Append("  CountrySenderSettingsChanged: ").Append(CountrySenderSettingsChanged).Append("\n");
+            sb.Append("  ChatSummaryChunk: ").Append(ChatSummaryChunk).Append("\n");
+            sb.Append("  ChatWaysToReplyChunk: ").Append(ChatWaysToReplyChunk).Append("\n");
             sb.Append("  ChatSuggestedReplyChunk: ").Append(ChatSuggestedReplyChunk).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -1290,6 +1324,16 @@ namespace TextMagicClient.Model
                     this.CountrySenderSettingsChanged.Equals(input.CountrySenderSettingsChanged))
                 ) && 
                 (
+                    this.ChatSummaryChunk == input.ChatSummaryChunk ||
+                    (this.ChatSummaryChunk != null &&
+                    this.ChatSummaryChunk.Equals(input.ChatSummaryChunk))
+                ) && 
+                (
+                    this.ChatWaysToReplyChunk == input.ChatWaysToReplyChunk ||
+                    (this.ChatWaysToReplyChunk != null &&
+                    this.ChatWaysToReplyChunk.Equals(input.ChatWaysToReplyChunk))
+                ) && 
+                (
                     this.ChatSuggestedReplyChunk == input.ChatSuggestedReplyChunk ||
                     (this.ChatSuggestedReplyChunk != null &&
                     this.ChatSuggestedReplyChunk.Equals(input.ChatSuggestedReplyChunk))
@@ -1413,6 +1457,10 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.ChatSenderSettingsChanged.GetHashCode();
                 if (this.CountrySenderSettingsChanged != null)
                     hashCode = hashCode * 59 + this.CountrySenderSettingsChanged.GetHashCode();
+                if (this.ChatSummaryChunk != null)
+                    hashCode = hashCode * 59 + this.ChatSummaryChunk.GetHashCode();
+                if (this.ChatWaysToReplyChunk != null)
+                    hashCode = hashCode * 59 + this.ChatWaysToReplyChunk.GetHashCode();
                 if (this.ChatSuggestedReplyChunk != null)
                     hashCode = hashCode * 59 + this.ChatSuggestedReplyChunk.GetHashCode();
                 return hashCode;

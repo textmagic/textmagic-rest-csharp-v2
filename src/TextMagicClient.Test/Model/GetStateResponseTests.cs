@@ -499,6 +499,22 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'CountrySenderSettingsChanged'
         }
         /// <summary>
+        /// Test the property 'ChatSummaryChunk'
+        /// </summary>
+        [Test]
+        public void ChatSummaryChunkTest()
+        {
+            // TODO unit test for the property 'ChatSummaryChunk'
+        }
+        /// <summary>
+        /// Test the property 'ChatWaysToReplyChunk'
+        /// </summary>
+        [Test]
+        public void ChatWaysToReplyChunkTest()
+        {
+            // TODO unit test for the property 'ChatWaysToReplyChunk'
+        }
+        /// <summary>
         /// Test the property 'ChatSuggestedReplyChunk'
         /// </summary>
         [Test]
