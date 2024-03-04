@@ -99,6 +99,14 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'SystemAccountStateChanged'
         }
         /// <summary>
+        /// Test the property 'SystemAccountClosed'
+        /// </summary>
+        [Test]
+        public void SystemAccountClosedTest()
+        {
+            // TODO unit test for the property 'SystemAccountClosed'
+        }
+        /// <summary>
         /// Test the property 'SystemAccountAdditionalFields'
         /// </summary>
         [Test]

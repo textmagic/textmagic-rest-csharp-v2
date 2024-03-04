@@ -48,7 +48,9 @@ namespace TextMagicClient.Model
         /// <param name="lastName">Sender contact last name..</param>
         /// <param name="avatar">avatar (required).</param>
         /// <param name="email">Sender email..</param>
-        public MessageIn(int? id = default(int?), string sender = default(string), string receiver = default(string), DateTime? messageTime = default(DateTime?), string text = default(string), int? contactId = default(int?), string firstName = default(string), string lastName = default(string), string avatar = default(string), string email = default(string))
+        /// <param name="contactUserId">contactUserId.</param>
+        /// <param name="userId">userId.</param>
+        public MessageIn(int? id = default(int?), string sender = default(string), string receiver = default(string), DateTime? messageTime = default(DateTime?), string text = default(string), int? contactId = default(int?), string firstName = default(string), string lastName = default(string), string avatar = default(string), string email = default(string), int? contactUserId = default(int?), int? userId = default(int?))
         {
             // to ensure "id" is required (not null)
             if (id == null)
@@ -108,6 +110,8 @@ namespace TextMagicClient.Model
             this.FirstName = firstName;
             this.LastName = lastName;
             this.Email = email;
+            this.ContactUserId = contactUserId;
+            this.UserId = userId;
         }
         
         /// <summary>
@@ -180,6 +184,18 @@ namespace TextMagicClient.Model
         public string Email { get; set; }
 
         /// <summary>
+        /// Gets or Sets ContactUserId
+        /// </summary>
+        [DataMember(Name="contactUserId", EmitDefaultValue=false)]
+        public int? ContactUserId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UserId
+        /// </summary>
+        [DataMember(Name="userId", EmitDefaultValue=false)]
+        public int? UserId { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -197,6 +213,8 @@ namespace TextMagicClient.Model
             sb.Append("  LastName: ").Append(LastName).Append("\n");
             sb.Append("  Avatar: ").Append(Avatar).Append("\n");
             sb.Append("  Email: ").Append(Email).Append("\n");
+            sb.Append("  ContactUserId: ").Append(ContactUserId).Append("\n");
+            sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -280,6 +298,16 @@ namespace TextMagicClient.Model
                     this.Email == input.Email ||
                     (this.Email != null &&
                     this.Email.Equals(input.Email))
+                ) && 
+                (
+                    this.ContactUserId == input.ContactUserId ||
+                    (this.ContactUserId != null &&
+                    this.ContactUserId.Equals(input.ContactUserId))
+                ) && 
+                (
+                    this.UserId == input.UserId ||
+                    (this.UserId != null &&
+                    this.UserId.Equals(input.UserId))
                 );
         }
 
@@ -312,6 +340,10 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.Avatar.GetHashCode();
                 if (this.Email != null)
                     hashCode = hashCode * 59 + this.Email.GetHashCode();
+                if (this.ContactUserId != null)
+                    hashCode = hashCode * 59 + this.ContactUserId.GetHashCode();
+                if (this.UserId != null)
+                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
                 return hashCode;
             }
         }

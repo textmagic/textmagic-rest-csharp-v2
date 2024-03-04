@@ -146,6 +146,22 @@ namespace TextMagicClient.Test
         {
             // TODO unit test for the property 'Email'
         }
+        /// <summary>
+        /// Test the property 'ContactUserId'
+        /// </summary>
+        [Test]
+        public void ContactUserIdTest()
+        {
+            // TODO unit test for the property 'ContactUserId'
+        }
+        /// <summary>
+        /// Test the property 'UserId'
+        /// </summary>
+        [Test]
+        public void UserIdTest()
+        {
+            // TODO unit test for the property 'UserId'
+        }
 
     }
 

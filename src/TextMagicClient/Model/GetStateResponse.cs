@@ -42,6 +42,7 @@ namespace TextMagicClient.Model
         /// <param name="systemExit">systemExit (required).</param>
         /// <param name="systemAlert">systemAlert (required).</param>
         /// <param name="systemAccountStateChanged">systemAccountStateChanged (required).</param>
+        /// <param name="systemAccountClosed">systemAccountClosed (required).</param>
         /// <param name="systemAccountAdditionalFields">systemAccountAdditionalFields (required).</param>
         /// <param name="systemAccountPermissionsChanged">systemAccountPermissionsChanged (required).</param>
         /// <param name="userBalanceChanged">userBalanceChanged (required).</param>
@@ -95,7 +96,7 @@ namespace TextMagicClient.Model
         /// <param name="chatSummaryChunk">chatSummaryChunk (required).</param>
         /// <param name="chatWaysToReplyChunk">chatWaysToReplyChunk (required).</param>
         /// <param name="chatSuggestedReplyChunk">chatSuggestedReplyChunk (required).</param>
-        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? systemAccountAdditionalFields = default(int?), int? systemAccountPermissionsChanged = default(int?), int? userBalanceChanged = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleNotSentStateChanged = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatPinned = default(int?), int? chatUnpinned = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatCacheClear = default(int?), int? chatRead = default(int?), int? chatUnread = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?), int? progressCarrierBulkLookup = default(int?), int? progressEmailBulkLookup = default(int?), int? progressSubAccountBulkImport = default(int?), int? progressContactBulkImport = default(int?), int? forceRefreshWebApp = default(int?), int? chatSenderSettingsChanged = default(int?), int? countrySenderSettingsChanged = default(int?), int? chatSummaryChunk = default(int?), int? chatWaysToReplyChunk = default(int?), int? chatSuggestedReplyChunk = default(int?))
+        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? systemAccountClosed = default(int?), int? systemAccountAdditionalFields = default(int?), int? systemAccountPermissionsChanged = default(int?), int? userBalanceChanged = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleNotSentStateChanged = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatPinned = default(int?), int? chatUnpinned = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatCacheClear = default(int?), int? chatRead = default(int?), int? chatUnread = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?), int? progressCarrierBulkLookup = default(int?), int? progressEmailBulkLookup = default(int?), int? progressSubAccountBulkImport = default(int?), int? progressContactBulkImport = default(int?), int? forceRefreshWebApp = default(int?), int? chatSenderSettingsChanged = default(int?), int? countrySenderSettingsChanged = default(int?), int? chatSummaryChunk = default(int?), int? chatWaysToReplyChunk = default(int?), int? chatSuggestedReplyChunk = default(int?))
         {
             // to ensure "systemCacheClear" is required (not null)
             if (systemCacheClear == null)
@@ -132,6 +133,15 @@ namespace TextMagicClient.Model
             else
             {
                 this.SystemAccountStateChanged = systemAccountStateChanged;
+            }
+            // to ensure "systemAccountClosed" is required (not null)
+            if (systemAccountClosed == null)
+            {
+                throw new InvalidDataException("systemAccountClosed is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.SystemAccountClosed = systemAccountClosed;
             }
             // to ensure "systemAccountAdditionalFields" is required (not null)
             if (systemAccountAdditionalFields == null)
@@ -637,6 +647,12 @@ namespace TextMagicClient.Model
         public int? SystemAccountStateChanged { get; set; }
 
         /// <summary>
+        /// Gets or Sets SystemAccountClosed
+        /// </summary>
+        [DataMember(Name="systemAccountClosed", EmitDefaultValue=false)]
+        public int? SystemAccountClosed { get; set; }
+
+        /// <summary>
         /// Gets or Sets SystemAccountAdditionalFields
         /// </summary>
         [DataMember(Name="systemAccountAdditionalFields", EmitDefaultValue=false)]
@@ -966,6 +982,7 @@ namespace TextMagicClient.Model
             sb.Append("  SystemExit: ").Append(SystemExit).Append("\n");
             sb.Append("  SystemAlert: ").Append(SystemAlert).Append("\n");
             sb.Append("  SystemAccountStateChanged: ").Append(SystemAccountStateChanged).Append("\n");
+            sb.Append("  SystemAccountClosed: ").Append(SystemAccountClosed).Append("\n");
             sb.Append("  SystemAccountAdditionalFields: ").Append(SystemAccountAdditionalFields).Append("\n");
             sb.Append("  SystemAccountPermissionsChanged: ").Append(SystemAccountPermissionsChanged).Append("\n");
             sb.Append("  UserBalanceChanged: ").Append(UserBalanceChanged).Append("\n");
@@ -1072,6 +1089,11 @@ namespace TextMagicClient.Model
                     this.SystemAccountStateChanged == input.SystemAccountStateChanged ||
                     (this.SystemAccountStateChanged != null &&
                     this.SystemAccountStateChanged.Equals(input.SystemAccountStateChanged))
+                ) && 
+                (
+                    this.SystemAccountClosed == input.SystemAccountClosed ||
+                    (this.SystemAccountClosed != null &&
+                    this.SystemAccountClosed.Equals(input.SystemAccountClosed))
                 ) && 
                 (
                     this.SystemAccountAdditionalFields == input.SystemAccountAdditionalFields ||
@@ -1357,6 +1379,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.SystemAlert.GetHashCode();
                 if (this.SystemAccountStateChanged != null)
                     hashCode = hashCode * 59 + this.SystemAccountStateChanged.GetHashCode();
+                if (this.SystemAccountClosed != null)
+                    hashCode = hashCode * 59 + this.SystemAccountClosed.GetHashCode();
                 if (this.SystemAccountAdditionalFields != null)
                     hashCode = hashCode * 59 + this.SystemAccountAdditionalFields.GetHashCode();
                 if (this.SystemAccountPermissionsChanged != null)
