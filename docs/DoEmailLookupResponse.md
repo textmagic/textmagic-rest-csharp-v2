@@ -16,8 +16,8 @@ Name | Type | Description | Notes
 **DomainPart** | **string** | The domain part of the email address. | 
 **Exchange** | **string** | Email exchange server domain name (MX record value). | 
 **Preference** | **int?** | MX record preference. | 
-**IsInWhiteList** | **bool?** | &#x60;true&#x60; if the email address exists in the TextMagic whitelist.  | 
-**IsInBlackList** | **bool?** | &#x60;true&#x60; if the email address exists in the TextMagic blacklist.  | 
+**IsInWhiteList** | **bool?** | &#x60;true&#x60; if the email address exists in the Textmagic whitelist.  | 
+**IsInBlackList** | **bool?** | &#x60;true&#x60; if the email address exists in the Textmagic blacklist.  | 
 **HasMx** | **bool?** | &#x60;true&#x60; if the email address domain has an MX record.  | 
 **HasAa** | **bool?** | &#x60;true&#x60; if the email address domain has an A record (IPv4).  | 
 **HasAaaa** | **bool?** | &#x60;true&#x60; if the email address domain has an AAAA record (IPv6).  | 
