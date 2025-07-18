@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **Receiver** | **string** | Recipient&#x60;s phone number. | [optional] 
 **Text** | **string** |  | 
 **Status** | **string** | Delivery status of the message. See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details.  | 
+**RejectReason** | **string** | Rejection reason. | [optional] 
 **ContactId** | **int?** | Recipient contact ID. | 
 **SessionId** | **int?** | Message Session ID of a message. | 
 **MessageTime** | **DateTime?** | Sending time. | 
@@ -23,6 +24,8 @@ Name | Type | Description | Notes
 **PartsCount** | **int?** | Message parts (multiples of 160 characters) count. | 
 **FromEmail** | **string** | The user email which this message came from. For Email2SMS and Distribution Lists the messages, it is an original email address - in other cases, it is an account email address. | [optional] 
 **FromNumber** | **string** | The Phone number used to send the SMS. | [optional] 
+**SenderSource** | [**MessageOutSenderSource**](MessageOutSenderSource.md) |  | [optional] 
+**Session** | [**MessageOutSession**](MessageOutSession.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

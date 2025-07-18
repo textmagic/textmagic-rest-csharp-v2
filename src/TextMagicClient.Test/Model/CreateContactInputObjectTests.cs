@@ -162,6 +162,22 @@ namespace TextMagicClient.Test
         {
             // TODO unit test for the property 'Country'
         }
+        /// <summary>
+        /// Test the property 'Tags'
+        /// </summary>
+        [Test]
+        public void TagsTest()
+        {
+            // TODO unit test for the property 'Tags'
+        }
+        /// <summary>
+        /// Test the property 'Owner'
+        /// </summary>
+        [Test]
+        public void OwnerTest()
+        {
+            // TODO unit test for the property 'Owner'
+        }
 
     }
 

@@ -45,7 +45,9 @@ namespace TextMagicClient.Model
         /// <param name="customFieldValues">customFieldValues.</param>
         /// <param name="local">Treat phone numbers passed in the request body as local..</param>
         /// <param name="country">The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is the account country..</param>
-        public CreateContactInputObject(string firstName = default(string), string lastName = default(string), string phone = default(string), string email = default(string), string companyName = default(string), string lists = default(string), bool? favorited = default(bool?), bool? blocked = default(bool?), int? type = default(int?), List<CustomFieldListItem> customFieldValues = default(List<CustomFieldListItem>), int? local = default(int?), string country = default(string))
+        /// <param name="tags">Contact [list](https://docs.textmagic.com/#tag/Tag) ID. Each contact must be assigned to at least one list..</param>
+        /// <param name="owner">Contact Owner ID.</param>
+        public CreateContactInputObject(string firstName = default(string), string lastName = default(string), string phone = default(string), string email = default(string), string companyName = default(string), string lists = default(string), bool? favorited = default(bool?), bool? blocked = default(bool?), int? type = default(int?), List<CustomFieldListItem> customFieldValues = default(List<CustomFieldListItem>), int? local = default(int?), string country = default(string), string tags = default(string), int? owner = default(int?))
         {
             this.FirstName = firstName;
             this.LastName = lastName;
@@ -59,6 +61,8 @@ namespace TextMagicClient.Model
             this.CustomFieldValues = customFieldValues;
             this.Local = local;
             this.Country = country;
+            this.Tags = tags;
+            this.Owner = owner;
         }
         
         /// <summary>
@@ -145,6 +149,20 @@ namespace TextMagicClient.Model
         public string Country { get; set; }
 
         /// <summary>
+        /// Contact [list](https://docs.textmagic.com/#tag/Tag) ID. Each contact must be assigned to at least one list.
+        /// </summary>
+        /// <value>Contact [list](https://docs.textmagic.com/#tag/Tag) ID. Each contact must be assigned to at least one list.</value>
+        [DataMember(Name="tags", EmitDefaultValue=false)]
+        public string Tags { get; set; }
+
+        /// <summary>
+        /// Contact Owner ID
+        /// </summary>
+        /// <value>Contact Owner ID</value>
+        [DataMember(Name="owner", EmitDefaultValue=false)]
+        public int? Owner { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -164,6 +182,8 @@ namespace TextMagicClient.Model
             sb.Append("  CustomFieldValues: ").Append(CustomFieldValues).Append("\n");
             sb.Append("  Local: ").Append(Local).Append("\n");
             sb.Append("  Country: ").Append(Country).Append("\n");
+            sb.Append("  Tags: ").Append(Tags).Append("\n");
+            sb.Append("  Owner: ").Append(Owner).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -257,6 +277,16 @@ namespace TextMagicClient.Model
                     this.Country == input.Country ||
                     (this.Country != null &&
                     this.Country.Equals(input.Country))
+                ) && 
+                (
+                    this.Tags == input.Tags ||
+                    (this.Tags != null &&
+                    this.Tags.Equals(input.Tags))
+                ) && 
+                (
+                    this.Owner == input.Owner ||
+                    (this.Owner != null &&
+                    this.Owner.Equals(input.Owner))
                 );
         }
 
@@ -293,6 +323,10 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.Local.GetHashCode();
                 if (this.Country != null)
                     hashCode = hashCode * 59 + this.Country.GetHashCode();
+                if (this.Tags != null)
+                    hashCode = hashCode * 59 + this.Tags.GetHashCode();
+                if (this.Owner != null)
+                    hashCode = hashCode * 59 + this.Owner.GetHashCode();
                 return hashCode;
             }
         }

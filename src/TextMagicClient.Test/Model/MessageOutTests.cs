@@ -107,6 +107,14 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'Status'
         }
         /// <summary>
+        /// Test the property 'RejectReason'
+        /// </summary>
+        [Test]
+        public void RejectReasonTest()
+        {
+            // TODO unit test for the property 'RejectReason'
+        }
+        /// <summary>
         /// Test the property 'ContactId'
         /// </summary>
         [Test]
@@ -225,6 +233,22 @@ namespace TextMagicClient.Test
         public void FromNumberTest()
         {
             // TODO unit test for the property 'FromNumber'
+        }
+        /// <summary>
+        /// Test the property 'SenderSource'
+        /// </summary>
+        [Test]
+        public void SenderSourceTest()
+        {
+            // TODO unit test for the property 'SenderSource'
+        }
+        /// <summary>
+        /// Test the property 'Session'
+        /// </summary>
+        [Test]
+        public void SessionTest()
+        {
+            // TODO unit test for the property 'Session'
         }
 
     }

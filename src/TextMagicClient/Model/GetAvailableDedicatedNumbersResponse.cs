@@ -31,6 +31,43 @@ namespace TextMagicClient.Model
     public partial class GetAvailableDedicatedNumbersResponse :  IEquatable<GetAvailableDedicatedNumbersResponse>, IValidatableObject
     {
         /// <summary>
+        /// Defines GiftType
+        /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum GiftTypeEnum
+        {
+            
+            /// <summary>
+            /// Enum None for value: none
+            /// </summary>
+            [EnumMember(Value = "none")]
+            None = 1,
+            
+            /// <summary>
+            /// Enum Registration for value: registration
+            /// </summary>
+            [EnumMember(Value = "registration")]
+            Registration = 2,
+            
+            /// <summary>
+            /// Enum Firstmonth for value: first_month
+            /// </summary>
+            [EnumMember(Value = "first_month")]
+            Firstmonth = 3,
+            
+            /// <summary>
+            /// Enum Includeinplan for value: include_in_plan
+            /// </summary>
+            [EnumMember(Value = "include_in_plan")]
+            Includeinplan = 4
+        }
+
+        /// <summary>
+        /// Gets or Sets GiftType
+        /// </summary>
+        [DataMember(Name="giftType", EmitDefaultValue=false)]
+        public GiftTypeEnum GiftType { get; set; }
+        /// <summary>
         /// Initializes a new instance of the <see cref="GetAvailableDedicatedNumbersResponse" /> class.
         /// </summary>
         [JsonConstructorAttribute]
@@ -40,7 +77,8 @@ namespace TextMagicClient.Model
         /// </summary>
         /// <param name="numbers">Array of phone numbers. (required).</param>
         /// <param name="price">Dedicated number monthly fee for this country. Returned in the current [account](https://docs.textmagic.com/#tag/User) currency. (required).</param>
-        public GetAvailableDedicatedNumbersResponse(List<string> numbers = default(List<string>), float? price = default(float?))
+        /// <param name="giftType">giftType (required).</param>
+        public GetAvailableDedicatedNumbersResponse(List<string> numbers = default(List<string>), float? price = default(float?), GiftTypeEnum giftType = default(GiftTypeEnum))
         {
             // to ensure "numbers" is required (not null)
             if (numbers == null)
@@ -60,6 +98,15 @@ namespace TextMagicClient.Model
             {
                 this.Price = price;
             }
+            // to ensure "giftType" is required (not null)
+            if (giftType == null)
+            {
+                throw new InvalidDataException("giftType is a required property for GetAvailableDedicatedNumbersResponse and cannot be null");
+            }
+            else
+            {
+                this.GiftType = giftType;
+            }
         }
         
         /// <summary>
@@ -76,6 +123,7 @@ namespace TextMagicClient.Model
         [DataMember(Name="price", EmitDefaultValue=false)]
         public float? Price { get; set; }
 
+
         /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
@@ -86,6 +134,7 @@ namespace TextMagicClient.Model
             sb.Append("class GetAvailableDedicatedNumbersResponse {\n");
             sb.Append("  Numbers: ").Append(Numbers).Append("\n");
             sb.Append("  Price: ").Append(Price).Append("\n");
+            sb.Append("  GiftType: ").Append(GiftType).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -129,6 +178,11 @@ namespace TextMagicClient.Model
                     this.Price == input.Price ||
                     (this.Price != null &&
                     this.Price.Equals(input.Price))
+                ) && 
+                (
+                    this.GiftType == input.GiftType ||
+                    (this.GiftType != null &&
+                    this.GiftType.Equals(input.GiftType))
                 );
         }
 
@@ -145,6 +199,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.Numbers.GetHashCode();
                 if (this.Price != null)
                     hashCode = hashCode * 59 + this.Price.GetHashCode();
+                if (this.GiftType != null)
+                    hashCode = hashCode * 59 + this.GiftType.GetHashCode();
                 return hashCode;
             }
         }

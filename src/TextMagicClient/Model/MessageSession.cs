@@ -79,7 +79,9 @@ namespace TextMagicClient.Model
         /// <param name="price">Session cost (in account currency). (required).</param>
         /// <param name="numbersCount">Session recipient count. (required).</param>
         /// <param name="destination">Destination type of a Message Session: * **t** – text SMS; * **s** – text-to-speech; * **v** – voice broadcast.  (required).</param>
-        public MessageSession(int? id = default(int?), string startTime = default(string), string text = default(string), string source = default(string), string referenceId = default(string), decimal? price = default(decimal?), int? numbersCount = default(int?), DestinationEnum destination = default(DestinationEnum))
+        /// <param name="initiatorId">Initiator ID. (required).</param>
+        /// <param name="title">title (required).</param>
+        public MessageSession(int? id = default(int?), string startTime = default(string), string text = default(string), string source = default(string), string referenceId = default(string), decimal? price = default(decimal?), int? numbersCount = default(int?), DestinationEnum destination = default(DestinationEnum), int? initiatorId = default(int?), string title = default(string))
         {
             // to ensure "id" is required (not null)
             if (id == null)
@@ -153,6 +155,24 @@ namespace TextMagicClient.Model
             {
                 this.Destination = destination;
             }
+            // to ensure "initiatorId" is required (not null)
+            if (initiatorId == null)
+            {
+                throw new InvalidDataException("initiatorId is a required property for MessageSession and cannot be null");
+            }
+            else
+            {
+                this.InitiatorId = initiatorId;
+            }
+            // to ensure "title" is required (not null)
+            if (title == null)
+            {
+                throw new InvalidDataException("title is a required property for MessageSession and cannot be null");
+            }
+            else
+            {
+                this.Title = title;
+            }
         }
         
         /// <summary>
@@ -206,6 +226,19 @@ namespace TextMagicClient.Model
 
 
         /// <summary>
+        /// Initiator ID.
+        /// </summary>
+        /// <value>Initiator ID.</value>
+        [DataMember(Name="initiatorId", EmitDefaultValue=false)]
+        public int? InitiatorId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Title
+        /// </summary>
+        [DataMember(Name="title", EmitDefaultValue=false)]
+        public string Title { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -221,6 +254,8 @@ namespace TextMagicClient.Model
             sb.Append("  Price: ").Append(Price).Append("\n");
             sb.Append("  NumbersCount: ").Append(NumbersCount).Append("\n");
             sb.Append("  Destination: ").Append(Destination).Append("\n");
+            sb.Append("  InitiatorId: ").Append(InitiatorId).Append("\n");
+            sb.Append("  Title: ").Append(Title).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -294,6 +329,16 @@ namespace TextMagicClient.Model
                     this.Destination == input.Destination ||
                     (this.Destination != null &&
                     this.Destination.Equals(input.Destination))
+                ) && 
+                (
+                    this.InitiatorId == input.InitiatorId ||
+                    (this.InitiatorId != null &&
+                    this.InitiatorId.Equals(input.InitiatorId))
+                ) && 
+                (
+                    this.Title == input.Title ||
+                    (this.Title != null &&
+                    this.Title.Equals(input.Title))
                 );
         }
 
@@ -322,6 +367,10 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.NumbersCount.GetHashCode();
                 if (this.Destination != null)
                     hashCode = hashCode * 59 + this.Destination.GetHashCode();
+                if (this.InitiatorId != null)
+                    hashCode = hashCode * 59 + this.InitiatorId.GetHashCode();
+                if (this.Title != null)
+                    hashCode = hashCode * 59 + this.Title.GetHashCode();
                 return hashCode;
             }
         }

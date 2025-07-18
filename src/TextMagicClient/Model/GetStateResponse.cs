@@ -42,11 +42,13 @@ namespace TextMagicClient.Model
         /// <param name="systemExit">systemExit (required).</param>
         /// <param name="systemAlert">systemAlert (required).</param>
         /// <param name="systemAccountStateChanged">systemAccountStateChanged (required).</param>
+        /// <param name="systemAccountAcceptTermsUpdate">systemAccountAcceptTermsUpdate (required).</param>
         /// <param name="systemAccountClosed">systemAccountClosed (required).</param>
         /// <param name="systemAccountAdditionalFields">systemAccountAdditionalFields (required).</param>
         /// <param name="systemAccountPermissionsChanged">systemAccountPermissionsChanged (required).</param>
         /// <param name="userProfileChanged">userProfileChanged (required).</param>
         /// <param name="userBalanceChanged">userBalanceChanged (required).</param>
+        /// <param name="userPresenceStatusChanged">userPresenceStatusChanged (required).</param>
         /// <param name="userImpersonationEnd">userImpersonationEnd (required).</param>
         /// <param name="messageDeleted">messageDeleted (required).</param>
         /// <param name="messageIncoming">messageIncoming (required).</param>
@@ -55,6 +57,10 @@ namespace TextMagicClient.Model
         /// <param name="messageBulkEnd">messageBulkEnd (required).</param>
         /// <param name="messageWipeEnd">messageWipeEnd (required).</param>
         /// <param name="messageSent">messageSent (required).</param>
+        /// <param name="messageLog">messageLog (required).</param>
+        /// <param name="messageNote">messageNote (required).</param>
+        /// <param name="messageInitial">messageInitial (required).</param>
+        /// <param name="lastMessageSet">lastMessageSet (required).</param>
         /// <param name="messageSessionDeleted">messageSessionDeleted (required).</param>
         /// <param name="messageCacheClear">messageCacheClear (required).</param>
         /// <param name="messageIncomingCacheClear">messageIncomingCacheClear (required).</param>
@@ -74,15 +80,31 @@ namespace TextMagicClient.Model
         /// <param name="chatDeleted">chatDeleted (required).</param>
         /// <param name="chatClosed">chatClosed (required).</param>
         /// <param name="chatReopened">chatReopened (required).</param>
+        /// <param name="chatActivated">chatActivated (required).</param>
         /// <param name="chatCacheClear">chatCacheClear (required).</param>
         /// <param name="chatRead">chatRead (required).</param>
         /// <param name="chatUnread">chatUnread (required).</param>
+        /// <param name="chatAssigneeChanged">chatAssigneeChanged (required).</param>
+        /// <param name="chatTagsChanged">chatTagsChanged (required).</param>
+        /// <param name="chatConversationEnded">chatConversationEnded (required).</param>
+        /// <param name="chatUpdated">chatUpdated (required).</param>
+        /// <param name="liveChatAgentChanged">liveChatAgentChanged (required).</param>
+        /// <param name="liveChatRated">liveChatRated (required).</param>
+        /// <param name="webWidgetUpdated">webWidgetUpdated (required).</param>
+        /// <param name="webWidgetDeleted">webWidgetDeleted (required).</param>
         /// <param name="contactAdded">contactAdded (required).</param>
         /// <param name="contactDeleted">contactDeleted (required).</param>
+        /// <param name="contactBulkUpdated">contactBulkUpdated (required).</param>
         /// <param name="contactStateChanged">contactStateChanged (required).</param>
+        /// <param name="contactUnsubscribed">contactUnsubscribed (required).</param>
+        /// <param name="contactResubscribed">contactResubscribed (required).</param>
+        /// <param name="contactNoteAdded">contactNoteAdded (required).</param>
+        /// <param name="contactNoteDeleted">contactNoteDeleted (required).</param>
+        /// <param name="contactNoteStateChanged">contactNoteStateChanged (required).</param>
         /// <param name="listAdded">listAdded (required).</param>
         /// <param name="listDeleted">listDeleted (required).</param>
         /// <param name="listStateChanged">listStateChanged (required).</param>
+        /// <param name="listCountMembersUpdated">listCountMembersUpdated (required).</param>
         /// <param name="contactWipeEnd">contactWipeEnd (required).</param>
         /// <param name="contactImportEnd">contactImportEnd (required).</param>
         /// <param name="contactCacheClear">contactCacheClear (required).</param>
@@ -91,7 +113,7 @@ namespace TextMagicClient.Model
         /// <param name="progressCarrierBulkLookup">progressCarrierBulkLookup (required).</param>
         /// <param name="progressEmailBulkLookup">progressEmailBulkLookup (required).</param>
         /// <param name="progressSubAccountBulkImport">progressSubAccountBulkImport (required).</param>
-        /// <param name="progressContactBulkImport">progressContactBulkImport (required).</param>
+        /// <param name="importProgressState">importProgressState (required).</param>
         /// <param name="forceRefreshWebApp">forceRefreshWebApp (required).</param>
         /// <param name="chatSenderSettingsChanged">chatSenderSettingsChanged (required).</param>
         /// <param name="countrySenderSettingsChanged">countrySenderSettingsChanged (required).</param>
@@ -100,7 +122,109 @@ namespace TextMagicClient.Model
         /// <param name="chatSuggestedReplyChunk">chatSuggestedReplyChunk (required).</param>
         /// <param name="userSubscriptionChanged">userSubscriptionChanged (required).</param>
         /// <param name="userSubscriptionDeleted">userSubscriptionDeleted (required).</param>
-        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? systemAccountClosed = default(int?), int? systemAccountAdditionalFields = default(int?), int? systemAccountPermissionsChanged = default(int?), int? userProfileChanged = default(int?), int? userBalanceChanged = default(int?), int? userImpersonationEnd = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleNotSentStateChanged = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatPinned = default(int?), int? chatUnpinned = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatCacheClear = default(int?), int? chatRead = default(int?), int? chatUnread = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?), int? progressCarrierBulkLookup = default(int?), int? progressEmailBulkLookup = default(int?), int? progressSubAccountBulkImport = default(int?), int? progressContactBulkImport = default(int?), int? forceRefreshWebApp = default(int?), int? chatSenderSettingsChanged = default(int?), int? countrySenderSettingsChanged = default(int?), int? chatSummaryChunk = default(int?), int? chatWaysToReplyChunk = default(int?), int? chatSuggestedReplyChunk = default(int?), int? userSubscriptionChanged = default(int?), int? userSubscriptionDeleted = default(int?))
+        /// <param name="taskCreated">taskCreated (required).</param>
+        /// <param name="taskUpdated">taskUpdated (required).</param>
+        /// <param name="taskReordered">taskReordered (required).</param>
+        /// <param name="taskDeleted">taskDeleted (required).</param>
+        /// <param name="taskMovedAll">taskMovedAll (required).</param>
+        /// <param name="taskStageCreated">taskStageCreated (required).</param>
+        /// <param name="taskStageUpdated">taskStageUpdated (required).</param>
+        /// <param name="taskStageDeleted">taskStageDeleted (required).</param>
+        /// <param name="taskBoardCreated">taskBoardCreated (required).</param>
+        /// <param name="taskBoardUpdated">taskBoardUpdated (required).</param>
+        /// <param name="taskBoardReordered">taskBoardReordered (required).</param>
+        /// <param name="taskBoardDeleted">taskBoardDeleted (required).</param>
+        /// <param name="taskBoardArchived">taskBoardArchived (required).</param>
+        /// <param name="taskChecklistCreated">taskChecklistCreated (required).</param>
+        /// <param name="taskChecklistUpdated">taskChecklistUpdated (required).</param>
+        /// <param name="taskChecklistDeleted">taskChecklistDeleted (required).</param>
+        /// <param name="taskChecklistBulkMarked">taskChecklistBulkMarked (required).</param>
+        /// <param name="taskChecklistItemCreated">taskChecklistItemCreated (required).</param>
+        /// <param name="taskChecklistItemUpdated">taskChecklistItemUpdated (required).</param>
+        /// <param name="taskChecklistItemDeleted">taskChecklistItemDeleted (required).</param>
+        /// <param name="taskCommentCreated">taskCommentCreated (required).</param>
+        /// <param name="taskCommentDeleted">taskCommentDeleted (required).</param>
+        /// <param name="pinnedContactAdded">pinnedContactAdded (required).</param>
+        /// <param name="pinnedContactRemoved">pinnedContactRemoved (required).</param>
+        /// <param name="pinnedContactReordered">pinnedContactReordered (required).</param>
+        /// <param name="pinnedContactStateChanged">pinnedContactStateChanged (required).</param>
+        /// <param name="whatsappAccountAdded">whatsappAccountAdded (required).</param>
+        /// <param name="whatsappAccountRemoved">whatsappAccountRemoved (required).</param>
+        /// <param name="whatsappAccountChanged">whatsappAccountChanged (required).</param>
+        /// <param name="facebookPageAdded">facebookPageAdded (required).</param>
+        /// <param name="facebookPageRemoved">facebookPageRemoved (required).</param>
+        /// <param name="facebookPageChanged">facebookPageChanged (required).</param>
+        /// <param name="instagramAccountAdded">instagramAccountAdded (required).</param>
+        /// <param name="instagramAccountRemoved">instagramAccountRemoved (required).</param>
+        /// <param name="instagramAccountChanged">instagramAccountChanged (required).</param>
+        /// <param name="unreadTicketsCountUpdated">unreadTicketsCountUpdated (required).</param>
+        /// <param name="ticketDeleted">ticketDeleted (required).</param>
+        /// <param name="ticketUpdated">ticketUpdated (required).</param>
+        /// <param name="ticketCreated">ticketCreated (required).</param>
+        /// <param name="ticketBulkUpdated">ticketBulkUpdated (required).</param>
+        /// <param name="ticketBulkDeleted">ticketBulkDeleted (required).</param>
+        /// <param name="ticketMessageCreated">ticketMessageCreated (required).</param>
+        /// <param name="ticketMessageUpdated">ticketMessageUpdated (required).</param>
+        /// <param name="ticketMessageDeleted">ticketMessageDeleted (required).</param>
+        /// <param name="subAccountsClosed">subAccountsClosed (required).</param>
+        /// <param name="userInvited">userInvited (required).</param>
+        /// <param name="filteredViewCreated">filteredViewCreated (required).</param>
+        /// <param name="filteredViewCountUpdated">filteredViewCountUpdated (required).</param>
+        /// <param name="filteredViewDeleted">filteredViewDeleted (required).</param>
+        /// <param name="forwardingInboxWasVerified">forwardingInboxWasVerified (required).</param>
+        /// <param name="forwardingInboxCheckWasFailed">forwardingInboxCheckWasFailed (required).</param>
+        /// <param name="forwardingInboxVerificationLinkWasParsed">forwardingInboxVerificationLinkWasParsed (required).</param>
+        /// <param name="tendlcLinkNumberStatusUpdated">tendlcLinkNumberStatusUpdated (required).</param>
+        /// <param name="channelPresence">channelPresence (required).</param>
+        /// <param name="dealCreated">dealCreated (required).</param>
+        /// <param name="dealUpdated">dealUpdated (required).</param>
+        /// <param name="dealDeleted">dealDeleted (required).</param>
+        /// <param name="dealMoved">dealMoved (required).</param>
+        /// <param name="dealStageCreated">dealStageCreated (required).</param>
+        /// <param name="dealStageUpdated">dealStageUpdated (required).</param>
+        /// <param name="dealStageDeleted">dealStageDeleted (required).</param>
+        /// <param name="dealPipelineCreated">dealPipelineCreated (required).</param>
+        /// <param name="dealPipelineUpdated">dealPipelineUpdated (required).</param>
+        /// <param name="dealPipelineDeleted">dealPipelineDeleted (required).</param>
+        /// <param name="dealPipelineArchived">dealPipelineArchived (required).</param>
+        /// <param name="dealPipelineReordered">dealPipelineReordered (required).</param>
+        /// <param name="dealActivityUpdated">dealActivityUpdated (required).</param>
+        /// <param name="dealActivityItemCreated">dealActivityItemCreated (required).</param>
+        /// <param name="dealActivityItemUpdated">dealActivityItemUpdated (required).</param>
+        /// <param name="dealActivityItemDeleted">dealActivityItemDeleted (required).</param>
+        /// <param name="dealActivityItemBulkMarked">dealActivityItemBulkMarked (required).</param>
+        /// <param name="dealTimelineItemDeleted">dealTimelineItemDeleted (required).</param>
+        /// <param name="dealTimelineItemCreated">dealTimelineItemCreated (required).</param>
+        /// <param name="aIAssistantCreated">aIAssistantCreated (required).</param>
+        /// <param name="aIAssistantState">aIAssistantState (required).</param>
+        /// <param name="aIAssistantDeleted">aIAssistantDeleted (required).</param>
+        /// <param name="aIAssistantLinkDeleted">aIAssistantLinkDeleted (required).</param>
+        /// <param name="aIAssistantLinkState">aIAssistantLinkState (required).</param>
+        /// <param name="aIAssistantLinkCreated">aIAssistantLinkCreated (required).</param>
+        /// <param name="aIAssistantSubLinkState">aIAssistantSubLinkState (required).</param>
+        /// <param name="aIAssistantSubLinkCreated">aIAssistantSubLinkCreated (required).</param>
+        /// <param name="emailCampaignEmailSenderCreated">emailCampaignEmailSenderCreated (required).</param>
+        /// <param name="emailCampaignEmailSenderUpdated">emailCampaignEmailSenderUpdated (required).</param>
+        /// <param name="emailCampaignEmailSenderDeleted">emailCampaignEmailSenderDeleted (required).</param>
+        /// <param name="emailCampaignDomainCreated">emailCampaignDomainCreated (required).</param>
+        /// <param name="emailCampaignDomainDeleted">emailCampaignDomainDeleted (required).</param>
+        /// <param name="emailCampaignDomainVerified">emailCampaignDomainVerified (required).</param>
+        /// <param name="emailCampaignDomainStatusChanged">emailCampaignDomainStatusChanged (required).</param>
+        /// <param name="emailCampaignDomainDkimVerified">emailCampaignDomainDkimVerified (required).</param>
+        /// <param name="emailCampaignDomainReturnPathVerified">emailCampaignDomainReturnPathVerified (required).</param>
+        /// <param name="emailCampaignDomainDmarcVerified">emailCampaignDomainDmarcVerified (required).</param>
+        /// <param name="emailCampaignDomainEntryVerificationChanged">emailCampaignDomainEntryVerificationChanged (required).</param>
+        /// <param name="emailCampaignProgressState">emailCampaignProgressState (required).</param>
+        /// <param name="emailCampaignUpdated">emailCampaignUpdated (required).</param>
+        /// <param name="smsCampaignInvalidated">smsCampaignInvalidated (required).</param>
+        /// <param name="scheduledEmailCampaignCreated">scheduledEmailCampaignCreated (required).</param>
+        /// <param name="scheduledEmailCampaignUpdated">scheduledEmailCampaignUpdated (required).</param>
+        /// <param name="scheduledEmailCampaignStatusUpdated">scheduledEmailCampaignStatusUpdated (required).</param>
+        /// <param name="scheduledEmailCampaignDeleted">scheduledEmailCampaignDeleted (required).</param>
+        /// <param name="emailCampaignFailedAttemptCreated">emailCampaignFailedAttemptCreated (required).</param>
+        /// <param name="emailCampaignFailedAttemptDeleted">emailCampaignFailedAttemptDeleted (required).</param>
+        /// <param name="emailCampaignFailedAttemptStateUpdated">emailCampaignFailedAttemptStateUpdated (required).</param>
+        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? systemAccountAcceptTermsUpdate = default(int?), int? systemAccountClosed = default(int?), int? systemAccountAdditionalFields = default(int?), int? systemAccountPermissionsChanged = default(int?), int? userProfileChanged = default(int?), int? userBalanceChanged = default(int?), int? userPresenceStatusChanged = default(int?), int? userImpersonationEnd = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageLog = default(int?), int? messageNote = default(int?), int? messageInitial = default(int?), int? lastMessageSet = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleNotSentStateChanged = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatPinned = default(int?), int? chatUnpinned = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatActivated = default(int?), int? chatCacheClear = default(int?), int? chatRead = default(int?), int? chatUnread = default(int?), int? chatAssigneeChanged = default(int?), int? chatTagsChanged = default(int?), int? chatConversationEnded = default(int?), int? chatUpdated = default(int?), int? liveChatAgentChanged = default(int?), int? liveChatRated = default(int?), int? webWidgetUpdated = default(int?), int? webWidgetDeleted = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactBulkUpdated = default(int?), int? contactStateChanged = default(int?), int? contactUnsubscribed = default(int?), int? contactResubscribed = default(int?), int? contactNoteAdded = default(int?), int? contactNoteDeleted = default(int?), int? contactNoteStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? listCountMembersUpdated = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?), int? progressCarrierBulkLookup = default(int?), int? progressEmailBulkLookup = default(int?), int? progressSubAccountBulkImport = default(int?), int? importProgressState = default(int?), int? forceRefreshWebApp = default(int?), int? chatSenderSettingsChanged = default(int?), int? countrySenderSettingsChanged = default(int?), int? chatSummaryChunk = default(int?), int? chatWaysToReplyChunk = default(int?), int? chatSuggestedReplyChunk = default(int?), int? userSubscriptionChanged = default(int?), int? userSubscriptionDeleted = default(int?), int? taskCreated = default(int?), int? taskUpdated = default(int?), int? taskReordered = default(int?), int? taskDeleted = default(int?), int? taskMovedAll = default(int?), int? taskStageCreated = default(int?), int? taskStageUpdated = default(int?), int? taskStageDeleted = default(int?), int? taskBoardCreated = default(int?), int? taskBoardUpdated = default(int?), int? taskBoardReordered = default(int?), int? taskBoardDeleted = default(int?), int? taskBoardArchived = default(int?), int? taskChecklistCreated = default(int?), int? taskChecklistUpdated = default(int?), int? taskChecklistDeleted = default(int?), int? taskChecklistBulkMarked = default(int?), int? taskChecklistItemCreated = default(int?), int? taskChecklistItemUpdated = default(int?), int? taskChecklistItemDeleted = default(int?), int? taskCommentCreated = default(int?), int? taskCommentDeleted = default(int?), int? pinnedContactAdded = default(int?), int? pinnedContactRemoved = default(int?), int? pinnedContactReordered = default(int?), int? pinnedContactStateChanged = default(int?), int? whatsappAccountAdded = default(int?), int? whatsappAccountRemoved = default(int?), int? whatsappAccountChanged = default(int?), int? facebookPageAdded = default(int?), int? facebookPageRemoved = default(int?), int? facebookPageChanged = default(int?), int? instagramAccountAdded = default(int?), int? instagramAccountRemoved = default(int?), int? instagramAccountChanged = default(int?), int? unreadTicketsCountUpdated = default(int?), int? ticketDeleted = default(int?), int? ticketUpdated = default(int?), int? ticketCreated = default(int?), int? ticketBulkUpdated = default(int?), int? ticketBulkDeleted = default(int?), int? ticketMessageCreated = default(int?), int? ticketMessageUpdated = default(int?), int? ticketMessageDeleted = default(int?), int? subAccountsClosed = default(int?), int? userInvited = default(int?), int? filteredViewCreated = default(int?), int? filteredViewCountUpdated = default(int?), int? filteredViewDeleted = default(int?), int? forwardingInboxWasVerified = default(int?), int? forwardingInboxCheckWasFailed = default(int?), int? forwardingInboxVerificationLinkWasParsed = default(int?), int? tendlcLinkNumberStatusUpdated = default(int?), int? channelPresence = default(int?), int? dealCreated = default(int?), int? dealUpdated = default(int?), int? dealDeleted = default(int?), int? dealMoved = default(int?), int? dealStageCreated = default(int?), int? dealStageUpdated = default(int?), int? dealStageDeleted = default(int?), int? dealPipelineCreated = default(int?), int? dealPipelineUpdated = default(int?), int? dealPipelineDeleted = default(int?), int? dealPipelineArchived = default(int?), int? dealPipelineReordered = default(int?), int? dealActivityUpdated = default(int?), int? dealActivityItemCreated = default(int?), int? dealActivityItemUpdated = default(int?), int? dealActivityItemDeleted = default(int?), int? dealActivityItemBulkMarked = default(int?), int? dealTimelineItemDeleted = default(int?), int? dealTimelineItemCreated = default(int?), int? aIAssistantCreated = default(int?), int? aIAssistantState = default(int?), int? aIAssistantDeleted = default(int?), int? aIAssistantLinkDeleted = default(int?), int? aIAssistantLinkState = default(int?), int? aIAssistantLinkCreated = default(int?), int? aIAssistantSubLinkState = default(int?), int? aIAssistantSubLinkCreated = default(int?), int? emailCampaignEmailSenderCreated = default(int?), int? emailCampaignEmailSenderUpdated = default(int?), int? emailCampaignEmailSenderDeleted = default(int?), int? emailCampaignDomainCreated = default(int?), int? emailCampaignDomainDeleted = default(int?), int? emailCampaignDomainVerified = default(int?), int? emailCampaignDomainStatusChanged = default(int?), int? emailCampaignDomainDkimVerified = default(int?), int? emailCampaignDomainReturnPathVerified = default(int?), int? emailCampaignDomainDmarcVerified = default(int?), int? emailCampaignDomainEntryVerificationChanged = default(int?), int? emailCampaignProgressState = default(int?), int? emailCampaignUpdated = default(int?), int? smsCampaignInvalidated = default(int?), int? scheduledEmailCampaignCreated = default(int?), int? scheduledEmailCampaignUpdated = default(int?), int? scheduledEmailCampaignStatusUpdated = default(int?), int? scheduledEmailCampaignDeleted = default(int?), int? emailCampaignFailedAttemptCreated = default(int?), int? emailCampaignFailedAttemptDeleted = default(int?), int? emailCampaignFailedAttemptStateUpdated = default(int?))
         {
             // to ensure "systemCacheClear" is required (not null)
             if (systemCacheClear == null)
@@ -137,6 +261,15 @@ namespace TextMagicClient.Model
             else
             {
                 this.SystemAccountStateChanged = systemAccountStateChanged;
+            }
+            // to ensure "systemAccountAcceptTermsUpdate" is required (not null)
+            if (systemAccountAcceptTermsUpdate == null)
+            {
+                throw new InvalidDataException("systemAccountAcceptTermsUpdate is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.SystemAccountAcceptTermsUpdate = systemAccountAcceptTermsUpdate;
             }
             // to ensure "systemAccountClosed" is required (not null)
             if (systemAccountClosed == null)
@@ -182,6 +315,15 @@ namespace TextMagicClient.Model
             else
             {
                 this.UserBalanceChanged = userBalanceChanged;
+            }
+            // to ensure "userPresenceStatusChanged" is required (not null)
+            if (userPresenceStatusChanged == null)
+            {
+                throw new InvalidDataException("userPresenceStatusChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.UserPresenceStatusChanged = userPresenceStatusChanged;
             }
             // to ensure "userImpersonationEnd" is required (not null)
             if (userImpersonationEnd == null)
@@ -254,6 +396,42 @@ namespace TextMagicClient.Model
             else
             {
                 this.MessageSent = messageSent;
+            }
+            // to ensure "messageLog" is required (not null)
+            if (messageLog == null)
+            {
+                throw new InvalidDataException("messageLog is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.MessageLog = messageLog;
+            }
+            // to ensure "messageNote" is required (not null)
+            if (messageNote == null)
+            {
+                throw new InvalidDataException("messageNote is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.MessageNote = messageNote;
+            }
+            // to ensure "messageInitial" is required (not null)
+            if (messageInitial == null)
+            {
+                throw new InvalidDataException("messageInitial is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.MessageInitial = messageInitial;
+            }
+            // to ensure "lastMessageSet" is required (not null)
+            if (lastMessageSet == null)
+            {
+                throw new InvalidDataException("lastMessageSet is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.LastMessageSet = lastMessageSet;
             }
             // to ensure "messageSessionDeleted" is required (not null)
             if (messageSessionDeleted == null)
@@ -426,6 +604,15 @@ namespace TextMagicClient.Model
             {
                 this.ChatReopened = chatReopened;
             }
+            // to ensure "chatActivated" is required (not null)
+            if (chatActivated == null)
+            {
+                throw new InvalidDataException("chatActivated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChatActivated = chatActivated;
+            }
             // to ensure "chatCacheClear" is required (not null)
             if (chatCacheClear == null)
             {
@@ -453,6 +640,78 @@ namespace TextMagicClient.Model
             {
                 this.ChatUnread = chatUnread;
             }
+            // to ensure "chatAssigneeChanged" is required (not null)
+            if (chatAssigneeChanged == null)
+            {
+                throw new InvalidDataException("chatAssigneeChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChatAssigneeChanged = chatAssigneeChanged;
+            }
+            // to ensure "chatTagsChanged" is required (not null)
+            if (chatTagsChanged == null)
+            {
+                throw new InvalidDataException("chatTagsChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChatTagsChanged = chatTagsChanged;
+            }
+            // to ensure "chatConversationEnded" is required (not null)
+            if (chatConversationEnded == null)
+            {
+                throw new InvalidDataException("chatConversationEnded is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChatConversationEnded = chatConversationEnded;
+            }
+            // to ensure "chatUpdated" is required (not null)
+            if (chatUpdated == null)
+            {
+                throw new InvalidDataException("chatUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChatUpdated = chatUpdated;
+            }
+            // to ensure "liveChatAgentChanged" is required (not null)
+            if (liveChatAgentChanged == null)
+            {
+                throw new InvalidDataException("liveChatAgentChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.LiveChatAgentChanged = liveChatAgentChanged;
+            }
+            // to ensure "liveChatRated" is required (not null)
+            if (liveChatRated == null)
+            {
+                throw new InvalidDataException("liveChatRated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.LiveChatRated = liveChatRated;
+            }
+            // to ensure "webWidgetUpdated" is required (not null)
+            if (webWidgetUpdated == null)
+            {
+                throw new InvalidDataException("webWidgetUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.WebWidgetUpdated = webWidgetUpdated;
+            }
+            // to ensure "webWidgetDeleted" is required (not null)
+            if (webWidgetDeleted == null)
+            {
+                throw new InvalidDataException("webWidgetDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.WebWidgetDeleted = webWidgetDeleted;
+            }
             // to ensure "contactAdded" is required (not null)
             if (contactAdded == null)
             {
@@ -471,6 +730,15 @@ namespace TextMagicClient.Model
             {
                 this.ContactDeleted = contactDeleted;
             }
+            // to ensure "contactBulkUpdated" is required (not null)
+            if (contactBulkUpdated == null)
+            {
+                throw new InvalidDataException("contactBulkUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ContactBulkUpdated = contactBulkUpdated;
+            }
             // to ensure "contactStateChanged" is required (not null)
             if (contactStateChanged == null)
             {
@@ -479,6 +747,51 @@ namespace TextMagicClient.Model
             else
             {
                 this.ContactStateChanged = contactStateChanged;
+            }
+            // to ensure "contactUnsubscribed" is required (not null)
+            if (contactUnsubscribed == null)
+            {
+                throw new InvalidDataException("contactUnsubscribed is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ContactUnsubscribed = contactUnsubscribed;
+            }
+            // to ensure "contactResubscribed" is required (not null)
+            if (contactResubscribed == null)
+            {
+                throw new InvalidDataException("contactResubscribed is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ContactResubscribed = contactResubscribed;
+            }
+            // to ensure "contactNoteAdded" is required (not null)
+            if (contactNoteAdded == null)
+            {
+                throw new InvalidDataException("contactNoteAdded is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ContactNoteAdded = contactNoteAdded;
+            }
+            // to ensure "contactNoteDeleted" is required (not null)
+            if (contactNoteDeleted == null)
+            {
+                throw new InvalidDataException("contactNoteDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ContactNoteDeleted = contactNoteDeleted;
+            }
+            // to ensure "contactNoteStateChanged" is required (not null)
+            if (contactNoteStateChanged == null)
+            {
+                throw new InvalidDataException("contactNoteStateChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ContactNoteStateChanged = contactNoteStateChanged;
             }
             // to ensure "listAdded" is required (not null)
             if (listAdded == null)
@@ -506,6 +819,15 @@ namespace TextMagicClient.Model
             else
             {
                 this.ListStateChanged = listStateChanged;
+            }
+            // to ensure "listCountMembersUpdated" is required (not null)
+            if (listCountMembersUpdated == null)
+            {
+                throw new InvalidDataException("listCountMembersUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ListCountMembersUpdated = listCountMembersUpdated;
             }
             // to ensure "contactWipeEnd" is required (not null)
             if (contactWipeEnd == null)
@@ -579,14 +901,14 @@ namespace TextMagicClient.Model
             {
                 this.ProgressSubAccountBulkImport = progressSubAccountBulkImport;
             }
-            // to ensure "progressContactBulkImport" is required (not null)
-            if (progressContactBulkImport == null)
+            // to ensure "importProgressState" is required (not null)
+            if (importProgressState == null)
             {
-                throw new InvalidDataException("progressContactBulkImport is a required property for GetStateResponse and cannot be null");
+                throw new InvalidDataException("importProgressState is a required property for GetStateResponse and cannot be null");
             }
             else
             {
-                this.ProgressContactBulkImport = progressContactBulkImport;
+                this.ImportProgressState = importProgressState;
             }
             // to ensure "forceRefreshWebApp" is required (not null)
             if (forceRefreshWebApp == null)
@@ -660,6 +982,924 @@ namespace TextMagicClient.Model
             {
                 this.UserSubscriptionDeleted = userSubscriptionDeleted;
             }
+            // to ensure "taskCreated" is required (not null)
+            if (taskCreated == null)
+            {
+                throw new InvalidDataException("taskCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskCreated = taskCreated;
+            }
+            // to ensure "taskUpdated" is required (not null)
+            if (taskUpdated == null)
+            {
+                throw new InvalidDataException("taskUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskUpdated = taskUpdated;
+            }
+            // to ensure "taskReordered" is required (not null)
+            if (taskReordered == null)
+            {
+                throw new InvalidDataException("taskReordered is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskReordered = taskReordered;
+            }
+            // to ensure "taskDeleted" is required (not null)
+            if (taskDeleted == null)
+            {
+                throw new InvalidDataException("taskDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskDeleted = taskDeleted;
+            }
+            // to ensure "taskMovedAll" is required (not null)
+            if (taskMovedAll == null)
+            {
+                throw new InvalidDataException("taskMovedAll is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskMovedAll = taskMovedAll;
+            }
+            // to ensure "taskStageCreated" is required (not null)
+            if (taskStageCreated == null)
+            {
+                throw new InvalidDataException("taskStageCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskStageCreated = taskStageCreated;
+            }
+            // to ensure "taskStageUpdated" is required (not null)
+            if (taskStageUpdated == null)
+            {
+                throw new InvalidDataException("taskStageUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskStageUpdated = taskStageUpdated;
+            }
+            // to ensure "taskStageDeleted" is required (not null)
+            if (taskStageDeleted == null)
+            {
+                throw new InvalidDataException("taskStageDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskStageDeleted = taskStageDeleted;
+            }
+            // to ensure "taskBoardCreated" is required (not null)
+            if (taskBoardCreated == null)
+            {
+                throw new InvalidDataException("taskBoardCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskBoardCreated = taskBoardCreated;
+            }
+            // to ensure "taskBoardUpdated" is required (not null)
+            if (taskBoardUpdated == null)
+            {
+                throw new InvalidDataException("taskBoardUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskBoardUpdated = taskBoardUpdated;
+            }
+            // to ensure "taskBoardReordered" is required (not null)
+            if (taskBoardReordered == null)
+            {
+                throw new InvalidDataException("taskBoardReordered is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskBoardReordered = taskBoardReordered;
+            }
+            // to ensure "taskBoardDeleted" is required (not null)
+            if (taskBoardDeleted == null)
+            {
+                throw new InvalidDataException("taskBoardDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskBoardDeleted = taskBoardDeleted;
+            }
+            // to ensure "taskBoardArchived" is required (not null)
+            if (taskBoardArchived == null)
+            {
+                throw new InvalidDataException("taskBoardArchived is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskBoardArchived = taskBoardArchived;
+            }
+            // to ensure "taskChecklistCreated" is required (not null)
+            if (taskChecklistCreated == null)
+            {
+                throw new InvalidDataException("taskChecklistCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskChecklistCreated = taskChecklistCreated;
+            }
+            // to ensure "taskChecklistUpdated" is required (not null)
+            if (taskChecklistUpdated == null)
+            {
+                throw new InvalidDataException("taskChecklistUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskChecklistUpdated = taskChecklistUpdated;
+            }
+            // to ensure "taskChecklistDeleted" is required (not null)
+            if (taskChecklistDeleted == null)
+            {
+                throw new InvalidDataException("taskChecklistDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskChecklistDeleted = taskChecklistDeleted;
+            }
+            // to ensure "taskChecklistBulkMarked" is required (not null)
+            if (taskChecklistBulkMarked == null)
+            {
+                throw new InvalidDataException("taskChecklistBulkMarked is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskChecklistBulkMarked = taskChecklistBulkMarked;
+            }
+            // to ensure "taskChecklistItemCreated" is required (not null)
+            if (taskChecklistItemCreated == null)
+            {
+                throw new InvalidDataException("taskChecklistItemCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskChecklistItemCreated = taskChecklistItemCreated;
+            }
+            // to ensure "taskChecklistItemUpdated" is required (not null)
+            if (taskChecklistItemUpdated == null)
+            {
+                throw new InvalidDataException("taskChecklistItemUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskChecklistItemUpdated = taskChecklistItemUpdated;
+            }
+            // to ensure "taskChecklistItemDeleted" is required (not null)
+            if (taskChecklistItemDeleted == null)
+            {
+                throw new InvalidDataException("taskChecklistItemDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskChecklistItemDeleted = taskChecklistItemDeleted;
+            }
+            // to ensure "taskCommentCreated" is required (not null)
+            if (taskCommentCreated == null)
+            {
+                throw new InvalidDataException("taskCommentCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskCommentCreated = taskCommentCreated;
+            }
+            // to ensure "taskCommentDeleted" is required (not null)
+            if (taskCommentDeleted == null)
+            {
+                throw new InvalidDataException("taskCommentDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TaskCommentDeleted = taskCommentDeleted;
+            }
+            // to ensure "pinnedContactAdded" is required (not null)
+            if (pinnedContactAdded == null)
+            {
+                throw new InvalidDataException("pinnedContactAdded is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.PinnedContactAdded = pinnedContactAdded;
+            }
+            // to ensure "pinnedContactRemoved" is required (not null)
+            if (pinnedContactRemoved == null)
+            {
+                throw new InvalidDataException("pinnedContactRemoved is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.PinnedContactRemoved = pinnedContactRemoved;
+            }
+            // to ensure "pinnedContactReordered" is required (not null)
+            if (pinnedContactReordered == null)
+            {
+                throw new InvalidDataException("pinnedContactReordered is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.PinnedContactReordered = pinnedContactReordered;
+            }
+            // to ensure "pinnedContactStateChanged" is required (not null)
+            if (pinnedContactStateChanged == null)
+            {
+                throw new InvalidDataException("pinnedContactStateChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.PinnedContactStateChanged = pinnedContactStateChanged;
+            }
+            // to ensure "whatsappAccountAdded" is required (not null)
+            if (whatsappAccountAdded == null)
+            {
+                throw new InvalidDataException("whatsappAccountAdded is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.WhatsappAccountAdded = whatsappAccountAdded;
+            }
+            // to ensure "whatsappAccountRemoved" is required (not null)
+            if (whatsappAccountRemoved == null)
+            {
+                throw new InvalidDataException("whatsappAccountRemoved is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.WhatsappAccountRemoved = whatsappAccountRemoved;
+            }
+            // to ensure "whatsappAccountChanged" is required (not null)
+            if (whatsappAccountChanged == null)
+            {
+                throw new InvalidDataException("whatsappAccountChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.WhatsappAccountChanged = whatsappAccountChanged;
+            }
+            // to ensure "facebookPageAdded" is required (not null)
+            if (facebookPageAdded == null)
+            {
+                throw new InvalidDataException("facebookPageAdded is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.FacebookPageAdded = facebookPageAdded;
+            }
+            // to ensure "facebookPageRemoved" is required (not null)
+            if (facebookPageRemoved == null)
+            {
+                throw new InvalidDataException("facebookPageRemoved is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.FacebookPageRemoved = facebookPageRemoved;
+            }
+            // to ensure "facebookPageChanged" is required (not null)
+            if (facebookPageChanged == null)
+            {
+                throw new InvalidDataException("facebookPageChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.FacebookPageChanged = facebookPageChanged;
+            }
+            // to ensure "instagramAccountAdded" is required (not null)
+            if (instagramAccountAdded == null)
+            {
+                throw new InvalidDataException("instagramAccountAdded is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.InstagramAccountAdded = instagramAccountAdded;
+            }
+            // to ensure "instagramAccountRemoved" is required (not null)
+            if (instagramAccountRemoved == null)
+            {
+                throw new InvalidDataException("instagramAccountRemoved is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.InstagramAccountRemoved = instagramAccountRemoved;
+            }
+            // to ensure "instagramAccountChanged" is required (not null)
+            if (instagramAccountChanged == null)
+            {
+                throw new InvalidDataException("instagramAccountChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.InstagramAccountChanged = instagramAccountChanged;
+            }
+            // to ensure "unreadTicketsCountUpdated" is required (not null)
+            if (unreadTicketsCountUpdated == null)
+            {
+                throw new InvalidDataException("unreadTicketsCountUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.UnreadTicketsCountUpdated = unreadTicketsCountUpdated;
+            }
+            // to ensure "ticketDeleted" is required (not null)
+            if (ticketDeleted == null)
+            {
+                throw new InvalidDataException("ticketDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TicketDeleted = ticketDeleted;
+            }
+            // to ensure "ticketUpdated" is required (not null)
+            if (ticketUpdated == null)
+            {
+                throw new InvalidDataException("ticketUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TicketUpdated = ticketUpdated;
+            }
+            // to ensure "ticketCreated" is required (not null)
+            if (ticketCreated == null)
+            {
+                throw new InvalidDataException("ticketCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TicketCreated = ticketCreated;
+            }
+            // to ensure "ticketBulkUpdated" is required (not null)
+            if (ticketBulkUpdated == null)
+            {
+                throw new InvalidDataException("ticketBulkUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TicketBulkUpdated = ticketBulkUpdated;
+            }
+            // to ensure "ticketBulkDeleted" is required (not null)
+            if (ticketBulkDeleted == null)
+            {
+                throw new InvalidDataException("ticketBulkDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TicketBulkDeleted = ticketBulkDeleted;
+            }
+            // to ensure "ticketMessageCreated" is required (not null)
+            if (ticketMessageCreated == null)
+            {
+                throw new InvalidDataException("ticketMessageCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TicketMessageCreated = ticketMessageCreated;
+            }
+            // to ensure "ticketMessageUpdated" is required (not null)
+            if (ticketMessageUpdated == null)
+            {
+                throw new InvalidDataException("ticketMessageUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TicketMessageUpdated = ticketMessageUpdated;
+            }
+            // to ensure "ticketMessageDeleted" is required (not null)
+            if (ticketMessageDeleted == null)
+            {
+                throw new InvalidDataException("ticketMessageDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TicketMessageDeleted = ticketMessageDeleted;
+            }
+            // to ensure "subAccountsClosed" is required (not null)
+            if (subAccountsClosed == null)
+            {
+                throw new InvalidDataException("subAccountsClosed is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.SubAccountsClosed = subAccountsClosed;
+            }
+            // to ensure "userInvited" is required (not null)
+            if (userInvited == null)
+            {
+                throw new InvalidDataException("userInvited is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.UserInvited = userInvited;
+            }
+            // to ensure "filteredViewCreated" is required (not null)
+            if (filteredViewCreated == null)
+            {
+                throw new InvalidDataException("filteredViewCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.FilteredViewCreated = filteredViewCreated;
+            }
+            // to ensure "filteredViewCountUpdated" is required (not null)
+            if (filteredViewCountUpdated == null)
+            {
+                throw new InvalidDataException("filteredViewCountUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.FilteredViewCountUpdated = filteredViewCountUpdated;
+            }
+            // to ensure "filteredViewDeleted" is required (not null)
+            if (filteredViewDeleted == null)
+            {
+                throw new InvalidDataException("filteredViewDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.FilteredViewDeleted = filteredViewDeleted;
+            }
+            // to ensure "forwardingInboxWasVerified" is required (not null)
+            if (forwardingInboxWasVerified == null)
+            {
+                throw new InvalidDataException("forwardingInboxWasVerified is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ForwardingInboxWasVerified = forwardingInboxWasVerified;
+            }
+            // to ensure "forwardingInboxCheckWasFailed" is required (not null)
+            if (forwardingInboxCheckWasFailed == null)
+            {
+                throw new InvalidDataException("forwardingInboxCheckWasFailed is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ForwardingInboxCheckWasFailed = forwardingInboxCheckWasFailed;
+            }
+            // to ensure "forwardingInboxVerificationLinkWasParsed" is required (not null)
+            if (forwardingInboxVerificationLinkWasParsed == null)
+            {
+                throw new InvalidDataException("forwardingInboxVerificationLinkWasParsed is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ForwardingInboxVerificationLinkWasParsed = forwardingInboxVerificationLinkWasParsed;
+            }
+            // to ensure "tendlcLinkNumberStatusUpdated" is required (not null)
+            if (tendlcLinkNumberStatusUpdated == null)
+            {
+                throw new InvalidDataException("tendlcLinkNumberStatusUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.TendlcLinkNumberStatusUpdated = tendlcLinkNumberStatusUpdated;
+            }
+            // to ensure "channelPresence" is required (not null)
+            if (channelPresence == null)
+            {
+                throw new InvalidDataException("channelPresence is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ChannelPresence = channelPresence;
+            }
+            // to ensure "dealCreated" is required (not null)
+            if (dealCreated == null)
+            {
+                throw new InvalidDataException("dealCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealCreated = dealCreated;
+            }
+            // to ensure "dealUpdated" is required (not null)
+            if (dealUpdated == null)
+            {
+                throw new InvalidDataException("dealUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealUpdated = dealUpdated;
+            }
+            // to ensure "dealDeleted" is required (not null)
+            if (dealDeleted == null)
+            {
+                throw new InvalidDataException("dealDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealDeleted = dealDeleted;
+            }
+            // to ensure "dealMoved" is required (not null)
+            if (dealMoved == null)
+            {
+                throw new InvalidDataException("dealMoved is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealMoved = dealMoved;
+            }
+            // to ensure "dealStageCreated" is required (not null)
+            if (dealStageCreated == null)
+            {
+                throw new InvalidDataException("dealStageCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealStageCreated = dealStageCreated;
+            }
+            // to ensure "dealStageUpdated" is required (not null)
+            if (dealStageUpdated == null)
+            {
+                throw new InvalidDataException("dealStageUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealStageUpdated = dealStageUpdated;
+            }
+            // to ensure "dealStageDeleted" is required (not null)
+            if (dealStageDeleted == null)
+            {
+                throw new InvalidDataException("dealStageDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealStageDeleted = dealStageDeleted;
+            }
+            // to ensure "dealPipelineCreated" is required (not null)
+            if (dealPipelineCreated == null)
+            {
+                throw new InvalidDataException("dealPipelineCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealPipelineCreated = dealPipelineCreated;
+            }
+            // to ensure "dealPipelineUpdated" is required (not null)
+            if (dealPipelineUpdated == null)
+            {
+                throw new InvalidDataException("dealPipelineUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealPipelineUpdated = dealPipelineUpdated;
+            }
+            // to ensure "dealPipelineDeleted" is required (not null)
+            if (dealPipelineDeleted == null)
+            {
+                throw new InvalidDataException("dealPipelineDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealPipelineDeleted = dealPipelineDeleted;
+            }
+            // to ensure "dealPipelineArchived" is required (not null)
+            if (dealPipelineArchived == null)
+            {
+                throw new InvalidDataException("dealPipelineArchived is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealPipelineArchived = dealPipelineArchived;
+            }
+            // to ensure "dealPipelineReordered" is required (not null)
+            if (dealPipelineReordered == null)
+            {
+                throw new InvalidDataException("dealPipelineReordered is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealPipelineReordered = dealPipelineReordered;
+            }
+            // to ensure "dealActivityUpdated" is required (not null)
+            if (dealActivityUpdated == null)
+            {
+                throw new InvalidDataException("dealActivityUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealActivityUpdated = dealActivityUpdated;
+            }
+            // to ensure "dealActivityItemCreated" is required (not null)
+            if (dealActivityItemCreated == null)
+            {
+                throw new InvalidDataException("dealActivityItemCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealActivityItemCreated = dealActivityItemCreated;
+            }
+            // to ensure "dealActivityItemUpdated" is required (not null)
+            if (dealActivityItemUpdated == null)
+            {
+                throw new InvalidDataException("dealActivityItemUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealActivityItemUpdated = dealActivityItemUpdated;
+            }
+            // to ensure "dealActivityItemDeleted" is required (not null)
+            if (dealActivityItemDeleted == null)
+            {
+                throw new InvalidDataException("dealActivityItemDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealActivityItemDeleted = dealActivityItemDeleted;
+            }
+            // to ensure "dealActivityItemBulkMarked" is required (not null)
+            if (dealActivityItemBulkMarked == null)
+            {
+                throw new InvalidDataException("dealActivityItemBulkMarked is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealActivityItemBulkMarked = dealActivityItemBulkMarked;
+            }
+            // to ensure "dealTimelineItemDeleted" is required (not null)
+            if (dealTimelineItemDeleted == null)
+            {
+                throw new InvalidDataException("dealTimelineItemDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealTimelineItemDeleted = dealTimelineItemDeleted;
+            }
+            // to ensure "dealTimelineItemCreated" is required (not null)
+            if (dealTimelineItemCreated == null)
+            {
+                throw new InvalidDataException("dealTimelineItemCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.DealTimelineItemCreated = dealTimelineItemCreated;
+            }
+            // to ensure "aIAssistantCreated" is required (not null)
+            if (aIAssistantCreated == null)
+            {
+                throw new InvalidDataException("aIAssistantCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.AIAssistantCreated = aIAssistantCreated;
+            }
+            // to ensure "aIAssistantState" is required (not null)
+            if (aIAssistantState == null)
+            {
+                throw new InvalidDataException("aIAssistantState is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.AIAssistantState = aIAssistantState;
+            }
+            // to ensure "aIAssistantDeleted" is required (not null)
+            if (aIAssistantDeleted == null)
+            {
+                throw new InvalidDataException("aIAssistantDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.AIAssistantDeleted = aIAssistantDeleted;
+            }
+            // to ensure "aIAssistantLinkDeleted" is required (not null)
+            if (aIAssistantLinkDeleted == null)
+            {
+                throw new InvalidDataException("aIAssistantLinkDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.AIAssistantLinkDeleted = aIAssistantLinkDeleted;
+            }
+            // to ensure "aIAssistantLinkState" is required (not null)
+            if (aIAssistantLinkState == null)
+            {
+                throw new InvalidDataException("aIAssistantLinkState is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.AIAssistantLinkState = aIAssistantLinkState;
+            }
+            // to ensure "aIAssistantLinkCreated" is required (not null)
+            if (aIAssistantLinkCreated == null)
+            {
+                throw new InvalidDataException("aIAssistantLinkCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.AIAssistantLinkCreated = aIAssistantLinkCreated;
+            }
+            // to ensure "aIAssistantSubLinkState" is required (not null)
+            if (aIAssistantSubLinkState == null)
+            {
+                throw new InvalidDataException("aIAssistantSubLinkState is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.AIAssistantSubLinkState = aIAssistantSubLinkState;
+            }
+            // to ensure "aIAssistantSubLinkCreated" is required (not null)
+            if (aIAssistantSubLinkCreated == null)
+            {
+                throw new InvalidDataException("aIAssistantSubLinkCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.AIAssistantSubLinkCreated = aIAssistantSubLinkCreated;
+            }
+            // to ensure "emailCampaignEmailSenderCreated" is required (not null)
+            if (emailCampaignEmailSenderCreated == null)
+            {
+                throw new InvalidDataException("emailCampaignEmailSenderCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignEmailSenderCreated = emailCampaignEmailSenderCreated;
+            }
+            // to ensure "emailCampaignEmailSenderUpdated" is required (not null)
+            if (emailCampaignEmailSenderUpdated == null)
+            {
+                throw new InvalidDataException("emailCampaignEmailSenderUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignEmailSenderUpdated = emailCampaignEmailSenderUpdated;
+            }
+            // to ensure "emailCampaignEmailSenderDeleted" is required (not null)
+            if (emailCampaignEmailSenderDeleted == null)
+            {
+                throw new InvalidDataException("emailCampaignEmailSenderDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignEmailSenderDeleted = emailCampaignEmailSenderDeleted;
+            }
+            // to ensure "emailCampaignDomainCreated" is required (not null)
+            if (emailCampaignDomainCreated == null)
+            {
+                throw new InvalidDataException("emailCampaignDomainCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignDomainCreated = emailCampaignDomainCreated;
+            }
+            // to ensure "emailCampaignDomainDeleted" is required (not null)
+            if (emailCampaignDomainDeleted == null)
+            {
+                throw new InvalidDataException("emailCampaignDomainDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignDomainDeleted = emailCampaignDomainDeleted;
+            }
+            // to ensure "emailCampaignDomainVerified" is required (not null)
+            if (emailCampaignDomainVerified == null)
+            {
+                throw new InvalidDataException("emailCampaignDomainVerified is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignDomainVerified = emailCampaignDomainVerified;
+            }
+            // to ensure "emailCampaignDomainStatusChanged" is required (not null)
+            if (emailCampaignDomainStatusChanged == null)
+            {
+                throw new InvalidDataException("emailCampaignDomainStatusChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignDomainStatusChanged = emailCampaignDomainStatusChanged;
+            }
+            // to ensure "emailCampaignDomainDkimVerified" is required (not null)
+            if (emailCampaignDomainDkimVerified == null)
+            {
+                throw new InvalidDataException("emailCampaignDomainDkimVerified is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignDomainDkimVerified = emailCampaignDomainDkimVerified;
+            }
+            // to ensure "emailCampaignDomainReturnPathVerified" is required (not null)
+            if (emailCampaignDomainReturnPathVerified == null)
+            {
+                throw new InvalidDataException("emailCampaignDomainReturnPathVerified is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignDomainReturnPathVerified = emailCampaignDomainReturnPathVerified;
+            }
+            // to ensure "emailCampaignDomainDmarcVerified" is required (not null)
+            if (emailCampaignDomainDmarcVerified == null)
+            {
+                throw new InvalidDataException("emailCampaignDomainDmarcVerified is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignDomainDmarcVerified = emailCampaignDomainDmarcVerified;
+            }
+            // to ensure "emailCampaignDomainEntryVerificationChanged" is required (not null)
+            if (emailCampaignDomainEntryVerificationChanged == null)
+            {
+                throw new InvalidDataException("emailCampaignDomainEntryVerificationChanged is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignDomainEntryVerificationChanged = emailCampaignDomainEntryVerificationChanged;
+            }
+            // to ensure "emailCampaignProgressState" is required (not null)
+            if (emailCampaignProgressState == null)
+            {
+                throw new InvalidDataException("emailCampaignProgressState is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignProgressState = emailCampaignProgressState;
+            }
+            // to ensure "emailCampaignUpdated" is required (not null)
+            if (emailCampaignUpdated == null)
+            {
+                throw new InvalidDataException("emailCampaignUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignUpdated = emailCampaignUpdated;
+            }
+            // to ensure "smsCampaignInvalidated" is required (not null)
+            if (smsCampaignInvalidated == null)
+            {
+                throw new InvalidDataException("smsCampaignInvalidated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.SmsCampaignInvalidated = smsCampaignInvalidated;
+            }
+            // to ensure "scheduledEmailCampaignCreated" is required (not null)
+            if (scheduledEmailCampaignCreated == null)
+            {
+                throw new InvalidDataException("scheduledEmailCampaignCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ScheduledEmailCampaignCreated = scheduledEmailCampaignCreated;
+            }
+            // to ensure "scheduledEmailCampaignUpdated" is required (not null)
+            if (scheduledEmailCampaignUpdated == null)
+            {
+                throw new InvalidDataException("scheduledEmailCampaignUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ScheduledEmailCampaignUpdated = scheduledEmailCampaignUpdated;
+            }
+            // to ensure "scheduledEmailCampaignStatusUpdated" is required (not null)
+            if (scheduledEmailCampaignStatusUpdated == null)
+            {
+                throw new InvalidDataException("scheduledEmailCampaignStatusUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ScheduledEmailCampaignStatusUpdated = scheduledEmailCampaignStatusUpdated;
+            }
+            // to ensure "scheduledEmailCampaignDeleted" is required (not null)
+            if (scheduledEmailCampaignDeleted == null)
+            {
+                throw new InvalidDataException("scheduledEmailCampaignDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.ScheduledEmailCampaignDeleted = scheduledEmailCampaignDeleted;
+            }
+            // to ensure "emailCampaignFailedAttemptCreated" is required (not null)
+            if (emailCampaignFailedAttemptCreated == null)
+            {
+                throw new InvalidDataException("emailCampaignFailedAttemptCreated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignFailedAttemptCreated = emailCampaignFailedAttemptCreated;
+            }
+            // to ensure "emailCampaignFailedAttemptDeleted" is required (not null)
+            if (emailCampaignFailedAttemptDeleted == null)
+            {
+                throw new InvalidDataException("emailCampaignFailedAttemptDeleted is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignFailedAttemptDeleted = emailCampaignFailedAttemptDeleted;
+            }
+            // to ensure "emailCampaignFailedAttemptStateUpdated" is required (not null)
+            if (emailCampaignFailedAttemptStateUpdated == null)
+            {
+                throw new InvalidDataException("emailCampaignFailedAttemptStateUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailCampaignFailedAttemptStateUpdated = emailCampaignFailedAttemptStateUpdated;
+            }
         }
         
         /// <summary>
@@ -685,6 +1925,12 @@ namespace TextMagicClient.Model
         /// </summary>
         [DataMember(Name="systemAccountStateChanged", EmitDefaultValue=false)]
         public int? SystemAccountStateChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets SystemAccountAcceptTermsUpdate
+        /// </summary>
+        [DataMember(Name="systemAccountAcceptTermsUpdate", EmitDefaultValue=false)]
+        public int? SystemAccountAcceptTermsUpdate { get; set; }
 
         /// <summary>
         /// Gets or Sets SystemAccountClosed
@@ -715,6 +1961,12 @@ namespace TextMagicClient.Model
         /// </summary>
         [DataMember(Name="userBalanceChanged", EmitDefaultValue=false)]
         public int? UserBalanceChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UserPresenceStatusChanged
+        /// </summary>
+        [DataMember(Name="userPresenceStatusChanged", EmitDefaultValue=false)]
+        public int? UserPresenceStatusChanged { get; set; }
 
         /// <summary>
         /// Gets or Sets UserImpersonationEnd
@@ -763,6 +2015,30 @@ namespace TextMagicClient.Model
         /// </summary>
         [DataMember(Name="messageSent", EmitDefaultValue=false)]
         public int? MessageSent { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MessageLog
+        /// </summary>
+        [DataMember(Name="messageLog", EmitDefaultValue=false)]
+        public int? MessageLog { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MessageNote
+        /// </summary>
+        [DataMember(Name="messageNote", EmitDefaultValue=false)]
+        public int? MessageNote { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MessageInitial
+        /// </summary>
+        [DataMember(Name="messageInitial", EmitDefaultValue=false)]
+        public int? MessageInitial { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LastMessageSet
+        /// </summary>
+        [DataMember(Name="lastMessageSet", EmitDefaultValue=false)]
+        public int? LastMessageSet { get; set; }
 
         /// <summary>
         /// Gets or Sets MessageSessionDeleted
@@ -879,6 +2155,12 @@ namespace TextMagicClient.Model
         public int? ChatReopened { get; set; }
 
         /// <summary>
+        /// Gets or Sets ChatActivated
+        /// </summary>
+        [DataMember(Name="chatActivated", EmitDefaultValue=false)]
+        public int? ChatActivated { get; set; }
+
+        /// <summary>
         /// Gets or Sets ChatCacheClear
         /// </summary>
         [DataMember(Name="chatCacheClear", EmitDefaultValue=false)]
@@ -897,6 +2179,54 @@ namespace TextMagicClient.Model
         public int? ChatUnread { get; set; }
 
         /// <summary>
+        /// Gets or Sets ChatAssigneeChanged
+        /// </summary>
+        [DataMember(Name="chatAssigneeChanged", EmitDefaultValue=false)]
+        public int? ChatAssigneeChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ChatTagsChanged
+        /// </summary>
+        [DataMember(Name="chatTagsChanged", EmitDefaultValue=false)]
+        public int? ChatTagsChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ChatConversationEnded
+        /// </summary>
+        [DataMember(Name="chatConversationEnded", EmitDefaultValue=false)]
+        public int? ChatConversationEnded { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ChatUpdated
+        /// </summary>
+        [DataMember(Name="chatUpdated", EmitDefaultValue=false)]
+        public int? ChatUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LiveChatAgentChanged
+        /// </summary>
+        [DataMember(Name="liveChatAgentChanged", EmitDefaultValue=false)]
+        public int? LiveChatAgentChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LiveChatRated
+        /// </summary>
+        [DataMember(Name="liveChatRated", EmitDefaultValue=false)]
+        public int? LiveChatRated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets WebWidgetUpdated
+        /// </summary>
+        [DataMember(Name="webWidgetUpdated", EmitDefaultValue=false)]
+        public int? WebWidgetUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets WebWidgetDeleted
+        /// </summary>
+        [DataMember(Name="webWidgetDeleted", EmitDefaultValue=false)]
+        public int? WebWidgetDeleted { get; set; }
+
+        /// <summary>
         /// Gets or Sets ContactAdded
         /// </summary>
         [DataMember(Name="contactAdded", EmitDefaultValue=false)]
@@ -909,10 +2239,46 @@ namespace TextMagicClient.Model
         public int? ContactDeleted { get; set; }
 
         /// <summary>
+        /// Gets or Sets ContactBulkUpdated
+        /// </summary>
+        [DataMember(Name="contactBulkUpdated", EmitDefaultValue=false)]
+        public int? ContactBulkUpdated { get; set; }
+
+        /// <summary>
         /// Gets or Sets ContactStateChanged
         /// </summary>
         [DataMember(Name="contactStateChanged", EmitDefaultValue=false)]
         public int? ContactStateChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ContactUnsubscribed
+        /// </summary>
+        [DataMember(Name="contactUnsubscribed", EmitDefaultValue=false)]
+        public int? ContactUnsubscribed { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ContactResubscribed
+        /// </summary>
+        [DataMember(Name="contactResubscribed", EmitDefaultValue=false)]
+        public int? ContactResubscribed { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ContactNoteAdded
+        /// </summary>
+        [DataMember(Name="contactNoteAdded", EmitDefaultValue=false)]
+        public int? ContactNoteAdded { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ContactNoteDeleted
+        /// </summary>
+        [DataMember(Name="contactNoteDeleted", EmitDefaultValue=false)]
+        public int? ContactNoteDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ContactNoteStateChanged
+        /// </summary>
+        [DataMember(Name="contactNoteStateChanged", EmitDefaultValue=false)]
+        public int? ContactNoteStateChanged { get; set; }
 
         /// <summary>
         /// Gets or Sets ListAdded
@@ -931,6 +2297,12 @@ namespace TextMagicClient.Model
         /// </summary>
         [DataMember(Name="listStateChanged", EmitDefaultValue=false)]
         public int? ListStateChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ListCountMembersUpdated
+        /// </summary>
+        [DataMember(Name="listCountMembersUpdated", EmitDefaultValue=false)]
+        public int? ListCountMembersUpdated { get; set; }
 
         /// <summary>
         /// Gets or Sets ContactWipeEnd
@@ -981,10 +2353,10 @@ namespace TextMagicClient.Model
         public int? ProgressSubAccountBulkImport { get; set; }
 
         /// <summary>
-        /// Gets or Sets ProgressContactBulkImport
+        /// Gets or Sets ImportProgressState
         /// </summary>
-        [DataMember(Name="progressContactBulkImport", EmitDefaultValue=false)]
-        public int? ProgressContactBulkImport { get; set; }
+        [DataMember(Name="importProgressState", EmitDefaultValue=false)]
+        public int? ImportProgressState { get; set; }
 
         /// <summary>
         /// Gets or Sets ForceRefreshWebApp
@@ -1035,6 +2407,618 @@ namespace TextMagicClient.Model
         public int? UserSubscriptionDeleted { get; set; }
 
         /// <summary>
+        /// Gets or Sets TaskCreated
+        /// </summary>
+        [DataMember(Name="taskCreated", EmitDefaultValue=false)]
+        public int? TaskCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskUpdated
+        /// </summary>
+        [DataMember(Name="taskUpdated", EmitDefaultValue=false)]
+        public int? TaskUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskReordered
+        /// </summary>
+        [DataMember(Name="taskReordered", EmitDefaultValue=false)]
+        public int? TaskReordered { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskDeleted
+        /// </summary>
+        [DataMember(Name="taskDeleted", EmitDefaultValue=false)]
+        public int? TaskDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskMovedAll
+        /// </summary>
+        [DataMember(Name="taskMovedAll", EmitDefaultValue=false)]
+        public int? TaskMovedAll { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskStageCreated
+        /// </summary>
+        [DataMember(Name="taskStageCreated", EmitDefaultValue=false)]
+        public int? TaskStageCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskStageUpdated
+        /// </summary>
+        [DataMember(Name="taskStageUpdated", EmitDefaultValue=false)]
+        public int? TaskStageUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskStageDeleted
+        /// </summary>
+        [DataMember(Name="taskStageDeleted", EmitDefaultValue=false)]
+        public int? TaskStageDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskBoardCreated
+        /// </summary>
+        [DataMember(Name="taskBoardCreated", EmitDefaultValue=false)]
+        public int? TaskBoardCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskBoardUpdated
+        /// </summary>
+        [DataMember(Name="taskBoardUpdated", EmitDefaultValue=false)]
+        public int? TaskBoardUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskBoardReordered
+        /// </summary>
+        [DataMember(Name="taskBoardReordered", EmitDefaultValue=false)]
+        public int? TaskBoardReordered { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskBoardDeleted
+        /// </summary>
+        [DataMember(Name="taskBoardDeleted", EmitDefaultValue=false)]
+        public int? TaskBoardDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskBoardArchived
+        /// </summary>
+        [DataMember(Name="taskBoardArchived", EmitDefaultValue=false)]
+        public int? TaskBoardArchived { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskChecklistCreated
+        /// </summary>
+        [DataMember(Name="taskChecklistCreated", EmitDefaultValue=false)]
+        public int? TaskChecklistCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskChecklistUpdated
+        /// </summary>
+        [DataMember(Name="taskChecklistUpdated", EmitDefaultValue=false)]
+        public int? TaskChecklistUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskChecklistDeleted
+        /// </summary>
+        [DataMember(Name="taskChecklistDeleted", EmitDefaultValue=false)]
+        public int? TaskChecklistDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskChecklistBulkMarked
+        /// </summary>
+        [DataMember(Name="taskChecklistBulkMarked", EmitDefaultValue=false)]
+        public int? TaskChecklistBulkMarked { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskChecklistItemCreated
+        /// </summary>
+        [DataMember(Name="taskChecklistItemCreated", EmitDefaultValue=false)]
+        public int? TaskChecklistItemCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskChecklistItemUpdated
+        /// </summary>
+        [DataMember(Name="taskChecklistItemUpdated", EmitDefaultValue=false)]
+        public int? TaskChecklistItemUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskChecklistItemDeleted
+        /// </summary>
+        [DataMember(Name="taskChecklistItemDeleted", EmitDefaultValue=false)]
+        public int? TaskChecklistItemDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskCommentCreated
+        /// </summary>
+        [DataMember(Name="taskCommentCreated", EmitDefaultValue=false)]
+        public int? TaskCommentCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TaskCommentDeleted
+        /// </summary>
+        [DataMember(Name="taskCommentDeleted", EmitDefaultValue=false)]
+        public int? TaskCommentDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PinnedContactAdded
+        /// </summary>
+        [DataMember(Name="pinnedContactAdded", EmitDefaultValue=false)]
+        public int? PinnedContactAdded { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PinnedContactRemoved
+        /// </summary>
+        [DataMember(Name="pinnedContactRemoved", EmitDefaultValue=false)]
+        public int? PinnedContactRemoved { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PinnedContactReordered
+        /// </summary>
+        [DataMember(Name="pinnedContactReordered", EmitDefaultValue=false)]
+        public int? PinnedContactReordered { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PinnedContactStateChanged
+        /// </summary>
+        [DataMember(Name="pinnedContactStateChanged", EmitDefaultValue=false)]
+        public int? PinnedContactStateChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets WhatsappAccountAdded
+        /// </summary>
+        [DataMember(Name="whatsappAccountAdded", EmitDefaultValue=false)]
+        public int? WhatsappAccountAdded { get; set; }
+
+        /// <summary>
+        /// Gets or Sets WhatsappAccountRemoved
+        /// </summary>
+        [DataMember(Name="whatsappAccountRemoved", EmitDefaultValue=false)]
+        public int? WhatsappAccountRemoved { get; set; }
+
+        /// <summary>
+        /// Gets or Sets WhatsappAccountChanged
+        /// </summary>
+        [DataMember(Name="whatsappAccountChanged", EmitDefaultValue=false)]
+        public int? WhatsappAccountChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets FacebookPageAdded
+        /// </summary>
+        [DataMember(Name="facebookPageAdded", EmitDefaultValue=false)]
+        public int? FacebookPageAdded { get; set; }
+
+        /// <summary>
+        /// Gets or Sets FacebookPageRemoved
+        /// </summary>
+        [DataMember(Name="facebookPageRemoved", EmitDefaultValue=false)]
+        public int? FacebookPageRemoved { get; set; }
+
+        /// <summary>
+        /// Gets or Sets FacebookPageChanged
+        /// </summary>
+        [DataMember(Name="facebookPageChanged", EmitDefaultValue=false)]
+        public int? FacebookPageChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets InstagramAccountAdded
+        /// </summary>
+        [DataMember(Name="instagramAccountAdded", EmitDefaultValue=false)]
+        public int? InstagramAccountAdded { get; set; }
+
+        /// <summary>
+        /// Gets or Sets InstagramAccountRemoved
+        /// </summary>
+        [DataMember(Name="instagramAccountRemoved", EmitDefaultValue=false)]
+        public int? InstagramAccountRemoved { get; set; }
+
+        /// <summary>
+        /// Gets or Sets InstagramAccountChanged
+        /// </summary>
+        [DataMember(Name="instagramAccountChanged", EmitDefaultValue=false)]
+        public int? InstagramAccountChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UnreadTicketsCountUpdated
+        /// </summary>
+        [DataMember(Name="unreadTicketsCountUpdated", EmitDefaultValue=false)]
+        public int? UnreadTicketsCountUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TicketDeleted
+        /// </summary>
+        [DataMember(Name="ticketDeleted", EmitDefaultValue=false)]
+        public int? TicketDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TicketUpdated
+        /// </summary>
+        [DataMember(Name="ticketUpdated", EmitDefaultValue=false)]
+        public int? TicketUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TicketCreated
+        /// </summary>
+        [DataMember(Name="ticketCreated", EmitDefaultValue=false)]
+        public int? TicketCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TicketBulkUpdated
+        /// </summary>
+        [DataMember(Name="ticketBulkUpdated", EmitDefaultValue=false)]
+        public int? TicketBulkUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TicketBulkDeleted
+        /// </summary>
+        [DataMember(Name="ticketBulkDeleted", EmitDefaultValue=false)]
+        public int? TicketBulkDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TicketMessageCreated
+        /// </summary>
+        [DataMember(Name="ticketMessageCreated", EmitDefaultValue=false)]
+        public int? TicketMessageCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TicketMessageUpdated
+        /// </summary>
+        [DataMember(Name="ticketMessageUpdated", EmitDefaultValue=false)]
+        public int? TicketMessageUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TicketMessageDeleted
+        /// </summary>
+        [DataMember(Name="ticketMessageDeleted", EmitDefaultValue=false)]
+        public int? TicketMessageDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets SubAccountsClosed
+        /// </summary>
+        [DataMember(Name="subAccountsClosed", EmitDefaultValue=false)]
+        public int? SubAccountsClosed { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UserInvited
+        /// </summary>
+        [DataMember(Name="userInvited", EmitDefaultValue=false)]
+        public int? UserInvited { get; set; }
+
+        /// <summary>
+        /// Gets or Sets FilteredViewCreated
+        /// </summary>
+        [DataMember(Name="filteredViewCreated", EmitDefaultValue=false)]
+        public int? FilteredViewCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets FilteredViewCountUpdated
+        /// </summary>
+        [DataMember(Name="filteredViewCountUpdated", EmitDefaultValue=false)]
+        public int? FilteredViewCountUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets FilteredViewDeleted
+        /// </summary>
+        [DataMember(Name="filteredViewDeleted", EmitDefaultValue=false)]
+        public int? FilteredViewDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ForwardingInboxWasVerified
+        /// </summary>
+        [DataMember(Name="forwardingInboxWasVerified", EmitDefaultValue=false)]
+        public int? ForwardingInboxWasVerified { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ForwardingInboxCheckWasFailed
+        /// </summary>
+        [DataMember(Name="forwardingInboxCheckWasFailed", EmitDefaultValue=false)]
+        public int? ForwardingInboxCheckWasFailed { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ForwardingInboxVerificationLinkWasParsed
+        /// </summary>
+        [DataMember(Name="forwardingInboxVerificationLinkWasParsed", EmitDefaultValue=false)]
+        public int? ForwardingInboxVerificationLinkWasParsed { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TendlcLinkNumberStatusUpdated
+        /// </summary>
+        [DataMember(Name="tendlcLinkNumberStatusUpdated", EmitDefaultValue=false)]
+        public int? TendlcLinkNumberStatusUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ChannelPresence
+        /// </summary>
+        [DataMember(Name="channelPresence", EmitDefaultValue=false)]
+        public int? ChannelPresence { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealCreated
+        /// </summary>
+        [DataMember(Name="dealCreated", EmitDefaultValue=false)]
+        public int? DealCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealUpdated
+        /// </summary>
+        [DataMember(Name="dealUpdated", EmitDefaultValue=false)]
+        public int? DealUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealDeleted
+        /// </summary>
+        [DataMember(Name="dealDeleted", EmitDefaultValue=false)]
+        public int? DealDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealMoved
+        /// </summary>
+        [DataMember(Name="dealMoved", EmitDefaultValue=false)]
+        public int? DealMoved { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealStageCreated
+        /// </summary>
+        [DataMember(Name="dealStageCreated", EmitDefaultValue=false)]
+        public int? DealStageCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealStageUpdated
+        /// </summary>
+        [DataMember(Name="dealStageUpdated", EmitDefaultValue=false)]
+        public int? DealStageUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealStageDeleted
+        /// </summary>
+        [DataMember(Name="dealStageDeleted", EmitDefaultValue=false)]
+        public int? DealStageDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealPipelineCreated
+        /// </summary>
+        [DataMember(Name="dealPipelineCreated", EmitDefaultValue=false)]
+        public int? DealPipelineCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealPipelineUpdated
+        /// </summary>
+        [DataMember(Name="dealPipelineUpdated", EmitDefaultValue=false)]
+        public int? DealPipelineUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealPipelineDeleted
+        /// </summary>
+        [DataMember(Name="dealPipelineDeleted", EmitDefaultValue=false)]
+        public int? DealPipelineDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealPipelineArchived
+        /// </summary>
+        [DataMember(Name="dealPipelineArchived", EmitDefaultValue=false)]
+        public int? DealPipelineArchived { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealPipelineReordered
+        /// </summary>
+        [DataMember(Name="dealPipelineReordered", EmitDefaultValue=false)]
+        public int? DealPipelineReordered { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealActivityUpdated
+        /// </summary>
+        [DataMember(Name="dealActivityUpdated", EmitDefaultValue=false)]
+        public int? DealActivityUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealActivityItemCreated
+        /// </summary>
+        [DataMember(Name="dealActivityItemCreated", EmitDefaultValue=false)]
+        public int? DealActivityItemCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealActivityItemUpdated
+        /// </summary>
+        [DataMember(Name="dealActivityItemUpdated", EmitDefaultValue=false)]
+        public int? DealActivityItemUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealActivityItemDeleted
+        /// </summary>
+        [DataMember(Name="dealActivityItemDeleted", EmitDefaultValue=false)]
+        public int? DealActivityItemDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealActivityItemBulkMarked
+        /// </summary>
+        [DataMember(Name="dealActivityItemBulkMarked", EmitDefaultValue=false)]
+        public int? DealActivityItemBulkMarked { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealTimelineItemDeleted
+        /// </summary>
+        [DataMember(Name="dealTimelineItemDeleted", EmitDefaultValue=false)]
+        public int? DealTimelineItemDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DealTimelineItemCreated
+        /// </summary>
+        [DataMember(Name="dealTimelineItemCreated", EmitDefaultValue=false)]
+        public int? DealTimelineItemCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets AIAssistantCreated
+        /// </summary>
+        [DataMember(Name="AIAssistantCreated", EmitDefaultValue=false)]
+        public int? AIAssistantCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets AIAssistantState
+        /// </summary>
+        [DataMember(Name="AIAssistantState", EmitDefaultValue=false)]
+        public int? AIAssistantState { get; set; }
+
+        /// <summary>
+        /// Gets or Sets AIAssistantDeleted
+        /// </summary>
+        [DataMember(Name="AIAssistantDeleted", EmitDefaultValue=false)]
+        public int? AIAssistantDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets AIAssistantLinkDeleted
+        /// </summary>
+        [DataMember(Name="AIAssistantLinkDeleted", EmitDefaultValue=false)]
+        public int? AIAssistantLinkDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets AIAssistantLinkState
+        /// </summary>
+        [DataMember(Name="AIAssistantLinkState", EmitDefaultValue=false)]
+        public int? AIAssistantLinkState { get; set; }
+
+        /// <summary>
+        /// Gets or Sets AIAssistantLinkCreated
+        /// </summary>
+        [DataMember(Name="AIAssistantLinkCreated", EmitDefaultValue=false)]
+        public int? AIAssistantLinkCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets AIAssistantSubLinkState
+        /// </summary>
+        [DataMember(Name="AIAssistantSubLinkState", EmitDefaultValue=false)]
+        public int? AIAssistantSubLinkState { get; set; }
+
+        /// <summary>
+        /// Gets or Sets AIAssistantSubLinkCreated
+        /// </summary>
+        [DataMember(Name="AIAssistantSubLinkCreated", EmitDefaultValue=false)]
+        public int? AIAssistantSubLinkCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignEmailSenderCreated
+        /// </summary>
+        [DataMember(Name="emailCampaignEmailSenderCreated", EmitDefaultValue=false)]
+        public int? EmailCampaignEmailSenderCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignEmailSenderUpdated
+        /// </summary>
+        [DataMember(Name="emailCampaignEmailSenderUpdated", EmitDefaultValue=false)]
+        public int? EmailCampaignEmailSenderUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignEmailSenderDeleted
+        /// </summary>
+        [DataMember(Name="emailCampaignEmailSenderDeleted", EmitDefaultValue=false)]
+        public int? EmailCampaignEmailSenderDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignDomainCreated
+        /// </summary>
+        [DataMember(Name="emailCampaignDomainCreated", EmitDefaultValue=false)]
+        public int? EmailCampaignDomainCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignDomainDeleted
+        /// </summary>
+        [DataMember(Name="emailCampaignDomainDeleted", EmitDefaultValue=false)]
+        public int? EmailCampaignDomainDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignDomainVerified
+        /// </summary>
+        [DataMember(Name="emailCampaignDomainVerified", EmitDefaultValue=false)]
+        public int? EmailCampaignDomainVerified { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignDomainStatusChanged
+        /// </summary>
+        [DataMember(Name="emailCampaignDomainStatusChanged", EmitDefaultValue=false)]
+        public int? EmailCampaignDomainStatusChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignDomainDkimVerified
+        /// </summary>
+        [DataMember(Name="emailCampaignDomainDkimVerified", EmitDefaultValue=false)]
+        public int? EmailCampaignDomainDkimVerified { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignDomainReturnPathVerified
+        /// </summary>
+        [DataMember(Name="emailCampaignDomainReturnPathVerified", EmitDefaultValue=false)]
+        public int? EmailCampaignDomainReturnPathVerified { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignDomainDmarcVerified
+        /// </summary>
+        [DataMember(Name="emailCampaignDomainDmarcVerified", EmitDefaultValue=false)]
+        public int? EmailCampaignDomainDmarcVerified { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignDomainEntryVerificationChanged
+        /// </summary>
+        [DataMember(Name="emailCampaignDomainEntryVerificationChanged", EmitDefaultValue=false)]
+        public int? EmailCampaignDomainEntryVerificationChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignProgressState
+        /// </summary>
+        [DataMember(Name="emailCampaignProgressState", EmitDefaultValue=false)]
+        public int? EmailCampaignProgressState { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignUpdated
+        /// </summary>
+        [DataMember(Name="emailCampaignUpdated", EmitDefaultValue=false)]
+        public int? EmailCampaignUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets SmsCampaignInvalidated
+        /// </summary>
+        [DataMember(Name="smsCampaignInvalidated", EmitDefaultValue=false)]
+        public int? SmsCampaignInvalidated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ScheduledEmailCampaignCreated
+        /// </summary>
+        [DataMember(Name="scheduledEmailCampaignCreated", EmitDefaultValue=false)]
+        public int? ScheduledEmailCampaignCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ScheduledEmailCampaignUpdated
+        /// </summary>
+        [DataMember(Name="scheduledEmailCampaignUpdated", EmitDefaultValue=false)]
+        public int? ScheduledEmailCampaignUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ScheduledEmailCampaignStatusUpdated
+        /// </summary>
+        [DataMember(Name="scheduledEmailCampaignStatusUpdated", EmitDefaultValue=false)]
+        public int? ScheduledEmailCampaignStatusUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ScheduledEmailCampaignDeleted
+        /// </summary>
+        [DataMember(Name="scheduledEmailCampaignDeleted", EmitDefaultValue=false)]
+        public int? ScheduledEmailCampaignDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignFailedAttemptCreated
+        /// </summary>
+        [DataMember(Name="emailCampaignFailedAttemptCreated", EmitDefaultValue=false)]
+        public int? EmailCampaignFailedAttemptCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignFailedAttemptDeleted
+        /// </summary>
+        [DataMember(Name="emailCampaignFailedAttemptDeleted", EmitDefaultValue=false)]
+        public int? EmailCampaignFailedAttemptDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailCampaignFailedAttemptStateUpdated
+        /// </summary>
+        [DataMember(Name="emailCampaignFailedAttemptStateUpdated", EmitDefaultValue=false)]
+        public int? EmailCampaignFailedAttemptStateUpdated { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -1046,11 +3030,13 @@ namespace TextMagicClient.Model
             sb.Append("  SystemExit: ").Append(SystemExit).Append("\n");
             sb.Append("  SystemAlert: ").Append(SystemAlert).Append("\n");
             sb.Append("  SystemAccountStateChanged: ").Append(SystemAccountStateChanged).Append("\n");
+            sb.Append("  SystemAccountAcceptTermsUpdate: ").Append(SystemAccountAcceptTermsUpdate).Append("\n");
             sb.Append("  SystemAccountClosed: ").Append(SystemAccountClosed).Append("\n");
             sb.Append("  SystemAccountAdditionalFields: ").Append(SystemAccountAdditionalFields).Append("\n");
             sb.Append("  SystemAccountPermissionsChanged: ").Append(SystemAccountPermissionsChanged).Append("\n");
             sb.Append("  UserProfileChanged: ").Append(UserProfileChanged).Append("\n");
             sb.Append("  UserBalanceChanged: ").Append(UserBalanceChanged).Append("\n");
+            sb.Append("  UserPresenceStatusChanged: ").Append(UserPresenceStatusChanged).Append("\n");
             sb.Append("  UserImpersonationEnd: ").Append(UserImpersonationEnd).Append("\n");
             sb.Append("  MessageDeleted: ").Append(MessageDeleted).Append("\n");
             sb.Append("  MessageIncoming: ").Append(MessageIncoming).Append("\n");
@@ -1059,6 +3045,10 @@ namespace TextMagicClient.Model
             sb.Append("  MessageBulkEnd: ").Append(MessageBulkEnd).Append("\n");
             sb.Append("  MessageWipeEnd: ").Append(MessageWipeEnd).Append("\n");
             sb.Append("  MessageSent: ").Append(MessageSent).Append("\n");
+            sb.Append("  MessageLog: ").Append(MessageLog).Append("\n");
+            sb.Append("  MessageNote: ").Append(MessageNote).Append("\n");
+            sb.Append("  MessageInitial: ").Append(MessageInitial).Append("\n");
+            sb.Append("  LastMessageSet: ").Append(LastMessageSet).Append("\n");
             sb.Append("  MessageSessionDeleted: ").Append(MessageSessionDeleted).Append("\n");
             sb.Append("  MessageCacheClear: ").Append(MessageCacheClear).Append("\n");
             sb.Append("  MessageIncomingCacheClear: ").Append(MessageIncomingCacheClear).Append("\n");
@@ -1078,15 +3068,31 @@ namespace TextMagicClient.Model
             sb.Append("  ChatDeleted: ").Append(ChatDeleted).Append("\n");
             sb.Append("  ChatClosed: ").Append(ChatClosed).Append("\n");
             sb.Append("  ChatReopened: ").Append(ChatReopened).Append("\n");
+            sb.Append("  ChatActivated: ").Append(ChatActivated).Append("\n");
             sb.Append("  ChatCacheClear: ").Append(ChatCacheClear).Append("\n");
             sb.Append("  ChatRead: ").Append(ChatRead).Append("\n");
             sb.Append("  ChatUnread: ").Append(ChatUnread).Append("\n");
+            sb.Append("  ChatAssigneeChanged: ").Append(ChatAssigneeChanged).Append("\n");
+            sb.Append("  ChatTagsChanged: ").Append(ChatTagsChanged).Append("\n");
+            sb.Append("  ChatConversationEnded: ").Append(ChatConversationEnded).Append("\n");
+            sb.Append("  ChatUpdated: ").Append(ChatUpdated).Append("\n");
+            sb.Append("  LiveChatAgentChanged: ").Append(LiveChatAgentChanged).Append("\n");
+            sb.Append("  LiveChatRated: ").Append(LiveChatRated).Append("\n");
+            sb.Append("  WebWidgetUpdated: ").Append(WebWidgetUpdated).Append("\n");
+            sb.Append("  WebWidgetDeleted: ").Append(WebWidgetDeleted).Append("\n");
             sb.Append("  ContactAdded: ").Append(ContactAdded).Append("\n");
             sb.Append("  ContactDeleted: ").Append(ContactDeleted).Append("\n");
+            sb.Append("  ContactBulkUpdated: ").Append(ContactBulkUpdated).Append("\n");
             sb.Append("  ContactStateChanged: ").Append(ContactStateChanged).Append("\n");
+            sb.Append("  ContactUnsubscribed: ").Append(ContactUnsubscribed).Append("\n");
+            sb.Append("  ContactResubscribed: ").Append(ContactResubscribed).Append("\n");
+            sb.Append("  ContactNoteAdded: ").Append(ContactNoteAdded).Append("\n");
+            sb.Append("  ContactNoteDeleted: ").Append(ContactNoteDeleted).Append("\n");
+            sb.Append("  ContactNoteStateChanged: ").Append(ContactNoteStateChanged).Append("\n");
             sb.Append("  ListAdded: ").Append(ListAdded).Append("\n");
             sb.Append("  ListDeleted: ").Append(ListDeleted).Append("\n");
             sb.Append("  ListStateChanged: ").Append(ListStateChanged).Append("\n");
+            sb.Append("  ListCountMembersUpdated: ").Append(ListCountMembersUpdated).Append("\n");
             sb.Append("  ContactWipeEnd: ").Append(ContactWipeEnd).Append("\n");
             sb.Append("  ContactImportEnd: ").Append(ContactImportEnd).Append("\n");
             sb.Append("  ContactCacheClear: ").Append(ContactCacheClear).Append("\n");
@@ -1095,7 +3101,7 @@ namespace TextMagicClient.Model
             sb.Append("  ProgressCarrierBulkLookup: ").Append(ProgressCarrierBulkLookup).Append("\n");
             sb.Append("  ProgressEmailBulkLookup: ").Append(ProgressEmailBulkLookup).Append("\n");
             sb.Append("  ProgressSubAccountBulkImport: ").Append(ProgressSubAccountBulkImport).Append("\n");
-            sb.Append("  ProgressContactBulkImport: ").Append(ProgressContactBulkImport).Append("\n");
+            sb.Append("  ImportProgressState: ").Append(ImportProgressState).Append("\n");
             sb.Append("  ForceRefreshWebApp: ").Append(ForceRefreshWebApp).Append("\n");
             sb.Append("  ChatSenderSettingsChanged: ").Append(ChatSenderSettingsChanged).Append("\n");
             sb.Append("  CountrySenderSettingsChanged: ").Append(CountrySenderSettingsChanged).Append("\n");
@@ -1104,6 +3110,108 @@ namespace TextMagicClient.Model
             sb.Append("  ChatSuggestedReplyChunk: ").Append(ChatSuggestedReplyChunk).Append("\n");
             sb.Append("  UserSubscriptionChanged: ").Append(UserSubscriptionChanged).Append("\n");
             sb.Append("  UserSubscriptionDeleted: ").Append(UserSubscriptionDeleted).Append("\n");
+            sb.Append("  TaskCreated: ").Append(TaskCreated).Append("\n");
+            sb.Append("  TaskUpdated: ").Append(TaskUpdated).Append("\n");
+            sb.Append("  TaskReordered: ").Append(TaskReordered).Append("\n");
+            sb.Append("  TaskDeleted: ").Append(TaskDeleted).Append("\n");
+            sb.Append("  TaskMovedAll: ").Append(TaskMovedAll).Append("\n");
+            sb.Append("  TaskStageCreated: ").Append(TaskStageCreated).Append("\n");
+            sb.Append("  TaskStageUpdated: ").Append(TaskStageUpdated).Append("\n");
+            sb.Append("  TaskStageDeleted: ").Append(TaskStageDeleted).Append("\n");
+            sb.Append("  TaskBoardCreated: ").Append(TaskBoardCreated).Append("\n");
+            sb.Append("  TaskBoardUpdated: ").Append(TaskBoardUpdated).Append("\n");
+            sb.Append("  TaskBoardReordered: ").Append(TaskBoardReordered).Append("\n");
+            sb.Append("  TaskBoardDeleted: ").Append(TaskBoardDeleted).Append("\n");
+            sb.Append("  TaskBoardArchived: ").Append(TaskBoardArchived).Append("\n");
+            sb.Append("  TaskChecklistCreated: ").Append(TaskChecklistCreated).Append("\n");
+            sb.Append("  TaskChecklistUpdated: ").Append(TaskChecklistUpdated).Append("\n");
+            sb.Append("  TaskChecklistDeleted: ").Append(TaskChecklistDeleted).Append("\n");
+            sb.Append("  TaskChecklistBulkMarked: ").Append(TaskChecklistBulkMarked).Append("\n");
+            sb.Append("  TaskChecklistItemCreated: ").Append(TaskChecklistItemCreated).Append("\n");
+            sb.Append("  TaskChecklistItemUpdated: ").Append(TaskChecklistItemUpdated).Append("\n");
+            sb.Append("  TaskChecklistItemDeleted: ").Append(TaskChecklistItemDeleted).Append("\n");
+            sb.Append("  TaskCommentCreated: ").Append(TaskCommentCreated).Append("\n");
+            sb.Append("  TaskCommentDeleted: ").Append(TaskCommentDeleted).Append("\n");
+            sb.Append("  PinnedContactAdded: ").Append(PinnedContactAdded).Append("\n");
+            sb.Append("  PinnedContactRemoved: ").Append(PinnedContactRemoved).Append("\n");
+            sb.Append("  PinnedContactReordered: ").Append(PinnedContactReordered).Append("\n");
+            sb.Append("  PinnedContactStateChanged: ").Append(PinnedContactStateChanged).Append("\n");
+            sb.Append("  WhatsappAccountAdded: ").Append(WhatsappAccountAdded).Append("\n");
+            sb.Append("  WhatsappAccountRemoved: ").Append(WhatsappAccountRemoved).Append("\n");
+            sb.Append("  WhatsappAccountChanged: ").Append(WhatsappAccountChanged).Append("\n");
+            sb.Append("  FacebookPageAdded: ").Append(FacebookPageAdded).Append("\n");
+            sb.Append("  FacebookPageRemoved: ").Append(FacebookPageRemoved).Append("\n");
+            sb.Append("  FacebookPageChanged: ").Append(FacebookPageChanged).Append("\n");
+            sb.Append("  InstagramAccountAdded: ").Append(InstagramAccountAdded).Append("\n");
+            sb.Append("  InstagramAccountRemoved: ").Append(InstagramAccountRemoved).Append("\n");
+            sb.Append("  InstagramAccountChanged: ").Append(InstagramAccountChanged).Append("\n");
+            sb.Append("  UnreadTicketsCountUpdated: ").Append(UnreadTicketsCountUpdated).Append("\n");
+            sb.Append("  TicketDeleted: ").Append(TicketDeleted).Append("\n");
+            sb.Append("  TicketUpdated: ").Append(TicketUpdated).Append("\n");
+            sb.Append("  TicketCreated: ").Append(TicketCreated).Append("\n");
+            sb.Append("  TicketBulkUpdated: ").Append(TicketBulkUpdated).Append("\n");
+            sb.Append("  TicketBulkDeleted: ").Append(TicketBulkDeleted).Append("\n");
+            sb.Append("  TicketMessageCreated: ").Append(TicketMessageCreated).Append("\n");
+            sb.Append("  TicketMessageUpdated: ").Append(TicketMessageUpdated).Append("\n");
+            sb.Append("  TicketMessageDeleted: ").Append(TicketMessageDeleted).Append("\n");
+            sb.Append("  SubAccountsClosed: ").Append(SubAccountsClosed).Append("\n");
+            sb.Append("  UserInvited: ").Append(UserInvited).Append("\n");
+            sb.Append("  FilteredViewCreated: ").Append(FilteredViewCreated).Append("\n");
+            sb.Append("  FilteredViewCountUpdated: ").Append(FilteredViewCountUpdated).Append("\n");
+            sb.Append("  FilteredViewDeleted: ").Append(FilteredViewDeleted).Append("\n");
+            sb.Append("  ForwardingInboxWasVerified: ").Append(ForwardingInboxWasVerified).Append("\n");
+            sb.Append("  ForwardingInboxCheckWasFailed: ").Append(ForwardingInboxCheckWasFailed).Append("\n");
+            sb.Append("  ForwardingInboxVerificationLinkWasParsed: ").Append(ForwardingInboxVerificationLinkWasParsed).Append("\n");
+            sb.Append("  TendlcLinkNumberStatusUpdated: ").Append(TendlcLinkNumberStatusUpdated).Append("\n");
+            sb.Append("  ChannelPresence: ").Append(ChannelPresence).Append("\n");
+            sb.Append("  DealCreated: ").Append(DealCreated).Append("\n");
+            sb.Append("  DealUpdated: ").Append(DealUpdated).Append("\n");
+            sb.Append("  DealDeleted: ").Append(DealDeleted).Append("\n");
+            sb.Append("  DealMoved: ").Append(DealMoved).Append("\n");
+            sb.Append("  DealStageCreated: ").Append(DealStageCreated).Append("\n");
+            sb.Append("  DealStageUpdated: ").Append(DealStageUpdated).Append("\n");
+            sb.Append("  DealStageDeleted: ").Append(DealStageDeleted).Append("\n");
+            sb.Append("  DealPipelineCreated: ").Append(DealPipelineCreated).Append("\n");
+            sb.Append("  DealPipelineUpdated: ").Append(DealPipelineUpdated).Append("\n");
+            sb.Append("  DealPipelineDeleted: ").Append(DealPipelineDeleted).Append("\n");
+            sb.Append("  DealPipelineArchived: ").Append(DealPipelineArchived).Append("\n");
+            sb.Append("  DealPipelineReordered: ").Append(DealPipelineReordered).Append("\n");
+            sb.Append("  DealActivityUpdated: ").Append(DealActivityUpdated).Append("\n");
+            sb.Append("  DealActivityItemCreated: ").Append(DealActivityItemCreated).Append("\n");
+            sb.Append("  DealActivityItemUpdated: ").Append(DealActivityItemUpdated).Append("\n");
+            sb.Append("  DealActivityItemDeleted: ").Append(DealActivityItemDeleted).Append("\n");
+            sb.Append("  DealActivityItemBulkMarked: ").Append(DealActivityItemBulkMarked).Append("\n");
+            sb.Append("  DealTimelineItemDeleted: ").Append(DealTimelineItemDeleted).Append("\n");
+            sb.Append("  DealTimelineItemCreated: ").Append(DealTimelineItemCreated).Append("\n");
+            sb.Append("  AIAssistantCreated: ").Append(AIAssistantCreated).Append("\n");
+            sb.Append("  AIAssistantState: ").Append(AIAssistantState).Append("\n");
+            sb.Append("  AIAssistantDeleted: ").Append(AIAssistantDeleted).Append("\n");
+            sb.Append("  AIAssistantLinkDeleted: ").Append(AIAssistantLinkDeleted).Append("\n");
+            sb.Append("  AIAssistantLinkState: ").Append(AIAssistantLinkState).Append("\n");
+            sb.Append("  AIAssistantLinkCreated: ").Append(AIAssistantLinkCreated).Append("\n");
+            sb.Append("  AIAssistantSubLinkState: ").Append(AIAssistantSubLinkState).Append("\n");
+            sb.Append("  AIAssistantSubLinkCreated: ").Append(AIAssistantSubLinkCreated).Append("\n");
+            sb.Append("  EmailCampaignEmailSenderCreated: ").Append(EmailCampaignEmailSenderCreated).Append("\n");
+            sb.Append("  EmailCampaignEmailSenderUpdated: ").Append(EmailCampaignEmailSenderUpdated).Append("\n");
+            sb.Append("  EmailCampaignEmailSenderDeleted: ").Append(EmailCampaignEmailSenderDeleted).Append("\n");
+            sb.Append("  EmailCampaignDomainCreated: ").Append(EmailCampaignDomainCreated).Append("\n");
+            sb.Append("  EmailCampaignDomainDeleted: ").Append(EmailCampaignDomainDeleted).Append("\n");
+            sb.Append("  EmailCampaignDomainVerified: ").Append(EmailCampaignDomainVerified).Append("\n");
+            sb.Append("  EmailCampaignDomainStatusChanged: ").Append(EmailCampaignDomainStatusChanged).Append("\n");
+            sb.Append("  EmailCampaignDomainDkimVerified: ").Append(EmailCampaignDomainDkimVerified).Append("\n");
+            sb.Append("  EmailCampaignDomainReturnPathVerified: ").Append(EmailCampaignDomainReturnPathVerified).Append("\n");
+            sb.Append("  EmailCampaignDomainDmarcVerified: ").Append(EmailCampaignDomainDmarcVerified).Append("\n");
+            sb.Append("  EmailCampaignDomainEntryVerificationChanged: ").Append(EmailCampaignDomainEntryVerificationChanged).Append("\n");
+            sb.Append("  EmailCampaignProgressState: ").Append(EmailCampaignProgressState).Append("\n");
+            sb.Append("  EmailCampaignUpdated: ").Append(EmailCampaignUpdated).Append("\n");
+            sb.Append("  SmsCampaignInvalidated: ").Append(SmsCampaignInvalidated).Append("\n");
+            sb.Append("  ScheduledEmailCampaignCreated: ").Append(ScheduledEmailCampaignCreated).Append("\n");
+            sb.Append("  ScheduledEmailCampaignUpdated: ").Append(ScheduledEmailCampaignUpdated).Append("\n");
+            sb.Append("  ScheduledEmailCampaignStatusUpdated: ").Append(ScheduledEmailCampaignStatusUpdated).Append("\n");
+            sb.Append("  ScheduledEmailCampaignDeleted: ").Append(ScheduledEmailCampaignDeleted).Append("\n");
+            sb.Append("  EmailCampaignFailedAttemptCreated: ").Append(EmailCampaignFailedAttemptCreated).Append("\n");
+            sb.Append("  EmailCampaignFailedAttemptDeleted: ").Append(EmailCampaignFailedAttemptDeleted).Append("\n");
+            sb.Append("  EmailCampaignFailedAttemptStateUpdated: ").Append(EmailCampaignFailedAttemptStateUpdated).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -1159,6 +3267,11 @@ namespace TextMagicClient.Model
                     this.SystemAccountStateChanged.Equals(input.SystemAccountStateChanged))
                 ) && 
                 (
+                    this.SystemAccountAcceptTermsUpdate == input.SystemAccountAcceptTermsUpdate ||
+                    (this.SystemAccountAcceptTermsUpdate != null &&
+                    this.SystemAccountAcceptTermsUpdate.Equals(input.SystemAccountAcceptTermsUpdate))
+                ) && 
+                (
                     this.SystemAccountClosed == input.SystemAccountClosed ||
                     (this.SystemAccountClosed != null &&
                     this.SystemAccountClosed.Equals(input.SystemAccountClosed))
@@ -1182,6 +3295,11 @@ namespace TextMagicClient.Model
                     this.UserBalanceChanged == input.UserBalanceChanged ||
                     (this.UserBalanceChanged != null &&
                     this.UserBalanceChanged.Equals(input.UserBalanceChanged))
+                ) && 
+                (
+                    this.UserPresenceStatusChanged == input.UserPresenceStatusChanged ||
+                    (this.UserPresenceStatusChanged != null &&
+                    this.UserPresenceStatusChanged.Equals(input.UserPresenceStatusChanged))
                 ) && 
                 (
                     this.UserImpersonationEnd == input.UserImpersonationEnd ||
@@ -1222,6 +3340,26 @@ namespace TextMagicClient.Model
                     this.MessageSent == input.MessageSent ||
                     (this.MessageSent != null &&
                     this.MessageSent.Equals(input.MessageSent))
+                ) && 
+                (
+                    this.MessageLog == input.MessageLog ||
+                    (this.MessageLog != null &&
+                    this.MessageLog.Equals(input.MessageLog))
+                ) && 
+                (
+                    this.MessageNote == input.MessageNote ||
+                    (this.MessageNote != null &&
+                    this.MessageNote.Equals(input.MessageNote))
+                ) && 
+                (
+                    this.MessageInitial == input.MessageInitial ||
+                    (this.MessageInitial != null &&
+                    this.MessageInitial.Equals(input.MessageInitial))
+                ) && 
+                (
+                    this.LastMessageSet == input.LastMessageSet ||
+                    (this.LastMessageSet != null &&
+                    this.LastMessageSet.Equals(input.LastMessageSet))
                 ) && 
                 (
                     this.MessageSessionDeleted == input.MessageSessionDeleted ||
@@ -1319,6 +3457,11 @@ namespace TextMagicClient.Model
                     this.ChatReopened.Equals(input.ChatReopened))
                 ) && 
                 (
+                    this.ChatActivated == input.ChatActivated ||
+                    (this.ChatActivated != null &&
+                    this.ChatActivated.Equals(input.ChatActivated))
+                ) && 
+                (
                     this.ChatCacheClear == input.ChatCacheClear ||
                     (this.ChatCacheClear != null &&
                     this.ChatCacheClear.Equals(input.ChatCacheClear))
@@ -1334,6 +3477,46 @@ namespace TextMagicClient.Model
                     this.ChatUnread.Equals(input.ChatUnread))
                 ) && 
                 (
+                    this.ChatAssigneeChanged == input.ChatAssigneeChanged ||
+                    (this.ChatAssigneeChanged != null &&
+                    this.ChatAssigneeChanged.Equals(input.ChatAssigneeChanged))
+                ) && 
+                (
+                    this.ChatTagsChanged == input.ChatTagsChanged ||
+                    (this.ChatTagsChanged != null &&
+                    this.ChatTagsChanged.Equals(input.ChatTagsChanged))
+                ) && 
+                (
+                    this.ChatConversationEnded == input.ChatConversationEnded ||
+                    (this.ChatConversationEnded != null &&
+                    this.ChatConversationEnded.Equals(input.ChatConversationEnded))
+                ) && 
+                (
+                    this.ChatUpdated == input.ChatUpdated ||
+                    (this.ChatUpdated != null &&
+                    this.ChatUpdated.Equals(input.ChatUpdated))
+                ) && 
+                (
+                    this.LiveChatAgentChanged == input.LiveChatAgentChanged ||
+                    (this.LiveChatAgentChanged != null &&
+                    this.LiveChatAgentChanged.Equals(input.LiveChatAgentChanged))
+                ) && 
+                (
+                    this.LiveChatRated == input.LiveChatRated ||
+                    (this.LiveChatRated != null &&
+                    this.LiveChatRated.Equals(input.LiveChatRated))
+                ) && 
+                (
+                    this.WebWidgetUpdated == input.WebWidgetUpdated ||
+                    (this.WebWidgetUpdated != null &&
+                    this.WebWidgetUpdated.Equals(input.WebWidgetUpdated))
+                ) && 
+                (
+                    this.WebWidgetDeleted == input.WebWidgetDeleted ||
+                    (this.WebWidgetDeleted != null &&
+                    this.WebWidgetDeleted.Equals(input.WebWidgetDeleted))
+                ) && 
+                (
                     this.ContactAdded == input.ContactAdded ||
                     (this.ContactAdded != null &&
                     this.ContactAdded.Equals(input.ContactAdded))
@@ -1344,9 +3527,39 @@ namespace TextMagicClient.Model
                     this.ContactDeleted.Equals(input.ContactDeleted))
                 ) && 
                 (
+                    this.ContactBulkUpdated == input.ContactBulkUpdated ||
+                    (this.ContactBulkUpdated != null &&
+                    this.ContactBulkUpdated.Equals(input.ContactBulkUpdated))
+                ) && 
+                (
                     this.ContactStateChanged == input.ContactStateChanged ||
                     (this.ContactStateChanged != null &&
                     this.ContactStateChanged.Equals(input.ContactStateChanged))
+                ) && 
+                (
+                    this.ContactUnsubscribed == input.ContactUnsubscribed ||
+                    (this.ContactUnsubscribed != null &&
+                    this.ContactUnsubscribed.Equals(input.ContactUnsubscribed))
+                ) && 
+                (
+                    this.ContactResubscribed == input.ContactResubscribed ||
+                    (this.ContactResubscribed != null &&
+                    this.ContactResubscribed.Equals(input.ContactResubscribed))
+                ) && 
+                (
+                    this.ContactNoteAdded == input.ContactNoteAdded ||
+                    (this.ContactNoteAdded != null &&
+                    this.ContactNoteAdded.Equals(input.ContactNoteAdded))
+                ) && 
+                (
+                    this.ContactNoteDeleted == input.ContactNoteDeleted ||
+                    (this.ContactNoteDeleted != null &&
+                    this.ContactNoteDeleted.Equals(input.ContactNoteDeleted))
+                ) && 
+                (
+                    this.ContactNoteStateChanged == input.ContactNoteStateChanged ||
+                    (this.ContactNoteStateChanged != null &&
+                    this.ContactNoteStateChanged.Equals(input.ContactNoteStateChanged))
                 ) && 
                 (
                     this.ListAdded == input.ListAdded ||
@@ -1362,6 +3575,11 @@ namespace TextMagicClient.Model
                     this.ListStateChanged == input.ListStateChanged ||
                     (this.ListStateChanged != null &&
                     this.ListStateChanged.Equals(input.ListStateChanged))
+                ) && 
+                (
+                    this.ListCountMembersUpdated == input.ListCountMembersUpdated ||
+                    (this.ListCountMembersUpdated != null &&
+                    this.ListCountMembersUpdated.Equals(input.ListCountMembersUpdated))
                 ) && 
                 (
                     this.ContactWipeEnd == input.ContactWipeEnd ||
@@ -1404,9 +3622,9 @@ namespace TextMagicClient.Model
                     this.ProgressSubAccountBulkImport.Equals(input.ProgressSubAccountBulkImport))
                 ) && 
                 (
-                    this.ProgressContactBulkImport == input.ProgressContactBulkImport ||
-                    (this.ProgressContactBulkImport != null &&
-                    this.ProgressContactBulkImport.Equals(input.ProgressContactBulkImport))
+                    this.ImportProgressState == input.ImportProgressState ||
+                    (this.ImportProgressState != null &&
+                    this.ImportProgressState.Equals(input.ImportProgressState))
                 ) && 
                 (
                     this.ForceRefreshWebApp == input.ForceRefreshWebApp ||
@@ -1447,6 +3665,516 @@ namespace TextMagicClient.Model
                     this.UserSubscriptionDeleted == input.UserSubscriptionDeleted ||
                     (this.UserSubscriptionDeleted != null &&
                     this.UserSubscriptionDeleted.Equals(input.UserSubscriptionDeleted))
+                ) && 
+                (
+                    this.TaskCreated == input.TaskCreated ||
+                    (this.TaskCreated != null &&
+                    this.TaskCreated.Equals(input.TaskCreated))
+                ) && 
+                (
+                    this.TaskUpdated == input.TaskUpdated ||
+                    (this.TaskUpdated != null &&
+                    this.TaskUpdated.Equals(input.TaskUpdated))
+                ) && 
+                (
+                    this.TaskReordered == input.TaskReordered ||
+                    (this.TaskReordered != null &&
+                    this.TaskReordered.Equals(input.TaskReordered))
+                ) && 
+                (
+                    this.TaskDeleted == input.TaskDeleted ||
+                    (this.TaskDeleted != null &&
+                    this.TaskDeleted.Equals(input.TaskDeleted))
+                ) && 
+                (
+                    this.TaskMovedAll == input.TaskMovedAll ||
+                    (this.TaskMovedAll != null &&
+                    this.TaskMovedAll.Equals(input.TaskMovedAll))
+                ) && 
+                (
+                    this.TaskStageCreated == input.TaskStageCreated ||
+                    (this.TaskStageCreated != null &&
+                    this.TaskStageCreated.Equals(input.TaskStageCreated))
+                ) && 
+                (
+                    this.TaskStageUpdated == input.TaskStageUpdated ||
+                    (this.TaskStageUpdated != null &&
+                    this.TaskStageUpdated.Equals(input.TaskStageUpdated))
+                ) && 
+                (
+                    this.TaskStageDeleted == input.TaskStageDeleted ||
+                    (this.TaskStageDeleted != null &&
+                    this.TaskStageDeleted.Equals(input.TaskStageDeleted))
+                ) && 
+                (
+                    this.TaskBoardCreated == input.TaskBoardCreated ||
+                    (this.TaskBoardCreated != null &&
+                    this.TaskBoardCreated.Equals(input.TaskBoardCreated))
+                ) && 
+                (
+                    this.TaskBoardUpdated == input.TaskBoardUpdated ||
+                    (this.TaskBoardUpdated != null &&
+                    this.TaskBoardUpdated.Equals(input.TaskBoardUpdated))
+                ) && 
+                (
+                    this.TaskBoardReordered == input.TaskBoardReordered ||
+                    (this.TaskBoardReordered != null &&
+                    this.TaskBoardReordered.Equals(input.TaskBoardReordered))
+                ) && 
+                (
+                    this.TaskBoardDeleted == input.TaskBoardDeleted ||
+                    (this.TaskBoardDeleted != null &&
+                    this.TaskBoardDeleted.Equals(input.TaskBoardDeleted))
+                ) && 
+                (
+                    this.TaskBoardArchived == input.TaskBoardArchived ||
+                    (this.TaskBoardArchived != null &&
+                    this.TaskBoardArchived.Equals(input.TaskBoardArchived))
+                ) && 
+                (
+                    this.TaskChecklistCreated == input.TaskChecklistCreated ||
+                    (this.TaskChecklistCreated != null &&
+                    this.TaskChecklistCreated.Equals(input.TaskChecklistCreated))
+                ) && 
+                (
+                    this.TaskChecklistUpdated == input.TaskChecklistUpdated ||
+                    (this.TaskChecklistUpdated != null &&
+                    this.TaskChecklistUpdated.Equals(input.TaskChecklistUpdated))
+                ) && 
+                (
+                    this.TaskChecklistDeleted == input.TaskChecklistDeleted ||
+                    (this.TaskChecklistDeleted != null &&
+                    this.TaskChecklistDeleted.Equals(input.TaskChecklistDeleted))
+                ) && 
+                (
+                    this.TaskChecklistBulkMarked == input.TaskChecklistBulkMarked ||
+                    (this.TaskChecklistBulkMarked != null &&
+                    this.TaskChecklistBulkMarked.Equals(input.TaskChecklistBulkMarked))
+                ) && 
+                (
+                    this.TaskChecklistItemCreated == input.TaskChecklistItemCreated ||
+                    (this.TaskChecklistItemCreated != null &&
+                    this.TaskChecklistItemCreated.Equals(input.TaskChecklistItemCreated))
+                ) && 
+                (
+                    this.TaskChecklistItemUpdated == input.TaskChecklistItemUpdated ||
+                    (this.TaskChecklistItemUpdated != null &&
+                    this.TaskChecklistItemUpdated.Equals(input.TaskChecklistItemUpdated))
+                ) && 
+                (
+                    this.TaskChecklistItemDeleted == input.TaskChecklistItemDeleted ||
+                    (this.TaskChecklistItemDeleted != null &&
+                    this.TaskChecklistItemDeleted.Equals(input.TaskChecklistItemDeleted))
+                ) && 
+                (
+                    this.TaskCommentCreated == input.TaskCommentCreated ||
+                    (this.TaskCommentCreated != null &&
+                    this.TaskCommentCreated.Equals(input.TaskCommentCreated))
+                ) && 
+                (
+                    this.TaskCommentDeleted == input.TaskCommentDeleted ||
+                    (this.TaskCommentDeleted != null &&
+                    this.TaskCommentDeleted.Equals(input.TaskCommentDeleted))
+                ) && 
+                (
+                    this.PinnedContactAdded == input.PinnedContactAdded ||
+                    (this.PinnedContactAdded != null &&
+                    this.PinnedContactAdded.Equals(input.PinnedContactAdded))
+                ) && 
+                (
+                    this.PinnedContactRemoved == input.PinnedContactRemoved ||
+                    (this.PinnedContactRemoved != null &&
+                    this.PinnedContactRemoved.Equals(input.PinnedContactRemoved))
+                ) && 
+                (
+                    this.PinnedContactReordered == input.PinnedContactReordered ||
+                    (this.PinnedContactReordered != null &&
+                    this.PinnedContactReordered.Equals(input.PinnedContactReordered))
+                ) && 
+                (
+                    this.PinnedContactStateChanged == input.PinnedContactStateChanged ||
+                    (this.PinnedContactStateChanged != null &&
+                    this.PinnedContactStateChanged.Equals(input.PinnedContactStateChanged))
+                ) && 
+                (
+                    this.WhatsappAccountAdded == input.WhatsappAccountAdded ||
+                    (this.WhatsappAccountAdded != null &&
+                    this.WhatsappAccountAdded.Equals(input.WhatsappAccountAdded))
+                ) && 
+                (
+                    this.WhatsappAccountRemoved == input.WhatsappAccountRemoved ||
+                    (this.WhatsappAccountRemoved != null &&
+                    this.WhatsappAccountRemoved.Equals(input.WhatsappAccountRemoved))
+                ) && 
+                (
+                    this.WhatsappAccountChanged == input.WhatsappAccountChanged ||
+                    (this.WhatsappAccountChanged != null &&
+                    this.WhatsappAccountChanged.Equals(input.WhatsappAccountChanged))
+                ) && 
+                (
+                    this.FacebookPageAdded == input.FacebookPageAdded ||
+                    (this.FacebookPageAdded != null &&
+                    this.FacebookPageAdded.Equals(input.FacebookPageAdded))
+                ) && 
+                (
+                    this.FacebookPageRemoved == input.FacebookPageRemoved ||
+                    (this.FacebookPageRemoved != null &&
+                    this.FacebookPageRemoved.Equals(input.FacebookPageRemoved))
+                ) && 
+                (
+                    this.FacebookPageChanged == input.FacebookPageChanged ||
+                    (this.FacebookPageChanged != null &&
+                    this.FacebookPageChanged.Equals(input.FacebookPageChanged))
+                ) && 
+                (
+                    this.InstagramAccountAdded == input.InstagramAccountAdded ||
+                    (this.InstagramAccountAdded != null &&
+                    this.InstagramAccountAdded.Equals(input.InstagramAccountAdded))
+                ) && 
+                (
+                    this.InstagramAccountRemoved == input.InstagramAccountRemoved ||
+                    (this.InstagramAccountRemoved != null &&
+                    this.InstagramAccountRemoved.Equals(input.InstagramAccountRemoved))
+                ) && 
+                (
+                    this.InstagramAccountChanged == input.InstagramAccountChanged ||
+                    (this.InstagramAccountChanged != null &&
+                    this.InstagramAccountChanged.Equals(input.InstagramAccountChanged))
+                ) && 
+                (
+                    this.UnreadTicketsCountUpdated == input.UnreadTicketsCountUpdated ||
+                    (this.UnreadTicketsCountUpdated != null &&
+                    this.UnreadTicketsCountUpdated.Equals(input.UnreadTicketsCountUpdated))
+                ) && 
+                (
+                    this.TicketDeleted == input.TicketDeleted ||
+                    (this.TicketDeleted != null &&
+                    this.TicketDeleted.Equals(input.TicketDeleted))
+                ) && 
+                (
+                    this.TicketUpdated == input.TicketUpdated ||
+                    (this.TicketUpdated != null &&
+                    this.TicketUpdated.Equals(input.TicketUpdated))
+                ) && 
+                (
+                    this.TicketCreated == input.TicketCreated ||
+                    (this.TicketCreated != null &&
+                    this.TicketCreated.Equals(input.TicketCreated))
+                ) && 
+                (
+                    this.TicketBulkUpdated == input.TicketBulkUpdated ||
+                    (this.TicketBulkUpdated != null &&
+                    this.TicketBulkUpdated.Equals(input.TicketBulkUpdated))
+                ) && 
+                (
+                    this.TicketBulkDeleted == input.TicketBulkDeleted ||
+                    (this.TicketBulkDeleted != null &&
+                    this.TicketBulkDeleted.Equals(input.TicketBulkDeleted))
+                ) && 
+                (
+                    this.TicketMessageCreated == input.TicketMessageCreated ||
+                    (this.TicketMessageCreated != null &&
+                    this.TicketMessageCreated.Equals(input.TicketMessageCreated))
+                ) && 
+                (
+                    this.TicketMessageUpdated == input.TicketMessageUpdated ||
+                    (this.TicketMessageUpdated != null &&
+                    this.TicketMessageUpdated.Equals(input.TicketMessageUpdated))
+                ) && 
+                (
+                    this.TicketMessageDeleted == input.TicketMessageDeleted ||
+                    (this.TicketMessageDeleted != null &&
+                    this.TicketMessageDeleted.Equals(input.TicketMessageDeleted))
+                ) && 
+                (
+                    this.SubAccountsClosed == input.SubAccountsClosed ||
+                    (this.SubAccountsClosed != null &&
+                    this.SubAccountsClosed.Equals(input.SubAccountsClosed))
+                ) && 
+                (
+                    this.UserInvited == input.UserInvited ||
+                    (this.UserInvited != null &&
+                    this.UserInvited.Equals(input.UserInvited))
+                ) && 
+                (
+                    this.FilteredViewCreated == input.FilteredViewCreated ||
+                    (this.FilteredViewCreated != null &&
+                    this.FilteredViewCreated.Equals(input.FilteredViewCreated))
+                ) && 
+                (
+                    this.FilteredViewCountUpdated == input.FilteredViewCountUpdated ||
+                    (this.FilteredViewCountUpdated != null &&
+                    this.FilteredViewCountUpdated.Equals(input.FilteredViewCountUpdated))
+                ) && 
+                (
+                    this.FilteredViewDeleted == input.FilteredViewDeleted ||
+                    (this.FilteredViewDeleted != null &&
+                    this.FilteredViewDeleted.Equals(input.FilteredViewDeleted))
+                ) && 
+                (
+                    this.ForwardingInboxWasVerified == input.ForwardingInboxWasVerified ||
+                    (this.ForwardingInboxWasVerified != null &&
+                    this.ForwardingInboxWasVerified.Equals(input.ForwardingInboxWasVerified))
+                ) && 
+                (
+                    this.ForwardingInboxCheckWasFailed == input.ForwardingInboxCheckWasFailed ||
+                    (this.ForwardingInboxCheckWasFailed != null &&
+                    this.ForwardingInboxCheckWasFailed.Equals(input.ForwardingInboxCheckWasFailed))
+                ) && 
+                (
+                    this.ForwardingInboxVerificationLinkWasParsed == input.ForwardingInboxVerificationLinkWasParsed ||
+                    (this.ForwardingInboxVerificationLinkWasParsed != null &&
+                    this.ForwardingInboxVerificationLinkWasParsed.Equals(input.ForwardingInboxVerificationLinkWasParsed))
+                ) && 
+                (
+                    this.TendlcLinkNumberStatusUpdated == input.TendlcLinkNumberStatusUpdated ||
+                    (this.TendlcLinkNumberStatusUpdated != null &&
+                    this.TendlcLinkNumberStatusUpdated.Equals(input.TendlcLinkNumberStatusUpdated))
+                ) && 
+                (
+                    this.ChannelPresence == input.ChannelPresence ||
+                    (this.ChannelPresence != null &&
+                    this.ChannelPresence.Equals(input.ChannelPresence))
+                ) && 
+                (
+                    this.DealCreated == input.DealCreated ||
+                    (this.DealCreated != null &&
+                    this.DealCreated.Equals(input.DealCreated))
+                ) && 
+                (
+                    this.DealUpdated == input.DealUpdated ||
+                    (this.DealUpdated != null &&
+                    this.DealUpdated.Equals(input.DealUpdated))
+                ) && 
+                (
+                    this.DealDeleted == input.DealDeleted ||
+                    (this.DealDeleted != null &&
+                    this.DealDeleted.Equals(input.DealDeleted))
+                ) && 
+                (
+                    this.DealMoved == input.DealMoved ||
+                    (this.DealMoved != null &&
+                    this.DealMoved.Equals(input.DealMoved))
+                ) && 
+                (
+                    this.DealStageCreated == input.DealStageCreated ||
+                    (this.DealStageCreated != null &&
+                    this.DealStageCreated.Equals(input.DealStageCreated))
+                ) && 
+                (
+                    this.DealStageUpdated == input.DealStageUpdated ||
+                    (this.DealStageUpdated != null &&
+                    this.DealStageUpdated.Equals(input.DealStageUpdated))
+                ) && 
+                (
+                    this.DealStageDeleted == input.DealStageDeleted ||
+                    (this.DealStageDeleted != null &&
+                    this.DealStageDeleted.Equals(input.DealStageDeleted))
+                ) && 
+                (
+                    this.DealPipelineCreated == input.DealPipelineCreated ||
+                    (this.DealPipelineCreated != null &&
+                    this.DealPipelineCreated.Equals(input.DealPipelineCreated))
+                ) && 
+                (
+                    this.DealPipelineUpdated == input.DealPipelineUpdated ||
+                    (this.DealPipelineUpdated != null &&
+                    this.DealPipelineUpdated.Equals(input.DealPipelineUpdated))
+                ) && 
+                (
+                    this.DealPipelineDeleted == input.DealPipelineDeleted ||
+                    (this.DealPipelineDeleted != null &&
+                    this.DealPipelineDeleted.Equals(input.DealPipelineDeleted))
+                ) && 
+                (
+                    this.DealPipelineArchived == input.DealPipelineArchived ||
+                    (this.DealPipelineArchived != null &&
+                    this.DealPipelineArchived.Equals(input.DealPipelineArchived))
+                ) && 
+                (
+                    this.DealPipelineReordered == input.DealPipelineReordered ||
+                    (this.DealPipelineReordered != null &&
+                    this.DealPipelineReordered.Equals(input.DealPipelineReordered))
+                ) && 
+                (
+                    this.DealActivityUpdated == input.DealActivityUpdated ||
+                    (this.DealActivityUpdated != null &&
+                    this.DealActivityUpdated.Equals(input.DealActivityUpdated))
+                ) && 
+                (
+                    this.DealActivityItemCreated == input.DealActivityItemCreated ||
+                    (this.DealActivityItemCreated != null &&
+                    this.DealActivityItemCreated.Equals(input.DealActivityItemCreated))
+                ) && 
+                (
+                    this.DealActivityItemUpdated == input.DealActivityItemUpdated ||
+                    (this.DealActivityItemUpdated != null &&
+                    this.DealActivityItemUpdated.Equals(input.DealActivityItemUpdated))
+                ) && 
+                (
+                    this.DealActivityItemDeleted == input.DealActivityItemDeleted ||
+                    (this.DealActivityItemDeleted != null &&
+                    this.DealActivityItemDeleted.Equals(input.DealActivityItemDeleted))
+                ) && 
+                (
+                    this.DealActivityItemBulkMarked == input.DealActivityItemBulkMarked ||
+                    (this.DealActivityItemBulkMarked != null &&
+                    this.DealActivityItemBulkMarked.Equals(input.DealActivityItemBulkMarked))
+                ) && 
+                (
+                    this.DealTimelineItemDeleted == input.DealTimelineItemDeleted ||
+                    (this.DealTimelineItemDeleted != null &&
+                    this.DealTimelineItemDeleted.Equals(input.DealTimelineItemDeleted))
+                ) && 
+                (
+                    this.DealTimelineItemCreated == input.DealTimelineItemCreated ||
+                    (this.DealTimelineItemCreated != null &&
+                    this.DealTimelineItemCreated.Equals(input.DealTimelineItemCreated))
+                ) && 
+                (
+                    this.AIAssistantCreated == input.AIAssistantCreated ||
+                    (this.AIAssistantCreated != null &&
+                    this.AIAssistantCreated.Equals(input.AIAssistantCreated))
+                ) && 
+                (
+                    this.AIAssistantState == input.AIAssistantState ||
+                    (this.AIAssistantState != null &&
+                    this.AIAssistantState.Equals(input.AIAssistantState))
+                ) && 
+                (
+                    this.AIAssistantDeleted == input.AIAssistantDeleted ||
+                    (this.AIAssistantDeleted != null &&
+                    this.AIAssistantDeleted.Equals(input.AIAssistantDeleted))
+                ) && 
+                (
+                    this.AIAssistantLinkDeleted == input.AIAssistantLinkDeleted ||
+                    (this.AIAssistantLinkDeleted != null &&
+                    this.AIAssistantLinkDeleted.Equals(input.AIAssistantLinkDeleted))
+                ) && 
+                (
+                    this.AIAssistantLinkState == input.AIAssistantLinkState ||
+                    (this.AIAssistantLinkState != null &&
+                    this.AIAssistantLinkState.Equals(input.AIAssistantLinkState))
+                ) && 
+                (
+                    this.AIAssistantLinkCreated == input.AIAssistantLinkCreated ||
+                    (this.AIAssistantLinkCreated != null &&
+                    this.AIAssistantLinkCreated.Equals(input.AIAssistantLinkCreated))
+                ) && 
+                (
+                    this.AIAssistantSubLinkState == input.AIAssistantSubLinkState ||
+                    (this.AIAssistantSubLinkState != null &&
+                    this.AIAssistantSubLinkState.Equals(input.AIAssistantSubLinkState))
+                ) && 
+                (
+                    this.AIAssistantSubLinkCreated == input.AIAssistantSubLinkCreated ||
+                    (this.AIAssistantSubLinkCreated != null &&
+                    this.AIAssistantSubLinkCreated.Equals(input.AIAssistantSubLinkCreated))
+                ) && 
+                (
+                    this.EmailCampaignEmailSenderCreated == input.EmailCampaignEmailSenderCreated ||
+                    (this.EmailCampaignEmailSenderCreated != null &&
+                    this.EmailCampaignEmailSenderCreated.Equals(input.EmailCampaignEmailSenderCreated))
+                ) && 
+                (
+                    this.EmailCampaignEmailSenderUpdated == input.EmailCampaignEmailSenderUpdated ||
+                    (this.EmailCampaignEmailSenderUpdated != null &&
+                    this.EmailCampaignEmailSenderUpdated.Equals(input.EmailCampaignEmailSenderUpdated))
+                ) && 
+                (
+                    this.EmailCampaignEmailSenderDeleted == input.EmailCampaignEmailSenderDeleted ||
+                    (this.EmailCampaignEmailSenderDeleted != null &&
+                    this.EmailCampaignEmailSenderDeleted.Equals(input.EmailCampaignEmailSenderDeleted))
+                ) && 
+                (
+                    this.EmailCampaignDomainCreated == input.EmailCampaignDomainCreated ||
+                    (this.EmailCampaignDomainCreated != null &&
+                    this.EmailCampaignDomainCreated.Equals(input.EmailCampaignDomainCreated))
+                ) && 
+                (
+                    this.EmailCampaignDomainDeleted == input.EmailCampaignDomainDeleted ||
+                    (this.EmailCampaignDomainDeleted != null &&
+                    this.EmailCampaignDomainDeleted.Equals(input.EmailCampaignDomainDeleted))
+                ) && 
+                (
+                    this.EmailCampaignDomainVerified == input.EmailCampaignDomainVerified ||
+                    (this.EmailCampaignDomainVerified != null &&
+                    this.EmailCampaignDomainVerified.Equals(input.EmailCampaignDomainVerified))
+                ) && 
+                (
+                    this.EmailCampaignDomainStatusChanged == input.EmailCampaignDomainStatusChanged ||
+                    (this.EmailCampaignDomainStatusChanged != null &&
+                    this.EmailCampaignDomainStatusChanged.Equals(input.EmailCampaignDomainStatusChanged))
+                ) && 
+                (
+                    this.EmailCampaignDomainDkimVerified == input.EmailCampaignDomainDkimVerified ||
+                    (this.EmailCampaignDomainDkimVerified != null &&
+                    this.EmailCampaignDomainDkimVerified.Equals(input.EmailCampaignDomainDkimVerified))
+                ) && 
+                (
+                    this.EmailCampaignDomainReturnPathVerified == input.EmailCampaignDomainReturnPathVerified ||
+                    (this.EmailCampaignDomainReturnPathVerified != null &&
+                    this.EmailCampaignDomainReturnPathVerified.Equals(input.EmailCampaignDomainReturnPathVerified))
+                ) && 
+                (
+                    this.EmailCampaignDomainDmarcVerified == input.EmailCampaignDomainDmarcVerified ||
+                    (this.EmailCampaignDomainDmarcVerified != null &&
+                    this.EmailCampaignDomainDmarcVerified.Equals(input.EmailCampaignDomainDmarcVerified))
+                ) && 
+                (
+                    this.EmailCampaignDomainEntryVerificationChanged == input.EmailCampaignDomainEntryVerificationChanged ||
+                    (this.EmailCampaignDomainEntryVerificationChanged != null &&
+                    this.EmailCampaignDomainEntryVerificationChanged.Equals(input.EmailCampaignDomainEntryVerificationChanged))
+                ) && 
+                (
+                    this.EmailCampaignProgressState == input.EmailCampaignProgressState ||
+                    (this.EmailCampaignProgressState != null &&
+                    this.EmailCampaignProgressState.Equals(input.EmailCampaignProgressState))
+                ) && 
+                (
+                    this.EmailCampaignUpdated == input.EmailCampaignUpdated ||
+                    (this.EmailCampaignUpdated != null &&
+                    this.EmailCampaignUpdated.Equals(input.EmailCampaignUpdated))
+                ) && 
+                (
+                    this.SmsCampaignInvalidated == input.SmsCampaignInvalidated ||
+                    (this.SmsCampaignInvalidated != null &&
+                    this.SmsCampaignInvalidated.Equals(input.SmsCampaignInvalidated))
+                ) && 
+                (
+                    this.ScheduledEmailCampaignCreated == input.ScheduledEmailCampaignCreated ||
+                    (this.ScheduledEmailCampaignCreated != null &&
+                    this.ScheduledEmailCampaignCreated.Equals(input.ScheduledEmailCampaignCreated))
+                ) && 
+                (
+                    this.ScheduledEmailCampaignUpdated == input.ScheduledEmailCampaignUpdated ||
+                    (this.ScheduledEmailCampaignUpdated != null &&
+                    this.ScheduledEmailCampaignUpdated.Equals(input.ScheduledEmailCampaignUpdated))
+                ) && 
+                (
+                    this.ScheduledEmailCampaignStatusUpdated == input.ScheduledEmailCampaignStatusUpdated ||
+                    (this.ScheduledEmailCampaignStatusUpdated != null &&
+                    this.ScheduledEmailCampaignStatusUpdated.Equals(input.ScheduledEmailCampaignStatusUpdated))
+                ) && 
+                (
+                    this.ScheduledEmailCampaignDeleted == input.ScheduledEmailCampaignDeleted ||
+                    (this.ScheduledEmailCampaignDeleted != null &&
+                    this.ScheduledEmailCampaignDeleted.Equals(input.ScheduledEmailCampaignDeleted))
+                ) && 
+                (
+                    this.EmailCampaignFailedAttemptCreated == input.EmailCampaignFailedAttemptCreated ||
+                    (this.EmailCampaignFailedAttemptCreated != null &&
+                    this.EmailCampaignFailedAttemptCreated.Equals(input.EmailCampaignFailedAttemptCreated))
+                ) && 
+                (
+                    this.EmailCampaignFailedAttemptDeleted == input.EmailCampaignFailedAttemptDeleted ||
+                    (this.EmailCampaignFailedAttemptDeleted != null &&
+                    this.EmailCampaignFailedAttemptDeleted.Equals(input.EmailCampaignFailedAttemptDeleted))
+                ) && 
+                (
+                    this.EmailCampaignFailedAttemptStateUpdated == input.EmailCampaignFailedAttemptStateUpdated ||
+                    (this.EmailCampaignFailedAttemptStateUpdated != null &&
+                    this.EmailCampaignFailedAttemptStateUpdated.Equals(input.EmailCampaignFailedAttemptStateUpdated))
                 );
         }
 
@@ -1467,6 +4195,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.SystemAlert.GetHashCode();
                 if (this.SystemAccountStateChanged != null)
                     hashCode = hashCode * 59 + this.SystemAccountStateChanged.GetHashCode();
+                if (this.SystemAccountAcceptTermsUpdate != null)
+                    hashCode = hashCode * 59 + this.SystemAccountAcceptTermsUpdate.GetHashCode();
                 if (this.SystemAccountClosed != null)
                     hashCode = hashCode * 59 + this.SystemAccountClosed.GetHashCode();
                 if (this.SystemAccountAdditionalFields != null)
@@ -1477,6 +4207,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.UserProfileChanged.GetHashCode();
                 if (this.UserBalanceChanged != null)
                     hashCode = hashCode * 59 + this.UserBalanceChanged.GetHashCode();
+                if (this.UserPresenceStatusChanged != null)
+                    hashCode = hashCode * 59 + this.UserPresenceStatusChanged.GetHashCode();
                 if (this.UserImpersonationEnd != null)
                     hashCode = hashCode * 59 + this.UserImpersonationEnd.GetHashCode();
                 if (this.MessageDeleted != null)
@@ -1493,6 +4225,14 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.MessageWipeEnd.GetHashCode();
                 if (this.MessageSent != null)
                     hashCode = hashCode * 59 + this.MessageSent.GetHashCode();
+                if (this.MessageLog != null)
+                    hashCode = hashCode * 59 + this.MessageLog.GetHashCode();
+                if (this.MessageNote != null)
+                    hashCode = hashCode * 59 + this.MessageNote.GetHashCode();
+                if (this.MessageInitial != null)
+                    hashCode = hashCode * 59 + this.MessageInitial.GetHashCode();
+                if (this.LastMessageSet != null)
+                    hashCode = hashCode * 59 + this.LastMessageSet.GetHashCode();
                 if (this.MessageSessionDeleted != null)
                     hashCode = hashCode * 59 + this.MessageSessionDeleted.GetHashCode();
                 if (this.MessageCacheClear != null)
@@ -1531,24 +4271,56 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.ChatClosed.GetHashCode();
                 if (this.ChatReopened != null)
                     hashCode = hashCode * 59 + this.ChatReopened.GetHashCode();
+                if (this.ChatActivated != null)
+                    hashCode = hashCode * 59 + this.ChatActivated.GetHashCode();
                 if (this.ChatCacheClear != null)
                     hashCode = hashCode * 59 + this.ChatCacheClear.GetHashCode();
                 if (this.ChatRead != null)
                     hashCode = hashCode * 59 + this.ChatRead.GetHashCode();
                 if (this.ChatUnread != null)
                     hashCode = hashCode * 59 + this.ChatUnread.GetHashCode();
+                if (this.ChatAssigneeChanged != null)
+                    hashCode = hashCode * 59 + this.ChatAssigneeChanged.GetHashCode();
+                if (this.ChatTagsChanged != null)
+                    hashCode = hashCode * 59 + this.ChatTagsChanged.GetHashCode();
+                if (this.ChatConversationEnded != null)
+                    hashCode = hashCode * 59 + this.ChatConversationEnded.GetHashCode();
+                if (this.ChatUpdated != null)
+                    hashCode = hashCode * 59 + this.ChatUpdated.GetHashCode();
+                if (this.LiveChatAgentChanged != null)
+                    hashCode = hashCode * 59 + this.LiveChatAgentChanged.GetHashCode();
+                if (this.LiveChatRated != null)
+                    hashCode = hashCode * 59 + this.LiveChatRated.GetHashCode();
+                if (this.WebWidgetUpdated != null)
+                    hashCode = hashCode * 59 + this.WebWidgetUpdated.GetHashCode();
+                if (this.WebWidgetDeleted != null)
+                    hashCode = hashCode * 59 + this.WebWidgetDeleted.GetHashCode();
                 if (this.ContactAdded != null)
                     hashCode = hashCode * 59 + this.ContactAdded.GetHashCode();
                 if (this.ContactDeleted != null)
                     hashCode = hashCode * 59 + this.ContactDeleted.GetHashCode();
+                if (this.ContactBulkUpdated != null)
+                    hashCode = hashCode * 59 + this.ContactBulkUpdated.GetHashCode();
                 if (this.ContactStateChanged != null)
                     hashCode = hashCode * 59 + this.ContactStateChanged.GetHashCode();
+                if (this.ContactUnsubscribed != null)
+                    hashCode = hashCode * 59 + this.ContactUnsubscribed.GetHashCode();
+                if (this.ContactResubscribed != null)
+                    hashCode = hashCode * 59 + this.ContactResubscribed.GetHashCode();
+                if (this.ContactNoteAdded != null)
+                    hashCode = hashCode * 59 + this.ContactNoteAdded.GetHashCode();
+                if (this.ContactNoteDeleted != null)
+                    hashCode = hashCode * 59 + this.ContactNoteDeleted.GetHashCode();
+                if (this.ContactNoteStateChanged != null)
+                    hashCode = hashCode * 59 + this.ContactNoteStateChanged.GetHashCode();
                 if (this.ListAdded != null)
                     hashCode = hashCode * 59 + this.ListAdded.GetHashCode();
                 if (this.ListDeleted != null)
                     hashCode = hashCode * 59 + this.ListDeleted.GetHashCode();
                 if (this.ListStateChanged != null)
                     hashCode = hashCode * 59 + this.ListStateChanged.GetHashCode();
+                if (this.ListCountMembersUpdated != null)
+                    hashCode = hashCode * 59 + this.ListCountMembersUpdated.GetHashCode();
                 if (this.ContactWipeEnd != null)
                     hashCode = hashCode * 59 + this.ContactWipeEnd.GetHashCode();
                 if (this.ContactImportEnd != null)
@@ -1565,8 +4337,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.ProgressEmailBulkLookup.GetHashCode();
                 if (this.ProgressSubAccountBulkImport != null)
                     hashCode = hashCode * 59 + this.ProgressSubAccountBulkImport.GetHashCode();
-                if (this.ProgressContactBulkImport != null)
-                    hashCode = hashCode * 59 + this.ProgressContactBulkImport.GetHashCode();
+                if (this.ImportProgressState != null)
+                    hashCode = hashCode * 59 + this.ImportProgressState.GetHashCode();
                 if (this.ForceRefreshWebApp != null)
                     hashCode = hashCode * 59 + this.ForceRefreshWebApp.GetHashCode();
                 if (this.ChatSenderSettingsChanged != null)
@@ -1583,6 +4355,210 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.UserSubscriptionChanged.GetHashCode();
                 if (this.UserSubscriptionDeleted != null)
                     hashCode = hashCode * 59 + this.UserSubscriptionDeleted.GetHashCode();
+                if (this.TaskCreated != null)
+                    hashCode = hashCode * 59 + this.TaskCreated.GetHashCode();
+                if (this.TaskUpdated != null)
+                    hashCode = hashCode * 59 + this.TaskUpdated.GetHashCode();
+                if (this.TaskReordered != null)
+                    hashCode = hashCode * 59 + this.TaskReordered.GetHashCode();
+                if (this.TaskDeleted != null)
+                    hashCode = hashCode * 59 + this.TaskDeleted.GetHashCode();
+                if (this.TaskMovedAll != null)
+                    hashCode = hashCode * 59 + this.TaskMovedAll.GetHashCode();
+                if (this.TaskStageCreated != null)
+                    hashCode = hashCode * 59 + this.TaskStageCreated.GetHashCode();
+                if (this.TaskStageUpdated != null)
+                    hashCode = hashCode * 59 + this.TaskStageUpdated.GetHashCode();
+                if (this.TaskStageDeleted != null)
+                    hashCode = hashCode * 59 + this.TaskStageDeleted.GetHashCode();
+                if (this.TaskBoardCreated != null)
+                    hashCode = hashCode * 59 + this.TaskBoardCreated.GetHashCode();
+                if (this.TaskBoardUpdated != null)
+                    hashCode = hashCode * 59 + this.TaskBoardUpdated.GetHashCode();
+                if (this.TaskBoardReordered != null)
+                    hashCode = hashCode * 59 + this.TaskBoardReordered.GetHashCode();
+                if (this.TaskBoardDeleted != null)
+                    hashCode = hashCode * 59 + this.TaskBoardDeleted.GetHashCode();
+                if (this.TaskBoardArchived != null)
+                    hashCode = hashCode * 59 + this.TaskBoardArchived.GetHashCode();
+                if (this.TaskChecklistCreated != null)
+                    hashCode = hashCode * 59 + this.TaskChecklistCreated.GetHashCode();
+                if (this.TaskChecklistUpdated != null)
+                    hashCode = hashCode * 59 + this.TaskChecklistUpdated.GetHashCode();
+                if (this.TaskChecklistDeleted != null)
+                    hashCode = hashCode * 59 + this.TaskChecklistDeleted.GetHashCode();
+                if (this.TaskChecklistBulkMarked != null)
+                    hashCode = hashCode * 59 + this.TaskChecklistBulkMarked.GetHashCode();
+                if (this.TaskChecklistItemCreated != null)
+                    hashCode = hashCode * 59 + this.TaskChecklistItemCreated.GetHashCode();
+                if (this.TaskChecklistItemUpdated != null)
+                    hashCode = hashCode * 59 + this.TaskChecklistItemUpdated.GetHashCode();
+                if (this.TaskChecklistItemDeleted != null)
+                    hashCode = hashCode * 59 + this.TaskChecklistItemDeleted.GetHashCode();
+                if (this.TaskCommentCreated != null)
+                    hashCode = hashCode * 59 + this.TaskCommentCreated.GetHashCode();
+                if (this.TaskCommentDeleted != null)
+                    hashCode = hashCode * 59 + this.TaskCommentDeleted.GetHashCode();
+                if (this.PinnedContactAdded != null)
+                    hashCode = hashCode * 59 + this.PinnedContactAdded.GetHashCode();
+                if (this.PinnedContactRemoved != null)
+                    hashCode = hashCode * 59 + this.PinnedContactRemoved.GetHashCode();
+                if (this.PinnedContactReordered != null)
+                    hashCode = hashCode * 59 + this.PinnedContactReordered.GetHashCode();
+                if (this.PinnedContactStateChanged != null)
+                    hashCode = hashCode * 59 + this.PinnedContactStateChanged.GetHashCode();
+                if (this.WhatsappAccountAdded != null)
+                    hashCode = hashCode * 59 + this.WhatsappAccountAdded.GetHashCode();
+                if (this.WhatsappAccountRemoved != null)
+                    hashCode = hashCode * 59 + this.WhatsappAccountRemoved.GetHashCode();
+                if (this.WhatsappAccountChanged != null)
+                    hashCode = hashCode * 59 + this.WhatsappAccountChanged.GetHashCode();
+                if (this.FacebookPageAdded != null)
+                    hashCode = hashCode * 59 + this.FacebookPageAdded.GetHashCode();
+                if (this.FacebookPageRemoved != null)
+                    hashCode = hashCode * 59 + this.FacebookPageRemoved.GetHashCode();
+                if (this.FacebookPageChanged != null)
+                    hashCode = hashCode * 59 + this.FacebookPageChanged.GetHashCode();
+                if (this.InstagramAccountAdded != null)
+                    hashCode = hashCode * 59 + this.InstagramAccountAdded.GetHashCode();
+                if (this.InstagramAccountRemoved != null)
+                    hashCode = hashCode * 59 + this.InstagramAccountRemoved.GetHashCode();
+                if (this.InstagramAccountChanged != null)
+                    hashCode = hashCode * 59 + this.InstagramAccountChanged.GetHashCode();
+                if (this.UnreadTicketsCountUpdated != null)
+                    hashCode = hashCode * 59 + this.UnreadTicketsCountUpdated.GetHashCode();
+                if (this.TicketDeleted != null)
+                    hashCode = hashCode * 59 + this.TicketDeleted.GetHashCode();
+                if (this.TicketUpdated != null)
+                    hashCode = hashCode * 59 + this.TicketUpdated.GetHashCode();
+                if (this.TicketCreated != null)
+                    hashCode = hashCode * 59 + this.TicketCreated.GetHashCode();
+                if (this.TicketBulkUpdated != null)
+                    hashCode = hashCode * 59 + this.TicketBulkUpdated.GetHashCode();
+                if (this.TicketBulkDeleted != null)
+                    hashCode = hashCode * 59 + this.TicketBulkDeleted.GetHashCode();
+                if (this.TicketMessageCreated != null)
+                    hashCode = hashCode * 59 + this.TicketMessageCreated.GetHashCode();
+                if (this.TicketMessageUpdated != null)
+                    hashCode = hashCode * 59 + this.TicketMessageUpdated.GetHashCode();
+                if (this.TicketMessageDeleted != null)
+                    hashCode = hashCode * 59 + this.TicketMessageDeleted.GetHashCode();
+                if (this.SubAccountsClosed != null)
+                    hashCode = hashCode * 59 + this.SubAccountsClosed.GetHashCode();
+                if (this.UserInvited != null)
+                    hashCode = hashCode * 59 + this.UserInvited.GetHashCode();
+                if (this.FilteredViewCreated != null)
+                    hashCode = hashCode * 59 + this.FilteredViewCreated.GetHashCode();
+                if (this.FilteredViewCountUpdated != null)
+                    hashCode = hashCode * 59 + this.FilteredViewCountUpdated.GetHashCode();
+                if (this.FilteredViewDeleted != null)
+                    hashCode = hashCode * 59 + this.FilteredViewDeleted.GetHashCode();
+                if (this.ForwardingInboxWasVerified != null)
+                    hashCode = hashCode * 59 + this.ForwardingInboxWasVerified.GetHashCode();
+                if (this.ForwardingInboxCheckWasFailed != null)
+                    hashCode = hashCode * 59 + this.ForwardingInboxCheckWasFailed.GetHashCode();
+                if (this.ForwardingInboxVerificationLinkWasParsed != null)
+                    hashCode = hashCode * 59 + this.ForwardingInboxVerificationLinkWasParsed.GetHashCode();
+                if (this.TendlcLinkNumberStatusUpdated != null)
+                    hashCode = hashCode * 59 + this.TendlcLinkNumberStatusUpdated.GetHashCode();
+                if (this.ChannelPresence != null)
+                    hashCode = hashCode * 59 + this.ChannelPresence.GetHashCode();
+                if (this.DealCreated != null)
+                    hashCode = hashCode * 59 + this.DealCreated.GetHashCode();
+                if (this.DealUpdated != null)
+                    hashCode = hashCode * 59 + this.DealUpdated.GetHashCode();
+                if (this.DealDeleted != null)
+                    hashCode = hashCode * 59 + this.DealDeleted.GetHashCode();
+                if (this.DealMoved != null)
+                    hashCode = hashCode * 59 + this.DealMoved.GetHashCode();
+                if (this.DealStageCreated != null)
+                    hashCode = hashCode * 59 + this.DealStageCreated.GetHashCode();
+                if (this.DealStageUpdated != null)
+                    hashCode = hashCode * 59 + this.DealStageUpdated.GetHashCode();
+                if (this.DealStageDeleted != null)
+                    hashCode = hashCode * 59 + this.DealStageDeleted.GetHashCode();
+                if (this.DealPipelineCreated != null)
+                    hashCode = hashCode * 59 + this.DealPipelineCreated.GetHashCode();
+                if (this.DealPipelineUpdated != null)
+                    hashCode = hashCode * 59 + this.DealPipelineUpdated.GetHashCode();
+                if (this.DealPipelineDeleted != null)
+                    hashCode = hashCode * 59 + this.DealPipelineDeleted.GetHashCode();
+                if (this.DealPipelineArchived != null)
+                    hashCode = hashCode * 59 + this.DealPipelineArchived.GetHashCode();
+                if (this.DealPipelineReordered != null)
+                    hashCode = hashCode * 59 + this.DealPipelineReordered.GetHashCode();
+                if (this.DealActivityUpdated != null)
+                    hashCode = hashCode * 59 + this.DealActivityUpdated.GetHashCode();
+                if (this.DealActivityItemCreated != null)
+                    hashCode = hashCode * 59 + this.DealActivityItemCreated.GetHashCode();
+                if (this.DealActivityItemUpdated != null)
+                    hashCode = hashCode * 59 + this.DealActivityItemUpdated.GetHashCode();
+                if (this.DealActivityItemDeleted != null)
+                    hashCode = hashCode * 59 + this.DealActivityItemDeleted.GetHashCode();
+                if (this.DealActivityItemBulkMarked != null)
+                    hashCode = hashCode * 59 + this.DealActivityItemBulkMarked.GetHashCode();
+                if (this.DealTimelineItemDeleted != null)
+                    hashCode = hashCode * 59 + this.DealTimelineItemDeleted.GetHashCode();
+                if (this.DealTimelineItemCreated != null)
+                    hashCode = hashCode * 59 + this.DealTimelineItemCreated.GetHashCode();
+                if (this.AIAssistantCreated != null)
+                    hashCode = hashCode * 59 + this.AIAssistantCreated.GetHashCode();
+                if (this.AIAssistantState != null)
+                    hashCode = hashCode * 59 + this.AIAssistantState.GetHashCode();
+                if (this.AIAssistantDeleted != null)
+                    hashCode = hashCode * 59 + this.AIAssistantDeleted.GetHashCode();
+                if (this.AIAssistantLinkDeleted != null)
+                    hashCode = hashCode * 59 + this.AIAssistantLinkDeleted.GetHashCode();
+                if (this.AIAssistantLinkState != null)
+                    hashCode = hashCode * 59 + this.AIAssistantLinkState.GetHashCode();
+                if (this.AIAssistantLinkCreated != null)
+                    hashCode = hashCode * 59 + this.AIAssistantLinkCreated.GetHashCode();
+                if (this.AIAssistantSubLinkState != null)
+                    hashCode = hashCode * 59 + this.AIAssistantSubLinkState.GetHashCode();
+                if (this.AIAssistantSubLinkCreated != null)
+                    hashCode = hashCode * 59 + this.AIAssistantSubLinkCreated.GetHashCode();
+                if (this.EmailCampaignEmailSenderCreated != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignEmailSenderCreated.GetHashCode();
+                if (this.EmailCampaignEmailSenderUpdated != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignEmailSenderUpdated.GetHashCode();
+                if (this.EmailCampaignEmailSenderDeleted != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignEmailSenderDeleted.GetHashCode();
+                if (this.EmailCampaignDomainCreated != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignDomainCreated.GetHashCode();
+                if (this.EmailCampaignDomainDeleted != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignDomainDeleted.GetHashCode();
+                if (this.EmailCampaignDomainVerified != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignDomainVerified.GetHashCode();
+                if (this.EmailCampaignDomainStatusChanged != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignDomainStatusChanged.GetHashCode();
+                if (this.EmailCampaignDomainDkimVerified != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignDomainDkimVerified.GetHashCode();
+                if (this.EmailCampaignDomainReturnPathVerified != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignDomainReturnPathVerified.GetHashCode();
+                if (this.EmailCampaignDomainDmarcVerified != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignDomainDmarcVerified.GetHashCode();
+                if (this.EmailCampaignDomainEntryVerificationChanged != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignDomainEntryVerificationChanged.GetHashCode();
+                if (this.EmailCampaignProgressState != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignProgressState.GetHashCode();
+                if (this.EmailCampaignUpdated != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignUpdated.GetHashCode();
+                if (this.SmsCampaignInvalidated != null)
+                    hashCode = hashCode * 59 + this.SmsCampaignInvalidated.GetHashCode();
+                if (this.ScheduledEmailCampaignCreated != null)
+                    hashCode = hashCode * 59 + this.ScheduledEmailCampaignCreated.GetHashCode();
+                if (this.ScheduledEmailCampaignUpdated != null)
+                    hashCode = hashCode * 59 + this.ScheduledEmailCampaignUpdated.GetHashCode();
+                if (this.ScheduledEmailCampaignStatusUpdated != null)
+                    hashCode = hashCode * 59 + this.ScheduledEmailCampaignStatusUpdated.GetHashCode();
+                if (this.ScheduledEmailCampaignDeleted != null)
+                    hashCode = hashCode * 59 + this.ScheduledEmailCampaignDeleted.GetHashCode();
+                if (this.EmailCampaignFailedAttemptCreated != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignFailedAttemptCreated.GetHashCode();
+                if (this.EmailCampaignFailedAttemptDeleted != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignFailedAttemptDeleted.GetHashCode();
+                if (this.EmailCampaignFailedAttemptStateUpdated != null)
+                    hashCode = hashCode * 59 + this.EmailCampaignFailedAttemptStateUpdated.GetHashCode();
                 return hashCode;
             }
         }

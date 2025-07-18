@@ -31,9 +31,9 @@ namespace TextMagicClient.Model
     public partial class DoEmailLookupResponse :  IEquatable<DoEmailLookupResponse>, IValidatableObject
     {
         /// <summary>
-        /// The email is &#x60;valid&#x60; or &#x60;invalid&#x60;.
+        /// The email is &#x60;valid&#x60; or &#x60;invalid&#x60;.
         /// </summary>
-        /// <value>The email is &#x60;valid&#x60; or &#x60;invalid&#x60;.</value>
+        /// <value>The email is &#x60;valid&#x60; or &#x60;invalid&#x60;.</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StatusEnum
         {
@@ -52,15 +52,15 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// The email is &#x60;valid&#x60; or &#x60;invalid&#x60;.
+        /// The email is &#x60;valid&#x60; or &#x60;invalid&#x60;.
         /// </summary>
-        /// <value>The email is &#x60;valid&#x60; or &#x60;invalid&#x60;.</value>
+        /// <value>The email is &#x60;valid&#x60; or &#x60;invalid&#x60;.</value>
         [DataMember(Name="status", EmitDefaultValue=false)]
         public StatusEnum Status { get; set; }
         /// <summary>
-        /// The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;.
+        /// The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;.
         /// </summary>
-        /// <value>The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;.</value>
+        /// <value>The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;.</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum RiskEnum
         {
@@ -91,15 +91,15 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;.
+        /// The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;.
         /// </summary>
-        /// <value>The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;.</value>
+        /// <value>The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;.</value>
         [DataMember(Name="risk", EmitDefaultValue=false)]
         public RiskEnum Risk { get; set; }
         /// <summary>
-        /// The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;.
+        /// The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;.
         /// </summary>
-        /// <value>The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;.</value>
+        /// <value>The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;.</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum AddressTypeEnum
         {
@@ -118,9 +118,9 @@ namespace TextMagicClient.Model
         }
 
         /// <summary>
-        /// The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;.
+        /// The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;.
         /// </summary>
-        /// <value>The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;.</value>
+        /// <value>The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;.</value>
         [DataMember(Name="addressType", EmitDefaultValue=false)]
         public AddressTypeEnum AddressType { get; set; }
         /// <summary>
@@ -132,12 +132,12 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="DoEmailLookupResponse" /> class.
         /// </summary>
         /// <param name="address">The email address passed to the call. (required).</param>
-        /// <param name="status">The email is &#x60;valid&#x60; or &#x60;invalid&#x60;. (required).</param>
-        /// <param name="deliverability">The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;. or &#x60;unknown&#x60;. (required).</param>
+        /// <param name="status">The email is &#x60;valid&#x60; or &#x60;invalid&#x60;. (required).</param>
+        /// <param name="deliverability">The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;. or &#x60;unknown&#x60;. (required).</param>
         /// <param name="reason">The reason why the checked email is invalid/undeliverable. (required).</param>
-        /// <param name="risk">The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;. (required).</param>
-        /// <param name="addressType">The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;. (required).</param>
-        /// <param name="isDisposableAddress">This is &#x60;true&#x60; if the domain is in the list of disposable email addresses; otherwise, it returns as &#x60;false&#x60;. (required).</param>
+        /// <param name="risk">The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;. (required).</param>
+        /// <param name="addressType">The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;. (required).</param>
+        /// <param name="isDisposableAddress">This is &#x60;true&#x60; if the domain is in the list of disposable email addresses; otherwise, it returns as &#x60;false&#x60;. (required).</param>
         /// <param name="suggestion">Null if nothing is suggested; however, if there is a potential typo in the email address, the closest suggestion is provided. (required).</param>
         /// <param name="emailRole">Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’). (required).</param>
         /// <param name="localPart">The local part of the email address. (required).</param>
@@ -324,9 +324,9 @@ namespace TextMagicClient.Model
 
 
         /// <summary>
-        /// The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;. or &#x60;unknown&#x60;.
+        /// The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;. or &#x60;unknown&#x60;.
         /// </summary>
-        /// <value>The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;. or &#x60;unknown&#x60;.</value>
+        /// <value>The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;. or &#x60;unknown&#x60;.</value>
         [DataMember(Name="deliverability", EmitDefaultValue=false)]
         public string Deliverability { get; set; }
 
@@ -340,9 +340,9 @@ namespace TextMagicClient.Model
 
 
         /// <summary>
-        /// This is &#x60;true&#x60; if the domain is in the list of disposable email addresses; otherwise, it returns as &#x60;false&#x60;.
+        /// This is &#x60;true&#x60; if the domain is in the list of disposable email addresses; otherwise, it returns as &#x60;false&#x60;.
         /// </summary>
-        /// <value>This is &#x60;true&#x60; if the domain is in the list of disposable email addresses; otherwise, it returns as &#x60;false&#x60;.</value>
+        /// <value>This is &#x60;true&#x60; if the domain is in the list of disposable email addresses; otherwise, it returns as &#x60;false&#x60;.</value>
         [DataMember(Name="isDisposableAddress", EmitDefaultValue=false)]
         public bool? IsDisposableAddress { get; set; }
 

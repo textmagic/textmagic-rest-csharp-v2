@@ -154,6 +154,78 @@ namespace TextMagicClient.Test
         {
             // TODO unit test for the property 'InitiatorId'
         }
+        /// <summary>
+        /// Test the property 'MessageFileId'
+        /// </summary>
+        [Test]
+        public void MessageFileIdTest()
+        {
+            // TODO unit test for the property 'MessageFileId'
+        }
+        /// <summary>
+        /// Test the property 'Type'
+        /// </summary>
+        [Test]
+        public void TypeTest()
+        {
+            // TODO unit test for the property 'Type'
+        }
+        /// <summary>
+        /// Test the property 'ChatType'
+        /// </summary>
+        [Test]
+        public void ChatTypeTest()
+        {
+            // TODO unit test for the property 'ChatType'
+        }
+        /// <summary>
+        /// Test the property 'ChatId'
+        /// </summary>
+        [Test]
+        public void ChatIdTest()
+        {
+            // TODO unit test for the property 'ChatId'
+        }
+        /// <summary>
+        /// Test the property 'IsEdited'
+        /// </summary>
+        [Test]
+        public void IsEditedTest()
+        {
+            // TODO unit test for the property 'IsEdited'
+        }
+        /// <summary>
+        /// Test the property 'ErrorCode'
+        /// </summary>
+        [Test]
+        public void ErrorCodeTest()
+        {
+            // TODO unit test for the property 'ErrorCode'
+        }
+        /// <summary>
+        /// Test the property 'Files'
+        /// </summary>
+        [Test]
+        public void FilesTest()
+        {
+            // TODO unit test for the property 'Files'
+        }
+        /// <summary>
+        /// Test the property 'Payload'
+        /// </summary>
+        [Test]
+        public void PayloadTest()
+        {
+            // TODO unit test for the property 'Payload'
+        }
+        /// <summary>
+        /// Test the property 'Avatar'
+        /// </summary>
+        [Test]
+        public void AvatarTest()
+        {
+            // TODO unit test for the property 'Avatar'
+        }
 
     }
 

@@ -14,6 +14,15 @@ Name | Type | Description | Notes
 **LastName** | **string** | Contact last name. | 
 **SessionId** | **int?** | Session ID of a message. See [message sessions](https://docs.textmagic.com/#tag/Outbound-Message-Sessions) for details. | 
 **InitiatorId** | **int?** | Initiator ID of a message. See [message sessions](https://docs.textmagic.com/#tag/Outbound-Message-Sessions) for details. | [optional] 
+**MessageFileId** | **int?** | Message file id. | [optional] 
+**Type** | **string** | Message type. | [optional] 
+**ChatType** | **string** | Chat type. | [optional] 
+**ChatId** | **int?** | Chat id. | [optional] 
+**IsEdited** | **bool?** |  | [optional] 
+**ErrorCode** | **string** | Error code. | [optional] 
+**Files** | **List&lt;System.IO.Stream&gt;** |  | [optional] 
+**Payload** | [**MessagePayload**](MessagePayload.md) |  | [optional] 
+**Avatar** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

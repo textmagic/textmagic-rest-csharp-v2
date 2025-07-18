@@ -41,7 +41,8 @@ namespace TextMagicClient.Model
         /// <param name="contacts">contacts (required).</param>
         /// <param name="groups">groups (required).</param>
         /// <param name="numbers">numbers (required).</param>
-        public MessagesIcsParametersRecipients(List<int?> contacts = default(List<int?>), List<int?> groups = default(List<int?>), List<string> numbers = default(List<string>))
+        /// <param name="filteredViews">filteredViews (required).</param>
+        public MessagesIcsParametersRecipients(List<int?> contacts = default(List<int?>), List<int?> groups = default(List<int?>), List<string> numbers = default(List<string>), List<int?> filteredViews = default(List<int?>))
         {
             // to ensure "contacts" is required (not null)
             if (contacts == null)
@@ -70,6 +71,15 @@ namespace TextMagicClient.Model
             {
                 this.Numbers = numbers;
             }
+            // to ensure "filteredViews" is required (not null)
+            if (filteredViews == null)
+            {
+                throw new InvalidDataException("filteredViews is a required property for MessagesIcsParametersRecipients and cannot be null");
+            }
+            else
+            {
+                this.FilteredViews = filteredViews;
+            }
         }
         
         /// <summary>
@@ -91,6 +101,12 @@ namespace TextMagicClient.Model
         public List<string> Numbers { get; set; }
 
         /// <summary>
+        /// Gets or Sets FilteredViews
+        /// </summary>
+        [DataMember(Name="filteredViews", EmitDefaultValue=false)]
+        public List<int?> FilteredViews { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -101,6 +117,7 @@ namespace TextMagicClient.Model
             sb.Append("  Contacts: ").Append(Contacts).Append("\n");
             sb.Append("  Groups: ").Append(Groups).Append("\n");
             sb.Append("  Numbers: ").Append(Numbers).Append("\n");
+            sb.Append("  FilteredViews: ").Append(FilteredViews).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -149,6 +166,11 @@ namespace TextMagicClient.Model
                     this.Numbers == input.Numbers ||
                     this.Numbers != null &&
                     this.Numbers.SequenceEqual(input.Numbers)
+                ) && 
+                (
+                    this.FilteredViews == input.FilteredViews ||
+                    this.FilteredViews != null &&
+                    this.FilteredViews.SequenceEqual(input.FilteredViews)
                 );
         }
 
@@ -167,6 +189,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.Groups.GetHashCode();
                 if (this.Numbers != null)
                     hashCode = hashCode * 59 + this.Numbers.GetHashCode();
+                if (this.FilteredViews != null)
+                    hashCode = hashCode * 59 + this.FilteredViews.GetHashCode();
                 return hashCode;
             }
         }

@@ -75,12 +75,36 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'Id'
         }
         /// <summary>
+        /// Test the property 'UserCustomFieldId'
+        /// </summary>
+        [Test]
+        public void UserCustomFieldIdTest()
+        {
+            // TODO unit test for the property 'UserCustomFieldId'
+        }
+        /// <summary>
+        /// Test the property 'Name'
+        /// </summary>
+        [Test]
+        public void NameTest()
+        {
+            // TODO unit test for the property 'Name'
+        }
+        /// <summary>
         /// Test the property 'Value'
         /// </summary>
         [Test]
         public void ValueTest()
         {
             // TODO unit test for the property 'Value'
+        }
+        /// <summary>
+        /// Test the property 'CreatedAt'
+        /// </summary>
+        [Test]
+        public void CreatedAtTest()
+        {
+            // TODO unit test for the property 'CreatedAt'
         }
 
     }

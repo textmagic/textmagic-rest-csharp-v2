@@ -44,7 +44,10 @@ namespace TextMagicClient.Model
         /// <param name="senderIds">Array of alphanumeric sender IDs. (required).</param>
         /// <param name="userCarrierTwilio">Array of alphanumeric sender IDs. (required).</param>
         /// <param name="userCarrierVonage">Array of alphanumeric sender IDs. (required).</param>
-        public GetAvailableSenderSettingOptionsResponse(List<string> dedicated = default(List<string>), List<string> user = default(List<string>), List<string> shared = default(List<string>), List<string> senderIds = default(List<string>), List<string> userCarrierTwilio = default(List<string>), List<string> userCarrierVonage = default(List<string>))
+        /// <param name="userCarrierSinch">Array of alphanumeric sender IDs. (required).</param>
+        /// <param name="uCarrierBandwidth">Array of alphanumeric sender IDs..</param>
+        /// <param name="ucTwilioSenderId">Array of alphanumeric sender IDs..</param>
+        public GetAvailableSenderSettingOptionsResponse(List<string> dedicated = default(List<string>), List<string> user = default(List<string>), List<string> shared = default(List<string>), List<string> senderIds = default(List<string>), List<string> userCarrierTwilio = default(List<string>), List<string> userCarrierVonage = default(List<string>), List<string> userCarrierSinch = default(List<string>), List<string> uCarrierBandwidth = default(List<string>), List<string> ucTwilioSenderId = default(List<string>))
         {
             // to ensure "dedicated" is required (not null)
             if (dedicated == null)
@@ -100,6 +103,17 @@ namespace TextMagicClient.Model
             {
                 this.UserCarrierVonage = userCarrierVonage;
             }
+            // to ensure "userCarrierSinch" is required (not null)
+            if (userCarrierSinch == null)
+            {
+                throw new InvalidDataException("userCarrierSinch is a required property for GetAvailableSenderSettingOptionsResponse and cannot be null");
+            }
+            else
+            {
+                this.UserCarrierSinch = userCarrierSinch;
+            }
+            this.UCarrierBandwidth = uCarrierBandwidth;
+            this.UcTwilioSenderId = ucTwilioSenderId;
         }
         
         /// <summary>
@@ -145,6 +159,27 @@ namespace TextMagicClient.Model
         public List<string> UserCarrierVonage { get; set; }
 
         /// <summary>
+        /// Array of alphanumeric sender IDs.
+        /// </summary>
+        /// <value>Array of alphanumeric sender IDs.</value>
+        [DataMember(Name="userCarrierSinch", EmitDefaultValue=false)]
+        public List<string> UserCarrierSinch { get; set; }
+
+        /// <summary>
+        /// Array of alphanumeric sender IDs.
+        /// </summary>
+        /// <value>Array of alphanumeric sender IDs.</value>
+        [DataMember(Name="uCarrierBandwidth", EmitDefaultValue=false)]
+        public List<string> UCarrierBandwidth { get; set; }
+
+        /// <summary>
+        /// Array of alphanumeric sender IDs.
+        /// </summary>
+        /// <value>Array of alphanumeric sender IDs.</value>
+        [DataMember(Name="ucTwilioSenderId", EmitDefaultValue=false)]
+        public List<string> UcTwilioSenderId { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -158,6 +193,9 @@ namespace TextMagicClient.Model
             sb.Append("  SenderIds: ").Append(SenderIds).Append("\n");
             sb.Append("  UserCarrierTwilio: ").Append(UserCarrierTwilio).Append("\n");
             sb.Append("  UserCarrierVonage: ").Append(UserCarrierVonage).Append("\n");
+            sb.Append("  UserCarrierSinch: ").Append(UserCarrierSinch).Append("\n");
+            sb.Append("  UCarrierBandwidth: ").Append(UCarrierBandwidth).Append("\n");
+            sb.Append("  UcTwilioSenderId: ").Append(UcTwilioSenderId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -221,6 +259,21 @@ namespace TextMagicClient.Model
                     this.UserCarrierVonage == input.UserCarrierVonage ||
                     this.UserCarrierVonage != null &&
                     this.UserCarrierVonage.SequenceEqual(input.UserCarrierVonage)
+                ) && 
+                (
+                    this.UserCarrierSinch == input.UserCarrierSinch ||
+                    this.UserCarrierSinch != null &&
+                    this.UserCarrierSinch.SequenceEqual(input.UserCarrierSinch)
+                ) && 
+                (
+                    this.UCarrierBandwidth == input.UCarrierBandwidth ||
+                    this.UCarrierBandwidth != null &&
+                    this.UCarrierBandwidth.SequenceEqual(input.UCarrierBandwidth)
+                ) && 
+                (
+                    this.UcTwilioSenderId == input.UcTwilioSenderId ||
+                    this.UcTwilioSenderId != null &&
+                    this.UcTwilioSenderId.SequenceEqual(input.UcTwilioSenderId)
                 );
         }
 
@@ -245,6 +298,12 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.UserCarrierTwilio.GetHashCode();
                 if (this.UserCarrierVonage != null)
                     hashCode = hashCode * 59 + this.UserCarrierVonage.GetHashCode();
+                if (this.UserCarrierSinch != null)
+                    hashCode = hashCode * 59 + this.UserCarrierSinch.GetHashCode();
+                if (this.UCarrierBandwidth != null)
+                    hashCode = hashCode * 59 + this.UCarrierBandwidth.GetHashCode();
+                if (this.UcTwilioSenderId != null)
+                    hashCode = hashCode * 59 + this.UcTwilioSenderId.GetHashCode();
                 return hashCode;
             }
         }

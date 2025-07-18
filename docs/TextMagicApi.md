@@ -7,8 +7,6 @@ Method | HTTP request | Description
 [**AssignContactsToList**](TextMagicApi.md#assigncontactstolist) | **PUT** /api/v2/lists/{id}/contacts | Assign contacts to a list
 [**BlockContact**](TextMagicApi.md#blockcontact) | **POST** /api/v2/contacts/block | Block a contact by phone number
 [**BuyDedicatedNumber**](TextMagicApi.md#buydedicatednumber) | **POST** /api/v2/numbers | Buy a dedicated number
-[**CancelVerification**](TextMagicApi.md#cancelverification) | **DELETE** /api/v2/verify/{verifyId} | Cancel verification process
-[**CheckPhoneVerificationCodeTFA**](TextMagicApi.md#checkphoneverificationcodetfa) | **PUT** /api/v2/verify | Step 2: Check the verification code 
 [**ClearAndAssignContactsToList**](TextMagicApi.md#clearandassigncontactstolist) | **POST** /api/v2/lists/{id}/contacts | Reset list members to the specified contacts
 [**CloseChatsBulk**](TextMagicApi.md#closechatsbulk) | **POST** /api/v2/chats/close/bulk | Close chats (bulk)
 [**CloseReadChats**](TextMagicApi.md#closereadchats) | **POST** /api/v2/chats/close/read | Close read chats
@@ -130,7 +128,6 @@ Method | HTTP request | Description
 [**SearchScheduledMessages**](TextMagicApi.md#searchscheduledmessages) | **GET** /api/v2/schedules/search | Find scheduled messages
 [**SearchTemplates**](TextMagicApi.md#searchtemplates) | **GET** /api/v2/templates/search | Find templates by criteria
 [**SendMessage**](TextMagicApi.md#sendmessage) | **POST** /api/v2/messages | Send message
-[**SendPhoneVerificationCodeTFA**](TextMagicApi.md#sendphoneverificationcodetfa) | **POST** /api/v2/verify | Step 1: Send a verification code 
 [**SetChatStatus**](TextMagicApi.md#setchatstatus) | **POST** /api/v2/chats/status | Change chat status
 [**UnblockContact**](TextMagicApi.md#unblockcontact) | **POST** /api/v2/contacts/unblock | Unblock a contact by phone number
 [**UnblockContactsBulk**](TextMagicApi.md#unblockcontactsbulk) | **POST** /api/v2/contacts/unblock/bulk | Unblock contacts (bulk)
@@ -335,134 +332,6 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **buyDedicatedNumberInputObject** | [**BuyDedicatedNumberInputObject**](BuyDedicatedNumberInputObject.md)|  | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[BasicAuth](../README.md#BasicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="cancelverification"></a>
-# **CancelVerification**
-> void CancelVerification (string verifyId)
-
-Cancel verification process
-
-You can cancel the verification not earlier than 30 seconds after the initial request.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TextMagicClient.Api;
-using TextMagicClient.Client;
-using TextMagicClient.Model;
-
-namespace Example
-{
-    public class CancelVerificationExample
-    {
-        public void main()
-        {
-            // Configure HTTP basic authorization: BasicAuth
-            Configuration.Default.Username = "YOUR_USERNAME";
-            Configuration.Default.Password = "YOUR_PASSWORD";
-
-            var apiInstance = new TextMagicApi();
-            var verifyId = "123e4567-e89b-12d3-a456-426655440000";  // string | The verifyId that you received in Step 1.
-
-            try
-            {
-                // Cancel verification process
-                apiInstance.CancelVerification(verifyId);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TextMagicApi.CancelVerification: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **verifyId** | **string**| The verifyId that you received in Step 1. | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[BasicAuth](../README.md#BasicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="checkphoneverificationcodetfa"></a>
-# **CheckPhoneVerificationCodeTFA**
-> void CheckPhoneVerificationCodeTFA (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject)
-
-Step 2: Check the verification code 
-
-Check received code from user with the code which was actually sent.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TextMagicClient.Api;
-using TextMagicClient.Client;
-using TextMagicClient.Model;
-
-namespace Example
-{
-    public class CheckPhoneVerificationCodeTFAExample
-    {
-        public void main()
-        {
-            // Configure HTTP basic authorization: BasicAuth
-            Configuration.Default.Username = "YOUR_USERNAME";
-            Configuration.Default.Password = "YOUR_PASSWORD";
-
-            var apiInstance = new TextMagicApi();
-            var checkPhoneVerificationCodeTFAInputObject = new CheckPhoneVerificationCodeTFAInputObject(); // CheckPhoneVerificationCodeTFAInputObject | 
-
-            try
-            {
-                // Step 2: Check the verification code 
-                apiInstance.CheckPhoneVerificationCodeTFA(checkPhoneVerificationCodeTFAInputObject);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TextMagicApi.CheckPhoneVerificationCodeTFA: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **checkPhoneVerificationCodeTFAInputObject** | [**CheckPhoneVerificationCodeTFAInputObject**](CheckPhoneVerificationCodeTFAInputObject.md)|  | 
 
 ### Return type
 
@@ -3999,7 +3868,7 @@ Name | Type | Description  | Notes
 
 <a name="getchatmessages"></a>
 # **GetChatMessages**
-> GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null)
+> GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null, int? includeNotes = null)
 
 Get chat messages
 
@@ -4030,11 +3899,12 @@ namespace Example
             var end = end_example;  // string | Return messages up to specified timestamp only. Required when `start` parameter specified. (optional) 
             var direction = direction_example;  // string | Order direction. Default is desc. (optional)  (default to desc)
             var voice = 56;  // int? | Fetch results with voice calls. (optional)  (default to 0)
+            var includeNotes = 56;  // int? | Fetch results with messenger notes. (optional)  (default to 0)
 
             try
             {
                 // Get chat messages
-                GetChatMessagesPaginatedResponse result = apiInstance.GetChatMessages(id, page, limit, query, start, end, direction, voice);
+                GetChatMessagesPaginatedResponse result = apiInstance.GetChatMessages(id, page, limit, query, start, end, direction, voice, includeNotes);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4058,6 +3928,7 @@ Name | Type | Description  | Notes
  **end** | **string**| Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. | [optional] 
  **direction** | **string**| Order direction. Default is desc. | [optional] [default to desc]
  **voice** | **int?**| Fetch results with voice calls. | [optional] [default to 0]
+ **includeNotes** | **int?**| Fetch results with messenger notes. | [optional] [default to 0]
 
 ### Return type
 
@@ -5510,7 +5381,7 @@ Name | Type | Description  | Notes
 
 Preview message
 
-Get a messages preview (with tags merged) of up to 100 messages per session.
+Get a messages preview (with dynamic fields merged) of up to 100 messages per session. 
 
 ### Example
 ```csharp
@@ -8444,71 +8315,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**SendMessageResponse**](SendMessageResponse.md)
-
-### Authorization
-
-[BasicAuth](../README.md#BasicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="sendphoneverificationcodetfa"></a>
-# **SendPhoneVerificationCodeTFA**
-> SendPhoneVerificationCodeResponse SendPhoneVerificationCodeTFA (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject)
-
-Step 1: Send a verification code 
-
-Sends a verification code to a specified phone number.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TextMagicClient.Api;
-using TextMagicClient.Client;
-using TextMagicClient.Model;
-
-namespace Example
-{
-    public class SendPhoneVerificationCodeTFAExample
-    {
-        public void main()
-        {
-            // Configure HTTP basic authorization: BasicAuth
-            Configuration.Default.Username = "YOUR_USERNAME";
-            Configuration.Default.Password = "YOUR_PASSWORD";
-
-            var apiInstance = new TextMagicApi();
-            var sendPhoneVerificationCodeTFAInputObject = new SendPhoneVerificationCodeTFAInputObject(); // SendPhoneVerificationCodeTFAInputObject | 
-
-            try
-            {
-                // Step 1: Send a verification code 
-                SendPhoneVerificationCodeResponse result = apiInstance.SendPhoneVerificationCodeTFA(sendPhoneVerificationCodeTFAInputObject);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TextMagicApi.SendPhoneVerificationCodeTFA: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **sendPhoneVerificationCodeTFAInputObject** | [**SendPhoneVerificationCodeTFAInputObject**](SendPhoneVerificationCodeTFAInputObject.md)|  | 
-
-### Return type
-
-[**SendPhoneVerificationCodeResponse**](SendPhoneVerificationCodeResponse.md)
 
 ### Authorization
 

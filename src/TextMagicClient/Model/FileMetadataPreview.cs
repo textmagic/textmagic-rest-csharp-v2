@@ -25,35 +25,54 @@ using SwaggerDateConverter = TextMagicClient.Client.SwaggerDateConverter;
 namespace TextMagicClient.Model
 {
     /// <summary>
-    /// CheckPhoneVerificationCodeTFAInputObject
+    /// FileMetadataPreview
     /// </summary>
     [DataContract]
-    public partial class CheckPhoneVerificationCodeTFAInputObject :  IEquatable<CheckPhoneVerificationCodeTFAInputObject>, IValidatableObject
+    public partial class FileMetadataPreview :  IEquatable<FileMetadataPreview>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CheckPhoneVerificationCodeTFAInputObject" /> class.
+        /// Initializes a new instance of the <see cref="FileMetadataPreview" /> class.
         /// </summary>
-        /// <param name="code">Verification code received by the user and entered into the form field..</param>
-        /// <param name="verifyId">VerifyId from Step 1 to match both requests together..</param>
-        public CheckPhoneVerificationCodeTFAInputObject(int? code = default(int?), string verifyId = default(string))
+        [JsonConstructorAttribute]
+        protected FileMetadataPreview() { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FileMetadataPreview" /> class.
+        /// </summary>
+        /// <param name="height">height (required).</param>
+        /// <param name="width">width (required).</param>
+        public FileMetadataPreview(int? height = default(int?), int? width = default(int?))
         {
-            this.Code = code;
-            this.VerifyId = verifyId;
+            // to ensure "height" is required (not null)
+            if (height == null)
+            {
+                throw new InvalidDataException("height is a required property for FileMetadataPreview and cannot be null");
+            }
+            else
+            {
+                this.Height = height;
+            }
+            // to ensure "width" is required (not null)
+            if (width == null)
+            {
+                throw new InvalidDataException("width is a required property for FileMetadataPreview and cannot be null");
+            }
+            else
+            {
+                this.Width = width;
+            }
         }
         
         /// <summary>
-        /// Verification code received by the user and entered into the form field.
+        /// Gets or Sets Height
         /// </summary>
-        /// <value>Verification code received by the user and entered into the form field.</value>
-        [DataMember(Name="code", EmitDefaultValue=false)]
-        public int? Code { get; set; }
+        [DataMember(Name="height", EmitDefaultValue=false)]
+        public int? Height { get; set; }
 
         /// <summary>
-        /// VerifyId from Step 1 to match both requests together.
+        /// Gets or Sets Width
         /// </summary>
-        /// <value>VerifyId from Step 1 to match both requests together.</value>
-        [DataMember(Name="verifyId", EmitDefaultValue=false)]
-        public string VerifyId { get; set; }
+        [DataMember(Name="width", EmitDefaultValue=false)]
+        public int? Width { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -62,9 +81,9 @@ namespace TextMagicClient.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class CheckPhoneVerificationCodeTFAInputObject {\n");
-            sb.Append("  Code: ").Append(Code).Append("\n");
-            sb.Append("  VerifyId: ").Append(VerifyId).Append("\n");
+            sb.Append("class FileMetadataPreview {\n");
+            sb.Append("  Height: ").Append(Height).Append("\n");
+            sb.Append("  Width: ").Append(Width).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -85,29 +104,29 @@ namespace TextMagicClient.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as CheckPhoneVerificationCodeTFAInputObject);
+            return this.Equals(input as FileMetadataPreview);
         }
 
         /// <summary>
-        /// Returns true if CheckPhoneVerificationCodeTFAInputObject instances are equal
+        /// Returns true if FileMetadataPreview instances are equal
         /// </summary>
-        /// <param name="input">Instance of CheckPhoneVerificationCodeTFAInputObject to be compared</param>
+        /// <param name="input">Instance of FileMetadataPreview to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(CheckPhoneVerificationCodeTFAInputObject input)
+        public bool Equals(FileMetadataPreview input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.Code == input.Code ||
-                    (this.Code != null &&
-                    this.Code.Equals(input.Code))
+                    this.Height == input.Height ||
+                    (this.Height != null &&
+                    this.Height.Equals(input.Height))
                 ) && 
                 (
-                    this.VerifyId == input.VerifyId ||
-                    (this.VerifyId != null &&
-                    this.VerifyId.Equals(input.VerifyId))
+                    this.Width == input.Width ||
+                    (this.Width != null &&
+                    this.Width.Equals(input.Width))
                 );
         }
 
@@ -120,10 +139,10 @@ namespace TextMagicClient.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Code != null)
-                    hashCode = hashCode * 59 + this.Code.GetHashCode();
-                if (this.VerifyId != null)
-                    hashCode = hashCode * 59 + this.VerifyId.GetHashCode();
+                if (this.Height != null)
+                    hashCode = hashCode * 59 + this.Height.GetHashCode();
+                if (this.Width != null)
+                    hashCode = hashCode * 59 + this.Width.GetHashCode();
                 return hashCode;
             }
         }

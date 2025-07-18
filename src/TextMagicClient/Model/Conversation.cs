@@ -70,6 +70,120 @@ namespace TextMagicClient.Model
         [DataMember(Name="direction", EmitDefaultValue=false)]
         public DirectionEnum Direction { get; set; }
         /// <summary>
+        /// Message type.
+        /// </summary>
+        /// <value>Message type.</value>
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum TypeEnum
+        {
+            
+            /// <summary>
+            /// Enum Text for value: text
+            /// </summary>
+            [EnumMember(Value = "text")]
+            Text = 1,
+            
+            /// <summary>
+            /// Enum Image for value: image
+            /// </summary>
+            [EnumMember(Value = "image")]
+            Image = 2,
+            
+            /// <summary>
+            /// Enum Audio for value: audio
+            /// </summary>
+            [EnumMember(Value = "audio")]
+            Audio = 3,
+            
+            /// <summary>
+            /// Enum Voice for value: voice
+            /// </summary>
+            [EnumMember(Value = "voice")]
+            Voice = 4,
+            
+            /// <summary>
+            /// Enum Document for value: document
+            /// </summary>
+            [EnumMember(Value = "document")]
+            Document = 5,
+            
+            /// <summary>
+            /// Enum Video for value: video
+            /// </summary>
+            [EnumMember(Value = "video")]
+            Video = 6,
+            
+            /// <summary>
+            /// Enum Log for value: log
+            /// </summary>
+            [EnumMember(Value = "log")]
+            Log = 7,
+            
+            /// <summary>
+            /// Enum Initial for value: initial
+            /// </summary>
+            [EnumMember(Value = "initial")]
+            Initial = 8,
+            
+            /// <summary>
+            /// Enum Note for value: note
+            /// </summary>
+            [EnumMember(Value = "note")]
+            Note = 9
+        }
+
+        /// <summary>
+        /// Message type.
+        /// </summary>
+        /// <value>Message type.</value>
+        [DataMember(Name="type", EmitDefaultValue=false)]
+        public TypeEnum? Type { get; set; }
+        /// <summary>
+        /// Chat type.
+        /// </summary>
+        /// <value>Chat type.</value>
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum ChatTypeEnum
+        {
+            
+            /// <summary>
+            /// Enum Sms for value: sms
+            /// </summary>
+            [EnumMember(Value = "sms")]
+            Sms = 1,
+            
+            /// <summary>
+            /// Enum Facebookmessenger for value: facebook_messenger
+            /// </summary>
+            [EnumMember(Value = "facebook_messenger")]
+            Facebookmessenger = 2,
+            
+            /// <summary>
+            /// Enum Instagram for value: instagram
+            /// </summary>
+            [EnumMember(Value = "instagram")]
+            Instagram = 3,
+            
+            /// <summary>
+            /// Enum Whatsappbusiness for value: whatsapp_business
+            /// </summary>
+            [EnumMember(Value = "whatsapp_business")]
+            Whatsappbusiness = 4,
+            
+            /// <summary>
+            /// Enum Livechat for value: live_chat
+            /// </summary>
+            [EnumMember(Value = "live_chat")]
+            Livechat = 5
+        }
+
+        /// <summary>
+        /// Chat type.
+        /// </summary>
+        /// <value>Chat type.</value>
+        [DataMember(Name="chatType", EmitDefaultValue=false)]
+        public ChatTypeEnum? ChatType { get; set; }
+        /// <summary>
         /// Initializes a new instance of the <see cref="Conversation" /> class.
         /// </summary>
         [JsonConstructorAttribute]
@@ -88,7 +202,16 @@ namespace TextMagicClient.Model
         /// <param name="lastName">Contact last name. (required).</param>
         /// <param name="sessionId">Session ID of a message. See [message sessions](https://docs.textmagic.com/#tag/Outbound-Message-Sessions) for details. (required).</param>
         /// <param name="initiatorId">Initiator ID of a message. See [message sessions](https://docs.textmagic.com/#tag/Outbound-Message-Sessions) for details..</param>
-        public Conversation(int? id = default(int?), DirectionEnum direction = default(DirectionEnum), string sender = default(string), DateTime? messageTime = default(DateTime?), string text = default(string), string receiver = default(string), string status = default(string), string firstName = default(string), string lastName = default(string), int? sessionId = default(int?), int? initiatorId = default(int?))
+        /// <param name="messageFileId">Message file id..</param>
+        /// <param name="type">Message type..</param>
+        /// <param name="chatType">Chat type..</param>
+        /// <param name="chatId">Chat id..</param>
+        /// <param name="isEdited">isEdited.</param>
+        /// <param name="errorCode">Error code..</param>
+        /// <param name="files">files.</param>
+        /// <param name="payload">payload.</param>
+        /// <param name="avatar">avatar.</param>
+        public Conversation(int? id = default(int?), DirectionEnum direction = default(DirectionEnum), string sender = default(string), DateTime? messageTime = default(DateTime?), string text = default(string), string receiver = default(string), string status = default(string), string firstName = default(string), string lastName = default(string), int? sessionId = default(int?), int? initiatorId = default(int?), int? messageFileId = default(int?), TypeEnum? type = default(TypeEnum?), ChatTypeEnum? chatType = default(ChatTypeEnum?), int? chatId = default(int?), bool? isEdited = default(bool?), string errorCode = default(string), List<System.IO.Stream> files = default(List<System.IO.Stream>), MessagePayload payload = default(MessagePayload), string avatar = default(string))
         {
             // to ensure "id" is required (not null)
             if (id == null)
@@ -181,6 +304,15 @@ namespace TextMagicClient.Model
                 this.SessionId = sessionId;
             }
             this.InitiatorId = initiatorId;
+            this.MessageFileId = messageFileId;
+            this.Type = type;
+            this.ChatType = chatType;
+            this.ChatId = chatId;
+            this.IsEdited = isEdited;
+            this.ErrorCode = errorCode;
+            this.Files = files;
+            this.Payload = payload;
+            this.Avatar = avatar;
         }
         
         /// <summary>
@@ -254,6 +386,53 @@ namespace TextMagicClient.Model
         public int? InitiatorId { get; set; }
 
         /// <summary>
+        /// Message file id.
+        /// </summary>
+        /// <value>Message file id.</value>
+        [DataMember(Name="messageFileId", EmitDefaultValue=false)]
+        public int? MessageFileId { get; set; }
+
+
+
+        /// <summary>
+        /// Chat id.
+        /// </summary>
+        /// <value>Chat id.</value>
+        [DataMember(Name="chatId", EmitDefaultValue=false)]
+        public int? ChatId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsEdited
+        /// </summary>
+        [DataMember(Name="isEdited", EmitDefaultValue=false)]
+        public bool? IsEdited { get; set; }
+
+        /// <summary>
+        /// Error code.
+        /// </summary>
+        /// <value>Error code.</value>
+        [DataMember(Name="errorCode", EmitDefaultValue=false)]
+        public string ErrorCode { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Files
+        /// </summary>
+        [DataMember(Name="files", EmitDefaultValue=false)]
+        public List<System.IO.Stream> Files { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Payload
+        /// </summary>
+        [DataMember(Name="payload", EmitDefaultValue=false)]
+        public MessagePayload Payload { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Avatar
+        /// </summary>
+        [DataMember(Name="avatar", EmitDefaultValue=false)]
+        public string Avatar { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -272,6 +451,15 @@ namespace TextMagicClient.Model
             sb.Append("  LastName: ").Append(LastName).Append("\n");
             sb.Append("  SessionId: ").Append(SessionId).Append("\n");
             sb.Append("  InitiatorId: ").Append(InitiatorId).Append("\n");
+            sb.Append("  MessageFileId: ").Append(MessageFileId).Append("\n");
+            sb.Append("  Type: ").Append(Type).Append("\n");
+            sb.Append("  ChatType: ").Append(ChatType).Append("\n");
+            sb.Append("  ChatId: ").Append(ChatId).Append("\n");
+            sb.Append("  IsEdited: ").Append(IsEdited).Append("\n");
+            sb.Append("  ErrorCode: ").Append(ErrorCode).Append("\n");
+            sb.Append("  Files: ").Append(Files).Append("\n");
+            sb.Append("  Payload: ").Append(Payload).Append("\n");
+            sb.Append("  Avatar: ").Append(Avatar).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -360,6 +548,51 @@ namespace TextMagicClient.Model
                     this.InitiatorId == input.InitiatorId ||
                     (this.InitiatorId != null &&
                     this.InitiatorId.Equals(input.InitiatorId))
+                ) && 
+                (
+                    this.MessageFileId == input.MessageFileId ||
+                    (this.MessageFileId != null &&
+                    this.MessageFileId.Equals(input.MessageFileId))
+                ) && 
+                (
+                    this.Type == input.Type ||
+                    (this.Type != null &&
+                    this.Type.Equals(input.Type))
+                ) && 
+                (
+                    this.ChatType == input.ChatType ||
+                    (this.ChatType != null &&
+                    this.ChatType.Equals(input.ChatType))
+                ) && 
+                (
+                    this.ChatId == input.ChatId ||
+                    (this.ChatId != null &&
+                    this.ChatId.Equals(input.ChatId))
+                ) && 
+                (
+                    this.IsEdited == input.IsEdited ||
+                    (this.IsEdited != null &&
+                    this.IsEdited.Equals(input.IsEdited))
+                ) && 
+                (
+                    this.ErrorCode == input.ErrorCode ||
+                    (this.ErrorCode != null &&
+                    this.ErrorCode.Equals(input.ErrorCode))
+                ) && 
+                (
+                    this.Files == input.Files ||
+                    this.Files != null &&
+                    this.Files.SequenceEqual(input.Files)
+                ) && 
+                (
+                    this.Payload == input.Payload ||
+                    (this.Payload != null &&
+                    this.Payload.Equals(input.Payload))
+                ) && 
+                (
+                    this.Avatar == input.Avatar ||
+                    (this.Avatar != null &&
+                    this.Avatar.Equals(input.Avatar))
                 );
         }
 
@@ -394,6 +627,24 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.SessionId.GetHashCode();
                 if (this.InitiatorId != null)
                     hashCode = hashCode * 59 + this.InitiatorId.GetHashCode();
+                if (this.MessageFileId != null)
+                    hashCode = hashCode * 59 + this.MessageFileId.GetHashCode();
+                if (this.Type != null)
+                    hashCode = hashCode * 59 + this.Type.GetHashCode();
+                if (this.ChatType != null)
+                    hashCode = hashCode * 59 + this.ChatType.GetHashCode();
+                if (this.ChatId != null)
+                    hashCode = hashCode * 59 + this.ChatId.GetHashCode();
+                if (this.IsEdited != null)
+                    hashCode = hashCode * 59 + this.IsEdited.GetHashCode();
+                if (this.ErrorCode != null)
+                    hashCode = hashCode * 59 + this.ErrorCode.GetHashCode();
+                if (this.Files != null)
+                    hashCode = hashCode * 59 + this.Files.GetHashCode();
+                if (this.Payload != null)
+                    hashCode = hashCode * 59 + this.Payload.GetHashCode();
+                if (this.Avatar != null)
+                    hashCode = hashCode * 59 + this.Avatar.GetHashCode();
                 return hashCode;
             }
         }

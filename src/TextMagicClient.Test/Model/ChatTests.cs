@@ -202,6 +202,38 @@ namespace TextMagicClient.Test
         {
             // TODO unit test for the property 'Pinned'
         }
+        /// <summary>
+        /// Test the property 'Type'
+        /// </summary>
+        [Test]
+        public void TypeTest()
+        {
+            // TODO unit test for the property 'Type'
+        }
+        /// <summary>
+        /// Test the property 'SmsPrice'
+        /// </summary>
+        [Test]
+        public void SmsPriceTest()
+        {
+            // TODO unit test for the property 'SmsPrice'
+        }
+        /// <summary>
+        /// Test the property 'MmsPrice'
+        /// </summary>
+        [Test]
+        public void MmsPriceTest()
+        {
+            // TODO unit test for the property 'MmsPrice'
+        }
+        /// <summary>
+        /// Test the property 'Tags'
+        /// </summary>
+        [Test]
+        public void TagsTest()
+        {
+            // TODO unit test for the property 'Tags'
+        }
 
     }
 

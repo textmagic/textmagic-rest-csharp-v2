@@ -90,6 +90,14 @@ namespace TextMagicClient.Test
         {
             // TODO unit test for the property 'Numbers'
         }
+        /// <summary>
+        /// Test the property 'FilteredViews'
+        /// </summary>
+        [Test]
+        public void FilteredViewsTest()
+        {
+            // TODO unit test for the property 'FilteredViews'
+        }
 
     }
 

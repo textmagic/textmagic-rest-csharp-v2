@@ -124,6 +124,171 @@ namespace TextMagicClient.Model
         [DataMember(Name="status", EmitDefaultValue=false)]
         public StatusEnum Status { get; set; }
         /// <summary>
+        /// Rejection reason.
+        /// </summary>
+        /// <value>Rejection reason.</value>
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum RejectReasonEnum
+        {
+            
+            /// <summary>
+            /// Enum A for value: a
+            /// </summary>
+            [EnumMember(Value = "a")]
+            A = 1,
+            
+            /// <summary>
+            /// Enum F for value: f
+            /// </summary>
+            [EnumMember(Value = "f")]
+            F = 2,
+            
+            /// <summary>
+            /// Enum L for value: l
+            /// </summary>
+            [EnumMember(Value = "l")]
+            L = 3,
+            
+            /// <summary>
+            /// Enum C for value: c
+            /// </summary>
+            [EnumMember(Value = "c")]
+            C = 4,
+            
+            /// <summary>
+            /// Enum U for value: u
+            /// </summary>
+            [EnumMember(Value = "u")]
+            U = 5,
+            
+            /// <summary>
+            /// Enum B for value: b
+            /// </summary>
+            [EnumMember(Value = "b")]
+            B = 6,
+            
+            /// <summary>
+            /// Enum S for value: s
+            /// </summary>
+            [EnumMember(Value = "s")]
+            S = 7,
+            
+            /// <summary>
+            /// Enum M for value: m
+            /// </summary>
+            [EnumMember(Value = "m")]
+            M = 8,
+            
+            /// <summary>
+            /// Enum N for value: n
+            /// </summary>
+            [EnumMember(Value = "n")]
+            N = 9,
+            
+            /// <summary>
+            /// Enum I for value: i
+            /// </summary>
+            [EnumMember(Value = "i")]
+            I = 10,
+            
+            /// <summary>
+            /// Enum If for value: if
+            /// </summary>
+            [EnumMember(Value = "if")]
+            If = 11,
+            
+            /// <summary>
+            /// Enum D for value: d
+            /// </summary>
+            [EnumMember(Value = "d")]
+            D = 12,
+            
+            /// <summary>
+            /// Enum T for value: t
+            /// </summary>
+            [EnumMember(Value = "t")]
+            T = 13,
+            
+            /// <summary>
+            /// Enum E for value: e
+            /// </summary>
+            [EnumMember(Value = "e")]
+            E = 14,
+            
+            /// <summary>
+            /// Enum H for value: h
+            /// </summary>
+            [EnumMember(Value = "h")]
+            H = 15,
+            
+            /// <summary>
+            /// Enum K for value: k
+            /// </summary>
+            [EnumMember(Value = "k")]
+            K = 16,
+            
+            /// <summary>
+            /// Enum R for value: r
+            /// </summary>
+            [EnumMember(Value = "r")]
+            R = 17,
+            
+            /// <summary>
+            /// Enum G for value: g
+            /// </summary>
+            [EnumMember(Value = "g")]
+            G = 18,
+            
+            /// <summary>
+            /// Enum J for value: j
+            /// </summary>
+            [EnumMember(Value = "j")]
+            J = 19,
+            
+            /// <summary>
+            /// Enum W for value: w
+            /// </summary>
+            [EnumMember(Value = "w")]
+            W = 20,
+            
+            /// <summary>
+            /// Enum V for value: v
+            /// </summary>
+            [EnumMember(Value = "v")]
+            V = 21,
+            
+            /// <summary>
+            /// Enum Q for value: q
+            /// </summary>
+            [EnumMember(Value = "q")]
+            Q = 22,
+            
+            /// <summary>
+            /// Enum X for value: x
+            /// </summary>
+            [EnumMember(Value = "x")]
+            X = 23,
+            
+            /// <summary>
+            /// Enum O for value: o
+            /// </summary>
+            [EnumMember(Value = "o")]
+            O = 24,
+            
+            /// <summary>
+            /// Enum P for value: p
+            /// </summary>
+            [EnumMember(Value = "p")]
+            P = 25
+        }
+
+        /// <summary>
+        /// Rejection reason.
+        /// </summary>
+        /// <value>Rejection reason.</value>
+        [DataMember(Name="rejectReason", EmitDefaultValue=false)]
+        public RejectReasonEnum? RejectReason { get; set; }
+        /// <summary>
         /// Initializes a new instance of the <see cref="MessageOut" /> class.
         /// </summary>
         [JsonConstructorAttribute]
@@ -136,6 +301,7 @@ namespace TextMagicClient.Model
         /// <param name="receiver">Recipient&#x60;s phone number..</param>
         /// <param name="text">text (required).</param>
         /// <param name="status">Delivery status of the message. See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details.  (required).</param>
+        /// <param name="rejectReason">Rejection reason..</param>
         /// <param name="contactId">Recipient contact ID. (required).</param>
         /// <param name="sessionId">Message Session ID of a message. (required).</param>
         /// <param name="messageTime">Sending time. (required).</param>
@@ -151,7 +317,9 @@ namespace TextMagicClient.Model
         /// <param name="partsCount">Message parts (multiples of 160 characters) count. (required).</param>
         /// <param name="fromEmail">The user email which this message came from. For Email2SMS and Distribution Lists the messages, it is an original email address - in other cases, it is an account email address..</param>
         /// <param name="fromNumber">The Phone number used to send the SMS..</param>
-        public MessageOut(int? id = default(int?), string sender = default(string), string receiver = default(string), string text = default(string), StatusEnum status = default(StatusEnum), int? contactId = default(int?), int? sessionId = default(int?), DateTime? messageTime = default(DateTime?), string avatar = default(string), bool? deleted = default(bool?), string charset = default(string), string charsetLabel = default(string), string firstName = default(string), string lastName = default(string), string country = default(string), string phone = default(string), float? price = default(float?), int? partsCount = default(int?), string fromEmail = default(string), string fromNumber = default(string))
+        /// <param name="senderSource">senderSource.</param>
+        /// <param name="session">session.</param>
+        public MessageOut(int? id = default(int?), string sender = default(string), string receiver = default(string), string text = default(string), StatusEnum status = default(StatusEnum), RejectReasonEnum? rejectReason = default(RejectReasonEnum?), int? contactId = default(int?), int? sessionId = default(int?), DateTime? messageTime = default(DateTime?), string avatar = default(string), bool? deleted = default(bool?), string charset = default(string), string charsetLabel = default(string), string firstName = default(string), string lastName = default(string), string country = default(string), string phone = default(string), float? price = default(float?), int? partsCount = default(int?), string fromEmail = default(string), string fromNumber = default(string), MessageOutSenderSource senderSource = default(MessageOutSenderSource), MessageOutSession session = default(MessageOutSession))
         {
             // to ensure "id" is required (not null)
             if (id == null)
@@ -272,11 +440,14 @@ namespace TextMagicClient.Model
             }
             this.Sender = sender;
             this.Receiver = receiver;
+            this.RejectReason = rejectReason;
             this.Deleted = deleted;
             this.Phone = phone;
             this.Price = price;
             this.FromEmail = fromEmail;
             this.FromNumber = fromNumber;
+            this.SenderSource = senderSource;
+            this.Session = session;
         }
         
         /// <summary>
@@ -305,6 +476,7 @@ namespace TextMagicClient.Model
         /// </summary>
         [DataMember(Name="text", EmitDefaultValue=false)]
         public string Text { get; set; }
+
 
 
         /// <summary>
@@ -412,6 +584,18 @@ namespace TextMagicClient.Model
         public string FromNumber { get; set; }
 
         /// <summary>
+        /// Gets or Sets SenderSource
+        /// </summary>
+        [DataMember(Name="senderSource", EmitDefaultValue=false)]
+        public MessageOutSenderSource SenderSource { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Session
+        /// </summary>
+        [DataMember(Name="session", EmitDefaultValue=false)]
+        public MessageOutSession Session { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -424,6 +608,7 @@ namespace TextMagicClient.Model
             sb.Append("  Receiver: ").Append(Receiver).Append("\n");
             sb.Append("  Text: ").Append(Text).Append("\n");
             sb.Append("  Status: ").Append(Status).Append("\n");
+            sb.Append("  RejectReason: ").Append(RejectReason).Append("\n");
             sb.Append("  ContactId: ").Append(ContactId).Append("\n");
             sb.Append("  SessionId: ").Append(SessionId).Append("\n");
             sb.Append("  MessageTime: ").Append(MessageTime).Append("\n");
@@ -439,6 +624,8 @@ namespace TextMagicClient.Model
             sb.Append("  PartsCount: ").Append(PartsCount).Append("\n");
             sb.Append("  FromEmail: ").Append(FromEmail).Append("\n");
             sb.Append("  FromNumber: ").Append(FromNumber).Append("\n");
+            sb.Append("  SenderSource: ").Append(SenderSource).Append("\n");
+            sb.Append("  Session: ").Append(Session).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -497,6 +684,11 @@ namespace TextMagicClient.Model
                     this.Status == input.Status ||
                     (this.Status != null &&
                     this.Status.Equals(input.Status))
+                ) && 
+                (
+                    this.RejectReason == input.RejectReason ||
+                    (this.RejectReason != null &&
+                    this.RejectReason.Equals(input.RejectReason))
                 ) && 
                 (
                     this.ContactId == input.ContactId ||
@@ -572,6 +764,16 @@ namespace TextMagicClient.Model
                     this.FromNumber == input.FromNumber ||
                     (this.FromNumber != null &&
                     this.FromNumber.Equals(input.FromNumber))
+                ) && 
+                (
+                    this.SenderSource == input.SenderSource ||
+                    (this.SenderSource != null &&
+                    this.SenderSource.Equals(input.SenderSource))
+                ) && 
+                (
+                    this.Session == input.Session ||
+                    (this.Session != null &&
+                    this.Session.Equals(input.Session))
                 );
         }
 
@@ -594,6 +796,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.Text.GetHashCode();
                 if (this.Status != null)
                     hashCode = hashCode * 59 + this.Status.GetHashCode();
+                if (this.RejectReason != null)
+                    hashCode = hashCode * 59 + this.RejectReason.GetHashCode();
                 if (this.ContactId != null)
                     hashCode = hashCode * 59 + this.ContactId.GetHashCode();
                 if (this.SessionId != null)
@@ -624,6 +828,10 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.FromEmail.GetHashCode();
                 if (this.FromNumber != null)
                     hashCode = hashCode * 59 + this.FromNumber.GetHashCode();
+                if (this.SenderSource != null)
+                    hashCode = hashCode * 59 + this.SenderSource.GetHashCode();
+                if (this.Session != null)
+                    hashCode = hashCode * 59 + this.Session.GetHashCode();
                 return hashCode;
             }
         }

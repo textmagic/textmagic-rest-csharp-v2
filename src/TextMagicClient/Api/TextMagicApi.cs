@@ -90,48 +90,6 @@ namespace TextMagicClient.Api
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> BuyDedicatedNumberWithHttpInfo (BuyDedicatedNumberInputObject buyDedicatedNumberInputObject);
         /// <summary>
-        /// Cancel verification process
-        /// </summary>
-        /// <remarks>
-        /// You can cancel the verification not earlier than 30 seconds after the initial request.
-        /// </remarks>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="verifyId">The verifyId that you received in Step 1.</param>
-        /// <returns></returns>
-        void CancelVerification (string verifyId);
-
-        /// <summary>
-        /// Cancel verification process
-        /// </summary>
-        /// <remarks>
-        /// You can cancel the verification not earlier than 30 seconds after the initial request.
-        /// </remarks>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="verifyId">The verifyId that you received in Step 1.</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> CancelVerificationWithHttpInfo (string verifyId);
-        /// <summary>
-        /// Step 2: Check the verification code 
-        /// </summary>
-        /// <remarks>
-        /// Check received code from user with the code which was actually sent.
-        /// </remarks>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns></returns>
-        void CheckPhoneVerificationCodeTFA (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject);
-
-        /// <summary>
-        /// Step 2: Check the verification code 
-        /// </summary>
-        /// <remarks>
-        /// Check received code from user with the code which was actually sent.
-        /// </remarks>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> CheckPhoneVerificationCodeTFAWithHttpInfo (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject);
-        /// <summary>
         /// Reset list members to the specified contacts
         /// </summary>
         /// <remarks>
@@ -1351,8 +1309,9 @@ namespace TextMagicClient.Api
         /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
+        /// <param name="includeNotes">Fetch results with messenger notes. (optional, default to 0)</param>
         /// <returns>GetChatMessagesPaginatedResponse</returns>
-        GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null);
+        GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null, int? includeNotes = null);
 
         /// <summary>
         /// Get chat messages
@@ -1369,8 +1328,9 @@ namespace TextMagicClient.Api
         /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
+        /// <param name="includeNotes">Fetch results with messenger notes. (optional, default to 0)</param>
         /// <returns>ApiResponse of GetChatMessagesPaginatedResponse</returns>
-        ApiResponse<GetChatMessagesPaginatedResponse> GetChatMessagesWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null);
+        ApiResponse<GetChatMessagesPaginatedResponse> GetChatMessagesWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null, int? includeNotes = null);
         /// <summary>
         /// Get the details of a specific contact
         /// </summary>
@@ -1877,7 +1837,7 @@ namespace TextMagicClient.Api
         /// Preview message
         /// </summary>
         /// <remarks>
-        /// Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Get a messages preview (with dynamic fields merged) of up to 100 messages per session. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -1904,7 +1864,7 @@ namespace TextMagicClient.Api
         /// Preview message
         /// </summary>
         /// <remarks>
-        /// Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Get a messages preview (with dynamic fields merged) of up to 100 messages per session. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -2981,27 +2941,6 @@ namespace TextMagicClient.Api
         /// <returns>ApiResponse of SendMessageResponse</returns>
         ApiResponse<SendMessageResponse> SendMessageWithHttpInfo (SendMessageInputObject sendMessageInputObject);
         /// <summary>
-        /// Step 1: Send a verification code 
-        /// </summary>
-        /// <remarks>
-        /// Sends a verification code to a specified phone number.
-        /// </remarks>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>SendPhoneVerificationCodeResponse</returns>
-        SendPhoneVerificationCodeResponse SendPhoneVerificationCodeTFA (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject);
-
-        /// <summary>
-        /// Step 1: Send a verification code 
-        /// </summary>
-        /// <remarks>
-        /// Sends a verification code to a specified phone number.
-        /// </remarks>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>ApiResponse of SendPhoneVerificationCodeResponse</returns>
-        ApiResponse<SendPhoneVerificationCodeResponse> SendPhoneVerificationCodeTFAWithHttpInfo (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject);
-        /// <summary>
         /// Change chat status
         /// </summary>
         /// <remarks>
@@ -3546,48 +3485,6 @@ namespace TextMagicClient.Api
         /// <param name="buyDedicatedNumberInputObject"></param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> BuyDedicatedNumberAsyncWithHttpInfo (BuyDedicatedNumberInputObject buyDedicatedNumberInputObject);
-        /// <summary>
-        /// Cancel verification process
-        /// </summary>
-        /// <remarks>
-        /// You can cancel the verification not earlier than 30 seconds after the initial request.
-        /// </remarks>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="verifyId">The verifyId that you received in Step 1.</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task CancelVerificationAsync (string verifyId);
-
-        /// <summary>
-        /// Cancel verification process
-        /// </summary>
-        /// <remarks>
-        /// You can cancel the verification not earlier than 30 seconds after the initial request.
-        /// </remarks>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="verifyId">The verifyId that you received in Step 1.</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> CancelVerificationAsyncWithHttpInfo (string verifyId);
-        /// <summary>
-        /// Step 2: Check the verification code 
-        /// </summary>
-        /// <remarks>
-        /// Check received code from user with the code which was actually sent.
-        /// </remarks>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task CheckPhoneVerificationCodeTFAAsync (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject);
-
-        /// <summary>
-        /// Step 2: Check the verification code 
-        /// </summary>
-        /// <remarks>
-        /// Check received code from user with the code which was actually sent.
-        /// </remarks>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> CheckPhoneVerificationCodeTFAAsyncWithHttpInfo (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject);
         /// <summary>
         /// Reset list members to the specified contacts
         /// </summary>
@@ -4808,8 +4705,9 @@ namespace TextMagicClient.Api
         /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
+        /// <param name="includeNotes">Fetch results with messenger notes. (optional, default to 0)</param>
         /// <returns>Task of GetChatMessagesPaginatedResponse</returns>
-        System.Threading.Tasks.Task<GetChatMessagesPaginatedResponse> GetChatMessagesAsync (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null);
+        System.Threading.Tasks.Task<GetChatMessagesPaginatedResponse> GetChatMessagesAsync (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null, int? includeNotes = null);
 
         /// <summary>
         /// Get chat messages
@@ -4826,8 +4724,9 @@ namespace TextMagicClient.Api
         /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
+        /// <param name="includeNotes">Fetch results with messenger notes. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetChatMessagesPaginatedResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetChatMessagesPaginatedResponse>> GetChatMessagesAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null);
+        System.Threading.Tasks.Task<ApiResponse<GetChatMessagesPaginatedResponse>> GetChatMessagesAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null, int? includeNotes = null);
         /// <summary>
         /// Get the details of a specific contact
         /// </summary>
@@ -5334,7 +5233,7 @@ namespace TextMagicClient.Api
         /// Preview message
         /// </summary>
         /// <remarks>
-        /// Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Get a messages preview (with dynamic fields merged) of up to 100 messages per session. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -5361,7 +5260,7 @@ namespace TextMagicClient.Api
         /// Preview message
         /// </summary>
         /// <remarks>
-        /// Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Get a messages preview (with dynamic fields merged) of up to 100 messages per session. 
         /// </remarks>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -6438,27 +6337,6 @@ namespace TextMagicClient.Api
         /// <returns>Task of ApiResponse (SendMessageResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<SendMessageResponse>> SendMessageAsyncWithHttpInfo (SendMessageInputObject sendMessageInputObject);
         /// <summary>
-        /// Step 1: Send a verification code 
-        /// </summary>
-        /// <remarks>
-        /// Sends a verification code to a specified phone number.
-        /// </remarks>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>Task of SendPhoneVerificationCodeResponse</returns>
-        System.Threading.Tasks.Task<SendPhoneVerificationCodeResponse> SendPhoneVerificationCodeTFAAsync (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject);
-
-        /// <summary>
-        /// Step 1: Send a verification code 
-        /// </summary>
-        /// <remarks>
-        /// Sends a verification code to a specified phone number.
-        /// </remarks>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>Task of ApiResponse (SendPhoneVerificationCodeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendPhoneVerificationCodeResponse>> SendPhoneVerificationCodeTFAAsyncWithHttpInfo (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject);
-        /// <summary>
         /// Change chat status
         /// </summary>
         /// <remarks>
@@ -7521,310 +7399,6 @@ namespace TextMagicClient.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("BuyDedicatedNumber", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        /// <summary>
-        /// Cancel verification process You can cancel the verification not earlier than 30 seconds after the initial request.
-        /// </summary>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="verifyId">The verifyId that you received in Step 1.</param>
-        /// <returns></returns>
-        public void CancelVerification (string verifyId)
-        {
-             CancelVerificationWithHttpInfo(verifyId);
-        }
-
-        /// <summary>
-        /// Cancel verification process You can cancel the verification not earlier than 30 seconds after the initial request.
-        /// </summary>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="verifyId">The verifyId that you received in Step 1.</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> CancelVerificationWithHttpInfo (string verifyId)
-        {
-            // verify the required parameter 'verifyId' is set
-            if (verifyId == null)
-                throw new ApiException(400, "Missing required parameter 'verifyId' when calling TextMagicApi->CancelVerification");
-
-            var localVarPath = "/api/v2/verify/{verifyId}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (verifyId != null) localVarPathParams.Add("verifyId", this.Configuration.ApiClient.ParameterToString(verifyId)); // path parameter
-
-            // authentication (BasicAuth) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CancelVerification", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        /// <summary>
-        /// Cancel verification process You can cancel the verification not earlier than 30 seconds after the initial request.
-        /// </summary>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="verifyId">The verifyId that you received in Step 1.</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task CancelVerificationAsync (string verifyId)
-        {
-             await CancelVerificationAsyncWithHttpInfo(verifyId);
-
-        }
-
-        /// <summary>
-        /// Cancel verification process You can cancel the verification not earlier than 30 seconds after the initial request.
-        /// </summary>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="verifyId">The verifyId that you received in Step 1.</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> CancelVerificationAsyncWithHttpInfo (string verifyId)
-        {
-            // verify the required parameter 'verifyId' is set
-            if (verifyId == null)
-                throw new ApiException(400, "Missing required parameter 'verifyId' when calling TextMagicApi->CancelVerification");
-
-            var localVarPath = "/api/v2/verify/{verifyId}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (verifyId != null) localVarPathParams.Add("verifyId", this.Configuration.ApiClient.ParameterToString(verifyId)); // path parameter
-
-            // authentication (BasicAuth) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CancelVerification", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        /// <summary>
-        /// Step 2: Check the verification code  Check received code from user with the code which was actually sent.
-        /// </summary>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns></returns>
-        public void CheckPhoneVerificationCodeTFA (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject)
-        {
-             CheckPhoneVerificationCodeTFAWithHttpInfo(checkPhoneVerificationCodeTFAInputObject);
-        }
-
-        /// <summary>
-        /// Step 2: Check the verification code  Check received code from user with the code which was actually sent.
-        /// </summary>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> CheckPhoneVerificationCodeTFAWithHttpInfo (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject)
-        {
-            // verify the required parameter 'checkPhoneVerificationCodeTFAInputObject' is set
-            if (checkPhoneVerificationCodeTFAInputObject == null)
-                throw new ApiException(400, "Missing required parameter 'checkPhoneVerificationCodeTFAInputObject' when calling TextMagicApi->CheckPhoneVerificationCodeTFA");
-
-            var localVarPath = "/api/v2/verify";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (checkPhoneVerificationCodeTFAInputObject != null && checkPhoneVerificationCodeTFAInputObject.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(checkPhoneVerificationCodeTFAInputObject); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = checkPhoneVerificationCodeTFAInputObject; // byte array
-            }
-
-            // authentication (BasicAuth) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CheckPhoneVerificationCodeTFA", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        /// <summary>
-        /// Step 2: Check the verification code  Check received code from user with the code which was actually sent.
-        /// </summary>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task CheckPhoneVerificationCodeTFAAsync (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject)
-        {
-             await CheckPhoneVerificationCodeTFAAsyncWithHttpInfo(checkPhoneVerificationCodeTFAInputObject);
-
-        }
-
-        /// <summary>
-        /// Step 2: Check the verification code  Check received code from user with the code which was actually sent.
-        /// </summary>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="checkPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> CheckPhoneVerificationCodeTFAAsyncWithHttpInfo (CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject)
-        {
-            // verify the required parameter 'checkPhoneVerificationCodeTFAInputObject' is set
-            if (checkPhoneVerificationCodeTFAInputObject == null)
-                throw new ApiException(400, "Missing required parameter 'checkPhoneVerificationCodeTFAInputObject' when calling TextMagicApi->CheckPhoneVerificationCodeTFA");
-
-            var localVarPath = "/api/v2/verify";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (checkPhoneVerificationCodeTFAInputObject != null && checkPhoneVerificationCodeTFAInputObject.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(checkPhoneVerificationCodeTFAInputObject); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = checkPhoneVerificationCodeTFAInputObject; // byte array
-            }
-
-            // authentication (BasicAuth) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CheckPhoneVerificationCodeTFA", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -16166,10 +15740,11 @@ namespace TextMagicClient.Api
         /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
+        /// <param name="includeNotes">Fetch results with messenger notes. (optional, default to 0)</param>
         /// <returns>GetChatMessagesPaginatedResponse</returns>
-        public GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null)
+        public GetChatMessagesPaginatedResponse GetChatMessages (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null, int? includeNotes = null)
         {
-             ApiResponse<GetChatMessagesPaginatedResponse> localVarResponse = GetChatMessagesWithHttpInfo(id, page, limit, query, start, end, direction, voice);
+             ApiResponse<GetChatMessagesPaginatedResponse> localVarResponse = GetChatMessagesWithHttpInfo(id, page, limit, query, start, end, direction, voice, includeNotes);
              return localVarResponse.Data;
         }
 
@@ -16185,8 +15760,9 @@ namespace TextMagicClient.Api
         /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
+        /// <param name="includeNotes">Fetch results with messenger notes. (optional, default to 0)</param>
         /// <returns>ApiResponse of GetChatMessagesPaginatedResponse</returns>
-        public ApiResponse< GetChatMessagesPaginatedResponse > GetChatMessagesWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null)
+        public ApiResponse< GetChatMessagesPaginatedResponse > GetChatMessagesWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null, int? includeNotes = null)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -16222,6 +15798,7 @@ namespace TextMagicClient.Api
             if (end != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end", end)); // query parameter
             if (direction != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "direction", direction)); // query parameter
             if (voice != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "voice", voice)); // query parameter
+            if (includeNotes != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "includeNotes", includeNotes)); // query parameter
 
             // authentication (BasicAuth) required
             // http basic authentication required
@@ -16260,10 +15837,11 @@ namespace TextMagicClient.Api
         /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
+        /// <param name="includeNotes">Fetch results with messenger notes. (optional, default to 0)</param>
         /// <returns>Task of GetChatMessagesPaginatedResponse</returns>
-        public async System.Threading.Tasks.Task<GetChatMessagesPaginatedResponse> GetChatMessagesAsync (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null)
+        public async System.Threading.Tasks.Task<GetChatMessagesPaginatedResponse> GetChatMessagesAsync (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null, int? includeNotes = null)
         {
-             ApiResponse<GetChatMessagesPaginatedResponse> localVarResponse = await GetChatMessagesAsyncWithHttpInfo(id, page, limit, query, start, end, direction, voice);
+             ApiResponse<GetChatMessagesPaginatedResponse> localVarResponse = await GetChatMessagesAsyncWithHttpInfo(id, page, limit, query, start, end, direction, voice, includeNotes);
              return localVarResponse.Data;
 
         }
@@ -16280,8 +15858,9 @@ namespace TextMagicClient.Api
         /// <param name="end">Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)</param>
         /// <param name="direction">Order direction. Default is desc. (optional, default to desc)</param>
         /// <param name="voice">Fetch results with voice calls. (optional, default to 0)</param>
+        /// <param name="includeNotes">Fetch results with messenger notes. (optional, default to 0)</param>
         /// <returns>Task of ApiResponse (GetChatMessagesPaginatedResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetChatMessagesPaginatedResponse>> GetChatMessagesAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null)
+        public async System.Threading.Tasks.Task<ApiResponse<GetChatMessagesPaginatedResponse>> GetChatMessagesAsyncWithHttpInfo (int? id, int? page = null, int? limit = null, string query = null, string start = null, string end = null, string direction = null, int? voice = null, int? includeNotes = null)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -16317,6 +15896,7 @@ namespace TextMagicClient.Api
             if (end != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end", end)); // query parameter
             if (direction != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "direction", direction)); // query parameter
             if (voice != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "voice", voice)); // query parameter
+            if (includeNotes != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "includeNotes", includeNotes)); // query parameter
 
             // authentication (BasicAuth) required
             // http basic authentication required
@@ -19650,7 +19230,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Preview message Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Preview message Get a messages preview (with dynamic fields merged) of up to 100 messages per session. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -19678,7 +19258,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Preview message Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Preview message Get a messages preview (with dynamic fields merged) of up to 100 messages per session. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -19768,7 +19348,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Preview message Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Preview message Get a messages preview (with dynamic fields merged) of up to 100 messages per session. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -19797,7 +19377,7 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
-        /// Preview message Get a messages preview (with tags merged) of up to 100 messages per session.
+        /// Preview message Get a messages preview (with dynamic fields merged) of up to 100 messages per session. 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="text">Message text. Required if **template_id** is not set. (optional)</param>
@@ -26568,167 +26148,6 @@ namespace TextMagicClient.Api
             return new ApiResponse<SendMessageResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (SendMessageResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendMessageResponse)));
-        }
-
-        /// <summary>
-        /// Step 1: Send a verification code  Sends a verification code to a specified phone number.
-        /// </summary>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>SendPhoneVerificationCodeResponse</returns>
-        public SendPhoneVerificationCodeResponse SendPhoneVerificationCodeTFA (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject)
-        {
-             ApiResponse<SendPhoneVerificationCodeResponse> localVarResponse = SendPhoneVerificationCodeTFAWithHttpInfo(sendPhoneVerificationCodeTFAInputObject);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Step 1: Send a verification code  Sends a verification code to a specified phone number.
-        /// </summary>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>ApiResponse of SendPhoneVerificationCodeResponse</returns>
-        public ApiResponse< SendPhoneVerificationCodeResponse > SendPhoneVerificationCodeTFAWithHttpInfo (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject)
-        {
-            // verify the required parameter 'sendPhoneVerificationCodeTFAInputObject' is set
-            if (sendPhoneVerificationCodeTFAInputObject == null)
-                throw new ApiException(400, "Missing required parameter 'sendPhoneVerificationCodeTFAInputObject' when calling TextMagicApi->SendPhoneVerificationCodeTFA");
-
-            var localVarPath = "/api/v2/verify";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (sendPhoneVerificationCodeTFAInputObject != null && sendPhoneVerificationCodeTFAInputObject.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(sendPhoneVerificationCodeTFAInputObject); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = sendPhoneVerificationCodeTFAInputObject; // byte array
-            }
-
-            // authentication (BasicAuth) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("SendPhoneVerificationCodeTFA", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<SendPhoneVerificationCodeResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (SendPhoneVerificationCodeResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendPhoneVerificationCodeResponse)));
-        }
-
-        /// <summary>
-        /// Step 1: Send a verification code  Sends a verification code to a specified phone number.
-        /// </summary>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>Task of SendPhoneVerificationCodeResponse</returns>
-        public async System.Threading.Tasks.Task<SendPhoneVerificationCodeResponse> SendPhoneVerificationCodeTFAAsync (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject)
-        {
-             ApiResponse<SendPhoneVerificationCodeResponse> localVarResponse = await SendPhoneVerificationCodeTFAAsyncWithHttpInfo(sendPhoneVerificationCodeTFAInputObject);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Step 1: Send a verification code  Sends a verification code to a specified phone number.
-        /// </summary>
-        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="sendPhoneVerificationCodeTFAInputObject"></param>
-        /// <returns>Task of ApiResponse (SendPhoneVerificationCodeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendPhoneVerificationCodeResponse>> SendPhoneVerificationCodeTFAAsyncWithHttpInfo (SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject)
-        {
-            // verify the required parameter 'sendPhoneVerificationCodeTFAInputObject' is set
-            if (sendPhoneVerificationCodeTFAInputObject == null)
-                throw new ApiException(400, "Missing required parameter 'sendPhoneVerificationCodeTFAInputObject' when calling TextMagicApi->SendPhoneVerificationCodeTFA");
-
-            var localVarPath = "/api/v2/verify";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (sendPhoneVerificationCodeTFAInputObject != null && sendPhoneVerificationCodeTFAInputObject.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(sendPhoneVerificationCodeTFAInputObject); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = sendPhoneVerificationCodeTFAInputObject; // byte array
-            }
-
-            // authentication (BasicAuth) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("SendPhoneVerificationCodeTFA", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<SendPhoneVerificationCodeResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (SendPhoneVerificationCodeResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendPhoneVerificationCodeResponse)));
         }
 
         /// <summary>

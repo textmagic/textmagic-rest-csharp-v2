@@ -34,7 +34,7 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="UpdateCustomFieldValueInputObject" /> class.
         /// </summary>
         /// <param name="contactId">Contact ID. See [Contact](https://docs.textmagic.com/#tag/Contacts). .</param>
-        /// <param name="value">Custom field value. Note that this value is not parsed in any way; it is stored and used in tags exactly as you send it..</param>
+        /// <param name="value">Custom field value. Note that this value is not parsed in any way; it is stored and used in dynamic fields exactly as you send it..</param>
         public UpdateCustomFieldValueInputObject(int? contactId = default(int?), string value = default(string))
         {
             this.ContactId = contactId;
@@ -49,9 +49,9 @@ namespace TextMagicClient.Model
         public int? ContactId { get; set; }
 
         /// <summary>
-        /// Custom field value. Note that this value is not parsed in any way; it is stored and used in tags exactly as you send it.
+        /// Custom field value. Note that this value is not parsed in any way; it is stored and used in dynamic fields exactly as you send it.
         /// </summary>
-        /// <value>Custom field value. Note that this value is not parsed in any way; it is stored and used in tags exactly as you send it.</value>
+        /// <value>Custom field value. Note that this value is not parsed in any way; it is stored and used in dynamic fields exactly as you send it.</value>
         [DataMember(Name="value", EmitDefaultValue=false)]
         public string Value { get; set; }
 

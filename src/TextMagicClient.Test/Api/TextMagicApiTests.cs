@@ -102,30 +102,6 @@ namespace TextMagicClient.Test
         }
         
         /// <summary>
-        /// Test CancelVerification
-        /// </summary>
-        [Test]
-        public void CancelVerificationTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string verifyId = null;
-            //instance.CancelVerification(verifyId);
-            
-        }
-        
-        /// <summary>
-        /// Test CheckPhoneVerificationCodeTFA
-        /// </summary>
-        [Test]
-        public void CheckPhoneVerificationCodeTFATest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject = null;
-            //instance.CheckPhoneVerificationCodeTFA(checkPhoneVerificationCodeTFAInputObject);
-            
-        }
-        
-        /// <summary>
         /// Test ClearAndAssignContactsToList
         /// </summary>
         [Test]
@@ -825,7 +801,8 @@ namespace TextMagicClient.Test
             //string end = null;
             //string direction = null;
             //int? voice = null;
-            //var response = instance.GetChatMessages(id, page, limit, query, start, end, direction, voice);
+            //int? includeNotes = null;
+            //var response = instance.GetChatMessages(id, page, limit, query, start, end, direction, voice, includeNotes);
             //Assert.IsInstanceOf<GetChatMessagesPaginatedResponse> (response, "response is GetChatMessagesPaginatedResponse");
         }
         
@@ -1729,18 +1706,6 @@ namespace TextMagicClient.Test
             //SendMessageInputObject sendMessageInputObject = null;
             //var response = instance.SendMessage(sendMessageInputObject);
             //Assert.IsInstanceOf<SendMessageResponse> (response, "response is SendMessageResponse");
-        }
-        
-        /// <summary>
-        /// Test SendPhoneVerificationCodeTFA
-        /// </summary>
-        [Test]
-        public void SendPhoneVerificationCodeTFATest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject = null;
-            //var response = instance.SendPhoneVerificationCodeTFA(sendPhoneVerificationCodeTFAInputObject);
-            //Assert.IsInstanceOf<SendPhoneVerificationCodeResponse> (response, "response is SendPhoneVerificationCodeResponse");
         }
         
         /// <summary>

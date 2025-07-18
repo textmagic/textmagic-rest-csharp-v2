@@ -47,13 +47,16 @@ namespace TextMagicClient.Model
         /// <param name="phone">Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164). (required).</param>
         /// <param name="email">Contact email address. (required).</param>
         /// <param name="country">Contact country. (required).</param>
-        /// <param name="customFields">See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section. (required).</param>
+        /// <param name="customFields">customFields (required).</param>
         /// <param name="user">user (required).</param>
         /// <param name="lists">lists (required).</param>
+        /// <param name="owner">Contact Owner User ID..</param>
+        /// <param name="tags">tags.</param>
         /// <param name="phoneType">Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is a Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined.  (required).</param>
         /// <param name="avatar">avatar (required).</param>
         /// <param name="notes">notes (required).</param>
-        public Contact(int? id = default(int?), bool? favorited = default(bool?), bool? blocked = default(bool?), string firstName = default(string), string lastName = default(string), string companyName = default(string), string phone = default(string), string email = default(string), Country country = default(Country), List<ContactCustomField> customFields = default(List<ContactCustomField>), User user = default(User), List<List> lists = default(List<List>), string phoneType = default(string), ContactImage avatar = default(ContactImage), List<ContactNote> notes = default(List<ContactNote>))
+        /// <param name="whatsappPhone">Whatsapp phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164)..</param>
+        public Contact(int? id = default(int?), bool? favorited = default(bool?), bool? blocked = default(bool?), string firstName = default(string), string lastName = default(string), string companyName = default(string), string phone = default(string), string email = default(string), Country country = default(Country), List<CustomFieldListItem> customFields = default(List<CustomFieldListItem>), User user = default(User), List<List> lists = default(List<List>), User owner = default(User), List<Tag> tags = default(List<Tag>), string phoneType = default(string), ContactImage avatar = default(ContactImage), List<ContactNote> notes = default(List<ContactNote>), string whatsappPhone = default(string))
         {
             // to ensure "id" is required (not null)
             if (id == null)
@@ -190,6 +193,9 @@ namespace TextMagicClient.Model
             {
                 this.Notes = notes;
             }
+            this.Owner = owner;
+            this.Tags = tags;
+            this.WhatsappPhone = whatsappPhone;
         }
         
         /// <summary>
@@ -256,11 +262,10 @@ namespace TextMagicClient.Model
         public Country Country { get; set; }
 
         /// <summary>
-        /// See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section.
+        /// Gets or Sets CustomFields
         /// </summary>
-        /// <value>See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section.</value>
         [DataMember(Name="customFields", EmitDefaultValue=false)]
-        public List<ContactCustomField> CustomFields { get; set; }
+        public List<CustomFieldListItem> CustomFields { get; set; }
 
         /// <summary>
         /// Gets or Sets User
@@ -273,6 +278,19 @@ namespace TextMagicClient.Model
         /// </summary>
         [DataMember(Name="lists", EmitDefaultValue=false)]
         public List<List> Lists { get; set; }
+
+        /// <summary>
+        /// Contact Owner User ID.
+        /// </summary>
+        /// <value>Contact Owner User ID.</value>
+        [DataMember(Name="owner", EmitDefaultValue=false)]
+        public User Owner { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Tags
+        /// </summary>
+        [DataMember(Name="tags", EmitDefaultValue=false)]
+        public List<Tag> Tags { get; set; }
 
         /// <summary>
         /// Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is a Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined. 
@@ -294,6 +312,13 @@ namespace TextMagicClient.Model
         public List<ContactNote> Notes { get; set; }
 
         /// <summary>
+        /// Whatsapp phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).
+        /// </summary>
+        /// <value>Whatsapp phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).</value>
+        [DataMember(Name="whatsappPhone", EmitDefaultValue=false)]
+        public string WhatsappPhone { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -313,9 +338,12 @@ namespace TextMagicClient.Model
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             sb.Append("  User: ").Append(User).Append("\n");
             sb.Append("  Lists: ").Append(Lists).Append("\n");
+            sb.Append("  Owner: ").Append(Owner).Append("\n");
+            sb.Append("  Tags: ").Append(Tags).Append("\n");
             sb.Append("  PhoneType: ").Append(PhoneType).Append("\n");
             sb.Append("  Avatar: ").Append(Avatar).Append("\n");
             sb.Append("  Notes: ").Append(Notes).Append("\n");
+            sb.Append("  WhatsappPhone: ").Append(WhatsappPhone).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -411,6 +439,16 @@ namespace TextMagicClient.Model
                     this.Lists.SequenceEqual(input.Lists)
                 ) && 
                 (
+                    this.Owner == input.Owner ||
+                    (this.Owner != null &&
+                    this.Owner.Equals(input.Owner))
+                ) && 
+                (
+                    this.Tags == input.Tags ||
+                    this.Tags != null &&
+                    this.Tags.SequenceEqual(input.Tags)
+                ) && 
+                (
                     this.PhoneType == input.PhoneType ||
                     (this.PhoneType != null &&
                     this.PhoneType.Equals(input.PhoneType))
@@ -424,6 +462,11 @@ namespace TextMagicClient.Model
                     this.Notes == input.Notes ||
                     this.Notes != null &&
                     this.Notes.SequenceEqual(input.Notes)
+                ) && 
+                (
+                    this.WhatsappPhone == input.WhatsappPhone ||
+                    (this.WhatsappPhone != null &&
+                    this.WhatsappPhone.Equals(input.WhatsappPhone))
                 );
         }
 
@@ -460,12 +503,18 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.User.GetHashCode();
                 if (this.Lists != null)
                     hashCode = hashCode * 59 + this.Lists.GetHashCode();
+                if (this.Owner != null)
+                    hashCode = hashCode * 59 + this.Owner.GetHashCode();
+                if (this.Tags != null)
+                    hashCode = hashCode * 59 + this.Tags.GetHashCode();
                 if (this.PhoneType != null)
                     hashCode = hashCode * 59 + this.PhoneType.GetHashCode();
                 if (this.Avatar != null)
                     hashCode = hashCode * 59 + this.Avatar.GetHashCode();
                 if (this.Notes != null)
                     hashCode = hashCode * 59 + this.Notes.GetHashCode();
+                if (this.WhatsappPhone != null)
+                    hashCode = hashCode * 59 + this.WhatsappPhone.GetHashCode();
                 return hashCode;
             }
         }

@@ -99,6 +99,14 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'SystemAccountStateChanged'
         }
         /// <summary>
+        /// Test the property 'SystemAccountAcceptTermsUpdate'
+        /// </summary>
+        [Test]
+        public void SystemAccountAcceptTermsUpdateTest()
+        {
+            // TODO unit test for the property 'SystemAccountAcceptTermsUpdate'
+        }
+        /// <summary>
         /// Test the property 'SystemAccountClosed'
         /// </summary>
         [Test]
@@ -137,6 +145,14 @@ namespace TextMagicClient.Test
         public void UserBalanceChangedTest()
         {
             // TODO unit test for the property 'UserBalanceChanged'
+        }
+        /// <summary>
+        /// Test the property 'UserPresenceStatusChanged'
+        /// </summary>
+        [Test]
+        public void UserPresenceStatusChangedTest()
+        {
+            // TODO unit test for the property 'UserPresenceStatusChanged'
         }
         /// <summary>
         /// Test the property 'UserImpersonationEnd'
@@ -201,6 +217,38 @@ namespace TextMagicClient.Test
         public void MessageSentTest()
         {
             // TODO unit test for the property 'MessageSent'
+        }
+        /// <summary>
+        /// Test the property 'MessageLog'
+        /// </summary>
+        [Test]
+        public void MessageLogTest()
+        {
+            // TODO unit test for the property 'MessageLog'
+        }
+        /// <summary>
+        /// Test the property 'MessageNote'
+        /// </summary>
+        [Test]
+        public void MessageNoteTest()
+        {
+            // TODO unit test for the property 'MessageNote'
+        }
+        /// <summary>
+        /// Test the property 'MessageInitial'
+        /// </summary>
+        [Test]
+        public void MessageInitialTest()
+        {
+            // TODO unit test for the property 'MessageInitial'
+        }
+        /// <summary>
+        /// Test the property 'LastMessageSet'
+        /// </summary>
+        [Test]
+        public void LastMessageSetTest()
+        {
+            // TODO unit test for the property 'LastMessageSet'
         }
         /// <summary>
         /// Test the property 'MessageSessionDeleted'
@@ -355,6 +403,14 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'ChatReopened'
         }
         /// <summary>
+        /// Test the property 'ChatActivated'
+        /// </summary>
+        [Test]
+        public void ChatActivatedTest()
+        {
+            // TODO unit test for the property 'ChatActivated'
+        }
+        /// <summary>
         /// Test the property 'ChatCacheClear'
         /// </summary>
         [Test]
@@ -379,6 +435,70 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'ChatUnread'
         }
         /// <summary>
+        /// Test the property 'ChatAssigneeChanged'
+        /// </summary>
+        [Test]
+        public void ChatAssigneeChangedTest()
+        {
+            // TODO unit test for the property 'ChatAssigneeChanged'
+        }
+        /// <summary>
+        /// Test the property 'ChatTagsChanged'
+        /// </summary>
+        [Test]
+        public void ChatTagsChangedTest()
+        {
+            // TODO unit test for the property 'ChatTagsChanged'
+        }
+        /// <summary>
+        /// Test the property 'ChatConversationEnded'
+        /// </summary>
+        [Test]
+        public void ChatConversationEndedTest()
+        {
+            // TODO unit test for the property 'ChatConversationEnded'
+        }
+        /// <summary>
+        /// Test the property 'ChatUpdated'
+        /// </summary>
+        [Test]
+        public void ChatUpdatedTest()
+        {
+            // TODO unit test for the property 'ChatUpdated'
+        }
+        /// <summary>
+        /// Test the property 'LiveChatAgentChanged'
+        /// </summary>
+        [Test]
+        public void LiveChatAgentChangedTest()
+        {
+            // TODO unit test for the property 'LiveChatAgentChanged'
+        }
+        /// <summary>
+        /// Test the property 'LiveChatRated'
+        /// </summary>
+        [Test]
+        public void LiveChatRatedTest()
+        {
+            // TODO unit test for the property 'LiveChatRated'
+        }
+        /// <summary>
+        /// Test the property 'WebWidgetUpdated'
+        /// </summary>
+        [Test]
+        public void WebWidgetUpdatedTest()
+        {
+            // TODO unit test for the property 'WebWidgetUpdated'
+        }
+        /// <summary>
+        /// Test the property 'WebWidgetDeleted'
+        /// </summary>
+        [Test]
+        public void WebWidgetDeletedTest()
+        {
+            // TODO unit test for the property 'WebWidgetDeleted'
+        }
+        /// <summary>
         /// Test the property 'ContactAdded'
         /// </summary>
         [Test]
@@ -395,12 +515,60 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'ContactDeleted'
         }
         /// <summary>
+        /// Test the property 'ContactBulkUpdated'
+        /// </summary>
+        [Test]
+        public void ContactBulkUpdatedTest()
+        {
+            // TODO unit test for the property 'ContactBulkUpdated'
+        }
+        /// <summary>
         /// Test the property 'ContactStateChanged'
         /// </summary>
         [Test]
         public void ContactStateChangedTest()
         {
             // TODO unit test for the property 'ContactStateChanged'
+        }
+        /// <summary>
+        /// Test the property 'ContactUnsubscribed'
+        /// </summary>
+        [Test]
+        public void ContactUnsubscribedTest()
+        {
+            // TODO unit test for the property 'ContactUnsubscribed'
+        }
+        /// <summary>
+        /// Test the property 'ContactResubscribed'
+        /// </summary>
+        [Test]
+        public void ContactResubscribedTest()
+        {
+            // TODO unit test for the property 'ContactResubscribed'
+        }
+        /// <summary>
+        /// Test the property 'ContactNoteAdded'
+        /// </summary>
+        [Test]
+        public void ContactNoteAddedTest()
+        {
+            // TODO unit test for the property 'ContactNoteAdded'
+        }
+        /// <summary>
+        /// Test the property 'ContactNoteDeleted'
+        /// </summary>
+        [Test]
+        public void ContactNoteDeletedTest()
+        {
+            // TODO unit test for the property 'ContactNoteDeleted'
+        }
+        /// <summary>
+        /// Test the property 'ContactNoteStateChanged'
+        /// </summary>
+        [Test]
+        public void ContactNoteStateChangedTest()
+        {
+            // TODO unit test for the property 'ContactNoteStateChanged'
         }
         /// <summary>
         /// Test the property 'ListAdded'
@@ -425,6 +593,14 @@ namespace TextMagicClient.Test
         public void ListStateChangedTest()
         {
             // TODO unit test for the property 'ListStateChanged'
+        }
+        /// <summary>
+        /// Test the property 'ListCountMembersUpdated'
+        /// </summary>
+        [Test]
+        public void ListCountMembersUpdatedTest()
+        {
+            // TODO unit test for the property 'ListCountMembersUpdated'
         }
         /// <summary>
         /// Test the property 'ContactWipeEnd'
@@ -491,12 +667,12 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'ProgressSubAccountBulkImport'
         }
         /// <summary>
-        /// Test the property 'ProgressContactBulkImport'
+        /// Test the property 'ImportProgressState'
         /// </summary>
         [Test]
-        public void ProgressContactBulkImportTest()
+        public void ImportProgressStateTest()
         {
-            // TODO unit test for the property 'ProgressContactBulkImport'
+            // TODO unit test for the property 'ImportProgressState'
         }
         /// <summary>
         /// Test the property 'ForceRefreshWebApp'
@@ -561,6 +737,822 @@ namespace TextMagicClient.Test
         public void UserSubscriptionDeletedTest()
         {
             // TODO unit test for the property 'UserSubscriptionDeleted'
+        }
+        /// <summary>
+        /// Test the property 'TaskCreated'
+        /// </summary>
+        [Test]
+        public void TaskCreatedTest()
+        {
+            // TODO unit test for the property 'TaskCreated'
+        }
+        /// <summary>
+        /// Test the property 'TaskUpdated'
+        /// </summary>
+        [Test]
+        public void TaskUpdatedTest()
+        {
+            // TODO unit test for the property 'TaskUpdated'
+        }
+        /// <summary>
+        /// Test the property 'TaskReordered'
+        /// </summary>
+        [Test]
+        public void TaskReorderedTest()
+        {
+            // TODO unit test for the property 'TaskReordered'
+        }
+        /// <summary>
+        /// Test the property 'TaskDeleted'
+        /// </summary>
+        [Test]
+        public void TaskDeletedTest()
+        {
+            // TODO unit test for the property 'TaskDeleted'
+        }
+        /// <summary>
+        /// Test the property 'TaskMovedAll'
+        /// </summary>
+        [Test]
+        public void TaskMovedAllTest()
+        {
+            // TODO unit test for the property 'TaskMovedAll'
+        }
+        /// <summary>
+        /// Test the property 'TaskStageCreated'
+        /// </summary>
+        [Test]
+        public void TaskStageCreatedTest()
+        {
+            // TODO unit test for the property 'TaskStageCreated'
+        }
+        /// <summary>
+        /// Test the property 'TaskStageUpdated'
+        /// </summary>
+        [Test]
+        public void TaskStageUpdatedTest()
+        {
+            // TODO unit test for the property 'TaskStageUpdated'
+        }
+        /// <summary>
+        /// Test the property 'TaskStageDeleted'
+        /// </summary>
+        [Test]
+        public void TaskStageDeletedTest()
+        {
+            // TODO unit test for the property 'TaskStageDeleted'
+        }
+        /// <summary>
+        /// Test the property 'TaskBoardCreated'
+        /// </summary>
+        [Test]
+        public void TaskBoardCreatedTest()
+        {
+            // TODO unit test for the property 'TaskBoardCreated'
+        }
+        /// <summary>
+        /// Test the property 'TaskBoardUpdated'
+        /// </summary>
+        [Test]
+        public void TaskBoardUpdatedTest()
+        {
+            // TODO unit test for the property 'TaskBoardUpdated'
+        }
+        /// <summary>
+        /// Test the property 'TaskBoardReordered'
+        /// </summary>
+        [Test]
+        public void TaskBoardReorderedTest()
+        {
+            // TODO unit test for the property 'TaskBoardReordered'
+        }
+        /// <summary>
+        /// Test the property 'TaskBoardDeleted'
+        /// </summary>
+        [Test]
+        public void TaskBoardDeletedTest()
+        {
+            // TODO unit test for the property 'TaskBoardDeleted'
+        }
+        /// <summary>
+        /// Test the property 'TaskBoardArchived'
+        /// </summary>
+        [Test]
+        public void TaskBoardArchivedTest()
+        {
+            // TODO unit test for the property 'TaskBoardArchived'
+        }
+        /// <summary>
+        /// Test the property 'TaskChecklistCreated'
+        /// </summary>
+        [Test]
+        public void TaskChecklistCreatedTest()
+        {
+            // TODO unit test for the property 'TaskChecklistCreated'
+        }
+        /// <summary>
+        /// Test the property 'TaskChecklistUpdated'
+        /// </summary>
+        [Test]
+        public void TaskChecklistUpdatedTest()
+        {
+            // TODO unit test for the property 'TaskChecklistUpdated'
+        }
+        /// <summary>
+        /// Test the property 'TaskChecklistDeleted'
+        /// </summary>
+        [Test]
+        public void TaskChecklistDeletedTest()
+        {
+            // TODO unit test for the property 'TaskChecklistDeleted'
+        }
+        /// <summary>
+        /// Test the property 'TaskChecklistBulkMarked'
+        /// </summary>
+        [Test]
+        public void TaskChecklistBulkMarkedTest()
+        {
+            // TODO unit test for the property 'TaskChecklistBulkMarked'
+        }
+        /// <summary>
+        /// Test the property 'TaskChecklistItemCreated'
+        /// </summary>
+        [Test]
+        public void TaskChecklistItemCreatedTest()
+        {
+            // TODO unit test for the property 'TaskChecklistItemCreated'
+        }
+        /// <summary>
+        /// Test the property 'TaskChecklistItemUpdated'
+        /// </summary>
+        [Test]
+        public void TaskChecklistItemUpdatedTest()
+        {
+            // TODO unit test for the property 'TaskChecklistItemUpdated'
+        }
+        /// <summary>
+        /// Test the property 'TaskChecklistItemDeleted'
+        /// </summary>
+        [Test]
+        public void TaskChecklistItemDeletedTest()
+        {
+            // TODO unit test for the property 'TaskChecklistItemDeleted'
+        }
+        /// <summary>
+        /// Test the property 'TaskCommentCreated'
+        /// </summary>
+        [Test]
+        public void TaskCommentCreatedTest()
+        {
+            // TODO unit test for the property 'TaskCommentCreated'
+        }
+        /// <summary>
+        /// Test the property 'TaskCommentDeleted'
+        /// </summary>
+        [Test]
+        public void TaskCommentDeletedTest()
+        {
+            // TODO unit test for the property 'TaskCommentDeleted'
+        }
+        /// <summary>
+        /// Test the property 'PinnedContactAdded'
+        /// </summary>
+        [Test]
+        public void PinnedContactAddedTest()
+        {
+            // TODO unit test for the property 'PinnedContactAdded'
+        }
+        /// <summary>
+        /// Test the property 'PinnedContactRemoved'
+        /// </summary>
+        [Test]
+        public void PinnedContactRemovedTest()
+        {
+            // TODO unit test for the property 'PinnedContactRemoved'
+        }
+        /// <summary>
+        /// Test the property 'PinnedContactReordered'
+        /// </summary>
+        [Test]
+        public void PinnedContactReorderedTest()
+        {
+            // TODO unit test for the property 'PinnedContactReordered'
+        }
+        /// <summary>
+        /// Test the property 'PinnedContactStateChanged'
+        /// </summary>
+        [Test]
+        public void PinnedContactStateChangedTest()
+        {
+            // TODO unit test for the property 'PinnedContactStateChanged'
+        }
+        /// <summary>
+        /// Test the property 'WhatsappAccountAdded'
+        /// </summary>
+        [Test]
+        public void WhatsappAccountAddedTest()
+        {
+            // TODO unit test for the property 'WhatsappAccountAdded'
+        }
+        /// <summary>
+        /// Test the property 'WhatsappAccountRemoved'
+        /// </summary>
+        [Test]
+        public void WhatsappAccountRemovedTest()
+        {
+            // TODO unit test for the property 'WhatsappAccountRemoved'
+        }
+        /// <summary>
+        /// Test the property 'WhatsappAccountChanged'
+        /// </summary>
+        [Test]
+        public void WhatsappAccountChangedTest()
+        {
+            // TODO unit test for the property 'WhatsappAccountChanged'
+        }
+        /// <summary>
+        /// Test the property 'FacebookPageAdded'
+        /// </summary>
+        [Test]
+        public void FacebookPageAddedTest()
+        {
+            // TODO unit test for the property 'FacebookPageAdded'
+        }
+        /// <summary>
+        /// Test the property 'FacebookPageRemoved'
+        /// </summary>
+        [Test]
+        public void FacebookPageRemovedTest()
+        {
+            // TODO unit test for the property 'FacebookPageRemoved'
+        }
+        /// <summary>
+        /// Test the property 'FacebookPageChanged'
+        /// </summary>
+        [Test]
+        public void FacebookPageChangedTest()
+        {
+            // TODO unit test for the property 'FacebookPageChanged'
+        }
+        /// <summary>
+        /// Test the property 'InstagramAccountAdded'
+        /// </summary>
+        [Test]
+        public void InstagramAccountAddedTest()
+        {
+            // TODO unit test for the property 'InstagramAccountAdded'
+        }
+        /// <summary>
+        /// Test the property 'InstagramAccountRemoved'
+        /// </summary>
+        [Test]
+        public void InstagramAccountRemovedTest()
+        {
+            // TODO unit test for the property 'InstagramAccountRemoved'
+        }
+        /// <summary>
+        /// Test the property 'InstagramAccountChanged'
+        /// </summary>
+        [Test]
+        public void InstagramAccountChangedTest()
+        {
+            // TODO unit test for the property 'InstagramAccountChanged'
+        }
+        /// <summary>
+        /// Test the property 'UnreadTicketsCountUpdated'
+        /// </summary>
+        [Test]
+        public void UnreadTicketsCountUpdatedTest()
+        {
+            // TODO unit test for the property 'UnreadTicketsCountUpdated'
+        }
+        /// <summary>
+        /// Test the property 'TicketDeleted'
+        /// </summary>
+        [Test]
+        public void TicketDeletedTest()
+        {
+            // TODO unit test for the property 'TicketDeleted'
+        }
+        /// <summary>
+        /// Test the property 'TicketUpdated'
+        /// </summary>
+        [Test]
+        public void TicketUpdatedTest()
+        {
+            // TODO unit test for the property 'TicketUpdated'
+        }
+        /// <summary>
+        /// Test the property 'TicketCreated'
+        /// </summary>
+        [Test]
+        public void TicketCreatedTest()
+        {
+            // TODO unit test for the property 'TicketCreated'
+        }
+        /// <summary>
+        /// Test the property 'TicketBulkUpdated'
+        /// </summary>
+        [Test]
+        public void TicketBulkUpdatedTest()
+        {
+            // TODO unit test for the property 'TicketBulkUpdated'
+        }
+        /// <summary>
+        /// Test the property 'TicketBulkDeleted'
+        /// </summary>
+        [Test]
+        public void TicketBulkDeletedTest()
+        {
+            // TODO unit test for the property 'TicketBulkDeleted'
+        }
+        /// <summary>
+        /// Test the property 'TicketMessageCreated'
+        /// </summary>
+        [Test]
+        public void TicketMessageCreatedTest()
+        {
+            // TODO unit test for the property 'TicketMessageCreated'
+        }
+        /// <summary>
+        /// Test the property 'TicketMessageUpdated'
+        /// </summary>
+        [Test]
+        public void TicketMessageUpdatedTest()
+        {
+            // TODO unit test for the property 'TicketMessageUpdated'
+        }
+        /// <summary>
+        /// Test the property 'TicketMessageDeleted'
+        /// </summary>
+        [Test]
+        public void TicketMessageDeletedTest()
+        {
+            // TODO unit test for the property 'TicketMessageDeleted'
+        }
+        /// <summary>
+        /// Test the property 'SubAccountsClosed'
+        /// </summary>
+        [Test]
+        public void SubAccountsClosedTest()
+        {
+            // TODO unit test for the property 'SubAccountsClosed'
+        }
+        /// <summary>
+        /// Test the property 'UserInvited'
+        /// </summary>
+        [Test]
+        public void UserInvitedTest()
+        {
+            // TODO unit test for the property 'UserInvited'
+        }
+        /// <summary>
+        /// Test the property 'FilteredViewCreated'
+        /// </summary>
+        [Test]
+        public void FilteredViewCreatedTest()
+        {
+            // TODO unit test for the property 'FilteredViewCreated'
+        }
+        /// <summary>
+        /// Test the property 'FilteredViewCountUpdated'
+        /// </summary>
+        [Test]
+        public void FilteredViewCountUpdatedTest()
+        {
+            // TODO unit test for the property 'FilteredViewCountUpdated'
+        }
+        /// <summary>
+        /// Test the property 'FilteredViewDeleted'
+        /// </summary>
+        [Test]
+        public void FilteredViewDeletedTest()
+        {
+            // TODO unit test for the property 'FilteredViewDeleted'
+        }
+        /// <summary>
+        /// Test the property 'ForwardingInboxWasVerified'
+        /// </summary>
+        [Test]
+        public void ForwardingInboxWasVerifiedTest()
+        {
+            // TODO unit test for the property 'ForwardingInboxWasVerified'
+        }
+        /// <summary>
+        /// Test the property 'ForwardingInboxCheckWasFailed'
+        /// </summary>
+        [Test]
+        public void ForwardingInboxCheckWasFailedTest()
+        {
+            // TODO unit test for the property 'ForwardingInboxCheckWasFailed'
+        }
+        /// <summary>
+        /// Test the property 'ForwardingInboxVerificationLinkWasParsed'
+        /// </summary>
+        [Test]
+        public void ForwardingInboxVerificationLinkWasParsedTest()
+        {
+            // TODO unit test for the property 'ForwardingInboxVerificationLinkWasParsed'
+        }
+        /// <summary>
+        /// Test the property 'TendlcLinkNumberStatusUpdated'
+        /// </summary>
+        [Test]
+        public void TendlcLinkNumberStatusUpdatedTest()
+        {
+            // TODO unit test for the property 'TendlcLinkNumberStatusUpdated'
+        }
+        /// <summary>
+        /// Test the property 'ChannelPresence'
+        /// </summary>
+        [Test]
+        public void ChannelPresenceTest()
+        {
+            // TODO unit test for the property 'ChannelPresence'
+        }
+        /// <summary>
+        /// Test the property 'DealCreated'
+        /// </summary>
+        [Test]
+        public void DealCreatedTest()
+        {
+            // TODO unit test for the property 'DealCreated'
+        }
+        /// <summary>
+        /// Test the property 'DealUpdated'
+        /// </summary>
+        [Test]
+        public void DealUpdatedTest()
+        {
+            // TODO unit test for the property 'DealUpdated'
+        }
+        /// <summary>
+        /// Test the property 'DealDeleted'
+        /// </summary>
+        [Test]
+        public void DealDeletedTest()
+        {
+            // TODO unit test for the property 'DealDeleted'
+        }
+        /// <summary>
+        /// Test the property 'DealMoved'
+        /// </summary>
+        [Test]
+        public void DealMovedTest()
+        {
+            // TODO unit test for the property 'DealMoved'
+        }
+        /// <summary>
+        /// Test the property 'DealStageCreated'
+        /// </summary>
+        [Test]
+        public void DealStageCreatedTest()
+        {
+            // TODO unit test for the property 'DealStageCreated'
+        }
+        /// <summary>
+        /// Test the property 'DealStageUpdated'
+        /// </summary>
+        [Test]
+        public void DealStageUpdatedTest()
+        {
+            // TODO unit test for the property 'DealStageUpdated'
+        }
+        /// <summary>
+        /// Test the property 'DealStageDeleted'
+        /// </summary>
+        [Test]
+        public void DealStageDeletedTest()
+        {
+            // TODO unit test for the property 'DealStageDeleted'
+        }
+        /// <summary>
+        /// Test the property 'DealPipelineCreated'
+        /// </summary>
+        [Test]
+        public void DealPipelineCreatedTest()
+        {
+            // TODO unit test for the property 'DealPipelineCreated'
+        }
+        /// <summary>
+        /// Test the property 'DealPipelineUpdated'
+        /// </summary>
+        [Test]
+        public void DealPipelineUpdatedTest()
+        {
+            // TODO unit test for the property 'DealPipelineUpdated'
+        }
+        /// <summary>
+        /// Test the property 'DealPipelineDeleted'
+        /// </summary>
+        [Test]
+        public void DealPipelineDeletedTest()
+        {
+            // TODO unit test for the property 'DealPipelineDeleted'
+        }
+        /// <summary>
+        /// Test the property 'DealPipelineArchived'
+        /// </summary>
+        [Test]
+        public void DealPipelineArchivedTest()
+        {
+            // TODO unit test for the property 'DealPipelineArchived'
+        }
+        /// <summary>
+        /// Test the property 'DealPipelineReordered'
+        /// </summary>
+        [Test]
+        public void DealPipelineReorderedTest()
+        {
+            // TODO unit test for the property 'DealPipelineReordered'
+        }
+        /// <summary>
+        /// Test the property 'DealActivityUpdated'
+        /// </summary>
+        [Test]
+        public void DealActivityUpdatedTest()
+        {
+            // TODO unit test for the property 'DealActivityUpdated'
+        }
+        /// <summary>
+        /// Test the property 'DealActivityItemCreated'
+        /// </summary>
+        [Test]
+        public void DealActivityItemCreatedTest()
+        {
+            // TODO unit test for the property 'DealActivityItemCreated'
+        }
+        /// <summary>
+        /// Test the property 'DealActivityItemUpdated'
+        /// </summary>
+        [Test]
+        public void DealActivityItemUpdatedTest()
+        {
+            // TODO unit test for the property 'DealActivityItemUpdated'
+        }
+        /// <summary>
+        /// Test the property 'DealActivityItemDeleted'
+        /// </summary>
+        [Test]
+        public void DealActivityItemDeletedTest()
+        {
+            // TODO unit test for the property 'DealActivityItemDeleted'
+        }
+        /// <summary>
+        /// Test the property 'DealActivityItemBulkMarked'
+        /// </summary>
+        [Test]
+        public void DealActivityItemBulkMarkedTest()
+        {
+            // TODO unit test for the property 'DealActivityItemBulkMarked'
+        }
+        /// <summary>
+        /// Test the property 'DealTimelineItemDeleted'
+        /// </summary>
+        [Test]
+        public void DealTimelineItemDeletedTest()
+        {
+            // TODO unit test for the property 'DealTimelineItemDeleted'
+        }
+        /// <summary>
+        /// Test the property 'DealTimelineItemCreated'
+        /// </summary>
+        [Test]
+        public void DealTimelineItemCreatedTest()
+        {
+            // TODO unit test for the property 'DealTimelineItemCreated'
+        }
+        /// <summary>
+        /// Test the property 'AIAssistantCreated'
+        /// </summary>
+        [Test]
+        public void AIAssistantCreatedTest()
+        {
+            // TODO unit test for the property 'AIAssistantCreated'
+        }
+        /// <summary>
+        /// Test the property 'AIAssistantState'
+        /// </summary>
+        [Test]
+        public void AIAssistantStateTest()
+        {
+            // TODO unit test for the property 'AIAssistantState'
+        }
+        /// <summary>
+        /// Test the property 'AIAssistantDeleted'
+        /// </summary>
+        [Test]
+        public void AIAssistantDeletedTest()
+        {
+            // TODO unit test for the property 'AIAssistantDeleted'
+        }
+        /// <summary>
+        /// Test the property 'AIAssistantLinkDeleted'
+        /// </summary>
+        [Test]
+        public void AIAssistantLinkDeletedTest()
+        {
+            // TODO unit test for the property 'AIAssistantLinkDeleted'
+        }
+        /// <summary>
+        /// Test the property 'AIAssistantLinkState'
+        /// </summary>
+        [Test]
+        public void AIAssistantLinkStateTest()
+        {
+            // TODO unit test for the property 'AIAssistantLinkState'
+        }
+        /// <summary>
+        /// Test the property 'AIAssistantLinkCreated'
+        /// </summary>
+        [Test]
+        public void AIAssistantLinkCreatedTest()
+        {
+            // TODO unit test for the property 'AIAssistantLinkCreated'
+        }
+        /// <summary>
+        /// Test the property 'AIAssistantSubLinkState'
+        /// </summary>
+        [Test]
+        public void AIAssistantSubLinkStateTest()
+        {
+            // TODO unit test for the property 'AIAssistantSubLinkState'
+        }
+        /// <summary>
+        /// Test the property 'AIAssistantSubLinkCreated'
+        /// </summary>
+        [Test]
+        public void AIAssistantSubLinkCreatedTest()
+        {
+            // TODO unit test for the property 'AIAssistantSubLinkCreated'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignEmailSenderCreated'
+        /// </summary>
+        [Test]
+        public void EmailCampaignEmailSenderCreatedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignEmailSenderCreated'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignEmailSenderUpdated'
+        /// </summary>
+        [Test]
+        public void EmailCampaignEmailSenderUpdatedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignEmailSenderUpdated'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignEmailSenderDeleted'
+        /// </summary>
+        [Test]
+        public void EmailCampaignEmailSenderDeletedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignEmailSenderDeleted'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignDomainCreated'
+        /// </summary>
+        [Test]
+        public void EmailCampaignDomainCreatedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignDomainCreated'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignDomainDeleted'
+        /// </summary>
+        [Test]
+        public void EmailCampaignDomainDeletedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignDomainDeleted'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignDomainVerified'
+        /// </summary>
+        [Test]
+        public void EmailCampaignDomainVerifiedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignDomainVerified'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignDomainStatusChanged'
+        /// </summary>
+        [Test]
+        public void EmailCampaignDomainStatusChangedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignDomainStatusChanged'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignDomainDkimVerified'
+        /// </summary>
+        [Test]
+        public void EmailCampaignDomainDkimVerifiedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignDomainDkimVerified'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignDomainReturnPathVerified'
+        /// </summary>
+        [Test]
+        public void EmailCampaignDomainReturnPathVerifiedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignDomainReturnPathVerified'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignDomainDmarcVerified'
+        /// </summary>
+        [Test]
+        public void EmailCampaignDomainDmarcVerifiedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignDomainDmarcVerified'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignDomainEntryVerificationChanged'
+        /// </summary>
+        [Test]
+        public void EmailCampaignDomainEntryVerificationChangedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignDomainEntryVerificationChanged'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignProgressState'
+        /// </summary>
+        [Test]
+        public void EmailCampaignProgressStateTest()
+        {
+            // TODO unit test for the property 'EmailCampaignProgressState'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignUpdated'
+        /// </summary>
+        [Test]
+        public void EmailCampaignUpdatedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignUpdated'
+        }
+        /// <summary>
+        /// Test the property 'SmsCampaignInvalidated'
+        /// </summary>
+        [Test]
+        public void SmsCampaignInvalidatedTest()
+        {
+            // TODO unit test for the property 'SmsCampaignInvalidated'
+        }
+        /// <summary>
+        /// Test the property 'ScheduledEmailCampaignCreated'
+        /// </summary>
+        [Test]
+        public void ScheduledEmailCampaignCreatedTest()
+        {
+            // TODO unit test for the property 'ScheduledEmailCampaignCreated'
+        }
+        /// <summary>
+        /// Test the property 'ScheduledEmailCampaignUpdated'
+        /// </summary>
+        [Test]
+        public void ScheduledEmailCampaignUpdatedTest()
+        {
+            // TODO unit test for the property 'ScheduledEmailCampaignUpdated'
+        }
+        /// <summary>
+        /// Test the property 'ScheduledEmailCampaignStatusUpdated'
+        /// </summary>
+        [Test]
+        public void ScheduledEmailCampaignStatusUpdatedTest()
+        {
+            // TODO unit test for the property 'ScheduledEmailCampaignStatusUpdated'
+        }
+        /// <summary>
+        /// Test the property 'ScheduledEmailCampaignDeleted'
+        /// </summary>
+        [Test]
+        public void ScheduledEmailCampaignDeletedTest()
+        {
+            // TODO unit test for the property 'ScheduledEmailCampaignDeleted'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignFailedAttemptCreated'
+        /// </summary>
+        [Test]
+        public void EmailCampaignFailedAttemptCreatedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignFailedAttemptCreated'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignFailedAttemptDeleted'
+        /// </summary>
+        [Test]
+        public void EmailCampaignFailedAttemptDeletedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignFailedAttemptDeleted'
+        }
+        /// <summary>
+        /// Test the property 'EmailCampaignFailedAttemptStateUpdated'
+        /// </summary>
+        [Test]
+        public void EmailCampaignFailedAttemptStateUpdatedTest()
+        {
+            // TODO unit test for the property 'EmailCampaignFailedAttemptStateUpdated'
         }
 
     }

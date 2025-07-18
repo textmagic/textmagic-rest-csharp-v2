@@ -127,7 +127,11 @@ namespace TextMagicClient.Model
         /// <param name="timeLeftMute">Time left untill the chat will be unmuted (seconds). (required).</param>
         /// <param name="country">country (required).</param>
         /// <param name="pinned">Indicates when the chat is pinned. (required).</param>
-        public Chat(int? id = default(int?), int? originalId = default(int?), string phone = default(string), Contact contact = default(Contact), int? unsubscribedContactId = default(int?), int? unread = default(int?), DateTime? updatedAt = default(DateTime?), StatusEnum status = default(StatusEnum), int? mute = default(int?), string lastMessage = default(string), DirectionEnum direction = default(DirectionEnum), string replyOptionsType = default(string), string from = default(string), DateTime? mutedUntil = default(DateTime?), int? timeLeftMute = default(int?), Country country = default(Country), bool? pinned = default(bool?))
+        /// <param name="type">Chat type. (required).</param>
+        /// <param name="smsPrice">smsPrice (required).</param>
+        /// <param name="mmsPrice">mmsPrice (required).</param>
+        /// <param name="tags">tags.</param>
+        public Chat(int? id = default(int?), int? originalId = default(int?), string phone = default(string), Contact contact = default(Contact), int? unsubscribedContactId = default(int?), int? unread = default(int?), DateTime? updatedAt = default(DateTime?), StatusEnum status = default(StatusEnum), int? mute = default(int?), string lastMessage = default(string), DirectionEnum direction = default(DirectionEnum), string replyOptionsType = default(string), string from = default(string), DateTime? mutedUntil = default(DateTime?), int? timeLeftMute = default(int?), Country country = default(Country), bool? pinned = default(bool?), string type = default(string), decimal? smsPrice = default(decimal?), decimal? mmsPrice = default(decimal?), List<Tag> tags = default(List<Tag>))
         {
             // to ensure "id" is required (not null)
             if (id == null)
@@ -282,6 +286,34 @@ namespace TextMagicClient.Model
             {
                 this.Pinned = pinned;
             }
+            // to ensure "type" is required (not null)
+            if (type == null)
+            {
+                throw new InvalidDataException("type is a required property for Chat and cannot be null");
+            }
+            else
+            {
+                this.Type = type;
+            }
+            // to ensure "smsPrice" is required (not null)
+            if (smsPrice == null)
+            {
+                throw new InvalidDataException("smsPrice is a required property for Chat and cannot be null");
+            }
+            else
+            {
+                this.SmsPrice = smsPrice;
+            }
+            // to ensure "mmsPrice" is required (not null)
+            if (mmsPrice == null)
+            {
+                throw new InvalidDataException("mmsPrice is a required property for Chat and cannot be null");
+            }
+            else
+            {
+                this.MmsPrice = mmsPrice;
+            }
+            this.Tags = tags;
         }
         
         /// <summary>
@@ -389,6 +421,31 @@ namespace TextMagicClient.Model
         public bool? Pinned { get; set; }
 
         /// <summary>
+        /// Chat type.
+        /// </summary>
+        /// <value>Chat type.</value>
+        [DataMember(Name="type", EmitDefaultValue=false)]
+        public string Type { get; set; }
+
+        /// <summary>
+        /// Gets or Sets SmsPrice
+        /// </summary>
+        [DataMember(Name="smsPrice", EmitDefaultValue=false)]
+        public decimal? SmsPrice { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MmsPrice
+        /// </summary>
+        [DataMember(Name="mmsPrice", EmitDefaultValue=false)]
+        public decimal? MmsPrice { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Tags
+        /// </summary>
+        [DataMember(Name="tags", EmitDefaultValue=false)]
+        public List<Tag> Tags { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -413,6 +470,10 @@ namespace TextMagicClient.Model
             sb.Append("  TimeLeftMute: ").Append(TimeLeftMute).Append("\n");
             sb.Append("  Country: ").Append(Country).Append("\n");
             sb.Append("  Pinned: ").Append(Pinned).Append("\n");
+            sb.Append("  Type: ").Append(Type).Append("\n");
+            sb.Append("  SmsPrice: ").Append(SmsPrice).Append("\n");
+            sb.Append("  MmsPrice: ").Append(MmsPrice).Append("\n");
+            sb.Append("  Tags: ").Append(Tags).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -531,6 +592,26 @@ namespace TextMagicClient.Model
                     this.Pinned == input.Pinned ||
                     (this.Pinned != null &&
                     this.Pinned.Equals(input.Pinned))
+                ) && 
+                (
+                    this.Type == input.Type ||
+                    (this.Type != null &&
+                    this.Type.Equals(input.Type))
+                ) && 
+                (
+                    this.SmsPrice == input.SmsPrice ||
+                    (this.SmsPrice != null &&
+                    this.SmsPrice.Equals(input.SmsPrice))
+                ) && 
+                (
+                    this.MmsPrice == input.MmsPrice ||
+                    (this.MmsPrice != null &&
+                    this.MmsPrice.Equals(input.MmsPrice))
+                ) && 
+                (
+                    this.Tags == input.Tags ||
+                    this.Tags != null &&
+                    this.Tags.SequenceEqual(input.Tags)
                 );
         }
 
@@ -577,6 +658,14 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.Country.GetHashCode();
                 if (this.Pinned != null)
                     hashCode = hashCode * 59 + this.Pinned.GetHashCode();
+                if (this.Type != null)
+                    hashCode = hashCode * 59 + this.Type.GetHashCode();
+                if (this.SmsPrice != null)
+                    hashCode = hashCode * 59 + this.SmsPrice.GetHashCode();
+                if (this.MmsPrice != null)
+                    hashCode = hashCode * 59 + this.MmsPrice.GetHashCode();
+                if (this.Tags != null)
+                    hashCode = hashCode * 59 + this.Tags.GetHashCode();
                 return hashCode;
             }
         }

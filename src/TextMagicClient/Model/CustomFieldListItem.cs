@@ -39,8 +39,11 @@ namespace TextMagicClient.Model
         /// Initializes a new instance of the <see cref="CustomFieldListItem" /> class.
         /// </summary>
         /// <param name="id">Custom Field ID. (required).</param>
+        /// <param name="userCustomFieldId">Old property custom Field ID. (required).</param>
+        /// <param name="name">Custom Field name. (required).</param>
         /// <param name="value">Custom Field value. (required).</param>
-        public CustomFieldListItem(int? id = default(int?), string value = default(string))
+        /// <param name="createdAt">Custom field creation time. (required).</param>
+        public CustomFieldListItem(int? id = default(int?), int? userCustomFieldId = default(int?), string name = default(string), string value = default(string), DateTime? createdAt = default(DateTime?))
         {
             // to ensure "id" is required (not null)
             if (id == null)
@@ -51,6 +54,24 @@ namespace TextMagicClient.Model
             {
                 this.Id = id;
             }
+            // to ensure "userCustomFieldId" is required (not null)
+            if (userCustomFieldId == null)
+            {
+                throw new InvalidDataException("userCustomFieldId is a required property for CustomFieldListItem and cannot be null");
+            }
+            else
+            {
+                this.UserCustomFieldId = userCustomFieldId;
+            }
+            // to ensure "name" is required (not null)
+            if (name == null)
+            {
+                throw new InvalidDataException("name is a required property for CustomFieldListItem and cannot be null");
+            }
+            else
+            {
+                this.Name = name;
+            }
             // to ensure "value" is required (not null)
             if (value == null)
             {
@@ -59,6 +80,15 @@ namespace TextMagicClient.Model
             else
             {
                 this.Value = value;
+            }
+            // to ensure "createdAt" is required (not null)
+            if (createdAt == null)
+            {
+                throw new InvalidDataException("createdAt is a required property for CustomFieldListItem and cannot be null");
+            }
+            else
+            {
+                this.CreatedAt = createdAt;
             }
         }
         
@@ -70,11 +100,32 @@ namespace TextMagicClient.Model
         public int? Id { get; set; }
 
         /// <summary>
+        /// Old property custom Field ID.
+        /// </summary>
+        /// <value>Old property custom Field ID.</value>
+        [DataMember(Name="userCustomFieldId", EmitDefaultValue=false)]
+        public int? UserCustomFieldId { get; set; }
+
+        /// <summary>
+        /// Custom Field name.
+        /// </summary>
+        /// <value>Custom Field name.</value>
+        [DataMember(Name="name", EmitDefaultValue=false)]
+        public string Name { get; set; }
+
+        /// <summary>
         /// Custom Field value.
         /// </summary>
         /// <value>Custom Field value.</value>
         [DataMember(Name="value", EmitDefaultValue=false)]
         public string Value { get; set; }
+
+        /// <summary>
+        /// Custom field creation time.
+        /// </summary>
+        /// <value>Custom field creation time.</value>
+        [DataMember(Name="createdAt", EmitDefaultValue=false)]
+        public DateTime? CreatedAt { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -85,7 +136,10 @@ namespace TextMagicClient.Model
             var sb = new StringBuilder();
             sb.Append("class CustomFieldListItem {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
+            sb.Append("  UserCustomFieldId: ").Append(UserCustomFieldId).Append("\n");
+            sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  Value: ").Append(Value).Append("\n");
+            sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -126,9 +180,24 @@ namespace TextMagicClient.Model
                     this.Id.Equals(input.Id))
                 ) && 
                 (
+                    this.UserCustomFieldId == input.UserCustomFieldId ||
+                    (this.UserCustomFieldId != null &&
+                    this.UserCustomFieldId.Equals(input.UserCustomFieldId))
+                ) && 
+                (
+                    this.Name == input.Name ||
+                    (this.Name != null &&
+                    this.Name.Equals(input.Name))
+                ) && 
+                (
                     this.Value == input.Value ||
                     (this.Value != null &&
                     this.Value.Equals(input.Value))
+                ) && 
+                (
+                    this.CreatedAt == input.CreatedAt ||
+                    (this.CreatedAt != null &&
+                    this.CreatedAt.Equals(input.CreatedAt))
                 );
         }
 
@@ -143,8 +212,14 @@ namespace TextMagicClient.Model
                 int hashCode = 41;
                 if (this.Id != null)
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
+                if (this.UserCustomFieldId != null)
+                    hashCode = hashCode * 59 + this.UserCustomFieldId.GetHashCode();
+                if (this.Name != null)
+                    hashCode = hashCode * 59 + this.Name.GetHashCode();
                 if (this.Value != null)
                     hashCode = hashCode * 59 + this.Value.GetHashCode();
+                if (this.CreatedAt != null)
+                    hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
                 return hashCode;
             }
         }

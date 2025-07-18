@@ -82,6 +82,14 @@ namespace TextMagicClient.Test
         {
             // TODO unit test for the property 'Price'
         }
+        /// <summary>
+        /// Test the property 'GiftType'
+        /// </summary>
+        [Test]
+        public void GiftTypeTest()
+        {
+            // TODO unit test for the property 'GiftType'
+        }
 
     }
 

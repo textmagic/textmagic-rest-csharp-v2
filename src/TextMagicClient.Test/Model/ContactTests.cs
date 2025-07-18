@@ -163,6 +163,22 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'Lists'
         }
         /// <summary>
+        /// Test the property 'Owner'
+        /// </summary>
+        [Test]
+        public void OwnerTest()
+        {
+            // TODO unit test for the property 'Owner'
+        }
+        /// <summary>
+        /// Test the property 'Tags'
+        /// </summary>
+        [Test]
+        public void TagsTest()
+        {
+            // TODO unit test for the property 'Tags'
+        }
+        /// <summary>
         /// Test the property 'PhoneType'
         /// </summary>
         [Test]
@@ -185,6 +201,14 @@ namespace TextMagicClient.Test
         public void NotesTest()
         {
             // TODO unit test for the property 'Notes'
+        }
+        /// <summary>
+        /// Test the property 'WhatsappPhone'
+        /// </summary>
+        [Test]
+        public void WhatsappPhoneTest()
+        {
+            // TODO unit test for the property 'WhatsappPhone'
         }
 
     }

@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **Contacts** | **List&lt;int?&gt;** |  | 
 **Groups** | **List&lt;int?&gt;** |  | 
 **Numbers** | **List&lt;string&gt;** |  | 
+**FilteredViews** | **List&lt;int?&gt;** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
