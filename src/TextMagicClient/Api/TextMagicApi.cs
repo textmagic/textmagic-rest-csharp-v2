@@ -239,6 +239,27 @@ namespace TextMagicClient.Api
         /// <returns>ApiResponse of ResourceLinkResponse</returns>
         ApiResponse<ResourceLinkResponse> CreateCustomFieldWithHttpInfo (CreateCustomFieldInputObject createCustomFieldInputObject);
         /// <summary>
+        /// Create new email campaign
+        /// </summary>
+        /// <remarks>
+        /// Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you&#39;ll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account&#39;s email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createEmailCampaignInputObject"></param>
+        /// <returns>CreateEmailCampaignResponse</returns>
+        CreateEmailCampaignResponse CreateEmailCampaign (CreateEmailCampaignInputObject createEmailCampaignInputObject);
+
+        /// <summary>
+        /// Create new email campaign
+        /// </summary>
+        /// <remarks>
+        /// Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you&#39;ll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account&#39;s email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createEmailCampaignInputObject"></param>
+        /// <returns>ApiResponse of CreateEmailCampaignResponse</returns>
+        ApiResponse<CreateEmailCampaignResponse> CreateEmailCampaignWithHttpInfo (CreateEmailCampaignInputObject createEmailCampaignInputObject);
+        /// <summary>
         /// Create a new list
         /// </summary>
         /// <remarks>
@@ -1648,6 +1669,27 @@ namespace TextMagicClient.Api
         /// <returns>ApiResponse of UsersInbound</returns>
         ApiResponse<UsersInbound> GetDedicatedNumberWithHttpInfo (int? id);
         /// <summary>
+        /// Get list of email senders
+        /// </summary>
+        /// <remarks>
+        /// Retrieves a list of configured email senders available for creating email campaigns.
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="domainId">Filter email senders by specific domain ID. (optional)</param>
+        /// <returns>GetEmailSendersResponse</returns>
+        GetEmailSendersResponse GetEmailSenders (int? domainId = null);
+
+        /// <summary>
+        /// Get list of email senders
+        /// </summary>
+        /// <remarks>
+        /// Retrieves a list of configured email senders available for creating email campaigns.
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="domainId">Filter email senders by specific domain ID. (optional)</param>
+        /// <returns>ApiResponse of GetEmailSendersResponse</returns>
+        ApiResponse<GetEmailSendersResponse> GetEmailSendersWithHttpInfo (int? domainId = null);
+        /// <summary>
         /// Get favorite contacts and lists
         /// </summary>
         /// <remarks>
@@ -2634,6 +2676,27 @@ namespace TextMagicClient.Api
         /// <param name="requestSenderIdInputObject"></param>
         /// <returns>ApiResponse of ResourceLinkResponse</returns>
         ApiResponse<ResourceLinkResponse> RequestSenderIdWithHttpInfo (RequestSenderIdInputObject requestSenderIdInputObject);
+        /// <summary>
+        /// Schedule new email campaign
+        /// </summary>
+        /// <remarks>
+        /// Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="scheduleEmailCampaignInputObject"></param>
+        /// <returns>ScheduleEmailCampaignResponse</returns>
+        ScheduleEmailCampaignResponse ScheduleEmailCampaign (ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject);
+
+        /// <summary>
+        /// Schedule new email campaign
+        /// </summary>
+        /// <remarks>
+        /// Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="scheduleEmailCampaignInputObject"></param>
+        /// <returns>ApiResponse of ScheduleEmailCampaignResponse</returns>
+        ApiResponse<ScheduleEmailCampaignResponse> ScheduleEmailCampaignWithHttpInfo (ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject);
         /// <summary>
         /// Find chats by message text
         /// </summary>
@@ -3634,6 +3697,27 @@ namespace TextMagicClient.Api
         /// <param name="createCustomFieldInputObject"></param>
         /// <returns>Task of ApiResponse (ResourceLinkResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<ResourceLinkResponse>> CreateCustomFieldAsyncWithHttpInfo (CreateCustomFieldInputObject createCustomFieldInputObject);
+        /// <summary>
+        /// Create new email campaign
+        /// </summary>
+        /// <remarks>
+        /// Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you&#39;ll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account&#39;s email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createEmailCampaignInputObject"></param>
+        /// <returns>Task of CreateEmailCampaignResponse</returns>
+        System.Threading.Tasks.Task<CreateEmailCampaignResponse> CreateEmailCampaignAsync (CreateEmailCampaignInputObject createEmailCampaignInputObject);
+
+        /// <summary>
+        /// Create new email campaign
+        /// </summary>
+        /// <remarks>
+        /// Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you&#39;ll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account&#39;s email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createEmailCampaignInputObject"></param>
+        /// <returns>Task of ApiResponse (CreateEmailCampaignResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CreateEmailCampaignResponse>> CreateEmailCampaignAsyncWithHttpInfo (CreateEmailCampaignInputObject createEmailCampaignInputObject);
         /// <summary>
         /// Create a new list
         /// </summary>
@@ -5044,6 +5128,27 @@ namespace TextMagicClient.Api
         /// <returns>Task of ApiResponse (UsersInbound)</returns>
         System.Threading.Tasks.Task<ApiResponse<UsersInbound>> GetDedicatedNumberAsyncWithHttpInfo (int? id);
         /// <summary>
+        /// Get list of email senders
+        /// </summary>
+        /// <remarks>
+        /// Retrieves a list of configured email senders available for creating email campaigns.
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="domainId">Filter email senders by specific domain ID. (optional)</param>
+        /// <returns>Task of GetEmailSendersResponse</returns>
+        System.Threading.Tasks.Task<GetEmailSendersResponse> GetEmailSendersAsync (int? domainId = null);
+
+        /// <summary>
+        /// Get list of email senders
+        /// </summary>
+        /// <remarks>
+        /// Retrieves a list of configured email senders available for creating email campaigns.
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="domainId">Filter email senders by specific domain ID. (optional)</param>
+        /// <returns>Task of ApiResponse (GetEmailSendersResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetEmailSendersResponse>> GetEmailSendersAsyncWithHttpInfo (int? domainId = null);
+        /// <summary>
         /// Get favorite contacts and lists
         /// </summary>
         /// <remarks>
@@ -6030,6 +6135,27 @@ namespace TextMagicClient.Api
         /// <param name="requestSenderIdInputObject"></param>
         /// <returns>Task of ApiResponse (ResourceLinkResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<ResourceLinkResponse>> RequestSenderIdAsyncWithHttpInfo (RequestSenderIdInputObject requestSenderIdInputObject);
+        /// <summary>
+        /// Schedule new email campaign
+        /// </summary>
+        /// <remarks>
+        /// Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="scheduleEmailCampaignInputObject"></param>
+        /// <returns>Task of ScheduleEmailCampaignResponse</returns>
+        System.Threading.Tasks.Task<ScheduleEmailCampaignResponse> ScheduleEmailCampaignAsync (ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject);
+
+        /// <summary>
+        /// Schedule new email campaign
+        /// </summary>
+        /// <remarks>
+        /// Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.
+        /// </remarks>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="scheduleEmailCampaignInputObject"></param>
+        /// <returns>Task of ApiResponse (ScheduleEmailCampaignResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ScheduleEmailCampaignResponse>> ScheduleEmailCampaignAsyncWithHttpInfo (ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject);
         /// <summary>
         /// Find chats by message text
         /// </summary>
@@ -8504,6 +8630,167 @@ namespace TextMagicClient.Api
             return new ApiResponse<ResourceLinkResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (ResourceLinkResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ResourceLinkResponse)));
+        }
+
+        /// <summary>
+        /// Create new email campaign Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you&#39;ll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account&#39;s email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createEmailCampaignInputObject"></param>
+        /// <returns>CreateEmailCampaignResponse</returns>
+        public CreateEmailCampaignResponse CreateEmailCampaign (CreateEmailCampaignInputObject createEmailCampaignInputObject)
+        {
+             ApiResponse<CreateEmailCampaignResponse> localVarResponse = CreateEmailCampaignWithHttpInfo(createEmailCampaignInputObject);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Create new email campaign Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you&#39;ll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account&#39;s email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createEmailCampaignInputObject"></param>
+        /// <returns>ApiResponse of CreateEmailCampaignResponse</returns>
+        public ApiResponse< CreateEmailCampaignResponse > CreateEmailCampaignWithHttpInfo (CreateEmailCampaignInputObject createEmailCampaignInputObject)
+        {
+            // verify the required parameter 'createEmailCampaignInputObject' is set
+            if (createEmailCampaignInputObject == null)
+                throw new ApiException(400, "Missing required parameter 'createEmailCampaignInputObject' when calling TextMagicApi->CreateEmailCampaign");
+
+            var localVarPath = "/api/v2/email-campaigns";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (createEmailCampaignInputObject != null && createEmailCampaignInputObject.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(createEmailCampaignInputObject); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = createEmailCampaignInputObject; // byte array
+            }
+
+            // authentication (BasicAuth) required
+            // http basic authentication required
+            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
+            {
+                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CreateEmailCampaign", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CreateEmailCampaignResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CreateEmailCampaignResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CreateEmailCampaignResponse)));
+        }
+
+        /// <summary>
+        /// Create new email campaign Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you&#39;ll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account&#39;s email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createEmailCampaignInputObject"></param>
+        /// <returns>Task of CreateEmailCampaignResponse</returns>
+        public async System.Threading.Tasks.Task<CreateEmailCampaignResponse> CreateEmailCampaignAsync (CreateEmailCampaignInputObject createEmailCampaignInputObject)
+        {
+             ApiResponse<CreateEmailCampaignResponse> localVarResponse = await CreateEmailCampaignAsyncWithHttpInfo(createEmailCampaignInputObject);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Create new email campaign Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you&#39;ll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account&#39;s email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createEmailCampaignInputObject"></param>
+        /// <returns>Task of ApiResponse (CreateEmailCampaignResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CreateEmailCampaignResponse>> CreateEmailCampaignAsyncWithHttpInfo (CreateEmailCampaignInputObject createEmailCampaignInputObject)
+        {
+            // verify the required parameter 'createEmailCampaignInputObject' is set
+            if (createEmailCampaignInputObject == null)
+                throw new ApiException(400, "Missing required parameter 'createEmailCampaignInputObject' when calling TextMagicApi->CreateEmailCampaign");
+
+            var localVarPath = "/api/v2/email-campaigns";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (createEmailCampaignInputObject != null && createEmailCampaignInputObject.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(createEmailCampaignInputObject); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = createEmailCampaignInputObject; // byte array
+            }
+
+            // authentication (BasicAuth) required
+            // http basic authentication required
+            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
+            {
+                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CreateEmailCampaign", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CreateEmailCampaignResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CreateEmailCampaignResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CreateEmailCampaignResponse)));
         }
 
         /// <summary>
@@ -18024,6 +18311,147 @@ namespace TextMagicClient.Api
         }
 
         /// <summary>
+        /// Get list of email senders Retrieves a list of configured email senders available for creating email campaigns.
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="domainId">Filter email senders by specific domain ID. (optional)</param>
+        /// <returns>GetEmailSendersResponse</returns>
+        public GetEmailSendersResponse GetEmailSenders (int? domainId = null)
+        {
+             ApiResponse<GetEmailSendersResponse> localVarResponse = GetEmailSendersWithHttpInfo(domainId);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get list of email senders Retrieves a list of configured email senders available for creating email campaigns.
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="domainId">Filter email senders by specific domain ID. (optional)</param>
+        /// <returns>ApiResponse of GetEmailSendersResponse</returns>
+        public ApiResponse< GetEmailSendersResponse > GetEmailSendersWithHttpInfo (int? domainId = null)
+        {
+
+            var localVarPath = "/api/v2/email-campaigns/email-senders";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (domainId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "domainId", domainId)); // query parameter
+
+            // authentication (BasicAuth) required
+            // http basic authentication required
+            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
+            {
+                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetEmailSenders", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<GetEmailSendersResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (GetEmailSendersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetEmailSendersResponse)));
+        }
+
+        /// <summary>
+        /// Get list of email senders Retrieves a list of configured email senders available for creating email campaigns.
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="domainId">Filter email senders by specific domain ID. (optional)</param>
+        /// <returns>Task of GetEmailSendersResponse</returns>
+        public async System.Threading.Tasks.Task<GetEmailSendersResponse> GetEmailSendersAsync (int? domainId = null)
+        {
+             ApiResponse<GetEmailSendersResponse> localVarResponse = await GetEmailSendersAsyncWithHttpInfo(domainId);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get list of email senders Retrieves a list of configured email senders available for creating email campaigns.
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="domainId">Filter email senders by specific domain ID. (optional)</param>
+        /// <returns>Task of ApiResponse (GetEmailSendersResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GetEmailSendersResponse>> GetEmailSendersAsyncWithHttpInfo (int? domainId = null)
+        {
+
+            var localVarPath = "/api/v2/email-campaigns/email-senders";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (domainId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "domainId", domainId)); // query parameter
+
+            // authentication (BasicAuth) required
+            // http basic authentication required
+            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
+            {
+                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetEmailSenders", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<GetEmailSendersResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (GetEmailSendersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetEmailSendersResponse)));
+        }
+
+        /// <summary>
         /// Get favorite contacts and lists 
         /// </summary>
         /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
@@ -24430,6 +24858,167 @@ namespace TextMagicClient.Api
             return new ApiResponse<ResourceLinkResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (ResourceLinkResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ResourceLinkResponse)));
+        }
+
+        /// <summary>
+        /// Schedule new email campaign Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="scheduleEmailCampaignInputObject"></param>
+        /// <returns>ScheduleEmailCampaignResponse</returns>
+        public ScheduleEmailCampaignResponse ScheduleEmailCampaign (ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject)
+        {
+             ApiResponse<ScheduleEmailCampaignResponse> localVarResponse = ScheduleEmailCampaignWithHttpInfo(scheduleEmailCampaignInputObject);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Schedule new email campaign Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="scheduleEmailCampaignInputObject"></param>
+        /// <returns>ApiResponse of ScheduleEmailCampaignResponse</returns>
+        public ApiResponse< ScheduleEmailCampaignResponse > ScheduleEmailCampaignWithHttpInfo (ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject)
+        {
+            // verify the required parameter 'scheduleEmailCampaignInputObject' is set
+            if (scheduleEmailCampaignInputObject == null)
+                throw new ApiException(400, "Missing required parameter 'scheduleEmailCampaignInputObject' when calling TextMagicApi->ScheduleEmailCampaign");
+
+            var localVarPath = "/api/v2/email-campaigns/schedule";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (scheduleEmailCampaignInputObject != null && scheduleEmailCampaignInputObject.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(scheduleEmailCampaignInputObject); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = scheduleEmailCampaignInputObject; // byte array
+            }
+
+            // authentication (BasicAuth) required
+            // http basic authentication required
+            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
+            {
+                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ScheduleEmailCampaign", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ScheduleEmailCampaignResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ScheduleEmailCampaignResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ScheduleEmailCampaignResponse)));
+        }
+
+        /// <summary>
+        /// Schedule new email campaign Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="scheduleEmailCampaignInputObject"></param>
+        /// <returns>Task of ScheduleEmailCampaignResponse</returns>
+        public async System.Threading.Tasks.Task<ScheduleEmailCampaignResponse> ScheduleEmailCampaignAsync (ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject)
+        {
+             ApiResponse<ScheduleEmailCampaignResponse> localVarResponse = await ScheduleEmailCampaignAsyncWithHttpInfo(scheduleEmailCampaignInputObject);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Schedule new email campaign Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.
+        /// </summary>
+        /// <exception cref="TextMagicClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="scheduleEmailCampaignInputObject"></param>
+        /// <returns>Task of ApiResponse (ScheduleEmailCampaignResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ScheduleEmailCampaignResponse>> ScheduleEmailCampaignAsyncWithHttpInfo (ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject)
+        {
+            // verify the required parameter 'scheduleEmailCampaignInputObject' is set
+            if (scheduleEmailCampaignInputObject == null)
+                throw new ApiException(400, "Missing required parameter 'scheduleEmailCampaignInputObject' when calling TextMagicApi->ScheduleEmailCampaign");
+
+            var localVarPath = "/api/v2/email-campaigns/schedule";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (scheduleEmailCampaignInputObject != null && scheduleEmailCampaignInputObject.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(scheduleEmailCampaignInputObject); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = scheduleEmailCampaignInputObject; // byte array
+            }
+
+            // authentication (BasicAuth) required
+            // http basic authentication required
+            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
+            {
+                localVarHeaderParams["Authorization"] = "Basic " + ApiClient.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password);
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ScheduleEmailCampaign", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ScheduleEmailCampaignResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ScheduleEmailCampaignResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ScheduleEmailCampaignResponse)));
         }
 
         /// <summary>

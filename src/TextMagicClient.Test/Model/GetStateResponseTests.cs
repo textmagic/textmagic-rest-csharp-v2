@@ -123,6 +123,14 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'SystemAccountAdditionalFields'
         }
         /// <summary>
+        /// Test the property 'SystemAccountNumbersListChange'
+        /// </summary>
+        [Test]
+        public void SystemAccountNumbersListChangeTest()
+        {
+            // TODO unit test for the property 'SystemAccountNumbersListChange'
+        }
+        /// <summary>
         /// Test the property 'SystemAccountPermissionsChanged'
         /// </summary>
         [Test]
@@ -651,20 +659,20 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'ProgressCarrierBulkLookup'
         }
         /// <summary>
-        /// Test the property 'ProgressEmailBulkLookup'
-        /// </summary>
-        [Test]
-        public void ProgressEmailBulkLookupTest()
-        {
-            // TODO unit test for the property 'ProgressEmailBulkLookup'
-        }
-        /// <summary>
         /// Test the property 'ProgressSubAccountBulkImport'
         /// </summary>
         [Test]
         public void ProgressSubAccountBulkImportTest()
         {
             // TODO unit test for the property 'ProgressSubAccountBulkImport'
+        }
+        /// <summary>
+        /// Test the property 'EmailLookupProgressState'
+        /// </summary>
+        [Test]
+        public void EmailLookupProgressStateTest()
+        {
+            // TODO unit test for the property 'EmailLookupProgressState'
         }
         /// <summary>
         /// Test the property 'ImportProgressState'
@@ -1489,6 +1497,22 @@ namespace TextMagicClient.Test
         public void EmailCampaignUpdatedTest()
         {
             // TODO unit test for the property 'EmailCampaignUpdated'
+        }
+        /// <summary>
+        /// Test the property 'EmailTemplateImproved'
+        /// </summary>
+        [Test]
+        public void EmailTemplateImprovedTest()
+        {
+            // TODO unit test for the property 'EmailTemplateImproved'
+        }
+        /// <summary>
+        /// Test the property 'EmailTemplateImprovingFailed'
+        /// </summary>
+        [Test]
+        public void EmailTemplateImprovingFailedTest()
+        {
+            // TODO unit test for the property 'EmailTemplateImprovingFailed'
         }
         /// <summary>
         /// Test the property 'SmsCampaignInvalidated'

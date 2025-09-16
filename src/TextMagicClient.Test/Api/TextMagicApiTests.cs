@@ -187,6 +187,18 @@ namespace TextMagicClient.Test
         }
         
         /// <summary>
+        /// Test CreateEmailCampaign
+        /// </summary>
+        [Test]
+        public void CreateEmailCampaignTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //CreateEmailCampaignInputObject createEmailCampaignInputObject = null;
+            //var response = instance.CreateEmailCampaign(createEmailCampaignInputObject);
+            //Assert.IsInstanceOf<CreateEmailCampaignResponse> (response, "response is CreateEmailCampaignResponse");
+        }
+        
+        /// <summary>
         /// Test CreateList
         /// </summary>
         [Test]
@@ -986,6 +998,18 @@ namespace TextMagicClient.Test
         }
         
         /// <summary>
+        /// Test GetEmailSenders
+        /// </summary>
+        [Test]
+        public void GetEmailSendersTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //int? domainId = null;
+            //var response = instance.GetEmailSenders(domainId);
+            //Assert.IsInstanceOf<GetEmailSendersResponse> (response, "response is GetEmailSendersResponse");
+        }
+        
+        /// <summary>
         /// Test GetFavorites
         /// </summary>
         [Test]
@@ -1538,6 +1562,18 @@ namespace TextMagicClient.Test
             //RequestSenderIdInputObject requestSenderIdInputObject = null;
             //var response = instance.RequestSenderId(requestSenderIdInputObject);
             //Assert.IsInstanceOf<ResourceLinkResponse> (response, "response is ResourceLinkResponse");
+        }
+        
+        /// <summary>
+        /// Test ScheduleEmailCampaign
+        /// </summary>
+        [Test]
+        public void ScheduleEmailCampaignTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject = null;
+            //var response = instance.ScheduleEmailCampaign(scheduleEmailCampaignInputObject);
+            //Assert.IsInstanceOf<ScheduleEmailCampaignResponse> (response, "response is ScheduleEmailCampaignResponse");
         }
         
         /// <summary>

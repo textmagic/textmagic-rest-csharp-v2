@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **SystemAccountAcceptTermsUpdate** | **int?** |  | 
 **SystemAccountClosed** | **int?** |  | 
 **SystemAccountAdditionalFields** | **int?** |  | 
+**SystemAccountNumbersListChange** | **int?** |  | 
 **SystemAccountPermissionsChanged** | **int?** |  | 
 **UserProfileChanged** | **int?** |  | 
 **UserBalanceChanged** | **int?** |  | 
@@ -76,8 +77,8 @@ Name | Type | Description | Notes
 **ListCacheClear** | **int?** |  | 
 **CustomFieldsCacheClear** | **int?** |  | 
 **ProgressCarrierBulkLookup** | **int?** |  | 
-**ProgressEmailBulkLookup** | **int?** |  | 
 **ProgressSubAccountBulkImport** | **int?** |  | 
+**EmailLookupProgressState** | **int?** |  | 
 **ImportProgressState** | **int?** |  | 
 **ForceRefreshWebApp** | **int?** |  | 
 **ChatSenderSettingsChanged** | **int?** |  | 
@@ -181,6 +182,8 @@ Name | Type | Description | Notes
 **EmailCampaignDomainEntryVerificationChanged** | **int?** |  | 
 **EmailCampaignProgressState** | **int?** |  | 
 **EmailCampaignUpdated** | **int?** |  | 
+**EmailTemplateImproved** | **int?** |  | 
+**EmailTemplateImprovingFailed** | **int?** |  | 
 **SmsCampaignInvalidated** | **int?** |  | 
 **ScheduledEmailCampaignCreated** | **int?** |  | 
 **ScheduledEmailCampaignUpdated** | **int?** |  | 

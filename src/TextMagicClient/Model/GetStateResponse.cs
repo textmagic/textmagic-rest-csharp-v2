@@ -45,6 +45,7 @@ namespace TextMagicClient.Model
         /// <param name="systemAccountAcceptTermsUpdate">systemAccountAcceptTermsUpdate (required).</param>
         /// <param name="systemAccountClosed">systemAccountClosed (required).</param>
         /// <param name="systemAccountAdditionalFields">systemAccountAdditionalFields (required).</param>
+        /// <param name="systemAccountNumbersListChange">systemAccountNumbersListChange (required).</param>
         /// <param name="systemAccountPermissionsChanged">systemAccountPermissionsChanged (required).</param>
         /// <param name="userProfileChanged">userProfileChanged (required).</param>
         /// <param name="userBalanceChanged">userBalanceChanged (required).</param>
@@ -111,8 +112,8 @@ namespace TextMagicClient.Model
         /// <param name="listCacheClear">listCacheClear (required).</param>
         /// <param name="customFieldsCacheClear">customFieldsCacheClear (required).</param>
         /// <param name="progressCarrierBulkLookup">progressCarrierBulkLookup (required).</param>
-        /// <param name="progressEmailBulkLookup">progressEmailBulkLookup (required).</param>
         /// <param name="progressSubAccountBulkImport">progressSubAccountBulkImport (required).</param>
+        /// <param name="emailLookupProgressState">emailLookupProgressState (required).</param>
         /// <param name="importProgressState">importProgressState (required).</param>
         /// <param name="forceRefreshWebApp">forceRefreshWebApp (required).</param>
         /// <param name="chatSenderSettingsChanged">chatSenderSettingsChanged (required).</param>
@@ -216,6 +217,8 @@ namespace TextMagicClient.Model
         /// <param name="emailCampaignDomainEntryVerificationChanged">emailCampaignDomainEntryVerificationChanged (required).</param>
         /// <param name="emailCampaignProgressState">emailCampaignProgressState (required).</param>
         /// <param name="emailCampaignUpdated">emailCampaignUpdated (required).</param>
+        /// <param name="emailTemplateImproved">emailTemplateImproved (required).</param>
+        /// <param name="emailTemplateImprovingFailed">emailTemplateImprovingFailed (required).</param>
         /// <param name="smsCampaignInvalidated">smsCampaignInvalidated (required).</param>
         /// <param name="scheduledEmailCampaignCreated">scheduledEmailCampaignCreated (required).</param>
         /// <param name="scheduledEmailCampaignUpdated">scheduledEmailCampaignUpdated (required).</param>
@@ -224,7 +227,7 @@ namespace TextMagicClient.Model
         /// <param name="emailCampaignFailedAttemptCreated">emailCampaignFailedAttemptCreated (required).</param>
         /// <param name="emailCampaignFailedAttemptDeleted">emailCampaignFailedAttemptDeleted (required).</param>
         /// <param name="emailCampaignFailedAttemptStateUpdated">emailCampaignFailedAttemptStateUpdated (required).</param>
-        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? systemAccountAcceptTermsUpdate = default(int?), int? systemAccountClosed = default(int?), int? systemAccountAdditionalFields = default(int?), int? systemAccountPermissionsChanged = default(int?), int? userProfileChanged = default(int?), int? userBalanceChanged = default(int?), int? userPresenceStatusChanged = default(int?), int? userImpersonationEnd = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageLog = default(int?), int? messageNote = default(int?), int? messageInitial = default(int?), int? lastMessageSet = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleNotSentStateChanged = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatPinned = default(int?), int? chatUnpinned = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatActivated = default(int?), int? chatCacheClear = default(int?), int? chatRead = default(int?), int? chatUnread = default(int?), int? chatAssigneeChanged = default(int?), int? chatTagsChanged = default(int?), int? chatConversationEnded = default(int?), int? chatUpdated = default(int?), int? liveChatAgentChanged = default(int?), int? liveChatRated = default(int?), int? webWidgetUpdated = default(int?), int? webWidgetDeleted = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactBulkUpdated = default(int?), int? contactStateChanged = default(int?), int? contactUnsubscribed = default(int?), int? contactResubscribed = default(int?), int? contactNoteAdded = default(int?), int? contactNoteDeleted = default(int?), int? contactNoteStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? listCountMembersUpdated = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?), int? progressCarrierBulkLookup = default(int?), int? progressEmailBulkLookup = default(int?), int? progressSubAccountBulkImport = default(int?), int? importProgressState = default(int?), int? forceRefreshWebApp = default(int?), int? chatSenderSettingsChanged = default(int?), int? countrySenderSettingsChanged = default(int?), int? chatSummaryChunk = default(int?), int? chatWaysToReplyChunk = default(int?), int? chatSuggestedReplyChunk = default(int?), int? userSubscriptionChanged = default(int?), int? userSubscriptionDeleted = default(int?), int? taskCreated = default(int?), int? taskUpdated = default(int?), int? taskReordered = default(int?), int? taskDeleted = default(int?), int? taskMovedAll = default(int?), int? taskStageCreated = default(int?), int? taskStageUpdated = default(int?), int? taskStageDeleted = default(int?), int? taskBoardCreated = default(int?), int? taskBoardUpdated = default(int?), int? taskBoardReordered = default(int?), int? taskBoardDeleted = default(int?), int? taskBoardArchived = default(int?), int? taskChecklistCreated = default(int?), int? taskChecklistUpdated = default(int?), int? taskChecklistDeleted = default(int?), int? taskChecklistBulkMarked = default(int?), int? taskChecklistItemCreated = default(int?), int? taskChecklistItemUpdated = default(int?), int? taskChecklistItemDeleted = default(int?), int? taskCommentCreated = default(int?), int? taskCommentDeleted = default(int?), int? pinnedContactAdded = default(int?), int? pinnedContactRemoved = default(int?), int? pinnedContactReordered = default(int?), int? pinnedContactStateChanged = default(int?), int? whatsappAccountAdded = default(int?), int? whatsappAccountRemoved = default(int?), int? whatsappAccountChanged = default(int?), int? facebookPageAdded = default(int?), int? facebookPageRemoved = default(int?), int? facebookPageChanged = default(int?), int? instagramAccountAdded = default(int?), int? instagramAccountRemoved = default(int?), int? instagramAccountChanged = default(int?), int? unreadTicketsCountUpdated = default(int?), int? ticketDeleted = default(int?), int? ticketUpdated = default(int?), int? ticketCreated = default(int?), int? ticketBulkUpdated = default(int?), int? ticketBulkDeleted = default(int?), int? ticketMessageCreated = default(int?), int? ticketMessageUpdated = default(int?), int? ticketMessageDeleted = default(int?), int? subAccountsClosed = default(int?), int? userInvited = default(int?), int? filteredViewCreated = default(int?), int? filteredViewCountUpdated = default(int?), int? filteredViewDeleted = default(int?), int? forwardingInboxWasVerified = default(int?), int? forwardingInboxCheckWasFailed = default(int?), int? forwardingInboxVerificationLinkWasParsed = default(int?), int? tendlcLinkNumberStatusUpdated = default(int?), int? channelPresence = default(int?), int? dealCreated = default(int?), int? dealUpdated = default(int?), int? dealDeleted = default(int?), int? dealMoved = default(int?), int? dealStageCreated = default(int?), int? dealStageUpdated = default(int?), int? dealStageDeleted = default(int?), int? dealPipelineCreated = default(int?), int? dealPipelineUpdated = default(int?), int? dealPipelineDeleted = default(int?), int? dealPipelineArchived = default(int?), int? dealPipelineReordered = default(int?), int? dealActivityUpdated = default(int?), int? dealActivityItemCreated = default(int?), int? dealActivityItemUpdated = default(int?), int? dealActivityItemDeleted = default(int?), int? dealActivityItemBulkMarked = default(int?), int? dealTimelineItemDeleted = default(int?), int? dealTimelineItemCreated = default(int?), int? aIAssistantCreated = default(int?), int? aIAssistantState = default(int?), int? aIAssistantDeleted = default(int?), int? aIAssistantLinkDeleted = default(int?), int? aIAssistantLinkState = default(int?), int? aIAssistantLinkCreated = default(int?), int? aIAssistantSubLinkState = default(int?), int? aIAssistantSubLinkCreated = default(int?), int? emailCampaignEmailSenderCreated = default(int?), int? emailCampaignEmailSenderUpdated = default(int?), int? emailCampaignEmailSenderDeleted = default(int?), int? emailCampaignDomainCreated = default(int?), int? emailCampaignDomainDeleted = default(int?), int? emailCampaignDomainVerified = default(int?), int? emailCampaignDomainStatusChanged = default(int?), int? emailCampaignDomainDkimVerified = default(int?), int? emailCampaignDomainReturnPathVerified = default(int?), int? emailCampaignDomainDmarcVerified = default(int?), int? emailCampaignDomainEntryVerificationChanged = default(int?), int? emailCampaignProgressState = default(int?), int? emailCampaignUpdated = default(int?), int? smsCampaignInvalidated = default(int?), int? scheduledEmailCampaignCreated = default(int?), int? scheduledEmailCampaignUpdated = default(int?), int? scheduledEmailCampaignStatusUpdated = default(int?), int? scheduledEmailCampaignDeleted = default(int?), int? emailCampaignFailedAttemptCreated = default(int?), int? emailCampaignFailedAttemptDeleted = default(int?), int? emailCampaignFailedAttemptStateUpdated = default(int?))
+        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? systemAccountAcceptTermsUpdate = default(int?), int? systemAccountClosed = default(int?), int? systemAccountAdditionalFields = default(int?), int? systemAccountNumbersListChange = default(int?), int? systemAccountPermissionsChanged = default(int?), int? userProfileChanged = default(int?), int? userBalanceChanged = default(int?), int? userPresenceStatusChanged = default(int?), int? userImpersonationEnd = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageLog = default(int?), int? messageNote = default(int?), int? messageInitial = default(int?), int? lastMessageSet = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleNotSentStateChanged = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatPinned = default(int?), int? chatUnpinned = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatActivated = default(int?), int? chatCacheClear = default(int?), int? chatRead = default(int?), int? chatUnread = default(int?), int? chatAssigneeChanged = default(int?), int? chatTagsChanged = default(int?), int? chatConversationEnded = default(int?), int? chatUpdated = default(int?), int? liveChatAgentChanged = default(int?), int? liveChatRated = default(int?), int? webWidgetUpdated = default(int?), int? webWidgetDeleted = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactBulkUpdated = default(int?), int? contactStateChanged = default(int?), int? contactUnsubscribed = default(int?), int? contactResubscribed = default(int?), int? contactNoteAdded = default(int?), int? contactNoteDeleted = default(int?), int? contactNoteStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? listCountMembersUpdated = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?), int? progressCarrierBulkLookup = default(int?), int? progressSubAccountBulkImport = default(int?), int? emailLookupProgressState = default(int?), int? importProgressState = default(int?), int? forceRefreshWebApp = default(int?), int? chatSenderSettingsChanged = default(int?), int? countrySenderSettingsChanged = default(int?), int? chatSummaryChunk = default(int?), int? chatWaysToReplyChunk = default(int?), int? chatSuggestedReplyChunk = default(int?), int? userSubscriptionChanged = default(int?), int? userSubscriptionDeleted = default(int?), int? taskCreated = default(int?), int? taskUpdated = default(int?), int? taskReordered = default(int?), int? taskDeleted = default(int?), int? taskMovedAll = default(int?), int? taskStageCreated = default(int?), int? taskStageUpdated = default(int?), int? taskStageDeleted = default(int?), int? taskBoardCreated = default(int?), int? taskBoardUpdated = default(int?), int? taskBoardReordered = default(int?), int? taskBoardDeleted = default(int?), int? taskBoardArchived = default(int?), int? taskChecklistCreated = default(int?), int? taskChecklistUpdated = default(int?), int? taskChecklistDeleted = default(int?), int? taskChecklistBulkMarked = default(int?), int? taskChecklistItemCreated = default(int?), int? taskChecklistItemUpdated = default(int?), int? taskChecklistItemDeleted = default(int?), int? taskCommentCreated = default(int?), int? taskCommentDeleted = default(int?), int? pinnedContactAdded = default(int?), int? pinnedContactRemoved = default(int?), int? pinnedContactReordered = default(int?), int? pinnedContactStateChanged = default(int?), int? whatsappAccountAdded = default(int?), int? whatsappAccountRemoved = default(int?), int? whatsappAccountChanged = default(int?), int? facebookPageAdded = default(int?), int? facebookPageRemoved = default(int?), int? facebookPageChanged = default(int?), int? instagramAccountAdded = default(int?), int? instagramAccountRemoved = default(int?), int? instagramAccountChanged = default(int?), int? unreadTicketsCountUpdated = default(int?), int? ticketDeleted = default(int?), int? ticketUpdated = default(int?), int? ticketCreated = default(int?), int? ticketBulkUpdated = default(int?), int? ticketBulkDeleted = default(int?), int? ticketMessageCreated = default(int?), int? ticketMessageUpdated = default(int?), int? ticketMessageDeleted = default(int?), int? subAccountsClosed = default(int?), int? userInvited = default(int?), int? filteredViewCreated = default(int?), int? filteredViewCountUpdated = default(int?), int? filteredViewDeleted = default(int?), int? forwardingInboxWasVerified = default(int?), int? forwardingInboxCheckWasFailed = default(int?), int? forwardingInboxVerificationLinkWasParsed = default(int?), int? tendlcLinkNumberStatusUpdated = default(int?), int? channelPresence = default(int?), int? dealCreated = default(int?), int? dealUpdated = default(int?), int? dealDeleted = default(int?), int? dealMoved = default(int?), int? dealStageCreated = default(int?), int? dealStageUpdated = default(int?), int? dealStageDeleted = default(int?), int? dealPipelineCreated = default(int?), int? dealPipelineUpdated = default(int?), int? dealPipelineDeleted = default(int?), int? dealPipelineArchived = default(int?), int? dealPipelineReordered = default(int?), int? dealActivityUpdated = default(int?), int? dealActivityItemCreated = default(int?), int? dealActivityItemUpdated = default(int?), int? dealActivityItemDeleted = default(int?), int? dealActivityItemBulkMarked = default(int?), int? dealTimelineItemDeleted = default(int?), int? dealTimelineItemCreated = default(int?), int? aIAssistantCreated = default(int?), int? aIAssistantState = default(int?), int? aIAssistantDeleted = default(int?), int? aIAssistantLinkDeleted = default(int?), int? aIAssistantLinkState = default(int?), int? aIAssistantLinkCreated = default(int?), int? aIAssistantSubLinkState = default(int?), int? aIAssistantSubLinkCreated = default(int?), int? emailCampaignEmailSenderCreated = default(int?), int? emailCampaignEmailSenderUpdated = default(int?), int? emailCampaignEmailSenderDeleted = default(int?), int? emailCampaignDomainCreated = default(int?), int? emailCampaignDomainDeleted = default(int?), int? emailCampaignDomainVerified = default(int?), int? emailCampaignDomainStatusChanged = default(int?), int? emailCampaignDomainDkimVerified = default(int?), int? emailCampaignDomainReturnPathVerified = default(int?), int? emailCampaignDomainDmarcVerified = default(int?), int? emailCampaignDomainEntryVerificationChanged = default(int?), int? emailCampaignProgressState = default(int?), int? emailCampaignUpdated = default(int?), int? emailTemplateImproved = default(int?), int? emailTemplateImprovingFailed = default(int?), int? smsCampaignInvalidated = default(int?), int? scheduledEmailCampaignCreated = default(int?), int? scheduledEmailCampaignUpdated = default(int?), int? scheduledEmailCampaignStatusUpdated = default(int?), int? scheduledEmailCampaignDeleted = default(int?), int? emailCampaignFailedAttemptCreated = default(int?), int? emailCampaignFailedAttemptDeleted = default(int?), int? emailCampaignFailedAttemptStateUpdated = default(int?))
         {
             // to ensure "systemCacheClear" is required (not null)
             if (systemCacheClear == null)
@@ -288,6 +291,15 @@ namespace TextMagicClient.Model
             else
             {
                 this.SystemAccountAdditionalFields = systemAccountAdditionalFields;
+            }
+            // to ensure "systemAccountNumbersListChange" is required (not null)
+            if (systemAccountNumbersListChange == null)
+            {
+                throw new InvalidDataException("systemAccountNumbersListChange is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.SystemAccountNumbersListChange = systemAccountNumbersListChange;
             }
             // to ensure "systemAccountPermissionsChanged" is required (not null)
             if (systemAccountPermissionsChanged == null)
@@ -883,15 +895,6 @@ namespace TextMagicClient.Model
             {
                 this.ProgressCarrierBulkLookup = progressCarrierBulkLookup;
             }
-            // to ensure "progressEmailBulkLookup" is required (not null)
-            if (progressEmailBulkLookup == null)
-            {
-                throw new InvalidDataException("progressEmailBulkLookup is a required property for GetStateResponse and cannot be null");
-            }
-            else
-            {
-                this.ProgressEmailBulkLookup = progressEmailBulkLookup;
-            }
             // to ensure "progressSubAccountBulkImport" is required (not null)
             if (progressSubAccountBulkImport == null)
             {
@@ -900,6 +903,15 @@ namespace TextMagicClient.Model
             else
             {
                 this.ProgressSubAccountBulkImport = progressSubAccountBulkImport;
+            }
+            // to ensure "emailLookupProgressState" is required (not null)
+            if (emailLookupProgressState == null)
+            {
+                throw new InvalidDataException("emailLookupProgressState is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailLookupProgressState = emailLookupProgressState;
             }
             // to ensure "importProgressState" is required (not null)
             if (importProgressState == null)
@@ -1828,6 +1840,24 @@ namespace TextMagicClient.Model
             {
                 this.EmailCampaignUpdated = emailCampaignUpdated;
             }
+            // to ensure "emailTemplateImproved" is required (not null)
+            if (emailTemplateImproved == null)
+            {
+                throw new InvalidDataException("emailTemplateImproved is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailTemplateImproved = emailTemplateImproved;
+            }
+            // to ensure "emailTemplateImprovingFailed" is required (not null)
+            if (emailTemplateImprovingFailed == null)
+            {
+                throw new InvalidDataException("emailTemplateImprovingFailed is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailTemplateImprovingFailed = emailTemplateImprovingFailed;
+            }
             // to ensure "smsCampaignInvalidated" is required (not null)
             if (smsCampaignInvalidated == null)
             {
@@ -1943,6 +1973,12 @@ namespace TextMagicClient.Model
         /// </summary>
         [DataMember(Name="systemAccountAdditionalFields", EmitDefaultValue=false)]
         public int? SystemAccountAdditionalFields { get; set; }
+
+        /// <summary>
+        /// Gets or Sets SystemAccountNumbersListChange
+        /// </summary>
+        [DataMember(Name="systemAccountNumbersListChange", EmitDefaultValue=false)]
+        public int? SystemAccountNumbersListChange { get; set; }
 
         /// <summary>
         /// Gets or Sets SystemAccountPermissionsChanged
@@ -2341,16 +2377,16 @@ namespace TextMagicClient.Model
         public int? ProgressCarrierBulkLookup { get; set; }
 
         /// <summary>
-        /// Gets or Sets ProgressEmailBulkLookup
-        /// </summary>
-        [DataMember(Name="progressEmailBulkLookup", EmitDefaultValue=false)]
-        public int? ProgressEmailBulkLookup { get; set; }
-
-        /// <summary>
         /// Gets or Sets ProgressSubAccountBulkImport
         /// </summary>
         [DataMember(Name="progressSubAccountBulkImport", EmitDefaultValue=false)]
         public int? ProgressSubAccountBulkImport { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailLookupProgressState
+        /// </summary>
+        [DataMember(Name="emailLookupProgressState", EmitDefaultValue=false)]
+        public int? EmailLookupProgressState { get; set; }
 
         /// <summary>
         /// Gets or Sets ImportProgressState
@@ -2971,6 +3007,18 @@ namespace TextMagicClient.Model
         public int? EmailCampaignUpdated { get; set; }
 
         /// <summary>
+        /// Gets or Sets EmailTemplateImproved
+        /// </summary>
+        [DataMember(Name="emailTemplateImproved", EmitDefaultValue=false)]
+        public int? EmailTemplateImproved { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EmailTemplateImprovingFailed
+        /// </summary>
+        [DataMember(Name="emailTemplateImprovingFailed", EmitDefaultValue=false)]
+        public int? EmailTemplateImprovingFailed { get; set; }
+
+        /// <summary>
         /// Gets or Sets SmsCampaignInvalidated
         /// </summary>
         [DataMember(Name="smsCampaignInvalidated", EmitDefaultValue=false)]
@@ -3033,6 +3081,7 @@ namespace TextMagicClient.Model
             sb.Append("  SystemAccountAcceptTermsUpdate: ").Append(SystemAccountAcceptTermsUpdate).Append("\n");
             sb.Append("  SystemAccountClosed: ").Append(SystemAccountClosed).Append("\n");
             sb.Append("  SystemAccountAdditionalFields: ").Append(SystemAccountAdditionalFields).Append("\n");
+            sb.Append("  SystemAccountNumbersListChange: ").Append(SystemAccountNumbersListChange).Append("\n");
             sb.Append("  SystemAccountPermissionsChanged: ").Append(SystemAccountPermissionsChanged).Append("\n");
             sb.Append("  UserProfileChanged: ").Append(UserProfileChanged).Append("\n");
             sb.Append("  UserBalanceChanged: ").Append(UserBalanceChanged).Append("\n");
@@ -3099,8 +3148,8 @@ namespace TextMagicClient.Model
             sb.Append("  ListCacheClear: ").Append(ListCacheClear).Append("\n");
             sb.Append("  CustomFieldsCacheClear: ").Append(CustomFieldsCacheClear).Append("\n");
             sb.Append("  ProgressCarrierBulkLookup: ").Append(ProgressCarrierBulkLookup).Append("\n");
-            sb.Append("  ProgressEmailBulkLookup: ").Append(ProgressEmailBulkLookup).Append("\n");
             sb.Append("  ProgressSubAccountBulkImport: ").Append(ProgressSubAccountBulkImport).Append("\n");
+            sb.Append("  EmailLookupProgressState: ").Append(EmailLookupProgressState).Append("\n");
             sb.Append("  ImportProgressState: ").Append(ImportProgressState).Append("\n");
             sb.Append("  ForceRefreshWebApp: ").Append(ForceRefreshWebApp).Append("\n");
             sb.Append("  ChatSenderSettingsChanged: ").Append(ChatSenderSettingsChanged).Append("\n");
@@ -3204,6 +3253,8 @@ namespace TextMagicClient.Model
             sb.Append("  EmailCampaignDomainEntryVerificationChanged: ").Append(EmailCampaignDomainEntryVerificationChanged).Append("\n");
             sb.Append("  EmailCampaignProgressState: ").Append(EmailCampaignProgressState).Append("\n");
             sb.Append("  EmailCampaignUpdated: ").Append(EmailCampaignUpdated).Append("\n");
+            sb.Append("  EmailTemplateImproved: ").Append(EmailTemplateImproved).Append("\n");
+            sb.Append("  EmailTemplateImprovingFailed: ").Append(EmailTemplateImprovingFailed).Append("\n");
             sb.Append("  SmsCampaignInvalidated: ").Append(SmsCampaignInvalidated).Append("\n");
             sb.Append("  ScheduledEmailCampaignCreated: ").Append(ScheduledEmailCampaignCreated).Append("\n");
             sb.Append("  ScheduledEmailCampaignUpdated: ").Append(ScheduledEmailCampaignUpdated).Append("\n");
@@ -3280,6 +3331,11 @@ namespace TextMagicClient.Model
                     this.SystemAccountAdditionalFields == input.SystemAccountAdditionalFields ||
                     (this.SystemAccountAdditionalFields != null &&
                     this.SystemAccountAdditionalFields.Equals(input.SystemAccountAdditionalFields))
+                ) && 
+                (
+                    this.SystemAccountNumbersListChange == input.SystemAccountNumbersListChange ||
+                    (this.SystemAccountNumbersListChange != null &&
+                    this.SystemAccountNumbersListChange.Equals(input.SystemAccountNumbersListChange))
                 ) && 
                 (
                     this.SystemAccountPermissionsChanged == input.SystemAccountPermissionsChanged ||
@@ -3612,14 +3668,14 @@ namespace TextMagicClient.Model
                     this.ProgressCarrierBulkLookup.Equals(input.ProgressCarrierBulkLookup))
                 ) && 
                 (
-                    this.ProgressEmailBulkLookup == input.ProgressEmailBulkLookup ||
-                    (this.ProgressEmailBulkLookup != null &&
-                    this.ProgressEmailBulkLookup.Equals(input.ProgressEmailBulkLookup))
-                ) && 
-                (
                     this.ProgressSubAccountBulkImport == input.ProgressSubAccountBulkImport ||
                     (this.ProgressSubAccountBulkImport != null &&
                     this.ProgressSubAccountBulkImport.Equals(input.ProgressSubAccountBulkImport))
+                ) && 
+                (
+                    this.EmailLookupProgressState == input.EmailLookupProgressState ||
+                    (this.EmailLookupProgressState != null &&
+                    this.EmailLookupProgressState.Equals(input.EmailLookupProgressState))
                 ) && 
                 (
                     this.ImportProgressState == input.ImportProgressState ||
@@ -4137,6 +4193,16 @@ namespace TextMagicClient.Model
                     this.EmailCampaignUpdated.Equals(input.EmailCampaignUpdated))
                 ) && 
                 (
+                    this.EmailTemplateImproved == input.EmailTemplateImproved ||
+                    (this.EmailTemplateImproved != null &&
+                    this.EmailTemplateImproved.Equals(input.EmailTemplateImproved))
+                ) && 
+                (
+                    this.EmailTemplateImprovingFailed == input.EmailTemplateImprovingFailed ||
+                    (this.EmailTemplateImprovingFailed != null &&
+                    this.EmailTemplateImprovingFailed.Equals(input.EmailTemplateImprovingFailed))
+                ) && 
+                (
                     this.SmsCampaignInvalidated == input.SmsCampaignInvalidated ||
                     (this.SmsCampaignInvalidated != null &&
                     this.SmsCampaignInvalidated.Equals(input.SmsCampaignInvalidated))
@@ -4201,6 +4267,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.SystemAccountClosed.GetHashCode();
                 if (this.SystemAccountAdditionalFields != null)
                     hashCode = hashCode * 59 + this.SystemAccountAdditionalFields.GetHashCode();
+                if (this.SystemAccountNumbersListChange != null)
+                    hashCode = hashCode * 59 + this.SystemAccountNumbersListChange.GetHashCode();
                 if (this.SystemAccountPermissionsChanged != null)
                     hashCode = hashCode * 59 + this.SystemAccountPermissionsChanged.GetHashCode();
                 if (this.UserProfileChanged != null)
@@ -4333,10 +4401,10 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.CustomFieldsCacheClear.GetHashCode();
                 if (this.ProgressCarrierBulkLookup != null)
                     hashCode = hashCode * 59 + this.ProgressCarrierBulkLookup.GetHashCode();
-                if (this.ProgressEmailBulkLookup != null)
-                    hashCode = hashCode * 59 + this.ProgressEmailBulkLookup.GetHashCode();
                 if (this.ProgressSubAccountBulkImport != null)
                     hashCode = hashCode * 59 + this.ProgressSubAccountBulkImport.GetHashCode();
+                if (this.EmailLookupProgressState != null)
+                    hashCode = hashCode * 59 + this.EmailLookupProgressState.GetHashCode();
                 if (this.ImportProgressState != null)
                     hashCode = hashCode * 59 + this.ImportProgressState.GetHashCode();
                 if (this.ForceRefreshWebApp != null)
@@ -4543,6 +4611,10 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.EmailCampaignProgressState.GetHashCode();
                 if (this.EmailCampaignUpdated != null)
                     hashCode = hashCode * 59 + this.EmailCampaignUpdated.GetHashCode();
+                if (this.EmailTemplateImproved != null)
+                    hashCode = hashCode * 59 + this.EmailTemplateImproved.GetHashCode();
+                if (this.EmailTemplateImprovingFailed != null)
+                    hashCode = hashCode * 59 + this.EmailTemplateImprovingFailed.GetHashCode();
                 if (this.SmsCampaignInvalidated != null)
                     hashCode = hashCode * 59 + this.SmsCampaignInvalidated.GetHashCode();
                 if (this.ScheduledEmailCampaignCreated != null)
