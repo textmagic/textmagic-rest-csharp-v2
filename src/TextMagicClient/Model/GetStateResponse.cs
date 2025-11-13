@@ -121,8 +121,8 @@ namespace TextMagicClient.Model
         /// <param name="chatSummaryChunk">chatSummaryChunk (required).</param>
         /// <param name="chatWaysToReplyChunk">chatWaysToReplyChunk (required).</param>
         /// <param name="chatSuggestedReplyChunk">chatSuggestedReplyChunk (required).</param>
-        /// <param name="userSubscriptionChanged">userSubscriptionChanged (required).</param>
-        /// <param name="userSubscriptionDeleted">userSubscriptionDeleted (required).</param>
+        /// <param name="userSubscriptionChanged">userSubscriptionChanged.</param>
+        /// <param name="userSubscriptionDeleted">userSubscriptionDeleted.</param>
         /// <param name="taskCreated">taskCreated (required).</param>
         /// <param name="taskUpdated">taskUpdated (required).</param>
         /// <param name="taskReordered">taskReordered (required).</param>
@@ -219,6 +219,7 @@ namespace TextMagicClient.Model
         /// <param name="emailCampaignUpdated">emailCampaignUpdated (required).</param>
         /// <param name="emailTemplateImproved">emailTemplateImproved (required).</param>
         /// <param name="emailTemplateImprovingFailed">emailTemplateImprovingFailed (required).</param>
+        /// <param name="emailBonusUpdated">emailBonusUpdated (required).</param>
         /// <param name="smsCampaignInvalidated">smsCampaignInvalidated (required).</param>
         /// <param name="scheduledEmailCampaignCreated">scheduledEmailCampaignCreated (required).</param>
         /// <param name="scheduledEmailCampaignUpdated">scheduledEmailCampaignUpdated (required).</param>
@@ -227,7 +228,7 @@ namespace TextMagicClient.Model
         /// <param name="emailCampaignFailedAttemptCreated">emailCampaignFailedAttemptCreated (required).</param>
         /// <param name="emailCampaignFailedAttemptDeleted">emailCampaignFailedAttemptDeleted (required).</param>
         /// <param name="emailCampaignFailedAttemptStateUpdated">emailCampaignFailedAttemptStateUpdated (required).</param>
-        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? systemAccountAcceptTermsUpdate = default(int?), int? systemAccountClosed = default(int?), int? systemAccountAdditionalFields = default(int?), int? systemAccountNumbersListChange = default(int?), int? systemAccountPermissionsChanged = default(int?), int? userProfileChanged = default(int?), int? userBalanceChanged = default(int?), int? userPresenceStatusChanged = default(int?), int? userImpersonationEnd = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageLog = default(int?), int? messageNote = default(int?), int? messageInitial = default(int?), int? lastMessageSet = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleNotSentStateChanged = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatPinned = default(int?), int? chatUnpinned = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatActivated = default(int?), int? chatCacheClear = default(int?), int? chatRead = default(int?), int? chatUnread = default(int?), int? chatAssigneeChanged = default(int?), int? chatTagsChanged = default(int?), int? chatConversationEnded = default(int?), int? chatUpdated = default(int?), int? liveChatAgentChanged = default(int?), int? liveChatRated = default(int?), int? webWidgetUpdated = default(int?), int? webWidgetDeleted = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactBulkUpdated = default(int?), int? contactStateChanged = default(int?), int? contactUnsubscribed = default(int?), int? contactResubscribed = default(int?), int? contactNoteAdded = default(int?), int? contactNoteDeleted = default(int?), int? contactNoteStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? listCountMembersUpdated = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?), int? progressCarrierBulkLookup = default(int?), int? progressSubAccountBulkImport = default(int?), int? emailLookupProgressState = default(int?), int? importProgressState = default(int?), int? forceRefreshWebApp = default(int?), int? chatSenderSettingsChanged = default(int?), int? countrySenderSettingsChanged = default(int?), int? chatSummaryChunk = default(int?), int? chatWaysToReplyChunk = default(int?), int? chatSuggestedReplyChunk = default(int?), int? userSubscriptionChanged = default(int?), int? userSubscriptionDeleted = default(int?), int? taskCreated = default(int?), int? taskUpdated = default(int?), int? taskReordered = default(int?), int? taskDeleted = default(int?), int? taskMovedAll = default(int?), int? taskStageCreated = default(int?), int? taskStageUpdated = default(int?), int? taskStageDeleted = default(int?), int? taskBoardCreated = default(int?), int? taskBoardUpdated = default(int?), int? taskBoardReordered = default(int?), int? taskBoardDeleted = default(int?), int? taskBoardArchived = default(int?), int? taskChecklistCreated = default(int?), int? taskChecklistUpdated = default(int?), int? taskChecklistDeleted = default(int?), int? taskChecklistBulkMarked = default(int?), int? taskChecklistItemCreated = default(int?), int? taskChecklistItemUpdated = default(int?), int? taskChecklistItemDeleted = default(int?), int? taskCommentCreated = default(int?), int? taskCommentDeleted = default(int?), int? pinnedContactAdded = default(int?), int? pinnedContactRemoved = default(int?), int? pinnedContactReordered = default(int?), int? pinnedContactStateChanged = default(int?), int? whatsappAccountAdded = default(int?), int? whatsappAccountRemoved = default(int?), int? whatsappAccountChanged = default(int?), int? facebookPageAdded = default(int?), int? facebookPageRemoved = default(int?), int? facebookPageChanged = default(int?), int? instagramAccountAdded = default(int?), int? instagramAccountRemoved = default(int?), int? instagramAccountChanged = default(int?), int? unreadTicketsCountUpdated = default(int?), int? ticketDeleted = default(int?), int? ticketUpdated = default(int?), int? ticketCreated = default(int?), int? ticketBulkUpdated = default(int?), int? ticketBulkDeleted = default(int?), int? ticketMessageCreated = default(int?), int? ticketMessageUpdated = default(int?), int? ticketMessageDeleted = default(int?), int? subAccountsClosed = default(int?), int? userInvited = default(int?), int? filteredViewCreated = default(int?), int? filteredViewCountUpdated = default(int?), int? filteredViewDeleted = default(int?), int? forwardingInboxWasVerified = default(int?), int? forwardingInboxCheckWasFailed = default(int?), int? forwardingInboxVerificationLinkWasParsed = default(int?), int? tendlcLinkNumberStatusUpdated = default(int?), int? channelPresence = default(int?), int? dealCreated = default(int?), int? dealUpdated = default(int?), int? dealDeleted = default(int?), int? dealMoved = default(int?), int? dealStageCreated = default(int?), int? dealStageUpdated = default(int?), int? dealStageDeleted = default(int?), int? dealPipelineCreated = default(int?), int? dealPipelineUpdated = default(int?), int? dealPipelineDeleted = default(int?), int? dealPipelineArchived = default(int?), int? dealPipelineReordered = default(int?), int? dealActivityUpdated = default(int?), int? dealActivityItemCreated = default(int?), int? dealActivityItemUpdated = default(int?), int? dealActivityItemDeleted = default(int?), int? dealActivityItemBulkMarked = default(int?), int? dealTimelineItemDeleted = default(int?), int? dealTimelineItemCreated = default(int?), int? aIAssistantCreated = default(int?), int? aIAssistantState = default(int?), int? aIAssistantDeleted = default(int?), int? aIAssistantLinkDeleted = default(int?), int? aIAssistantLinkState = default(int?), int? aIAssistantLinkCreated = default(int?), int? aIAssistantSubLinkState = default(int?), int? aIAssistantSubLinkCreated = default(int?), int? emailCampaignEmailSenderCreated = default(int?), int? emailCampaignEmailSenderUpdated = default(int?), int? emailCampaignEmailSenderDeleted = default(int?), int? emailCampaignDomainCreated = default(int?), int? emailCampaignDomainDeleted = default(int?), int? emailCampaignDomainVerified = default(int?), int? emailCampaignDomainStatusChanged = default(int?), int? emailCampaignDomainDkimVerified = default(int?), int? emailCampaignDomainReturnPathVerified = default(int?), int? emailCampaignDomainDmarcVerified = default(int?), int? emailCampaignDomainEntryVerificationChanged = default(int?), int? emailCampaignProgressState = default(int?), int? emailCampaignUpdated = default(int?), int? emailTemplateImproved = default(int?), int? emailTemplateImprovingFailed = default(int?), int? smsCampaignInvalidated = default(int?), int? scheduledEmailCampaignCreated = default(int?), int? scheduledEmailCampaignUpdated = default(int?), int? scheduledEmailCampaignStatusUpdated = default(int?), int? scheduledEmailCampaignDeleted = default(int?), int? emailCampaignFailedAttemptCreated = default(int?), int? emailCampaignFailedAttemptDeleted = default(int?), int? emailCampaignFailedAttemptStateUpdated = default(int?))
+        public GetStateResponse(int? systemCacheClear = default(int?), int? systemExit = default(int?), int? systemAlert = default(int?), int? systemAccountStateChanged = default(int?), int? systemAccountAcceptTermsUpdate = default(int?), int? systemAccountClosed = default(int?), int? systemAccountAdditionalFields = default(int?), int? systemAccountNumbersListChange = default(int?), int? systemAccountPermissionsChanged = default(int?), int? userProfileChanged = default(int?), int? userBalanceChanged = default(int?), int? userPresenceStatusChanged = default(int?), int? userImpersonationEnd = default(int?), int? messageDeleted = default(int?), int? messageIncoming = default(int?), int? messageIncomingDeleted = default(int?), int? messageStateChanged = default(int?), int? messageBulkEnd = default(int?), int? messageWipeEnd = default(int?), int? messageSent = default(int?), int? messageLog = default(int?), int? messageNote = default(int?), int? messageInitial = default(int?), int? lastMessageSet = default(int?), int? messageSessionDeleted = default(int?), int? messageCacheClear = default(int?), int? messageIncomingCacheClear = default(int?), int? messageScheduleAdded = default(int?), int? messageScheduleStateChanged = default(int?), int? messageScheduleDeleted = default(int?), int? messageScheduleNotSentStateChanged = default(int?), int? messageScheduleCacheClear = default(int?), int? messageTemplateCacheClear = default(int?), int? callFinished = default(int?), int? chatCreated = default(int?), int? chatMarkedAsRead = default(int?), int? chatMuted = default(int?), int? chatUnmuted = default(int?), int? chatPinned = default(int?), int? chatUnpinned = default(int?), int? chatDeleted = default(int?), int? chatClosed = default(int?), int? chatReopened = default(int?), int? chatActivated = default(int?), int? chatCacheClear = default(int?), int? chatRead = default(int?), int? chatUnread = default(int?), int? chatAssigneeChanged = default(int?), int? chatTagsChanged = default(int?), int? chatConversationEnded = default(int?), int? chatUpdated = default(int?), int? liveChatAgentChanged = default(int?), int? liveChatRated = default(int?), int? webWidgetUpdated = default(int?), int? webWidgetDeleted = default(int?), int? contactAdded = default(int?), int? contactDeleted = default(int?), int? contactBulkUpdated = default(int?), int? contactStateChanged = default(int?), int? contactUnsubscribed = default(int?), int? contactResubscribed = default(int?), int? contactNoteAdded = default(int?), int? contactNoteDeleted = default(int?), int? contactNoteStateChanged = default(int?), int? listAdded = default(int?), int? listDeleted = default(int?), int? listStateChanged = default(int?), int? listCountMembersUpdated = default(int?), int? contactWipeEnd = default(int?), int? contactImportEnd = default(int?), int? contactCacheClear = default(int?), int? listCacheClear = default(int?), int? customFieldsCacheClear = default(int?), int? progressCarrierBulkLookup = default(int?), int? progressSubAccountBulkImport = default(int?), int? emailLookupProgressState = default(int?), int? importProgressState = default(int?), int? forceRefreshWebApp = default(int?), int? chatSenderSettingsChanged = default(int?), int? countrySenderSettingsChanged = default(int?), int? chatSummaryChunk = default(int?), int? chatWaysToReplyChunk = default(int?), int? chatSuggestedReplyChunk = default(int?), int? userSubscriptionChanged = default(int?), int? userSubscriptionDeleted = default(int?), int? taskCreated = default(int?), int? taskUpdated = default(int?), int? taskReordered = default(int?), int? taskDeleted = default(int?), int? taskMovedAll = default(int?), int? taskStageCreated = default(int?), int? taskStageUpdated = default(int?), int? taskStageDeleted = default(int?), int? taskBoardCreated = default(int?), int? taskBoardUpdated = default(int?), int? taskBoardReordered = default(int?), int? taskBoardDeleted = default(int?), int? taskBoardArchived = default(int?), int? taskChecklistCreated = default(int?), int? taskChecklistUpdated = default(int?), int? taskChecklistDeleted = default(int?), int? taskChecklistBulkMarked = default(int?), int? taskChecklistItemCreated = default(int?), int? taskChecklistItemUpdated = default(int?), int? taskChecklistItemDeleted = default(int?), int? taskCommentCreated = default(int?), int? taskCommentDeleted = default(int?), int? pinnedContactAdded = default(int?), int? pinnedContactRemoved = default(int?), int? pinnedContactReordered = default(int?), int? pinnedContactStateChanged = default(int?), int? whatsappAccountAdded = default(int?), int? whatsappAccountRemoved = default(int?), int? whatsappAccountChanged = default(int?), int? facebookPageAdded = default(int?), int? facebookPageRemoved = default(int?), int? facebookPageChanged = default(int?), int? instagramAccountAdded = default(int?), int? instagramAccountRemoved = default(int?), int? instagramAccountChanged = default(int?), int? unreadTicketsCountUpdated = default(int?), int? ticketDeleted = default(int?), int? ticketUpdated = default(int?), int? ticketCreated = default(int?), int? ticketBulkUpdated = default(int?), int? ticketBulkDeleted = default(int?), int? ticketMessageCreated = default(int?), int? ticketMessageUpdated = default(int?), int? ticketMessageDeleted = default(int?), int? subAccountsClosed = default(int?), int? userInvited = default(int?), int? filteredViewCreated = default(int?), int? filteredViewCountUpdated = default(int?), int? filteredViewDeleted = default(int?), int? forwardingInboxWasVerified = default(int?), int? forwardingInboxCheckWasFailed = default(int?), int? forwardingInboxVerificationLinkWasParsed = default(int?), int? tendlcLinkNumberStatusUpdated = default(int?), int? channelPresence = default(int?), int? dealCreated = default(int?), int? dealUpdated = default(int?), int? dealDeleted = default(int?), int? dealMoved = default(int?), int? dealStageCreated = default(int?), int? dealStageUpdated = default(int?), int? dealStageDeleted = default(int?), int? dealPipelineCreated = default(int?), int? dealPipelineUpdated = default(int?), int? dealPipelineDeleted = default(int?), int? dealPipelineArchived = default(int?), int? dealPipelineReordered = default(int?), int? dealActivityUpdated = default(int?), int? dealActivityItemCreated = default(int?), int? dealActivityItemUpdated = default(int?), int? dealActivityItemDeleted = default(int?), int? dealActivityItemBulkMarked = default(int?), int? dealTimelineItemDeleted = default(int?), int? dealTimelineItemCreated = default(int?), int? aIAssistantCreated = default(int?), int? aIAssistantState = default(int?), int? aIAssistantDeleted = default(int?), int? aIAssistantLinkDeleted = default(int?), int? aIAssistantLinkState = default(int?), int? aIAssistantLinkCreated = default(int?), int? aIAssistantSubLinkState = default(int?), int? aIAssistantSubLinkCreated = default(int?), int? emailCampaignEmailSenderCreated = default(int?), int? emailCampaignEmailSenderUpdated = default(int?), int? emailCampaignEmailSenderDeleted = default(int?), int? emailCampaignDomainCreated = default(int?), int? emailCampaignDomainDeleted = default(int?), int? emailCampaignDomainVerified = default(int?), int? emailCampaignDomainStatusChanged = default(int?), int? emailCampaignDomainDkimVerified = default(int?), int? emailCampaignDomainReturnPathVerified = default(int?), int? emailCampaignDomainDmarcVerified = default(int?), int? emailCampaignDomainEntryVerificationChanged = default(int?), int? emailCampaignProgressState = default(int?), int? emailCampaignUpdated = default(int?), int? emailTemplateImproved = default(int?), int? emailTemplateImprovingFailed = default(int?), int? emailBonusUpdated = default(int?), int? smsCampaignInvalidated = default(int?), int? scheduledEmailCampaignCreated = default(int?), int? scheduledEmailCampaignUpdated = default(int?), int? scheduledEmailCampaignStatusUpdated = default(int?), int? scheduledEmailCampaignDeleted = default(int?), int? emailCampaignFailedAttemptCreated = default(int?), int? emailCampaignFailedAttemptDeleted = default(int?), int? emailCampaignFailedAttemptStateUpdated = default(int?))
         {
             // to ensure "systemCacheClear" is required (not null)
             if (systemCacheClear == null)
@@ -975,24 +976,6 @@ namespace TextMagicClient.Model
             else
             {
                 this.ChatSuggestedReplyChunk = chatSuggestedReplyChunk;
-            }
-            // to ensure "userSubscriptionChanged" is required (not null)
-            if (userSubscriptionChanged == null)
-            {
-                throw new InvalidDataException("userSubscriptionChanged is a required property for GetStateResponse and cannot be null");
-            }
-            else
-            {
-                this.UserSubscriptionChanged = userSubscriptionChanged;
-            }
-            // to ensure "userSubscriptionDeleted" is required (not null)
-            if (userSubscriptionDeleted == null)
-            {
-                throw new InvalidDataException("userSubscriptionDeleted is a required property for GetStateResponse and cannot be null");
-            }
-            else
-            {
-                this.UserSubscriptionDeleted = userSubscriptionDeleted;
             }
             // to ensure "taskCreated" is required (not null)
             if (taskCreated == null)
@@ -1858,6 +1841,15 @@ namespace TextMagicClient.Model
             {
                 this.EmailTemplateImprovingFailed = emailTemplateImprovingFailed;
             }
+            // to ensure "emailBonusUpdated" is required (not null)
+            if (emailBonusUpdated == null)
+            {
+                throw new InvalidDataException("emailBonusUpdated is a required property for GetStateResponse and cannot be null");
+            }
+            else
+            {
+                this.EmailBonusUpdated = emailBonusUpdated;
+            }
             // to ensure "smsCampaignInvalidated" is required (not null)
             if (smsCampaignInvalidated == null)
             {
@@ -1930,6 +1922,8 @@ namespace TextMagicClient.Model
             {
                 this.EmailCampaignFailedAttemptStateUpdated = emailCampaignFailedAttemptStateUpdated;
             }
+            this.UserSubscriptionChanged = userSubscriptionChanged;
+            this.UserSubscriptionDeleted = userSubscriptionDeleted;
         }
         
         /// <summary>
@@ -3019,6 +3013,12 @@ namespace TextMagicClient.Model
         public int? EmailTemplateImprovingFailed { get; set; }
 
         /// <summary>
+        /// Gets or Sets EmailBonusUpdated
+        /// </summary>
+        [DataMember(Name="emailBonusUpdated", EmitDefaultValue=false)]
+        public int? EmailBonusUpdated { get; set; }
+
+        /// <summary>
         /// Gets or Sets SmsCampaignInvalidated
         /// </summary>
         [DataMember(Name="smsCampaignInvalidated", EmitDefaultValue=false)]
@@ -3255,6 +3255,7 @@ namespace TextMagicClient.Model
             sb.Append("  EmailCampaignUpdated: ").Append(EmailCampaignUpdated).Append("\n");
             sb.Append("  EmailTemplateImproved: ").Append(EmailTemplateImproved).Append("\n");
             sb.Append("  EmailTemplateImprovingFailed: ").Append(EmailTemplateImprovingFailed).Append("\n");
+            sb.Append("  EmailBonusUpdated: ").Append(EmailBonusUpdated).Append("\n");
             sb.Append("  SmsCampaignInvalidated: ").Append(SmsCampaignInvalidated).Append("\n");
             sb.Append("  ScheduledEmailCampaignCreated: ").Append(ScheduledEmailCampaignCreated).Append("\n");
             sb.Append("  ScheduledEmailCampaignUpdated: ").Append(ScheduledEmailCampaignUpdated).Append("\n");
@@ -4203,6 +4204,11 @@ namespace TextMagicClient.Model
                     this.EmailTemplateImprovingFailed.Equals(input.EmailTemplateImprovingFailed))
                 ) && 
                 (
+                    this.EmailBonusUpdated == input.EmailBonusUpdated ||
+                    (this.EmailBonusUpdated != null &&
+                    this.EmailBonusUpdated.Equals(input.EmailBonusUpdated))
+                ) && 
+                (
                     this.SmsCampaignInvalidated == input.SmsCampaignInvalidated ||
                     (this.SmsCampaignInvalidated != null &&
                     this.SmsCampaignInvalidated.Equals(input.SmsCampaignInvalidated))
@@ -4615,6 +4621,8 @@ namespace TextMagicClient.Model
                     hashCode = hashCode * 59 + this.EmailTemplateImproved.GetHashCode();
                 if (this.EmailTemplateImprovingFailed != null)
                     hashCode = hashCode * 59 + this.EmailTemplateImprovingFailed.GetHashCode();
+                if (this.EmailBonusUpdated != null)
+                    hashCode = hashCode * 59 + this.EmailBonusUpdated.GetHashCode();
                 if (this.SmsCampaignInvalidated != null)
                     hashCode = hashCode * 59 + this.SmsCampaignInvalidated.GetHashCode();
                 if (this.ScheduledEmailCampaignCreated != null)

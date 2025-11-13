@@ -1515,6 +1515,14 @@ namespace TextMagicClient.Test
             // TODO unit test for the property 'EmailTemplateImprovingFailed'
         }
         /// <summary>
+        /// Test the property 'EmailBonusUpdated'
+        /// </summary>
+        [Test]
+        public void EmailBonusUpdatedTest()
+        {
+            // TODO unit test for the property 'EmailBonusUpdated'
+        }
+        /// <summary>
         /// Test the property 'SmsCampaignInvalidated'
         /// </summary>
         [Test]
