@@ -1,4 +1,5 @@
 # TextMagicClient.Model.PushToken
+
 ## Properties
 
 Name | Type | Description | Notes

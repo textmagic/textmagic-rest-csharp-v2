@@ -1,12 +1,13 @@
 # TextMagicClient.Model.MessageIn
+
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **int?** | The ID of the inbound message. | 
+**Id** | **int** | The ID of the inbound message. | 
 **Sender** | **string** | The sender’s phone number. | 
 **Receiver** | **string** | The receiver’s phone number (i.e. your dedicated or shared reply number). | 
-**MessageTime** | **DateTime?** | The time when the message reached the Textmagic API endpoint. | 
+**MessageTime** | **DateTime** | The time when the message reached the Textmagic API endpoint. | 
 **Text** | **string** | The text from the received message. | 
 **ContactId** | **int?** | Sender contact ID. | [optional] 
 **FirstName** | **string** | Sender contact first name. | [optional] 

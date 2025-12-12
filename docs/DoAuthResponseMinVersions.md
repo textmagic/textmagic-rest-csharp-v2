@@ -1,4 +1,5 @@
 # TextMagicClient.Model.DoAuthResponseMinVersions
+
 ## Properties
 
 Name | Type | Description | Notes

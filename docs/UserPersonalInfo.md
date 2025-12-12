@@ -1,9 +1,10 @@
 # TextMagicClient.Model.UserPersonalInfo
+
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **int?** | User ID. | 
+**Id** | **int** | User ID. | 
 **FirstName** | **string** | User&#39;s first name. | [optional] 
 **LastName** | **string** | User&#39;s last name. | [optional] 
 **AvatarUrl** | **string** | URL to user&#39;s avatar image. | [optional] 

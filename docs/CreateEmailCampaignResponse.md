@@ -1,19 +1,20 @@
 # TextMagicClient.Model.CreateEmailCampaignResponse
+
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **int?** | Unique campaign ID. | 
+**Id** | **int** | Unique campaign ID. | 
 **Status** | **string** | Current campaign status. | 
 **EmailSenderId** | **int?** | Email sender ID used for this campaign. | [optional] 
-**StartAt** | **DateTime?** | Campaign start timestamp. | 
+**StartAt** | **DateTime** | Campaign start timestamp. | 
 **CreatedBy** | [**UserPersonalInfo**](UserPersonalInfo.md) |  | 
 **FromName** | **string** | Sender name displayed in recipient&#39;s inbox. | [optional] 
 **FromEmail** | **string** | Sender email address. | 
 **ReplyToEmail** | **string** | Reply-to email address. | 
 **Subject** | **string** | Email subject line. | 
 **Html** | **string** | HTML email content. | 
-**Cost** | **float?** | Total campaign cost. | 
+**Cost** | **float** | Total campaign cost. | 
 **Totals** | [**EmailCampaignStatisticTotals**](EmailCampaignStatisticTotals.md) |  | 
 **OutboundEmail** | [**OutboundEmailResponse**](OutboundEmailResponse.md) |  | [optional] 
 **FailedReason** | **string** | Reason for campaign failure if applicable. | [optional] 

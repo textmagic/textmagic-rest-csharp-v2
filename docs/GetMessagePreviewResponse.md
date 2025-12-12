@@ -1,4 +1,5 @@
 # TextMagicClient.Model.GetMessagePreviewResponse
+
 ## Properties
 
 Name | Type | Description | Notes

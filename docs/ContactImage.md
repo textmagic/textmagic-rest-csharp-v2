@@ -1,4 +1,5 @@
 # TextMagicClient.Model.ContactImage
+
 ## Properties
 
 Name | Type | Description | Notes

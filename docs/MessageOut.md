@@ -1,9 +1,10 @@
 # TextMagicClient.Model.MessageOut
+
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **int?** | Message ID. | 
+**Id** | **int** | Message ID. | 
 **Sender** | **string** | Message sender (phone number or alphanumeric Sender ID). | [optional] 
 **Receiver** | **string** | Recipient&#x60;s phone number. | [optional] 
 **Text** | **string** |  | 
@@ -11,9 +12,9 @@ Name | Type | Description | Notes
 **RejectReason** | **string** | Rejection reason. | [optional] 
 **ContactId** | **int?** | Recipient contact ID. | 
 **SessionId** | **int?** | Message Session ID of a message. | 
-**MessageTime** | **DateTime?** | Sending time. | 
+**MessageTime** | **DateTime** | Sending time. | 
 **Avatar** | **string** |  | 
-**Deleted** | **bool?** | Indicates that the message has been deleted. | [optional] 
+**Deleted** | **bool** | Indicates that the message has been deleted. | [optional] 
 **Charset** | **string** | Message charset. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS.  | 
 **CharsetLabel** | **string** | Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages.  | 
 **FirstName** | **string** | Contact first name. Could be substituted from your [Contacts](https://docs.textmagic.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).  | 

@@ -1,9 +1,10 @@
 # TextMagicClient.Model.GetMessagePriceResponse
+
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Total** | **decimal?** | Total price of the message. | 
+**Total** | **decimal** | Total price of the message. | 
 **Parts** | **int?** | Message parts (multiples of 160 characters) count. | 
 **Countries** | [**List&lt;GetMessagePriceResponseCountriesItem&gt;**](GetMessagePriceResponseCountriesItem.md) |  | 
 

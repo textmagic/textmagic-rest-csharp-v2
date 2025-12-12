@@ -1,4 +1,5 @@
 # TextMagicClient.Model.GetVersionsResponse
+
 ## Properties
 
 Name | Type | Description | Notes

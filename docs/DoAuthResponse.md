@@ -1,4 +1,5 @@
 # TextMagicClient.Model.DoAuthResponse
+
 ## Properties
 
 Name | Type | Description | Notes

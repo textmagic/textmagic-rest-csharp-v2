@@ -1,4 +1,5 @@
 # TextMagicClient.Model.GetCallbackSettingsResponse
+
 ## Properties
 
 Name | Type | Description | Notes

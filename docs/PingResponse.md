@@ -1,9 +1,10 @@
 # TextMagicClient.Model.PingResponse
+
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**UserId** | **int?** | Current user Id. | 
+**UserId** | **int** | Current user Id. | 
 **Ping** | **string** | Pong. | 
 **UtcDateTime** | **string** | Current date and time. | 
 

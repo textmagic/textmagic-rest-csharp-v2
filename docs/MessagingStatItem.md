@@ -1,4 +1,5 @@
 # TextMagicClient.Model.MessagingStatItem
+
 ## Properties
 
 Name | Type | Description | Notes

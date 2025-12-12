@@ -1,4 +1,5 @@
 # TextMagicClient.Model.GetAvailableSenderSettingOptionsResponse
+
 ## Properties
 
 Name | Type | Description | Notes

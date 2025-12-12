@@ -1,4 +1,5 @@
 # TextMagicClient.Model.MessagesIcsTextParameters
+
 ## Properties
 
 Name | Type | Description | Notes

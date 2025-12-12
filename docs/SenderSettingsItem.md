@@ -1,4 +1,5 @@
 # TextMagicClient.Model.SenderSettingsItem
+
 ## Properties
 
 Name | Type | Description | Notes

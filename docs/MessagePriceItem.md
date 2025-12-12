@@ -1,4 +1,5 @@
 # TextMagicClient.Model.MessagePriceItem
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,5 @@
 # TextMagicClient.Model.MessageOutSession
+
 ## Properties
 
 Name | Type | Description | Notes

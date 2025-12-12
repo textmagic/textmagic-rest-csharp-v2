@@ -1,4 +1,5 @@
 # TextMagicClient.Model.ContactCustomField
+
 ## Properties
 
 Name | Type | Description | Notes

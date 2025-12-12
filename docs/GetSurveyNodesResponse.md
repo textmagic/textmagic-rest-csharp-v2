@@ -1,4 +1,5 @@
 # TextMagicClient.Model.GetSurveyNodesResponse
+
 ## Properties
 
 Name | Type | Description | Notes

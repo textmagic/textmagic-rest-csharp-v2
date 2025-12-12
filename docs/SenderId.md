@@ -1,11 +1,12 @@
 # TextMagicClient.Model.SenderId
+
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **int?** | Numeric sender ID. | 
+**Id** | **int** | Numeric sender ID. | 
 **DisplayTimeFormat** | **string** | Format for representation of time. | [optional] 
-**_SenderId** | **string** | Alphanumeric ID. | 
+**VarSenderId** | **string** | Alphanumeric ID. | 
 **User** | [**User**](User.md) |  | 
 **Status** | **string** | *   **P** for Pending - this Sender ID is being reviewed by our support team; *   **R** for Rejected - our support team rejected your application for this Sender ID; *   **A** for Active.  | 
 

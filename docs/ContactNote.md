@@ -1,10 +1,11 @@
 # TextMagicClient.Model.ContactNote
+
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **int?** | Contact note ID. | 
-**CreatedAt** | **DateTime?** | Contact note creation time. | 
+**Id** | **int** | Contact note ID. | 
+**CreatedAt** | **DateTime** | Contact note creation time. | 
 **Note** | **string** | Contact note text. | 
 **User** | [**User**](User.md) |  | 
 

@@ -1,4 +1,5 @@
 # TextMagicClient.Model.UserImage
+
 ## Properties
 
 Name | Type | Description | Notes

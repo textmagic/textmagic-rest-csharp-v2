@@ -1,15 +1,16 @@
 # TextMagicClient.Model.File
+
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **int?** |  | 
+**Id** | **int** |  | 
 **Name** | **string** |  | 
 **OriginalName** | **string** |  | 
 **MimeType** | **string** |  | 
-**Size** | **int?** |  | 
+**Size** | **int** |  | 
 **Type** | **string** | File type. | 
-**CreatedAt** | **DateTime?** |  | 
+**CreatedAt** | **DateTime** |  | 
 **PreviewUrl** | **string** |  | [optional] 
 **Url** | **string** |  | [optional] 
 **Metadata** | [**FileMetadata**](FileMetadata.md) |  | [optional] 

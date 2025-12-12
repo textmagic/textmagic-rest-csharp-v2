@@ -1,4 +1,5 @@
 # TextMagicClient.Model.SurveyRecipient
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,14 +1,15 @@
 # TextMagicClient.Model.SurveyNode
+
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **int?** |  | 
+**Id** | **int** |  | 
 **Label** | **string** |  | 
 **Body** | **string** |  | 
 **NodeType** | **string** |  | 
-**IsEndNode** | **bool?** |  | 
-**SendDelay** | **int?** |  | 
+**IsEndNode** | **bool** |  | 
+**SendDelay** | **int** |  | 
 **StartNodes** | **List&lt;string&gt;** |  | 
 **EndNodes** | **List&lt;string&gt;** |  | 
 

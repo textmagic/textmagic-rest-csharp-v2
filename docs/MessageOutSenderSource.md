@@ -1,4 +1,5 @@
 # TextMagicClient.Model.MessageOutSenderSource
+
 ## Properties
 
 Name | Type | Description | Notes
