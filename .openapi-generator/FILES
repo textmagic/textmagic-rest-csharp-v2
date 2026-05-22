@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 README.md
 TextMagicClient.sln
 api/openapi.yaml
@@ -31,6 +30,7 @@ docs/CreateTagResponse.md
 docs/CreateTemplateRequest.md
 docs/Currency.md
 docs/CustomFieldListItem.md
+docs/CustomFieldValues.md
 docs/DeleteChatMessagesRequest.md
 docs/DeleteChatsBulkRequest.md
 docs/DeleteContactNotesBulkRequest.md
@@ -115,6 +115,7 @@ docs/MessagingStatItem.md
 docs/MuteChatRequest.md
 docs/MuteChatsBulkRequest.md
 docs/NotFoundResponse.md
+docs/NullableUserPersonalInfo.md
 docs/OutboundEmailResponse.md
 docs/PingResponse.md
 docs/PushToken.md
@@ -218,6 +219,7 @@ src/TextMagicClient/Model/CreateTagResponse.cs
 src/TextMagicClient/Model/CreateTemplateRequest.cs
 src/TextMagicClient/Model/Currency.cs
 src/TextMagicClient/Model/CustomFieldListItem.cs
+src/TextMagicClient/Model/CustomFieldValues.cs
 src/TextMagicClient/Model/DeleteChatMessagesRequest.cs
 src/TextMagicClient/Model/DeleteChatsBulkRequest.cs
 src/TextMagicClient/Model/DeleteContactNotesBulkRequest.cs
@@ -302,6 +304,7 @@ src/TextMagicClient/Model/MessagingStatItem.cs
 src/TextMagicClient/Model/MuteChatRequest.cs
 src/TextMagicClient/Model/MuteChatsBulkRequest.cs
 src/TextMagicClient/Model/NotFoundResponse.cs
+src/TextMagicClient/Model/NullableUserPersonalInfo.cs
 src/TextMagicClient/Model/OutboundEmailResponse.cs
 src/TextMagicClient/Model/PingResponse.cs
 src/TextMagicClient/Model/PushToken.cs

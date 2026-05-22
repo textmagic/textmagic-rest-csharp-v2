@@ -25,6 +25,10 @@ Name | Type | Description | Notes
 **SmsPrice** | **decimal** |  | 
 **MmsPrice** | **decimal** |  | 
 **Tags** | [**List&lt;Tag&gt;**](Tag.md) |  | [optional] 
+**AssigneeId** | **int?** |  | 
+**UpdatedBy** | [**NullableUserPersonalInfo**](NullableUserPersonalInfo.md) |  | [optional] 
+**CreatedAt** | **DateTime** | Chat creation date and time. | 
+**MessageTime** | **DateTime** | Chat last message date and time. | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

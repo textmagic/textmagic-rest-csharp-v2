@@ -33,7 +33,7 @@ namespace TextMagicClient.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "3.0.43912";
+        public const string Version = "3.0.50038";
 
         /// <summary>
         /// Identifier for ISO 8601 DateTime Format
@@ -535,7 +535,7 @@ namespace TextMagicClient.Client
             report += "    OS: " + System.Environment.OSVersion + "\n";
             report += "    .NET Framework Version: " + System.Environment.Version  + "\n";
             report += "    Version of the API: 2\n";
-            report += "    SDK Package Version: 3.0.43912\n";
+            report += "    SDK Package Version: 3.0.50038\n";
 
             return report;
         }

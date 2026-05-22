@@ -53,7 +53,7 @@ dotnet add package TextMagicClient
 #### Using PackageReference
 Add this to your `.csproj` file:
 ```xml
-<PackageReference Include="TextMagicClient" Version="3.0.43912" />
+<PackageReference Include="TextMagicClient" Version="3.0.50038" />
 ```
 
 ### Install from GitHub
@@ -450,10 +450,10 @@ dotnet remove package TextMagicClient
 #### Step 4: Install New SDK
 ```powershell
 # Using Package Manager Console
-Install-Package TextMagicClient -Version 3.0.43912
+Install-Package TextMagicClient -Version 3.0.50038
 
 # Or using .NET CLI
-dotnet add package TextMagicClient --version 3.0.43912
+dotnet add package TextMagicClient --version 3.0.50038
 ```
 
 #### Step 5: Update Dependencies (if needed)

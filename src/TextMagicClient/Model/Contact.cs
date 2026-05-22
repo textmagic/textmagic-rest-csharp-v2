@@ -49,6 +49,7 @@ namespace TextMagicClient.Model
         /// <param name="email">Contact email address. (required).</param>
         /// <param name="country">country (required).</param>
         /// <param name="customFields">customFields (required).</param>
+        /// <param name="customFieldValues">customFieldValues (required).</param>
         /// <param name="user">user (required).</param>
         /// <param name="lists">lists (required).</param>
         /// <param name="owner">owner.</param>
@@ -57,7 +58,7 @@ namespace TextMagicClient.Model
         /// <param name="avatar">avatar (required).</param>
         /// <param name="notes">notes (required).</param>
         /// <param name="whatsappPhone">Whatsapp phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164)..</param>
-        public Contact(int id = default, bool favorited = default, bool blocked = default, string firstName = default, string lastName = default, string companyName = default, string phone = default, string email = default, Country country = default, List<CustomFieldListItem> customFields = default, User user = default, List<List> lists = default, User owner = default, List<Tag> tags = default, string phoneType = default, ContactImage avatar = default, List<ContactNote> notes = default, string whatsappPhone = default)
+        public Contact(int id = default, bool favorited = default, bool blocked = default, string firstName = default, string lastName = default, string companyName = default, string phone = default, string email = default, Country country = default, List<CustomFieldListItem> customFields = default, List<CustomFieldValues> customFieldValues = default, User user = default, List<List> lists = default, User owner = default, List<Tag> tags = default, string phoneType = default, ContactImage avatar = default, List<ContactNote> notes = default, string whatsappPhone = default)
         {
             this.Id = id;
             this.Favorited = favorited;
@@ -104,6 +105,12 @@ namespace TextMagicClient.Model
                 throw new ArgumentNullException("customFields is a required property for Contact and cannot be null");
             }
             this.CustomFields = customFields;
+            // to ensure "customFieldValues" is required (not null)
+            if (customFieldValues == null)
+            {
+                throw new ArgumentNullException("customFieldValues is a required property for Contact and cannot be null");
+            }
+            this.CustomFieldValues = customFieldValues;
             // to ensure "user" is required (not null)
             if (user == null)
             {
@@ -232,6 +239,12 @@ namespace TextMagicClient.Model
         public List<CustomFieldListItem> CustomFields { get; set; }
 
         /// <summary>
+        /// Gets or Sets CustomFieldValues
+        /// </summary>
+        [DataMember(Name = "customFieldValues", IsRequired = true, EmitDefaultValue = true)]
+        public List<CustomFieldValues> CustomFieldValues { get; set; }
+
+        /// <summary>
         /// Gets or Sets User
         /// </summary>
         [DataMember(Name = "user", IsRequired = true, EmitDefaultValue = true)]
@@ -302,6 +315,7 @@ namespace TextMagicClient.Model
             sb.Append("  Email: ").Append(Email).Append("\n");
             sb.Append("  Country: ").Append(Country).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
+            sb.Append("  CustomFieldValues: ").Append(CustomFieldValues).Append("\n");
             sb.Append("  User: ").Append(User).Append("\n");
             sb.Append("  Lists: ").Append(Lists).Append("\n");
             sb.Append("  Owner: ").Append(Owner).Append("\n");

@@ -132,7 +132,11 @@ namespace TextMagicClient.Model
         /// <param name="smsPrice">smsPrice (required).</param>
         /// <param name="mmsPrice">mmsPrice (required).</param>
         /// <param name="tags">tags.</param>
-        public Chat(int id = default, int? originalId = default, string phone = default, Contact contact = default, int? unsubscribedContactId = default, int unread = default, DateTime updatedAt = default, StatusEnum status = default, int mute = default, string lastMessage = default, DirectionEnum direction = default, string replyOptionsType = default, string from = default, DateTime? mutedUntil = default, int timeLeftMute = default, Country country = default, bool? pinned = default, string type = default, decimal smsPrice = default, decimal mmsPrice = default, List<Tag> tags = default)
+        /// <param name="assigneeId">assigneeId (required).</param>
+        /// <param name="updatedBy">updatedBy.</param>
+        /// <param name="createdAt">Chat creation date and time. (required).</param>
+        /// <param name="messageTime">Chat last message date and time. (required).</param>
+        public Chat(int id = default, int? originalId = default, string phone = default, Contact contact = default, int? unsubscribedContactId = default, int unread = default, DateTime updatedAt = default, StatusEnum status = default, int mute = default, string lastMessage = default, DirectionEnum direction = default, string replyOptionsType = default, string from = default, DateTime? mutedUntil = default, int timeLeftMute = default, Country country = default, bool? pinned = default, string type = default, decimal smsPrice = default, decimal mmsPrice = default, List<Tag> tags = default, int? assigneeId = default, NullableUserPersonalInfo updatedBy = default, DateTime createdAt = default, DateTime messageTime = default)
         {
             this.Id = id;
             // to ensure "originalId" is required (not null)
@@ -209,7 +213,16 @@ namespace TextMagicClient.Model
             this.Type = type;
             this.SmsPrice = smsPrice;
             this.MmsPrice = mmsPrice;
+            // to ensure "assigneeId" is required (not null)
+            if (assigneeId == null)
+            {
+                throw new ArgumentNullException("assigneeId is a required property for Chat and cannot be null");
+            }
+            this.AssigneeId = assigneeId;
+            this.CreatedAt = createdAt;
+            this.MessageTime = messageTime;
             this.Tags = tags;
+            this.UpdatedBy = updatedBy;
         }
 
         /// <summary>
@@ -382,6 +395,35 @@ namespace TextMagicClient.Model
         public List<Tag> Tags { get; set; }
 
         /// <summary>
+        /// Gets or Sets AssigneeId
+        /// </summary>
+        /*
+        <example>1</example>
+        */
+        [DataMember(Name = "assigneeId", IsRequired = true, EmitDefaultValue = true)]
+        public int? AssigneeId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UpdatedBy
+        /// </summary>
+        [DataMember(Name = "updatedBy", EmitDefaultValue = true)]
+        public NullableUserPersonalInfo UpdatedBy { get; set; }
+
+        /// <summary>
+        /// Chat creation date and time.
+        /// </summary>
+        /// <value>Chat creation date and time.</value>
+        [DataMember(Name = "createdAt", IsRequired = true, EmitDefaultValue = true)]
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Chat last message date and time.
+        /// </summary>
+        /// <value>Chat last message date and time.</value>
+        [DataMember(Name = "messageTime", IsRequired = true, EmitDefaultValue = true)]
+        public DateTime MessageTime { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -410,6 +452,10 @@ namespace TextMagicClient.Model
             sb.Append("  SmsPrice: ").Append(SmsPrice).Append("\n");
             sb.Append("  MmsPrice: ").Append(MmsPrice).Append("\n");
             sb.Append("  Tags: ").Append(Tags).Append("\n");
+            sb.Append("  AssigneeId: ").Append(AssigneeId).Append("\n");
+            sb.Append("  UpdatedBy: ").Append(UpdatedBy).Append("\n");
+            sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
+            sb.Append("  MessageTime: ").Append(MessageTime).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

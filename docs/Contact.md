@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **Email** | **string** | Contact email address. | 
 **Country** | [**Country**](Country.md) |  | 
 **CustomFields** | [**List&lt;CustomFieldListItem&gt;**](CustomFieldListItem.md) |  | 
+**CustomFieldValues** | [**List&lt;CustomFieldValues&gt;**](CustomFieldValues.md) |  | 
 **User** | [**User**](User.md) |  | 
 **Lists** | **List&lt;List&gt;** |  | 
 **Owner** | [**User**](User.md) |  | [optional] 

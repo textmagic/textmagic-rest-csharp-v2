@@ -3,7 +3,7 @@ info:
   title: Textmagic API
   version: "2"
   x-logo:
-    url: https://www.textmagic.com/wp-content/uploads/2024/04/tm-logo.svg
+    url: https://investor.textmagic.com/src/assets/img/logo-blue.svg
     altText: Textmagic
 externalDocs:
   description: API documentation
@@ -415,32 +415,7 @@ tags:
 
     For detailed endpoint documentation, see the individual endpoint descriptions below.
   name: Tags
-- description: |
-    You can easily verify your customers using their phone numbers with the help of 2FA (better known as two-factor authentication) and protect against fraud, build trust, and increase conversions. There is a simple way to do this with an API call to a TextMagic endpoint. With the help of TextMagic API, you can:
-
-    *   Send two-factor authentication messages (2FA);
-    *   Send one-time passwords (OTP);
-    *   Integrate passwordless login into your app;
-    *   Protect your app from fraud.
-
-    ## How does it work?
-
-    * **Step 1:** Your server makes an API call to the TextMagic endpoint, and we send a text message (and later, as a fallback, a generate a text-to-speech voice call) with a verification code to the phone number supplied in the initial request.
-
-    * **Step 2:** Once the code is received, the user enters it into the relevant input field in your app. This code needs to be passed to TextMagic in the second API call; if it is correct, the server will respond with the correct response code. This way, you can ensure that the recipient really owns the phone number entered into your app or form.
-
-    ## Verification workflow
-
-    TextMagic verification API sends a PIN code by text messages or voice calls. Below you will find the description of the default workflow.
-
-    1.  Send **a text message** with a verification code.
-    2.  _Wait for 60 seconds._
-    3.  If the correct code was not supplied, send **the first text-to-speech** voice call.
-    4.  _Wait for 60 seconds._
-    5.  If the code was not supplied, send **the second text-to-speech** voice call.
-    6.  _Wait for the verification._ The verification code is **valid for 5 minutes** from the time of the initial request.
-
-    > **Please note:** Submitting another verification request for the same phone number before the original code has expired will result in a 409 error code. The new verification request can be submitted only once the previous code has expired (after 5 minutes) or canceled.
+- description: ""
   name: Two Factor auth
   x-displayName: Two-factor authentication
 - description: |
@@ -735,7 +710,7 @@ tags:
     \n### Via Composer (Recommended)\n\nInstall the SDK using [Composer](https://getcomposer.org/):\n\
     \n```bash\ncomposer require textmagic/textmagic-rest-php-v2\n```\n\nOr add it\
     \ to your `composer.json`:\n\n```json\n{\n    \"require\": {\n        \"textmagic/textmagic-rest-php-v2\"\
-    : \"^3.0.43870\"\n    }\n}\n```\n\nThen run:\n\n```bash\ncomposer install\n```\n\
+    : \"^3.0.50032\"\n    }\n}\n```\n\nThen run:\n\n```bash\ncomposer install\n```\n\
     \n### Manual Installation\n\nDownload the files and include `autoload.php`:\n\n\
     ```php\nrequire_once(__DIR__ . '/vendor/autoload.php');\n```\n\n## Quick Start\n\
     \n### Basic Usage\n\n```php\n<?php\nrequire_once(__DIR__ . '/vendor/autoload.php');\n\
@@ -1048,52 +1023,120 @@ tags:
     \nThis library provides you with an easy way of sending SMS and receiving replies\
     \ by integrating TextMagic SMS Gateway into your C# / VB.NET application.\n\n\
     [Get it now on GitHub](https://github.com/textmagic/textmagic-rest-csharp-v2)\n\
-    \n## Frameworks supported\n- .NET 4.0 or later\n- Windows Phone 7.1 (Mango)\n\n\
-    ## Dependencies\n- [RestSharp](https://www.nuget.org/packages/RestSharp) - 105.1.0\n\
-    - [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/) - 7.0.0 or later\n\
-    - [JsonSubTypes](https://www.nuget.org/packages/JsonSubTypes/) - 1.2.0 or later\n\
-    \nThe DLLs included in the package may not be the latest versions. We recommend\
-    \ using [NuGet](https://docs.nuget.org/consume/installing-nuget) to obtain the\
-    \ latest version of the packages:\n```\nInstall-Package RestSharp\nInstall-Package\
-    \ Newtonsoft.Json\nInstall-Package JsonSubTypes\n```\n\nNOTE: RestSharp versions\
-    \ later than 105.1.0 have a bug which causes file uploads to fail. See [RestSharp#742](https://github.com/restsharp/RestSharp/issues/742)\n\
-    \n## Installation\nAdd the library to your project references or install it as\
-    \ a [NuGet package](https://www.nuget.org/packages/TextMagicClient/2.0.43821/).\n\
-    \n## C# usage example\n```csharp\nusing System;\nusing System.IO;\nusing TextMagicClient.Api;\n\
+    \n## Requirements\n\n- **.NET Standard 2.0** or higher\n- **Compatible with:**\n\
+    \  - .NET Framework 4.6.1+\n  - .NET Core 2.0+\n  - .NET 5.0+\n  - .NET 6.0+\n\
+    \  - .NET 7.0+\n  - .NET 8.0+\n  - Mono 5.4+\n  - Xamarin.iOS 10.14+\n  - Xamarin.Android\
+    \ 8.0+\n  - UWP 10.0.16299+\n\n## Dependencies\n\n- **[RestSharp](https://www.nuget.org/packages/RestSharp)**\
+    \ >= 112.0.0\n- **[Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/)**\
+    \ >= 13.0.3\n- **[JsonSubTypes](https://www.nuget.org/packages/JsonSubTypes/)**\
+    \ >= 2.0.1\n\nAll dependencies are automatically installed via NuGet when you\
+    \ install the package.\n\n## Installation\n\n### Install from NuGet (Recommended)\n\
+    \n#### Using Package Manager Console\n```powershell\nInstall-Package TextMagicClient\n\
+    ```\n\n#### Using .NET CLI\n```bash\ndotnet add package TextMagicClient\n```\n\
+    \n#### Using PackageReference\nAdd this to your `.csproj` file:\n```xml\n<PackageReference\
+    \ Include=\"TextMagicClient\" Version=\"3.0.50038\" />\n```\n\n### Install from\
+    \ GitHub\n\n```bash\ngit clone https://github.com/textmagic/textmagic-rest-csharp-v2.git\n\
+    cd textmagic-rest-csharp-v2/src/TextMagicClient\ndotnet build\n```\n\n## Quick\
+    \ Start\n\n### Basic Usage\n\n```csharp\nusing System;\nusing TextMagicClient.Api;\n\
     using TextMagicClient.Client;\nusing TextMagicClient.Model;\n\nnamespace ExampleApp\n\
     {\n    class Program\n    {\n        static void Main(string[] args)\n       \
-    \ {\n            // put your Username and API Key from https://my.textmagic.com/online/api/rest-api/keys\
-    \ page.\n            Configuration.Default.Username = \"YOUR_USERNAME\";\n   \
-    \         Configuration.Default.Password = \"YOUR_API_KEY\";\n            Configuration.Default.BasePath\
-    \ = \"https://rest.textmagic.com\";\n\n            var apiInstance = new TextMagicApi();\n\
-    \n            // Simple Ping request sample\n            try\n            {\n\
-    \                var result = apiInstance.Ping();\n                Console.WriteLine(result.Ping);\n\
-    \            }\n            catch (Exception e)\n            {\n             \
-    \   Console.WriteLine(\"Exception when calling TextMagicApi.Ping: \" + e.Message\
-    \ );\n            }\n\n            // Send a new message request sample\n    \
-    \        try\n            {\n                var sendMessageInputObject = new\
-    \ SendMessageInputObject\n                {\n                    Text = \"I love\
-    \ TextMagic!\", Phones = \"+199988887766\"\n                };\n\n           \
-    \     var result = apiInstance.SendMessage(sendMessageInputObject);\n        \
-    \        Console.WriteLine(result.Id);\n            }\n            catch (Exception\
-    \ e)\n            {\n                Console.WriteLine(\"Exception when calling\
-    \ TextMagicApi.SendMessage: \" + e.Message );\n            }\n\n            //\
-    \ Get all outgoing messages sample\n            try\n            {\n         \
-    \       var result = apiInstance.GetAllOutboundMessages(1, 10);\n            \
-    \    Console.WriteLine(result.Resources[0].Id);\n            }\n            catch\
-    \ (Exception e)\n            {\n                Console.WriteLine(\"Exception\
-    \ when calling TextMagicApi.GetAllOutboundMessages: \" + e.Message );\n      \
-    \      }\n\n            // Upload list avatar sample, 3223 here is a sample list\
-    \ id\n            try\n            {\n                var stream = File.Open(\"\
-    /CustomPath/Images/test.png\", FileMode.Open);\n                var result = apiInstance.UploadListAvatar(stream,\
-    \ 3223);\n                Console.WriteLine(result.Href);\n            }\n   \
-    \         catch (Exception e)\n            {\n                Console.WriteLine(\"\
-    Exception when calling TextMagicApi.UploadListAvatar: \" + e.Message );\n    \
-    \        }\n        }\n    }\n}\n```\n\n## VB.Net usage example\n\n```vbnet\n\
-    Imports System\nImports System.IO\nImports TextMagicClient.Api\nImports TextMagicClient.Client\n\
-    Imports TextMagicClient.Model\n\nModule Program\n    Sub Main(args As String())\n\
-    \        ' put your Username and API Key from https://my.textmagic.com/online/api/rest-api/keys\
-    \ page.\n        Configuration.Default.Username = \"YOUR_USERNAME\"\n        Configuration.Default.Password\
+    \ {\n            // Configure API credentials\n            // Get your credentials\
+    \ from https://app.textmagic.com/settings/api\n            Configuration.Default.Username\
+    \ = \"YOUR_USERNAME\";\n            Configuration.Default.Password = \"YOUR_API_KEY\"\
+    ;\n            Configuration.Default.BasePath = \"https://rest.textmagic.com\"\
+    ;\n\n            var api = new TextMagicApi();\n\n            // Test connection\n\
+    \            try\n            {\n                var result = api.Ping();\n  \
+    \              Console.WriteLine($\"✅ Connected! Server time: {result.Ping}\"\
+    );\n            }\n            catch (ApiException e)\n            {\n       \
+    \         Console.WriteLine($\"❌ Error: {e.Message}\");\n            }\n     \
+    \   }\n    }\n}\n```\n\n## Usage Examples\n\n### Sending Messages\n\n```csharp\n\
+    using System;\nusing TextMagicClient.Api;\nusing TextMagicClient.Client;\nusing\
+    \ TextMagicClient.Model;\n\nnamespace ExampleApp\n{\n    class Program\n    {\n\
+    \        static void Main(string[] args)\n        {\n            Configuration.Default.Username\
+    \ = \"YOUR_USERNAME\";\n            Configuration.Default.Password = \"YOUR_API_KEY\"\
+    ;\n            Configuration.Default.BasePath = \"https://rest.textmagic.com\"\
+    ;\n\n            var api = new TextMagicApi();\n\n            // Send SMS to a\
+    \ single number\n            try\n            {\n                var sendMessage\
+    \ = new SendMessageInputObject\n                {\n                    Text =\
+    \ \"Hello from TextMagic C# SDK!\",\n                    Phones = \"+1234567890\"\
+    \n                };\n\n                var result = api.SendMessage(sendMessage);\n\
+    \                Console.WriteLine($\"✅ Message sent! ID: {result.Id}\");\n  \
+    \              Console.WriteLine($\"   Session ID: {result.SessionId}\");\n  \
+    \          }\n            catch (ApiException e)\n            {\n            \
+    \    Console.WriteLine($\"❌ Error sending message: {e.Message}\");\n         \
+    \   }\n\n            // Send SMS to multiple numbers\n            try\n      \
+    \      {\n                var sendMessage = new SendMessageInputObject\n     \
+    \           {\n                    Text = \"Bulk message from TextMagic!\",\n\
+    \                    Phones = \"+1234567890,+0987654321\"\n                };\n\
+    \n                var result = api.SendMessage(sendMessage);\n               \
+    \ Console.WriteLine($\"✅ Bulk message sent! Session ID: {result.SessionId}\");\n\
+    \            }\n            catch (ApiException e)\n            {\n          \
+    \      Console.WriteLine($\"❌ Error: {e.Message}\");\n            }\n        }\n\
+    \    }\n}\n```\n\n### Retrieving Messages\n\n```csharp\nusing System;\nusing TextMagicClient.Api;\n\
+    using TextMagicClient.Client;\n\nnamespace ExampleApp\n{\n    class Program\n\
+    \    {\n        static void Main(string[] args)\n        {\n            Configuration.Default.Username\
+    \ = \"YOUR_USERNAME\";\n            Configuration.Default.Password = \"YOUR_API_KEY\"\
+    ;\n            Configuration.Default.BasePath = \"https://rest.textmagic.com\"\
+    ;\n\n            var api = new TextMagicApi();\n\n            // Get all outbound\
+    \ messages with pagination\n            try\n            {\n                int\
+    \ page = 1;\n                int limit = 10;\n                var result = api.GetAllOutboundMessages(page,\
+    \ limit);\n\n                Console.WriteLine($\"📨 Total messages: {result.Page.Count}\"\
+    );\n                foreach (var message in result.Resources)\n              \
+    \  {\n                    Console.WriteLine($\"   ID: {message.Id}, Text: {message.Text},\
+    \ Status: {message.Status}\");\n                }\n            }\n           \
+    \ catch (ApiException e)\n            {\n                Console.WriteLine($\"\
+    ❌ Error: {e.Message}\");\n            }\n\n            // Get a specific message\
+    \ by ID\n            try\n            {\n                int messageId = 12345;\n\
+    \                var message = api.GetMessage(messageId);\n                Console.WriteLine($\"\
+    📨 Message {message.Id}: {message.Text}\");\n                Console.WriteLine($\"\
+    \   Status: {message.Status}\");\n                Console.WriteLine($\"   Sent\
+    \ at: {message.CreateTime}\");\n            }\n            catch (ApiException\
+    \ e)\n            {\n                Console.WriteLine($\"❌ Error: {e.Message}\"\
+    );\n            }\n        }\n    }\n}\n```\n\n### Uploading Files\n\n```csharp\n\
+    using System;\nusing System.IO;\nusing TextMagicClient.Api;\nusing TextMagicClient.Client;\n\
+    \nnamespace ExampleApp\n{\n    class Program\n    {\n        static void Main(string[]\
+    \ args)\n        {\n            Configuration.Default.Username = \"YOUR_USERNAME\"\
+    ;\n            Configuration.Default.Password = \"YOUR_API_KEY\";\n          \
+    \  Configuration.Default.BasePath = \"https://rest.textmagic.com\";\n\n      \
+    \      var api = new TextMagicApi();\n\n            // Upload list avatar\n  \
+    \          try\n            {\n                int listId = 12345;\n         \
+    \       using (var stream = File.OpenRead(\"path/to/avatar.png\"))\n         \
+    \       {\n                    var result = api.UploadListAvatar(stream, listId);\n\
+    \                    Console.WriteLine($\"✅ Avatar uploaded! URL: {result.Href}\"\
+    );\n                }\n            }\n            catch (ApiException e)\n   \
+    \         {\n                Console.WriteLine($\"❌ Error: {e.Message}\");\n \
+    \           }\n        }\n    }\n}\n```\n\n### Error Handling\n\n```csharp\nusing\
+    \ System;\nusing TextMagicClient.Api;\nusing TextMagicClient.Client;\nusing TextMagicClient.Model;\n\
+    \nnamespace ExampleApp\n{\n    class Program\n    {\n        static void Main(string[]\
+    \ args)\n        {\n            Configuration.Default.Username = \"YOUR_USERNAME\"\
+    ;\n            Configuration.Default.Password = \"YOUR_API_KEY\";\n          \
+    \  Configuration.Default.BasePath = \"https://rest.textmagic.com\";\n\n      \
+    \      var api = new TextMagicApi();\n\n            try\n            {\n     \
+    \           var sendMessage = new SendMessageInputObject\n                {\n\
+    \                    Text = \"Test message\",\n                    Phones = \"\
+    +1234567890\"\n                };\n\n                var result = api.SendMessage(sendMessage);\n\
+    \                Console.WriteLine($\"✅ Success! Message ID: {result.Id}\");\n\
+    \            }\n            catch (ApiException e)\n            {\n          \
+    \      Console.WriteLine($\"❌ API Error:\");\n                Console.WriteLine($\"\
+    \   Status Code: {e.ErrorCode}\");\n                Console.WriteLine($\"   Message:\
+    \ {e.Message}\");\n                Console.WriteLine($\"   Response: {e.ErrorContent}\"\
+    );\n            }\n            catch (Exception e)\n            {\n          \
+    \      Console.WriteLine($\"❌ Unexpected Error: {e.Message}\");\n            }\n\
+    \        }\n    }\n}\n```\n\n## API Documentation\n\nFor detailed information\
+    \ about all available methods, parameters, and response models, please refer to:\n\
+    \n- **[TextMagic API Documentation](https://docs.textmagic.com)**\n- **[REST API\
+    \ Reference](https://docs.textmagic.com/api-reference)**\n\n### Available API\
+    \ Methods\n\nThe SDK provides access to all TextMagic REST API endpoints, including:\n\
+    \n- **Messages**: Send, retrieve, delete messages\n- **Contacts**: Manage contacts\
+    \ and contact lists\n- **Templates**: Create and manage message templates\n- **Bulk\
+    \ Operations**: Send bulk messages, manage campaigns\n- **Account**: Check balance,\
+    \ get account information\n- **Numbers**: Purchase and manage dedicated numbers\n\
+    - **Webhooks**: Configure webhooks for incoming messages\n- **And more...**\n\n\
+    ## VB.NET Usage Example\n\n```vbnet\nImports System\nImports System.IO\nImports\
+    \ TextMagicClient.Api\nImports TextMagicClient.Client\nImports TextMagicClient.Model\n\
+    \nModule Program\n    Sub Main(args As String())\n        ' put your Username\
+    \ and API Key from https://my.textmagic.com/online/api/rest-api/keys page.\n \
+    \       Configuration.Default.Username = \"YOUR_USERNAME\"\n        Configuration.Default.Password\
     \ = \"YOUR_API_KEY\"\n        Configuration.Default.BasePath = \"https://rest.textmagic.com\"\
     \n\n        Dim apiInstance = New TextMagicApi()\n\n        ' Simple Ping request\
     \ sample\n        Try\n            Dim result = apiInstance.Ping()\n         \
@@ -1114,8 +1157,128 @@ tags:
     /CustomPath/Images/test.png\", FileMode.Open)\n            Dim result = apiInstance.UploadListAvatar(stream,\
     \ 3223)\n            Console.WriteLine(result.Href)\n        Catch e As Exception\n\
     \            Console.WriteLine(\"Exception when calling TextMagicApi.UploadListAvatar:\
-    \ \" & e.Message)\n        End Try\n    End Sub\nEnd Module\n\n```\n\n# C++\n\n\
-    <iframe src=\"https://ghbtns.com/github-btn.html?user=textmagic&repo=textmagic-rest-cpp-v2&type=star&count=true\"\
+    \ \" & e.Message)\n        End Try\n    End Sub\nEnd Module\n\n```\n\n## Migration\
+    \ Guide: v2.x → v3.x\n\n### Overview\n\nVersion 3.0 represents a major update\
+    \ to the TextMagic C# SDK, migrating from Swagger Codegen to OpenAPI Generator\
+    \ 7.17.0. This brings improved code quality, better .NET Standard support, and\
+    \ enhanced compatibility with modern .NET frameworks.\n\n### Why Upgrade?\n\n\
+    - ✅ **Modern .NET Support**: Full .NET Standard 2.0 support, compatible with .NET\
+    \ 6.0, 7.0, 8.0+\n- ✅ **Updated Dependencies**: Latest versions of RestSharp,\
+    \ Newtonsoft.Json, and JsonSubTypes\n- ✅ **Better Code Generation**: OpenAPI Generator\
+    \ 7.17.0 produces cleaner, more maintainable code\n- ✅ **Improved Performance**:\
+    \ Optimized HTTP client and serialization\n- ✅ **Enhanced Security**: Updated\
+    \ dependencies with latest security patches\n- ✅ **Future-Proof**: Active maintenance\
+    \ and regular updates\n\n### Breaking Changes\n\n| Change | Impact | v2.x | v3.x\
+    \ | Notes |\n|--------|--------|------|------|-------|\n| **Generator** | Low\
+    \ | Swagger Codegen 2.4.8 | OpenAPI Generator 7.17.0 | Modern code generation\
+    \ |\n| **Target Framework** | Medium | .NET Framework 4.5 | .NET Standard 2.0+\
+    \ | Requires .NET Framework 4.6.1+ |\n| **RestSharp** | Medium | 105.1.0 | **112.0.0+**\
+    \ | **+7 major versions!** Improved performance |\n| **Newtonsoft.Json** | Low\
+    \ | 10.0.3 | 13.0.3+ | Latest security patches |\n| **JsonSubTypes** | Low | 1.2.0\
+    \ | 2.0.1+ | Major version update |\n| **Package Installation** | Low | Manual\
+    \ DLL or NuGet | NuGet (recommended) | Simplified installation |\n\n### What Stays\
+    \ the Same ✅\n\n- ✅ **API Interface**: All method signatures remain unchanged\n\
+    - ✅ **Authentication**: Same username/password authentication\n- ✅ **Configuration**:\
+    \ Same `Configuration.Default` pattern\n- ✅ **Model Classes**: Same model structure\
+    \ and properties\n- ✅ **Error Handling**: Same `ApiException` handling\n- ✅ **Base\
+    \ URL**: Same `https://rest.textmagic.com` endpoint\n\n### Step-by-Step Migration\
+    \ Guide\n\n#### Step 1: Backup Your Project\n```bash\n# Create a backup of your\
+    \ project\ngit commit -am \"Backup before TextMagic SDK v3 migration\"\n# or copy\
+    \ your project folder\n```\n\n#### Step 2: Check .NET Framework Version\nEnsure\
+    \ your project targets **.NET Framework 4.6.1+**, **.NET Core 2.0+**, or **.NET\
+    \ 5.0+**.\n\n```xml\n<!-- Check your .csproj file -->\n<TargetFramework>netstandard2.0</TargetFramework>\n\
+    <!-- or -->\n<TargetFramework>net6.0</TargetFramework>\n```\n\n#### Step 3: Remove\
+    \ Old SDK\n```powershell\n# Using Package Manager Console\nUninstall-Package TextMagicClient\n\
+    \n# Or using .NET CLI\ndotnet remove package TextMagicClient\n```\n\n#### Step\
+    \ 4: Install New SDK\n```powershell\n# Using Package Manager Console\nInstall-Package\
+    \ TextMagicClient -Version 3.0.50038\n\n# Or using .NET CLI\ndotnet add package\
+    \ TextMagicClient --version 3.0.50038\n```\n\n#### Step 5: Update Dependencies\
+    \ (if needed)\nThe new SDK will automatically install compatible versions of:\n\
+    - RestSharp >= 112.0.0\n- Newtonsoft.Json >= 13.0.3\n- JsonSubTypes >= 2.0.1\n\
+    \n#### Step 6: Rebuild Your Project\n```bash\ndotnet build\n```\n\n#### Step 7:\
+    \ Test Your Application\nRun your test suite to ensure everything works as expected.\n\
+    \n```bash\ndotnet test\n```\n\n### Code Migration Examples\n\n#### Example 1:\
+    \ Basic Configuration (No Changes Required)\n\n**v2.x:**\n```csharp\nusing TextMagicClient.Api;\n\
+    using TextMagicClient.Client;\n\nConfiguration.Default.Username = \"YOUR_USERNAME\"\
+    ;\nConfiguration.Default.Password = \"YOUR_API_KEY\";\nConfiguration.Default.BasePath\
+    \ = \"https://rest.textmagic.com\";\n\nvar api = new TextMagicApi();\n```\n\n\
+    **v3.x:**\n```csharp\nusing TextMagicClient.Api;\nusing TextMagicClient.Client;\n\
+    \nConfiguration.Default.Username = \"YOUR_USERNAME\";\nConfiguration.Default.Password\
+    \ = \"YOUR_API_KEY\";\nConfiguration.Default.BasePath = \"https://rest.textmagic.com\"\
+    ;\n\nvar api = new TextMagicApi();\n```\n✅ **No changes required!**\n\n#### Example\
+    \ 2: Sending Messages (No Changes Required)\n\n**v2.x:**\n```csharp\nusing TextMagicClient.Model;\n\
+    \nvar sendMessage = new SendMessageInputObject\n{\n    Text = \"Hello from TextMagic!\"\
+    ,\n    Phones = \"+1234567890\"\n};\n\nvar result = api.SendMessage(sendMessage);\n\
+    Console.WriteLine($\"Message ID: {result.Id}\");\n```\n\n**v3.x:**\n```csharp\n\
+    using TextMagicClient.Model;\n\nvar sendMessage = new SendMessageInputObject\n\
+    {\n    Text = \"Hello from TextMagic!\",\n    Phones = \"+1234567890\"\n};\n\n\
+    var result = api.SendMessage(sendMessage);\nConsole.WriteLine($\"Message ID: {result.Id}\"\
+    );\n```\n✅ **No changes required!**\n\n#### Example 3: Error Handling (No Changes\
+    \ Required)\n\n**v2.x:**\n```csharp\ntry\n{\n    var result = api.Ping();\n  \
+    \  Console.WriteLine(result.Ping);\n}\ncatch (ApiException e)\n{\n    Console.WriteLine($\"\
+    Error: {e.Message}\");\n}\n```\n\n**v3.x:**\n```csharp\ntry\n{\n    var result\
+    \ = api.Ping();\n    Console.WriteLine(result.Ping);\n}\ncatch (ApiException e)\n\
+    {\n    Console.WriteLine($\"Error: {e.Message}\");\n}\n```\n✅ **No changes required!**\n\
+    \n### Common Migration Issues & Solutions\n\n#### Issue 1: \"Could not load file\
+    \ or assembly 'RestSharp'\"\n\n**Cause**: Version mismatch between old and new\
+    \ RestSharp.\n\n**Solution**:\n```powershell\n# Clean and rebuild\ndotnet clean\n\
+    dotnet restore\ndotnet build\n```\n\n#### Issue 2: \"The type or namespace name\
+    \ 'TextMagicClient' could not be found\"\n\n**Cause**: Old package not properly\
+    \ uninstalled.\n\n**Solution**:\n```powershell\n# Remove all TextMagic packages\n\
+    Uninstall-Package TextMagicClient -Force\n\n# Clear NuGet cache\ndotnet nuget\
+    \ locals all --clear\n\n# Reinstall\nInstall-Package TextMagicClient\n```\n\n\
+    #### Issue 3: \".NET Framework version not supported\"\n\n**Cause**: Project targets\
+    \ .NET Framework < 4.6.1.\n\n**Solution**:\nUpdate your `.csproj` file:\n```xml\n\
+    <TargetFramework>net461</TargetFramework>\n<!-- or -->\n<TargetFramework>netstandard2.0</TargetFramework>\n\
+    ```\n\n#### Issue 4: \"Newtonsoft.Json version conflict\"\n\n**Cause**: Another\
+    \ package requires a different Newtonsoft.Json version.\n\n**Solution**:\nAdd\
+    \ binding redirect to `app.config` or `web.config`:\n```xml\n<runtime>\n  <assemblyBinding\
+    \ xmlns=\"urn:schemas-microsoft-com:asm.v1\">\n    <dependentAssembly>\n     \
+    \ <assemblyIdentity name=\"Newtonsoft.Json\" publicKeyToken=\"30ad4fe6b2a6aeed\"\
+    \ culture=\"neutral\" />\n      <bindingRedirect oldVersion=\"0.0.0.0-13.0.0.0\"\
+    \ newVersion=\"13.0.0.0\" />\n    </dependentAssembly>\n  </assemblyBinding>\n\
+    </runtime>\n```\n\n#### Issue 5: \"RestSharp version conflict with other packages\"\
+    \n\n**Cause**: Another package in your project requires an older RestSharp version\
+    \ (< 112.0.0).\n\n**Solution**:\n```xml\n<!-- Option 1: Add binding redirect to\
+    \ app.config or web.config -->\n<runtime>\n  <assemblyBinding xmlns=\"urn:schemas-microsoft-com:asm.v1\"\
+    >\n    <dependentAssembly>\n      <assemblyIdentity name=\"RestSharp\" publicKeyToken=\"\
+    598062e77f915f75\" culture=\"neutral\" />\n      <bindingRedirect oldVersion=\"\
+    0.0.0.0-112.0.0.0\" newVersion=\"112.0.0.0\" />\n    </dependentAssembly>\n  </assemblyBinding>\n\
+    </runtime>\n```\n\n```xml\n<!-- Option 2: Update other packages to support RestSharp\
+    \ 112+ -->\n<!-- Check if newer versions of conflicting packages are available\
+    \ -->\n```\n\n**Note**: RestSharp 112.0.0 includes significant improvements and\
+    \ breaking changes from 105.x. If you have custom RestSharp code, review the [RestSharp\
+    \ migration guide](https://restsharp.dev/v107/#migrating-from-restsharp-106x).\n\
+    \n#### Issue 6: \"SSL/TLS connection errors\"\n\n**Cause**: Older .NET Framework\
+    \ versions may not support modern TLS.\n\n**Solution**:\n```csharp\n// Add this\
+    \ before making API calls\nSystem.Net.ServicePointManager.SecurityProtocol = \n\
+    \    System.Net.SecurityProtocolType.Tls12 | \n    System.Net.SecurityProtocolType.Tls13;\n\
+    ```\n\n### Benefits of Upgrading to v3.x\n\n#### Technical Improvements\n- **Modern\
+    \ .NET Support**: Compatible with .NET 6.0, 7.0, 8.0, and future versions\n- **Better\
+    \ Performance**: \n  - RestSharp 112.0.0 brings significant performance improvements\n\
+    \  - Optimized HTTP client with better connection pooling\n  - Faster JSON serialization\
+    \ and deserialization\n- **Improved Code Quality**: Cleaner generated code with\
+    \ better documentation\n- **Enhanced Type Safety**: Stronger typing and better\
+    \ IntelliSense support\n- **Updated Dependencies**: \n  - RestSharp 105.1.0 →\
+    \ **112.0.0** (+7 major versions with bug fixes and improvements)\n  - Newtonsoft.Json\
+    \ 10.0.3 → 13.0.3 (latest security patches)\n  - JsonSubTypes 1.2.0 → 2.0.1 (major\
+    \ version update)\n- **Cross-Platform**: Works on Windows, Linux, and macOS\n\n\
+    #### Ecosystem Alignment\n- **Consistent with Other SDKs**: All TextMagic SDKs\
+    \ now use OpenAPI Generator\n- **Better Tooling**: Improved IDE support and debugging\
+    \ experience\n- **Active Maintenance**: Regular updates and community support\n\
+    - **Future-Proof**: Built on actively maintained tools and frameworks\n\n####\
+    \ Security & Maintenance\n- **Security Updates**: Latest dependency versions with\
+    \ security patches\n- **Bug Fixes**: Resolved issues from Swagger Codegen\n- **Long-Term\
+    \ Support**: OpenAPI Generator is actively maintained\n- **Compliance**: Better\
+    \ support for modern security standards\n\n### Migration Effort vs. Benefits\n\
+    \n| Aspect | Effort | Benefit |\n|--------|--------|---------|\n| **Code Changes**\
+    \ | ⭐ Minimal (mostly none) | ⭐⭐⭐⭐⭐ No breaking API changes |\n| **Dependency\
+    \ Updates** | ⭐⭐ Low (automatic) | ⭐⭐⭐⭐⭐ Latest security patches |\n| **Testing**\
+    \ | ⭐⭐⭐ Medium | ⭐⭐⭐⭐⭐ Ensures compatibility |\n| **Overall Migration** | ⭐⭐ Low\
+    \ | ⭐⭐⭐⭐⭐ Future-proof, secure, performant |\n\n### Need Help?\n\n- **Documentation**:\
+    \ [https://docs.textmagic.com](https://docs.textmagic.com)\n- **Support**: [https://www.textmagic.com/support](https://www.textmagic.com/support)\n\
+    - **GitHub Issues**: [https://github.com/textmagic/textmagic-rest-csharp-v2/issues](https://github.com/textmagic/textmagic-rest-csharp-v2/issues)\n\
+    \n\n# C++\n\n<iframe src=\"https://ghbtns.com/github-btn.html?user=textmagic&repo=textmagic-rest-cpp-v2&type=star&count=true\"\
     \ frameborder=\"0\" scrolling=\"0\" width=\"170px\" height=\"20px\"></iframe>\n\
     \nThis library provides you with an easy way of sending SMS and receiving replies\
     \ by integrating TextMagic SMS Gateway into your C++ application.\n\n[Get it now\
@@ -1399,12 +1562,12 @@ tags:
     \n# Test connection\neval {\n    my $result = $api->ping();\n    print \"✅ Connected!\
     \ Server time: \" . $result->ping . \"\\n\";\n};\nif ($@) {\n    warn \"❌ Error:\
     \ $@\\n\";\n}\n```\n\n## Installation\n\n### From GitHub\n\n```bash\n# Download\
-    \ and extract\nwget https://github.com/textmagic/textmagic-rest-perl-v2/archive/v3.0.43909.tar.gz\n\
-    tar zxf v3.0.43909.tar.gz\nrm -f v3.0.43909.tar.gz\ncd textmagic-rest-perl-v2-3.0.43909\n\
+    \ and extract\nwget https://github.com/textmagic/textmagic-rest-perl-v2/archive/v3.0.50030.tar.gz\n\
+    tar zxf v3.0.50030.tar.gz\nrm -f v3.0.50030.tar.gz\ncd textmagic-rest-perl-v2-3.0.50030\n\
     \n# Install dependencies\ncpanm --installdeps .\n\n# Add to Perl library path\n\
     export PERL5LIB=\"${PERL5LIB}:$(pwd)/lib\"\n```\n\n### Using cpanfile\n\nIf you\
     \ want to include this SDK in your project's dependencies:\n\n```perl\n# Add to\
-    \ your cpanfile\nrequires 'Net::Sms::TextMagicClient', '== 3.0.43909';\n```\n\n\
+    \ your cpanfile\nrequires 'Net::Sms::TextMagicClient', '== 3.0.50030';\n```\n\n\
     Then install:\n\n```bash\ncpanm --installdeps .\n```\n\n## Usage Examples\n\n\
     Please follow the [installation](#installation) instructions and execute the following\
     \ Perl code:\n\n### Sending Messages\n\n```perl\nuse strict;\nuse warnings;\n\
@@ -1507,8 +1670,8 @@ tags:
     # If you installed v2.x globally, remove it\n# Find where it's installed:\nperldoc\
     \ -l Net::Sms::TextMagicClient\n\n# Remove old installation (adjust path as needed)\n\
     rm -rf /path/to/perl/lib/Net/Sms/TextMagicClient\n```\n\n##### Step 4: Install\
-    \ New SDK (v3.x)\n\n```bash\n# Download v3.x\nwget https://github.com/textmagic/textmagic-rest-perl-v2/archive/v3.0.43909.tar.gz\n\
-    tar zxf v3.0.43909.tar.gz\nrm -f v3.0.43909.tar.gz\ncd textmagic-rest-perl-v2-3.0.43909\n\
+    \ New SDK (v3.x)\n\n```bash\n# Download v3.x\nwget https://github.com/textmagic/textmagic-rest-perl-v2/archive/v3.0.50030.tar.gz\n\
+    tar zxf v3.0.50030.tar.gz\nrm -f v3.0.50030.tar.gz\ncd textmagic-rest-perl-v2-3.0.50030\n\
     \n# Install dependencies\ncpanm --installdeps .\n\n# Add to library path (add\
     \ this to your ~/.bashrc or ~/.zshrc)\nexport PERL5LIB=\"${PERL5LIB}:$(pwd)/lib\"\
     \n```\n\n##### Step 5: Update Your Code - API Method Calls\n\n**Find all API method\
@@ -1534,8 +1697,8 @@ tags:
     \ warnings to catch issues\nperl -w -Ilib your_script.pl\n```\n\n##### Step 9:\
     \ Update Dependencies in Your Project\n\n**If using cpanfile in your project:**\n\
     ```perl\n# Update your project's cpanfile\nrequires 'Net::Sms::TextMagicClient',\
-    \ '== 3.0.43909';\n```\n\n**If using Makefile.PL:**\n```perl\n# Update PREREQ_PM\
-    \ in your Makefile.PL\nPREREQ_PM => {\n    'Net::Sms::TextMagicClient' => '3.0.43909',\n\
+    \ '== 3.0.50030';\n```\n\n**If using Makefile.PL:**\n```perl\n# Update PREREQ_PM\
+    \ in your Makefile.PL\nPREREQ_PM => {\n    'Net::Sms::TextMagicClient' => '3.0.50030',\n\
     \    # ... other dependencies\n},\n```\n\n#### Complete Migration Examples\n\n\
     ##### Example 1: Simple Message Sending\n\n**BEFORE (v2.x):**\n```perl\nuse strict;\n\
     use warnings;\nuse Net::Sms::TextMagicClient::ApiClient;\nuse Net::Sms::TextMagicClient::TextMagicApi;\n\
@@ -1651,10 +1814,10 @@ tags:
     \ Dependencies\n\n- **Typhoeus** ~> 1.0 (HTTP client library)\n- **RSpec** ~>\
     \ 3.6 (for development/testing)\n\n## Installation\n\n### Via RubyGems (Recommended)\n\
     \n```bash\ngem install textmagic_rest_client\n```\n\n### Via Gemfile\n\nAdd this\
-    \ line to your `Gemfile`:\n\n```ruby\ngem 'textmagic_rest_client', '~> 3.0.43893'\n\
+    \ line to your `Gemfile`:\n\n```ruby\ngem 'textmagic_rest_client', '~> 3.0.50031'\n\
     ```\n\nThen run:\n\n```bash\nbundle install\n```\n\n### From GitHub\n\nAdd this\
     \ line to your `Gemfile`:\n\n```ruby\ngem 'textmagic_rest_client', git: 'https://github.com/textmagic/textmagic-rest-ruby-v2.git',\
-    \ tag: 'v3.0.43893'\n```\n\nThen run:\n\n```bash\nbundle install\n```\n\n### Updating\
+    \ tag: 'v3.0.50031'\n```\n\nThen run:\n\n```bash\nbundle install\n```\n\n### Updating\
     \ the Gem\n\n```bash\n# Update to latest version\nbundle update textmagic_rest_client\n\
     \n# Or via gem command\ngem update textmagic_rest_client\n```\n\n## Quick Start\n\
     \n### Basic Usage\n\n```ruby\nrequire 'textmagic_rest_client'\n\n# Configure API\
@@ -1731,7 +1894,7 @@ tags:
     \ dependencies\nbundle install\n\n# Run tests\nbundle exec rspec\n\n# Run tests\
     \ with coverage\nbundle exec rspec --format documentation\n```\n\n### Building\
     \ the Gem\n\n```bash\n# Build gem file\ngem build textmagic_rest_client.gemspec\n\
-    \n# Install locally\ngem install ./textmagic_rest_client-3.0.43893.gem\n```\n\n\
+    \n# Install locally\ngem install ./textmagic_rest_client-3.0.50031.gem\n```\n\n\
     ## Need Help?\n\n- **Documentation:** https://docs.textmagic.com/\n- **Support:**\
     \ https://www.textmagic.com/support/\n- **GitHub Issues:** https://github.com/textmagic/textmagic-rest-ruby-v2/issues\n\
     \n\n# Go\n\n<iframe src=\"https://ghbtns.com/github-btn.html?user=textmagic&repo=textmagic-rest-go-v2&type=star&count=true\"\
@@ -52447,6 +52610,42 @@ components:
       required:
       - id
       type: object
+    NullableUserPersonalInfo:
+      example:
+        firstName: John
+        lastName: Smith
+        avatarUrl: https://example.com/avatar.jpg
+        id: 456
+        email: john.smith@example.com
+      nullable: true
+      properties:
+        id:
+          description: User ID.
+          example: 456
+          type: integer
+        firstName:
+          description: User's first name.
+          example: John
+          nullable: true
+          type: string
+        lastName:
+          description: User's last name.
+          example: Smith
+          nullable: true
+          type: string
+        avatarUrl:
+          description: URL to user's avatar image.
+          example: https://example.com/avatar.jpg
+          nullable: true
+          type: string
+        email:
+          description: User's email address.
+          example: john.smith@example.com
+          format: email
+          nullable: true
+          type: string
+      type: object
+      x-nullable: true
     EmailCampaignStatisticTotals:
       example:
         unsubscribed: 5
@@ -53493,6 +53692,7 @@ components:
             referenceId: referenceId
           sessionId: 3122
           avatar: avatars/dummy_avatar.png
+          deliveredAt: 2000-01-23T04:56:07.000+00:00
           fromEmail: test@email.com
           fromNumber: "447624800500"
           firstName: John
@@ -53532,6 +53732,7 @@ components:
             referenceId: referenceId
           sessionId: 3122
           avatar: avatars/dummy_avatar.png
+          deliveredAt: 2000-01-23T04:56:07.000+00:00
           fromEmail: test@email.com
           fromNumber: "447624800500"
           firstName: John
@@ -53864,6 +54065,8 @@ components:
           type: integer
         webWidgetDeleted:
           type: integer
+        webWidgetCreated:
+          type: integer
         contactAdded:
           type: integer
         contactDeleted:
@@ -54134,6 +54337,30 @@ components:
           type: integer
         emailCampaignFailedAttemptStateUpdated:
           type: integer
+        tollFreePreFillCompleted:
+          type: integer
+        tollFreePreFillFailed:
+          type: integer
+        tollFreeComplianceCheckCompleted:
+          type: integer
+        tollFreeComplianceCheckFailed:
+          type: integer
+        tenDlcPreFillCompleted:
+          type: integer
+        tenDlcPreFillFailed:
+          type: integer
+        tenDlcComplianceCheckCompleted:
+          type: integer
+        tenDlcComplianceCheckFailed:
+          type: integer
+        marketingDataModalChanged:
+          type: integer
+        integrationStatusChanged:
+          type: integer
+        integrationCustomerSyncProgressState:
+          type: integer
+        integrationCustomerSyncEnd:
+          type: integer
       required:
       - AIAssistantCreated
       - AIAssistantDeleted
@@ -54233,6 +54460,9 @@ components:
       - instagramAccountAdded
       - instagramAccountChanged
       - instagramAccountRemoved
+      - integrationCustomerSyncEnd
+      - integrationCustomerSyncProgressState
+      - integrationStatusChanged
       - lastMessageSet
       - listAdded
       - listCacheClear
@@ -54241,6 +54471,7 @@ components:
       - listStateChanged
       - liveChatAgentChanged
       - liveChatRated
+      - marketingDataModalChanged
       - messageBulkEnd
       - messageCacheClear
       - messageDeleted
@@ -54303,6 +54534,10 @@ components:
       - taskStageDeleted
       - taskStageUpdated
       - taskUpdated
+      - tenDlcComplianceCheckCompleted
+      - tenDlcComplianceCheckFailed
+      - tenDlcPreFillCompleted
+      - tenDlcPreFillFailed
       - tendlcLinkNumberStatusUpdated
       - ticketBulkDeleted
       - ticketBulkUpdated
@@ -54312,12 +54547,17 @@ components:
       - ticketMessageDeleted
       - ticketMessageUpdated
       - ticketUpdated
+      - tollFreeComplianceCheckCompleted
+      - tollFreeComplianceCheckFailed
+      - tollFreePreFillCompleted
+      - tollFreePreFillFailed
       - unreadTicketsCountUpdated
       - userBalanceChanged
       - userImpersonationEnd
       - userInvited
       - userPresenceStatusChanged
       - userProfileChanged
+      - webWidgetCreated
       - webWidgetDeleted
       - webWidgetUpdated
       - whatsappAccountAdded
@@ -54756,6 +54996,15 @@ components:
           title: Red
         firstName: Charles
         blocked: true
+        customFieldValues:
+        - fieldTitle: fieldTitle
+          fieldType: fieldType
+          value: "{}"
+          fieldId: 0
+        - fieldTitle: fieldTitle
+          fieldType: fieldType
+          value: "{}"
+          fieldId: 0
         phone: "447860021130"
         lists:
         - shared: false
@@ -54915,6 +55164,10 @@ components:
           items:
             $ref: "#/components/schemas/CustomFieldListItem"
           type: array
+        customFieldValues:
+          items:
+            $ref: "#/components/schemas/CustomFieldValues"
+          type: array
         user:
           $ref: "#/components/schemas/User"
         lists:
@@ -54960,6 +55213,7 @@ components:
       - blocked
       - companyName
       - country
+      - customFieldValues
       - customFields
       - email
       - favorited
@@ -55255,6 +55509,7 @@ components:
           referenceId: referenceId
         sessionId: 3122
         avatar: avatars/dummy_avatar.png
+        deliveredAt: 2000-01-23T04:56:07.000+00:00
         fromEmail: test@email.com
         fromNumber: "447624800500"
         firstName: John
@@ -55363,6 +55618,11 @@ components:
           description: Indicates that the message has been deleted.
           example: false
           type: boolean
+        deliveredAt:
+          description: Time when message was delivered.
+          format: date-time
+          nullable: true
+          type: string
         charset:
           description: |
             Message charset. Could be:
@@ -55944,19 +56204,13 @@ components:
         country:
           name: India
           id: US
+        messageTime: 2000-01-23T04:56:07.000+00:00
         pinned: true
         unread: 5
         unsubscribedContactId: 546
-        lastMessage: Hello world!
-        mute: 0
         type: sms
         replyOptionsType: user_carrier_twilio
-        tags:
-        - id: 23
-          title: Red
-        - id: 23
-          title: Red
-        phone: "447860021130"
+        createdAt: 2000-01-23T04:56:07.000+00:00
         contact:
           owner:
             emailAccepted: true
@@ -56078,6 +56332,15 @@ components:
             title: Red
           firstName: Charles
           blocked: true
+          customFieldValues:
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
           phone: "447860021130"
           lists:
           - shared: false
@@ -56191,16 +56454,31 @@ components:
           email: charles@example.com
           favorited: true
           whatsappPhone: "447860021130"
+        from: "447860021130"
+        id: 43328
+        mutedUntil: 2000-01-23T04:56:07.000+00:00
+        updatedAt: 2000-01-23T04:56:07.000+00:00
+        direction: ci
+        updatedBy:
+          firstName: John
+          lastName: Smith
+          avatarUrl: https://example.com/avatar.jpg
+          id: 456
+          email: john.smith@example.com
+        lastMessage: Hello world!
+        mute: 0
+        assigneeId: 1
+        tags:
+        - id: 23
+          title: Red
+        - id: 23
+          title: Red
+        phone: "447860021130"
         mmsPrice: 12.34
         timeLeftMute: 17988
         smsPrice: 12.34
-        from: "447860021130"
-        id: 43328
         originalId: 43328
-        mutedUntil: 2000-01-23T04:56:07.000+00:00
-        updatedAt: 2000-01-23T04:56:07.000+00:00
         status: a
-        direction: ci
       properties:
         id:
           description: Chat ID.
@@ -56306,13 +56584,30 @@ components:
           items:
             $ref: "#/components/schemas/Tag"
           type: array
+        assigneeId:
+          example: 1
+          nullable: true
+          type: integer
+        updatedBy:
+          $ref: "#/components/schemas/NullableUserPersonalInfo"
+        createdAt:
+          description: Chat creation date and time.
+          format: date-time
+          type: string
+        messageTime:
+          description: Chat last message date and time.
+          format: date-time
+          type: string
       required:
+      - assigneeId
       - contact
       - country
+      - createdAt
       - direction
       - from
       - id
       - lastMessage
+      - messageTime
       - mmsPrice
       - mute
       - mutedUntil
@@ -56803,6 +57098,23 @@ components:
           type: string
         userCustomField:
           $ref: "#/components/schemas/UserCustomField"
+      type: object
+    CustomFieldValues:
+      example:
+        fieldTitle: fieldTitle
+        fieldType: fieldType
+        value: "{}"
+        fieldId: 0
+      properties:
+        fieldId:
+          type: integer
+        fieldTitle:
+          type: string
+        fieldType:
+          type: string
+        value:
+          properties: {}
+          type: object
       type: object
     ContactImage:
       additionalProperties: false
@@ -57690,6 +58002,15 @@ components:
             title: Red
           firstName: Charles
           blocked: true
+          customFieldValues:
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
           phone: "447860021130"
           lists:
           - shared: false
@@ -57923,6 +58244,15 @@ components:
             title: Red
           firstName: Charles
           blocked: true
+          customFieldValues:
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
           phone: "447860021130"
           lists:
           - shared: false
@@ -58189,6 +58519,15 @@ components:
             title: Red
           firstName: Charles
           blocked: true
+          customFieldValues:
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
           phone: "447860021130"
           lists:
           - shared: false
@@ -58422,6 +58761,15 @@ components:
             title: Red
           firstName: Charles
           blocked: true
+          customFieldValues:
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
           phone: "447860021130"
           lists:
           - shared: false
@@ -59120,6 +59468,15 @@ components:
             title: Red
           firstName: Charles
           blocked: true
+          customFieldValues:
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
           phone: "447860021130"
           lists:
           - shared: false
@@ -59353,6 +59710,15 @@ components:
             title: Red
           firstName: Charles
           blocked: true
+          customFieldValues:
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
           phone: "447860021130"
           lists:
           - shared: false
@@ -59708,6 +60074,15 @@ components:
             title: Red
           firstName: Charles
           blocked: true
+          customFieldValues:
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
           phone: "447860021130"
           lists:
           - shared: false
@@ -59941,6 +60316,15 @@ components:
             title: Red
           firstName: Charles
           blocked: true
+          customFieldValues:
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
+          - fieldTitle: fieldTitle
+            fieldType: fieldType
+            value: "{}"
+            fieldId: 0
           phone: "447860021130"
           lists:
           - shared: false
@@ -60176,6 +60560,7 @@ components:
             referenceId: referenceId
           sessionId: 3122
           avatar: avatars/dummy_avatar.png
+          deliveredAt: 2000-01-23T04:56:07.000+00:00
           fromEmail: test@email.com
           fromNumber: "447624800500"
           firstName: John
@@ -60215,6 +60600,7 @@ components:
             referenceId: referenceId
           sessionId: 3122
           avatar: avatars/dummy_avatar.png
+          deliveredAt: 2000-01-23T04:56:07.000+00:00
           fromEmail: test@email.com
           fromNumber: "447624800500"
           firstName: John
@@ -60283,6 +60669,7 @@ components:
             referenceId: referenceId
           sessionId: 3122
           avatar: avatars/dummy_avatar.png
+          deliveredAt: 2000-01-23T04:56:07.000+00:00
           fromEmail: test@email.com
           fromNumber: "447624800500"
           firstName: John
@@ -60322,6 +60709,7 @@ components:
             referenceId: referenceId
           sessionId: 3122
           avatar: avatars/dummy_avatar.png
+          deliveredAt: 2000-01-23T04:56:07.000+00:00
           fromEmail: test@email.com
           fromNumber: "447624800500"
           firstName: John
@@ -60390,6 +60778,7 @@ components:
             referenceId: referenceId
           sessionId: 3122
           avatar: avatars/dummy_avatar.png
+          deliveredAt: 2000-01-23T04:56:07.000+00:00
           fromEmail: test@email.com
           fromNumber: "447624800500"
           firstName: John
@@ -60429,6 +60818,7 @@ components:
             referenceId: referenceId
           sessionId: 3122
           avatar: avatars/dummy_avatar.png
+          deliveredAt: 2000-01-23T04:56:07.000+00:00
           fromEmail: test@email.com
           fromNumber: "447624800500"
           firstName: John
@@ -60609,6 +60999,7 @@ components:
             referenceId: referenceId
           sessionId: 3122
           avatar: avatars/dummy_avatar.png
+          deliveredAt: 2000-01-23T04:56:07.000+00:00
           fromEmail: test@email.com
           fromNumber: "447624800500"
           firstName: John
@@ -60648,6 +61039,7 @@ components:
             referenceId: referenceId
           sessionId: 3122
           avatar: avatars/dummy_avatar.png
+          deliveredAt: 2000-01-23T04:56:07.000+00:00
           fromEmail: test@email.com
           fromNumber: "447624800500"
           firstName: John
@@ -61144,19 +61536,13 @@ components:
         - country:
             name: India
             id: US
+          messageTime: 2000-01-23T04:56:07.000+00:00
           pinned: true
           unread: 5
           unsubscribedContactId: 546
-          lastMessage: Hello world!
-          mute: 0
           type: sms
           replyOptionsType: user_carrier_twilio
-          tags:
-          - id: 23
-            title: Red
-          - id: 23
-            title: Red
-          phone: "447860021130"
+          createdAt: 2000-01-23T04:56:07.000+00:00
           contact:
             owner:
               emailAccepted: true
@@ -61278,6 +61664,15 @@ components:
               title: Red
             firstName: Charles
             blocked: true
+            customFieldValues:
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
             phone: "447860021130"
             lists:
             - shared: false
@@ -61391,32 +61786,41 @@ components:
             email: charles@example.com
             favorited: true
             whatsappPhone: "447860021130"
+          from: "447860021130"
+          id: 43328
+          mutedUntil: 2000-01-23T04:56:07.000+00:00
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+          direction: ci
+          updatedBy:
+            firstName: John
+            lastName: Smith
+            avatarUrl: https://example.com/avatar.jpg
+            id: 456
+            email: john.smith@example.com
+          lastMessage: Hello world!
+          mute: 0
+          assigneeId: 1
+          tags:
+          - id: 23
+            title: Red
+          - id: 23
+            title: Red
+          phone: "447860021130"
           mmsPrice: 12.34
           timeLeftMute: 17988
           smsPrice: 12.34
-          from: "447860021130"
-          id: 43328
           originalId: 43328
-          mutedUntil: 2000-01-23T04:56:07.000+00:00
-          updatedAt: 2000-01-23T04:56:07.000+00:00
           status: a
-          direction: ci
         - country:
             name: India
             id: US
+          messageTime: 2000-01-23T04:56:07.000+00:00
           pinned: true
           unread: 5
           unsubscribedContactId: 546
-          lastMessage: Hello world!
-          mute: 0
           type: sms
           replyOptionsType: user_carrier_twilio
-          tags:
-          - id: 23
-            title: Red
-          - id: 23
-            title: Red
-          phone: "447860021130"
+          createdAt: 2000-01-23T04:56:07.000+00:00
           contact:
             owner:
               emailAccepted: true
@@ -61538,6 +61942,15 @@ components:
               title: Red
             firstName: Charles
             blocked: true
+            customFieldValues:
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
             phone: "447860021130"
             lists:
             - shared: false
@@ -61651,16 +62064,31 @@ components:
             email: charles@example.com
             favorited: true
             whatsappPhone: "447860021130"
+          from: "447860021130"
+          id: 43328
+          mutedUntil: 2000-01-23T04:56:07.000+00:00
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+          direction: ci
+          updatedBy:
+            firstName: John
+            lastName: Smith
+            avatarUrl: https://example.com/avatar.jpg
+            id: 456
+            email: john.smith@example.com
+          lastMessage: Hello world!
+          mute: 0
+          assigneeId: 1
+          tags:
+          - id: 23
+            title: Red
+          - id: 23
+            title: Red
+          phone: "447860021130"
           mmsPrice: 12.34
           timeLeftMute: 17988
           smsPrice: 12.34
-          from: "447860021130"
-          id: 43328
           originalId: 43328
-          mutedUntil: 2000-01-23T04:56:07.000+00:00
-          updatedAt: 2000-01-23T04:56:07.000+00:00
           status: a
-          direction: ci
         page: 1
       properties:
         page:
@@ -61829,19 +62257,13 @@ components:
         - country:
             name: India
             id: US
+          messageTime: 2000-01-23T04:56:07.000+00:00
           pinned: true
           unread: 5
           unsubscribedContactId: 546
-          lastMessage: Hello world!
-          mute: 0
           type: sms
           replyOptionsType: user_carrier_twilio
-          tags:
-          - id: 23
-            title: Red
-          - id: 23
-            title: Red
-          phone: "447860021130"
+          createdAt: 2000-01-23T04:56:07.000+00:00
           contact:
             owner:
               emailAccepted: true
@@ -61963,6 +62385,15 @@ components:
               title: Red
             firstName: Charles
             blocked: true
+            customFieldValues:
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
             phone: "447860021130"
             lists:
             - shared: false
@@ -62076,32 +62507,41 @@ components:
             email: charles@example.com
             favorited: true
             whatsappPhone: "447860021130"
+          from: "447860021130"
+          id: 43328
+          mutedUntil: 2000-01-23T04:56:07.000+00:00
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+          direction: ci
+          updatedBy:
+            firstName: John
+            lastName: Smith
+            avatarUrl: https://example.com/avatar.jpg
+            id: 456
+            email: john.smith@example.com
+          lastMessage: Hello world!
+          mute: 0
+          assigneeId: 1
+          tags:
+          - id: 23
+            title: Red
+          - id: 23
+            title: Red
+          phone: "447860021130"
           mmsPrice: 12.34
           timeLeftMute: 17988
           smsPrice: 12.34
-          from: "447860021130"
-          id: 43328
           originalId: 43328
-          mutedUntil: 2000-01-23T04:56:07.000+00:00
-          updatedAt: 2000-01-23T04:56:07.000+00:00
           status: a
-          direction: ci
         - country:
             name: India
             id: US
+          messageTime: 2000-01-23T04:56:07.000+00:00
           pinned: true
           unread: 5
           unsubscribedContactId: 546
-          lastMessage: Hello world!
-          mute: 0
           type: sms
           replyOptionsType: user_carrier_twilio
-          tags:
-          - id: 23
-            title: Red
-          - id: 23
-            title: Red
-          phone: "447860021130"
+          createdAt: 2000-01-23T04:56:07.000+00:00
           contact:
             owner:
               emailAccepted: true
@@ -62223,6 +62663,15 @@ components:
               title: Red
             firstName: Charles
             blocked: true
+            customFieldValues:
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
             phone: "447860021130"
             lists:
             - shared: false
@@ -62336,16 +62785,31 @@ components:
             email: charles@example.com
             favorited: true
             whatsappPhone: "447860021130"
+          from: "447860021130"
+          id: 43328
+          mutedUntil: 2000-01-23T04:56:07.000+00:00
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+          direction: ci
+          updatedBy:
+            firstName: John
+            lastName: Smith
+            avatarUrl: https://example.com/avatar.jpg
+            id: 456
+            email: john.smith@example.com
+          lastMessage: Hello world!
+          mute: 0
+          assigneeId: 1
+          tags:
+          - id: 23
+            title: Red
+          - id: 23
+            title: Red
+          phone: "447860021130"
           mmsPrice: 12.34
           timeLeftMute: 17988
           smsPrice: 12.34
-          from: "447860021130"
-          id: 43328
           originalId: 43328
-          mutedUntil: 2000-01-23T04:56:07.000+00:00
-          updatedAt: 2000-01-23T04:56:07.000+00:00
           status: a
-          direction: ci
         page: 1
       properties:
         page:
@@ -62378,19 +62842,13 @@ components:
         - country:
             name: India
             id: US
+          messageTime: 2000-01-23T04:56:07.000+00:00
           pinned: true
           unread: 5
           unsubscribedContactId: 546
-          lastMessage: Hello world!
-          mute: 0
           type: sms
           replyOptionsType: user_carrier_twilio
-          tags:
-          - id: 23
-            title: Red
-          - id: 23
-            title: Red
-          phone: "447860021130"
+          createdAt: 2000-01-23T04:56:07.000+00:00
           contact:
             owner:
               emailAccepted: true
@@ -62512,6 +62970,15 @@ components:
               title: Red
             firstName: Charles
             blocked: true
+            customFieldValues:
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
             phone: "447860021130"
             lists:
             - shared: false
@@ -62625,32 +63092,41 @@ components:
             email: charles@example.com
             favorited: true
             whatsappPhone: "447860021130"
+          from: "447860021130"
+          id: 43328
+          mutedUntil: 2000-01-23T04:56:07.000+00:00
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+          direction: ci
+          updatedBy:
+            firstName: John
+            lastName: Smith
+            avatarUrl: https://example.com/avatar.jpg
+            id: 456
+            email: john.smith@example.com
+          lastMessage: Hello world!
+          mute: 0
+          assigneeId: 1
+          tags:
+          - id: 23
+            title: Red
+          - id: 23
+            title: Red
+          phone: "447860021130"
           mmsPrice: 12.34
           timeLeftMute: 17988
           smsPrice: 12.34
-          from: "447860021130"
-          id: 43328
           originalId: 43328
-          mutedUntil: 2000-01-23T04:56:07.000+00:00
-          updatedAt: 2000-01-23T04:56:07.000+00:00
           status: a
-          direction: ci
         - country:
             name: India
             id: US
+          messageTime: 2000-01-23T04:56:07.000+00:00
           pinned: true
           unread: 5
           unsubscribedContactId: 546
-          lastMessage: Hello world!
-          mute: 0
           type: sms
           replyOptionsType: user_carrier_twilio
-          tags:
-          - id: 23
-            title: Red
-          - id: 23
-            title: Red
-          phone: "447860021130"
+          createdAt: 2000-01-23T04:56:07.000+00:00
           contact:
             owner:
               emailAccepted: true
@@ -62772,6 +63248,15 @@ components:
               title: Red
             firstName: Charles
             blocked: true
+            customFieldValues:
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
             phone: "447860021130"
             lists:
             - shared: false
@@ -62885,16 +63370,31 @@ components:
             email: charles@example.com
             favorited: true
             whatsappPhone: "447860021130"
+          from: "447860021130"
+          id: 43328
+          mutedUntil: 2000-01-23T04:56:07.000+00:00
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+          direction: ci
+          updatedBy:
+            firstName: John
+            lastName: Smith
+            avatarUrl: https://example.com/avatar.jpg
+            id: 456
+            email: john.smith@example.com
+          lastMessage: Hello world!
+          mute: 0
+          assigneeId: 1
+          tags:
+          - id: 23
+            title: Red
+          - id: 23
+            title: Red
+          phone: "447860021130"
           mmsPrice: 12.34
           timeLeftMute: 17988
           smsPrice: 12.34
-          from: "447860021130"
-          id: 43328
           originalId: 43328
-          mutedUntil: 2000-01-23T04:56:07.000+00:00
-          updatedAt: 2000-01-23T04:56:07.000+00:00
           status: a
-          direction: ci
         page: 1
       properties:
         page:
@@ -62927,19 +63427,13 @@ components:
         - country:
             name: India
             id: US
+          messageTime: 2000-01-23T04:56:07.000+00:00
           pinned: true
           unread: 5
           unsubscribedContactId: 546
-          lastMessage: Hello world!
-          mute: 0
           type: sms
           replyOptionsType: user_carrier_twilio
-          tags:
-          - id: 23
-            title: Red
-          - id: 23
-            title: Red
-          phone: "447860021130"
+          createdAt: 2000-01-23T04:56:07.000+00:00
           contact:
             owner:
               emailAccepted: true
@@ -63061,6 +63555,15 @@ components:
               title: Red
             firstName: Charles
             blocked: true
+            customFieldValues:
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
             phone: "447860021130"
             lists:
             - shared: false
@@ -63174,32 +63677,41 @@ components:
             email: charles@example.com
             favorited: true
             whatsappPhone: "447860021130"
+          from: "447860021130"
+          id: 43328
+          mutedUntil: 2000-01-23T04:56:07.000+00:00
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+          direction: ci
+          updatedBy:
+            firstName: John
+            lastName: Smith
+            avatarUrl: https://example.com/avatar.jpg
+            id: 456
+            email: john.smith@example.com
+          lastMessage: Hello world!
+          mute: 0
+          assigneeId: 1
+          tags:
+          - id: 23
+            title: Red
+          - id: 23
+            title: Red
+          phone: "447860021130"
           mmsPrice: 12.34
           timeLeftMute: 17988
           smsPrice: 12.34
-          from: "447860021130"
-          id: 43328
           originalId: 43328
-          mutedUntil: 2000-01-23T04:56:07.000+00:00
-          updatedAt: 2000-01-23T04:56:07.000+00:00
           status: a
-          direction: ci
         - country:
             name: India
             id: US
+          messageTime: 2000-01-23T04:56:07.000+00:00
           pinned: true
           unread: 5
           unsubscribedContactId: 546
-          lastMessage: Hello world!
-          mute: 0
           type: sms
           replyOptionsType: user_carrier_twilio
-          tags:
-          - id: 23
-            title: Red
-          - id: 23
-            title: Red
-          phone: "447860021130"
+          createdAt: 2000-01-23T04:56:07.000+00:00
           contact:
             owner:
               emailAccepted: true
@@ -63321,6 +63833,15 @@ components:
               title: Red
             firstName: Charles
             blocked: true
+            customFieldValues:
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
+            - fieldTitle: fieldTitle
+              fieldType: fieldType
+              value: "{}"
+              fieldId: 0
             phone: "447860021130"
             lists:
             - shared: false
@@ -63434,16 +63955,31 @@ components:
             email: charles@example.com
             favorited: true
             whatsappPhone: "447860021130"
+          from: "447860021130"
+          id: 43328
+          mutedUntil: 2000-01-23T04:56:07.000+00:00
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+          direction: ci
+          updatedBy:
+            firstName: John
+            lastName: Smith
+            avatarUrl: https://example.com/avatar.jpg
+            id: 456
+            email: john.smith@example.com
+          lastMessage: Hello world!
+          mute: 0
+          assigneeId: 1
+          tags:
+          - id: 23
+            title: Red
+          - id: 23
+            title: Red
+          phone: "447860021130"
           mmsPrice: 12.34
           timeLeftMute: 17988
           smsPrice: 12.34
-          from: "447860021130"
-          id: 43328
           originalId: 43328
-          mutedUntil: 2000-01-23T04:56:07.000+00:00
-          updatedAt: 2000-01-23T04:56:07.000+00:00
           status: a
-          direction: ci
         page: 1
       properties:
         page:

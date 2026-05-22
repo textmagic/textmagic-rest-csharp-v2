@@ -314,6 +314,7 @@ namespace TextMagicClient.Model
         /// <param name="messageTime">Sending time. (required).</param>
         /// <param name="avatar">avatar (required).</param>
         /// <param name="deleted">Indicates that the message has been deleted..</param>
+        /// <param name="deliveredAt">Time when message was delivered..</param>
         /// <param name="charset">Message charset. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS.  (required).</param>
         /// <param name="charsetLabel">Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages.  (required).</param>
         /// <param name="firstName">Contact first name. Could be substituted from your [Contacts](https://docs.textmagic.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).  (required).</param>
@@ -326,7 +327,7 @@ namespace TextMagicClient.Model
         /// <param name="fromNumber">The Phone number used to send the SMS..</param>
         /// <param name="senderSource">senderSource.</param>
         /// <param name="session">session.</param>
-        public MessageOut(int id = default, string sender = default, string receiver = default, string text = default, StatusEnum status = default, RejectReasonEnum? rejectReason = default, int? contactId = default, int? sessionId = default, DateTime messageTime = default, string avatar = default, bool deleted = default, string charset = default, string charsetLabel = default, string firstName = default, string lastName = default, string country = default, string phone = default, float? price = default, int? partsCount = default, string fromEmail = default, string fromNumber = default, MessageOutSenderSource senderSource = default, MessageOutSession session = default)
+        public MessageOut(int id = default, string sender = default, string receiver = default, string text = default, StatusEnum status = default, RejectReasonEnum? rejectReason = default, int? contactId = default, int? sessionId = default, DateTime messageTime = default, string avatar = default, bool deleted = default, DateTime? deliveredAt = default, string charset = default, string charsetLabel = default, string firstName = default, string lastName = default, string country = default, string phone = default, float? price = default, int? partsCount = default, string fromEmail = default, string fromNumber = default, MessageOutSenderSource senderSource = default, MessageOutSession session = default)
         {
             this.Id = id;
             // to ensure "text" is required (not null)
@@ -395,6 +396,7 @@ namespace TextMagicClient.Model
             this.Receiver = receiver;
             this.RejectReason = rejectReason;
             this.Deleted = deleted;
+            this.DeliveredAt = deliveredAt;
             this.Phone = phone;
             this.Price = price;
             this.FromEmail = fromEmail;
@@ -487,6 +489,13 @@ namespace TextMagicClient.Model
         */
         [DataMember(Name = "deleted", EmitDefaultValue = true)]
         public bool Deleted { get; set; }
+
+        /// <summary>
+        /// Time when message was delivered.
+        /// </summary>
+        /// <value>Time when message was delivered.</value>
+        [DataMember(Name = "deliveredAt", EmitDefaultValue = true)]
+        public DateTime? DeliveredAt { get; set; }
 
         /// <summary>
         /// Message charset. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS. 
@@ -619,6 +628,7 @@ namespace TextMagicClient.Model
             sb.Append("  MessageTime: ").Append(MessageTime).Append("\n");
             sb.Append("  Avatar: ").Append(Avatar).Append("\n");
             sb.Append("  Deleted: ").Append(Deleted).Append("\n");
+            sb.Append("  DeliveredAt: ").Append(DeliveredAt).Append("\n");
             sb.Append("  Charset: ").Append(Charset).Append("\n");
             sb.Append("  CharsetLabel: ").Append(CharsetLabel).Append("\n");
             sb.Append("  FirstName: ").Append(FirstName).Append("\n");

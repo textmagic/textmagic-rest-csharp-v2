@@ -94,6 +94,7 @@ namespace TextMagicClient.Model
         /// <param name="liveChatRated">liveChatRated (required).</param>
         /// <param name="webWidgetUpdated">webWidgetUpdated (required).</param>
         /// <param name="webWidgetDeleted">webWidgetDeleted (required).</param>
+        /// <param name="webWidgetCreated">webWidgetCreated (required).</param>
         /// <param name="contactAdded">contactAdded (required).</param>
         /// <param name="contactDeleted">contactDeleted (required).</param>
         /// <param name="contactBulkUpdated">contactBulkUpdated (required).</param>
@@ -229,7 +230,19 @@ namespace TextMagicClient.Model
         /// <param name="emailCampaignFailedAttemptCreated">emailCampaignFailedAttemptCreated (required).</param>
         /// <param name="emailCampaignFailedAttemptDeleted">emailCampaignFailedAttemptDeleted (required).</param>
         /// <param name="emailCampaignFailedAttemptStateUpdated">emailCampaignFailedAttemptStateUpdated (required).</param>
-        public GetStateResponse(int systemCacheClear = default, int systemExit = default, int systemAlert = default, int systemAccountStateChanged = default, int systemAccountAcceptTermsUpdate = default, int systemAccountClosed = default, int systemAccountAdditionalFields = default, int systemAccountNumbersListChange = default, int systemAccountPermissionsChanged = default, int userProfileChanged = default, int userBalanceChanged = default, int userPresenceStatusChanged = default, int userImpersonationEnd = default, int messageDeleted = default, int messageIncoming = default, int messageIncomingDeleted = default, int messageStateChanged = default, int messageBulkEnd = default, int messageWipeEnd = default, int messageSent = default, int messageLog = default, int messageNote = default, int messageInitial = default, int lastMessageSet = default, int messageSessionDeleted = default, int messageCacheClear = default, int messageIncomingCacheClear = default, int messageScheduleAdded = default, int messageScheduleStateChanged = default, int messageScheduleDeleted = default, int messageScheduleNotSentStateChanged = default, int messageScheduleCacheClear = default, int messageTemplateCacheClear = default, int callFinished = default, int chatCreated = default, int chatMarkedAsRead = default, int chatMuted = default, int chatUnmuted = default, int chatPinned = default, int chatUnpinned = default, int chatDeleted = default, int chatClosed = default, int chatReopened = default, int chatActivated = default, int chatCacheClear = default, int chatRead = default, int chatUnread = default, int chatAssigneeChanged = default, int chatTagsChanged = default, int chatConversationEnded = default, int chatUpdated = default, int liveChatAgentChanged = default, int liveChatRated = default, int webWidgetUpdated = default, int webWidgetDeleted = default, int contactAdded = default, int contactDeleted = default, int contactBulkUpdated = default, int contactStateChanged = default, int contactUnsubscribed = default, int contactResubscribed = default, int contactNoteAdded = default, int contactNoteDeleted = default, int contactNoteStateChanged = default, int listAdded = default, int listDeleted = default, int listStateChanged = default, int listCountMembersUpdated = default, int contactWipeEnd = default, int contactImportEnd = default, int contactCacheClear = default, int listCacheClear = default, int customFieldsCacheClear = default, int progressCarrierBulkLookup = default, int progressSubAccountBulkImport = default, int emailLookupProgressState = default, int importProgressState = default, int forceRefreshWebApp = default, int chatSenderSettingsChanged = default, int countrySenderSettingsChanged = default, int chatSummaryChunk = default, int chatWaysToReplyChunk = default, int chatSuggestedReplyChunk = default, int userSubscriptionChanged = default, int userSubscriptionDeleted = default, int taskCreated = default, int taskUpdated = default, int taskReordered = default, int taskDeleted = default, int taskMovedAll = default, int taskStageCreated = default, int taskStageUpdated = default, int taskStageDeleted = default, int taskBoardCreated = default, int taskBoardUpdated = default, int taskBoardReordered = default, int taskBoardDeleted = default, int taskBoardArchived = default, int taskChecklistCreated = default, int taskChecklistUpdated = default, int taskChecklistDeleted = default, int taskChecklistBulkMarked = default, int taskChecklistItemCreated = default, int taskChecklistItemUpdated = default, int taskChecklistItemDeleted = default, int taskCommentCreated = default, int taskCommentDeleted = default, int pinnedContactAdded = default, int pinnedContactRemoved = default, int pinnedContactReordered = default, int pinnedContactStateChanged = default, int whatsappAccountAdded = default, int whatsappAccountRemoved = default, int whatsappAccountChanged = default, int facebookPageAdded = default, int facebookPageRemoved = default, int facebookPageChanged = default, int instagramAccountAdded = default, int instagramAccountRemoved = default, int instagramAccountChanged = default, int unreadTicketsCountUpdated = default, int ticketDeleted = default, int ticketUpdated = default, int ticketCreated = default, int ticketBulkUpdated = default, int ticketBulkDeleted = default, int ticketMessageCreated = default, int ticketMessageUpdated = default, int ticketMessageDeleted = default, int subAccountsClosed = default, int userInvited = default, int filteredViewCreated = default, int filteredViewCountUpdated = default, int filteredViewDeleted = default, int forwardingInboxWasVerified = default, int forwardingInboxCheckWasFailed = default, int forwardingInboxVerificationLinkWasParsed = default, int tendlcLinkNumberStatusUpdated = default, int channelPresence = default, int dealCreated = default, int dealUpdated = default, int dealDeleted = default, int dealMoved = default, int dealStageCreated = default, int dealStageUpdated = default, int dealStageDeleted = default, int dealPipelineCreated = default, int dealPipelineUpdated = default, int dealPipelineDeleted = default, int dealPipelineArchived = default, int dealPipelineReordered = default, int dealActivityUpdated = default, int dealActivityItemCreated = default, int dealActivityItemUpdated = default, int dealActivityItemDeleted = default, int dealActivityItemBulkMarked = default, int dealTimelineItemDeleted = default, int dealTimelineItemCreated = default, int aIAssistantCreated = default, int aIAssistantState = default, int aIAssistantDeleted = default, int aIAssistantLinkDeleted = default, int aIAssistantLinkState = default, int aIAssistantLinkCreated = default, int aIAssistantSubLinkState = default, int aIAssistantSubLinkCreated = default, int emailCampaignEmailSenderCreated = default, int emailCampaignEmailSenderUpdated = default, int emailCampaignEmailSenderDeleted = default, int emailCampaignDomainCreated = default, int emailCampaignDomainDeleted = default, int emailCampaignDomainVerified = default, int emailCampaignDomainStatusChanged = default, int emailCampaignDomainDkimVerified = default, int emailCampaignDomainReturnPathVerified = default, int emailCampaignDomainDmarcVerified = default, int emailCampaignDomainEntryVerificationChanged = default, int emailCampaignProgressState = default, int emailCampaignUpdated = default, int emailTemplateImproved = default, int emailTemplateImprovingFailed = default, int emailBonusUpdated = default, int smsCampaignInvalidated = default, int scheduledEmailCampaignCreated = default, int scheduledEmailCampaignUpdated = default, int scheduledEmailCampaignStatusUpdated = default, int scheduledEmailCampaignDeleted = default, int emailCampaignFailedAttemptCreated = default, int emailCampaignFailedAttemptDeleted = default, int emailCampaignFailedAttemptStateUpdated = default)
+        /// <param name="tollFreePreFillCompleted">tollFreePreFillCompleted (required).</param>
+        /// <param name="tollFreePreFillFailed">tollFreePreFillFailed (required).</param>
+        /// <param name="tollFreeComplianceCheckCompleted">tollFreeComplianceCheckCompleted (required).</param>
+        /// <param name="tollFreeComplianceCheckFailed">tollFreeComplianceCheckFailed (required).</param>
+        /// <param name="tenDlcPreFillCompleted">tenDlcPreFillCompleted (required).</param>
+        /// <param name="tenDlcPreFillFailed">tenDlcPreFillFailed (required).</param>
+        /// <param name="tenDlcComplianceCheckCompleted">tenDlcComplianceCheckCompleted (required).</param>
+        /// <param name="tenDlcComplianceCheckFailed">tenDlcComplianceCheckFailed (required).</param>
+        /// <param name="marketingDataModalChanged">marketingDataModalChanged (required).</param>
+        /// <param name="integrationStatusChanged">integrationStatusChanged (required).</param>
+        /// <param name="integrationCustomerSyncProgressState">integrationCustomerSyncProgressState (required).</param>
+        /// <param name="integrationCustomerSyncEnd">integrationCustomerSyncEnd (required).</param>
+        public GetStateResponse(int systemCacheClear = default, int systemExit = default, int systemAlert = default, int systemAccountStateChanged = default, int systemAccountAcceptTermsUpdate = default, int systemAccountClosed = default, int systemAccountAdditionalFields = default, int systemAccountNumbersListChange = default, int systemAccountPermissionsChanged = default, int userProfileChanged = default, int userBalanceChanged = default, int userPresenceStatusChanged = default, int userImpersonationEnd = default, int messageDeleted = default, int messageIncoming = default, int messageIncomingDeleted = default, int messageStateChanged = default, int messageBulkEnd = default, int messageWipeEnd = default, int messageSent = default, int messageLog = default, int messageNote = default, int messageInitial = default, int lastMessageSet = default, int messageSessionDeleted = default, int messageCacheClear = default, int messageIncomingCacheClear = default, int messageScheduleAdded = default, int messageScheduleStateChanged = default, int messageScheduleDeleted = default, int messageScheduleNotSentStateChanged = default, int messageScheduleCacheClear = default, int messageTemplateCacheClear = default, int callFinished = default, int chatCreated = default, int chatMarkedAsRead = default, int chatMuted = default, int chatUnmuted = default, int chatPinned = default, int chatUnpinned = default, int chatDeleted = default, int chatClosed = default, int chatReopened = default, int chatActivated = default, int chatCacheClear = default, int chatRead = default, int chatUnread = default, int chatAssigneeChanged = default, int chatTagsChanged = default, int chatConversationEnded = default, int chatUpdated = default, int liveChatAgentChanged = default, int liveChatRated = default, int webWidgetUpdated = default, int webWidgetDeleted = default, int webWidgetCreated = default, int contactAdded = default, int contactDeleted = default, int contactBulkUpdated = default, int contactStateChanged = default, int contactUnsubscribed = default, int contactResubscribed = default, int contactNoteAdded = default, int contactNoteDeleted = default, int contactNoteStateChanged = default, int listAdded = default, int listDeleted = default, int listStateChanged = default, int listCountMembersUpdated = default, int contactWipeEnd = default, int contactImportEnd = default, int contactCacheClear = default, int listCacheClear = default, int customFieldsCacheClear = default, int progressCarrierBulkLookup = default, int progressSubAccountBulkImport = default, int emailLookupProgressState = default, int importProgressState = default, int forceRefreshWebApp = default, int chatSenderSettingsChanged = default, int countrySenderSettingsChanged = default, int chatSummaryChunk = default, int chatWaysToReplyChunk = default, int chatSuggestedReplyChunk = default, int userSubscriptionChanged = default, int userSubscriptionDeleted = default, int taskCreated = default, int taskUpdated = default, int taskReordered = default, int taskDeleted = default, int taskMovedAll = default, int taskStageCreated = default, int taskStageUpdated = default, int taskStageDeleted = default, int taskBoardCreated = default, int taskBoardUpdated = default, int taskBoardReordered = default, int taskBoardDeleted = default, int taskBoardArchived = default, int taskChecklistCreated = default, int taskChecklistUpdated = default, int taskChecklistDeleted = default, int taskChecklistBulkMarked = default, int taskChecklistItemCreated = default, int taskChecklistItemUpdated = default, int taskChecklistItemDeleted = default, int taskCommentCreated = default, int taskCommentDeleted = default, int pinnedContactAdded = default, int pinnedContactRemoved = default, int pinnedContactReordered = default, int pinnedContactStateChanged = default, int whatsappAccountAdded = default, int whatsappAccountRemoved = default, int whatsappAccountChanged = default, int facebookPageAdded = default, int facebookPageRemoved = default, int facebookPageChanged = default, int instagramAccountAdded = default, int instagramAccountRemoved = default, int instagramAccountChanged = default, int unreadTicketsCountUpdated = default, int ticketDeleted = default, int ticketUpdated = default, int ticketCreated = default, int ticketBulkUpdated = default, int ticketBulkDeleted = default, int ticketMessageCreated = default, int ticketMessageUpdated = default, int ticketMessageDeleted = default, int subAccountsClosed = default, int userInvited = default, int filteredViewCreated = default, int filteredViewCountUpdated = default, int filteredViewDeleted = default, int forwardingInboxWasVerified = default, int forwardingInboxCheckWasFailed = default, int forwardingInboxVerificationLinkWasParsed = default, int tendlcLinkNumberStatusUpdated = default, int channelPresence = default, int dealCreated = default, int dealUpdated = default, int dealDeleted = default, int dealMoved = default, int dealStageCreated = default, int dealStageUpdated = default, int dealStageDeleted = default, int dealPipelineCreated = default, int dealPipelineUpdated = default, int dealPipelineDeleted = default, int dealPipelineArchived = default, int dealPipelineReordered = default, int dealActivityUpdated = default, int dealActivityItemCreated = default, int dealActivityItemUpdated = default, int dealActivityItemDeleted = default, int dealActivityItemBulkMarked = default, int dealTimelineItemDeleted = default, int dealTimelineItemCreated = default, int aIAssistantCreated = default, int aIAssistantState = default, int aIAssistantDeleted = default, int aIAssistantLinkDeleted = default, int aIAssistantLinkState = default, int aIAssistantLinkCreated = default, int aIAssistantSubLinkState = default, int aIAssistantSubLinkCreated = default, int emailCampaignEmailSenderCreated = default, int emailCampaignEmailSenderUpdated = default, int emailCampaignEmailSenderDeleted = default, int emailCampaignDomainCreated = default, int emailCampaignDomainDeleted = default, int emailCampaignDomainVerified = default, int emailCampaignDomainStatusChanged = default, int emailCampaignDomainDkimVerified = default, int emailCampaignDomainReturnPathVerified = default, int emailCampaignDomainDmarcVerified = default, int emailCampaignDomainEntryVerificationChanged = default, int emailCampaignProgressState = default, int emailCampaignUpdated = default, int emailTemplateImproved = default, int emailTemplateImprovingFailed = default, int emailBonusUpdated = default, int smsCampaignInvalidated = default, int scheduledEmailCampaignCreated = default, int scheduledEmailCampaignUpdated = default, int scheduledEmailCampaignStatusUpdated = default, int scheduledEmailCampaignDeleted = default, int emailCampaignFailedAttemptCreated = default, int emailCampaignFailedAttemptDeleted = default, int emailCampaignFailedAttemptStateUpdated = default, int tollFreePreFillCompleted = default, int tollFreePreFillFailed = default, int tollFreeComplianceCheckCompleted = default, int tollFreeComplianceCheckFailed = default, int tenDlcPreFillCompleted = default, int tenDlcPreFillFailed = default, int tenDlcComplianceCheckCompleted = default, int tenDlcComplianceCheckFailed = default, int marketingDataModalChanged = default, int integrationStatusChanged = default, int integrationCustomerSyncProgressState = default, int integrationCustomerSyncEnd = default)
         {
             this.SystemCacheClear = systemCacheClear;
             this.SystemExit = systemExit;
@@ -286,6 +299,7 @@ namespace TextMagicClient.Model
             this.LiveChatRated = liveChatRated;
             this.WebWidgetUpdated = webWidgetUpdated;
             this.WebWidgetDeleted = webWidgetDeleted;
+            this.WebWidgetCreated = webWidgetCreated;
             this.ContactAdded = contactAdded;
             this.ContactDeleted = contactDeleted;
             this.ContactBulkUpdated = contactBulkUpdated;
@@ -419,6 +433,18 @@ namespace TextMagicClient.Model
             this.EmailCampaignFailedAttemptCreated = emailCampaignFailedAttemptCreated;
             this.EmailCampaignFailedAttemptDeleted = emailCampaignFailedAttemptDeleted;
             this.EmailCampaignFailedAttemptStateUpdated = emailCampaignFailedAttemptStateUpdated;
+            this.TollFreePreFillCompleted = tollFreePreFillCompleted;
+            this.TollFreePreFillFailed = tollFreePreFillFailed;
+            this.TollFreeComplianceCheckCompleted = tollFreeComplianceCheckCompleted;
+            this.TollFreeComplianceCheckFailed = tollFreeComplianceCheckFailed;
+            this.TenDlcPreFillCompleted = tenDlcPreFillCompleted;
+            this.TenDlcPreFillFailed = tenDlcPreFillFailed;
+            this.TenDlcComplianceCheckCompleted = tenDlcComplianceCheckCompleted;
+            this.TenDlcComplianceCheckFailed = tenDlcComplianceCheckFailed;
+            this.MarketingDataModalChanged = marketingDataModalChanged;
+            this.IntegrationStatusChanged = integrationStatusChanged;
+            this.IntegrationCustomerSyncProgressState = integrationCustomerSyncProgressState;
+            this.IntegrationCustomerSyncEnd = integrationCustomerSyncEnd;
             this.UserSubscriptionChanged = userSubscriptionChanged;
             this.UserSubscriptionDeleted = userSubscriptionDeleted;
         }
@@ -752,6 +778,12 @@ namespace TextMagicClient.Model
         /// </summary>
         [DataMember(Name = "webWidgetDeleted", IsRequired = true, EmitDefaultValue = true)]
         public int WebWidgetDeleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets WebWidgetCreated
+        /// </summary>
+        [DataMember(Name = "webWidgetCreated", IsRequired = true, EmitDefaultValue = true)]
+        public int WebWidgetCreated { get; set; }
 
         /// <summary>
         /// Gets or Sets ContactAdded
@@ -1564,6 +1596,78 @@ namespace TextMagicClient.Model
         public int EmailCampaignFailedAttemptStateUpdated { get; set; }
 
         /// <summary>
+        /// Gets or Sets TollFreePreFillCompleted
+        /// </summary>
+        [DataMember(Name = "tollFreePreFillCompleted", IsRequired = true, EmitDefaultValue = true)]
+        public int TollFreePreFillCompleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TollFreePreFillFailed
+        /// </summary>
+        [DataMember(Name = "tollFreePreFillFailed", IsRequired = true, EmitDefaultValue = true)]
+        public int TollFreePreFillFailed { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TollFreeComplianceCheckCompleted
+        /// </summary>
+        [DataMember(Name = "tollFreeComplianceCheckCompleted", IsRequired = true, EmitDefaultValue = true)]
+        public int TollFreeComplianceCheckCompleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TollFreeComplianceCheckFailed
+        /// </summary>
+        [DataMember(Name = "tollFreeComplianceCheckFailed", IsRequired = true, EmitDefaultValue = true)]
+        public int TollFreeComplianceCheckFailed { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TenDlcPreFillCompleted
+        /// </summary>
+        [DataMember(Name = "tenDlcPreFillCompleted", IsRequired = true, EmitDefaultValue = true)]
+        public int TenDlcPreFillCompleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TenDlcPreFillFailed
+        /// </summary>
+        [DataMember(Name = "tenDlcPreFillFailed", IsRequired = true, EmitDefaultValue = true)]
+        public int TenDlcPreFillFailed { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TenDlcComplianceCheckCompleted
+        /// </summary>
+        [DataMember(Name = "tenDlcComplianceCheckCompleted", IsRequired = true, EmitDefaultValue = true)]
+        public int TenDlcComplianceCheckCompleted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TenDlcComplianceCheckFailed
+        /// </summary>
+        [DataMember(Name = "tenDlcComplianceCheckFailed", IsRequired = true, EmitDefaultValue = true)]
+        public int TenDlcComplianceCheckFailed { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MarketingDataModalChanged
+        /// </summary>
+        [DataMember(Name = "marketingDataModalChanged", IsRequired = true, EmitDefaultValue = true)]
+        public int MarketingDataModalChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IntegrationStatusChanged
+        /// </summary>
+        [DataMember(Name = "integrationStatusChanged", IsRequired = true, EmitDefaultValue = true)]
+        public int IntegrationStatusChanged { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IntegrationCustomerSyncProgressState
+        /// </summary>
+        [DataMember(Name = "integrationCustomerSyncProgressState", IsRequired = true, EmitDefaultValue = true)]
+        public int IntegrationCustomerSyncProgressState { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IntegrationCustomerSyncEnd
+        /// </summary>
+        [DataMember(Name = "integrationCustomerSyncEnd", IsRequired = true, EmitDefaultValue = true)]
+        public int IntegrationCustomerSyncEnd { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -1626,6 +1730,7 @@ namespace TextMagicClient.Model
             sb.Append("  LiveChatRated: ").Append(LiveChatRated).Append("\n");
             sb.Append("  WebWidgetUpdated: ").Append(WebWidgetUpdated).Append("\n");
             sb.Append("  WebWidgetDeleted: ").Append(WebWidgetDeleted).Append("\n");
+            sb.Append("  WebWidgetCreated: ").Append(WebWidgetCreated).Append("\n");
             sb.Append("  ContactAdded: ").Append(ContactAdded).Append("\n");
             sb.Append("  ContactDeleted: ").Append(ContactDeleted).Append("\n");
             sb.Append("  ContactBulkUpdated: ").Append(ContactBulkUpdated).Append("\n");
@@ -1761,6 +1866,18 @@ namespace TextMagicClient.Model
             sb.Append("  EmailCampaignFailedAttemptCreated: ").Append(EmailCampaignFailedAttemptCreated).Append("\n");
             sb.Append("  EmailCampaignFailedAttemptDeleted: ").Append(EmailCampaignFailedAttemptDeleted).Append("\n");
             sb.Append("  EmailCampaignFailedAttemptStateUpdated: ").Append(EmailCampaignFailedAttemptStateUpdated).Append("\n");
+            sb.Append("  TollFreePreFillCompleted: ").Append(TollFreePreFillCompleted).Append("\n");
+            sb.Append("  TollFreePreFillFailed: ").Append(TollFreePreFillFailed).Append("\n");
+            sb.Append("  TollFreeComplianceCheckCompleted: ").Append(TollFreeComplianceCheckCompleted).Append("\n");
+            sb.Append("  TollFreeComplianceCheckFailed: ").Append(TollFreeComplianceCheckFailed).Append("\n");
+            sb.Append("  TenDlcPreFillCompleted: ").Append(TenDlcPreFillCompleted).Append("\n");
+            sb.Append("  TenDlcPreFillFailed: ").Append(TenDlcPreFillFailed).Append("\n");
+            sb.Append("  TenDlcComplianceCheckCompleted: ").Append(TenDlcComplianceCheckCompleted).Append("\n");
+            sb.Append("  TenDlcComplianceCheckFailed: ").Append(TenDlcComplianceCheckFailed).Append("\n");
+            sb.Append("  MarketingDataModalChanged: ").Append(MarketingDataModalChanged).Append("\n");
+            sb.Append("  IntegrationStatusChanged: ").Append(IntegrationStatusChanged).Append("\n");
+            sb.Append("  IntegrationCustomerSyncProgressState: ").Append(IntegrationCustomerSyncProgressState).Append("\n");
+            sb.Append("  IntegrationCustomerSyncEnd: ").Append(IntegrationCustomerSyncEnd).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
